@@ -968,7 +968,6 @@ copy-trade-farooq/code/research/farouk_pilot/comparisons/FP-OFFICIAL-DOCS-vs-CAM
 copy-trade-farooq/code/research/farouk_pilot/corpus/manifest_1b.json
 copy-trade-farooq/code/research/farouk_pilot/corpus/manifest_f006_video.json
 copy-trade-farooq/code/research/farouk_pilot/corpus/manifest_f007_video.json
-copy-trade-farooq/code/research/farouk_pilot/corpus/store/24/249ac9a39b2bb93c__GMT20251221-181518_RecordingnewChat (1).txt
 copy-trade-farooq/code/research/farouk_pilot/corpus/store/96/9689dd4e6f23d2df__UPLOAD_MANIFEST.txt
 copy-trade-farooq/code/research/farouk_pilot/corpus/transcripts/_quality_gate/S1_scherm0715__base.txt
 copy-trade-farooq/code/research/farouk_pilot/corpus/transcripts/_quality_gate/S1_scherm0715__small_prompt.txt

@@ -2,6 +2,8 @@
 
 I'm the strategy/review side. I'll answer fully where it's my domain, and mark **[FABLE]** (needs the builder's repo/live truth) or **[MARTYN]** (external fact I don't hold) where I shouldn't guess. I will not invent specifics — a wrong "fact" here is worse than an honest "confirm this."
 
+> **Note (added after writing — MIGRATION.md is authoritative where these differ):** a few items below were resolved after this was written. The launcher **is** confirmed at `copy-trade-farooq/code/ORANGE_START_SERVICES.ps1` (§8's "unconfirmed" line is superseded). **F008 is OPEN at revision 4, break-even-protected** after TP1 (§3). And the **LIVE_EDIT fix is now DEPLOYED** — loaded live by the 2026-07-24 reboot ahead of the planned sequence (§3's "still held" is superseded). See MIGRATION.md §0.5, §6, §7.
+
 ---
 
 ## 1. TradingView integration

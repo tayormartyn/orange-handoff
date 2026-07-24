@@ -38,3 +38,6 @@ logs/*.log
 # Operator-local webhook secrets — never commit
 LOCAL_ONLY_*
 LOCAL_SECRET_*
+
+# Third-party PII — community Zoom chat logs, never commit
+*RecordingnewChat*
