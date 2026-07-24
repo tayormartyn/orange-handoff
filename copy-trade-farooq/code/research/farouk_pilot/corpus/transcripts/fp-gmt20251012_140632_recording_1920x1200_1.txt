@@ -1,0 +1,616 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:00] Alright, alright, good evening everybody, Farouk is here with Fischal. So guys, this is the strategy, the scalping strategy that Fischal is using. I'm also having conflicts with Fischal, like I'm also using the same strategy, he's only using EMAs and some indicators, so he's going to explain how he scalped under 1 minute, 5 minute, 15 minutes and 1 hour.
+[00:00:23] He's looking for 1, 2, 3% a day and also using this by the way in my system, I'm also looking at more time frames under low time frame 1, 5 and 15 and to see how I can make my daily profit.
+[00:00:38] So I'm looking for again like 1, 2, 3, 5% and make my 2, 3, $500 and I'm done for the day, I don't have to sit all day on the screen. People think like when you scalp, you sit like the whole day from the screen.
+[00:00:50] No, you just have to look for a nice setup and you can take a trade and you make a daily profit and you're done. So Fischal is going to explain how you do it and how he does it and also he's going to show you what kind of indicators he's using.
+[00:01:06] And also he's going to explain like when he started this whole strategy, he's doing down this for I think 8, 9 months, maybe even longer, I think a year official.
+[00:01:18] Yeah, one year official starting this thing and he's really profitable and it really works guys, like I hope this will help you for scalping and like don't hold tokens too long.
+[00:01:33] Like don't hold crypto too long, don't hold, all this old code is too long because if you hold it too long, you will lose money.
+[00:01:39] And also find this strategy that Fischal is going to show now, it works really good with gold. So people want to trade gold. He's going to show it on Sui, but I use it on the gold, on the low timeframe.
+[00:01:52] One, two, three, four candles using 0.1 load size, 0.2 load size, make my $200, do this three times a day and you're done.
+[00:02:03] So we're going to show you this. This is recorded. You just have to watch it a couple of times. And if you have any questions, you can always ask me as the team section or in the Zooms. So go for it Fischal.
+[00:02:20] Hey guys, yeah, I use four timeframe, one minute, five minutes, 15 minutes, one hour.
+[00:02:28] I like to see them all together for a better understanding of my price action. I use one hour. Why? Because one hour gives me the direction of what is happening.
+[00:02:43] If you see right now, this is 50 EMA for me. In one hour, the price is below the 50 EMA. That means it's still bearish.
+[00:02:56] So this gives me confidence that still buyers haven't come in place. So one hour, that's why I use higher timeframe to see the direction for a day.
+[00:03:10] One hour timeframe is the indication of day trading. So that gives me confidence or confluence that what's happening in the market.
+[00:03:21] And 15 minutes, it's the four times one hour, four candles of 15 minutes becomes one hour. So this also gives me, if you can see, I'll explain all together.
+[00:03:36] And so I'm just giving you a overview, like why I use what I use. So 15 minutes and then I come to five minutes and then one minute.
+[00:03:45] So I usually take trades on the one minute like I use. And then once I take a trade, I'll keep monitoring one minute and five minutes together.
+[00:03:58] So this is how in a sec, I use it. Okay. First of all, I use the indicator called TR main, traders reality main, this one.
+[00:04:09] So this gives me these EMA's. Okay. If you can see here, okay, this is 50 EMA and the yellow one is in a sec, 5 EMA.
+[00:04:24] And then this is 13, a red one is 13 and the white one is 200 and the purple one is 800 EMA. So this indicator allows me, if you see here.
+[00:04:37] So these are the EMA's, we use 5, 13, 50, 200 and 800. So this particular, this is free indicator, you can use it or else you can add EMA's separately.
+[00:04:52] But my whole strategy depends on the EMA's. So I use EMA and then you can use other stuff on this, I use psychological levels and all those stuff.
+[00:05:06] You can use them if you want. So you can play around with those things. Anything is interesting with you, then you can use them.
+[00:05:14] But I usually use the EMA's. Okay. This is the indicator and then in one hour in a sec, I use VWAP level.
+[00:05:24] Why in only one timeframe in a sec, I use VWAP is in a sec. If you see here, it's a 50 EMA on 5 and this is somewhere on 2.5, 2.5, 1, 3, 4.
+[00:05:34] But the same EMA in one hour, 50 EMA, which comes to 2.71. But VWAP is not like that. It stays the same for whole day.
+[00:05:47] Like if you see here, this was yesterday, yesterday's VWAP. The green one is the VWAP level. Okay.
+[00:05:55] And then if you see here, this is the daily open and then look at this. From day, the VWAP level stays the same.
+[00:06:04] If I turn on the same thing here, if you see here, right now we are at the VWAP 2.50 and in one hour also in a sec, it stays the same.
+[00:06:14] So in a sec, since I'm using four screens, four charts and single this thing in a sec, I just don't want to jumble up.
+[00:06:24] So that's why in a sec, I use only in one hour in a sec, the VWAP level. Apart from this in a sec, I use, this is RSI, this is Stockistic RSI and then this is MACD.
+[00:06:37] So yeah, these are the things that I use most probably in my trading strategy. Okay.
+[00:06:46] First of all, I have a question for you. So because we have a lot of new people, I want also to show them like, how do you split the screen?
+[00:06:58] Like how do you, I know that for the other people, like how do you split the screen in four?
+[00:07:04] Yeah, this is like, you see this layered setup in the trading view. Okay. You just have to come here, click this.
+[00:07:12] So you can choose how much screen you want to. If you want six screens, you can split screen six. If you want two, you can use two.
+[00:07:21] If you want four, you can use four. Since I have three screens, I can spare this one for in a sec, one screen click.
+[00:07:29] So yeah, this is how in a sec you can do it and you can save it in a sec, whatever you can save the setups layout.
+[00:07:39] Once you do that, and then this is like, this stays the same way or in a second, whatever is a scalping strategy or something.
+[00:07:48] Once you do this, if I just copy this or if I open another chart or something like this, and then if I open this, it opens for me.
+[00:08:07] Like I don't have to do anything, but every time, whatever coin you are trading on, you need to change the, see, every settings, everything will be same.
+[00:08:20] Once you save this as a layout. So yeah. Yes, sir. Yes, guys. I hope you guys understood that.
+[00:08:33] It's good. You know what I also, so the TR main indicator you're using, did you play with the settings?
+[00:08:43] Yeah, you, I have turned off so many things here. Show em is, these all will be on like show em levels.
+[00:08:52] Okay. If you click on that, this gives you like em levels. See here, these are the pivot levels. You can play around with those things.
+[00:09:06] If you want us like daily, high, daily, weekly, high, weekly, though, if you want those answer, you can, it's like, I just use only ems and I turn on the, okay, show weekly, weekly range levels and the monthly range levels.
+[00:09:25] Foreigners are high timeframe and so confluence. I just turn on those and then daily open. This is the daily open what you're seeing here. So it, it, it constantly give me like, you know, where we are in terms of, you know, daily open.
+[00:09:39] So we opened as a daily, daily candle is red as of now. So it gives me, you know, our view of this thing here.
+[00:09:49] And then I turn off these things and then sessions. I don't want to see the sessions in the, this thing. So I don't show market session.
+[00:10:02] It's like, if I turn on this and I was like, it, it, it comes like, which session are we trading on? So I don't want to jumble up in my screen. So in a sec, and I use this psychological level, psychological high and psychological low.
+[00:10:16] So this stays for another week. So these, these, all these levels also like good.
+[00:10:23] Okay. So this, this indicator is basically like give you all the session levels, the weekly levels, and also give you the EMA's and the psychological high and psychological low.
+[00:10:33] And pivot levels also. And the pivot levels and all these things. Oh, that's really nice, man.
+[00:10:39] Okay. Now you have the low screens. Yes.
+[00:10:42] Yeah. Along with that, it gives me the vector candles also. So these vector candles, my regular candles are like white and gray, gray and this thing.
+[00:10:54] So whenever, you know, we have more, more volume, if you see here, you know, whenever you are seeing the, this red candle, this is the red vector candle.
+[00:11:03] This is green vector candle, which means you have the simple meaning of this, the candles are like, you know, this candle has more volume than the previous 10 candles, like 200% more volume than the previous candles.
+[00:11:18] And the blue one is 150% more volume than the previous 10 candles. If you see the red candle, which means there's more selling than the previous 10 candles, 200%.
+[00:11:32] And then this purple one is 150%. So right now, if you see, we are crossing the 50 EMA with the vector candle, which, which means that there is little bit of volume coming in.
+[00:11:48] So yeah, this is how we, this is what it looks like this indicator offers. Yeah.
+[00:11:55] Okay, nice, nice, nice. Okay. Now, you explained how to do the screens, the indicator, people just have to play with it and get used to it.
+[00:12:05] Now, let's say, how do you take a trade? How do you do it?
+[00:12:11] Yeah. Okay, first of all, I look at the one hour timeframe. One hour in a second, it's still bearish for me.
+[00:12:19] Until in a sec, they claim this 50 EMA. So the whole market, whole market bias will be in a sec bearish. If you see here, look at this, when we dropped from 3.9 to 2.33 dollars, see, they never in a sec claimed the 50 EMA.
+[00:12:41] So when they claimed it, they gave a good, good move upside. See, look at this answer. Until this happens, there is still bearish momentum for me, until they claim it.
+[00:12:55] But yeah, this is how in a sec, but it doesn't matter. I don't take a trade based on the one hour timeframe.
+[00:13:04] Because in a sec, you know that in a sec, in one hour in a sec, we are bearish and then one minute in a sec, we can be bullish.
+[00:13:11] So similar way in a sec, in one hour in a sec, we can be bearish and then bullish and then in one minute, we can be bearish. Hope you know that.
+[00:13:22] Like, high timeframe in a sec bearish and then low timeframe in a sec, we can be bullish.
+[00:13:29] See, that's what this strategy of mine, this is, this whatever in a sec, I look, this only I look for in a sec to aim just 1% or 2% move, not more than that.
+[00:13:43] So if I'm taking a trade from here in a sec, I just look at my, this thing until in a sec, 2.50 in a sec, I enter 2.53.
+[00:13:54] So this kind of move in a sec, I'm looking not more than that. So you need to understand what extent or what point of view in a sec you are trading.
+[00:14:06] Because see, if you see oral trend, it is bearish and then you cannot expect market to in a sec go higher massively.
+[00:14:19] If you have that kind of this thing in a sec, because see, for example, in a sec, I had taken today, in a sec, I had taken the trade here, 2.51, 2.51 and then I closed it around 2.54.
+[00:14:34] If you, I can send this thing also. See, this is almost 0.86%. It did went up to another 1%.
+[00:14:44] Once they reached here, I just closed it. I didn't bother anything and I made around $120 or something. Yeah, that's it for me.
+[00:14:54] Yeah, that's good. That's the whole point of this because you're looking for just 1%. You're sticking to your system and you're looking for a scalp.
+[00:15:04] You don't care if it go higher. You don't care if it go, if it go like to the moon, like you're just looking for what you're looking for.
+[00:15:12] Because if they have a ring of structure, they will retest it again and you will take another trade.
+[00:15:18] Yeah, if you see, if I would have left that trade, I think the 2.51 from here and as I had taken 2.51, it went to 2%, 1.5% up and then it dropped.
+[00:15:34] 2.79%. See, this is what I don't want. Like, I don't want to round trip my entry. If I am up like $10, $20, well and good.
+[00:15:45] The moment I'm up at least 0.2% or something, I put my topless to entry.
+[00:15:51] If at all it is round tripping and then I just close my trades. I can take another trade.
+[00:16:00] So instead of losing, I'll get out of the market. That's good. Sometimes I miss out so many trades, but that's okay for me.
+[00:16:10] I really don't bother about those things.
+[00:16:14] No, to be honest, I'm doing also the same thing with the view up and on the gold.
+[00:16:21] I'm doing also like two screens, sometimes three, and I'm also scalping and I'm also looking for one, two candles and risking like 0.03 lot size.
+[00:16:33] Doing this like a couple of times and I make my $500, $600 and I'm done. So it's actually a similar strategy, but I find your strategy a little bit better because you're using EMAs
+[00:16:48] and you're using also the hourly. So for intraday trades, you see like if you are down training or up trending, so that's really good.
+[00:16:59] Nice, man. Nice.
+[00:17:01] Yes, sir. Okay, guys. This is the order of it. It's like what we use, what we don't use and then how I use it. Exactly.
+[00:17:10] So this is how it is. See, 50 EMA is the guidelines for me. So 50 EMA, I look at 50 EMA for a bearish or bullish confidence.
+[00:17:22] So if they are claiming 50 EMA, that is good, well and good for me. So if they are rejecting 50 EMA, that also I observe more.
+[00:17:30] Okay, first of all, I'll tell you that if you see here 5 and 13, okay, this yellow and red is 5 and 13.
+[00:17:39] These two EMAs are in a trend continuation. Okay. If we are bullish, for example, I had taken us long from 2.51 or something.
+[00:17:52] See here, they are holding the 5 EMA, 5 EMA, 5 EMA and then 13 EMA. They came back to 13. They took support on 13 and then went up.
+[00:18:01] So until they lose 5 and 13, that is the trend continuation.
+[00:18:06] So once they lose it, so you should know that they are coming back to 50 EMA.
+[00:18:13] So this happens in all the time frame. Okay, it's not only on 1 minute or 5 minutes, 15 minutes or 1 hour.
+[00:18:20] It happens always. If you see here in 1 hour also, let's go back any time frame.
+[00:18:29] Okay, let's go. See here. Okay, they claimed here. Look at this. They claimed the 50 EMA, went down and then they claimed it again.
+[00:18:45] If you see here, this is 1 hour time frame. Okay, it's not the small time frame.
+[00:18:49] They are above the 5 EMA, 5 EMA, 5 EMA. They lost 5, came back to 13 and then took support on 15.
+[00:18:59] And they continued higher again. So they are holding 5 EMA.
+[00:19:04] So you can hold the trade until they lose 5 and 13.
+[00:19:09] If they lose it, if you would have taken a long here and then until they lose it, if you could have just kept it, you know, 2.65%.
+[00:19:19] This is 1 hour time frame on this I'm talking about.
+[00:19:22] So this is how in 5 and 13 you can use EMA. And 50 EMA is the guidelines.
+[00:19:28] 50 EMA is the ultimate thing. If they lose it, see here, they lost the 50 EMA, came back, retested on the resistance, took a resistance.
+[00:19:40] If you would have taken a short here, this is like 2.35%. So this is how in Osaka I use it.
+[00:19:48] And 5 and 13 EMA, why I look at 5 and 13 is that those are the trend continuation.
+[00:19:56] So yeah, so 5 and 13 are trend continuation. 50 EMA is in Osaka, right now in Osaka.
+[00:20:05] See now, why I took trades here, like 5.1, right? 2.51.
+[00:20:11] So if you see here, this area, okay, I tried longing from here because in Osaka it was claiming 50 EMA.
+[00:20:21] Okay, it was around, hovering around 50 EMA and then they broke out.
+[00:20:26] I tried to in Osaka long it here and then I close somewhere here itself.
+[00:20:30] I was not in the trade in Osaka for long, but I observed something here on 5 minutes.
+[00:20:38] See this strategy, if you see 2 or 3 time frame are claiming the 50 EMA together.
+[00:20:50] So that is a good confluence and it's like you need to wait for that to happen.
+[00:20:55] So you can take long here, you can take long here, but if you get a confluence,
+[00:21:02] see here, this one, okay, this area and this area, those are the three areas, same areas.
+[00:21:14] If you see here, they went down the 50 EMA, they retested on the 50 EMA, they came back
+[00:21:22] and still they haven't broken the structure here and then they are holding it really good.
+[00:21:28] And right now it's happening, right now also.
+[00:21:31] And so we can go to the current time frame.
+[00:21:35] I'll show you why it is a good long from here.
+[00:21:38] Right now also in a second, it's just a good long because I'll give you why,
+[00:21:43] I think in a second, it's a good long towards 5, 6 or something.
+[00:21:49] But yeah, see here, 1 minute, 5 minutes, 5 minutes, they are claiming,
+[00:21:56] claiming with the vector candle, right here.
+[00:22:01] And this is why when they retested here, I took a long here because they went up,
+[00:22:08] they retested on this thing, they haven't broken 50 EMA on this thing.
+[00:22:14] And this is the first time they are crossing 250 EMA.
+[00:22:20] So most of them, they call this as a golden crossover, right?
+[00:22:24] So this is like, they crossed here, I took a long here, 5, 1 or something.
+[00:22:31] And when this was happening, if you see here, on 15 minutes, okay,
+[00:22:37] they would, what did they do after the big dump, they came back to 50 EMA, okay.
+[00:22:44] So and then from there they rejected it, they rejected, they rejected.
+[00:22:48] And then they tried to claim, this is the second time they wanted to claim.
+[00:22:53] And now if you see here, what I showed you here, went up, came down
+[00:22:59] and then they are another holding this low, right?
+[00:23:03] Similar way, look at this.
+[00:23:05] So they went up, they came down, they are holding this low.
+[00:23:09] So they haven't broke a structure here.
+[00:23:14] And this is the third time they are attempting.
+[00:23:17] In fact, if you see right now, this is the fourth time they are attempting
+[00:23:21] on the 15 minutes and on five minutes also.
+[00:23:25] So that's why, Inoussaka, I was telling you, look at this, Inoussaka rejected.
+[00:23:30] Oh, after this pump, they went up, they rejected this.
+[00:23:35] This was a short for you, 1.6%.
+[00:23:39] And this is the first time they, after this dump,
+[00:23:42] Inoussaka, this is where Inoussaka, they are claiming.
+[00:23:44] And they are claiming with the vector candles.
+[00:23:47] So any pullback you get here, so this is the long.
+[00:23:53] Why? Because, see, just now I explained, they are claiming 50 EMA.
+[00:23:59] They are claiming, they are trying to claim 15 EMA
+[00:24:03] and they already claimed one minute fire of 50 EMA, right?
+[00:24:08] So if you get a retest here, so this is the good long.
+[00:24:15] Until Inoussaka, until they come to 200 EMA on the five minutes.
+[00:24:21] See, 200 EMA, 200 EMA, these kind of Inoussaka acts as a resistance and support.
+[00:24:33] If you see here right now, and one more thing is,
+[00:24:36] Inoussaka, look at this, 50 EMA and 200 EMA are right here.
+[00:24:41] So this is why Inoussaka I think, and then I look at RSIs
+[00:24:46] and the VWAP level. If you see Inoussaka, MACD, Inoussaka Crossing,
+[00:24:50] Inoussaka, these are the bullish diffs, Inoussaka, from here, Inoussaka,
+[00:24:56] The stochastic is inoussaka gone up and the RSIs also up.
+[00:25:00] So better wait for Inoussaka retest or else,
+[00:25:04] Better wait for Inoussaka stochastic to come down
+[00:25:07] and then take a long from here.
+[00:25:09] So this is the good long, so in my opinion.
+[00:25:13] But for this Inoussaka, you need to wait for specific set of Inoussaka setups.
+[00:25:18] That is how Inoussaka you can make money on this.
+[00:25:21] Otherwise, Inoussaka, you get this 50 EMA crossovers all the time.
+[00:25:26] But if you get it like, Inoussaka, 1, 2, 3,
+[00:25:30] This is the perfect timing, Inoussaka, what we are recording right now
+[00:25:33] because it's happening right now.
+[00:25:35] And this is the good example.
+[00:25:37] So for these movements, Inoussaka, you need to wait.
+[00:25:41] So that's how Inoussaka you can make your money.
+[00:25:45] And if you get a full back here,
+[00:25:48] And then they don't break structure on this.
+[00:25:51] So this is a good long Inoussaka.
+[00:25:53] Even if you take a long from here,
+[00:25:55] I think you will get it on this thing.
+[00:26:00] So just aim for Inoussaka.
+[00:26:02] Inoussaka, yeah, daily Wokon or Inoussaka,
+[00:26:04] 200 EMA, 1% or something.
+[00:26:06] So that's your trick.
+[00:26:12] Just a quick scope, like 1, 2%.
+[00:26:16] And that's it.
+[00:26:17] Yeah.
+[00:26:18] So to sum it up, like you're looking at one minute to see if they cross.
+[00:26:23] And then you look at the five minutes,
+[00:26:25] and then you look at the 15, how many times they tested this level.
+[00:26:28] They want to go up.
+[00:26:29] You look at also the vector candles.
+[00:26:31] If they claim the EMAs with vector candles,
+[00:26:35] then you see like, okay, then you have a bias.
+[00:26:37] Like, okay, I'm going to take a long or take a short.
+[00:26:40] I have a question for you, official.
+[00:26:42] Yes, sir.
+[00:26:44] Like, maybe a good thing.
+[00:26:46] Can we put alarm on the EMA?
+[00:26:49] I think so.
+[00:26:50] On the VWO, this one.
+[00:26:53] I think yes, sir.
+[00:26:55] We can.
+[00:26:56] Can you press the right, right.
+[00:26:58] Yeah.
+[00:26:59] Press the right.
+[00:27:00] On your mouse.
+[00:27:02] Yeah.
+[00:27:03] Yeah.
+[00:27:04] Yeah.
+[00:27:05] Yeah.
+[00:27:06] You can add alarm.
+[00:27:07] Yeah.
+[00:27:08] Yeah.
+[00:27:09] So this could be your obsession.
+[00:27:10] Yeah.
+[00:27:11] This is TRMA.
+[00:27:12] TRMA.
+[00:27:13] And you can say like, okay, vector candles crossing.
+[00:27:16] So you can actually do when they cross.
+[00:27:19] So you have to play with the settings as well.
+[00:27:21] Like you see, like, okay.
+[00:27:22] If they, you said the five minutes.
+[00:27:24] Now they retested on this.
+[00:27:28] Wait for this thing because they are rejecting from a 50 EMA.
+[00:27:32] But if they show any strength here, because see, that's what, you know,
+[00:27:36] that I was telling you guys, the wait for, you know,
+[00:27:39] the retest reset on the stockistic car side.
+[00:27:43] So wait for it to turn around and then take a long.
+[00:27:48] See, whenever you know, stockistic is up.
+[00:27:51] So we need to wait because it will full pull back so many.
+[00:27:55] I have seen this also so many times.
+[00:27:57] So wait until it starts to go up or something.
+[00:28:02] And then we can take a long on this.
+[00:28:06] Yeah.
+[00:28:07] Well, you can actually put the alarm as well.
+[00:28:09] And then when it crosses like the EMA is crossing or it tested this 50
+[00:28:13] EMA or the view up, then you can take a long.
+[00:28:17] So you just have to take a scalp long.
+[00:28:21] And you just have to monitor the trade because you're scalping.
+[00:28:24] So you guys cannot like leave this straight and go to the supermarket.
+[00:28:28] You need to sit behind the chart because scalping, you need to sit behind the
+[00:28:32] chart. So this is a good one for sure.
+[00:28:36] So that's it. That's that's how you use it.
+[00:28:39] Do you want to add anything anymore?
+[00:28:42] Yeah, no, sir. No, sir. Now, if you see here,
+[00:28:46] they are the EMA is a crossing.
+[00:28:49] Sorry.
+[00:28:50] The stockistic is as it started to go up.
+[00:28:53] We started to go up.
+[00:28:54] They took a support on the 50 EMA.
+[00:28:56] This is a good long.
+[00:28:58] Now also we can take it right now also.
+[00:29:02] Let's say in a sec.
+[00:29:08] And then you can put your stop loss somewhere here.
+[00:29:11] Then you're waiting to come.
+[00:29:16] Wait.
+[00:29:17] Wait until your stockistic to come up.
+[00:29:20] And then that's your trade.
+[00:29:22] Yeah.
+[00:29:23] The stochastic can also cross like they're crossing.
+[00:29:25] And then you see like, okay, they're going to go up.
+[00:29:28] And you're also waiting.
+[00:29:29] What is the purple EMA on the top side?
+[00:29:31] That's 800 800.
+[00:29:33] Okay. That's a major one.
+[00:29:35] So they claim that that's actually a really good.
+[00:29:37] Good long as well.
+[00:29:39] Yeah.
+[00:29:40] Nice. Yeah.
+[00:29:41] So that's that's how you use scalp, especially when
+[00:29:46] when you look for a couple of percentage.
+[00:29:48] When the market is a little bit.
+[00:29:51] Like no volume in the weekend is good.
+[00:29:53] Also during the day.
+[00:29:55] When there is like less volume.
+[00:29:56] That's also a lot of volume.
+[00:29:58] That's really good.
+[00:29:59] So guys test it.
+[00:30:01] Test it.
+[00:30:02] See if it works for you.
+[00:30:05] Watch this video a couple of times and.
+[00:30:09] Yeah.
+[00:30:10] And if you have any questions, like we're going to do a lot of zooms.
+[00:30:14] So you can ask questions.
+[00:30:16] And you can ask the questions if you're still struggling to do this.
+[00:30:19] And we can also do this like next week on gold together.
+[00:30:23] We're going to test it on gold.
+[00:30:26] Then I'm going to show you my strategy.
+[00:30:28] How I do it on gold is a similar like official.
+[00:30:31] I'm using more the view up and I'm using also like other stuff like flat
+[00:30:36] candles and gaps and also looking at the Dixie.
+[00:30:42] So that's a good one official.
+[00:30:43] Thank you very much.
+[00:30:45] Yes.
+[00:30:46] Thank you for sharing.
+[00:30:47] Can you just show the people again the TR may indicator.
+[00:30:51] Yeah.
+[00:30:52] Sure.
+[00:30:53] Yes.
+[00:30:54] Yeah.
+[00:30:55] This is our greatest reality me.
+[00:30:56] Yes.
+[00:30:57] Yes.
+[00:30:58] So play with it.
+[00:30:59] And it's a really good.
+[00:31:00] It's a free one.
+[00:31:01] Yeah.
+[00:31:02] Free one.
+[00:31:03] Oh, really.
+[00:31:04] That's nice.
+[00:31:05] It's really good.
+[00:31:06] All right.
+[00:31:07] Thank you, sir.
+[00:31:08] Yes.
+[00:31:09] But yes.
+[00:31:10] So guys, before we before we hop off.
+[00:31:14] Um, uh, official is going to show you like, okay, he's doing this
+[00:31:18] scalping and with his indicators and with his time frames and he's
+[00:31:24] monitoring the trades and he's looking for, uh, one, two, 3% a day.
+[00:31:28] Uh, I think he's looking for 1% and if you get more, that's really
+[00:31:31] good.
+[00:31:32] So official, um, uh, yes, sir.
+[00:31:35] How many, how many started this now?
+[00:31:37] Uh, from first, I started this and I was like 17,000.
+[00:31:41] Uh, I started with $17,000.
+[00:31:43] Uh, right now I'm at, uh, 20,200 or something.
+[00:31:48] Yeah.
+[00:31:49] 20,000, uh, 20, uh, 2,200.
+[00:31:53] Uh, yeah.
+[00:31:55] So somewhere here in a sec, uh, 18th, even if I know sick, um, so
+[00:32:00] just focusing on one person, but yeah, I'm still ahead of like, uh,
+[00:32:04] four or five days.
+[00:32:05] Uh, so even if you do this as a continue to do this as a after, uh,
+[00:32:11] after, uh, after a hundred days, I'll be having, you know,
+[00:32:14] like I started with 17 K and then maybe in a circle,
+[00:32:17] I'll end up in a sec, having 45,000, even if I've,
+[00:32:20] even if I own like 40,000 with this, uh,
+[00:32:23] that's a hundred percent for me in three months.
+[00:32:26] Uh, I'm, I'm happy.
+[00:32:28] So if I continue this, the same one percent goal, uh,
+[00:32:32] for a year, I'll be ended up ended up having,
+[00:32:35] you know, so $319,000, but yeah, let's say,
+[00:32:38] you know, we have started this journey from this month.
+[00:32:41] It's just been like 10 days and it's like, I'm still, um,
+[00:32:44] I'm up like 20,200 or something.
+[00:32:47] So yes, let's see.
+[00:32:49] We will keep on posting you keep on updating our balances.
+[00:32:54] What is happening?
+[00:32:55] Yeah.
+[00:32:56] So yeah.
+[00:32:57] So you're looking, you're looking for one percent.
+[00:32:59] And so you get like, you look, you get more like two or three percent.
+[00:33:03] One, two percent.
+[00:33:04] Yeah.
+[00:33:05] Yeah.
+[00:33:06] And so you're, you're just,
+[00:33:07] so the first day you were looking for $170 to make.
+[00:33:11] Yeah.
+[00:33:12] I started the gold one also like, um,
+[00:33:16] I started on seven of October and then I'm already thousand dollars.
+[00:33:21] So yeah.
+[00:33:22] Nice.
+[00:33:23] So you doubled your account in, in, in, uh, how many days?
+[00:33:26] Three days.
+[00:33:27] Let's go.
+[00:33:28] You see, that's really good.
+[00:33:29] Like you, you, you start even with small capital,
+[00:33:31] like $500.
+[00:33:33] Yeah.
+[00:33:34] People need to understand like how powerful, uh, like how powerful this is,
+[00:33:39] this tool.
+[00:33:40] So you're actually made three, 33% in three days or maybe even more.
+[00:33:45] Yeah.
+[00:33:46] Yeah.
+[00:33:47] So that's, that's really good.
+[00:33:48] So you're looking, so the first day you were looking to make, uh,
+[00:33:52] one percent on gold.
+[00:33:53] So that's $5.
+[00:33:55] Yeah.
+[00:33:56] And I ended up earning $50 or something first day.
+[00:34:02] And then I stopped.
+[00:34:03] Uh, and then second day was around 120, 130 or something.
+[00:34:08] And then I stopped.
+[00:34:10] Um, because gold, gold, give you good moves.
+[00:34:13] Let's, let's do, let's do 3%.
+[00:34:15] Let's do 3% with 500 capital.
+[00:34:17] Uh, so, so you're looking for, let's say the first day, $15,
+[00:34:21] the second day, let's 15 50.
+[00:34:23] And let's say day 10, you're looking for $20 ish.
+[00:34:27] Um, and then you, like you already had of the curve,
+[00:34:30] but like to be honest guys, you're looking for 1%.
+[00:34:33] You can also look out.
+[00:34:35] That's your daily profits.
+[00:34:36] It depends on your capital, how you start with it.
+[00:34:38] Like if you start with 10 K, you, of course,
+[00:34:40] you're going to make, you need to make like a hundred dollars a day or
+[00:34:43] something like that.
+[00:34:44] Um, so.
+[00:34:45] Actually, we are here to tell you like,
+[00:34:48] there's a one percentage enough.
+[00:34:50] It's enough.
+[00:34:51] Yeah.
+[00:34:52] Enough money to in a second, uh, for a day.
+[00:34:54] Because see, you know,
+[00:34:55] the other day in the support we saw in the crypto, uh, crash,
+[00:34:59] the flash crash.
+[00:35:01] If I am in the trade, like if I'm holding something in the grade,
+[00:35:05] then that is when I get affected to these things.
+[00:35:08] If you are in a sculpting, if you are in no position, uh,
+[00:35:13] in any time, like, uh, so that, that won't affect you guys.
+[00:35:18] Like, uh, they do flash crash.
+[00:35:21] They do anything.
+[00:35:23] You know, so given black swan event,
+[00:35:25] there's anything could happen in the market.
+[00:35:28] Um, I'm not saying, you know, this will happen every day,
+[00:35:31] but you don't know when those things will happen,
+[00:35:34] but that doesn't affect you.
+[00:35:36] Uh, so many people, you know,
+[00:35:38] so long that, uh, low levels, but see, even, um,
+[00:35:43] I, I know it was a Farooq entered, uh, uh, long on the,
+[00:35:47] I think, uh, what, uh,
+[00:35:50] how much you made out of the, uh, with, uh,
+[00:35:55] with gold, you mean?
+[00:35:57] No, the tau tau tau trade.
+[00:35:59] Oh, that's right.
+[00:36:00] Yeah.
+[00:36:01] Yeah.
+[00:36:02] Yeah.
+[00:36:03] Yeah.
+[00:36:04] Yeah.
+[00:36:05] Yeah.
+[00:36:06] Yeah.
+[00:36:07] Yeah.
+[00:36:08] Yeah.
+[00:36:09] Yeah.
+[00:36:10] Yeah.
+[00:36:11] Yeah.
+[00:36:12] Yeah.
+[00:36:13] Yeah.
+[00:36:14] Yeah.
+[00:36:15] Yeah.
+[00:36:16] Yeah.
+[00:36:17] Yeah.
+[00:36:18] Yeah.
+[00:36:19] Yeah.
+[00:36:20] Yeah.
+[00:36:21] Oh, like it was when they dumped.
+[00:36:24] I let's see.
+[00:36:27] Um, you made how much money, sir?
+[00:36:30] I think I made $230 and I was risking, um,
+[00:36:35] I was risking like a 10, $20, something like that.
+[00:36:39] Yeah.
+[00:36:40] See, that's what I was like.
+[00:36:41] These are what I'm mean to tell you is that,
+[00:36:45] you know, said when,
+[00:36:46] When the flash crash happens, this blood thing happens, we are afraid to put more money.
+[00:36:53] See the same position, Farup would have reached around $500 or $1000, he would have made massive
+[00:37:02] money.
+[00:37:03] But see, that is the psychology of everybody, us.
+[00:37:09] Even I sculpt so many things, I was in and out, in and out so many times, but I was just
+[00:37:15] risking $50, nothing, not much.
+[00:37:18] I made around $1500 or $1600 in that crash.
+[00:37:23] But yeah, if I would have reached more money, I would have made money.
+[00:37:27] But yeah, that's what I said.
+[00:37:29] The nice thing is, Fishel, when you have this crash, or you have no crash, it's all about,
+[00:37:36] for me, the most important thing is time.
+[00:37:39] I don't want to stay too long in a trade, so the most important thing is time.
+[00:37:42] So the $230, $240 that I made, I was like 10 seconds in the trade.
+[00:37:48] If you make 10 seconds, I'm going to close it.
+[00:37:51] I don't care if they go to the moon.
+[00:37:54] And actually they went higher, but I don't care because I know how to make it.
+[00:37:58] Same thing with gold.
+[00:37:59] Like when you start sculpting on gold with his system, with you using Fishel, like you're
+[00:38:03] doing a couple of candles, I think you're going to see the hang of it.
+[00:38:08] You can actually make like 5% or 6% a day.
+[00:38:11] I was sculpting gold with my wife, and we are making a couple hundred dollars in a couple
+[00:38:18] of minutes.
+[00:38:19] We're looking also like a system, like we're doing more the orb, like the open range breakouts.
+[00:38:27] We are already ahead of the curve, but also I know when to stop.
+[00:38:32] I know, okay, this is the level.
+[00:38:34] I'm now over-trading, and I'm going to stop.
+[00:38:37] I'm using, let's say this wallet I used for the world room, I started with 5K, and I was
+[00:38:43] looking for 1, 2, 3% a day.
+[00:38:46] And now I'm, I think 11K, between the 10 and 11K up.
+[00:38:51] So I'm starting with 5K, so can you do capital 5K?
+[00:38:55] Yes, sir.
+[00:38:56] Yeah.
+[00:38:57] So 5K.
+[00:38:58] So I started with 5K, and I was looking for 1, 2%.
+[00:39:05] And I'm now, I'm now ending like at 10, 9, 10K, or something, 11K, something like that.
+[00:39:12] So I'm 70 days ahead, yeah.
+[00:39:15] So you're looking for 1%, but you get more, because you're looking at volume.
+[00:39:19] You are 75 days ahead, sir.
+[00:39:22] Yeah, yeah, yeah, on this one.
+[00:39:24] So I think even 11K, something like that, I'm now ahead of the curve.
+[00:39:29] People need to understand, like you're looking just for a couple of percents.
+[00:39:32] And I, after I get 1%, I take my, I take my $50 and I put my stop plus to entry, and I
+[00:39:38] get more.
+[00:39:39] Like, you don't have to cut the trades.
+[00:39:41] The most important thing is then you need to know, okay, I made my daily profit, I did
+[00:39:45] my daily percentage, I'm going to put my stop plus to entry, and I'm done.
+[00:39:50] And let's let it right.
+[00:39:52] And sometimes I just let, I don't look at the chart, and I see, oh man, TP4 hit, whoa.
+[00:39:58] And I am actually now 10K up.
+[00:40:01] And to be honest, Fishel, I'm going to do this for 100 days.
+[00:40:06] I'm not going to, I'm just going to keep doing this for 100 days.
+[00:40:09] I said, like, I'm going to do this for a month, but I'm going to do 5K for 100 days, and
+[00:40:13] then C, because 100 days is going so fast.
+[00:40:15] C in 100 days, of course, you're going to lose trades, but C in 100 days, how are
+[00:40:21] we going to end?
+[00:40:23] And in 100 days, you just have to make $130.
+[00:40:27] And the volume that gold can give you, like, especially if you do, like, you have a good
+[00:40:33] entry and your risk like 0.03 or 0.05, you can actually make easy $120, $200 a day.
+[00:40:42] And people look at our, look at our trades or what we took.
+[00:40:46] Okay.
+[00:40:47] Let's see.
+[00:40:48] We took a SUI trade.
+[00:40:49] Yeah.
+[00:40:50] I see.
+[00:40:51] Yeah.
+[00:40:52] Really good, Fishel.
+[00:40:53] Look, TP hit.
+[00:40:54] See, this was a good confluence because 15 minutes, five minutes, one minute, everything
+[00:41:01] was pumping.
+[00:41:02] And so this was like, see, we were looking for a 1%.
+[00:41:07] You end up in us are getting like 2.9%, 3% more.
+[00:41:14] You can put it as a stop loss, a little bigger if you want, it's like a one-to-one.
+[00:41:19] So yeah.
+[00:41:21] So now how much percent it went up since we started?
+[00:41:26] It's 2.3%, 3% up.
+[00:41:29] So 3% up, you're looking for 1% and let's say with your risk management and my risk management,
+[00:41:35] you can make like $200, $300 on a scale, on one candle, and you don't have to bother yourself
+[00:41:41] and look at the one hour now, they're going to resistance.
+[00:41:44] Yeah.
+[00:41:45] Going to 50 EMA.
+[00:41:47] So this could be your target.
+[00:41:49] Okay.
+[00:41:50] So if you are in a sec long on this, you are 200 EMA on this thing.
+[00:41:56] Look at that as a 200 EMA plus 50 EMA are aligning.
+[00:42:00] So this is your target.
+[00:42:02] So you can get out.
+[00:42:03] So officially, you take down 90% out.
+[00:42:06] What do you do now?
+[00:42:07] Like 75% out, 75% out and then put stop loss in profit somewhere here and then let
+[00:42:15] it ride.
+[00:42:16] Okay.
+[00:42:17] That's good.
+[00:42:18] So you don't get out, sir.
+[00:42:20] You got already 3%.
+[00:42:21] It's like, yeah, I know it might come back down here again.
+[00:42:25] And then when there's a run up, see, that's what I was telling you guys that there's
+[00:42:29] a wait for stockistics to reset and then starts to move up.
+[00:42:34] So it, the moment in a sec, see, look at this.
+[00:42:38] The moment in a sec, they did this.
+[00:42:42] So this is where in a sec, you can take a long on this and now they are already up.
+[00:42:47] So if you want to reenter this trade, what you have to do is wait until there's a stock
+[00:42:53] is fixed to reset.
+[00:42:55] So let them come back down and then maybe you can take a long, but yeah, you already
+[00:43:01] got that.
+[00:43:02] I said, I don't bother to in a sec, reenter on your sec, do this thing.
+[00:43:08] You made a daily profit already like, come on, guys.
+[00:43:10] We are sitting here.
+[00:43:11] We are recording.
+[00:43:12] We are now, I think 30 minutes in or so.
+[00:43:14] And he took this trade on the last, before he ended this Sony screen.
+[00:43:21] And like you're in this state for 15 minutes or 10 minutes and you're done.
+[00:43:25] You made a daily profit guys, like, like for me, swing trade doesn't work.
+[00:43:31] Holding it too long.
+[00:43:32] It doesn't work.
+[00:43:33] If you want to hold too long, hold it for spots.
+[00:43:35] Okay.
+[00:43:36] When you, when you have a big crash, if you want to do that, but when you want to
+[00:43:39] make your profits, like the most, like the most richest people in, in trading, they are
+[00:43:45] really traders.
+[00:43:46] They are scalpers.
+[00:43:47] They are doing this for one candle, two candles.
+[00:43:49] And that's it.
+[00:43:50] Like a lot of influencers, they, they, they scalp, look at even how they play NASDAQ or
+[00:43:56] they play gold.
+[00:43:57] They're looking at the one minute they scalp.
+[00:44:00] And this is a strategy that Fisher is using and I'm using it as well.
+[00:44:03] And it helps.
+[00:44:04] So guys, focus, back test it before you use it.
+[00:44:09] Maybe it doesn't work for you.
+[00:44:10] Maybe it worked for you and maybe it can make you profitable.
+[00:44:13] But please guys, like, know when you made your profit, exit the trade and don't sit
+[00:44:17] on the screen.
+[00:44:19] And there is always a new trade.
+[00:44:20] You can always trade the next day again.
+[00:44:23] And that's it guys.
+[00:44:24] Like you see, Fisher started with 17K, he's now way up.
+[00:44:27] And for me also, like, we started one October guys.
+[00:44:31] We started now one October.
+[00:44:33] And actually this weekend I didn't trade.
+[00:44:35] I didn't trade for two days.
+[00:44:37] So one, two, three, four, five, six, seven, eight, nine.
+[00:44:40] So I traded nine days this month.
+[00:44:45] Like I don't have to trade.
+[00:44:46] I don't have to force trades.
+[00:44:47] I'm just going to wait for Monday again to trade.
+[00:44:49] I'm just enjoying the weekend with my family.
+[00:44:51] So guys, thank you very much, Fisher.
+[00:44:54] Thank you for, for doing this for the, for the community.
+[00:44:58] And let's, let's see if it, if it helps them.
+[00:45:02] I think it will help them if they just stay disciplined
+[00:45:05] and how you explained it.
+[00:45:07] It's really good guy, really good official, like really good.
+[00:45:10] Okay. Thank you, sir.
+[00:45:11] Thank you.

@@ -1,0 +1,616 @@
+{"_meta": "VAD_APPROXIMATE", "timestamp_basis": "VAD_COMPRESSED", "note": "start/end are VAD-compressed, drift accumulates with length; re-locate by real audio for precise seeks", "see": "K-056/D-067"}
+{"start": 0.37, "end": 23.37, "text": "Alright, alright, good evening everybody, Farouk is here with Fischal. So guys, this is the strategy, the scalping strategy that Fischal is using. I'm also having conflicts with Fischal, like I'm also using the same strategy, he's only using EMAs and some indicators, so he's going to explain how he scalped under 1 minute, 5 minute, 15 minutes and 1 hour."}
+{"start": 23.37, "end": 38.37, "text": "He's looking for 1, 2, 3% a day and also using this by the way in my system, I'm also looking at more time frames under low time frame 1, 5 and 15 and to see how I can make my daily profit."}
+{"start": 38.37, "end": 50.37, "text": "So I'm looking for again like 1, 2, 3, 5% and make my 2, 3, $500 and I'm done for the day, I don't have to sit all day on the screen. People think like when you scalp, you sit like the whole day from the screen."}
+{"start": 50.37, "end": 66.37, "text": "No, you just have to look for a nice setup and you can take a trade and you make a daily profit and you're done. So Fischal is going to explain how you do it and how he does it and also he's going to show you what kind of indicators he's using."}
+{"start": 66.37, "end": 78.37, "text": "And also he's going to explain like when he started this whole strategy, he's doing down this for I think 8, 9 months, maybe even longer, I think a year official."}
+{"start": 78.37, "end": 93.37, "text": "Yeah, one year official starting this thing and he's really profitable and it really works guys, like I hope this will help you for scalping and like don't hold tokens too long."}
+{"start": 93.37, "end": 99.37, "text": "Like don't hold crypto too long, don't hold, all this old code is too long because if you hold it too long, you will lose money."}
+{"start": 99.37, "end": 111.37, "text": "And also find this strategy that Fischal is going to show now, it works really good with gold. So people want to trade gold. He's going to show it on Sui, but I use it on the gold, on the low timeframe."}
+{"start": 112.37, "end": 123.37, "text": "One, two, three, four candles using 0.1 load size, 0.2 load size, make my $200, do this three times a day and you're done."}
+{"start": 123.37, "end": 139.37, "text": "So we're going to show you this. This is recorded. You just have to watch it a couple of times. And if you have any questions, you can always ask me as the team section or in the Zooms. So go for it Fischal."}
+{"start": 140.37, "end": 148.37, "text": "Hey guys, yeah, I use four timeframe, one minute, five minutes, 15 minutes, one hour."}
+{"start": 148.37, "end": 163.37, "text": "I like to see them all together for a better understanding of my price action. I use one hour. Why? Because one hour gives me the direction of what is happening."}
+{"start": 163.37, "end": 176.37, "text": "If you see right now, this is 50 EMA for me. In one hour, the price is below the 50 EMA. That means it's still bearish."}
+{"start": 176.37, "end": 190.37, "text": "So this gives me confidence that still buyers haven't come in place. So one hour, that's why I use higher timeframe to see the direction for a day."}
+{"start": 190.37, "end": 201.37, "text": "One hour timeframe is the indication of day trading. So that gives me confidence or confluence that what's happening in the market."}
+{"start": 201.37, "end": 216.37, "text": "And 15 minutes, it's the four times one hour, four candles of 15 minutes becomes one hour. So this also gives me, if you can see, I'll explain all together."}
+{"start": 216.37, "end": 225.37, "text": "And so I'm just giving you a overview, like why I use what I use. So 15 minutes and then I come to five minutes and then one minute."}
+{"start": 225.37, "end": 238.37, "text": "So I usually take trades on the one minute like I use. And then once I take a trade, I'll keep monitoring one minute and five minutes together."}
+{"start": 238.37, "end": 249.37, "text": "So this is how in a sec, I use it. Okay. First of all, I use the indicator called TR main, traders reality main, this one."}
+{"start": 249.37, "end": 264.37, "text": "So this gives me these EMA's. Okay. If you can see here, okay, this is 50 EMA and the yellow one is in a sec, 5 EMA."}
+{"start": 264.37, "end": 277.37, "text": "And then this is 13, a red one is 13 and the white one is 200 and the purple one is 800 EMA. So this indicator allows me, if you see here."}
+{"start": 277.37, "end": 292.37, "text": "So these are the EMA's, we use 5, 13, 50, 200 and 800. So this particular, this is free indicator, you can use it or else you can add EMA's separately."}
+{"start": 292.37, "end": 306.37, "text": "But my whole strategy depends on the EMA's. So I use EMA and then you can use other stuff on this, I use psychological levels and all those stuff."}
+{"start": 306.37, "end": 314.37, "text": "You can use them if you want. So you can play around with those things. Anything is interesting with you, then you can use them."}
+{"start": 314.37, "end": 324.37, "text": "But I usually use the EMA's. Okay. This is the indicator and then in one hour in a sec, I use VWAP level."}
+{"start": 324.37, "end": 334.37, "text": "Why in only one timeframe in a sec, I use VWAP is in a sec. If you see here, it's a 50 EMA on 5 and this is somewhere on 2.5, 2.5, 1, 3, 4."}
+{"start": 334.37, "end": 347.37, "text": "But the same EMA in one hour, 50 EMA, which comes to 2.71. But VWAP is not like that. It stays the same for whole day."}
+{"start": 347.37, "end": 355.37, "text": "Like if you see here, this was yesterday, yesterday's VWAP. The green one is the VWAP level. Okay."}
+{"start": 355.37, "end": 364.37, "text": "And then if you see here, this is the daily open and then look at this. From day, the VWAP level stays the same."}
+{"start": 364.37, "end": 374.37, "text": "If I turn on the same thing here, if you see here, right now we are at the VWAP 2.50 and in one hour also in a sec, it stays the same."}
+{"start": 374.37, "end": 384.37, "text": "So in a sec, since I'm using four screens, four charts and single this thing in a sec, I just don't want to jumble up."}
+{"start": 384.37, "end": 397.37, "text": "So that's why in a sec, I use only in one hour in a sec, the VWAP level. Apart from this in a sec, I use, this is RSI, this is Stockistic RSI and then this is MACD."}
+{"start": 397.37, "end": 406.37, "text": "So yeah, these are the things that I use most probably in my trading strategy. Okay."}
+{"start": 406.37, "end": 418.37, "text": "First of all, I have a question for you. So because we have a lot of new people, I want also to show them like, how do you split the screen?"}
+{"start": 418.37, "end": 424.37, "text": "Like how do you, I know that for the other people, like how do you split the screen in four?"}
+{"start": 424.37, "end": 432.37, "text": "Yeah, this is like, you see this layered setup in the trading view. Okay. You just have to come here, click this."}
+{"start": 432.37, "end": 441.37, "text": "So you can choose how much screen you want to. If you want six screens, you can split screen six. If you want two, you can use two."}
+{"start": 441.37, "end": 449.37, "text": "If you want four, you can use four. Since I have three screens, I can spare this one for in a sec, one screen click."}
+{"start": 449.37, "end": 459.37, "text": "So yeah, this is how in a sec you can do it and you can save it in a sec, whatever you can save the setups layout."}
+{"start": 459.37, "end": 468.37, "text": "Once you do that, and then this is like, this stays the same way or in a second, whatever is a scalping strategy or something."}
+{"start": 468.37, "end": 487.67, "text": "Once you do this, if I just copy this or if I open another chart or something like this, and then if I open this, it opens for me."}
+{"start": 487.67, "end": 500.67, "text": "Like I don't have to do anything, but every time, whatever coin you are trading on, you need to change the, see, every settings, everything will be same."}
+{"start": 500.67, "end": 513.53, "text": "Once you save this as a layout. So yeah. Yes, sir. Yes, guys. I hope you guys understood that."}
+{"start": 513.53, "end": 523.53, "text": "It's good. You know what I also, so the TR main indicator you're using, did you play with the settings?"}
+{"start": 523.53, "end": 532.53, "text": "Yeah, you, I have turned off so many things here. Show em is, these all will be on like show em levels."}
+{"start": 532.53, "end": 546.53, "text": "Okay. If you click on that, this gives you like em levels. See here, these are the pivot levels. You can play around with those things."}
+{"start": 546.53, "end": 565.53, "text": "If you want us like daily, high, daily, weekly, high, weekly, though, if you want those answer, you can, it's like, I just use only ems and I turn on the, okay, show weekly, weekly range levels and the monthly range levels."}
+{"start": 565.53, "end": 579.53, "text": "Foreigners are high timeframe and so confluence. I just turn on those and then daily open. This is the daily open what you're seeing here. So it, it, it constantly give me like, you know, where we are in terms of, you know, daily open."}
+{"start": 579.53, "end": 589.53, "text": "So we opened as a daily, daily candle is red as of now. So it gives me, you know, our view of this thing here."}
+{"start": 589.53, "end": 602.53, "text": "And then I turn off these things and then sessions. I don't want to see the sessions in the, this thing. So I don't show market session."}
+{"start": 602.53, "end": 616.53, "text": "It's like, if I turn on this and I was like, it, it, it comes like, which session are we trading on? So I don't want to jumble up in my screen. So in a sec, and I use this psychological level, psychological high and psychological low."}
+{"start": 616.53, "end": 623.53, "text": "So this stays for another week. So these, these, all these levels also like good."}
+{"start": 623.53, "end": 633.53, "text": "Okay. So this, this indicator is basically like give you all the session levels, the weekly levels, and also give you the EMA's and the psychological high and psychological low."}
+{"start": 633.53, "end": 638.53, "text": "And pivot levels also. And the pivot levels and all these things. Oh, that's really nice, man."}
+{"start": 639.53, "end": 642.53, "text": "Okay. Now you have the low screens. Yes."}
+{"start": 642.53, "end": 654.53, "text": "Yeah. Along with that, it gives me the vector candles also. So these vector candles, my regular candles are like white and gray, gray and this thing."}
+{"start": 654.53, "end": 663.53, "text": "So whenever, you know, we have more, more volume, if you see here, you know, whenever you are seeing the, this red candle, this is the red vector candle."}
+{"start": 663.53, "end": 678.53, "text": "This is green vector candle, which means you have the simple meaning of this, the candles are like, you know, this candle has more volume than the previous 10 candles, like 200% more volume than the previous candles."}
+{"start": 678.53, "end": 692.53, "text": "And the blue one is 150% more volume than the previous 10 candles. If you see the red candle, which means there's more selling than the previous 10 candles, 200%."}
+{"start": 692.53, "end": 708.53, "text": "And then this purple one is 150%. So right now, if you see, we are crossing the 50 EMA with the vector candle, which, which means that there is little bit of volume coming in."}
+{"start": 708.53, "end": 715.53, "text": "So yeah, this is how we, this is what it looks like this indicator offers. Yeah."}
+{"start": 715.53, "end": 725.53, "text": "Okay, nice, nice, nice. Okay. Now, you explained how to do the screens, the indicator, people just have to play with it and get used to it."}
+{"start": 725.53, "end": 731.53, "text": "Now, let's say, how do you take a trade? How do you do it?"}
+{"start": 731.53, "end": 739.53, "text": "Yeah. Okay, first of all, I look at the one hour timeframe. One hour in a second, it's still bearish for me."}
+{"start": 739.53, "end": 761.53, "text": "Until in a sec, they claim this 50 EMA. So the whole market, whole market bias will be in a sec bearish. If you see here, look at this, when we dropped from 3.9 to 2.33 dollars, see, they never in a sec claimed the 50 EMA."}
+{"start": 761.53, "end": 775.53, "text": "So when they claimed it, they gave a good, good move upside. See, look at this answer. Until this happens, there is still bearish momentum for me, until they claim it."}
+{"start": 775.53, "end": 784.53, "text": "But yeah, this is how in a sec, but it doesn't matter. I don't take a trade based on the one hour timeframe."}
+{"start": 784.53, "end": 791.53, "text": "Because in a sec, you know that in a sec, in one hour in a sec, we are bearish and then one minute in a sec, we can be bullish."}
+{"start": 791.53, "end": 802.53, "text": "So similar way in a sec, in one hour in a sec, we can be bearish and then bullish and then in one minute, we can be bearish. Hope you know that."}
+{"start": 802.53, "end": 808.53, "text": "Like, high timeframe in a sec bearish and then low timeframe in a sec, we can be bullish."}
+{"start": 809.53, "end": 823.53, "text": "See, that's what this strategy of mine, this is, this whatever in a sec, I look, this only I look for in a sec to aim just 1% or 2% move, not more than that."}
+{"start": 823.53, "end": 834.53, "text": "So if I'm taking a trade from here in a sec, I just look at my, this thing until in a sec, 2.50 in a sec, I enter 2.53."}
+{"start": 834.53, "end": 846.53, "text": "So this kind of move in a sec, I'm looking not more than that. So you need to understand what extent or what point of view in a sec you are trading."}
+{"start": 846.53, "end": 859.53, "text": "Because see, if you see oral trend, it is bearish and then you cannot expect market to in a sec go higher massively."}
+{"start": 859.53, "end": 874.53, "text": "If you have that kind of this thing in a sec, because see, for example, in a sec, I had taken today, in a sec, I had taken the trade here, 2.51, 2.51 and then I closed it around 2.54."}
+{"start": 874.53, "end": 883.53, "text": "If you, I can send this thing also. See, this is almost 0.86%. It did went up to another 1%."}
+{"start": 884.53, "end": 894.53, "text": "Once they reached here, I just closed it. I didn't bother anything and I made around $120 or something. Yeah, that's it for me."}
+{"start": 894.53, "end": 904.53, "text": "Yeah, that's good. That's the whole point of this because you're looking for just 1%. You're sticking to your system and you're looking for a scalp."}
+{"start": 904.53, "end": 912.53, "text": "You don't care if it go higher. You don't care if it go, if it go like to the moon, like you're just looking for what you're looking for."}
+{"start": 912.53, "end": 918.53, "text": "Because if they have a ring of structure, they will retest it again and you will take another trade."}
+{"start": 918.53, "end": 933.53, "text": "Yeah, if you see, if I would have left that trade, I think the 2.51 from here and as I had taken 2.51, it went to 2%, 1.5% up and then it dropped."}
+{"start": 934.53, "end": 945.53, "text": "2.79%. See, this is what I don't want. Like, I don't want to round trip my entry. If I am up like $10, $20, well and good."}
+{"start": 945.53, "end": 951.53, "text": "The moment I'm up at least 0.2% or something, I put my topless to entry."}
+{"start": 951.53, "end": 960.53, "text": "If at all it is round tripping and then I just close my trades. I can take another trade."}
+{"start": 960.53, "end": 970.53, "text": "So instead of losing, I'll get out of the market. That's good. Sometimes I miss out so many trades, but that's okay for me."}
+{"start": 970.53, "end": 974.53, "text": "I really don't bother about those things."}
+{"start": 974.53, "end": 981.53, "text": "No, to be honest, I'm doing also the same thing with the view up and on the gold."}
+{"start": 981.53, "end": 993.53, "text": "I'm doing also like two screens, sometimes three, and I'm also scalping and I'm also looking for one, two candles and risking like 0.03 lot size."}
+{"start": 993.53, "end": 1007.53, "text": "Doing this like a couple of times and I make my $500, $600 and I'm done. So it's actually a similar strategy, but I find your strategy a little bit better because you're using EMAs"}
+{"start": 1008.53, "end": 1019.53, "text": "and you're using also the hourly. So for intraday trades, you see like if you are down training or up trending, so that's really good."}
+{"start": 1019.53, "end": 1021.53, "text": "Nice, man. Nice."}
+{"start": 1021.53, "end": 1030.53, "text": "Yes, sir. Okay, guys. This is the order of it. It's like what we use, what we don't use and then how I use it. Exactly."}
+{"start": 1030.53, "end": 1042.53, "text": "So this is how it is. See, 50 EMA is the guidelines for me. So 50 EMA, I look at 50 EMA for a bearish or bullish confidence."}
+{"start": 1042.53, "end": 1050.53, "text": "So if they are claiming 50 EMA, that is good, well and good for me. So if they are rejecting 50 EMA, that also I observe more."}
+{"start": 1050.53, "end": 1058.53, "text": "Okay, first of all, I'll tell you that if you see here 5 and 13, okay, this yellow and red is 5 and 13."}
+{"start": 1059.53, "end": 1071.53, "text": "These two EMAs are in a trend continuation. Okay. If we are bullish, for example, I had taken us long from 2.51 or something."}
+{"start": 1072.53, "end": 1081.53, "text": "See here, they are holding the 5 EMA, 5 EMA, 5 EMA and then 13 EMA. They came back to 13. They took support on 13 and then went up."}
+{"start": 1081.53, "end": 1085.53, "text": "So until they lose 5 and 13, that is the trend continuation."}
+{"start": 1086.53, "end": 1093.53, "text": "So once they lose it, so you should know that they are coming back to 50 EMA."}
+{"start": 1093.53, "end": 1100.53, "text": "So this happens in all the time frame. Okay, it's not only on 1 minute or 5 minutes, 15 minutes or 1 hour."}
+{"start": 1100.53, "end": 1108.53, "text": "It happens always. If you see here in 1 hour also, let's go back any time frame."}
+{"start": 1109.53, "end": 1125.32, "text": "Okay, let's go. See here. Okay, they claimed here. Look at this. They claimed the 50 EMA, went down and then they claimed it again."}
+{"start": 1125.32, "end": 1129.32, "text": "If you see here, this is 1 hour time frame. Okay, it's not the small time frame."}
+{"start": 1129.32, "end": 1138.32, "text": "They are above the 5 EMA, 5 EMA, 5 EMA. They lost 5, came back to 13 and then took support on 15."}
+{"start": 1139.32, "end": 1144.32, "text": "And they continued higher again. So they are holding 5 EMA."}
+{"start": 1144.32, "end": 1149.32, "text": "So you can hold the trade until they lose 5 and 13."}
+{"start": 1149.32, "end": 1159.32, "text": "If they lose it, if you would have taken a long here and then until they lose it, if you could have just kept it, you know, 2.65%."}
+{"start": 1159.32, "end": 1162.32, "text": "This is 1 hour time frame on this I'm talking about."}
+{"start": 1162.32, "end": 1168.32, "text": "So this is how in 5 and 13 you can use EMA. And 50 EMA is the guidelines."}
+{"start": 1168.32, "end": 1180.32, "text": "50 EMA is the ultimate thing. If they lose it, see here, they lost the 50 EMA, came back, retested on the resistance, took a resistance."}
+{"start": 1180.32, "end": 1188.32, "text": "If you would have taken a short here, this is like 2.35%. So this is how in Osaka I use it."}
+{"start": 1188.32, "end": 1196.32, "text": "And 5 and 13 EMA, why I look at 5 and 13 is that those are the trend continuation."}
+{"start": 1196.32, "end": 1205.32, "text": "So yeah, so 5 and 13 are trend continuation. 50 EMA is in Osaka, right now in Osaka."}
+{"start": 1205.32, "end": 1211.32, "text": "See now, why I took trades here, like 5.1, right? 2.51."}
+{"start": 1211.32, "end": 1221.32, "text": "So if you see here, this area, okay, I tried longing from here because in Osaka it was claiming 50 EMA."}
+{"start": 1221.32, "end": 1226.32, "text": "Okay, it was around, hovering around 50 EMA and then they broke out."}
+{"start": 1226.32, "end": 1230.32, "text": "I tried to in Osaka long it here and then I close somewhere here itself."}
+{"start": 1230.32, "end": 1238.32, "text": "I was not in the trade in Osaka for long, but I observed something here on 5 minutes."}
+{"start": 1238.32, "end": 1250.32, "text": "See this strategy, if you see 2 or 3 time frame are claiming the 50 EMA together."}
+{"start": 1250.32, "end": 1255.32, "text": "So that is a good confluence and it's like you need to wait for that to happen."}
+{"start": 1255.32, "end": 1262.32, "text": "So you can take long here, you can take long here, but if you get a confluence,"}
+{"start": 1262.32, "end": 1274.32, "text": "see here, this one, okay, this area and this area, those are the three areas, same areas."}
+{"start": 1274.32, "end": 1282.32, "text": "If you see here, they went down the 50 EMA, they retested on the 50 EMA, they came back"}
+{"start": 1282.32, "end": 1288.32, "text": "and still they haven't broken the structure here and then they are holding it really good."}
+{"start": 1288.32, "end": 1291.32, "text": "And right now it's happening, right now also."}
+{"start": 1291.32, "end": 1295.32, "text": "And so we can go to the current time frame."}
+{"start": 1295.32, "end": 1298.32, "text": "I'll show you why it is a good long from here."}
+{"start": 1298.32, "end": 1303.32, "text": "Right now also in a second, it's just a good long because I'll give you why,"}
+{"start": 1303.32, "end": 1309.32, "text": "I think in a second, it's a good long towards 5, 6 or something."}
+{"start": 1309.32, "end": 1316.32, "text": "But yeah, see here, 1 minute, 5 minutes, 5 minutes, they are claiming,"}
+{"start": 1316.32, "end": 1321.32, "text": "claiming with the vector candle, right here."}
+{"start": 1321.32, "end": 1328.32, "text": "And this is why when they retested here, I took a long here because they went up,"}
+{"start": 1328.32, "end": 1334.32, "text": "they retested on this thing, they haven't broken 50 EMA on this thing."}
+{"start": 1334.32, "end": 1340.32, "text": "And this is the first time they are crossing 250 EMA."}
+{"start": 1340.32, "end": 1344.32, "text": "So most of them, they call this as a golden crossover, right?"}
+{"start": 1344.32, "end": 1351.32, "text": "So this is like, they crossed here, I took a long here, 5, 1 or something."}
+{"start": 1351.32, "end": 1357.32, "text": "And when this was happening, if you see here, on 15 minutes, okay,"}
+{"start": 1357.32, "end": 1364.32, "text": "they would, what did they do after the big dump, they came back to 50 EMA, okay."}
+{"start": 1364.32, "end": 1368.32, "text": "So and then from there they rejected it, they rejected, they rejected."}
+{"start": 1368.32, "end": 1373.32, "text": "And then they tried to claim, this is the second time they wanted to claim."}
+{"start": 1373.32, "end": 1379.32, "text": "And now if you see here, what I showed you here, went up, came down"}
+{"start": 1379.32, "end": 1383.32, "text": "and then they are another holding this low, right?"}
+{"start": 1383.32, "end": 1385.32, "text": "Similar way, look at this."}
+{"start": 1385.32, "end": 1389.32, "text": "So they went up, they came down, they are holding this low."}
+{"start": 1389.32, "end": 1394.32, "text": "So they haven't broke a structure here."}
+{"start": 1394.32, "end": 1397.32, "text": "And this is the third time they are attempting."}
+{"start": 1397.32, "end": 1401.32, "text": "In fact, if you see right now, this is the fourth time they are attempting"}
+{"start": 1401.32, "end": 1405.32, "text": "on the 15 minutes and on five minutes also."}
+{"start": 1405.32, "end": 1410.32, "text": "So that's why, Inoussaka, I was telling you, look at this, Inoussaka rejected."}
+{"start": 1410.32, "end": 1415.32, "text": "Oh, after this pump, they went up, they rejected this."}
+{"start": 1415.32, "end": 1419.32, "text": "This was a short for you, 1.6%."}
+{"start": 1419.32, "end": 1422.32, "text": "And this is the first time they, after this dump,"}
+{"start": 1422.32, "end": 1424.32, "text": "Inoussaka, this is where Inoussaka, they are claiming."}
+{"start": 1424.32, "end": 1427.32, "text": "And they are claiming with the vector candles."}
+{"start": 1427.32, "end": 1433.32, "text": "So any pullback you get here, so this is the long."}
+{"start": 1433.32, "end": 1439.32, "text": "Why? Because, see, just now I explained, they are claiming 50 EMA."}
+{"start": 1439.32, "end": 1443.32, "text": "They are claiming, they are trying to claim 15 EMA"}
+{"start": 1443.32, "end": 1448.32, "text": "and they already claimed one minute fire of 50 EMA, right?"}
+{"start": 1448.32, "end": 1455.32, "text": "So if you get a retest here, so this is the good long."}
+{"start": 1455.32, "end": 1461.32, "text": "Until Inoussaka, until they come to 200 EMA on the five minutes."}
+{"start": 1461.32, "end": 1473.32, "text": "See, 200 EMA, 200 EMA, these kind of Inoussaka acts as a resistance and support."}
+{"start": 1473.32, "end": 1476.32, "text": "If you see here right now, and one more thing is,"}
+{"start": 1476.32, "end": 1481.32, "text": "Inoussaka, look at this, 50 EMA and 200 EMA are right here."}
+{"start": 1481.32, "end": 1486.32, "text": "So this is why Inoussaka I think, and then I look at RSIs"}
+{"start": 1486.32, "end": 1490.32, "text": "and the VWAP level. If you see Inoussaka, MACD, Inoussaka Crossing,"}
+{"start": 1490.32, "end": 1496.32, "text": "Inoussaka, these are the bullish diffs, Inoussaka, from here, Inoussaka,"}
+{"start": 1496.32, "end": 1500.32, "text": "The stochastic is inoussaka gone up and the RSIs also up."}
+{"start": 1500.32, "end": 1504.32, "text": "So better wait for Inoussaka retest or else,"}
+{"start": 1504.32, "end": 1507.32, "text": "Better wait for Inoussaka stochastic to come down"}
+{"start": 1507.32, "end": 1509.32, "text": "and then take a long from here."}
+{"start": 1509.32, "end": 1513.32, "text": "So this is the good long, so in my opinion."}
+{"start": 1513.32, "end": 1518.32, "text": "But for this Inoussaka, you need to wait for specific set of Inoussaka setups."}
+{"start": 1518.32, "end": 1521.32, "text": "That is how Inoussaka you can make money on this."}
+{"start": 1521.32, "end": 1526.32, "text": "Otherwise, Inoussaka, you get this 50 EMA crossovers all the time."}
+{"start": 1526.32, "end": 1530.32, "text": "But if you get it like, Inoussaka, 1, 2, 3,"}
+{"start": 1530.32, "end": 1533.32, "text": "This is the perfect timing, Inoussaka, what we are recording right now"}
+{"start": 1533.32, "end": 1535.32, "text": "because it's happening right now."}
+{"start": 1535.32, "end": 1537.32, "text": "And this is the good example."}
+{"start": 1537.32, "end": 1541.32, "text": "So for these movements, Inoussaka, you need to wait."}
+{"start": 1541.32, "end": 1545.32, "text": "So that's how Inoussaka you can make your money."}
+{"start": 1545.32, "end": 1548.32, "text": "And if you get a full back here,"}
+{"start": 1548.32, "end": 1551.32, "text": "And then they don't break structure on this."}
+{"start": 1551.32, "end": 1553.32, "text": "So this is a good long Inoussaka."}
+{"start": 1553.32, "end": 1555.32, "text": "Even if you take a long from here,"}
+{"start": 1555.32, "end": 1560.89, "text": "I think you will get it on this thing."}
+{"start": 1560.89, "end": 1562.89, "text": "So just aim for Inoussaka."}
+{"start": 1562.89, "end": 1564.89, "text": "Inoussaka, yeah, daily Wokon or Inoussaka,"}
+{"start": 1564.89, "end": 1566.89, "text": "200 EMA, 1% or something."}
+{"start": 1566.89, "end": 1572.2, "text": "So that's your trick."}
+{"start": 1572.2, "end": 1576.2, "text": "Just a quick scope, like 1, 2%."}
+{"start": 1576.2, "end": 1577.2, "text": "And that's it."}
+{"start": 1577.2, "end": 1578.2, "text": "Yeah."}
+{"start": 1578.2, "end": 1583.2, "text": "So to sum it up, like you're looking at one minute to see if they cross."}
+{"start": 1583.2, "end": 1585.2, "text": "And then you look at the five minutes,"}
+{"start": 1585.2, "end": 1588.2, "text": "and then you look at the 15, how many times they tested this level."}
+{"start": 1588.2, "end": 1589.2, "text": "They want to go up."}
+{"start": 1589.2, "end": 1591.2, "text": "You look at also the vector candles."}
+{"start": 1591.2, "end": 1595.2, "text": "If they claim the EMAs with vector candles,"}
+{"start": 1595.2, "end": 1597.2, "text": "then you see like, okay, then you have a bias."}
+{"start": 1597.2, "end": 1600.2, "text": "Like, okay, I'm going to take a long or take a short."}
+{"start": 1600.2, "end": 1602.2, "text": "I have a question for you, official."}
+{"start": 1602.2, "end": 1604.2, "text": "Yes, sir."}
+{"start": 1604.2, "end": 1606.2, "text": "Like, maybe a good thing."}
+{"start": 1606.2, "end": 1609.2, "text": "Can we put alarm on the EMA?"}
+{"start": 1609.2, "end": 1610.2, "text": "I think so."}
+{"start": 1610.2, "end": 1613.2, "text": "On the VWO, this one."}
+{"start": 1613.2, "end": 1615.2, "text": "I think yes, sir."}
+{"start": 1615.2, "end": 1616.2, "text": "We can."}
+{"start": 1616.2, "end": 1618.2, "text": "Can you press the right, right."}
+{"start": 1618.2, "end": 1619.2, "text": "Yeah."}
+{"start": 1619.2, "end": 1620.2, "text": "Press the right."}
+{"start": 1620.2, "end": 1622.2, "text": "On your mouse."}
+{"start": 1622.2, "end": 1623.2, "text": "Yeah."}
+{"start": 1623.2, "end": 1624.2, "text": "Yeah."}
+{"start": 1624.2, "end": 1625.2, "text": "Yeah."}
+{"start": 1625.2, "end": 1626.2, "text": "Yeah."}
+{"start": 1626.2, "end": 1627.2, "text": "You can add alarm."}
+{"start": 1627.2, "end": 1628.2, "text": "Yeah."}
+{"start": 1628.2, "end": 1629.2, "text": "Yeah."}
+{"start": 1629.2, "end": 1630.2, "text": "So this could be your obsession."}
+{"start": 1630.2, "end": 1631.2, "text": "Yeah."}
+{"start": 1631.2, "end": 1632.2, "text": "This is TRMA."}
+{"start": 1632.2, "end": 1633.2, "text": "TRMA."}
+{"start": 1633.2, "end": 1636.2, "text": "And you can say like, okay, vector candles crossing."}
+{"start": 1636.2, "end": 1639.2, "text": "So you can actually do when they cross."}
+{"start": 1639.2, "end": 1641.2, "text": "So you have to play with the settings as well."}
+{"start": 1641.2, "end": 1642.2, "text": "Like you see, like, okay."}
+{"start": 1642.2, "end": 1644.2, "text": "If they, you said the five minutes."}
+{"start": 1644.2, "end": 1648.2, "text": "Now they retested on this."}
+{"start": 1648.2, "end": 1652.2, "text": "Wait for this thing because they are rejecting from a 50 EMA."}
+{"start": 1652.2, "end": 1656.2, "text": "But if they show any strength here, because see, that's what, you know,"}
+{"start": 1656.2, "end": 1659.2, "text": "that I was telling you guys, the wait for, you know,"}
+{"start": 1659.2, "end": 1663.2, "text": "the retest reset on the stockistic car side."}
+{"start": 1663.2, "end": 1668.2, "text": "So wait for it to turn around and then take a long."}
+{"start": 1668.2, "end": 1671.2, "text": "See, whenever you know, stockistic is up."}
+{"start": 1671.2, "end": 1675.2, "text": "So we need to wait because it will full pull back so many."}
+{"start": 1675.2, "end": 1677.2, "text": "I have seen this also so many times."}
+{"start": 1677.2, "end": 1682.2, "text": "So wait until it starts to go up or something."}
+{"start": 1682.2, "end": 1686.2, "text": "And then we can take a long on this."}
+{"start": 1686.2, "end": 1687.2, "text": "Yeah."}
+{"start": 1687.2, "end": 1689.2, "text": "Well, you can actually put the alarm as well."}
+{"start": 1689.2, "end": 1693.2, "text": "And then when it crosses like the EMA is crossing or it tested this 50"}
+{"start": 1693.2, "end": 1697.2, "text": "EMA or the view up, then you can take a long."}
+{"start": 1697.2, "end": 1700.2, "text": "So you just have to take a scalp long."}
+{"start": 1701.2, "end": 1704.2, "text": "And you just have to monitor the trade because you're scalping."}
+{"start": 1704.2, "end": 1708.2, "text": "So you guys cannot like leave this straight and go to the supermarket."}
+{"start": 1708.2, "end": 1712.2, "text": "You need to sit behind the chart because scalping, you need to sit behind the"}
+{"start": 1712.2, "end": 1716.2, "text": "chart. So this is a good one for sure."}
+{"start": 1716.2, "end": 1719.2, "text": "So that's it. That's that's how you use it."}
+{"start": 1719.2, "end": 1722.2, "text": "Do you want to add anything anymore?"}
+{"start": 1722.2, "end": 1726.2, "text": "Yeah, no, sir. No, sir. Now, if you see here,"}
+{"start": 1726.2, "end": 1729.2, "text": "they are the EMA is a crossing."}
+{"start": 1729.2, "end": 1730.2, "text": "Sorry."}
+{"start": 1730.2, "end": 1733.2, "text": "The stockistic is as it started to go up."}
+{"start": 1733.2, "end": 1734.2, "text": "We started to go up."}
+{"start": 1734.2, "end": 1736.2, "text": "They took a support on the 50 EMA."}
+{"start": 1736.2, "end": 1738.2, "text": "This is a good long."}
+{"start": 1738.2, "end": 1742.2, "text": "Now also we can take it right now also."}
+{"start": 1742.2, "end": 1748.1, "text": "Let's say in a sec."}
+{"start": 1748.1, "end": 1751.1, "text": "And then you can put your stop loss somewhere here."}
+{"start": 1751.1, "end": 1756.37, "text": "Then you're waiting to come."}
+{"start": 1756.37, "end": 1757.37, "text": "Wait."}
+{"start": 1757.37, "end": 1760.37, "text": "Wait until your stockistic to come up."}
+{"start": 1760.37, "end": 1762.37, "text": "And then that's your trade."}
+{"start": 1762.37, "end": 1763.37, "text": "Yeah."}
+{"start": 1763.37, "end": 1765.37, "text": "The stochastic can also cross like they're crossing."}
+{"start": 1765.37, "end": 1768.37, "text": "And then you see like, okay, they're going to go up."}
+{"start": 1768.37, "end": 1769.37, "text": "And you're also waiting."}
+{"start": 1769.37, "end": 1771.37, "text": "What is the purple EMA on the top side?"}
+{"start": 1771.37, "end": 1773.37, "text": "That's 800 800."}
+{"start": 1773.37, "end": 1775.37, "text": "Okay. That's a major one."}
+{"start": 1775.37, "end": 1777.37, "text": "So they claim that that's actually a really good."}
+{"start": 1777.37, "end": 1779.37, "text": "Good long as well."}
+{"start": 1779.37, "end": 1780.37, "text": "Yeah."}
+{"start": 1780.37, "end": 1781.37, "text": "Nice. Yeah."}
+{"start": 1781.37, "end": 1786.37, "text": "So that's that's how you use scalp, especially when"}
+{"start": 1786.37, "end": 1788.37, "text": "when you look for a couple of percentage."}
+{"start": 1788.37, "end": 1791.37, "text": "When the market is a little bit."}
+{"start": 1791.37, "end": 1793.37, "text": "Like no volume in the weekend is good."}
+{"start": 1793.37, "end": 1795.37, "text": "Also during the day."}
+{"start": 1795.37, "end": 1796.37, "text": "When there is like less volume."}
+{"start": 1796.37, "end": 1798.37, "text": "That's also a lot of volume."}
+{"start": 1798.37, "end": 1799.37, "text": "That's really good."}
+{"start": 1799.37, "end": 1801.37, "text": "So guys test it."}
+{"start": 1801.37, "end": 1802.37, "text": "Test it."}
+{"start": 1802.37, "end": 1805.37, "text": "See if it works for you."}
+{"start": 1805.37, "end": 1809.37, "text": "Watch this video a couple of times and."}
+{"start": 1809.37, "end": 1810.37, "text": "Yeah."}
+{"start": 1810.37, "end": 1814.37, "text": "And if you have any questions, like we're going to do a lot of zooms."}
+{"start": 1814.37, "end": 1816.37, "text": "So you can ask questions."}
+{"start": 1816.37, "end": 1819.37, "text": "And you can ask the questions if you're still struggling to do this."}
+{"start": 1819.37, "end": 1823.37, "text": "And we can also do this like next week on gold together."}
+{"start": 1823.37, "end": 1826.37, "text": "We're going to test it on gold."}
+{"start": 1826.37, "end": 1828.37, "text": "Then I'm going to show you my strategy."}
+{"start": 1828.37, "end": 1831.37, "text": "How I do it on gold is a similar like official."}
+{"start": 1831.37, "end": 1836.37, "text": "I'm using more the view up and I'm using also like other stuff like flat"}
+{"start": 1836.37, "end": 1842.37, "text": "candles and gaps and also looking at the Dixie."}
+{"start": 1842.37, "end": 1843.37, "text": "So that's a good one official."}
+{"start": 1843.37, "end": 1845.37, "text": "Thank you very much."}
+{"start": 1845.37, "end": 1846.37, "text": "Yes."}
+{"start": 1846.37, "end": 1847.37, "text": "Thank you for sharing."}
+{"start": 1847.37, "end": 1851.37, "text": "Can you just show the people again the TR may indicator."}
+{"start": 1851.37, "end": 1852.37, "text": "Yeah."}
+{"start": 1852.37, "end": 1853.37, "text": "Sure."}
+{"start": 1853.37, "end": 1854.37, "text": "Yes."}
+{"start": 1854.37, "end": 1855.37, "text": "Yeah."}
+{"start": 1855.37, "end": 1856.37, "text": "This is our greatest reality me."}
+{"start": 1856.37, "end": 1857.37, "text": "Yes."}
+{"start": 1857.37, "end": 1858.37, "text": "Yes."}
+{"start": 1858.37, "end": 1859.37, "text": "So play with it."}
+{"start": 1859.37, "end": 1860.37, "text": "And it's a really good."}
+{"start": 1860.37, "end": 1861.37, "text": "It's a free one."}
+{"start": 1861.37, "end": 1862.37, "text": "Yeah."}
+{"start": 1862.37, "end": 1863.37, "text": "Free one."}
+{"start": 1863.37, "end": 1864.37, "text": "Oh, really."}
+{"start": 1864.37, "end": 1865.37, "text": "That's nice."}
+{"start": 1865.37, "end": 1866.37, "text": "It's really good."}
+{"start": 1866.37, "end": 1867.37, "text": "All right."}
+{"start": 1867.37, "end": 1868.37, "text": "Thank you, sir."}
+{"start": 1868.37, "end": 1869.37, "text": "Yes."}
+{"start": 1869.37, "end": 1870.37, "text": "But yes."}
+{"start": 1870.37, "end": 1874.37, "text": "So guys, before we before we hop off."}
+{"start": 1874.37, "end": 1878.37, "text": "Um, uh, official is going to show you like, okay, he's doing this"}
+{"start": 1878.37, "end": 1884.37, "text": "scalping and with his indicators and with his time frames and he's"}
+{"start": 1884.37, "end": 1888.37, "text": "monitoring the trades and he's looking for, uh, one, two, 3% a day."}
+{"start": 1888.37, "end": 1891.37, "text": "Uh, I think he's looking for 1% and if you get more, that's really"}
+{"start": 1891.37, "end": 1892.37, "text": "good."}
+{"start": 1892.37, "end": 1895.37, "text": "So official, um, uh, yes, sir."}
+{"start": 1895.37, "end": 1897.37, "text": "How many, how many started this now?"}
+{"start": 1897.37, "end": 1901.37, "text": "Uh, from first, I started this and I was like 17,000."}
+{"start": 1901.37, "end": 1903.37, "text": "Uh, I started with $17,000."}
+{"start": 1903.37, "end": 1908.37, "text": "Uh, right now I'm at, uh, 20,200 or something."}
+{"start": 1908.37, "end": 1909.37, "text": "Yeah."}
+{"start": 1909.37, "end": 1913.37, "text": "20,000, uh, 20, uh, 2,200."}
+{"start": 1913.37, "end": 1915.37, "text": "Uh, yeah."}
+{"start": 1915.37, "end": 1920.37, "text": "So somewhere here in a sec, uh, 18th, even if I know sick, um, so"}
+{"start": 1920.37, "end": 1924.37, "text": "just focusing on one person, but yeah, I'm still ahead of like, uh,"}
+{"start": 1924.37, "end": 1925.37, "text": "four or five days."}
+{"start": 1925.37, "end": 1931.37, "text": "Uh, so even if you do this as a continue to do this as a after, uh,"}
+{"start": 1931.37, "end": 1934.37, "text": "after, uh, after a hundred days, I'll be having, you know,"}
+{"start": 1934.37, "end": 1937.37, "text": "like I started with 17 K and then maybe in a circle,"}
+{"start": 1937.37, "end": 1940.37, "text": "I'll end up in a sec, having 45,000, even if I've,"}
+{"start": 1940.37, "end": 1943.37, "text": "even if I own like 40,000 with this, uh,"}
+{"start": 1943.37, "end": 1946.37, "text": "that's a hundred percent for me in three months."}
+{"start": 1946.37, "end": 1948.37, "text": "Uh, I'm, I'm happy."}
+{"start": 1948.37, "end": 1952.37, "text": "So if I continue this, the same one percent goal, uh,"}
+{"start": 1952.37, "end": 1955.37, "text": "for a year, I'll be ended up ended up having,"}
+{"start": 1955.37, "end": 1958.37, "text": "you know, so $319,000, but yeah, let's say,"}
+{"start": 1958.37, "end": 1961.37, "text": "you know, we have started this journey from this month."}
+{"start": 1961.37, "end": 1964.37, "text": "It's just been like 10 days and it's like, I'm still, um,"}
+{"start": 1964.37, "end": 1967.37, "text": "I'm up like 20,200 or something."}
+{"start": 1967.37, "end": 1969.37, "text": "So yes, let's see."}
+{"start": 1969.37, "end": 1974.37, "text": "We will keep on posting you keep on updating our balances."}
+{"start": 1974.37, "end": 1975.37, "text": "What is happening?"}
+{"start": 1975.37, "end": 1976.37, "text": "Yeah."}
+{"start": 1976.37, "end": 1977.37, "text": "So yeah."}
+{"start": 1977.37, "end": 1979.37, "text": "So you're looking, you're looking for one percent."}
+{"start": 1979.37, "end": 1983.37, "text": "And so you get like, you look, you get more like two or three percent."}
+{"start": 1983.37, "end": 1984.37, "text": "One, two percent."}
+{"start": 1984.37, "end": 1985.37, "text": "Yeah."}
+{"start": 1985.37, "end": 1986.37, "text": "Yeah."}
+{"start": 1986.37, "end": 1987.37, "text": "And so you're, you're just,"}
+{"start": 1987.37, "end": 1991.37, "text": "so the first day you were looking for $170 to make."}
+{"start": 1991.37, "end": 1992.37, "text": "Yeah."}
+{"start": 1992.37, "end": 1996.37, "text": "I started the gold one also like, um,"}
+{"start": 1996.37, "end": 2001.37, "text": "I started on seven of October and then I'm already thousand dollars."}
+{"start": 2001.37, "end": 2002.37, "text": "So yeah."}
+{"start": 2002.37, "end": 2003.37, "text": "Nice."}
+{"start": 2003.37, "end": 2006.37, "text": "So you doubled your account in, in, in, uh, how many days?"}
+{"start": 2006.37, "end": 2007.37, "text": "Three days."}
+{"start": 2007.37, "end": 2008.37, "text": "Let's go."}
+{"start": 2008.37, "end": 2009.37, "text": "You see, that's really good."}
+{"start": 2009.37, "end": 2011.37, "text": "Like you, you, you start even with small capital,"}
+{"start": 2011.37, "end": 2013.37, "text": "like $500."}
+{"start": 2013.37, "end": 2014.37, "text": "Yeah."}
+{"start": 2014.37, "end": 2019.37, "text": "People need to understand like how powerful, uh, like how powerful this is,"}
+{"start": 2019.37, "end": 2020.37, "text": "this tool."}
+{"start": 2020.37, "end": 2025.37, "text": "So you're actually made three, 33% in three days or maybe even more."}
+{"start": 2025.37, "end": 2026.37, "text": "Yeah."}
+{"start": 2026.37, "end": 2027.37, "text": "Yeah."}
+{"start": 2027.37, "end": 2028.37, "text": "So that's, that's really good."}
+{"start": 2028.37, "end": 2032.37, "text": "So you're looking, so the first day you were looking to make, uh,"}
+{"start": 2032.37, "end": 2033.37, "text": "one percent on gold."}
+{"start": 2033.37, "end": 2035.37, "text": "So that's $5."}
+{"start": 2035.37, "end": 2036.37, "text": "Yeah."}
+{"start": 2036.37, "end": 2042.37, "text": "And I ended up earning $50 or something first day."}
+{"start": 2042.37, "end": 2043.37, "text": "And then I stopped."}
+{"start": 2043.37, "end": 2048.37, "text": "Uh, and then second day was around 120, 130 or something."}
+{"start": 2048.37, "end": 2050.37, "text": "And then I stopped."}
+{"start": 2050.37, "end": 2053.37, "text": "Um, because gold, gold, give you good moves."}
+{"start": 2053.37, "end": 2055.37, "text": "Let's, let's do, let's do 3%."}
+{"start": 2055.37, "end": 2057.37, "text": "Let's do 3% with 500 capital."}
+{"start": 2057.37, "end": 2061.37, "text": "Uh, so, so you're looking for, let's say the first day, $15,"}
+{"start": 2061.37, "end": 2063.37, "text": "the second day, let's 15 50."}
+{"start": 2063.37, "end": 2067.37, "text": "And let's say day 10, you're looking for $20 ish."}
+{"start": 2067.37, "end": 2070.37, "text": "Um, and then you, like you already had of the curve,"}
+{"start": 2070.37, "end": 2073.37, "text": "but like to be honest guys, you're looking for 1%."}
+{"start": 2073.37, "end": 2075.37, "text": "You can also look out."}
+{"start": 2075.37, "end": 2076.37, "text": "That's your daily profits."}
+{"start": 2076.37, "end": 2078.37, "text": "It depends on your capital, how you start with it."}
+{"start": 2078.37, "end": 2080.37, "text": "Like if you start with 10 K, you, of course,"}
+{"start": 2080.37, "end": 2083.37, "text": "you're going to make, you need to make like a hundred dollars a day or"}
+{"start": 2083.37, "end": 2084.37, "text": "something like that."}
+{"start": 2084.37, "end": 2085.37, "text": "Um, so."}
+{"start": 2085.37, "end": 2088.37, "text": "Actually, we are here to tell you like,"}
+{"start": 2088.37, "end": 2090.37, "text": "there's a one percentage enough."}
+{"start": 2090.37, "end": 2091.37, "text": "It's enough."}
+{"start": 2091.37, "end": 2092.37, "text": "Yeah."}
+{"start": 2092.37, "end": 2094.37, "text": "Enough money to in a second, uh, for a day."}
+{"start": 2094.37, "end": 2095.37, "text": "Because see, you know,"}
+{"start": 2095.37, "end": 2099.37, "text": "the other day in the support we saw in the crypto, uh, crash,"}
+{"start": 2099.37, "end": 2101.37, "text": "the flash crash."}
+{"start": 2101.37, "end": 2105.37, "text": "If I am in the trade, like if I'm holding something in the grade,"}
+{"start": 2105.37, "end": 2108.37, "text": "then that is when I get affected to these things."}
+{"start": 2108.37, "end": 2113.37, "text": "If you are in a sculpting, if you are in no position, uh,"}
+{"start": 2113.37, "end": 2118.37, "text": "in any time, like, uh, so that, that won't affect you guys."}
+{"start": 2118.37, "end": 2121.37, "text": "Like, uh, they do flash crash."}
+{"start": 2121.37, "end": 2123.37, "text": "They do anything."}
+{"start": 2123.37, "end": 2125.37, "text": "You know, so given black swan event,"}
+{"start": 2125.37, "end": 2128.37, "text": "there's anything could happen in the market."}
+{"start": 2128.37, "end": 2131.37, "text": "Um, I'm not saying, you know, this will happen every day,"}
+{"start": 2131.37, "end": 2134.37, "text": "but you don't know when those things will happen,"}
+{"start": 2134.37, "end": 2136.37, "text": "but that doesn't affect you."}
+{"start": 2136.37, "end": 2138.37, "text": "Uh, so many people, you know,"}
+{"start": 2138.37, "end": 2143.37, "text": "so long that, uh, low levels, but see, even, um,"}
+{"start": 2143.37, "end": 2147.37, "text": "I, I know it was a Farooq entered, uh, uh, long on the,"}
+{"start": 2147.37, "end": 2150.37, "text": "I think, uh, what, uh,"}
+{"start": 2150.37, "end": 2155.37, "text": "how much you made out of the, uh, with, uh,"}
+{"start": 2155.37, "end": 2157.37, "text": "with gold, you mean?"}
+{"start": 2157.37, "end": 2159.37, "text": "No, the tau tau tau trade."}
+{"start": 2159.37, "end": 2160.37, "text": "Oh, that's right."}
+{"start": 2160.37, "end": 2161.37, "text": "Yeah."}
+{"start": 2161.37, "end": 2162.37, "text": "Yeah."}
+{"start": 2162.37, "end": 2163.37, "text": "Yeah."}
+{"start": 2163.37, "end": 2164.37, "text": "Yeah."}
+{"start": 2164.37, "end": 2165.37, "text": "Yeah."}
+{"start": 2165.37, "end": 2166.37, "text": "Yeah."}
+{"start": 2166.37, "end": 2167.37, "text": "Yeah."}
+{"start": 2167.37, "end": 2168.37, "text": "Yeah."}
+{"start": 2168.37, "end": 2169.37, "text": "Yeah."}
+{"start": 2169.37, "end": 2170.37, "text": "Yeah."}
+{"start": 2170.37, "end": 2171.37, "text": "Yeah."}
+{"start": 2171.37, "end": 2172.37, "text": "Yeah."}
+{"start": 2172.37, "end": 2173.37, "text": "Yeah."}
+{"start": 2173.37, "end": 2174.37, "text": "Yeah."}
+{"start": 2174.37, "end": 2175.37, "text": "Yeah."}
+{"start": 2175.37, "end": 2176.37, "text": "Yeah."}
+{"start": 2176.37, "end": 2177.37, "text": "Yeah."}
+{"start": 2177.37, "end": 2178.37, "text": "Yeah."}
+{"start": 2178.37, "end": 2179.37, "text": "Yeah."}
+{"start": 2179.37, "end": 2180.37, "text": "Yeah."}
+{"start": 2180.37, "end": 2181.37, "text": "Yeah."}
+{"start": 2181.37, "end": 2184.37, "text": "Oh, like it was when they dumped."}
+{"start": 2184.37, "end": 2187.43, "text": "I let's see."}
+{"start": 2187.43, "end": 2190.37, "text": "Um, you made how much money, sir?"}
+{"start": 2190.37, "end": 2195.37, "text": "I think I made $230 and I was risking, um,"}
+{"start": 2195.37, "end": 2199.37, "text": "I was risking like a 10, $20, something like that."}
+{"start": 2199.37, "end": 2200.37, "text": "Yeah."}
+{"start": 2200.37, "end": 2201.37, "text": "See, that's what I was like."}
+{"start": 2201.37, "end": 2205.37, "text": "These are what I'm mean to tell you is that,"}
+{"start": 2205.37, "end": 2206.37, "text": "you know, said when,"}
+{"start": 2206.37, "end": 2213.57, "text": "When the flash crash happens, this blood thing happens, we are afraid to put more money."}
+{"start": 2213.57, "end": 2222.45, "text": "See the same position, Farup would have reached around $500 or $1000, he would have made massive"}
+{"start": 2222.45, "end": 2223.45, "text": "money."}
+{"start": 2223.45, "end": 2229.09, "text": "But see, that is the psychology of everybody, us."}
+{"start": 2229.09, "end": 2235.41, "text": "Even I sculpt so many things, I was in and out, in and out so many times, but I was just"}
+{"start": 2235.41, "end": 2238.37, "text": "risking $50, nothing, not much."}
+{"start": 2238.37, "end": 2243.53, "text": "I made around $1500 or $1600 in that crash."}
+{"start": 2243.53, "end": 2247.73, "text": "But yeah, if I would have reached more money, I would have made money."}
+{"start": 2247.73, "end": 2249.35, "text": "But yeah, that's what I said."}
+{"start": 2249.35, "end": 2256.45, "text": "The nice thing is, Fishel, when you have this crash, or you have no crash, it's all about,"}
+{"start": 2256.45, "end": 2259.69, "text": "for me, the most important thing is time."}
+{"start": 2259.69, "end": 2262.97, "text": "I don't want to stay too long in a trade, so the most important thing is time."}
+{"start": 2262.97, "end": 2268.37, "text": "So the $230, $240 that I made, I was like 10 seconds in the trade."}
+{"start": 2268.37, "end": 2271.89, "text": "If you make 10 seconds, I'm going to close it."}
+{"start": 2271.89, "end": 2274.89, "text": "I don't care if they go to the moon."}
+{"start": 2274.89, "end": 2278.05, "text": "And actually they went higher, but I don't care because I know how to make it."}
+{"start": 2278.05, "end": 2279.17, "text": "Same thing with gold."}
+{"start": 2279.17, "end": 2283.17, "text": "Like when you start sculpting on gold with his system, with you using Fishel, like you're"}
+{"start": 2283.17, "end": 2288.13, "text": "doing a couple of candles, I think you're going to see the hang of it."}
+{"start": 2288.13, "end": 2291.13, "text": "You can actually make like 5% or 6% a day."}
+{"start": 2291.13, "end": 2298.37, "text": "I was sculpting gold with my wife, and we are making a couple hundred dollars in a couple"}
+{"start": 2298.37, "end": 2299.37, "text": "of minutes."}
+{"start": 2299.37, "end": 2307.21, "text": "We're looking also like a system, like we're doing more the orb, like the open range breakouts."}
+{"start": 2307.21, "end": 2312.81, "text": "We are already ahead of the curve, but also I know when to stop."}
+{"start": 2312.81, "end": 2314.89, "text": "I know, okay, this is the level."}
+{"start": 2314.89, "end": 2317.05, "text": "I'm now over-trading, and I'm going to stop."}
+{"start": 2317.61, "end": 2323.57, "text": "I'm using, let's say this wallet I used for the world room, I started with 5K, and I was"}
+{"start": 2323.57, "end": 2326.97, "text": "looking for 1, 2, 3% a day."}
+{"start": 2326.97, "end": 2331.33, "text": "And now I'm, I think 11K, between the 10 and 11K up."}
+{"start": 2331.33, "end": 2335.45, "text": "So I'm starting with 5K, so can you do capital 5K?"}
+{"start": 2335.45, "end": 2336.45, "text": "Yes, sir."}
+{"start": 2336.45, "end": 2337.45, "text": "Yeah."}
+{"start": 2337.45, "end": 2338.45, "text": "So 5K."}
+{"start": 2338.45, "end": 2345.21, "text": "So I started with 5K, and I was looking for 1, 2%."}
+{"start": 2345.21, "end": 2352.73, "text": "And I'm now, I'm now ending like at 10, 9, 10K, or something, 11K, something like that."}
+{"start": 2352.73, "end": 2355.33, "text": "So I'm 70 days ahead, yeah."}
+{"start": 2355.33, "end": 2359.89, "text": "So you're looking for 1%, but you get more, because you're looking at volume."}
+{"start": 2359.89, "end": 2362.17, "text": "You are 75 days ahead, sir."}
+{"start": 2362.17, "end": 2364.77, "text": "Yeah, yeah, yeah, on this one."}
+{"start": 2364.77, "end": 2369.57, "text": "So I think even 11K, something like that, I'm now ahead of the curve."}
+{"start": 2369.57, "end": 2372.77, "text": "People need to understand, like you're looking just for a couple of percents."}
+{"start": 2372.77, "end": 2378.77, "text": "And I, after I get 1%, I take my, I take my $50 and I put my stop plus to entry, and I"}
+{"start": 2378.77, "end": 2379.77, "text": "get more."}
+{"start": 2379.77, "end": 2381.37, "text": "Like, you don't have to cut the trades."}
+{"start": 2381.37, "end": 2385.81, "text": "The most important thing is then you need to know, okay, I made my daily profit, I did"}
+{"start": 2385.81, "end": 2390.93, "text": "my daily percentage, I'm going to put my stop plus to entry, and I'm done."}
+{"start": 2390.93, "end": 2392.73, "text": "And let's let it right."}
+{"start": 2392.73, "end": 2398.29, "text": "And sometimes I just let, I don't look at the chart, and I see, oh man, TP4 hit, whoa."}
+{"start": 2398.29, "end": 2401.61, "text": "And I am actually now 10K up."}
+{"start": 2401.61, "end": 2406.21, "text": "And to be honest, Fishel, I'm going to do this for 100 days."}
+{"start": 2406.21, "end": 2409.29, "text": "I'm not going to, I'm just going to keep doing this for 100 days."}
+{"start": 2409.29, "end": 2413.53, "text": "I said, like, I'm going to do this for a month, but I'm going to do 5K for 100 days, and"}
+{"start": 2413.53, "end": 2415.81, "text": "then C, because 100 days is going so fast."}
+{"start": 2415.81, "end": 2421.69, "text": "C in 100 days, of course, you're going to lose trades, but C in 100 days, how are"}
+{"start": 2421.69, "end": 2423.69, "text": "we going to end?"}
+{"start": 2423.69, "end": 2427.25, "text": "And in 100 days, you just have to make $130."}
+{"start": 2427.25, "end": 2433.41, "text": "And the volume that gold can give you, like, especially if you do, like, you have a good"}
+{"start": 2433.41, "end": 2442.65, "text": "entry and your risk like 0.03 or 0.05, you can actually make easy $120, $200 a day."}
+{"start": 2442.65, "end": 2446.13, "text": "And people look at our, look at our trades or what we took."}
+{"start": 2446.13, "end": 2447.13, "text": "Okay."}
+{"start": 2447.13, "end": 2448.13, "text": "Let's see."}
+{"start": 2448.13, "end": 2449.13, "text": "We took a SUI trade."}
+{"start": 2449.13, "end": 2450.13, "text": "Yeah."}
+{"start": 2450.13, "end": 2451.13, "text": "I see."}
+{"start": 2451.13, "end": 2452.13, "text": "Yeah."}
+{"start": 2452.13, "end": 2453.13, "text": "Really good, Fishel."}
+{"start": 2453.13, "end": 2454.13, "text": "Look, TP hit."}
+{"start": 2454.13, "end": 2461.37, "text": "See, this was a good confluence because 15 minutes, five minutes, one minute, everything"}
+{"start": 2461.37, "end": 2462.37, "text": "was pumping."}
+{"start": 2462.37, "end": 2467.81, "text": "And so this was like, see, we were looking for a 1%."}
+{"start": 2467.81, "end": 2474.65, "text": "You end up in us are getting like 2.9%, 3% more."}
+{"start": 2474.65, "end": 2479.65, "text": "You can put it as a stop loss, a little bigger if you want, it's like a one-to-one."}
+{"start": 2479.65, "end": 2480.65, "text": "So yeah."}
+{"start": 2481.65, "end": 2486.21, "text": "So now how much percent it went up since we started?"}
+{"start": 2486.21, "end": 2489.57, "text": "It's 2.3%, 3% up."}
+{"start": 2489.57, "end": 2495.89, "text": "So 3% up, you're looking for 1% and let's say with your risk management and my risk management,"}
+{"start": 2495.89, "end": 2501.85, "text": "you can make like $200, $300 on a scale, on one candle, and you don't have to bother yourself"}
+{"start": 2501.85, "end": 2504.45, "text": "and look at the one hour now, they're going to resistance."}
+{"start": 2504.45, "end": 2505.45, "text": "Yeah."}
+{"start": 2505.45, "end": 2507.01, "text": "Going to 50 EMA."}
+{"start": 2507.01, "end": 2509.13, "text": "So this could be your target."}
+{"start": 2509.13, "end": 2510.13, "text": "Okay."}
+{"start": 2510.13, "end": 2516.77, "text": "So if you are in a sec long on this, you are 200 EMA on this thing."}
+{"start": 2516.77, "end": 2520.81, "text": "Look at that as a 200 EMA plus 50 EMA are aligning."}
+{"start": 2520.81, "end": 2522.79, "text": "So this is your target."}
+{"start": 2522.79, "end": 2523.79, "text": "So you can get out."}
+{"start": 2523.79, "end": 2526.33, "text": "So officially, you take down 90% out."}
+{"start": 2526.33, "end": 2527.33, "text": "What do you do now?"}
+{"start": 2527.33, "end": 2535.13, "text": "Like 75% out, 75% out and then put stop loss in profit somewhere here and then let"}
+{"start": 2535.13, "end": 2536.13, "text": "it ride."}
+{"start": 2536.13, "end": 2537.13, "text": "Okay."}
+{"start": 2537.13, "end": 2538.13, "text": "That's good."}
+{"start": 2538.13, "end": 2540.23, "text": "So you don't get out, sir."}
+{"start": 2540.23, "end": 2541.23, "text": "You got already 3%."}
+{"start": 2541.23, "end": 2545.37, "text": "It's like, yeah, I know it might come back down here again."}
+{"start": 2545.37, "end": 2549.29, "text": "And then when there's a run up, see, that's what I was telling you guys that there's"}
+{"start": 2549.29, "end": 2554.93, "text": "a wait for stockistics to reset and then starts to move up."}
+{"start": 2554.93, "end": 2558.81, "text": "So it, the moment in a sec, see, look at this."}
+{"start": 2558.81, "end": 2562.69, "text": "The moment in a sec, they did this."}
+{"start": 2562.69, "end": 2567.41, "text": "So this is where in a sec, you can take a long on this and now they are already up."}
+{"start": 2567.41, "end": 2573.21, "text": "So if you want to reenter this trade, what you have to do is wait until there's a stock"}
+{"start": 2573.21, "end": 2575.83, "text": "is fixed to reset."}
+{"start": 2575.83, "end": 2581.77, "text": "So let them come back down and then maybe you can take a long, but yeah, you already"}
+{"start": 2581.77, "end": 2582.77, "text": "got that."}
+{"start": 2582.77, "end": 2588.53, "text": "I said, I don't bother to in a sec, reenter on your sec, do this thing."}
+{"start": 2588.53, "end": 2590.85, "text": "You made a daily profit already like, come on, guys."}
+{"start": 2590.85, "end": 2591.85, "text": "We are sitting here."}
+{"start": 2591.85, "end": 2592.85, "text": "We are recording."}
+{"start": 2592.85, "end": 2594.85, "text": "We are now, I think 30 minutes in or so."}
+{"start": 2594.85, "end": 2601.41, "text": "And he took this trade on the last, before he ended this Sony screen."}
+{"start": 2601.41, "end": 2605.65, "text": "And like you're in this state for 15 minutes or 10 minutes and you're done."}
+{"start": 2605.65, "end": 2611.41, "text": "You made a daily profit guys, like, like for me, swing trade doesn't work."}
+{"start": 2611.41, "end": 2612.41, "text": "Holding it too long."}
+{"start": 2612.41, "end": 2613.41, "text": "It doesn't work."}
+{"start": 2613.41, "end": 2615.21, "text": "If you want to hold too long, hold it for spots."}
+{"start": 2615.21, "end": 2616.21, "text": "Okay."}
+{"start": 2616.21, "end": 2619.37, "text": "When you, when you have a big crash, if you want to do that, but when you want to"}
+{"start": 2619.37, "end": 2625.09, "text": "make your profits, like the most, like the most richest people in, in trading, they are"}
+{"start": 2625.09, "end": 2626.09, "text": "really traders."}
+{"start": 2626.09, "end": 2627.09, "text": "They are scalpers."}
+{"start": 2627.09, "end": 2629.57, "text": "They are doing this for one candle, two candles."}
+{"start": 2629.57, "end": 2630.57, "text": "And that's it."}
+{"start": 2630.57, "end": 2636.81, "text": "Like a lot of influencers, they, they, they scalp, look at even how they play NASDAQ or"}
+{"start": 2636.81, "end": 2637.81, "text": "they play gold."}
+{"start": 2637.81, "end": 2640.05, "text": "They're looking at the one minute they scalp."}
+{"start": 2640.05, "end": 2643.53, "text": "And this is a strategy that Fisher is using and I'm using it as well."}
+{"start": 2643.53, "end": 2644.53, "text": "And it helps."}
+{"start": 2644.53, "end": 2649.41, "text": "So guys, focus, back test it before you use it."}
+{"start": 2649.41, "end": 2650.49, "text": "Maybe it doesn't work for you."}
+{"start": 2650.49, "end": 2653.45, "text": "Maybe it worked for you and maybe it can make you profitable."}
+{"start": 2653.45, "end": 2657.97, "text": "But please guys, like, know when you made your profit, exit the trade and don't sit"}
+{"start": 2657.97, "end": 2659.13, "text": "on the screen."}
+{"start": 2659.13, "end": 2660.41, "text": "And there is always a new trade."}
+{"start": 2660.41, "end": 2663.49, "text": "You can always trade the next day again."}
+{"start": 2663.49, "end": 2664.49, "text": "And that's it guys."}
+{"start": 2664.49, "end": 2667.97, "text": "Like you see, Fisher started with 17K, he's now way up."}
+{"start": 2667.97, "end": 2671.41, "text": "And for me also, like, we started one October guys."}
+{"start": 2671.41, "end": 2673.09, "text": "We started now one October."}
+{"start": 2673.09, "end": 2675.45, "text": "And actually this weekend I didn't trade."}
+{"start": 2675.45, "end": 2677.61, "text": "I didn't trade for two days."}
+{"start": 2677.61, "end": 2680.73, "text": "So one, two, three, four, five, six, seven, eight, nine."}
+{"start": 2680.73, "end": 2685.17, "text": "So I traded nine days this month."}
+{"start": 2685.17, "end": 2686.17, "text": "Like I don't have to trade."}
+{"start": 2686.17, "end": 2687.17, "text": "I don't have to force trades."}
+{"start": 2687.17, "end": 2689.09, "text": "I'm just going to wait for Monday again to trade."}
+{"start": 2689.09, "end": 2691.57, "text": "I'm just enjoying the weekend with my family."}
+{"start": 2691.57, "end": 2694.81, "text": "So guys, thank you very much, Fisher."}
+{"start": 2694.81, "end": 2698.33, "text": "Thank you for, for doing this for the, for the community."}
+{"start": 2698.33, "end": 2702.33, "text": "And let's, let's see if it, if it helps them."}
+{"start": 2702.45, "end": 2705.37, "text": "I think it will help them if they just stay disciplined"}
+{"start": 2705.37, "end": 2707.25, "text": "and how you explained it."}
+{"start": 2707.25, "end": 2710.97, "text": "It's really good guy, really good official, like really good."}
+{"start": 2710.97, "end": 2711.81, "text": "Okay. Thank you, sir."}
+{"start": 2711.81, "end": 2712.65, "text": "Thank you."}

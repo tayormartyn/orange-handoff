@@ -1,0 +1,38 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:00] Okay, previously we saw what put print bar statistics and then now we'll see about the delta bars,
+[00:00:07] delta bar divergence. So these are the delta bars. If you see here, if you come to the settings of it,
+[00:00:15] you just have to you just have to click here. And then if you want, if you like to know
+[00:00:24] the histo bars histogram, it's like the positive delta will come here up and negative delta will
+[00:00:33] come here, but I like to see like this. So which gives me an understanding of what's happening in
+[00:00:40] the market right now. If you see here, this was the positive delta altogether, whole day,
+[00:00:47] they were positive. And then towards the end of the day, they went negative. And today,
+[00:00:53] if you see it's a Saturday, of course, market is when we are recording this, it's a Saturday for us.
+[00:01:01] So the market is closed right now. So the volume is less and then market has been, the delta has
+[00:01:07] been downside. The more shots are there in the market. So that understanding comes in this.
+[00:01:16] Delta divergence, you can choose. So that's what I was talking about the divergence.
+[00:01:22] You can choose between them. So if you see here, these red dots, red, this thing, these are the
+[00:01:30] divergence. You can play with this. If you want, you can, this comes up here, but too much too much
+[00:01:42] of data. The whole chart gets messier. So I'd like to see this one. So and then CVD line,
+[00:01:50] I like to keep these two in my trading strategy. So this is all about delta bars.
+[00:01:58] And then we will talk about the open interest. So this is open interest. You can choose between
+[00:02:10] what is open interest is, how much interest is there in the market right now. So how much is
+[00:02:19] the volume? You can choose the setting between these things and open interest.
+[00:02:25] If you would like to see the full data or session wise data, you can choose between these. I like
+[00:02:32] to see the full data. If you see here, it's open interest close. If you like to see the delta,
+[00:02:41] open interest delta, which gives us like the difference between buys and sells.
+[00:02:49] So that you can choose here, open interest close or where close this is.
+[00:02:57] So these settings are used for open interest. So that's it about the open interest.
+[00:03:07] So next we have net longs and net shorts. So you can choose, you can see how much
+[00:03:14] longs are there right now and how much shorts are there in this particular candle. The settings
+[00:03:22] for this is okay. If you want, you can choose the session. So when you choose session,
+[00:03:31] so whole day data it takes. But if you choose visible range, which says whatever candles,
+[00:03:43] whatever is visible right now in your particular desktop. So if you see from here to here,
+[00:03:52] so that data it takes and gives us the data here. Right now it's a whatever currently what chart is
+[00:04:03] visible for me. So that data is giving me. So this is visible range. So if you want to see the
+[00:04:09] full data, it comes up with as a whole data. Currently, if you see 14K net longs are there.
+[00:04:19] And then I like to change this with this for as a full data session.
+[00:04:28] Full data, if you see currently the net longs and net shorts, the 14K, 14K net long is there
+[00:04:36] and 6.3K minus negative figure in a sec, the net shorts are there. So currently in the market,
+[00:04:44] more, more, more longs are there in the shorts. So you can use this data for in your trading
+[00:04:52] strategy and then make decisions for what to do. In next videos, we will talk more depth
+[00:04:59] about these things. So net longs and net shorts. So that's it guys.

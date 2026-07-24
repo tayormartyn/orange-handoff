@@ -1,0 +1,16 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:02] Good evening, everybody. Farouk is here. How is everybody today? Today, guys, we're going to talk about EXO chart. So, in this episode, in this series, I'm going to talk about EXO chart with my colleague, Fishel and Wes.
+[00:00:19] I learned everything from them. So, we're going to talk about EXO chart. So, you can see my screen, guys.
+[00:00:27] It's a little bit, a lot of data, a lot of numbers, a lot of candlesticks patterns, a lot of things on my screen. First time, if you see this, okay, what's happening here?
+[00:00:36] That's why we're going to make a whole series about EXO chart, how to use it. So, what is EXO chart? So, EXO chart is a tool like what's happening behind the candle. So, we can see in every candle what is happening in every candle.
+[00:00:53] You have all these numbers sitting here, and you have numbers sitting here. This is the current candle from BTC. Look, they're going up now. You can see, okay, this candle's going up.
+[00:01:05] They're holding the view up. They're going to come to this naked POC. They're going to come to this imbalance. So, in this series episode, we're going to talk about what everything means.
+[00:01:20] So, EXO chart shows you how much it's bought and sold on the data, and here's the data on the downside. You can see how long the time takes for the candle to print.
+[00:01:36] It's a tool to give you more confidence in your trading and also give you more direction. And if you use this, the same thing with your own TA, it will help you to be profitable.
+[00:01:48] Like, we're starting to use this now in the wheel room, and since then, we are making 1K, 2K, 3K a day. It depends on your risk, of course.
+[00:02:00] And it's helping a lot of people as well, and in the future, we're going to do live trading. So, you can also see some spot buyers. You can also see the bits and ask.
+[00:02:11] Officials are going to talk about this. Same thing with Wes. And it will tell you also the real move and the fake move.
+[00:02:20] So, that's all about EXO chart. So, in this next episode, we will explain every tool. So, we're going to start with imbalances, this green here, and also this red here.
+[00:02:38] We're going to start with the letters. We're going to talk about this delta bar. And we're going to do a series of 10 or 15 videos, small videos, so everybody knows what everything means.
+[00:02:55] And then we can trade all together.
+[00:02:59] Thank you, guys.

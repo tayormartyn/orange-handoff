@@ -1,0 +1,27 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:00] Yes guys, previously we saw how to set up a chart and then we can see here that XO chart is a lot of data.
+[00:00:11] We can set it up accordingly how we want it. So let's dive into how can we set up a whole thing.
+[00:00:20] We'll talk about how to do a setting of each tools and then how to set up templates so that you don't
+[00:00:31] have to you don't have to again and again do the settings. You can once you do the settings
+[00:00:37] and then save those templates so that it will be helpful for you to in next future.
+[00:00:44] Sorry, okay, thought. Previously, previous videos we have we saw how to set up a chart
+[00:01:04] and then XO chart is of a lot of things. We have a lot of data here but if you see look at all the
+[00:01:13] data all together you won't make sense of it and it's like to make sense of it so we have to
+[00:01:20] alter these things and it's like we have to set it up accordingly and then once you do that and you
+[00:01:26] can save those as a template and import them whenever wherever you want. So it'll be helpful
+[00:01:33] for your future grading things. So let's see how we can set up templates and then how we can
+[00:01:43] import them and how we can download them. Okay, so whatever settings you do and then
+[00:01:50] you just have to come here and then you have to click save to the desk and then it says saves.
+[00:02:00] As you can see here, I have templates here which I have already set it up.
+[00:02:08] So how to import them? This is how you can save them. I will just have to click here
+[00:02:14] and then click on import file. So just access the files here so where you have saved them
+[00:02:21] and then just click on that. Let's go with this template. If you click this, it comes up here.
+[00:02:31] So I have already this but I have imported this one. I just have to click here
+[00:02:37] see here or you just have you can clone them, you can delete them, you can save them again.
+[00:02:43] You can save to desk and you can load them. If you click this, it's just a load template.
+[00:02:50] It loads up for you. It takes a while little while and then everything will be set it up.
+[00:03:02] So this is how you can save the template, import the templates.
+[00:03:10] So right now you are seeing so many other things here and which I use in migrating setups.
+[00:03:15] So I'll go all these details in future videos but this is how you can load,
+[00:03:23] import the templates and then download the templates and save the templates.
+[00:03:30] See you next videos guys.

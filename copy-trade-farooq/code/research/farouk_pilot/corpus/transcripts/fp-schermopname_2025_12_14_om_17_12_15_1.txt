@@ -1,0 +1,56 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:00] Part 3 of the indicator, seems like I'm going to do more parts. So part 3, so it's the same indicator with the POC indicator and the EMAs and the swing fell pattern and the liquidity sweeps is the orb, so what we did is the Asia orb, London orb and New York orb, okay.
+[00:00:28] So you can change the time, it depends on the time zone that you are in. So for example, you can do orb, alright, on it, go to the 15 minutes, so if you go to the high time frame it's not going to work because this is the 15 minutes. If you want to adjust the time, you can do the signal.
+[00:00:51] For me here, I want 15 minutes orb. I don't want 4 hours or 5 hours, or sorry, or daily. If you want to do that, you can definitely do that. You just have to change the setting, but for me, I'm using the 15 minutes is full scalp.
+[00:01:05] So for example here, so you have here orb. Again, look at this guy, it's so beautiful. It's one of the things that I use every day.
+[00:01:15] I never used orb, but this is really cool. So for example here, you have orb, you have the breakouts, they never retested this level, they're coming back to this level to retest.
+[00:01:29] So they're coming back to this level to retest and you can take a long. So you aim for the level. Look, this is a break of structure as well and you can take a long.
+[00:01:42] So again, this orb just got tested here and here you have inside of this orb. When you have this choppiness inside of this orb, don't do anything.
+[00:01:52] Outside of this orb, take a long, wait for retest, fail to go higher. Here, they're coming down again and they're pushing above. You can see where the price is most of the time.
+[00:02:04] So the price is most of the time here on the upside. They don't want to come to the downside. So what is this lines? This line here, this green line here is the top side of the orb.
+[00:02:16] This is the downside of the orb. And you have here, for example, the midline, that's the blue level. Why we did the blue level? Because this is the hidden liquidity inside of this orb.
+[00:02:30] So you have liquidity inside of this orb. That's a little bit. They call it hidden liquidity because sometimes people just think like it's just two lines.
+[00:02:40] No, inside of this orb, I don't do anything inside of this orb. I personally don't do anything. I'm looking outside of this orb, top of those orb, the breakout or the breakdown.
+[00:02:51] I use it a lot on gold. You can actually use it also with the yellow candles. You can give you a clear direction where we're heading.
+[00:02:58] For example, here as well, look at this orb started really bullish. This was the US session. And look, they went up, they retested, failed to go higher, tested again, tested again, tested again.
+[00:03:12] Inside of this orb, pushed the price up, doubled up, and then they created a new orb and they failed to go higher.
+[00:03:21] Here as well, orb breakouts, retest, and that was when the market was closed in the weekend. So yeah, open range breakouts.
+[00:03:33] Okay, let's go to the five minutes loading. So the five minutes, it gives you the range again.
+[00:03:50] There's a big orb, for example, here. I didn't look at BTC for a long time, to be honest, but it gives you the clear range.
+[00:03:59] So for example, here, look at these guys. The session opened. Again, the US session opened and they immediately lost the orb.
+[00:04:08] So here, it's just clear short. Just take the breakout. Some of you guys are the breakout traders. You can take the breakout. You can see volume.
+[00:04:16] We did this a couple of times also with gold. So this level here never got tested. This level never got tested. They need to do a retest.
+[00:04:24] So for example, this here, they need to retest it. So here, look at this. They're coming to this level.
+[00:04:33] You can see they're chopping here, they're holding here, they're pulled up, and here they will stop again.
+[00:04:38] So this will act as support and resistance. So it depends on what you're looking for.
+[00:04:43] For me, guys, the orb is more for scalpers. You can use it on a high-type frame, change it, but it's more for scalpers. It's more for the breakout.
+[00:04:52] So for example, when we take gold, they open bullish. We take along, and if you missed it, wait for retested orb.
+[00:04:59] Sometimes, guys, in the London session, we don't take a trade. We wait, wait, wait, wait, wait.
+[00:05:04] Until they come back down to retest the orb, then I take it along.
+[00:05:09] Okay, and let me show you guys, for example, let's do the London.
+[00:05:16] Yeah, so the London orb is here, not a lot of levels here, nothing happening here.
+[00:05:46] 50 minutes, why is this not loading? Oh, it needs to change this time, okay.
+[00:05:52] We need to change these settings.
+[00:05:55] But again, guys, we're going to do live trading with it.
+[00:05:58] So this part is more of the orb, the level to break up or down, and it gives you also AGS sessions.
+[00:06:07] So for example, if you lose this AGS session orb, you can just take a short, and this level never gets tested.
+[00:06:14] So it's more for a breakout or breakdown.
+[00:06:17] I like it to use it when we have a clear range.
+[00:06:21] Like, for example, you wait for the first 50 minutes to open.
+[00:06:24] Now we are under five minutes, but let's say the 50 minutes.
+[00:06:27] Okay, the first 50 minutes to open, you can see it's inside, retest long.
+[00:06:37] And here, again, another orb, retest long.
+[00:06:42] They're losing the level. It gives you actually a cell signal as well.
+[00:06:46] And here again, cell signal failed to go lower.
+[00:06:50] This one cell here failed to go lower, and you can take a long or short.
+[00:06:55] Here it gives you a buy signal, buy signal to go up.
+[00:06:59] So it's really good to use the orb, but I think the next part we're going to do live trading with the orb together.
+[00:07:07] Let's see. Let's say it just changed the time here, and it works really good.
+[00:07:15] You can also add the value.
+[00:07:19] Where was it again? No, that's it. That's it, guys. That's orb video.
+[00:07:29] And yeah, that's the indicator.
+[00:07:32] So combine it all together with VWAP, with the POC, with the liquidity.
+[00:07:39] I think orb with POC is really cool to use.
+[00:07:43] So try it, guys. Let me know.
+[00:07:46] If you need any help to set it up, we can do it together, or just tag me in as the team, and I will help you.
+[00:07:52] Take care, guys. Have a good one.

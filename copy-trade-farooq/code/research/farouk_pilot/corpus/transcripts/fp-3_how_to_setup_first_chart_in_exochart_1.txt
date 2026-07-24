@@ -1,0 +1,93 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:00] Hey guys, the previous video, you have seen how to download, how to subscribe, the XO chart.
+[00:00:08] So once you log in, this is how in a second it looks and then how can you access the chart.
+[00:00:15] So let's talk about how to set up your charts.
+[00:00:18] So you just have to click here, come here and then you have to select BTC or any other
+[00:00:25] coins, which exchanger you want.
+[00:00:29] You can choose between Coinbase, BitBuy, BitCoin, BitGate, OKX, all the other options here.
+[00:00:38] So even you can access the CME data if you have purchased the next feed account, which
+[00:00:46] provides the data.
+[00:00:48] So you can choose CME also.
+[00:00:52] So let's talk about BTC, USDT for example right now.
+[00:00:58] So yeah, when you see this chart, it looks like there is no data here and it's like fine
+[00:01:07] tune this so that it will be useful for you.
+[00:01:12] So this is the tick size.
+[00:01:15] If you see here, you are not seeing anything.
+[00:01:18] But once you start to play with this, this is the tick size.
+[00:01:24] So you just have to increase or decrease these things so that it will be visible for you
+[00:01:33] and then you can make out how you can access these or how can you in a second make sense
+[00:01:41] of these all data.
+[00:01:44] So what you are seeing right now is a ladder in a delta profile.
+[00:01:50] These are bits and these are asks.
+[00:01:52] So how many bits are there, how many asks are there?
+[00:01:55] So this is 15 minutes candle on 15 minutes candle in each 15 minutes on each level.
+[00:02:02] How many candles, how many Bitcoins have been created so we can see these things.
+[00:02:09] So you can play with these things and then why we there is no right tick size or OK,
+[00:02:17] so you can play with this.
+[00:02:19] You can make sense out of it or see right now I'm like 90 ticks here.
+[00:02:25] So what is tick size?
+[00:02:27] Ticks means if you see here, one thousand three hundred and one one oh three one seven
+[00:02:34] four point eight.
+[00:02:36] So this tick 90 ticks, it adds 90 to one one seven four point eight plus 90.
+[00:02:47] So that is one tick for you.
+[00:02:49] If you see here, this is the box what you are seeing the price point from this one oh
+[00:02:57] three one seven nine to one oh three one seven zero within this range.
+[00:03:03] How many Bitcoins have been created?
+[00:03:05] So the more you increase this, the more data you see.
+[00:03:10] So this is how you can play with this and then you can make sense out of it.
+[00:03:15] So by looking at this, how can you make sense out of it?
+[00:03:18] You know, right now, if you see here, there is one hundred and fourteen bits and seventy
+[00:03:22] six hours are there.
+[00:03:25] And if you see here, seventy bits and sixty four bits, sixty four hours are there.
+[00:03:30] You can see this is the level one seven one twenty nine.
+[00:03:35] If you see here, what is the average size here?
+[00:03:40] If you see sixty twenty nine thirty sixty would be the average one.
+[00:03:46] It makes significant move, significant volume sixty sixty is the average.
+[00:03:54] If you see here, you know, one twenty nine one one forty four has been traded here.
+[00:03:59] If you can make sense out of it, that you can.
+[00:04:03] This would be your this would be your support zone.
+[00:04:10] So later in the latest stages, we can go more deep into this.
+[00:04:16] So this is how you can set up your chart.
+[00:04:20] And then what here here there are a lot of options.
+[00:04:26] We are looking at this is look back.
+[00:04:28] So what is look back is seven days when you see here.
+[00:04:33] This is one day, two days, three days, four, five, six, seven.
+[00:04:37] OK.
+[00:04:38] You can choose a day between here and how many days back data you can look back into in a second.
+[00:04:46] Right now it is choosing seven days.
+[00:04:49] You can choose any number in a second.
+[00:04:50] You can choose a random number, a customized number, seventy days.
+[00:04:55] If you want to see, you know, you can just click add here that will be added here.
+[00:05:00] So you can customize these these data.
+[00:05:03] So this is look back like how many days back data you want in this chart.
+[00:05:11] And this is type like minutes.
+[00:05:13] So currently we are in 15 minute chart.
+[00:05:15] You can choose whatever chart you want to you like to.
+[00:05:20] And then there is tick size.
+[00:05:23] So I like this and then I choose four thousand one hundred and eighty four eighty one ticks.
+[00:05:30] So this is what I look into.
+[00:05:33] So right now we have chosen thirty three days of thirty three days data look back and then
+[00:05:40] four thousand one hundred and eighty one ticks.
+[00:05:43] So here if you see.
+[00:05:47] So based on that in this tick size, each candle, you can set it up accordingly.
+[00:05:57] So yeah, this is how you can play with this.
+[00:06:01] What is ticks four one eight one is, as I said earlier, one thirty seven point eight
+[00:06:09] is from one thirty seven point eight to one thirty seven point nine is one tick.
+[00:06:14] So like that four thousand one hundred and eighty one takes makes up one candle.
+[00:06:20] These are not the day like period candles.
+[00:06:24] These are ticks candle when as and when it's a four thousand one hundred and eighty
+[00:06:29] one takes complete.
+[00:06:31] So that is when the candle completes.
+[00:06:34] So you will you will understand it in in detail in future sense of when we talk about footprint
+[00:06:39] bar statistics.
+[00:06:41] So you can know more about that.
+[00:06:46] And then you you have a lot of data here of milliseconds how our our candle you can
+[00:06:52] look into monthly point of figure trend reversal Delta candles you can look into and then
+[00:06:58] volume based candles you can look into.
+[00:07:00] If you select volume, how many volume.
+[00:07:05] So if you select ten million until and unless one or ten million ten million is being transacted
+[00:07:11] in this particular candle, the candle won't complete.
+[00:07:15] So you can you can play with these things.
+[00:07:17] So yeah, this is just an introduction and we'll deep dive into our details later in a few
+[00:07:25] future videos.
+[00:07:26] Thanks, guys.

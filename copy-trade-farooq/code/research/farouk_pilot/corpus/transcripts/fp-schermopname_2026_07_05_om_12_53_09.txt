@@ -1,0 +1,54 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:00] Happy Sunday guys, Farouk here, how's everybody, hope you guys enjoy your Sunday, so guys this
+[00:00:05] wicked I worked on the indicator, so I did the update, let's check it out, so guys what I did
+[00:00:13] we still have Asia high, Asia low, FVG, a change of character, all this stuff, this is of course gold,
+[00:00:20] the wicked is closed so nothing is happening here, so we just have to go to the settings,
+[00:00:26] I like it like this, but I did some settings because you guys
+[00:00:33] asked me how to do it and what I actually added is this here display, so you just have to
+[00:00:40] close the indicator or just update it, there is a toolbox here, you can just update it when
+[00:00:45] you do that, so I did show London high low, so there's a liquidity, there's a liquidity on
+[00:00:52] London high and London low, we're going to do some education about this in the future,
+[00:00:56] so that's why I updated this, so US high and low, so for example guys when we break Asia high,
+[00:01:03] Asia low, we have London and US liquidity coming down, we're going to look for a sweep to the
+[00:01:08] downside, confirmation with our FPGs or whatever and then we can have long, so you see here the
+[00:01:15] blue is London high, London low and the yellow is US high, US low, the liquidity, so to break
+[00:01:25] this level here, we are in this range, you can expect a retest, sweep this level or retest or
+[00:01:31] even come that low here and then go up again, but again we focus on Asia high, Asia low, I'm
+[00:01:37] going to do some education about this level here, so for example guys when we have London high,
+[00:01:42] US high, Asia high, liquidity all sitting above and we broke structure, we're going to look for
+[00:01:48] longs to that level to grab liquidity, because the market likes to grab liquidity before we move up,
+[00:01:53] okay, but again we're going to do some education about this, okay, also new education will be added
+[00:01:58] soon, I think probably next week, I will do that, it's show IFEG, so you see here IFEG,
+[00:02:04] that's inverted FEG, okay, we will talk about this also today in the YouTube,
+[00:02:09] all right, the engulfing candle is still the same, okay, showing engulfing, I mark this out,
+[00:02:14] this is too much on my screen, so I mark this out, so this is only when we want to go long,
+[00:02:23] go short, that's the last confirmation, we will talk about this also again, okay, chart labels,
+[00:02:28] I did tiny, normal, small, normal, large, huge, so for example if you do huge,
+[00:02:34] see that it's too much, normal, see this is normal, all right, also large and small,
+[00:02:44] just do what is best for you, I like it tiny, I eat a lot of carrots, so I like it tiny,
+[00:02:50] so I'm going to leave it tiny, okay, also the extended box, all right, extended box,
+[00:02:56] I also did here, you just have to click this one and it will stand to the right,
+[00:03:01] the box will be extended to the right, every time frame is different of course,
+[00:03:04] this is the 15 minutes, so it will stand to the right, just click it off and then we will
+[00:03:09] show you again, all right, then you know okay, what is the OB, where did it start,
+[00:03:14] like for example where's the OB sitting here, see, extend, extend, extend, so for example
+[00:03:18] we have liquidities resting here, so this one for example, if you, I do this on purpose guys,
+[00:03:24] because when we are in Asia range, it's a big range, we saw this in the last couple of days,
+[00:03:29] so we can scout inside of Asia range, so you can take trade, so for example you have,
+[00:03:35] let's see here, this one, this one is actually good, look at this, so we have London low,
+[00:03:40] we have US high and we have OB here, extend the OB, all right, wait for move to the downside,
+[00:03:48] all right, and then look for a scout move to the upside 50 to the homo pips,
+[00:03:53] this will work, I promise you, all right, so yeah guys, let's update, okay, update on the screen,
+[00:04:00] and let's talk about it tonight in the YouTube session, all right, so we're gonna test it again
+[00:04:08] for a week or so or two, and then you guys again tell me, should I do more updates or what,
+[00:04:17] because we want to make it our own, we want to update it every time again and again again,
+[00:04:21] so let's see here on the 12 hours on gold, all right, we have here of course
+[00:04:29] the OBs, you can also do what I did here, so for example you can show all OBs or defaults,
+[00:04:37] I like defaults, high time frame we do all OBs, okay, let's do
+[00:04:41] extend, extend, all right, let's do extend with all OBs, extend with all OBs is still the same,
+[00:04:57] but it will give you also like where the support is sitting, so for gold guys, we are coming now
+[00:05:02] to the resistance, of course, this level here, if we come down, we know we're too long at
+[00:05:06] these levels here, conform with our FEG, with liquidity, with all this stuff, so we are trying
+[00:05:13] to make the probability higher, so we have a higher win rate, all right guys, test it,
+[00:05:20] update the chart, if it doesn't work, remove the indicator and put it on again,
+[00:05:23] and let's talk about it tonight, okay guys, have a good one, bye bye.

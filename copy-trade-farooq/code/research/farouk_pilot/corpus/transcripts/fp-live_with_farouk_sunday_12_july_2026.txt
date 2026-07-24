@@ -1,0 +1,613 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:03] Alright, good evening everybody, Shari Khan, North Crypto, Hamless, how are you guys? We are live.
+[00:00:15] Happy Sunday guys! How's the sound? Sound is good? Okay, thank you Hamless. Fabio, how are you?
+[00:00:29] How was your Sunday guys? Good? Everybody have a beautiful Sunday? Everybody enjoying the weather?
+[00:00:39] It looks like there was no volume at all in this weekend for crypto. Price didn't move.
+[00:00:48] Even with the war news, just stay at the same level. Seems like the war news doesn't affect
+[00:00:57] the stock market anymore. People don't care anymore. Alright, let's see if we can...
+[00:01:14] I think guys we have still a limit order. We have... where is our limit order? I think we have a
+[00:01:19] limit order sitting here somewhere. We still have a limit order sitting here. So let's leave it.
+[00:01:28] I think 6400? Maybe 6400? Yeah, this one here. Until 59400. Yeah, so we have actually a limit order
+[00:01:41] sitting here at this level. That's actually a good level. Anub, how are you sir? Anub,
+[00:01:56] is he going to Egypt this year? I think we have a limit order. I don't see this going like this
+[00:02:04] maybe first going up. Good, good sir. Good, really good. Anub, you live in the UK. How was
+[00:02:16] you guys in the UK yesterday? I was in the UK because they won yesterday. UK won yesterday
+[00:02:22] the match. I miss Egypt so much. I want to go. I'm gonna go soon. You guys don't understand
+[00:02:31] how easy it is. Hey Mark, it's so good man. If you have your own house, you don't pay
+[00:02:43] tax, you don't pay any things. If you have an own house, your own car, you live like a king.
+[00:02:50] Even all of this is good to be honest, but it's a little bit different. So happy guys for the
+[00:02:59] UK. Congrats on your win. You're going to play Argentina. Good luck.
+[00:03:15] So Argentina is crazy. Yesterday, no tax in Egypt. There is tax, but if you compare it with Europe,
+[00:03:25] it's nothing. If you have your own house and you have your own stuff,
+[00:03:33] you don't pay a lot. Let's say if you have your own house, you have your car. With 500 euros,
+[00:03:40] you live really good. If you want to go everywhere outside and do your thing,
+[00:03:45] 1000 euros or something like that is okay. Holiday Egypt. Yeah, of course. I have a swimming pool.
+[00:04:01] I will bring you the shik shak shuk. Egypt breakfast is also good.
+[00:04:10] People are nice. There is a place in Egypt called Suwa. I'm going to go this year.
+[00:04:17] It's like the Dead Sea, like a salted water inside of the desert.
+[00:04:27] And it's really good. Just look it up. It's called Suwa. Let me write it down here. So nice.
+[00:04:49] For free. For free. For free. The hospitality is really insane. But I hope you guys,
+[00:05:01] I think a lot of people will build millionaires this year.
+[00:05:07] Going to Sharmashegh October. Oh, that's really good. Oh, that's so good.
+[00:05:13] Driving in Sharmashegh is beautiful. A lot of people go to Dehab. A lot of Dutch people living in Dehab
+[00:05:20] as well. I'm in in the middle. Really? Oh, that's nice. South America.
+[00:05:32] I never went there. I went to Cuba. Cuba is also nice. Just backpacking and no internet.
+[00:05:40] It's awesome. It's really awesome. If you go to Sharmashegh, the diving is also good.
+[00:05:52] All right, guys. Let's start. Hope you guys have a beautiful weekend.
+[00:05:56] Let's look at some levels for gold. Let's talk about what I'm looking for. Also, let's see
+[00:06:03] how the market will open later, because again, there was some more news. They closed the state
+[00:06:09] of Hormuz. Trump said they can either stop war again. I don't know. So it will affect the market
+[00:06:14] for sure. So if it will affect the market, then you can expect that oil will go up and gold will
+[00:06:20] go down. So yeah. Solana trade update. Yeah, Solana trade update is still in the same level.
+[00:06:28] It's so boring. I think there was no volume at all. It's still in the same level. I expect
+[00:06:33] Solana to go a little bit lower. Maybe this level. Hopefully not. But if it go a little bit lower,
+[00:06:38] that's it. I think this weekly OB will hold. If it doesn't hold, that's the last level to defend.
+[00:06:43] Because if you look at this level, support, support, support, resistance, resistance, break,
+[00:06:47] and now it's retest actually. This was the retest. So maybe they will sweep to sweep.
+[00:06:52] Maybe they will come to the weekly OB. And our stop loss is way below here. So let's see.
+[00:06:57] It's 12 hour chart. So maybe it will break structure, go up, or just come down. It depends
+[00:07:04] on BTC. So the whole thing is BTC. But I think Solana, with all the liquidity resting here,
+[00:07:11] I think they need to go at least to that zone. They came to this OB, they rejected,
+[00:07:15] and now they are doing a retest. So there's definitely a break of structure. This is
+[00:07:19] still a high probability trade. So let's see. It's possible. But yeah,
+[00:07:24] the problem is, again, when BTC will go down, everything will go down with it.
+[00:07:27] But for now, we are still in the same range. So I'm going to keep Solana for a week. We're going
+[00:07:33] to look at the Solana chart Friday again. I'm going to update you. But it's still the same
+[00:07:39] level for me. And I think for you as well, we start at this level here. And I will add
+[00:07:44] some positions here again, the DCA in this level. And my stop loss is sitting here. So let's see.
+[00:07:51] It's a high time frame. Let's look at the low time frame. So if you look at the low time frame,
+[00:07:57] let's see, 15 minutes, 5 minutes. It's not volume at all. We broke Asia high, so that's good.
+[00:08:04] But this is just, I want to play Jup with Sol. We can look at Jup as well. We can look at something.
+[00:08:11] I don't look at a lot of crypto, to be honest. I look at a lot of
+[00:08:15] gold and BTC. And just I'm going to give it another try on Solana. So just this one, because
+[00:08:25] I think usually when BTC is going to move hard, Solana can move a little bit harder. I think this
+[00:08:31] is all on mitigated levels sitting here. So yeah, at least to this zone will be nice to start to put
+[00:08:39] stop loss to entry. Maybe if we go to 82, 83, then we're going to put stop loss to entry,
+[00:08:44] take some profit, and then let it rise. And that's it. But yeah, let's see. So that's Solana.
+[00:08:51] Let's start with BTC. So BTC guys, we're still in the trades. We started entering here.
+[00:08:56] Again, it was a high probability trade because we had an Asia high break of structure. And this
+[00:09:02] trade was actually really good. So 2000 something pips, TP1 hit, TP2 hit, stop loss to entry. And we
+[00:09:10] took some profit here at 64. And we are still in the same range sitting here. So it's still
+[00:09:17] ranging. If you look at BTC on the high timeframe, this is the 15 minutes. If you look at BTC on
+[00:09:23] the high timeframe, we are in this parallel channel. So we are still resting in this
+[00:09:29] zone here. There is a possibility it will move up to 66 level, 66, 65 level. And then
+[00:09:35] I think we need to start shorting from here. So if they come to 66, 65, 66 in this range here,
+[00:09:42] I will start to look for shorts because if you look at the one hour, we have some resting liquidity.
+[00:09:48] Sitting here, we have an OB and a flat candle never got tested before. So the 66 level is
+[00:09:54] definitely a cell. We have here also the OB, they tested this level and went down some liquidity. So
+[00:10:00] these two levels here, I'm keeping an eye on this level. So for me, again, a cell for BTC
+[00:10:09] should be at this zone here, at the 65, 66 zone. So we will look for cells at this zone here.
+[00:10:16] It's also top of the panel channel. And of course, the one hour OB that never got retested.
+[00:10:21] Here, they almost retested and then went down. So I think there is some liquidity resting here
+[00:10:25] for people there put the stop losses above. All right. So hopefully they will go up from here.
+[00:10:30] We take more profit on our trade. Okay. And also Solana will move up. And if it doesn't
+[00:10:36] happen, if they go lower, yes, at the 65, 66 cell zone. Yeah, for sure. This zone,
+[00:10:44] for you as well. And I think if they come lower, guys, we have a limit order sitting at
+[00:10:49] this zone here. So they will come down and sweep this equal liquidity here. We have our
+[00:10:54] entry sitting here. This is the same thing for people who started to short from here.
+[00:10:57] We started to long from here. So we have equal liquidity resting below. We have equal
+[00:11:04] liquidity resting here below. And our traders, of course, risk free. So that's good. If we,
+[00:11:11] if they stop us out, we have a limit order. I'm going to also, when it's going to be activated,
+[00:11:17] I'm going to let you know, guys. So our limit order is, I think, a 60k something and 59. So
+[00:11:24] this zone here with the same stop loss like before. With the same stop loss like before.
+[00:11:28] It's worth a try. Because if you look why I'm going to look for another long on BGC if they
+[00:11:34] come down. Because if you, let me see, if you go to the monthly again, if you go to the monthly,
+[00:11:45] you see that we actually, if you go to the monthly here, we have a monthly support here. We have a
+[00:11:52] monthly support. They tested this level, both level, and we are now above this monthly support
+[00:11:58] sitting here. Okay. My screen is gone. Share screen. So we have the monthly support sitting
+[00:12:09] here, the green, this two green level. All right. Oh, it's gone again. What's this?
+[00:12:14] Why is it happening? Okay. 60 again, monthly support sitting here at this zone here.
+[00:12:29] Is this clean here? Yeah, still there. Okay. So that's worth a try for me to look for longs.
+[00:12:40] This level again. Okay. So again, we're going to play from level to level. We're going to not
+[00:12:45] try to predict the market. We're going to just look from levels to level based on all the
+[00:12:51] liquidity and all the levels. And so yeah, we're going to still play Asia high, Asia low,
+[00:12:56] break of Asia high, five, 15 minutes, kind of close our goal on BTC. Then we're going to look
+[00:13:00] for longs. But yeah, it's nothing happening here. So there is a possibility we just moved down here
+[00:13:05] and that's okay. And if we move up, we're going to look for sales Monday or Tuesday at this zone.
+[00:13:13] Yeah. So yeah, there is a possibility we go from this. I remember guys last time,
+[00:13:17] last year in the summer, everybody was saying crypto will have low liquidity, blah, blah, blah.
+[00:13:24] And then the summer we had a nice rally. I think a lot of things moved a lot in the summer.
+[00:13:34] So yeah, I'm going to do the same thing for here. So we have also OB here tested. It went down
+[00:13:39] and now they're trying to break this structure here. So I think this will not hold. And I think
+[00:13:44] they need to go to 66 again, maybe a little bit high, but I think it's worth the sale from here.
+[00:13:50] So I marked this level here on the one hour. What do we see here for Confluence? This level
+[00:13:57] never got tested. So the 65 400 and this level here at the 65 966 guys is my cell zone. Okay.
+[00:14:05] So this is the cell zone that you should look for. This is the OB and two OBs actually that
+[00:14:10] are resting here that never got mitigated. And if we go a little bit higher, so we will
+[00:14:16] of course take a stop loss above this level. We have a flat candle, two flat candles sitting here.
+[00:14:21] So maybe a week or so we'll, we'll do that again. So maybe 66 stop loss, sorry, 66, 66
+[00:14:32] sale for us. And the stop loss would be above this level. Let's see above this week or so.
+[00:14:39] 67 968 ish. I think flat 68, maybe 68 200 will be nice for a stop loss. And then we're going to aim
+[00:14:47] for our we're going to aim for our buy zone. Okay. We're going to aim for our buy zone.
+[00:14:54] So I'm not saying to do you guys to put a limit order there. No, we're going to see how they
+[00:14:59] react at that zone. So what I want to see, what I want to see, I want to see when they
+[00:15:06] move to that zone, I want to see a rejection first. So when they go to the zone, I want to see a
+[00:15:10] rejection. Okay. And then I want to see when the market moves a little bit sideways with no fair
+[00:15:17] value gaps. When I have no fair value gaps, it will go sideways or just break structure
+[00:15:22] under five and 15 minutes. Asia high, Asia low again, that's also for conference.
+[00:15:26] Then I know, okay, they will go lower, maybe one mitigated wick and then move lower. But
+[00:15:33] I want to see that first before. So I'm going to look at price action. Just focus on price
+[00:15:38] action, especially on the low timeframe. And the same thing, what we do on gold for BTC.
+[00:15:43] So that's the plan for BTC. And Solana, of course, again, is the same, still the same
+[00:15:51] level. So let's see how, how they react from here. Okay. They are above Asia high, but I
+[00:15:56] don't know how crypto react, but this is a high probability trade. We have still the weekly
+[00:16:01] OB sitting here. So I still expect Solana to go also a little bit lower. Okay. And from this
+[00:16:07] level, I want to see a reaction. We already entered in the trade and I want to see a
+[00:16:11] reaction here and we have a stop loss sitting here. So I think maybe a small range. I think
+[00:16:16] it will stay. We were still in this trade. Maybe we're going to look at Friday again.
+[00:16:23] So yeah, I didn't ask a lot on this trade, to be honest, and Solana, because
+[00:16:28] again, I'm just going to start to do, just try crypto once again. It's not the same risk that
+[00:16:35] we do, what we do on gold or BTC. Okay. All right. Cool. Any questions guys for BTC or Solana?
+[00:16:43] Solana retest PO3.
+[00:16:51] Yeah. I don't know what you mean Mark Solana retest PO3. What timeframe you looking at?
+[00:17:05] I got hoikors. I don't know. Yeah. I'm going to look at it. Okay, sir. I'm going to look at it.
+[00:17:29] 12 hours. Same timeframe. Yeah. Yeah. So this is actually a nice mark. This may be a retest. So
+[00:17:38] that's your 100% right. That's why we entered the trade accumulation. This is the manipulation
+[00:17:44] phase and I will look for expansion. Expansion to the upside. So that's definitely, that's why
+[00:17:50] I entered the trade as well. Definitely. Nice Mark. Huge PO3. That's exactly what I was also looking
+[00:17:56] for. So again, it's a high probability if you look at patterns, but yeah. So I still expect here,
+[00:18:02] I have an order sitting here. So if they come a little bit lower, it will be average. Of course,
+[00:18:07] if they go up, then our entry will be here and then we'll go higher. So it was a weekly OB.
+[00:18:13] Okay. If we, if we move to the four hours, we see also, we have also 12 hour OB here
+[00:18:22] that got mitigated and then came down. So they are just in this two range. So they are ranging
+[00:18:30] between the 80 level and the, let's say between the 80 and the 70 level, they are ranging.
+[00:18:37] 72 and 80, they are ranging. So this is the range that they are ranging in. So yeah, I want to see
+[00:18:44] that Mark. I want to see this level, but it depends on all BTC. So I want to see actually
+[00:18:49] what BTC will go down, how they will react at this zone. Nice, nice. Huge PO3. Yeah, yeah,
+[00:18:55] for sure. So yeah. And this level here also unmitigated, this level unmitigated and we have
+[00:19:01] a lot of liquidity resting here. So yeah, I'm not looking at this far. Hopefully it will go that far,
+[00:19:08] of course. Okay. And if they go higher, we're going to put stop plus 20 and we're going to
+[00:19:12] let it ride. We're going to take profit on the way up and hopefully it will go to this zone.
+[00:19:18] Yeah. So yeah. I'm looking at BTC actually on the high timeframe as well. If you go on BTC
+[00:19:24] on the high timeframe, you actually see also like they went a lot down. We had this first
+[00:19:30] move up, rejected, and that's the monthly. Again, on the monthly, they need to break this zone. I
+[00:19:35] think if they break this zone, 70, 67, 68 level, they will do maybe a retest and then we'll hire.
+[00:19:42] But let's see. We're going to definitely look for sales at this zone first. So yeah,
+[00:19:46] it depends on the news and how the market will open and all this stuff. All right,
+[00:19:50] guys. So moving on to gold. Gold, we did this on Friday. Okay. So gold, we did this on Friday.
+[00:19:57] Let's see. So gold, we talked about internal structure, external structure, blah, blah, blah.
+[00:20:05] I'm going to talk about external structure a little bit today. It's actually the same thing like
+[00:20:09] external. It's just a little bit on the low timeframe in a small range. So why did gold come
+[00:20:16] down here? Of course, Trump was speaking, but I think they need just to come to this level
+[00:20:21] for mitigate, to mitigate that zone. Because if you are the indicator, you will see they will come to
+[00:20:29] OB. They came to an OB. They came to a fair value gap. And if you were here Friday as well,
+[00:20:42] we had a level that was unmitigated and that was actually Asia high. So that was also high
+[00:20:48] probability trade. So what do you see here, guys? We have US high, never got tested. We have Asia
+[00:20:54] high, never got tested. We have a fair value gap. We have OB and we have also an OB sitting here.
+[00:21:01] Okay. So this level here was definitely unmitigated. And we had also a 15-minute FPG.
+[00:21:07] So this level here, guys, was definitely a zone for us. Okay. What did they do?
+[00:21:14] They came to this FPG. They swept this candle. They came to 4-1-3-7. They had an unmitigated
+[00:21:22] FPG sitting at that zone. And you can see that they will go to that level.
+[00:21:27] And I think that was the boring day that we didn't take a trade. They went.
+[00:21:33] They mitigated. Again, broke structure. There's a change of character. That was in the night.
+[00:21:42] Not in the night, but before the night. And I think they're going to go up again one time.
+[00:21:45] Go up, mitigate that zone. This one. Yep. And after that, what do you see? That's why we took a
+[00:21:56] sell from Friday. We had a retest of Asia low. And that was before London opened. Just wait.
+[00:22:06] We had a break of structure. And we had a 5-50-minute, an hour break of structure here.
+[00:22:10] And again, guys, we had the Asia low FPG and an OB here that we tested. And that's why we took
+[00:22:15] a sell. And they went down, mitigated that zone. We took a sell. Stop loss to entry. And then we got
+[00:22:27] stopped out at entry after we had 200 pips or so, 190 pips. And had this huge candle, mitigated
+[00:22:34] that zone. And we had a small change of character sitting here as well. And they moved higher.
+[00:22:42] So that was Friday. Friday was actually a boring day. We just won trades.
+[00:22:46] That was the high probability trade from Friday. Inside of this range, or before this whole move,
+[00:22:52] you don't want to guess where the price is going. You don't want to do that. So again,
+[00:22:57] if you had a long here, some people, if you guys had a long, and we had a short from here,
+[00:23:01] and we put stop loss to entry, and now we got stopped out. So that's okay. So which level
+[00:23:06] was not unmitigated for Friday? So we talked about this on the 5-minute time frame. We had
+[00:23:12] this zone here. We had OB sitting here at 4-1-3-5. So the 4-1-3-5, guys, is unmitigated level.
+[00:23:19] I need to see how the market will open. And again, we need to wait for Asia High,
+[00:23:24] Asia Low, and all this stuff. So the 4-1-3-6 was not mitigated. So a lot of liquidity resting
+[00:23:31] here. And we have also 4-1-25, 4-1-30 level, this zone here. So if you go under 50 minutes,
+[00:23:40] this level pushed up, swept it, that made the low. So I think a retest of this zone.
+[00:23:47] So the 4-1-25, you don't want to long there. The 4-1-35, that's also a level for a mitigate.
+[00:23:54] They already mitigated this under 50 minutes, but under 5 minutes, we still have OB here
+[00:23:58] that never got tested. But again, let's wait for the market to open. So I have actually
+[00:24:03] a clear direction for gold. This is the low time frame. I have actually a clear direction for gold.
+[00:24:08] So if you look at the 12 hours in gold, let's see. I had a nice chart. Let's see which one was it.
+[00:24:19] Yeah. So if you look at the 12 hours for us, gold is above this zone, the 4-1-50,
+[00:24:28] 4-1-50, 4-1-40, 4-1-50. If we break that zone, I think we're going to move to
+[00:24:35] this level here, that unmitigated BPR. And then the high time frame, that's also unmitigated
+[00:24:43] level under 12 hours. That's also, let's see, that was also the support level.
+[00:24:49] And this was the old OB sitting here. And I think they need to go to that zone. If you go under 1
+[00:24:56] hour, if you go under 1 hour, you see it's also an OB here that never got retested. And of
+[00:25:03] course the BPR on the high time frame. So this is the level that I'm looking for a cell. Okay.
+[00:25:09] I need to see like a nice break of structure first under 1 hour or so. So that's the level
+[00:25:14] for a cell for me. So I need to wait. If they don't do that, if they don't do that, if they
+[00:25:19] just come down, I think if we lose Friday, London low, okay, or this week here below,
+[00:25:26] I retest and then look for cell to this 4,000 level. This 4,000 level that needs to be retested.
+[00:25:36] Okay. And I think if they come to this level again, there's a high chances we lose this level,
+[00:25:41] the 4,000 level. Okay. So that's why I'm saying this because it's already tested.
+[00:25:49] This level has already been tested before. The last OB that was the 4020 level.
+[00:25:55] I think let me just see. Yeah, this level already got tested, broke it, lost it.
+[00:26:02] So yeah, maybe they will go to this level. So it's London low to lose a retest of Asia low.
+[00:26:12] And then we're going to look for cells to the 4,000. And if they break Friday Asia high,
+[00:26:18] so the 4,140, 4,140, 4,050, we're going to look for logs. Okay. Let's see what Mark is saying.
+[00:26:27] Monthly mids is 4165. I'm nice. That's a good zone. Yeah. Monthly mids. There's also OB here
+[00:26:36] from this zone. But yeah, let's see. Level to level. We're going to look for level to level
+[00:26:42] as well. So of course, they're going to reject and make higher highs, higher lows. So if you,
+[00:26:47] again, if you look at the high timeframe, let's see, if you go to, let me just move this one.
+[00:26:55] So if you go on the high timeframe, let's say for the four hours. Yeah. So if you go to the
+[00:27:05] four hours, you see actually that we have actually broke structure, internal, maybe not internal,
+[00:27:12] but the four hours actually bullish. So you see here that was the OB. We have a candle
+[00:27:18] close above and they did actually a retest. Okay. They did a retest and they pushed up
+[00:27:25] and we have an internal break of structure. So that's why I'm saying like, okay, the next
+[00:27:29] cell zone is what Mark is saying the 4165 nice Mark 4165 for one level this zone here.
+[00:27:36] That's the cell zone as well. So we're going to look for shorts into the log because they are
+[00:27:42] making lower lows, higher lows. And if they do another higher high here, if they make another
+[00:27:48] high, high, it will be higher low. And then chart will move like this to the high timeframe
+[00:27:55] cell zone that we are looking for. And that will be the four to 50. That's OB and one hour.
+[00:28:02] Okay. And if you look at the weekly, that's also the weekly old OB sitting resting here.
+[00:28:10] And I think let's see, I marked it before two days, three days daily.
+[00:28:19] This is definitely a high probability level here for a cell. And we have also a BPR that
+[00:28:23] unmitigated. Okay. So the plan is clear. The plan is simple for, for gold. So for the people who
+[00:28:35] are new on the four hours, we have a candle close above this. So this is the high that made that
+[00:28:40] low. We have a candle close above. We do a retest on this OB sitting here and they move up,
+[00:28:47] they broke internal structure here. So if they open bullish, again, with the news we need to wait,
+[00:28:52] if they open bullish, we're going to look for a retest at whatever level they create an FPG or
+[00:28:58] Asia high, Asia low. We're going to look for longs and we're going to go higher highs,
+[00:29:04] high lows, high highs, high lows two until this zone. All right. A lot of liquidity also resting
+[00:29:10] here. If you look at the liquidity, we have equal liquidity equal highs sitting here as well.
+[00:29:17] This zone. So, so yeah, guys. And if we lose a London low, so the four zero 70,
+[00:29:25] we're going to come for this week and we're going to retest this level here. And if we
+[00:29:32] lose that level, then all hands on deck, we got to come lower. I did something here in the three
+[00:29:39] months. Let me see. What did I do? What did I do in the three months? What did Farooqy do? Okay,
+[00:29:47] let's see three. Okay. Three months is actually unmitigated zone. Uh, so it's actually a
+[00:29:53] ongoing candle, three months candle, a three months candle is an, uh, it's, they ongoing
+[00:30:01] this whole move. Look, wick, they close below this wick and they, they actually, um, retesting
+[00:30:13] that zone. So I don't know. This is 50% of that move for two 50, maybe a little bit higher. I
+[00:30:21] don't know, but I think this is good cell cell zone. A lot of confluence sitting there. We
+[00:30:26] lose that level. We nuked. Yeah, yeah, for sure. For sure. But again, guys, I'm going to
+[00:30:30] be honest with you. I'm already starting to accumulate gold because I think they went
+[00:30:34] already 27% down. I don't say do the same thing, but I'm my level for gold to for accumulates.
+[00:30:39] Like I'm going to hold it for, of course, like five to 10 years. I think this is my zone to
+[00:30:44] accumulate gold. This zone here, I told you guys between the four thousands and the three
+[00:30:48] thousands. I think that's a good, good thing. Why I'm doing this again, I don't care for me.
+[00:30:54] I'm cool. I'm just doing this for my son later. That's it. So my mother also did that for us
+[00:30:59] and I'm happy that she did that for us. So we had a better future and study and all this stuff.
+[00:31:04] So yeah, it's all about like accumulate this thing. If you have it, of course, I'm saying do
+[00:31:11] the same thing. If you want to wait for lower levels, because I think Mr. Columbus looking for
+[00:31:15] three thousand five hundred between three thousand three thousand five hundred, you can
+[00:31:18] also do that. But I think like we cannot predict the market. Why I'm saying this because
+[00:31:24] if something will happen in the world currency or whatever, it will go higher and nobody knows,
+[00:31:29] to be honest, nobody knows. But we still prep probabilities. When BTC was 120k, people said
+[00:31:35] we're going to go to 200k and then we went lower. And now people are looking for 30k and BTC is
+[00:31:40] moving up. So you tell me. So yeah, it's again, a lot of people try to predict the market, but I
+[00:31:49] think gold is not bread. Gold is not Jupiter. Gold is not just name it. It's something else.
+[00:32:03] So yeah, silver is also a good thing, to be honest, to do. But I'm doing gold personally.
+[00:32:10] So yeah, I'm just telling you guys what I'm doing. If you guys want to do the same thing, for sure.
+[00:32:16] All right. Cool. So guys, the levels are clear. Let's see on the three day time frame.
+[00:32:23] And then we're going to read the chat. So on the three day, the 12 hours, guys, we have a break
+[00:32:27] of structure, break of structure, break of structure. But we see here that we're trying
+[00:32:31] to move up. We have OB here. We rejected the four thousand two hundred ish. We rejected
+[00:32:37] a little bit. But I think if you zoom in a little bit, we have here on the 12 hours.
+[00:32:44] And that's also with the with the other chat that we looked at at the BPR, we have unmitigated zone
+[00:32:52] here. First of all, the FPG and an OB here under 12 hours for sure. So this look, this is already
+[00:32:59] mitigated with the WIC. And here, this zone is unmitigated with an FPG and all this level.
+[00:33:04] They are testing this level to four thousand two hundred. And that's why I said like four
+[00:33:09] thousand two hundred five fifty sixty is a good sell zone for us. OK. And yeah. And I think
+[00:33:17] the invalidation is easy. Invalidation is on a low time frame on WIC or something about this.
+[00:33:23] So I think this is a little bit bigger stop loss. So we're going to look for stop loss, of course.
+[00:33:29] But yeah, you don't want them to come about this zone. But yeah. So let's see. How does
+[00:33:35] it look here at this time frame? Yeah. Let's see. It looks like a hammer now. Let's see how
+[00:33:41] the weekly chart looks. Let's see the weekly. So the weekly candle bearish, bullish in between.
+[00:33:51] We don't have a candle close. So again, if you look at the weekly candle, guys,
+[00:33:55] I see this is the bottom. OK. So again, it comes off the zones that we have is really,
+[00:34:01] really good. So what do you see here, guys? So I like to gather confidence. I like to gather
+[00:34:07] evidence. I like to make a case. Why should I long here? Why should I short? So I told you,
+[00:34:12] guys, look at this here. Four two seventies is London low. This is the week the last week
+[00:34:20] that broke structure here on the low time frame. OK. We have to look this London low.
+[00:34:24] OK. Lose that zone. We're going to come lower. So I want to see a 50 minute candle close below
+[00:34:30] for for once for 170. And if you look at the weekly charts, if you look at the weekly charts,
+[00:34:37] you see that we this is the bottom actually on the weekly. So here wick, wick, wick. We don't
+[00:34:44] have a candle close. So the four zero seventy four zero sixty level. If we have a candle close below
+[00:34:50] that low, we're going to come low. We definitely going to come low. We're going to come lower
+[00:34:55] for maybe this unmitigated level here at three eight fifty three eight sixty. We talked about
+[00:35:03] this level before because we have an OB here is untested for the three eight sixty. OK. Three
+[00:35:09] eight sixty three seven three eight sixty three eight twenty level this zone here. And again,
+[00:35:16] this is your bottom. So again, low time frame above four one fifty. OK. The new weekly candle will
+[00:35:26] open, of course, four one fifty four one forty four one fifty. We're going to move higher to this
+[00:35:33] zone. OK. Lose that level for zero seventy. We're going to come lower for this zone. Super clear
+[00:35:49] two levels here. That's it. Sorry. That's it. That's the two levels that I'm looking for.
+[00:36:00] That's the two levels that I'm looking for. So yeah, weekly candle, weekly candle down,
+[00:36:07] weekly candle, weekly candle ranging. So it's a range. So we're going to look for a bottom
+[00:36:12] sitting here. This is the level. This is the cluster. This is the OB that made that high.
+[00:36:21] So when they come to the same level, they will range here as well. They will also bias will step in
+[00:36:26] again. OK. So here this is the cluster that made that high. They retested that level, made
+[00:36:35] higher low, high, high, low, low, high. They came down again. Boom, boom. And they came to
+[00:36:44] the original place that made that high. They came to this level that made that high.
+[00:36:49] Flat candle here mitigated bias was stepping in again. OK. And now if we have a candle close
+[00:36:57] above this level, 15 minutes or maybe even an hourly candle close, we're going to look for loss.
+[00:37:02] What else we're going to use? We're going to use Confluence. We're going to use Asia High,
+[00:37:05] Asia Low. And then we're going to look for cells for maybe even a swing cell
+[00:37:11] order for a couple of days. But I don't like that to be honest. I just like to close
+[00:37:14] in the same day, especially on gold, because it's a bigger size than crypto. So we're going
+[00:37:19] to do that. So yeah, it's also the same thing with with BTC, by the way. If you BTC is again,
+[00:37:24] the monthly monthly supports also sitting here, you see the high time frame level.
+[00:37:31] The high time frame level is also coming to a support. And that's why you see bias was stepping
+[00:37:35] in. That's why you see bias is sticking. If they break structure, I think if they come to this
+[00:37:42] zone here, look, 67 is also the support level from here. So if you sorry, guys, let me zoom in.
+[00:37:48] So here the 67, look at this support, support. And this is the level that we look for cell
+[00:37:53] to retest, whatever level it is here, 60 level or so, and then look for longs to the 70 level.
+[00:38:01] It's still a big range from here to here. Okay, resistance, support, we are now
+[00:38:10] at the mid level. And that's why it's struggling. So I don't want to look for logs here. I actually,
+[00:38:15] if they move higher, you want to look for cells, resistance, resistance, support, support. So
+[00:38:22] definitely a zone here. And I think stop plus 68, what he said 100, 400, something like this,
+[00:38:29] in this zone. Okay, on the indicator, let's see if we can add some confidence. Sorry,
+[00:38:34] I'm moving from go to, we have also OB sitting here at the eight hours. So the eight hour OB is
+[00:38:39] also sitting here at 68, 300, 400. So above this level will be nice, or if they come to that level,
+[00:38:46] we will look for cells. So yeah. Yeah. Cool. Any questions, guys? Let me just read the chat.
+[00:38:57] Let's see. We'll use the letter we look for sure. Did you see that China is banning
+[00:39:03] the paper trade? I didn't know. Well, okay. Paper trading gold. What do you mean paper trading gold?
+[00:39:12] Demo trading gold? Or future trading gold? What do you mean paper? You just want two citizens to buy,
+[00:39:24] oh, physical gold. Okay. You mean, okay. I didn't know. Don't tell the government. No.
+[00:39:29] No. You're buying physical gold. Yeah. Yeah. Again, to be honest, guys, I know a lot of people
+[00:39:37] heard me on YouTube, but I don't care. I buy it, but I don't buy it. I buy it, but I don't buy it.
+[00:39:47] I'm Egyptian, man. I'm not following the rules. Come on, guys. I'm 37. I'm going to turn 38 this
+[00:39:58] year. 30, 40 years, I'll be dead. I'm going to enjoy my life. I'm not going to, like,
+[00:40:06] I don't care about text and all this stuff. If you know what I mean. I'm talking shit.
+[00:40:18] Okay, guys. So any questions, guys, for gold or BTC? We did Solana. We did BTC. We did gold.
+[00:40:25] The level of gold is super clear. Super clear. Super clear. On the 4-hour, we broke structure.
+[00:40:41] Okay. On the 4-hour, we broke structure. So if we do a retest, an Asia high, Asia hollow break,
+[00:40:48] we're going to look for longs for 250, for 260 level. And if we lose this level,
+[00:40:55] 40, 60, 40. So it's actually 2000 pips. We're looking to the move to the upside.
+[00:41:02] And we are actually at the bottom. If you think about it, it's actually not wise to short.
+[00:41:07] Only if we lose this level. 40, 70, 40, 60. Okay. So it's actually wise to look for longs,
+[00:41:14] because we are at the bottom. Anything on oil. We can look at oil. I didn't look at oil for
+[00:41:31] a long time. We can definitely look for oil after this. So gold is now diluted. So they think
+[00:41:40] gold is not heavy. It's real value. I don't know. So again, it's also about plan investment for,
+[00:41:48] like, what are you looking for? Like, for example, we are trading day trading gold and BTC. We're
+[00:41:55] making our money and we're done for the day. And this is actually something that I'm looking
+[00:41:59] for for the next 10 years. So yeah. Look at the far out. They did the same thing. They were
+[00:42:07] holding gold below the pyramids and it's still there, I think. Of this toilet. I don't know.
+[00:42:13] The English toilet and the French and whoever came there and the Egyptians. How do we get your
+[00:42:29] for playbook? It's in my section. It's in my section. So go to the section, scroll up.
+[00:42:33] You will see something about trading view, click it and then you will get it. Or you
+[00:42:39] go to indicators, you do Farooq. Why is this thing doing this? Guys, when you have a stage or a
+[00:42:50] YouTube with the other traders, does it also happen? Does it also happen, guys, that they
+[00:42:56] get kicked out when you do a stage or a YouTube with the other guys? This is only me. I didn't
+[00:43:02] ask them, but this weekend was super boring. No, so it is only me. Okay. So thank you,
+[00:43:21] Mr. It is me. U.S. is, I don't know. To be honest, Hamless, sometimes news is getting
+[00:43:32] overwhelming, like with all this stuff. I think the less news I follow, the better I get with
+[00:43:40] trading. Sometimes when Trump is speaking, of course, there is some high, high, high news.
+[00:43:46] I don't want to trade. So yeah, this is getting really annoying. I don't know what this is.
+[00:43:53] I don't know why it does that. Okay. Let's see.
+[00:44:09] Pint mesh. Thank you, Hamless. Thank you. Yeah, I'm going to definitely do the trade. But again,
+[00:44:15] I said this on Friday. I'm going to just check because I'm going to go on holiday with my family.
+[00:44:20] My son is at school. We have a holiday, of course. So I'm going to see what we're going
+[00:44:26] to do with that. We're going to talk with Terry and other stuff. All right. Cool. Okay. Let's
+[00:44:34] guys, let's look at something else. Let's look at what is the speed. There's nothing happening.
+[00:44:39] Solana is moving actually up with one. So let's see. Let's look at oil. I think somebody's
+[00:44:47] over. Let's see. Let's see. Let's see. Oil. Oil. Oil. Oil. That's crazy. That's crazy.
+[00:45:10] I remember, guys, we looked for long here. It's actually this is actually looking like it wants
+[00:45:19] to go higher. Because if you look at this is the weekly, this is the weekly chart, guys.
+[00:45:26] Okay. This is the weekly charts. If you look at oil, we broke structure. Okay.
+[00:45:34] We actually come to a high probability cell.
+[00:45:38] This is only. Did we mitigate it? Not really. Not really. Not really. No, we just had this.
+[00:45:48] We swept this candle here. We came to this FPG. So let me just mark it. We came to this FPG. We had
+[00:46:03] this wick. We swept it. All right. So we came to the zone. Broke structure. All this liquidity got
+[00:46:15] taken. They came and they closed that gap. So they are actually at a support level. This is
+[00:46:21] the move to start to make the high. So this is actually a support. We have a gap sitting
+[00:46:25] here above. So if gold is oil is going to go up, if oil is going to go up, that means that gold
+[00:46:34] is going to come down as well. So yeah. Yeah. Yeah. Yeah. So we need to see what kind of level
+[00:46:44] we have. It's also like a nice support level from before. This is the support level.
+[00:46:59] And we had also a nice support level sitting here. They came to this zone. So this is your
+[00:47:05] support level because you can see here resistance. Broke it. Retested. Went up. Retested. Went
+[00:47:11] higher. Retested. Went another higher. Retested. Up. Retested. Failed. Lost it. That's resistance.
+[00:47:21] Went up. And here was a choppy. And here they broke it again. And now they are retesting
+[00:47:26] it again. So actually this is the nice support level that we have here on oil. So this is
+[00:47:35] the support level that we have here on oil. So this is definitely a zone to hold. So yeah.
+[00:47:43] Think if this will hold, that means like it will go higher or range here a little bit longer.
+[00:47:51] So yeah. It depends on what happened the weekend of course. I think the rewards start again.
+[00:47:56] They close the state of Hormuz and trump something on Friday that the war will start again.
+[00:48:01] These people don't take a break. Let's look at the daily what we see here.
+[00:48:10] Daily. Daily OBs. Let me just remove. Yeah again we are testing an OB. We are testing OB. Let's see
+[00:48:27] how they open. But again there is a possibility if we lose this support that we set. There is an
+[00:48:32] OB sitting here I see. It's nice that they just marked it for us. So it's still an OB. That's
+[00:48:38] also a support level and that's actually the right shoulder if you think about it. This zone here.
+[00:48:47] This zone here as well. So yeah let's see if they come to this zone here. So the
+[00:48:53] support level is sitting here and maybe if they come to that zone then gold will go to
+[00:48:59] resistance and vice versa. So then we I'm not longing this. Like I don't I just want to focus
+[00:49:06] on gold and BTC and that's it. And sometimes we take so long or whatever. But yeah so I think
+[00:49:12] this is a good zone if they bounce for oil. So anybody is what are you looking for? Who asked
+[00:49:19] about oil? Let's see who asked about oil. Oil is almost a 74. It's 70 now. Is it maybe different
+[00:49:28] chart that I'm looking at? Because I know it's different. What was it again? Soil or soil? Soil.
+[00:49:39] What was it? Thicker again? And hyper liquid. So yeah silver. Silver we talked before. Silver is
+[00:49:54] actually the same thing but silver is yeah so silver. So silver you see here also the change
+[00:50:09] of character. This is actually your resistance. It's actually simple here. So this is your resistance
+[00:50:16] on silver. This is your support. We see here we have liquidity. Interesting. And if I look at 22
+[00:50:24] year data. Silver is first going and then gold. So yeah they are testing here the FPG. So they
+[00:50:34] need to break this zone. 61. If they break this 61 they will go to this OB here. 67 also unmitigated.
+[00:50:42] Okay and the weekly oil. Okay thanks thanks. So oil we didn't break structure here in the
+[00:51:10] four hours like we have an unmitigated zone sitting here. It's a little bit too far away
+[00:51:19] if you ask me. We have an unmitigated level sitting here 62. 61 62 as well. 61 9. This is unmitigated.
+[00:51:30] This is also unmitigated. So the Asia has 60. So there is a possibility guys if you look at this
+[00:51:38] that this will just do something like this and then come lower to sweep all this liquidity
+[00:51:46] resting here below as well. It's a nice trend line but every time they are just buying this one. So
+[00:51:53] why this level? We have an OB sitting here. Three OBs actually that unmitigated. So this is
+[00:51:59] a lot of liquidity. So you need to see it like a lot of people put in the stop loss sitting there
+[00:52:03] and they never test it. So never break it. But this is a strong OB that they need to break first
+[00:52:10] because if you look at the blue we have an FPG. They're retesting this level and then come
+[00:52:16] testing it. So this is lower low higher low. They don't need to break this Asia high and then move
+[00:52:21] higher. A retest and from this retest we need to see if they're gonna lose it or not. Again
+[00:52:28] I'm focused on gold sorry on gold because the system that we are using
+[00:52:35] it's based on gold. Oh man this is so annoying. What is this? Sorry guys. I'm gonna
+[00:52:44] new computer. I don't know what it is. So yeah that's that. All right guys any questions?
+[00:52:55] We should trade Zach. I don't to be honest you know I don't want to trade
+[00:53:02] more crypto to be honest. I'm just taking Succola Solana now because it looks looks a little bit
+[00:53:08] tasty. Just a little bit tasty. But again it's a small size and the focus should be for me
+[00:53:14] at least on that. Because if I do more stuff trade more things I will be you know I will
+[00:53:24] I like to just trade one. Guys if you look at this for example here in Solana this is the OB
+[00:53:32] that they should reject from it and they went a little bit higher. So that's why you need sometimes
+[00:53:38] to take a little bit bigger stop loss sitting above. Because there's unmitigated levels
+[00:53:43] sitting here. This is also unmitigated Fiji. There's so much liquidity sitting above but
+[00:53:48] again it also it also looks at BTC here. What is BTC doing? That's actually on the indicator.
+[00:54:00] If we see so yeah we broke Asia high and we broke Asia low. We have a 50 minute candle
+[00:54:08] close below Asia low. There's a high chances we come a little bit lower to 63 ish 63 200.
+[00:54:17] Because this is the level that made the higher high.
+[00:54:19] Actually equal highs. So if they close below this level 629 we're gonna come down to this OB here.
+[00:54:29] Look at this OB sitting here and this FPG. That's actually the limit order that we have.
+[00:54:37] And I think we have also this zone is a good buy zone. I think ECM validation. This was the
+[00:54:44] first trade that we took. We took stop loss to entry. We get stopped out and then look at this
+[00:54:50] whole move. We actually saw the bottom from here. We had two trades and then we put limit order.
+[00:54:57] And this was this third trade. So that's why you see like okay they are making higher highs
+[00:55:02] coming down. Why did we take a long from here? This is the low that made the higher high.
+[00:55:08] 50 minutes. They came down here. They arranged manipulation. Asia high broken and they need
+[00:55:15] to make another high high. So I want to see actually another higher high. We have also a
+[00:55:19] BPR sitting here. That's some nice confluence guys. So again 65 is an unmitigated BPR
+[00:55:29] and we have an OB here that's untested. I didn't see this. I didn't on the indicator. But look
+[00:55:35] we did it without the indicator and we see actually that 66
+[00:55:39] and the 65 it's a nice zone. So maybe guys we will go up today. Sweep it and that's your cell zone.
+[00:55:48] I bet you they're gonna do something like this. And also we have Asia high. Sorry we have
+[00:55:53] Asia high sitting here. They swept it. We have London high. We have US high. I know it's
+[00:55:57] weekend. But there is a possibility guys that this is your cell zone for the weekend.
+[00:56:02] So maybe tomorrow or maybe if you trade in Asia that's your that's your short.
+[00:56:10] If they leave that if they leave this zone and they come down that's easier for us because now
+[00:56:17] we know that that's actually a good zone. We have also unmitigated BPR sitting here.
+[00:56:22] So if they come to this zone they come to this zone and they come down. Then we know
+[00:56:27] okay they will go up for this zone. We just have to wait for a break of structure below
+[00:56:31] timeframe. Asia high break under 15 minutes kind of close and then we look for longs to that zone.
+[00:56:37] And this is also in the four hours. This is also under four hours we have support support
+[00:56:49] resistance resistance. We have a change of character sitting here. This is a good zone
+[00:56:54] and also an OB sitting here. FPG already tested. So I think this is a good zone here.
+[00:57:06] Yeah look at this OB here and OB here as well. Look at this liquidity resting here as well.
+[00:57:12] This is a lot of liquidity guys. This is also a lot of liquidity.
+[00:57:18] This trend liquidity resting here. This is a lot of liquidity here. Let's see let's see let's see
+[00:57:35] yeah master one thing. Yeah to be honest that's the thing. Just master one trade or one chart
+[00:57:41] and then you'll be good and just wait for high probability levels okay guys. So I need you guys
+[00:57:46] to focus on high probability and I need you guys also to take your own trades. Try to take your own
+[00:57:51] trades and try to tag me in what is it bragging rights okay. If you win or lose don't matter just
+[00:58:02] tag me and then we will look together. Why did we stop out and why did you get stopped out and
+[00:58:07] all this stuff okay. But again the thing is the levels are clear okay. I need you guys also to
+[00:58:14] to do some back testing on stuff on for example Asia high Asia low break. So if you for example
+[00:58:20] on gold if you have Asia if they broke Asia okay you just have to on the indicator. So we actually
+[00:58:30] look at the zone before I do that. We're looking at the cell here okay we are at the four hour OB.
+[00:58:37] Okay these are OBs in here. We have a change of character here as well. This is a good cell zone
+[00:58:48] man. This is a good cell zone definitely here as well. This is a good cell zone here. This is the
+[00:58:54] high that made that whole low as well. So this is a good cell zone here. The change of character
+[00:58:58] sitting here as well. This is good really good confidence 160. But anyway guys so what do you
+[00:59:03] should do guys? You should go to just on the indicator put let's see use old Asia sessions okay.
+[00:59:19] Use old Asia sessions and test it. Test the whole strategy okay. Asia high, Asia low break. They
+[00:59:28] go lower. Here that was the sweep because on the high time frame this is also something
+[00:59:32] that you need to do. If you have a bigger range like this Asia high, Asia low. They break this level
+[00:59:40] okay. They break this level and this was this was Asia, Asia new Asia. It was
+[00:59:48] nighttime for me so I don't trade this one. But again new Asia high, new Asia low. They broke it
+[00:59:52] go cell and you see here this is the low that made that high. So they will retest this level
+[00:59:59] as well. Here you have Asia high, Asia low. They broke Asia high okay. They tested this level and
+[01:00:05] this was also the high time frame. That's why sometimes high time frame not sometimes always
+[01:00:09] high time frame. Confidence is good. This was also the high time frame level. We got stopped out
+[01:00:14] by 60 cents or something here. Even this chart doesn't give us. Say 60, 70 cents we got stopped
+[01:00:20] out here and then they had this whole top. That's one lot size guys. That's life-changing
+[01:00:27] money I swear. Okay and here they broke structure. Retest went lower. Asia high, Asia low. Asia high
+[01:00:37] broke. Retest again what we saw on Friday and went up. Asia low broke and went up and all
+[01:00:43] this stuff. So yeah I noticed that the algorithm is changing a little bit on gold but it will
+[01:00:48] come back again. They do this every month. So we will find new new stuff. Any questions guys?
+[01:00:55] I don't see any questions guys. Any questions guys? And also guys like I want to you need to understand
+[01:01:24] this system is working with volume. So sometimes when there is low volume like for example if you
+[01:01:29] have if you look at this on the weekend on BTC. This was what? Sunday? Asia? No it's no volume at
+[01:01:43] all. Definitely no volume here. They're waiting. We have 50 minutes and five minutes
+[01:01:51] cattle closed below Asia low. So there is a high chances we gotta come lower. But still I don't
+[01:01:55] know. I like to go up first and then look for cells at this zone here. 65 and let's see.
+[01:02:04] 65 if you go on the one hour. We have also a trend line. We have also a trend line here
+[01:02:11] the one hour. Sorry for the mess but you see here also trend line here. That's also 65 with
+[01:02:16] the BPR resting here. Some liquidity resting here guys. This is mitigated but a small flat
+[01:02:23] candle sitting here. So I think 66 67 is a good sell zone. Really good sell zone. All right guys
+[01:02:35] any questions for BTC or Solana or gold? Okay wait for the market to open guys and let's see
+[01:02:44] what we will get. Let's see what which direction we will get. This is also support here. This is also
+[01:03:01] a support. This will be to lose the level and the one hour OB sitting here. And we have also
+[01:03:07] high time frame. I think in the weekly we saw old boss and the eight hour.
+[01:03:14] What the eight hour sorry a BPR sorry that was a BPR. That was a BPR around 12 hours.
+[01:03:25] Yeah a different chart. This was also the BPR. 262 42 was a really good sell. I think stop loss.
+[01:03:35] We will look for stop loss. We have also a BPR sitting here. So two BPRs.
+[01:03:40] It's like a magnet guys these two levels here. It's like magnets. I think a stop loss below
+[01:03:48] sorry above 4370 400 pips 300 400 pips stop loss also. Let's see how they react here first.
+[01:04:02] Yeah how do you check volume? So volume is actually I look at the candles.
+[01:04:24] The volume is actually look at the candles. So when you you can use indicators of course
+[01:04:32] but there is there is a thing in the market. When every session starts you will see like okay
+[01:04:43] they're gonna move. Like for example London will start. You will see like volume is kicking in.
+[01:04:48] They're gonna give you a direction. The first hour first hour and a half and then they will
+[01:04:53] give you a direction. And also US session volume will start and will give you a direction.
+[01:04:57] So I'm using I'm using only this but you can actually see it for example if the market is
+[01:05:03] moving or not. If it's just ranging like small range like here. You don't want to sit in here
+[01:05:08] in this range. And the same thing for gold. So if you have something like this for example here
+[01:05:14] this is no volume. See this whole move here that's no volume. And if you see this was
+[01:05:22] US almost closed. Look here. Like let's say you say okay we have a change of character. I'm gonna go
+[01:05:27] sell in here. Okay I'm gonna go sell put my stop loss whatever it is. Okay you can put your stop
+[01:05:37] loss above this high of course. Maybe you're right but look. Volume no volume no volume.
+[01:05:43] Go down go up go down go up. Now the volume will start. I don't want to sit in this whole
+[01:05:47] range here. I want to wait until they go up and mitigate the level and then I will snipe it.
+[01:05:55] Okay like for Friday we we took a sell at before US session. You want to snipe. You see like okay
+[01:06:00] this is actually an unmitigated level sitting here. So if you for example play the replay.
+[01:06:12] You see okay have an unmitigated zone sitting here. We broke structure here. They went up
+[01:06:20] but they left this zone. So you just have to wait until they come to the zone.
+[01:06:27] And then mitigated. Asia high Asia level will start and then you say like okay this is actually my
+[01:06:32] sell zone. But look here there is no volume in this zone. There's actually a bearish change
+[01:06:36] of character a bullish change of character bearish and I want to sit here. It's actually
+[01:06:42] eight o'clock until two o'clock one hour it kind of closes. So you will sit here for a couple
+[01:06:48] hours four five hours you will sit here. I don't want to do that. I better wait for a high
+[01:06:52] probability level even if it looks like a sell or a long. I better wait for a nice move first. So I
+[01:06:58] want the market maker show the hand. So what's the hand here. They go up. They break structure.
+[01:07:04] They go here to mitigate and then lose the level again and they will go make lower lows. So
+[01:07:10] trade here for us is again if they lose Asia low or Asia high. Let's start with that. And
+[01:07:16] sometimes bigger move. So this is like low volume. You can see actually how thin the candles are.
+[01:07:23] Okay you see how thin the candles are. So yeah they asking about the bots. Yeah the bots are still
+[01:07:32] going. It's still going. I'm just taking the left trade of it but I will do. I'm making some
+[01:07:39] changes on it. So yeah all right let's see guys how the market will open. I'm looking here at
+[01:07:59] the news and on x but I don't see anything special. I don't see anything special on x on
+[01:08:07] the news. Let me see. So many people are trading BTC on x. It's really getting stupid.
+[01:08:21] People say I'm going to go to 30k. People say it's going to go to 100k.
+[01:08:26] People don't know. It's a little bit. I think we need to go to a little bit higher to be honest.
+[01:08:54] So guys you can for example if you want like you can trade BTC on
+[01:08:58] VT markets. I like to trade BTC on VT markets. I sometimes take it on Blofen but I like to trade
+[01:09:06] on VT market. And even Solana you can trade on VT market if you want. Okay you can trade on
+[01:09:14] VT market or you can trade it on Blofen. You can decide. But yeah. So guys
+[01:09:26] is any any new any questions about the indicator? Do you guys is everything clear?
+[01:09:32] Do you guys want me to change something on the indicator? Or do you have any suggestions for
+[01:09:36] the indicator? Or is it too much? I'm gonna I'm gonna actually do something on the indicator.
+[01:09:48] I'm gonna make it easier. VT market stop. Yeah same thing happens. I love VT markets.
+[01:09:55] Soldex is a cheap. Yeah for sure. Yeah definitely a lot of spread on Sol. I'm gonna do something
+[01:10:01] on the indicator guys. We have 32 people. So I'm gonna do something on the indicator this weekend.
+[01:10:09] Sorry this week. I'm gonna actually make it easier for internal structure. Because I find
+[01:10:18] like a lot of people struggling with like external structure is is for a lot of people easy.
+[01:10:25] Like for example external structure you see it's it's actually lower low. Lower low brick structure
+[01:10:35] high high. High low. High high high low. So here high high low high lower high lower lower lower lower
+[01:10:42] lower lower lower. So a lot of people this is actually three months support here. Oh this
+[01:10:47] also three months support here. So a lot of people struggling. So I'm gonna do something
+[01:10:55] on internal structure. But I will add it. I will add it to the the panel. So this panel here.
+[01:11:05] I'm gonna I think I'm gonna remove something. I'm gonna remove. I'm gonna see what I'm gonna
+[01:11:13] remove here. Maybe current OB or so. Maybe not. I'm gonna see maybe I'm just gonna add it. But
+[01:11:18] I'm gonna do internal structure. So let me just think about it. I'm gonna do something for
+[01:11:23] internal structure break. So on this panel I'm gonna add like okay internal structure break
+[01:11:29] five three and one minute. So for example here guys when you have internal structure break.
+[01:11:38] So when you have internal structure break let's say we are ranging inside of this range.
+[01:11:50] Okay we are inside of this range. You don't know which direction we will go. And let's say
+[01:11:55] they broke here internal structure. Okay then you see like okay we broke here under one minute.
+[01:12:00] But our confirmation is also maybe three or five minutes. They broke us under five.
+[01:12:04] Then you wait for a retest at a small OB under one minute. You scalp it to
+[01:12:10] resistance or to make another higher high. All right. So for example the indicator will tell
+[01:12:17] you okay we actually inside of this range we broke structure. Here here here. So that's
+[01:12:23] like the one three and five minutes. And now this is the retest. We have an FPG. We have an OB or
+[01:12:29] not. We wait for retest and then look for a bounce. Maybe they will not make a high high
+[01:12:34] because it's internal. It's a little bit crazy. It's a little bit intense. But you can look for
+[01:12:40] longs until where you're gonna look for longs. You're gonna look for longs until you're gonna
+[01:12:49] look for longs. I'm just gonna do it like this. You're gonna look for longs until this
+[01:12:57] zone here. Why? Because here is the break of structure happens. So you're gonna look from here.
+[01:13:03] Stop loss to entry and you need to expect another higher high. If they fail to do so
+[01:13:07] but you already protect your position. So I'm gonna work on this. I think I need to show you
+[01:13:12] guys. Let me just work on it and then you will see it on your chart. Then you can say like
+[01:13:19] okay a small scalp sitting there is good. So yeah I'm gonna work on this probably
+[01:13:26] tomorrow. So tomorrow I'm free. So that's good. No, I'm not free. No, no, he got sick.
+[01:13:32] The guy got sick. But I can still work on it tomorrow. So yeah.
+[01:13:36] All right guys. Thank you very much. Have a good one. Any questions guys before I go?
+[01:13:46] I think it's good. We stayed for an hour this time. It's nothing really to talk about. We
+[01:13:50] just have to wait for the market to open. Yeah, I see this. Hey Mike, how are you?
+[01:14:01] Thanks. Thanks crypto Mark. Thanks guys everybody. Thank you. Let's kill it this week. Let's wait
+[01:14:07] for Monday to form and yeah guys again focus on gold. The chart is actually super easy just for
+[01:14:15] a quick one before because the people come late. Two levels here. Above 4.140, 4.150. We're gonna
+[01:14:21] look for longs to 4.260, 4.2 this level here. It's a 12 hour OB, one hour OB and unmitigated
+[01:14:28] BPR sitting here at 4.250. Okay, that's your cell zone. And if they lose this level,
+[01:14:36] okay, so we're gonna look for buys because we're gonna support. If they lose the 4.070,
+[01:14:42] okay, if we lose the 4.070, we're gonna sell the shit out of it. We're gonna go lower. And
+[01:14:48] then yeah, we're gonna, I don't know, the flat candles sitting here is unmitigated. So I think
+[01:14:54] again, 3.860, 3.850. It's an OB that never got retested and it's also mid-level of the FPG and
+[01:15:02] all this stuff. So yeah, guys, thank you very much. See you guys tomorrow in the chat. Have a good one.
+[01:15:07] Bye.

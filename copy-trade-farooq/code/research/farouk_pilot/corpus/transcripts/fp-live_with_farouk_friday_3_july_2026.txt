@@ -1,0 +1,1812 @@
+# [VAD_APPROXIMATE] Timestamps below are VAD-COMPRESSED (transcribed with vad_filter=True); drift ACCUMULATES with recording length. Do NOT treat as real-audio seek positions — re-locate by real audio (search token, no-VAD) for precise seeks. See K-056 / D-067.
+[00:00:18] T-O, how are you? T-O, good evening, 4 people max, that's good, used to have 200 people, 250
+[00:00:39] people in the bull markets, when everything was going high. Fabio! Missed any 5, now 13 mark.
+[00:01:00] Let's go, let's go, let's go. I want to talk today about the indicator guys. I'm going to
+[00:01:08] change it this weekend, so I need some feedback, we are using this thing now for 2 weeks or so.
+[00:01:15] I'm going to talk about the indicator. The market is today super boring eh guys? There
+[00:01:20] is nothing to do, I think it's going to close in an hour or so, 2. We are in a range, it's
+[00:01:26] going down now, but pretty boring, super boring. This is actually a sell, it's actually a sell,
+[00:01:47] but the markets are about to close. They made a lower low, but no confirming, it's a break
+[00:01:52] structure under 5, retest, or the OB, not even the OB, so maybe they will go up again.
+[00:01:58] It's also possible that they will just before the market close do not, and then go down.
+[00:02:02] I don't know. One is Jacob, so I think the link for YouTube isn't sharing in Telegram.
+[00:02:32] I can't see screen, no I'm just sharing that, let me share that, share a screen,
+[00:02:46] Discord is king. To be honest Hamless, when I send a message, it's coming first to Telegram.
+[00:02:54] Is Willem Desswach here today or not? I met him yesterday, such a cool guy. Hope our
+[00:03:03] guys can meet you all soon. Okay, let me just bring a pen and paper so we can talk about the
+[00:03:13] indicator. We'll talk about the loss of this week, and we'll talk about the wins of course.
+[00:03:23] Talk about all the trades, talk about this range. Asia high, Asia low is bigger this range.
+[00:03:36] Hello Sanpeggo. Super, look at no volume, nothing to do. I'm not a favorite when there is no volume
+[00:03:50] to enter a market to do anything, it's just a small range. You can take a small scale, but yeah.
+[00:03:56] I was actually hoping for a breakout of this range, like everybody I think, so a breakout of
+[00:04:01] this range, come to a retest, and then we look for longs. They are holding all the liquidity,
+[00:04:07] so going to the top, and now they broke structure under 5.
+[00:04:11] But yeah, let's see. I'm just going to remove nothing to do.
+[00:04:27] Yesterday we took two shorts, one from here. It was the A plus setup for me
+[00:04:33] after they broke structure, and another one, this OB retest, they tested this level.
+[00:04:38] We took 150 pips, and of course we put surplus to entry after that, and the market closed,
+[00:04:45] and after when they opened, they opened like this.
+[00:04:49] So I want to talk actually about some couple of things, so you guys can have it as well.
+[00:04:53] So when you see, okay, let's see. So this is actually, I didn't, okay.
+[00:05:03] Let's see, let's see. Let me just bring a new screen.
+[00:05:07] This is, let me bring this one here. Let's go to the five minutes. Let's do this.
+[00:05:13] Let's close the indicator. Let's go replay mode. Let's go replay mode.
+[00:05:24] Let's say this. Let's do something like this. All right, cool.
+[00:05:36] MiG777. Guys, today Egypt is playing against New Zealand. No, Australia at 8 o'clock.
+[00:05:48] I don't watch football a lot, but World Cup a lot. I like it, of course. I watch Holland,
+[00:05:52] I watch Egypt, I watch France, of course. This is getting excited, so they need to win in two hours.
+[00:05:59] If they win, probably they will play against Argentina. They will get their ass whooped.
+[00:06:06] But yeah, who will win? I hope Egypt will win against Australia.
+[00:06:12] The only problem is we have five players injured, Salah injured, and
+[00:06:20] Australian guys are two meters long. They are tall, really tall. Tall, tall guys.
+[00:06:30] All right, guys. I'm going to change some couple things to indicate, but we will talk about it
+[00:06:38] later. Guys, let's say you guys can wake up in the morning and you see a candle like this.
+[00:06:57] This is bullish. We see here lower low, higher high, higher high, higher low, higher low,
+[00:07:07] high break of structure, so they make higher highs. You guys, when you see a candle like this,
+[00:07:14] you need to look for, of course, long, because the market is an uptrend, so you need to wait
+[00:07:18] for retest and long. You're not going to do something like this. You're not going to do
+[00:07:24] something like this. You're not going to long the top and then put your stop-loss here.
+[00:07:31] I don't know. You need to look for longs. Guys, you know the strategy that we use,
+[00:07:38] for example, when the market is going like this, going to the downsides, lower lows. We see that
+[00:07:51] the market is making lower lows. Guys, be active in the chat. I'm going to ask some questions.
+[00:07:56] The market is making lower lows. Let's say we lost Asia high in all this nonsense. We want to look
+[00:08:04] for short. What should you do? You're going to look for, they claim this FPG, so the higher chances
+[00:08:13] they're going to go back to the highest level, to the OB, and then go down. They're going to come
+[00:08:19] do something like this. They're going to come here and then reject the market.
+[00:08:27] And then, Zaheer, how are you? And then come like this. Agree? They're going to come to this OB
+[00:08:36] and then reject and then go dump. When you have the market making lower lows,
+[00:08:47] they come again and retest the OB level. If they claim this FPG on the five minutes,
+[00:08:53] then the higher chances they will go higher. Agree, guys? Something like this.
+[00:08:59] What should you do when the market is, where are we? What should you do when your market is like
+[00:09:07] this in an uptrend? What is the best thing to do when the market is making high highs on the
+[00:09:12] five minutes, 50 minutes, whatever it is. They're creating FPGs. You're going to look for a point
+[00:09:16] of interest because your bias is long. What is the next step to do, guys?
+[00:09:26] Can somebody tell me this? Can somebody know how to do it? Wait for a pullback. Yeah, of course,
+[00:09:34] you can wait for a pullback. What is the level for a pullback? Where too long? What is the level?
+[00:09:41] Where do we expect that the retest will happen? Will the retest happen here?
+[00:09:45] Will the retest happen here? Nobody knows. What's going to happen? What is the highest
+[00:09:48] probability to wait for retest? Nice. Look at the Fabio. Look at the Fabio.
+[00:09:59] Exactly, Fabio. No, no 50% on all these things, guys. Fabio said it. Look for OB.
+[00:10:06] Levon said it. Fabio said it. Look for OB. How to look for the OB? For example, you see here we
+[00:10:14] have a break of structure. This is the level where we have a break of structure. What do you see
+[00:10:20] here? There's OB here. There's the OB here that they broke through. This is the level
+[00:10:30] that we used to look for cells. We used to look for cells at this zone. We're going to look for
+[00:10:38] cells at this zone. Then we're going to look for cells. We're going to wait for confirmation.
+[00:10:43] Then look for cells. Let's say you took a cell here with a limit order. They're going up.
+[00:10:47] They broke structure. Then you wait for retest to get out at break even. Then you look for longs.
+[00:10:56] Let's see. This is the OB. We have the five minutes here. We're going to look for more
+[00:11:02] confirmation. We have here the five minutes. We're going to also mark this OB. Look at this OB
+[00:11:08] here sitting. This highest level. Look, they retested. They went down. We're going to mark
+[00:11:14] these two zones here. I know when the market is 50 minutes OB, five minutes OB, hourly OB,
+[00:11:22] and all this stuff, it's a high probability for a retest. The same thing that we used,
+[00:11:29] the concept that we used when they come to the highest level that made the lowest level.
+[00:11:33] Now, the highest level is going to be a support. The OB, the bearish OB, will be a support.
+[00:11:40] We know that this one here is the five minutes OB, five minutes OB, and this is the 50 minutes OB.
+[00:11:53] This is the zone for me, 15 minutes OB. You can do the same thing under four hours and
+[00:12:01] the higher timeframe, the hourly. The higher timeframe is stronger. The higher timeframe is
+[00:12:07] stronger than the lowest timeframe. We have a break of structure. My long should be here. If
+[00:12:12] they come here, look for confirmation and then look for longs. You can expect something like this to
+[00:12:20] happen. You wait until they come to this level. We broke structure, and then you need to look for
+[00:12:26] highest level, something like this. Then they should push higher. In this zone here, for me,
+[00:12:33] will be a long. In this area here, I will look for to place a long. You need to have a range.
+[00:12:43] We usually do something like this. Do something like this. Make it green because it's bullish.
+[00:12:53] Range between this zone and this zone, this two OBs is a strong level. We are also trading
+[00:13:00] inside of this FPG because the market pushed up, so you can expect a retest and then go higher.
+[00:13:06] Let's see. Boom, boom, boom. Retest. You already are in profit. Look here, they retest this level.
+[00:13:15] 101, 100, 101. Retest the level and it gives you a push up. What do you expect? You expect that
+[00:13:21] the market also will break structure and then go higher, higher highs. Higher time for OB is
+[00:13:29] definitely king Fabio. They need to come back to the same zone that the OB for us that was
+[00:13:35] actually a cell level will be a buy level. It will be a support. So you can see here,
+[00:13:44] they tested this level. You are in a long. You see the wick. You can also wait for retest
+[00:13:50] under one minute, five minutes or whatever. 300 pips. We can expect that they move higher.
+[00:13:56] Boom. See? They just pushed higher. So the OB here under higher time frame will be now a support.
+[00:14:07] So far so good. So we're going to do the same thing every time again. So when you have,
+[00:14:12] for example, let's see the one hour for here. Let's use the one hour. So now,
+[00:14:17] what do you see here, guys? This was the support, support, support. Okay, so I have
+[00:14:23] this level here. I have this level here that can be also a support level. I have also,
+[00:14:31] this is the resistance level. This is the resistance level. This is the resistance level,
+[00:14:38] 195 resistance level. We came here at the OB, at the four hour OB. I think this was the four
+[00:14:47] hour OB. This was the four hour OB from today or yesterday, Asia, whatever it was.
+[00:14:55] So here, look, they rejected this level. So we can use the concept of the old OB. The old OB
+[00:15:05] can also be a support or the breaker OB can be a support. So this level already,
+[00:15:10] we broke through it. So we have also a level sitting here at the OB where they tested before
+[00:15:17] this zone here. Let's look for more confirmation. So I see here, for example,
+[00:15:22] let's see the four hours. You see four hours, this was the OB. They retested and then lost it.
+[00:15:30] So we can use this level here, 150, 160. Let's go to the one hour. Let's see,
+[00:15:37] we have also an OB sitting here. So this level here will be our point of interest.
+[00:15:43] This will be the point of interest. And this was also the rejection area from here.
+[00:15:47] So OB, lost it, rejected. And now this can also be a support from this level here,
+[00:15:57] tested. And now we are sitting here, testing this level and we're sitting here.
+[00:16:01] So we are inside of this small range here against from persistence to support.
+[00:16:07] So you need to use all these things in your arsenal to look for, okay, confirmations,
+[00:16:14] to look for longs or short. Great. So you need to use this
+[00:16:18] OBs as well and the high bank frame. So again, guys, when we take a cell,
+[00:16:22] let's say we take a cell from this four hour OB that they rejected, we already know
+[00:16:28] where to take profits. We already know based on the information that we have,
+[00:16:33] where we should take profit. Okay. We have this level here.
+[00:16:36] This was also previous support, previous OB. So we can still use it as a market will stop
+[00:16:41] because the market will respect old levels as well. You can see here, they come here
+[00:16:47] to this level that made the lowest level. They came here and rejected.
+[00:16:53] And then pushed up, came to this level, rejected, came test this level again.
+[00:17:00] So far so good. Can you guys follow me? So you already like knowing what after you see
+[00:17:09] a change of character under five, 50 minutes inside this small range that you already know,
+[00:17:15] where should I actually long or where should I short? Because if you look at this market now,
+[00:17:19] from this zone here, we are inside of this range. And to be honest, guys, this is perfect
+[00:17:25] scalping range because OB made internal structure. They came here, tested this lowest level,
+[00:17:34] high, high. They tested again, rejected again, came down to the level that started to make
+[00:17:40] the old OB 160, 150 level. And now they're still inside this small, small range with no volume is at
+[00:17:49] all. All right. So this is actually a concept that you also can use when we have a ranging market
+[00:17:55] because guys, the market is ranging 90% of the time. We don't have this. Usually guys,
+[00:18:00] when you have a range, look at this range, range. And this is of course, in the five minutes,
+[00:18:05] range, bigger range, bigger moves. This is just easy when you just go down like this.
+[00:18:11] Also range. Let's go to the little bit bigger timeframe. Let's go to the weekly actually.
+[00:18:15] Let's see the weekly. Look at the weekly range. Look at the range here.
+[00:18:19] Look how many weeks. One, two, three, four, five, six, seven, eight, two months. One,
+[00:18:25] two, three, four, five, six, seven, eight. So it's already four months in this range.
+[00:18:33] We are four months in this range. So what are you going to do? You're going to do nothing in
+[00:18:38] four months. You're going to say like, it's a, it's a, it's a, it's a ranging market. This
+[00:18:43] market is not, I'm just going to take this moves. No, the bigger, the longer the range,
+[00:18:47] the bigger the move. So inside of this one candle, the weekly candle, we can take also
+[00:18:53] scalps guys. And high timeframe is king. Look at here. Resistance, resistance, resistance,
+[00:19:01] support come his sweep and all support. Now look at this. If you move this to the right,
+[00:19:06] it will be also supported resistance. So we are now this resistance. So you can use these
+[00:19:12] things in your arsenal. Okay. Because the market respect the old levels as well.
+[00:19:18] Okay. So, um, let's go back to the one hour. We are now here. All right. Cool. Any questions
+[00:19:30] guys for this? Hello. Hello, Solomon. How are you? Any questions for this? So today guys,
+[00:19:43] I was hoping for a little bit volume. I was hoping for a move up or move down. So what
+[00:19:48] do you see here guys? Let's talk about today. Today, low volume us close 4th of July, whatever.
+[00:19:56] So here again, high probability trades is the high. You just go into the downside,
+[00:20:03] small scalps. Asia high is here. Asia low is here. You have a big move like this. You can use it as
+[00:20:09] okay. Where's the support? Where's resistance? Okay. If you, if you see that we didn't break
+[00:20:16] Asia high, if you see that guys, we didn't break Asia high. Let me just remove this and this
+[00:20:24] something like this. If you see that we didn't break Asia high like this. So for us is okay.
+[00:20:32] What is the market doing? Can I look for long? So we're going to look for shorts. I know that
+[00:20:36] one hour, four hour daily, 50 minutes are all bullish. All right. But we can still take
+[00:20:43] scalps. So what you can do guys, you can also, for example, in a move like this, okay, no,
+[00:20:50] where is the old OB? Where's the support? We saw that 155, 160. That's a level that
+[00:20:56] they will bounce. You can see they're expected, but what you also can do guys,
+[00:21:00] just go to this tool, invert the scale, and then you see that we actually have,
+[00:21:07] let's say this is bearish. We lost OB here. We have, we claim this OB here under
+[00:21:12] the bearish OB. Let's say this is a, let's, let's say this is a down move.
+[00:21:18] You know what I mean, guys? The concept that we're using.
+[00:21:21] Five minutes OB. We lost it. Candle closed below. Okay. Retest. What do you see here?
+[00:21:26] There are no, there are no OBs. We, this FPG we claimed. Candle closed.
+[00:21:33] What is this FPG? No candle closed, but we have another FPG, another FPG. So the market's
+[00:21:42] actually going a little bit down to the downside and we didn't have Asia High broken. So what you
+[00:21:48] guys can do is just scalp the move, wait, pull back to a cluster, go short. This is,
+[00:21:57] I invert this chart guys, go short. Okay. Coming back again, go sell. So they're coming like slowly,
+[00:22:05] slowly, slowly. They just grind into the downside because there is no volume.
+[00:22:10] You can just take this small scalps to the downside. Why? To the downside, even if the
+[00:22:16] market is bullish, because we didn't break Asia High. Our concept is like the A plus setup that
+[00:22:21] we're looking for is break Asia High, wait for retest. There is a 78% chance that the market
+[00:22:28] will go up. I'm not talking about, like guys, look at this. Let me send it to you guys.
+[00:22:35] Let me see. Let me just scroll to my, let me show you guys. The Asia High guys,
+[00:22:45] the Asia High concept, it's not my concept. It's not my concept. I didn't steal the concept.
+[00:22:53] No. Here. Maybe I stole the concept. I don't know. Copy selective text. And now with no volume,
+[00:23:15] the market's about to close. I recommend you guys not to take any trades because the market can
+[00:23:20] just spike one time and that's it. Asia High London breakout. Long setup, Asia High broken.
+[00:23:37] Asia range. That was yesterday. 40, 92 ish. When Willem Zweigher and I took the trades in the shop.
+[00:23:49] So you see here, the breakout, long, blah, blah, blah, blah, blah. This is a 22 year age data.
+[00:23:54] There is a continuation of 80%. Guys, this is data. Like what I'm saying when the Asia High break,
+[00:24:01] there is an 80% chance when Asia High got broken, that we're going to go up. There is
+[00:24:08] 80% chance when Asia High got broken, going to go up. What do you see yesterday? People will say
+[00:24:13] like news and all this stuff. Look at the candles, there's no volume. Okay, let's see. Let me just
+[00:24:18] invert the chart. Invert. Look at this guys. Yesterday. Asia High, Asia low. What do you see
+[00:24:37] here? Five minutes candle close. 50 minutes candle close. Hourly candle close above Asia High.
+[00:24:49] We are looking for five minutes. You have three confirmations that the market will go up
+[00:24:53] from this zone. Okay. Willem Zweigher took the trade from this level here.
+[00:25:01] From level from, I just forgot to post for you. I got to post yesterday two sales.
+[00:25:07] Boom. Candle. News candle happened. This is an 80% chance or 78% chance that the market will go
+[00:25:14] up. I'm not like, I'm not saying, okay, this is the concept that I, no, it's a 22-year data.
+[00:25:20] I don't trade 22 years. You know what I mean, guys? So when I tell you these things are going
+[00:25:25] to happen, it's not like, you know, I've invented this of all this stuff. Watch long setup during
+[00:25:32] London. What time did it happen? London, London. US was open. This was the news. Boom. Went up.
+[00:25:39] And the same thing, guys, with the London low breakout. So this is already for you, guys,
+[00:25:46] a confirmation, information that you guys have that nobody knows about this.
+[00:25:52] And I want you to use it, guys, to be really profitable and make shit ton out of money.
+[00:25:58] So you guys can print when you see this setup. When you see like, oh, man,
+[00:26:03] I have a five and 15 an hour candle close above whatever the market is looking like shit.
+[00:26:10] Based on the data, we're going to go up. Let's look at BTC. Let's look at BTC. Look at BTC.
+[00:26:22] Asia high got broken. Just going higher highs. Just going higher highs. We're going up. To be
+[00:26:30] honest, this data is for gold, but it also works on BTC a little bit. But I already met you guys
+[00:26:41] to use it. Use it for for gold. Okay. But sometimes we also use it for BTC. Okay. Because
+[00:26:51] the market always do the same shit. Okay. So here, guys, Asia high got broken. Boom,
+[00:26:55] boom, boom. Everybody will say like, okay, this is a cell. This is a cell. Because the people like
+[00:27:03] anybody took a short from here and got stopped out or whatever. Did anybody take a short from
+[00:27:09] this zone here and got stopped out when you see like, we know that this is the level that let's
+[00:27:15] say we took a short from here market. Look how shit the market looks from here. They do this on
+[00:27:19] purpose. They do this on purpose. As I hear I said this like five, five 15 and one hour candle
+[00:27:30] close, but we use the concept for our scalping. We use the five minutes. But on this yesterday
+[00:27:37] trade, you had 515 and one hour. I to be honest, five minutes candle close two or three candle
+[00:27:44] close above this level. It's enough. You will at least wait for a pullback and then retest.
+[00:27:50] So where was the poo bag guys? The poo bag was here. The poo bag was here. Why was the
+[00:27:55] poo bag at this zone? So you see here, okay, what level got tested? This level already got tested
+[00:28:03] the OB. They made higher highs. They broke Asia high. Okay. They retested this level. They went up.
+[00:28:11] People will say like double top with W whatever it is. I don't know. What do you see here guys?
+[00:28:15] They came back to the OB that made the highest high. This is the level that made the highest
+[00:28:20] high. Higher high came again. You see already, okay, the indicator is giving you a change of
+[00:28:25] character. This is already for you a setup. What is that? What is the problem guys to take
+[00:28:30] along from here? What's the problem to take along from here and put your stop plus a little bit
+[00:28:36] lower below this week because this is already already got tested. If they come to this level
+[00:28:40] again, if they come to this level again, like then you know the market will come 100% down.
+[00:28:46] But based on the 22 year data, there is an 80% chance, 78% chance that the market will pull up
+[00:28:53] at least to higher levels to this level, to this FPG. Okay. Lower low, higher low, higher low. Take
+[00:29:02] along. Boom. TP hit one candle. You're done. You don't need to trade anymore. And this is the
+[00:29:13] things that you can do. Okay. You missed the trade. My name is Fabio. I missed the trade.
+[00:29:17] Where should I take the wrong long? The OB will be a support now. The OB will be support. Five
+[00:29:26] minutes OB, 50 minutes OB. Wait for a retest. Go long. There is no reason to look for short.
+[00:29:32] Look how many FPG the market pushed up. You can say like, I'm going to wait for here,
+[00:29:37] but there is still like a chance that the market will bounce and make another higher high.
+[00:29:41] So at least for 50 or 100 pips to take another high high and go higher, retest, push,
+[00:29:50] and go make an higher high. Boom. So yeah guys, like you need to,
+[00:30:06] that's why I said to you guys, focus on one chart, focus on one asset and all this stuff.
+[00:30:11] Of course we're going to lose trades. I even lose trades. But the win rate is still 90 plus percent.
+[00:30:16] Last month guys, last month we had 22 winning trades. We lost two. So what?
+[00:30:25] Nobody's winning 100%. We're still human. Even when we use everything. This week we lost one trade.
+[00:30:32] So what? I don't care. At the end of the month, I know I'm going to end green.
+[00:30:38] And after that we had two, three winning trades, PTC and two gold yesterday. So yeah.
+[00:30:46] So far so good. So guys, I need you also to focus because I noticed when, okay,
+[00:30:50] when we hit stop loss, I see like a lot of comments. Stop loss hit, stop loss hit. Yeah,
+[00:30:54] okay. What can I do? I want to stop loss hit. We will look for recovery trades.
+[00:31:00] Did you guys take a long? No. Like again, guys, these things that I teach you guys,
+[00:31:07] this thing I want to teach you and I show you guys, the only thing I'm showing you guys,
+[00:31:10] what I do to be profitable. I need, I want you guys to be profitable. I need you guys to be
+[00:31:16] profitable. The only way to be profitable is to trade this and use this concept for your own,
+[00:31:22] to build it for your own. All right. Again, here, this level here, we saw that 160,
+[00:31:28] 150 will be a support level based on the old, even the old OB here. Look at the old OB.
+[00:31:35] Ah, look at the old OB here. I close the indicator, but look at the old OB. All right.
+[00:31:42] My name is Miss Stanley. I'm going to wait for this level to come and I'm going to look for
+[00:31:48] a scalpy, scalpy. Okay, these two big stop loss. Of course, let me just remove this
+[00:31:54] between this zone here. This is the level. Look at old OB here. Okay. Let's mark it out. It's
+[00:32:03] already giving you this whole thing. Okay. Let's mark it out. Let's mark also from this highest
+[00:32:08] level. I know that this zone is my level where I expect after this move up that the market will
+[00:32:13] give me a nice bounce at this zone. Bounce. Boom. We see it bounced at this zone and you're done
+[00:32:23] for the day. This is the one hour candle guys. Don't get fooled. This is the one hour candle
+[00:32:29] guys. You took the trade, three, four, five point entry. It bounced. They went up.
+[00:32:36] I think it was 160 pips. One load size. You made $1,600 with clicking buttons. You make more money
+[00:32:46] than a player in ERCA. Do you guys know ERCA? So guys, use these things in your arsenal.
+[00:32:54] Use these things in your tool to know, okay, where the market's heading and all this stuff.
+[00:33:00] And now, inside of this range, it's a little bit difficult to trade, of course. The market lost
+[00:33:05] this OB and all this stuff. So the market may be pulling a little bit down. We have equal highs
+[00:33:09] sitting here. So there's a high chances when the market will open. On Monday, they will sweep,
+[00:33:14] retest and make another higher high. Okay. So what was I was looking for today? Today,
+[00:33:21] I was looking for two things. We are looking for A plus setup. All right. I'm looking for
+[00:33:27] A plus setup. I'm not looking for a shit trade. I'm not looking for no volume, whatever. Okay.
+[00:33:33] Of course, you can scale this whole move, like I said. So what is the setup that I was looking
+[00:33:37] for today? Today, I saw that, okay, what do we have here? We have OB. We have this level here.
+[00:33:47] Okay. 140 level. Let's go on the four hours. Let's see if you can mark something. Look at
+[00:33:53] this. BPR, FPG. We are turning inside of this range. Okay. This OB here never got, it can be
+[00:34:00] also support. We have a small OB, but we have also a higher OB sitting here. Okay. So I know
+[00:34:06] that this level here, it's my zone that the market will bounce, that I can look for longs.
+[00:34:14] All right. When the market will bounce. So this is the zone that I will look for.
+[00:34:18] On the 30 ish, on the 20 is the zone that I will look for. I can expect a bounce here. I can expect
+[00:34:24] at least when they come to the zone to look for longs. Okay. Let's go to the five minutes.
+[00:34:30] Zooming on the five minutes, I see here as well that this is the move that went up. Same time
+[00:34:37] here. We have trend liquidity sitting here. The market is coming for the liquidity. We have
+[00:34:43] Asia low sitting here. So there's a possibility Asia low will be swept and come to the zone
+[00:34:48] and then at least to give us a move up. They will not lose Asia low and then dump and dump and dump.
+[00:34:53] No, the market's making higher highs and also based on the higher time frame, the daily,
+[00:34:57] that we broke structure on the daily. We didn't break structure for daily for a long time.
+[00:35:01] So again, buys is still longer. Okay. We have trend liquidity. We have this OB here,
+[00:35:08] the old OB here sitting here in the four hours on the 30. And I know that this zone,
+[00:35:12] it will be a bounce level. I see also we have a gap sitting here or a flat candle.
+[00:35:18] Okay. So I know that, okay, this is a high probability level where the market will bounce.
+[00:35:24] And I see also here under five minutes, we have also a small OB sitting here at this level. So
+[00:35:30] I know that 120, between 130 and 120, it's a level for the A plus set up for a bounce. All
+[00:35:38] right. When there is volume, of course. Okay. So where is my sales zone? Where is my sales zone?
+[00:35:44] Okay. Because we still in inside of Asia range, actually Asia, London range and US range, whatever.
+[00:35:50] So where is my sales zone? Let's go to the higher timeframe. Let's go to the four hours.
+[00:35:56] So what I see here, I see here that same thing. I have the OB here sitting here on the four
+[00:36:06] hours. All right. The OB here is set in four hours. It's already tested and then went down. Okay.
+[00:36:13] Let's move to the other OB. This is the old OB as well. Already got tested and then went down.
+[00:36:23] So I know that this zone will be a hard level to break. All right. And then I see here,
+[00:36:29] we have also a change of character sitting at this zone. Let me just go to this chart.
+[00:36:42] Sorry guys. Let me just use this chart. All right. Four hours again. Sorry.
+[00:36:52] Four hours again. OB got retested. Okay. We got retested. If we break this level here,
+[00:36:57] if we break this level, that will be a support. Where should the market go to?
+[00:37:03] Okay. We have a level sitting here. We have a level sitting here.
+[00:37:06] This also rejected hard from this level here. So there is liquidity. And at the same time,
+[00:37:11] guys, I see here that we have an FPG sitting here at this level here. So there is a possibility,
+[00:37:18] guys, when the market here pushed up, retest, lost it, retest, bearish retest, and then went down.
+[00:37:26] So there is a possibility we're going to go to 4,240 to look for cells at this zone here.
+[00:37:38] I used just the old concept, the old levels that I have.
+[00:37:42] Okay. Let's go to the one hour. All right. Cool. I see actually a nice thing here. This is actually
+[00:37:48] a market maker WIC. They sent three WICs here that I call of three, four WICs. The market maker
+[00:37:53] leaving a lot of equal liquidity sitting here. So the market is pushing to that zone here,
+[00:37:58] to this level here, to this level here. All right. We have also OB. So I know, okay, that
+[00:38:05] this 4,230, 4,230 is a rejection zone. So what can I do? I'm just waiting for A plus setup.
+[00:38:17] Asia high break, retest, and then look for longs to this zone. All right. On the way up,
+[00:38:23] I will take TPs of course, but I know if we have a nice 50 minute candle close above Asia,
+[00:38:29] that the market will push another candle like this to the upside. The market is making higher
+[00:38:34] highs. We broke structure in a higher timeframe. So we need to push to this zone for another
+[00:38:38] rejection. All right. Where should I put my stop loss? Stop loss, short stop loss. Where should
+[00:38:46] you put your stop loss? Stop loss above this level here. So the 177 above this WIC here. Okay.
+[00:38:54] Above this level. Three, four point entry coming in this zone here. You hold the best level.
+[00:39:00] And then I'm not saying like the RR is here. So you should actually retest this level,
+[00:39:05] or an old OB that never got retested. So we're going to look for this as well
+[00:39:08] when the market pushed to that zone. And then you put your stop loss to entry if you're in
+[00:39:15] profits again, and then hope that the market will give you a nice push to the downside,
+[00:39:20] or at least to an old OB that never got retested again with no indicators or nothing.
+[00:39:27] So yeah, this is actually a using. If they go a little bit higher,
+[00:39:31] my stop loss is above this level and they can still go to 255. And yeah, that's the song.
+[00:39:39] So I was waiting for two levels here, either come to this downside or this upside, but
+[00:39:43] they were just holding Asia range. So there is for me, nothing to do. There is no A plus setup.
+[00:39:50] I want to use one or two load size. So I'm not going to play this nonsense in this range.
+[00:39:55] All right, guys. Sorry. I lost myself. Phew. Let me read the chat. Sorry, guys. Can you guys follow?
+[00:40:30] So, guys, these things say here what I'm telling you guys. I want you guys not to blame yourself.
+[00:40:35] I don't want you guys to blame yourself when you take trades on your own and all this stuff.
+[00:40:39] The only thing, guys, you have to do is to use confluence. Like, the only thing is we,
+[00:40:46] like, you need to understand, guys, that we are praying the probabilities. So I'm not 100% sure
+[00:40:52] that this will happen. But by playing the probabilities and having a checklist,
+[00:40:58] you can actually be really profitable. All right. So, for example, here, when the market
+[00:41:05] is going like this, going down, going down, going down. Okay. Okay. Let's say we have,
+[00:41:13] I'm this zone here. We have a high time frame weekly resistance. We have a four hour OB.
+[00:41:22] We have 50 minutes OB. We have daily, whatever it is, like, too much confluence here that the
+[00:41:29] market will reject from this zone. At least for us, 100 pips, we just have to wait until it comes
+[00:41:35] to that zone. You miss this whole move to the upside. You miss, for example, this whole move.
+[00:41:41] You are on holiday. You miss this move that the market will go like this. Oh, wait. The market
+[00:41:47] will go there. Wait. And take your cell. Put your stop plus above a high time frame FPG,
+[00:41:53] like a four hour whatever. And then take a cell. Let's see if we can see something like this.
+[00:41:58] Okay. Let's go to the weekly here. Let's see. This one. Here. What do you see here, guys?
+[00:42:04] Okay. I already marked it for you. So, the charge is a little bit shitty, but I'm going to
+[00:42:11] I was TA, of course. So, let's see. Let me just move, remove, remove. I know we are inside of this
+[00:42:18] bullish one hour FPG. Look at this, guys. Look at this. Weekly change of character for age
+[00:42:24] four bearish FPG. All right. Weekly bearish FPG. 15 minutes bearish FPG, four hour OB.
+[00:42:32] Like, I already marked this out. Look how big this move is here. No small FPGs here. This is
+[00:42:36] all based on the high time frame. I marked this out. I'm just waiting. Look at this.
+[00:42:40] Look at this. They come to the move. Even if you take the trade from here,
+[00:42:43] 4-0-90. You have a stop loss above like a level whatever. 2-3-400 pips stop loss. Look at the
+[00:42:51] move that they come down. They still give you a big move to the downside. You took it from here.
+[00:42:58] 600 pips, man. What are we talking about? Weekly. Four hours. Weekly bearish FPG.
+[00:43:05] All these things. I marked it already on my chart. I'm just playing the probabilities.
+[00:43:09] We have trend liquidity, so it will take this. People will want to long this after
+[00:43:13] a break of structure. All right. One hour don't get close. They need to retest. We, guys,
+[00:43:18] gonna wait for retest. We are smart. We're gonna wait for retest at the OB. Look at the OB here.
+[00:43:22] Boom. Higher highs. Come to this four hour OB. Rejected also. Retested. And here.
+[00:43:31] Higher level OB. Also on the four hours, I think, or one hour. Also rejected. This was
+[00:43:36] the four hours. Probably. Yeah. Four hours OB. Rejected. And then come again.
+[00:43:42] So, guys, I'm using actually a simple concept if we think about it. I'm using,
+[00:43:46] actually, Confluence's way. Should I take a long or take a short. That's why I'm spending
+[00:43:51] so much time with you guys on Sunday to mark the levels and see what the market is heading.
+[00:43:55] All right. The same thing here on BTC, yeah? Like, BTC, look at this whole move.
+[00:43:59] We already planned this before. Said to you, guys. BTC will go up. I said in my channel as
+[00:44:04] well. I expect another sweep and then go up. Why? We broke also Asia high. We just came for a sweep.
+[00:44:12] We had a stop loss here. They made a retest and then went up. And I think we took another long
+[00:44:18] and then we got stopped out. The NTA said if somebody's holding, you can take profits.
+[00:44:23] Look at the BTC now. Just going, like, planned to our level. Because we already saw on the low
+[00:44:29] time frame that there will be a break of structure. A lot of people will take cell here.
+[00:44:35] We took a long. Why? The market is going to liquidity. Liquidity, liquidity, liquidity,
+[00:44:41] liquidity. Look, they broke it. Now I have it. Now I'm waiting for a retest for continuation.
+[00:44:48] All right. I'm waiting for retest for continuation. Where should the retest be?
+[00:44:52] The market's today a little bit slow. To be honest, guys, I was waiting for this zone here.
+[00:44:56] I was waiting for this OB sitting here. All right. I was waiting for OB here on this level
+[00:45:03] to give a retest. So what do you see here, guys? Asia high got broken. They give us a,
+[00:45:10] this is also Asia high liquidity test. They tested this level and they give another higher high.
+[00:45:16] I was a little bit greedy. I was waiting actually to come to this OB sitting here
+[00:45:20] and to get long, to go long, to have this entry here. Maybe Asia low sweep or whatever.
+[00:45:25] Maybe this zone here. But yeah, they just moved up from here. So tomorrow I will look at this
+[00:45:29] again for a scalp. But yeah, you're just doing the same thing again and again and again.
+[00:45:37] All right. And so that's how you can guys plan trades and be profitable and use these things
+[00:45:44] when you take trades on your own. All right. Let me go to the questions.
+[00:45:49] So guys, it's not, again, again, guys, you need to use high timeframe for confidence. Again,
+[00:46:08] mark your high timeframe levels and whatever you use, guys. I know Mark is using, for example,
+[00:46:13] he's using pivot levels with it. And he's really profitable with his pivot levels,
+[00:46:22] with this concept. So guys, use whatever you have. And if you want to use only this,
+[00:46:27] also good, but you need to understand what you're looking for. All right. So now if Asia high breaks
+[00:46:36] from here, you wait for a retest. Whatever OB made that high, okay, let's say they leave
+[00:46:42] an OB here or a big FPG or whatever, you wait for a retest and then take a long three,
+[00:46:49] four, five point entry. Okay. Take a long. You can expect another higher high inside this small range.
+[00:46:59] Screen is black. Is the screen black? Oh, shit. How long was the screen black? Sorry, guys.
+[00:47:13] Sorry, guys. So screen black. Okay. Sorry. Can you guys see it now? I think so. Sorry. It's not me.
+[00:47:25] It's StreamYard. How long was the screen black? Not long, no. I noticed that the indicator works
+[00:47:40] really well. Yeah, try it, Tilo. Look, I swear, I swear. It's not, again, it's not the indicator.
+[00:47:47] We use, the only thing that I use, guys, is educational in an indicator so you guys don't
+[00:47:54] have to market. So it makes easier. The only thing you have to do is execute the trades.
+[00:47:59] Execute the trades. In a small range, you know what to do. In a small range, wait for a high
+[00:48:06] level. You can wait for here, of course, to low levels, but you can also
+[00:48:09] wait for a high time frame OB. Fabio, look at this OB here. OB. OB here.
+[00:48:16] Look, they came to this level. We saw this OB here. Wait. They will come back bounce.
+[00:48:20] Here, look at this OB as well. It is Asia high. This is a resistance. So this is the OB here.
+[00:48:29] This is the cell zone. And now they are inside of this level sitting here in this zone.
+[00:48:35] Just wait for the market to give you an A plus setup. And let's say if I do something like this,
+[00:48:57] if I do something like this, as I guess, let's take a cell from here. Let's take a cell. Look
+[00:49:07] at the five minutes. Let's take a cell. The market needs to go down. You guys need to check. Ah,
+[00:49:13] is this actually OB that we were holding? Yes, we broke structure here in the five minutes.
+[00:49:18] 50 minutes a week. The market is still bullish. It's better to look for longs.
+[00:49:23] Let's look for shorts. I said, what the hell? The market is going up. The market is going up
+[00:49:30] and it gets stopped out. Why? Oh, if we are on a high time frame for our OB, a retest.
+[00:49:36] This is a change of character now. So yeah, so all these things you need to use it for
+[00:49:41] to be profitable for in your arsenal. Yeah. Sorry. All right, guys.
+[00:50:05] All right. Still, let me just.
+[00:50:11] Yeah, it's good. Hamlet. So guys, now we're going to go. Now we're going to go guys
+[00:50:16] to the new thing. So I need you guys. I need you guys to give me.
+[00:50:25] I know that I know what to do this weekend for indicator, but I need you guys also.
+[00:50:30] Again, I don't, I'm not going to do major changes. Okay. The only thing I'm going to do,
+[00:50:37] I'm going to change the names, not the names, but I'm going to make it bigger.
+[00:50:41] So, for example, here we have a BPR FPG. I know red is bearish, yellow is also bearish
+[00:50:49] because we went down and also if we claim it's bullish FPG sitting here. Okay.
+[00:50:53] I'm just going to make the names a little bit bigger inside of this
+[00:50:57] inside of this. I'm going to make it bigger and I'm going to try to also
+[00:51:01] to bring it more to the right. So I'm going to do this this weekend. So for example,
+[00:51:08] you have a change of character chalk FPG FPG because a lot of people said like,
+[00:51:12] I cannot see this on my phone. All right. So this level, this level,
+[00:51:17] I'm just going to make it bigger. I'm maybe going to do the little bit to the right
+[00:51:20] to mark this. I think Asia high, Asia low is good. So I'm going to do this.
+[00:51:25] Small changes. All right. So what do you guys bigger letters? Yes.
+[00:51:29] I know, Mark, you're really old. I have an OB and an H4BPR at 4200 double.
+[00:51:42] Sorry, let me just bring it up.
+[00:51:46] 130, 110. Wait for price to reach those levels. Yes, exactly. That's exactly what I was looking
+[00:51:52] for. Fabio. This is the zone that I was looking for today if we had to move to the downsides.
+[00:51:59] So yeah, exactly Fabio. 130, 130, 110. That's my zone. Look, we marked it together. And I said like
+[00:52:06] 130. Asia low, we have liquidity sitting there. We have equal liquidity sitting here with level.
+[00:52:11] But yeah, there is no volume to push the price down and not to push the price up there the whole
+[00:52:16] day inside this range. So the three sessions we are ranging inside this level because the markets
+[00:52:21] just close in the US because of Forge of July. All right. So yeah. And sometimes guys, it's also
+[00:52:29] good to not to take a trade. Sometimes just to chill and just wait to for volume to kick in.
+[00:52:38] All right. Because how many times we have the markets trading for weeks, like every day.
+[00:52:43] Sometimes the market just close or a bank day. So guys, this is the level. And also for the
+[00:52:48] high time frame is it's this zone sitting here. Break, retest and all. Don't take a trade anymore.
+[00:52:55] Today, no trades anymore because the market is going to close in one hour. And sometimes when
+[00:52:59] there is news in the weekend, war news or whatever, CME will open and they will see a big week
+[00:53:04] to the downside with a gap and maybe upside and then you get stopped out based on whatever.
+[00:53:10] Okay. We're just going to wait for high probabilities to go retest and then go down.
+[00:53:16] Can you make the indicator? Okay. Big letters. Can you make the indicator so we can adjust the
+[00:53:22] length of the box? Yeah. Yeah. I'm going to do this Kevin. So the length of the box.
+[00:53:26] I'm going to try. I'm going to try to do the length of the box length of the box. Big letters.
+[00:53:36] Bigger letters. All right. All right. Thank you. Yeah. Same, same, same Fabio. So the
+[00:53:49] only thing Fabio, the only thing you have to do in the morning. Okay. Mark your levels
+[00:53:53] up and down. Okay. Put alarms and just wait and make some fukaches and wait. Look, you can even
+[00:54:02] do a right click. I think he can do that. Okay. You can actually do this. Okay.
+[00:54:11] Here. Asia trap bearish and bullish. So you can actually do this. Asia trap bullish guys
+[00:54:20] and Asia trap bearish. Set alarm and Asia trap bullish and bearish. If they break that zone,
+[00:54:26] you just wait. My name is Mark. I go to the Albert Haim. I go to the supermarkets.
+[00:54:33] I'm going to buy some veggies. I'm going to buy some pickles, whatever. Oh, I'm at the register.
+[00:54:39] Asia high trap bullish. Let's see. Five and 50 minutes. Okay. Where is the OB that made that
+[00:54:45] high? Let's wait for retest. And based on the data, I'm going to go long. What time is it?
+[00:54:50] Okay. Is it news time? Is it this? Is it that? Let's look at all this stuff. Chicken. Okay.
+[00:54:55] You're going to buy some chicken. Buy Halala. And then I'm going to wait for retest and then
+[00:55:02] go long. You look at your phone, of course, because you did it, yeah, you said, okay,
+[00:55:07] I'm going to wait for this zone. Same thing for me. Waiting for this zone. Okay. Let's see
+[00:55:11] which level not got mitigated. What's the level that made that high? This level here got retested.
+[00:55:17] This level here. Let's wait for maybe I retested this level. I will say like, oh,
+[00:55:21] maybe this zone here, this zone here. Maybe they will just skip this zone. Okay. Let me just
+[00:55:26] enter from here. Here, here. Can I get stopped out? Yes, of course you're going to get stopped
+[00:55:33] out. But you have still 80% chance that there is a continuation. We still play the probabilities.
+[00:55:41] So yeah. So how do you know that the markets will go up in your favor, actually? Can somebody
+[00:55:52] explain to me this? Like, how do you know that the market will go to your favor when you have
+[00:55:58] a, that the market will go higher? How, how can you guys know after we broke that the market will
+[00:56:07] go higher? What is the confirmation that we're looking for? We can look for three things.
+[00:56:15] Okay. Can somebody say this or should I just say it? Guys, this weekend is going to be hot.
+[00:56:28] Make some watermelon, put some lemon on it, put a little bit salt, olive oil,
+[00:56:36] and then eat it. So good. Okay. Let's see. Close above. Yeah. Close above for sure. Let's say we
+[00:56:42] close above. Let's say we close above. We have a candle close above. Okay. What's the best
+[00:56:50] confirmation to use? How do you know that the market want to push higher? Bullish FPG. Exactly.
+[00:56:56] Okay. Because God wants it. Yes. Also, this is the first one. Trade breakdown. Why did you go up?
+[00:57:08] Yeah. Because God wants it. We have a higher high. Yeah. Yeah. We have all this stuff.
+[00:57:15] We have a higher high. So higher low also. We have higher low retest. So the best thing to use,
+[00:57:21] guys, okay, is on this concept. Oh, the market's closed, actually. Look, there is no, the market's
+[00:57:28] not moving. The market's closed. Look, they're closed here. There's no, we don't know what to do
+[00:57:34] now. Okay. So is there a replay? No, there is no replay. The market's really closed. Look,
+[00:57:38] there is no time or nothing. I didn't know that the market was closed now. I thought one hour.
+[00:57:43] Okay. Yeah. The market's closed. Okay. Anyway, so when the market wants to push higher,
+[00:57:55] exactly. Oh my God. What the hell? This basement retest don't accept. So guys,
+[00:58:01] actually nice. Bunko. Bunko group. Are you from the bank? Bunko group. This is a group of people
+[00:58:08] or just one person. So guys, close above. I retest. No close below breakdown. Low,
+[00:58:14] follow the higher high. Exactly. But also, guys, one of the things that you can use,
+[00:58:18] you can use volume. Okay. Close above and no buzz down. Also, you can do this or change
+[00:58:25] of character. So actually, one of the strongest confirmation, guys, is a change of character.
+[00:58:29] So this is the first, this is the strongest confirmation change of character. Okay.
+[00:58:35] Second thing is in a candle, that engulfing candle. But the third thing is, guys,
+[00:58:40] that you know that the market want to push up if they create FPGs. If they create FPGs.
+[00:58:46] If the market creates FPGs in the low timeframe, and we have a candle close above,
+[00:58:50] then you know the market will push higher. But then you know that the market maker is
+[00:58:55] present. The market want to push higher. Let's go back. Let's see. When the market
+[00:59:00] doesn't create any FPGs anymore, let's say, for example, look at this. Look at this, guys.
+[00:59:08] Level here. We sold, came again to this 50-minute OB yesterday. We sold again,
+[00:59:15] create bullish FPG. Immediately went up, FPG, FPG, FPG. So the FPGs will be created. So then
+[00:59:22] we know the market will go up. But again, for me, after market closed, it's CME open. I don't care.
+[00:59:29] I'm not going to look at the chart. I want to sleep. Okay. So here, guys, we are ranging against
+[00:59:35] Asia High. What do you see here? Every time we push down, we push up, we create small FPGs.
+[00:59:40] FPGs, FPGs, they pushed higher. Okay. I want to give actually a nice...
+[00:59:50] And the same thing with the reversal, by the way. When you come into a high level,
+[00:59:54] okay, you want to see, okay, is there a reversal happening? You will see that every time there is
+[01:00:00] no FPGs. Look at this. They are just ranging here, going sideways. There is no FPGs. They just
+[01:00:06] kind of go back to the level retested, and then they will create FPGs again. You see FPGs, FPGs,
+[01:00:14] FPGs. So, and again, use it, guys, to see if the market makes its presence. Sometimes it's really
+[01:00:19] clear, to be honest, and sometimes not. So you can use this as well in your arsenal to look for
+[01:00:25] another setup, because the market maker, one day you want to push higher, and they broke above
+[01:00:29] Asia High. You will see a nice big FPG. And what we saw yesterday when this was happening,
+[01:00:35] we saw actually that we had five 50, one hour candle close, and we had a nice FPG. They came
+[01:00:41] down immediately, but still, it's high time frame. There is 80% chance it will go up.
+[01:00:46] Every time they come down, buyers will step in. So you can use this as well, and we are also making
+[01:00:53] higher highs on the high time frame. We broke structure here, and all this stuff. Look at this
+[01:00:57] OB here, retested. Okay. And this OB here also got retested. This was the resistance.
+[01:01:03] Okay. And what do you see here, guys? Just go to the right. Look at this.
+[01:01:11] It just pushed them, or just holding the level. So the higher chance is to go look for highs.
+[01:01:15] So, but anyway, best confirmation is that when they push up with volume to the upside,
+[01:01:21] and you see FPG will be created. And again, sometimes it's really clear, and then you look
+[01:01:27] for longs. Right? So one of the things that you also can use, guys, is I'm going to talk
+[01:01:35] about this, I think, someday, because if I talk about it today, it's too much, I think.
+[01:01:40] I want to talk about internal structure. I-FPG, we can also use mark. We used this yesterday,
+[01:01:45] mark. But internal structure, I'm going to talk about Sunday. I'm going to talk
+[01:01:49] only about internal structure. And then I'm going to do this indicator, of course.
+[01:01:54] This level here, guys, look at this. Okay. This was my sale from yesterday. Let's go back.
+[01:02:01] So yesterday, we took a sale from here. We are bullish. We're coming to a level.
+[01:02:05] And like, again, I don't know if the market will go up or down.
+[01:02:09] I'm just going to wait for retest or just look for a sale or not. Okay.
+[01:02:14] This is the lowest level. That made the highest level. We see all the wigs here.
+[01:02:18] They rejected. They went down. So I'm going to wait for a sale.
+[01:02:24] We broke structure. We have a BPR. We have a change of character. All right.
+[01:02:28] Where is my sale? We took yesterday a sale from this zone.
+[01:02:33] On this level here. Put my stop-losses. I don't know. I forgot about stop-losses.
+[01:02:39] But look at this FPG here that became now resistant. This is an IFPG. Inverted FPG as well.
+[01:02:49] It's also in educational. But you can use it also as a resistance.
+[01:02:57] And then we had the down move. All right. What did they leave for us?
+[01:03:01] Put stop-loss to entry. I was hoping, of course, for a lower level so we can long.
+[01:03:05] I know that the market's bullish, but we can still take sales.
+[01:03:09] Okay. What is the retest? We have a 50 minutes OB. Never got retested here.
+[01:03:15] Let's go to the 50 minutes. 50 minutes OB. Never got retested.
+[01:03:20] Boom. Immediately rejected. Immediately rejected from this zone.
+[01:03:25] Came back again down. Tested another time. So the high chances they will break it up.
+[01:03:30] But we are already out of the trade and it was CME open.
+[01:03:33] So yeah. And we took another sell from the 50 minutes OB here to retest.
+[01:03:39] And no lower lows. Internal structure is lower low, higher low.
+[01:03:43] So they will push higher from this zone. But we still...
+[01:03:46] I don't care what the market will do actually.
+[01:03:48] The people think like I need to have this big move.
+[01:03:50] We had this week already 1,000 pip on Monday.
+[01:03:54] We had here 150, 160 pips. We had this move here was 100 pips.
+[01:03:58] I saw that Martijn, he made $300, $400, $500 or so.
+[01:04:04] Take small scalps. All right.
+[01:04:06] But I'm trying to guys to explain when I take the trade.
+[01:04:09] Even when I take the loss. The loss from here that we took.
+[01:04:13] The loss from here that we took.
+[01:04:15] If I reviewed it back up, this move here, that was the OB.
+[01:04:20] And I actually got trapped at the market.
+[01:04:23] But look at this.
+[01:04:25] When you have liquidity from both sides, we put surplus above.
+[01:04:30] We had high Asia low. We broke here Asia low.
+[01:04:36] We broke here Asia low. All right. Let's see.
+[01:04:43] We broke here Asia low. So the market needs to continue to the downsides.
+[01:04:46] But we were lost also the OB here and the high time.
+[01:04:51] We lost this FPG.
+[01:04:52] So for me, when you look here under five minutes, the market want to push lower.
+[01:04:58] If you go to the 50 minutes or even the hourly,
+[01:05:02] you see that as soon as we claim the five minutes FPG,
+[01:05:08] look at this OB here. It's also the high time for me.
+[01:05:10] As soon as we claim this OB again and the five minutes FPG,
+[01:05:18] the 50 minutes or the five minutes FPG with the OB,
+[01:05:22] that the market, that the trade is not valid anymore.
+[01:05:24] So you need actually to cut and immediately go long
+[01:05:28] or even break Asia high and then go long.
+[01:05:30] The market should go to the higher level cluster that made that low.
+[01:05:37] We're going up. We re-enter the trade.
+[01:05:44] Look here. We change the F character here.
+[01:05:49] So even I make mistakes. I will not do this again.
+[01:05:53] We look, we claim the five minutes FPG here.
+[01:05:56] So the market will just go to the level that made the lowest level.
+[01:05:59] We will go to a zone.
+[01:06:03] We will go to the zone that made the lowest level.
+[01:06:07] We went higher. That's a plus hit.
+[01:06:09] Let me just leave this thing because I think it's a little bit slow.
+[01:06:17] So yeah, again, I take also my losses and I owned my own losses,
+[01:06:22] but it doesn't mean like I'm not going to trade anymore.
+[01:06:25] No, it doesn't mean, no, I'm just going to review this.
+[01:06:27] I'm going to make it even a better win rate.
+[01:06:29] And every time I take a loss, I will come with better trades and better entries
+[01:06:36] and wait for better confirmation, all this stuff and come bigger.
+[01:06:39] For me, again, guys, it's all about end of the month.
+[01:06:44] All right. All right. All right.
+[01:06:52] Yeah. So internal structure, I'm going to talk about this, Jacob.
+[01:06:56] Let me just write it down. Internal structure.
+[01:07:03] I'm going to do big letters and length of the FPG.
+[01:07:06] I'm going to try to do this this weekend.
+[01:07:08] Any feedback more, guys, for the indicator?
+[01:07:10] You guys have any more feedback for indicator that I can do?
+[01:07:14] I'm not going to do EMA's. I'm not going to do SMA's.
+[01:07:17] I'm not going to do whatever it is.
+[01:07:21] I'm going to spend this weekend and make the indicator a little bit better.
+[01:07:34] Maybe in settings, maybe some colors or whatever,
+[01:07:36] but because I know you guys you have sometimes blacks chart.
+[01:07:39] So yeah.
+[01:07:46] How much time do you spend reviews on it?
+[01:07:48] I usually, to be honest, we had for me a relaxing time,
+[01:07:52] but I always, in weekends, I do like two hours or so.
+[01:07:58] But I do a lot of with you guys.
+[01:08:00] So two hours I spent on my charts and it's no punishment
+[01:08:06] because I also journal my trades.
+[01:08:09] And that's why I know that we have 22 winning trades and also 22 trades and two laws.
+[01:08:16] So yeah, it's the same thing.
+[01:08:18] So I journal because I don't want to, like, it's not a lot of time.
+[01:08:22] So just play some music or watch some football and then that's it.
+[01:08:28] Any volume spikes you can add?
+[01:08:30] Oh, sorry, it's black screen again.
+[01:08:32] Share screen.
+[01:08:33] I don't know what's coming black.
+[01:08:37] Let's see.
+[01:08:38] Any volume?
+[01:08:39] No.
+[01:08:39] Volume spikes, I'm not going to add, to be honest, Banco.
+[01:08:43] Sorry.
+[01:08:44] But I think you have indicator you can just add it on the screen as well.
+[01:08:47] Some volume spikes.
+[01:08:49] I think it will confuse you because with volumes.
+[01:08:53] I think the most, again, guys, the most, let's see, the best confirmation
+[01:08:59] for the market will be reversal is actually a change of character.
+[01:09:03] Okay, write it down.
+[01:09:04] The best confirmation for the reversal is a change of character.
+[01:09:09] Change of character.
+[01:09:11] All right.
+[01:09:12] And especially under 15 minutes.
+[01:09:14] So when you see a 15 minute change of character,
+[01:09:16] change of character, they went down to high time from OB.
+[01:09:21] All right.
+[01:09:21] It still gives you a nice 130, 100 pips, whatever, the downside.
+[01:09:28] And now the market is just a small range.
+[01:09:30] So you need to understand when we are in a range of market,
+[01:09:33] you need to go out and invest.
+[01:09:34] 50, 160, 60, 70 pips immediately stop the entry.
+[01:09:38] Take even full profit.
+[01:09:44] Kevin, this is actually for the next thing.
+[01:09:46] I want to buy side liquidity and sell side liquidity.
+[01:09:49] I can actually, Kevin, I was actually thinking to do first
+[01:09:57] educational about London liquidity and US liquidity
+[01:10:00] because this is actually the next, nice one, Kevin.
+[01:10:03] This is actually the nice educational that I want to talk about.
+[01:10:06] When you have, for example, you have US liquidity is resting here.
+[01:10:10] You have the London liquidity resting here.
+[01:10:12] And you have the Asia liquidity resting here.
+[01:10:15] And then you know that, okay, on a higher time frame,
+[01:10:18] or old OB retest that the market will go to that level.
+[01:10:21] So for example, let's say we have in this setup,
+[01:10:24] just for example, you have on this setup, you have all the liquidity resting here.
+[01:10:28] Okay. All the liquidity with equal highs and with London.
+[01:10:32] And you come into an high timeframe OB.
+[01:10:35] Then you can look for longs is internal structure with confirmation,
+[01:10:39] internal structure as well.
+[01:10:40] Then you can look for a sell, break of structure,
+[01:10:43] retest, look for longs.
+[01:10:45] And then you can actually aim for one TP only.
+[01:10:48] Then you can aim for one TP at 200, 300 pips and you're done for the day.
+[01:10:52] Put your stop plus at the level and then aim for that for that.
+[01:10:55] So I'm going to do this in the new educational level.
+[01:10:58] So let me just maybe work on this in the weekend.
+[01:11:04] London, US, equity.
+[01:11:11] All right. Nice one, Kevin.
+[01:11:16] My best friend of the school was his name was Kevin.
+[01:11:21] Then he moved. Maybe you are him.
+[01:11:24] All right. Let's see.
+[01:11:26] We have a 50 minute chalk on gold current candle.
+[01:11:30] Yeah, Ammar. But the markets closer.
+[01:11:32] The markets close. So now the markets close.
+[01:11:36] The mark close early today because of bank holiday.
+[01:11:42] So yeah, there is nothing to do actually Ammar now.
+[01:11:45] We just have to reject the weekend.
+[01:11:50] DC doesn't want to give us a nice retest, but maybe the weekends.
+[01:11:55] Yeah, will be awesome things.
+[01:12:01] Yeah, I can actually do this as well.
+[01:12:02] The IFEG.
+[01:12:03] Oh, that's actually maybe the IFEG.
+[01:12:06] So again, maybe I don't know if I can do IFEG.
+[01:12:09] I'm going to think about it.
+[01:12:09] I'm going to just make it and then see it.
+[01:12:12] I don't want also guys, you need to understand guys that,
+[01:12:15] okay, Kevin, it seems like you have experience and like,
+[01:12:18] we need to also know that every day we have new people in the world.
+[01:12:22] I want to make it easier to understand and that people just come in.
+[01:12:26] So maybe Kevin, I will do that, but I will do that in the settings.
+[01:12:30] So for example, you have show engulfing candle.
+[01:12:35] All right. Show engulfing candle.
+[01:12:37] It will show you the engulfing candle.
+[01:12:39] And then maybe at display here, you can just on it and off it.
+[01:12:43] The IFEGs and all this stuff.
+[01:12:46] So yeah, yeah, maybe in the display.
+[01:12:49] IFEG in display.
+[01:12:54] All right.
+[01:12:58] For look, I know that on the indicator, sometimes the PPR is still present after
+[01:13:05] full body close above below, but something goes away.
+[01:13:08] Not sure if it's just me.
+[01:13:11] What chart do you use on it Fabio?
+[01:13:17] I didn't notice this, to be honest.
+[01:13:19] Maybe on the low time frame.
+[01:13:22] Like, for example, we have a PPR sitting here.
+[01:13:25] This is already get tested,
+[01:13:27] but it's already telling me that there is liquidity here.
+[01:13:30] And if you go to the four hours, we have also a high time frame PPR.
+[01:13:35] Never got tested here.
+[01:13:37] And this one here also never got tested.
+[01:13:40] They leave.
+[01:13:41] This is a strong area.
+[01:13:42] These two areas are really strong.
+[01:13:44] We broke structure here.
+[01:13:46] We came lower.
+[01:13:47] Also broke structure.
+[01:13:50] Guys, did you guys like listen to me, guys, when I said in this zone at 4000,
+[01:13:57] I said, guys, accumulate some gold.
+[01:14:00] Because I think that gold, like you can still accumulate them.
+[01:14:05] I think gold can go up.
+[01:14:07] I think gold will go up to at least this zone or me even 5000 again.
+[01:14:13] I'm saying like long term.
+[01:14:14] I will accumulate gold from here.
+[01:14:16] And if it go to 3000, I will accumulate gold.
+[01:14:19] So this is my zone actually to accumulate gold from here to here.
+[01:14:26] Gold, you need to understand gold.
+[01:14:27] Gold went down 27 percent.
+[01:14:32] So we're coming to actually a high level cluster on the weekly that made that highest level.
+[01:14:36] So you can expect, of course, like move to the upside.
+[01:14:39] We actually broke structure in the daily.
+[01:14:41] So I'm not saying like if you don't have money,
+[01:14:44] like you can still buy every day $5 or whatever you use,
+[01:14:49] for spot or maybe buy it like really if you have no money for it.
+[01:14:52] But you can do this.
+[01:14:54] I think if long term, long term plan, I'm talking about five, ten years.
+[01:14:58] That's a good thing.
+[01:14:59] For example, guys, we were trading gold when gold was 2000 ish.
+[01:15:03] We were trading gold when gold was here.
+[01:15:09] We were trading gold when gold was in this zone.
+[01:15:12] All right.
+[01:15:13] In this zone, somewhere in this region.
+[01:15:16] And look, gold went from 2600 to 5K, 5 and a half K.
+[01:15:22] And then everybody started to trade gold.
+[01:15:24] So now we are here.
+[01:15:27] Maybe we will go back to this cluster here.
+[01:15:30] I don't know, but I will still accumulate in this zone here in this whole zone
+[01:15:35] because I know the market will go up and down.
+[01:15:37] Same thing for BTC.
+[01:15:39] But BTC is different gold because gold is a 33 trillion asset and BTC is two
+[01:15:45] or the whole crypto market is actually two.
+[01:15:48] All right.
+[01:15:50] I have an explanation on this quote.
+[01:15:51] Thank you.
+[01:15:52] Okay, I will do that Fabio.
+[01:15:53] I will do this in the weekends.
+[01:15:54] Nice one, Fabio.
+[01:15:55] I will check this in the weekends.
+[01:15:57] All right.
+[01:15:59] And also, guys, if this is too much for you, like if this is too much for you,
+[01:16:04] like all this boxes and all this stuff, you can just go to the settings,
+[01:16:09] Faruq's playbook, and you can just close them and show order block,
+[01:16:13] show BPR, show FEGs.
+[01:16:15] You can close them.
+[01:16:16] Like I close now and you can just have one or two things.
+[01:16:20] So I will do this also with IFEG with Kevin ask.
+[01:16:23] And yeah, and let's see.
+[01:16:25] You have also a tweezer star and all this stuff.
+[01:16:28] You can do it.
+[01:16:28] Yeah, thank you, Fabio.
+[01:16:31] So yeah, I will work on this in the weekend, guys.
+[01:16:34] The settings here is good.
+[01:16:37] Chalk pivot level five.
+[01:16:39] Everything is okay here.
+[01:16:40] And also, guys, what you can use.
+[01:16:42] That's actually maybe for the guys who didn't use this still.
+[01:16:46] So let's go to the 50 minutes.
+[01:16:49] Okay, remove everything from your indicator.
+[01:16:52] So remove this.
+[01:16:55] Let me sorry, remove everything from your chart like this.
+[01:16:58] What also you can use, guys, is all OBs.
+[01:17:08] Press it and it will give you all the OBs that we have.
+[01:17:15] Then you know what the market is heading for.
+[01:17:18] All right, it will give you all the OBs.
+[01:17:21] We have OB under one hour sitting here.
+[01:17:23] So this is a fresh OB.
+[01:17:25] We have OB here under 15 minutes.
+[01:17:27] Where is the next OBs?
+[01:17:28] This is bearish obesity.
+[01:17:30] Under four hours.
+[01:17:32] All right.
+[01:17:33] Another OB, another OB daily and all this stuff.
+[01:17:35] BTC.
+[01:17:36] The same thing, huh?
+[01:17:38] So BTC.
+[01:17:39] Let's hope BTC will come down and long it
+[01:17:41] and then hold it with the same stop loss.
+[01:17:44] And then till 65.
+[01:17:45] Okay, let's see.
+[01:17:46] So I think it's going to come.
+[01:17:49] Let's see.
+[01:17:50] All OBs on BTC.
+[01:17:52] The chart is going to be a little bit weird.
+[01:17:58] Yeah, so here.
+[01:18:01] Look here.
+[01:18:02] This is the, what time frame is this?
+[01:18:05] This is the six hour OB.
+[01:18:08] 62,800.
+[01:18:09] So we know already where the cell zone is.
+[01:18:11] We know with the BPR and this level here,
+[01:18:13] we know that this 62, 63 level is a big zone that it can reject.
+[01:18:20] Okay, where is the long?
+[01:18:21] Look at here, the 50 minutes OB here.
+[01:18:24] It's a long.
+[01:18:24] So maybe a cell from this weekend, 63.
+[01:18:28] I think where is this going to look for a cell somewhere?
+[01:18:31] If you look at this channel and maybe 60 levels, 59 levels,
+[01:18:36] what I was looking for a long to this level,
+[01:18:39] but I think this will happen next week.
+[01:18:41] So yeah, I'm patiently, I can wait.
+[01:18:44] No worries.
+[01:18:45] I expect that BTC actually will pull up to,
+[01:18:49] I'm not getting 70K or whatever,
+[01:18:51] but you can still use this thing.
+[01:18:53] So look, we have here more obese and all this stuff.
+[01:18:58] Let's look at, let's see.
+[01:19:03] Soul actually have a lot of volume.
+[01:19:06] Let's see if we can use this here.
+[01:19:09] Okay.
+[01:19:09] So I have a lot of volume as well.
+[01:19:11] I'm not going to trade this,
+[01:19:12] but you can also use it on crypto.
+[01:19:14] So wherever trade crypto, you can use it with your confidence.
+[01:19:19] What is it?
+[01:19:20] All obese.
+[01:19:22] All right.
+[01:19:22] Okay, we have here actually a four hour OB.
+[01:19:26] Look how strong this was.
+[01:19:27] This is support.
+[01:19:28] So if they come to the zone, this is still a strong level.
+[01:19:32] We have a weekly obesity here.
+[01:19:33] Oh my God.
+[01:19:34] This was a weekly OB here, guys.
+[01:19:36] This is a really strong support for Solana.
+[01:19:40] You have also obesity here.
+[01:19:45] Okay.
+[01:19:46] Okay.
+[01:19:46] Oh, Solana is going to push.
+[01:19:47] I think Solana is going to push.
+[01:19:51] So yeah, I think this is the next rejection area.
+[01:19:54] And let's see if you can use this on a high time frame.
+[01:19:57] Even with no indicator, guys.
+[01:20:00] Okay.
+[01:20:01] Cluster that made the lowest level.
+[01:20:03] So we will wait for rejection here.
+[01:20:05] Maybe come back to test 78.
+[01:20:08] Maybe even 78.
+[01:20:12] Of course, for crypto, a little bigger stopwatch because of the volatility.
+[01:20:15] 78, 75 with the stop loss below this 70.
+[01:20:21] And then aim for 95 or whatever.
+[01:20:26] Point of interest.
+[01:20:26] Yeah.
+[01:20:27] Yeah, definitely.
+[01:20:28] It looks, to be honest, it looks like it want to push higher.
+[01:20:31] Looks like this was a little bit arranged and then want to push higher.
+[01:20:34] But again, it's crypto.
+[01:20:36] You can use it for small scalps.
+[01:20:37] I don't use it on the high time frame.
+[01:20:39] I don't use it.
+[01:20:39] I will use it crypto at all.
+[01:20:40] I'll just read with CM Gold.
+[01:20:42] But if you want to use these things, guys, use it as well.
+[01:20:46] Use it.
+[01:20:47] Actually, this is also working, I see.
+[01:20:50] Asia high get broken.
+[01:20:52] FPG here got retested and made another higher high.
+[01:20:55] Like, again, guys, if you have a 90% plus win rate
+[01:21:02] and you see Asia high get broken, you don't have to do,
+[01:21:05] you don't have to hold it too long.
+[01:21:07] This candle here, you hold it for two hours.
+[01:21:10] You make with this move here, you make two, three, four, $500.
+[01:21:13] You're done for the day.
+[01:21:14] You don't care anymore what's going to happen.
+[01:21:17] All right.
+[01:21:17] Or even make one, two, okay.
+[01:21:19] Whatever, how much you risk, I don't know.
+[01:21:22] Asia high get broken.
+[01:21:23] Retest take long.
+[01:21:24] The OB here is now a support.
+[01:21:27] I think this is going to push.
+[01:21:29] But yeah, the market's weakened.
+[01:21:31] So yeah, zoom out a little.
+[01:21:35] What do you mean, Mark?
+[01:21:36] Zoom out a little.
+[01:21:38] Okay, clear the record.
+[01:21:39] Yeah, okay, I see it, Mark.
+[01:21:42] He's front of me.
+[01:21:43] Helder image.
+[01:21:44] Okay, I'm going to make it Helder.
+[01:21:46] Helder is clear.
+[01:21:48] Helder.
+[01:21:50] All right.
+[01:21:51] I don't want to get Mark angry, man.
+[01:21:52] You don't see him when he's angry.
+[01:21:54] He's going to be really angry.
+[01:21:58] All right.
+[01:21:59] So guys, I'm going to do this weekend.
+[01:22:01] What are you guys planning for this weekend to do?
+[01:22:05] Are you guys planning something to do this weekend?
+[01:22:16] Where's Gio?
+[01:22:17] I don't know, Ammar.
+[01:22:18] I'm going to, I don't know.
+[01:22:20] I don't see him.
+[01:22:21] I don't see JJ, Coco, Gio, nobody.
+[01:22:24] I don't know.
+[01:22:31] Zaire.
+[01:22:31] Yeah, Zaire, just make sure.
+[01:22:33] Like Zaire, I know you also do big risk.
+[01:22:36] You're the boss man, not me.
+[01:22:38] Like Zaire, I know you do also big risk.
+[01:22:39] And I love it, actually, that you make really good profit.
+[01:22:41] I saw you make 2, 3K.
+[01:22:43] But you need to also be cool, Zaire, if you sometimes...
+[01:22:47] Yeah, work and risk management.
+[01:22:49] You need to also be cool, guys, if you have big sizes
+[01:22:52] or you do a big risk to be cool, if you lose 5K.
+[01:22:55] Like, for example, the sell, like, I lost 5K.
+[01:22:59] Yes.
+[01:23:00] Okay.
+[01:23:01] But if I win, like, I know that I'm going to win big.
+[01:23:06] For example, this trade here, what we...
+[01:23:10] Like, me and Willem de Zweigher took.
+[01:23:12] Where is the...
+[01:23:13] Well, let me just remove this one.
+[01:23:16] Sorry again, guys.
+[01:23:17] I didn't put it for you guys.
+[01:23:19] But when I...
+[01:23:20] Like, when we win, we win big.
+[01:23:22] We win big.
+[01:23:23] I will come also with bigger, bigger trades.
+[01:23:25] You never get retested.
+[01:23:28] So, yeah, I know that.
+[01:23:29] But you need to be cool with that.
+[01:23:31] You need to be cool with losing also a big amount.
+[01:23:33] I don't want you guys to get wrecked.
+[01:23:35] I don't want you guys to lose money at all.
+[01:23:37] But sometimes it's part of the game to also lose.
+[01:23:39] Nobody have a 100% win rate.
+[01:23:41] I'm also human.
+[01:23:42] I also make mistakes.
+[01:23:43] Like, and also, you need to understand that sometimes it's not you.
+[01:23:48] Sometimes it's just, like, again, the market.
+[01:23:51] And you also play the probability, you know?
+[01:23:56] Like, what is the probability that this will happen?
+[01:23:58] You try to have your win rate low.
+[01:24:01] So that's why when I come to you guys and I say,
+[01:24:03] okay, if Asia High got broken,
+[01:24:06] there is an 80% chance that we're going to go up.
+[01:24:09] You know?
+[01:24:10] That's the probability.
+[01:24:13] The probability is that we're going to go higher
+[01:24:15] if we break Asia High.
+[01:24:15] There's an 80% chance.
+[01:24:18] All right?
+[01:24:19] Okay.
+[01:24:19] What happened if we claim an FPG on the five minutes?
+[01:24:25] So, for example, guys, when you have a move like this...
+[01:24:29] I'm going to clean my chart for sure this weekend.
+[01:24:31] So, when you have a move like this,
+[01:24:36] the market is just slow coming down, down, down, down, down.
+[01:24:40] Okay?
+[01:24:41] This is actually one of the things that we're going to do.
+[01:24:43] Oh, Egypt's going to play.
+[01:24:44] Yes, let's go.
+[01:24:45] I can't wait.
+[01:24:46] I hope in sha Allah we're going to win.
+[01:24:48] So, guys, look at this.
+[01:24:49] Let's say the market's going down like this.
+[01:24:52] That's actually what we lost the trade on Tuesday, I think,
+[01:24:56] or Monday, first month, first day of the month.
+[01:24:59] Actually, funny, every month I lose on the first day of the month.
+[01:25:02] But, yeah.
+[01:25:04] So, guys, when the market's coming down like this, all right?
+[01:25:09] Now, when the market usually comes down, it does something like this.
+[01:25:13] It's going to cluster, dump, cluster, dump, cluster, dump.
+[01:25:24] All right?
+[01:25:25] We have usually a range, okay?
+[01:25:28] And then you see OB, dump.
+[01:25:30] We then impose move to the downside, they create FPG top,
+[01:25:33] and then do this, and then make lower lows.
+[01:25:35] That's what the market's doing, actually.
+[01:25:37] Like, this is too perfect, of course.
+[01:25:39] Let me just remove it then.
+[01:25:42] All right.
+[01:25:44] When the market is actually doing something like this,
+[01:25:54] and just slow to the downside like this,
+[01:25:57] and then slow move, and then slow to the downside like this,
+[01:26:02] and then coming to a big level that was already here,
+[01:26:06] when you see a change of character,
+[01:26:11] and you have an FPG, for example, here under five minutes, they claimed,
+[01:26:17] the market is going to give you one big fat-ass candle.
+[01:26:21] This, immediately to the upside.
+[01:26:24] Why?
+[01:26:25] Because there is, in this range, guys, in this range,
+[01:26:30] I hope you guys can follow, in this range, there was no volume.
+[01:26:35] There was no, like, the market just went down with all FPGs.
+[01:26:40] So the market needs to, if they claim the first one,
+[01:26:44] they will claim them all and go to the highest level that made the lowest level.
+[01:26:48] They will give you hallelujah candle, immediately to the upside.
+[01:26:55] All right.
+[01:26:56] We saw this.
+[01:26:57] We had this.
+[01:26:58] We lost, I lost on this.
+[01:27:00] Let me just remove this one.
+[01:27:03] Look at this.
+[01:27:05] What is here?
+[01:27:09] The market went down, down, down, down, down, down, lower, lower, higher, low.
+[01:27:14] We had the OB.
+[01:27:14] We lost it.
+[01:27:15] So I got trapped here when I lost the trade.
+[01:27:17] They just look so bad.
+[01:27:18] We lost even Asia low, but we didn't make a lower low.
+[01:27:22] So look at here.
+[01:27:23] This was the change of character, and the five minutes OB we claimed,
+[01:27:27] immediately pushed to the upside.
+[01:27:30] And then this OB, this OB, is now a support level.
+[01:27:35] It pushed again.
+[01:27:37] They pushed higher.
+[01:27:40] So this is a trap.
+[01:27:40] Usually, guys, when you see something like this, all right, let's see.
+[01:27:45] Let's go back.
+[01:27:45] Let's see if we can spot it here.
+[01:27:47] For example, here.
+[01:27:48] Look here.
+[01:27:49] Highest level.
+[01:27:50] All right.
+[01:27:51] Look at this, guys.
+[01:27:52] You see here the highest level.
+[01:27:55] That's why we review trades.
+[01:27:56] I do a breakdown and all this stuff.
+[01:27:58] And I see why did we lose the trade?
+[01:27:59] Why did we lose the trade?
+[01:28:00] Highest level.
+[01:28:02] OB here sitting.
+[01:28:03] They retested.
+[01:28:04] They made a lower low.
+[01:28:06] All right.
+[01:28:07] It's a small change of character.
+[01:28:09] All right.
+[01:28:11] If we break above it, then let's sweep.
+[01:28:14] Okay.
+[01:28:14] What do you see here?
+[01:28:15] They came to the same zone.
+[01:28:16] They rejected.
+[01:28:19] All right.
+[01:28:20] Cool.
+[01:28:20] Now the rejection.
+[01:28:22] Bring it to the right.
+[01:28:22] It's a support level now.
+[01:28:24] The OB is now a support level.
+[01:28:26] So when they break up, all right, they break up,
+[01:28:29] retest, that's your long stop loss below, and then go higher.
+[01:28:32] All right.
+[01:28:33] Where are they going to go?
+[01:28:34] Highest level.
+[01:28:35] That made the lowest level.
+[01:28:36] Why?
+[01:28:37] They stopped here.
+[01:28:37] They stopped here.
+[01:28:38] They stopped here.
+[01:28:39] It's different than we saw before.
+[01:28:42] OB here that made the lowest level.
+[01:28:43] OB that made the lowest low.
+[01:28:45] And I think we took also a cell phone here that these day.
+[01:28:48] When you leave it to the chart, you just remember it again.
+[01:28:51] So here, it lost it.
+[01:28:53] And then it made, swept everything.
+[01:28:55] All the liquidity here swept it.
+[01:28:57] All right.
+[01:28:58] Cool.
+[01:28:58] Now this is a strong area now, eh?
+[01:29:01] Bring it to the right.
+[01:29:02] They reject again.
+[01:29:05] From the same zone.
+[01:29:06] And they lost it again.
+[01:29:08] After a strong move, of course, we have a candle close above,
+[01:29:10] and we have a point of interest as well.
+[01:29:12] But again, you see, they just come to levels here again.
+[01:29:16] Look at this.
+[01:29:17] Cluster here made the lowest level.
+[01:29:19] We have a candle close above.
+[01:29:21] So now this OB here, now this OB here is at support level.
+[01:29:26] This is support level.
+[01:29:28] Wait until they lose down, come down,
+[01:29:30] and we had this move to the outside and all this stuff.
+[01:29:32] So again, guys, it's different.
+[01:29:34] So that's why you reviewed the chart.
+[01:29:36] Look at here.
+[01:29:36] They moved up and they moved down.
+[01:29:38] Use, for example, fixed range volume profile.
+[01:29:44] No volume.
+[01:29:45] No volume.
+[01:29:46] So it's just market makers trapping people here.
+[01:29:50] This moved before a big move to the upside.
+[01:29:52] And Mark was using his pivot levels.
+[01:29:54] He said, we got actually thick pivot levels.
+[01:29:56] We're going to go higher.
+[01:29:57] And he was right.
+[01:29:58] So yeah, this is the mistake that I made.
+[01:30:01] I'm not going to do this again.
+[01:30:02] So I'm going to be patiently and wait and all this stuff
+[01:30:05] to look for another setup.
+[01:30:07] So that's why we need to review the trades.
+[01:30:09] You need also to be cool when you lose a trade.
+[01:30:11] So you don't do it any time.
+[01:30:14] Like this move, you don't do it.
+[01:30:15] You actually will sit on the right side of the chart.
+[01:30:23] And also, guys, if you look at this move, if you review it,
+[01:30:28] and we talked about this with Fabio last weekend, if you remember.
+[01:30:32] And he said, what will happen if we break Asia high and Asia low?
+[01:30:36] We broke Asia low here in the 50 minutes.
+[01:30:39] All right, we claim the five minute Fiji.
+[01:30:46] We look at this different between this break and this break.
+[01:30:49] It's more volume to the upside.
+[01:30:52] So this level here is definitely a zone where you should look for longs.
+[01:30:56] So you should actually wait for a retest to this zone here
+[01:31:02] to go for longs after Asia high.
+[01:31:05] All right.
+[01:31:06] Biggest stop loss on this because the move is big.
+[01:31:08] They retested.
+[01:31:10] And then look at this move.
+[01:31:12] Come back to the zone.
+[01:31:14] They left this OB.
+[01:31:16] One day, they will come to this OB again
+[01:31:18] and then give another move to the upside from yesterday.
+[01:31:24] So yeah, that's how you actually look at these things
+[01:31:28] from a different view as well.
+[01:31:30] So sometimes you need to wait a little bit longer
+[01:31:32] and then take the next move to the upside.
+[01:31:35] It will give you another breakout with volume, of course.
+[01:31:43] To be honest, tell us the biggest.
+[01:31:46] Okay.
+[01:31:47] So I'm training now for six plus years, much in a bit.
+[01:31:52] Yeah, 20 minutes, Egypt will play.
+[01:31:57] So I'm training now for six years, guys.
+[01:32:00] I used to actually, I want you guys, why I'm training this.
+[01:32:05] We have now 40 people, 41 people.
+[01:32:07] Listen to this.
+[01:32:08] Listen carefully.
+[01:32:09] So guys, lost almost more than 2K, 2.5K, whatever, all right?
+[01:32:15] A lot of money.
+[01:32:16] And I know a lot of people maybe have the similar story
+[01:32:18] or lost also a lot of money.
+[01:32:19] So the thing is, guys, when somebody come on YouTube
+[01:32:23] and tell you guys, for me it was Cardano,
+[01:32:25] buy Cardano, it's going to go to $100, all right?
+[01:32:31] This guy he's telling us is going to go to $100.
+[01:32:35] You are actually gambling because the guy he's telling
+[01:32:39] he's coming to $100, he's actually predicting the market.
+[01:32:44] He's having a bubble or whatever.
+[01:32:47] So if somebody from banter is telling you,
+[01:32:49] this is going to go to $75, $100, whatever,
+[01:32:53] how can you know that?
+[01:32:54] How?
+[01:32:56] Like swear, I didn't know that.
+[01:32:57] I was a rookie.
+[01:32:57] I was like in the beginning.
+[01:32:59] How can I tell you like,
+[01:33:00] did somebody know if you guys did you go 120?
+[01:33:03] Whatever you use, fit or whatever.
+[01:33:05] You can still, you still don't know.
+[01:33:07] This is predicting the market.
+[01:33:09] There is a difference between predicting the market
+[01:33:12] and reacting to the market.
+[01:33:13] When you predict to the market
+[01:33:15] that the market is going to go to $100
+[01:33:17] or Cardano is going to go to $100.
+[01:33:21] Ada, USDT.
+[01:33:26] My ass, $100.
+[01:33:28] Look where Ada is.
+[01:33:30] It's 0.117 cents.
+[01:33:32] It's there.
+[01:33:33] It will never, look at this man.
+[01:33:36] My God.
+[01:33:39] Like if I was still holding like,
+[01:33:41] look at this, it went to $1, whatever.
+[01:33:43] Somebody's telling you it's going to $100.
+[01:33:46] Like, no, it's predicting the market.
+[01:33:49] And when you think,
+[01:33:49] oh, let me just buy this
+[01:33:51] and then put a lot of money, $50K, whatever in it
+[01:33:54] and then I'll buy more.
+[01:33:55] Buy the dip.
+[01:33:57] Diamond hand.
+[01:33:58] Whatever, all this nonsense.
+[01:34:00] This is predicting market, man.
+[01:34:02] You need to react to the market.
+[01:34:03] You need to react to the market.
+[01:34:05] You need to wait until the market give you,
+[01:34:08] show his hands.
+[01:34:09] Asia high break.
+[01:34:11] Retest.
+[01:34:12] 70% probability is going to go higher.
+[01:34:15] Take a long.
+[01:34:15] You make your 2K, 3K a day is better than wait for two years
+[01:34:21] for the market will go and give you whatever it is.
+[01:34:24] It will never go to $100.
+[01:34:25] So when you listen to in the beginning,
+[01:34:27] you say that this is going to go to $100
+[01:34:28] because the fundamental blah, blah, blah.
+[01:34:30] The story is good to whatever.
+[01:34:32] I don't know.
+[01:34:33] All these things are nonsense.
+[01:34:35] I don't know, man.
+[01:34:36] To be honest, people who come on YouTube
+[01:34:38] and tell this stuff,
+[01:34:39] they are just talkers.
+[01:34:40] They don't know anything.
+[01:34:41] They're sending you stuff
+[01:34:42] and then click on the link below
+[01:34:43] and then you will make this one, blah, blah, blah.
+[01:34:46] I don't know.
+[01:34:46] So I was listening to these guys
+[01:34:48] and all this stuff
+[01:34:49] and I put money in it
+[01:34:51] and then buy the dip, buy the dip, drive the dip
+[01:34:53] and then I lost, of course,
+[01:34:55] lost a lot of money.
+[01:34:56] And the same thing happened in this cycle again.
+[01:34:58] You buy some shit tokens
+[01:35:00] that some guy is sitting behind a chart.
+[01:35:03] What did we buy?
+[01:35:04] Sausage, whatever it is.
+[01:35:06] I don't know.
+[01:35:08] I don't know.
+[01:35:09] Just name it.
+[01:35:09] What kind of coins were there?
+[01:35:11] Chicken fish, meme coin
+[01:35:13] or Obama meme coin
+[01:35:14] or the Trump token.
+[01:35:15] What was Trump token again?
+[01:35:16] You remember Trump token?
+[01:35:18] Buy Trump token.
+[01:35:19] It's going to go to whatever dollar it is.
+[01:35:23] Look at this, man.
+[01:35:25] Look at this.
+[01:35:28] People bought here Trump at $70.
+[01:35:31] They put the life savings in it.
+[01:35:34] Maybe you didn't think Trump sold his back
+[01:35:36] or whatever they did.
+[01:35:38] Criminals, man.
+[01:35:39] I saw people sitting on the other chart
+[01:35:40] creating coins.
+[01:35:41] Everybody can create coins
+[01:35:43] like meme coins
+[01:35:44] It's gambling.
+[01:35:48] Only Trump made money for sure.
+[01:35:50] We didn't.
+[01:35:51] I didn't make money.
+[01:35:52] I didn't make money on crypto to be honest.
+[01:35:53] I make money with daily profit,
+[01:35:55] daily trades.
+[01:35:59] Close the trades.
+[01:36:00] Go to bed.
+[01:36:01] Sometimes we hold a trade
+[01:36:02] for a day or two on BTC, right?
+[01:36:05] Because the high time frame is already
+[01:36:07] and the low time frame
+[01:36:08] is already confirmed, everything.
+[01:36:10] But yeah, not longer than that.
+[01:36:12] I'm not holding a trade
+[01:36:13] for a week or three or whatever.
+[01:36:16] Let's say they're gold, guys.
+[01:36:18] It's too volatile
+[01:36:19] to hold it too long for a swing trade.
+[01:36:21] Just make your daily money,
+[01:36:22] make your 1k, 2k, $300, whatever it is,
+[01:36:25] and close the chart
+[01:36:26] and start all over again.
+[01:36:28] Just wait for the market
+[01:36:28] to give you the settlement.
+[01:36:30] And sometimes you don't have to trade it.
+[01:36:31] So when you want to follow a dream
+[01:36:35] from somebody else
+[01:36:36] and he's also waiting for you to buy
+[01:36:38] and then sell his back
+[01:36:40] and then you're going to put
+[01:36:41] your life savings in it.
+[01:36:42] And then one day you're going to wake up
+[01:36:44] on your mother's couch.
+[01:36:45] Look into the sky and say,
+[01:36:46] what the hell did I do?
+[01:36:47] Whoa, whoa, whoa, whoa.
+[01:36:48] I lost everything, man.
+[01:36:49] And then you need to start from scratch.
+[01:36:51] And some people give up
+[01:36:52] and some people just play suicidal, whatever.
+[01:36:56] You guys don't give up.
+[01:36:56] You have strong minds.
+[01:36:57] Don't do that.
+[01:36:59] You guys need to forget about your losses.
+[01:37:02] It's part of life.
+[01:37:03] It's part of trading.
+[01:37:04] You learned your lesson.
+[01:37:05] Now it's time to make your money.
+[01:37:07] Now it's time.
+[01:37:08] Let me just remove this shit.
+[01:37:10] Now it's time to make your money
+[01:37:11] and now it's time to be profitable.
+[01:37:15] And how to be profitable
+[01:37:16] with using the setups
+[01:37:17] that you can see every day leave.
+[01:37:20] All right.
+[01:37:21] So yeah, when you start saying like,
+[01:37:23] okay, I'm actually going to start
+[01:37:26] just make my daily profit
+[01:37:28] and log out of the day
+[01:37:29] and enjoy the day
+[01:37:30] and evening with my family
+[01:37:32] and have your rules.
+[01:37:35] And it all starts with having a plan.
+[01:37:40] You have a plan to execute a trade.
+[01:37:41] My plan is to sell here.
+[01:37:43] My plan is to buy here.
+[01:37:45] Inside of this level, I don't care.
+[01:37:48] If I want to change my plan,
+[01:37:50] plan C, break of Asia, retest,
+[01:37:53] I will look for longs to this zone.
+[01:37:55] All right.
+[01:37:56] Asia logo broken.
+[01:37:59] I will look for sell.
+[01:38:00] All right.
+[01:38:01] Coming to a high time frame OB.
+[01:38:02] I will look for longs into the sale.
+[01:38:05] I know how long to hold it.
+[01:38:07] Holding for 200 pips, 50 pips, 60 pips,
+[01:38:10] stop plus two entry
+[01:38:11] and done for the day.
+[01:38:13] So you have your rules, set of rules.
+[01:38:15] You have your setups
+[01:38:16] because you saw this every day.
+[01:38:17] But when you are like,
+[01:38:20] like put your life savings in it
+[01:38:21] and put your money in it
+[01:38:23] that you saved all this stuff.
+[01:38:25] Like I swear, I know the story
+[01:38:28] from from Rob Vilsacki
+[01:38:31] told me yesterday.
+[01:38:32] I'm not going to share it here
+[01:38:33] because it's private.
+[01:38:34] But to be honest, guys, like
+[01:38:37] it's sad, man.
+[01:38:38] And I was the same thing.
+[01:38:40] Like I swear I was the same thing
+[01:38:42] when you put a lot of money
+[01:38:44] and you lose it.
+[01:38:44] It's not so for you guys.
+[01:38:46] I know that you guys also lost it.
+[01:38:47] So focus on just one asset,
+[01:38:49] two assets only.
+[01:38:50] And that's it.
+[01:38:50] If you want to do like high time frame
+[01:38:52] do same thing like Mark, for example,
+[01:38:54] he's he's he's he's a Tesla genius.
+[01:38:57] And now he's doing Tesla stuff.
+[01:39:00] But he's accumulating his long term
+[01:39:02] and he bought back from low level.
+[01:39:03] So if you are good with that, yes.
+[01:39:05] But if you focus on too much shit,
+[01:39:08] like here, look, Tesla.
+[01:39:10] Yeah, I think
+[01:39:11] Mark was bought here somewhere.
+[01:39:13] But yeah, so Tesla
+[01:39:16] like, I don't know, like you can do
+[01:39:17] whatever it is.
+[01:39:18] I'm not going to tell you guys
+[01:39:19] buy Tesla now, whatever.
+[01:39:21] I'm just going to tell you guys
+[01:39:22] what I'm doing.
+[01:39:22] But in the same time,
+[01:39:23] I want to also to be profitable.
+[01:39:25] If cold, for example,
+[01:39:27] I told you guys it could be like gold here.
+[01:39:29] It went up.
+[01:39:30] Still not too late.
+[01:39:32] And it's not a meme coin.
+[01:39:34] It's not Trump.
+[01:39:36] You know, you guys need to understand,
+[01:39:37] guys, if something will happen
+[01:39:40] with the world,
+[01:39:41] gold will be a currency, man.
+[01:39:43] I hope nothing will happen.
+[01:39:44] But long term long plan,
+[01:39:46] this can go whatever it is,
+[01:39:48] can go really high.
+[01:39:51] So yeah, guys,
+[01:39:52] this is the story, actually,
+[01:39:53] our mother and yeah,
+[01:39:54] listening to other people's
+[01:39:56] talking about nonsense
+[01:39:57] that they don't don't trade
+[01:39:58] with all respect, guys,
+[01:40:00] I'm with banter,
+[01:40:01] but I learned something from Sheldon.
+[01:40:03] This guy is shit.
+[01:40:05] Sorry to say it, man.
+[01:40:06] I lost a lot of money of him, man.
+[01:40:08] Yeah, man, I don't care, man.
+[01:40:11] To be honest,
+[01:40:12] I am telling the truth, man.
+[01:40:14] I don't care if it's recording,
+[01:40:15] whatever doesn't know any shit, man.
+[01:40:19] I'm not hating anybody, whatever,
+[01:40:22] but still,
+[01:40:23] it's I work so hard for my shit.
+[01:40:24] I brought my back from this nonsense.
+[01:40:28] So yeah, guys,
+[01:40:29] sorry to be a little bit emotional now.
+[01:40:31] I'm not trying at all.
+[01:40:32] They're just angry.
+[01:40:34] You know, I'm angry,
+[01:40:35] because I hate when I know you guys,
+[01:40:38] we are human beings,
+[01:40:39] and we work our whole life in a job,
+[01:40:42] and you save your life savings.
+[01:40:44] And then one day,
+[01:40:46] because some dude is saying,
+[01:40:48] buy Trump or buy smoking jellyfish token
+[01:40:53] because it's a new thing,
+[01:40:54] and then you lose 50k or 5k,
+[01:40:56] whatever, or 100k on that thing.
+[01:40:59] It's yeah, man,
+[01:41:01] it's not good.
+[01:41:03] So yeah, anyway,
+[01:41:08] you started a bar.
+[01:41:09] Save here.
+[01:41:10] Yeah, guys, so if I lose a trade,
+[01:41:13] if I lose a trade, guys,
+[01:41:15] I know you guys also lose a trade,
+[01:41:16] but it's hurt me as well.
+[01:41:20] Like, that's why I come back with winning streets.
+[01:41:24] But yeah, guys,
+[01:41:25] if you lose a trade,
+[01:41:25] just take the most important thing, guys,
+[01:41:27] and also Carl said it in his Instagram and YouTube,
+[01:41:30] risk management is king.
+[01:41:31] Understand, guys,
+[01:41:32] that you need not to risk your whole wallet on a trade.
+[01:41:36] Like, if you have a 25k account,
+[01:41:38] 15k account,
+[01:41:39] you can risk one lot size.
+[01:41:40] But if you don't have that,
+[01:41:41] don't do one lot.
+[01:41:43] Build it up to 25k,
+[01:41:45] and then you do like big sizes.
+[01:41:48] Then you start to make these things.
+[01:41:50] Yeah, like, guys,
+[01:41:54] like, no hating anybody, guys,
+[01:41:56] but to be honest,
+[01:41:57] I swear, it's shit, just shit.
+[01:42:01] Guys, think about it,
+[01:42:02] just common sense,
+[01:42:04] 33 trillion money assets,
+[01:42:05] and two million,
+[01:42:07] two trillion in crypto,
+[01:42:09] whole crypto markets.
+[01:42:10] Like, come on.
+[01:42:12] Just to the high probability.
+[01:42:14] And to be honest, the concept is easier.
+[01:42:16] We have a highest level
+[01:42:17] that made the lowest level.
+[01:42:18] If they come to this zone,
+[01:42:19] they will reject.
+[01:42:20] It's that simple.
+[01:42:22] Highest level,
+[01:42:22] what happened here?
+[01:42:23] They reject.
+[01:42:25] They still reject.
+[01:42:26] You have so many times,
+[01:42:27] this is one hour,
+[01:42:28] to put your stop loss to entry.
+[01:42:29] Okay, they broke it.
+[01:42:31] So this will be now the support level.
+[01:42:33] All right.
+[01:42:34] So this is a higher support level.
+[01:42:36] Where can they go?
+[01:42:37] They can go to this eight hour OB,
+[01:42:40] and also the one hour OB,
+[01:42:41] and the four hour OB sitting here.
+[01:42:43] So there's a high chances that here,
+[01:42:45] it will reject again.
+[01:42:46] If they close above it,
+[01:42:47] like something like this,
+[01:42:49] close above this zone,
+[01:42:50] whatever volume will happen,
+[01:42:51] I will look for a high probability level
+[01:42:54] to look for longs
+[01:42:55] and to make another higher high.
+[01:42:58] If they don't make a higher high,
+[01:42:59] I know at least they will make a higher low.
+[01:43:01] I have time to put my stop loss to entry
+[01:43:04] and take some profits.
+[01:43:06] And if they come down,
+[01:43:08] I don't care.
+[01:43:09] My trade is risk free.
+[01:43:13] Yeah, make sure it's high low.
+[01:43:18] Yeah, Hamless, we need to buy,
+[01:43:20] we need to meet someday, one day.
+[01:43:24] They rock pull us.
+[01:43:27] Yeah, like, I'm not saying this is shit,
+[01:43:28] or this is,
+[01:43:29] I'm not gonna say all this stuff, guys.
+[01:43:30] I don't know.
+[01:43:32] I think Sniper Plop also doesn't exist anymore.
+[01:43:34] But again, guys,
+[01:43:35] I know with Bento,
+[01:43:35] if they hurt me,
+[01:43:36] I will be fired.
+[01:43:37] But again, guys,
+[01:43:38] I don't care, man.
+[01:43:40] It's not worth it to,
+[01:43:42] to do this,
+[01:43:44] and like,
+[01:43:45] we're still humans, man.
+[01:43:46] Like, come on.
+[01:43:47] If you see,
+[01:43:50] if you see things on television or whatever,
+[01:43:52] it doesn't affect you,
+[01:43:53] then I don't know, man.
+[01:43:54] If you see things that are happening
+[01:43:55] with other people,
+[01:43:56] they're losing their funds, you know?
+[01:43:58] I don't want,
+[01:43:58] I don't want you guys to lose money.
+[01:44:00] Like, come on, guys.
+[01:44:02] 250k, if I invested in gold,
+[01:44:04] or if I did,
+[01:44:06] if I just didn't trade at all,
+[01:44:07] I will be have still like,
+[01:44:08] 200, 250k.
+[01:44:11] Okay, guys,
+[01:44:11] again,
+[01:44:12] when I start to learn in training,
+[01:44:13] I took Kyle straight.
+[01:44:14] I love Kyle, to be honest.
+[01:44:16] Not love, love like gay,
+[01:44:17] but just love like a person.
+[01:44:19] He's really one of the best bosses
+[01:44:20] to work with.
+[01:44:21] He's a humble guy,
+[01:44:22] and he's so cool.
+[01:44:24] And to be honest,
+[01:44:25] one of the best,
+[01:44:26] like, I don't like to work for a boss,
+[01:44:27] but he's one of the best guys
+[01:44:28] to work with.
+[01:44:30] And to be honest, guys,
+[01:44:31] Kyle actually made me,
+[01:44:33] made the shop.
+[01:44:33] So the shop, the build mine,
+[01:44:34] like, I made a lot of money,
+[01:44:36] and the shop,
+[01:44:36] I have it there.
+[01:44:37] So I saved a lot of money,
+[01:44:39] and still,
+[01:44:39] yeah, it's a good,
+[01:44:43] like, to be honest,
+[01:44:44] I met him in Dubai,
+[01:44:45] and he's really good.
+[01:44:46] So I hope you guys,
+[01:44:47] we meet each other
+[01:44:47] and meet him as well,
+[01:44:49] and to be like,
+[01:44:51] make a lot of money together
+[01:44:52] and all this stuff.
+[01:44:53] So to be honest,
+[01:44:53] just if Kyle was not a good guy,
+[01:44:56] I will not be in the room,
+[01:44:57] to be honest,
+[01:44:58] because the money that I earn is,
+[01:45:01] like, I make it in a day,
+[01:45:03] to be honest.
+[01:45:05] Yeah,
+[01:45:05] but guys, again,
+[01:45:08] no, no,
+[01:45:09] Fabio,
+[01:45:09] like, again,
+[01:45:10] don't follow me.
+[01:45:11] I'm not saying,
+[01:45:11] like, follow me
+[01:45:12] and all this stuff.
+[01:45:12] Like, no,
+[01:45:13] it's not the right mindset.
+[01:45:15] I say,
+[01:45:15] just,
+[01:45:16] I'm telling you guys
+[01:45:17] what I do to be profitable,
+[01:45:18] and I show you guys
+[01:45:19] how to be profitable,
+[01:45:20] and I teach you real trading.
+[01:45:22] It's all about real trading,
+[01:45:23] because Fabio,
+[01:45:24] I want you in a month
+[01:45:25] or two or three or whatever,
+[01:45:27] to understand trading,
+[01:45:29] and then say,
+[01:45:30] I don't need the world rule.
+[01:45:31] I don't want you to go.
+[01:45:32] Don't get me wrong.
+[01:45:33] I like to trade with community.
+[01:45:35] That's why I'm here.
+[01:45:36] We love to trade with community.
+[01:45:37] Trade by yourself is shit.
+[01:45:39] But if you trade with community,
+[01:45:40] it's better to win together,
+[01:45:41] and even to lose together.
+[01:45:42] You learn together as well.
+[01:45:44] We are now like family,
+[01:45:45] but yeah,
+[01:45:47] if you just lose,
+[01:45:48] lose, lose, lose, lose,
+[01:45:49] what the hell are we doing?
+[01:45:51] Swear.
+[01:45:52] Like,
+[01:45:52] if you lose more
+[01:45:54] than your subscription
+[01:45:55] for the world,
+[01:45:55] what are you doing here?
+[01:45:58] Yeah.
+[01:46:03] Oh,
+[01:46:04] my tummy's rumbling.
+[01:46:06] Go eat.
+[01:46:07] Miss Stanley.
+[01:46:08] See you someday again.
+[01:46:10] Yeah,
+[01:46:10] learn and understand trades
+[01:46:11] and look for stack levels.
+[01:46:14] The only thing is to do stack levels,
+[01:46:15] stack levels, stack levels
+[01:46:16] for the higher probability.
+[01:46:18] But the best setup
+[01:46:19] is Asia High,
+[01:46:20] Asia Low,
+[01:46:20] Broken.
+[01:46:22] You see big fair value gaps.
+[01:46:24] You see fair value gaps.
+[01:46:26] You see a BPR.
+[01:46:27] You look for a long.
+[01:46:28] For example,
+[01:46:29] here OB retested long.
+[01:46:31] OB retested Dever D3.
+[01:46:33] So this is a zone actually
+[01:46:34] that we need to look for longs.
+[01:46:36] This zone here.
+[01:46:37] We have OB here and a FPG.
+[01:46:39] And this level here,
+[01:46:40] we need to look for longs.
+[01:46:41] We have also OB sitting here.
+[01:46:43] So I think probably
+[01:46:44] if they come to the zone,
+[01:46:45] this is not a long for BDC actually.
+[01:46:49] This is actually what I said.
+[01:46:50] This is a good long
+[01:46:51] with the same stop loss
+[01:46:52] and then we look for a higher high.
+[01:46:53] But let's see
+[01:46:54] how the weekend will evolve.
+[01:46:56] Yeah,
+[01:46:56] guys,
+[01:46:57] learn and focus.
+[01:46:58] Do the replay
+[01:47:00] and we will be profitable guys.
+[01:47:01] And understand guys,
+[01:47:02] sometimes we lose one
+[01:47:03] or two,
+[01:47:04] three trades.
+[01:47:04] But at the end of the month,
+[01:47:05] we will be profitable.
+[01:47:06] The only thing I have to do guys
+[01:47:07] is follow a plan
+[01:47:09] and risk management.
+[01:47:11] The only thing you have to do
+[01:47:12] is follow a plan.
+[01:47:13] Hamless,
+[01:47:14] you wake up in the morning,
+[01:47:15] you drink your coffee
+[01:47:16] or tea or whatever.
+[01:47:18] You take a shit.
+[01:47:18] You take a shower.
+[01:47:20] You go to work.
+[01:47:21] That's your plan.
+[01:47:22] My plan is the same
+[01:47:23] and then I have a plan
+[01:47:24] with the chart.
+[01:47:25] This is my long.
+[01:47:26] This is my short.
+[01:47:27] In between,
+[01:47:27] I'm not going to do anything.
+[01:47:32] Yeah,
+[01:47:32] just it will change your life.
+[01:47:34] Hopefully guys.
+[01:47:35] So don't hold.
+[01:47:36] Don't do these two things.
+[01:47:38] To be honest guys,
+[01:47:40] a lot of traders in the world
+[01:47:41] are really good.
+[01:47:41] I think like just speaking
+[01:47:44] from the heart here,
+[01:47:46] like the trades that we give
+[01:47:47] in the whole room,
+[01:47:48] the value is really good.
+[01:47:49] Mr.
+[01:47:49] Columbus also killing with gold
+[01:47:50] and whereas in Josh
+[01:47:52] and of course,
+[01:47:53] Kyle and like swear,
+[01:47:54] you just have to take
+[01:47:56] the setups is good with you.
+[01:47:57] Like if like one of the
+[01:47:58] trades give the setup
+[01:47:59] and you see,
+[01:48:00] for example,
+[01:48:01] it lining up with your setup
+[01:48:02] or with this indicator
+[01:48:04] and then you can say like,
+[01:48:05] okay,
+[01:48:05] I'm actually agree.
+[01:48:06] This is actually confirmation
+[01:48:07] for you guys that you
+[01:48:09] can yeah,
+[01:48:11] can go long.
+[01:48:14] First coffee and then shit.
+[01:48:15] Yeah,
+[01:48:16] that's also the plan.
+[01:48:19] Yes.
+[01:48:21] First coffee,
+[01:48:21] shit and trade on the toilets.
+[01:48:23] Don't trade on the toilet guys.
+[01:48:24] It's haram.
+[01:48:28] You drink water and milk.
+[01:48:29] Water mix with milk.
+[01:48:31] Mix milk with cola.
+[01:48:35] Yeah.
+[01:48:36] Yeah, guys be profitable.
+[01:48:37] Just follow the plan.
+[01:48:39] Yeah, follow the plan.
+[01:48:41] So guys,
+[01:48:42] soon we're gonna do life training.
+[01:48:43] Probably in a week or two.
+[01:48:45] For now guys,
+[01:48:47] I have five minutes of time
+[01:48:48] to eat something
+[01:48:50] and to watch the football game
+[01:48:52] and because Egypt is playing.
+[01:48:54] If they win,
+[01:48:55] they're gonna play probably Argentina.
+[01:48:57] Hopefully we're gonna
+[01:49:01] like break Messi's leg or something.
+[01:49:04] No, just kidding.
+[01:49:05] Hopefully we're gonna win
+[01:49:06] but probably not.
+[01:49:07] Hopefully we're gonna win this weekend.
+[01:49:08] And yeah,
+[01:49:10] guys,
+[01:49:10] I enjoyed this a lot
+[01:49:11] and love you guys.
+[01:49:13] Let's kill it next week.
+[01:49:16] Let's make a plan for Sunday.
+[01:49:17] Let's look for Sunday
+[01:49:18] for what is the high probability
+[01:49:20] short or long.
+[01:49:21] I know we stayed a long
+[01:49:22] and we already know the levels for gold
+[01:49:23] but we're gonna do it again.
+[01:49:25] And I'm gonna fix this thing
+[01:49:26] on the weekends.
+[01:49:27] So probably we'll see you guys
+[01:49:28] tomorrow,
+[01:49:29] update or Sunday before the Zoom.
+[01:49:31] So you guys play with it.
+[01:49:33] And again,
+[01:49:33] after the updates,
+[01:49:35] you guys give me another feedback
+[01:49:36] so I can change it again
+[01:49:38] and again and again.
+[01:49:39] So we build our own thing.
+[01:49:41] You know?
+[01:49:42] So yeah, guys.
+[01:49:43] All right, guys.
+[01:49:44] Enjoy your weekend
+[01:49:45] and see you guys tomorrow.
+[01:49:47] Good luck with Egypt.
+[01:49:49] Yeah, Holland blew it.
+[01:49:51] Holland blew it.
+[01:49:52] But it's okay.
+[01:49:52] It's football.
+[01:49:54] Like we're not gonna predict.
+[01:49:56] I'm not gonna say like
+[01:49:57] Egypt's gonna win.
+[01:49:58] We're not gonna predict.
+[01:49:59] We're just gonna watch the game.
+[01:50:00] You never know what's gonna happen.
+[01:50:01] Thank you guys.
+[01:50:02] See you on Sunday.
+[01:50:03] Bye-bye.
+[01:50:05] Bye-bye.
