@@ -1,0 +1,17 @@
+{
+ "schema": "corpus_manifest_addendum",
+ "items": [
+  {
+   "source_id": "fp-2026_07_21_farouk_post_trade_breakdown_f007",
+   "path": "C:\\Users\\Marty\\Downloads\\farouk gold trade.mov",
+   "source_class": "video",
+   "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+   "instrument_scope": "XAUUSD",
+   "record_class": "post-trade retrospective",
+   "linked_campaign": "XAU-F007-20260721",
+   "provenance_note": "POST-TRADE RETROSPECTIVE breakdown of XAU-F007-20260721 (Farouk's gold trade of 2026-07-21), operator-supplied from Downloads, video mtime 2026-07-21 17:29Z (sha256 022ff2aa86bace0ef0da3a20fac80b01efeed5142c8f6d43e0e44cc0fedfe430). NO PRE-REGISTRATION CONTAMINATION POSSIBLE: F007's T=0 freeze (08:26:42Z) and its frozen Lane A outcome (BE scratch, terminated ~09:29Z, +5.38 pips/unit) were BOTH already durable HOURS before this video existed (~17:29Z, ~9h later). The frozen hypothesis and outcome pre-date every frame of retrospective content. Any final exit/result Farouk states here = SOURCE_REPORTED_OUTCOME evidence ONLY; it must NEVER alter F007's Lane A outcome, legs, or state (D-045/K governance). Record class: post-trade retrospective; linked campaign XAU-F007-20260721.",
+   "supersedes": [],
+   "store_mode": "STORE"
+  }
+ ]
+}

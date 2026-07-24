@@ -1,0 +1,87 @@
+========================================================================
+FAROUK / WHALE ROOM RECORDING — UPLOAD PREPARATION MANIFEST
+Generated: 2026-07-04
+Source location: C:\Users\Marty\Downloads
+Split/verify tool: ffmpeg 7.1 (imageio-ffmpeg bundled build).
+  NOTE: ffprobe was NOT available on this machine; per operator approval,
+  ffmpeg was used for BOTH splitting AND verification (decode-error scan
+  via `ffmpeg -v error -i <part> -f null -`, plus `ffmpeg -i` for
+  duration/streams/size). No software was installed. No original file was
+  analysed, renamed, moved, deleted or modified.
+========================================================================
+
+------------------------------------------------------------------------
+SOURCE FILES (unique) + DUPLICATES
+------------------------------------------------------------------------
+[1] VIDEO — SPLIT_REQUIRED
+    File : GMT20251221-181518_Recording_2240x1260.mp4
+    Path : C:\Users\Marty\Downloads\GMT20251221-181518_Recording_2240x1260.mp4
+    Size : 1,141,422,223 bytes (1088.55 MB)
+    Dur  : 02:45:25.76
+    Video: h264 High (avc1) 2240x1260 25 fps
+    Audio: aac LC 48000 Hz stereo 89 kb/s  (+ bin_data text stream)
+    SHA256: 5635e60e29be4868b02b4e4377a97e635a8d6fc0dbe004641160e77dec965917
+    DISPOSITION: split into 9 stream-copy parts (see below).
+    DUPLICATE SKIPPED (identical SHA256):
+        GMT20251221-181518_Recording_2240x1260 (1).mp4  [EXACT_DUPLICATE]
+
+[2] AUDIO — SUPPORTING_AUDIO / UPLOAD_WHOLE
+    File : GMT20251221-181518_Recording.m4a
+    Path : C:\Users\Marty\Downloads\GMT20251221-181518_Recording.m4a
+    Size : 113,539,811 bytes (108.28 MB)  -> <= 450 MB, upload whole
+    Dur  : 02:45:25.76
+    Audio: aac LC 48000 Hz stereo 89 kb/s
+    SHA256: c5508175ec0d635b9b62acfbbf6262e2b751191640e76d1151855ad56e966a64
+    DUPLICATE SKIPPED (identical SHA256):
+        GMT20251221-181518_Recording (1).m4a  [EXACT_DUPLICATE]
+
+[3] TRANSCRIPT — SUPPORTING_TRANSCRIPT / UPLOAD_WHOLE
+    File : GMT20251221-181518_RecordingnewChat.txt
+    Path : C:\Users\Marty\Downloads\GMT20251221-181518_RecordingnewChat.txt
+    Size : 19,701 bytes (0.019 MB)  -> upload whole
+    SHA256: 249ac9a39b2bb93cedc7b5bd7b1cb71af68e85f1cf5d52d4d8725c379691664d
+    DUPLICATE SKIPPED (identical SHA256):
+        GMT20251221-181518_RecordingnewChat (1).txt  [EXACT_DUPLICATE]
+
+Duplicate copies skipped total: 3 (one per unique file). Not processed twice.
+
+------------------------------------------------------------------------
+GENERATED VIDEO PARTS  (stream copy, -map 0 -c copy, ~20-min segments)
+Folder: C:\Users\Marty\Downloads\Farouk_Upload_Parts\GMT20251221-181518_Recording_2240x1260\
+Method: ffmpeg -hide_banner -i "<INPUT>" -map 0 -c copy -f segment
+        -segment_time 1200 -segment_start_number 1 -reset_timestamps 1
+        "<OUT>\GMT20251221-181518_Recording_2240x1260_PART_%02d.mp4"
+------------------------------------------------------------------------
+PART    DURATION      BYTES          MB      VIDEO AUDIO  <450MB  DECODE
+PART_01 00:20:10.54   155,595,265    148.4   yes   yes    yes     clean
+PART_02 00:19:57.14   145,848,513    139.1   yes   yes    yes     clean
+PART_03 00:19:52.57   120,430,418    114.9   yes   yes    yes     clean
+PART_04 00:20:03.49   167,048,204    159.3   yes   yes    yes     clean
+PART_05 00:20:07.37   159,604,802    152.2   yes   yes    yes     clean
+PART_06 00:19:51.65    59,242,977     56.5   yes   yes    yes     clean
+PART_07 00:20:07.65   148,720,945    141.8   yes   yes    yes     clean
+PART_08 00:20:00.22   152,060,650    145.0   yes   yes    yes     clean
+PART_09 00:05:15.24    35,183,147     33.6   yes   yes    yes     clean
+
+Parts: 9 (chronological PART_01..PART_09).
+Sum of part durations: 02:45:25.87  (original 02:45:25.76; +0.11s segment-boundary rounding).
+Largest part: 159.3 MB (PART_04) — well under the 450 MB limit.
+Every part: opens OK, has a video stream, has an audio stream, decodes with
+zero errors, and is under 450 MB.
+
+------------------------------------------------------------------------
+VERIFICATION PROBLEMS
+------------------------------------------------------------------------
+None. All 9 parts passed. No corruption, no oversize part, no missing
+audio/video. STEP 4 (H.264/AAC transcode fallback) was NOT required and was
+NOT performed — stream copy succeeded verification.
+
+------------------------------------------------------------------------
+UPLOAD ORDER (recommended)
+------------------------------------------------------------------------
+1. GMT20251221-181518_RecordingnewChat.txt          (transcript, context first)
+2. GMT20251221-181518_Recording_2240x1260_PART_01.mp4
+3. ... _PART_02 ... through ... _PART_09.mp4         (in numeric order)
+   (Optional) GMT20251221-181518_Recording.m4a       (full audio, 108 MB) if
+   audio-only reference is wanted; it duplicates the video parts' audio.
+========================================================================

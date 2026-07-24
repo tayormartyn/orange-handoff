@@ -92,14 +92,16 @@ PERSONAL_LIVE_METHOD_UNCONFIRMED   (inferred from his live trades — unconfirme
 ## 4. ARCHITECTURE
 
 ### 4a. Live research services (always-on, read-only)
-Four separate processes, each with a "NO BROKER / NO ORDER SUBMISSION" banner. They are launched by `ORANGE_START_SERVICES.ps1` and must never be touched by build work:
+Four separate processes, each with a "NO BROKER / NO ORDER SUBMISSION" banner. They are launched by `ORANGE_START_SERVICES.ps1` (confirmed at `copy-trade-farooq/code/ORANGE_START_SERVICES.ps1` — note it **hard-codes machine paths** `$PY=C:\Python314\python.exe` and `$ROOT=C:\Users\Marty\signal-terminal`; adjust both for any other checkout). They must never be touched by build work. (`FA` below = `copy-trade-farooq/code/research/farouk_pilot/always_on_tradingview_receiver_plan/stage_c_tooling/farouk_plus/follower_assistant`.)
 
-| Service   | Role                                                                 |
-|-----------|----------------------------------------------------------------------|
-| listener  | Connects to Telegram, receives Farouk's messages live.               |
-| wire      | Watches (30s), interprets messages -> shadow campaign proposals (review-only). |
-| watcher   | Evidence layer: router sweep, freezes campaigns prospectively.       |
-| observer  | Read-only re-classifier of the historical archive.                   |
+| Service   | Repo file / launch command | Role                                                     |
+|-----------|----------------------------|----------------------------------------------------------|
+| listener  | `code/module_a_telegram.py` — `python -u module_a_telegram.py` (from `code/`, no lock) | Connects to Telegram, receives Farouk's messages live. |
+| wire      | `FA/live_wire.py` — `python -u live_wire.py --watch` (from `FA/`, lock `live_wire.instance.lock`) | Watches (30s), interprets -> shadow proposals (review-only). |
+| watcher   | `FA/evidence_layer/evidence_watcher.py` — `--watch` (from its dir) | Evidence layer: router sweep, prospective freeze. |
+| observer  | `FA/intake_reliability/intake_observer.py` — `--watch` (from its dir) | Read-only re-classifier of the archive. |
+
+Each service resolves its instance lock and cursor **from its own working directory** — run each from its own folder. `live_wire_v2.py` / `interpreter_v2.py` are the staged morphology-v2 variants; the launcher does **not** run them.
 
 **Lock discipline:** each service holds an instance lock with its PID. On restart, if a lock holds a *dead* PID, you must **prove the PID is gone AND no matching python process is running** before cleaning the lock — otherwise you risk two listeners fighting over Telegram.
 
@@ -140,14 +142,17 @@ The cTrader OpenAPI transport, built and verified **entirely offline** (loopback
 
 Campaigns are `XAU-Fnnn-YYYYMMDD`. Recent: F002 (0714), F004 (0716), F007 (0721), **F008 (0724)**. Terminal outcomes so far are mostly BE-scratch. F001/F002 are non-analytical backfill and must never be fit as training.
 
-**F008 (live at time of writing):** BUY XAUUSD, entry zone 4040–4050, SL 4015, captured **LIVE_AT_ARRIVAL** with a clean prospective freeze (verified against Farouk's actual screenshot — parse was exact). It has since taken management updates (now at revision 3, msg 46098). This is a genuine clean prospective capture — one of the "count these" wins.
+**Where the records live (authority order matters):** the per-campaign *cards* (JSON + markdown, F001–F008) are in the repo at `FA/cards/XAU-Fnnn-YYYYMMDD.json`. The **authoritative append-only ledgers are NOT in the repo** (deliberately excluded; source machine only): the forward ledger (`…/farouk_plus/forward_validation_ledger_v0_2.jsonl`), the genuine prospective freeze ledger (`FA/evidence_layer/router_freeze_v0_1.jsonl`), plus `follower_ledger_v0_1.jsonl`, `evidence_layer/entry_refusals_v0_1.jsonl`, `pre_mark_candidates_v0_1.jsonl`. **On any disagreement the ledgers win over the cards** — the cards are for reading; the ledgers are the evidence of record.
+
+**F008 — OPEN (as of 2026-07-24):** LONG XAUUSD, entry zone 4040–4050, posted SL 4015, captured **LIVE_AT_ARRIVAL** (08:34:31Z) with a clean prospective freeze (verified against Farouk's actual screenshot — parse was exact). Forward ledger holds 4 `XAU_F_SETUP` records, latest **revision 4, no terminal yet**. Management applied: **TP1_TAKE** (msg 46097, 08:44Z) then **SL_TO_ENTRY** (msg 46098, 09:02Z) — so it is **break-even-protected and awaiting a terminal**. A genuine clean prospective capture — one of the "count these" wins.
 
 ---
 
 ## 7. KNOWN ISSUES / FRAGILE PARTS
 
+- **SECURITY INCIDENT (2026-07-24) — TradingView webhook path leak:** the first repo push accidentally included 5 `cloud_worker_dark/` files holding the live TradingView webhook **secret path** (`LOCAL_SECRET_webhook_path.txt` + 4 related). Both secret scans missed them — the secret is a URL *path*, not a key shape, and the filename check missed the uppercase `LOCAL_ONLY_*` names. Repo history was rebuilt to a clean commit (`08a0627`, force-pushed); token no longer retrievable from the repo. **But Kimi's first zip contains it → treat the webhook path as exposed and ROTATE it** (new secret path on the Cloudflare Worker + manually update the TradingView alerts). Impact is contained: the worker is write-only logging (no read branch), gives no money/broker/account access — worst case is fake-data injection into the research feed. **Scan-hardening lesson:** the secret scan must also flag URL-path secrets and uppercase `LOCAL_SECRET`/`LOCAL_ONLY` filenames, not just credential-shaped tokens.
 - **Entry-model divergence (K-064):** Lane A places legs at zone edges (worst price); Farouk fills shallow (~0.24 depth). Entry price sets break-even, which determines runner survival. P-EP-1 (legs at depth 0.15 / 0.40, no far leg) is the frozen enhanced profile. Its 0.40 leg fills only ~25% of the time and would have missed F007 — recorded as a *known characteristic*, deliberately NOT retuned (avoiding the double-dipping / fit-on-the-fitting-sample trap).
-- **LIVE_EDIT deploy pending:** the fix for "edit completes a signal but the edit path never creates a campaign" is built and proven but its deploy was being held for a clean window (jumps the queue when F008 is quiet).
+- **LIVE_EDIT fix — NOW LIVE (2026-07-24), deployed by the reboot ahead of plan:** the fix for "edit completes a signal but the edit path never creates a campaign" is committed and proven (fixed `live_wire.py`, sha `a8cc4706…`, evidence pack D-106; tests D-108). It was *held* for a planned Phase-B deploy (F008 closed → clean window → review), but this morning's post-reboot restart loaded the fixed on-disk `live_wire.py`, so it has been **running live since the 2026-07-24 restart** — the reboot executed the deploy early. Files in repo: `FA/live_wire.py`, `…/parser_replay/edit_completion_guard.py` (+ tests), `FA/tests_edit_completion_lookup.py`, `FA/tests_live_wire.py`, evidence `FA/LIVE_EDIT_COMPLETION_FIX_PACK.txt`. **Process note (for reviewers):** the build was already proven and the wire behaved correctly under it (F008 captured + managed today), so this is not dangerous — but it is an *unplanned deploy* and both reviewers (Claude + Chuck) should formally acknowledge/record it rather than let it be discovered later.
 - **Fragile-token rules to re-verify:** FR-027, FR-056, FR-008, FR-051, FR-058 need re-validation with fixed-pipeline audio clips (an earlier transcript-timestamp -> real-audio misalignment was root-caused and fixed; re-validation was queued).
 - **Operator-ear discipline:** some rules require a human to *actually listen* to clips; AI-transcribing then AI-checking defeats the independent-ear purpose. Keep the human in that loop.
 
@@ -174,7 +179,7 @@ Return next with whichever of these produces genuine real-world evidence first. 
 **Still prohibited (unchanged):** real trade-capable cTrader connection; OAuth `scope=trading`; `DEMO_EXECUTION_ENABLED=True`; any demo order; any live order. None of these happen without the signed CONNECT_APPROVAL block in §0.5, two-reviewer sign-off, and Martyn's explicit go.
 
 **Other standing items:**
-- When F008 is quiet, deploy the LIVE_EDIT fix in a clean window via the launcher.
+- LIVE_EDIT fix is now DEPLOYED (loaded on the 2026-07-24 reboot restart, ahead of the planned Phase-B sequence). Reviewers to acknowledge/record the unplanned deploy; confirm the wire keeps behaving correctly under the fixed build.
 - Re-verify the five fragile-token rules (FR-027 / FR-056 / FR-008 / FR-051 / FR-058) with fixed-pipeline clips.
 - Never flip to real money until a genuine prospective sample shows positive expectancy after costs. The dangerous moment is when the demo looks brilliant.
 

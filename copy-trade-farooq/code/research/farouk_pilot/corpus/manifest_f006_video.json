@@ -1,0 +1,15 @@
+{
+ "schema": "corpus_manifest_addendum",
+ "items": [
+  {
+   "source_id": "fp-2026_07_20_farouk_post_trade_breakdown_f006",
+   "path": "C:\\Users\\Marty\\Downloads\\farouk master training and  vidio\\2026-07-20_farouk_post_trade_breakdown_F006.mp4.mov",
+   "source_class": "video",
+   "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+   "instrument_scope": "XAUUSD",
+   "provenance_note": "POST-TRADE RETROSPECTIVE breakdown of XAU-F006-20260720, operator-supplied Discord capture 2026-07-20 ~18:22. Operator states it reveals an UNPOSTED stop-loss hit. NO PRE-REGISTRATION CONTAMINATION: F006's T=0 freeze (logical 80fc8f0c, 14:49Z) and committed blind hypothesis PRE-DATE this video (~18:22) - both already durable before any retrospective content existed. Stop-hit claim = SOURCE_REPORTED evidence only; must never alter Lane A outcome/legs/state.",
+   "supersedes": [],
+   "store_mode": "STORE"
+  }
+ ]
+}
