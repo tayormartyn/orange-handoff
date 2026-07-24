@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "FP-CAMPAIGN-002",
+  "symbol": "XAUUSD",
+  "direction": "SELL",
+  "setup_family": "UNKNOWN",
+  "market_event_start_utc": null,
+  "market_event_end_utc": null,
+  "source_posting_ts_utc": null,
+  "timestamp_uncertainty_seconds": null,
+  "session_context": "UNKNOWN - display timezone not shown. Video references Asian-session High/Low but the Discord TZ is not proven.",
+  "point_in_time_session_high": null,
+  "point_in_time_session_low": null,
+  "previous_completed_day_levels": {
+    "prev_high": null,
+    "prev_low": null,
+    "prev_close": null,
+    "note": "no market data downloaded"
+  },
+  "legs": [
+    {
+      "leg": "A",
+      "role": "INITIAL",
+      "direction": "SELL",
+      "entry_zone": {
+        "raw_value": "3970-3980",
+        "normalized_value": "3970-3980",
+        "data_quality_flag": "OK"
+      },
+      "stop_loss": "4030",
+      "signal_ts_displayed": "01/07/2026 08:2x (top row time partly cut)",
+      "explicit_statements": [
+        "Fast dump! Take TP1 now",
+        "I'm looking for a new lower low in this move, so I want to see a break of 3940",
+        "If it moved too fast, I'll share a new trade setup later today",
+        "For now, I like price to potentially move up toward 3985-3995",
+        "Move sl to entry for now"
+      ],
+      "management_events": [
+        {
+          "ts_displayed": "01/07/2026 08:33",
+          "instruction": "Move SL to entry (breakeven)"
+        },
+        {
+          "ts_displayed": "01/07/2026 08:33",
+          "note": "wanted a break of 3940; possible retracement toward 3985-3995"
+        }
+      ],
+      "leg_outcome": "TP1_THEN_PROTECTED_AT_ENTRY",
+      "source_asset_ids": [
+        "sa-7a0e7d69d704192b"
+      ]
+    },
+    {
+      "leg": "B",
+      "role": "RE_ENTRY",
+      "direction": "SELL",
+      "signal_ts_displayed": "01/07/2026 08:45",
+      "entry_zone": {
+        "raw_value": "3372-3385",
+        "normalized_value": null,
+        "data_quality_flag": "CONTEXTUALLY_INCOMPATIBLE",
+        "possible_intended_value": "UNKNOWN",
+        "note": "raw as posted; incompatible with SL 4025 and TPs 3910-3967 (a SELL entry near 33xx is far below the targets) — NOT corrected"
+      },
+      "best_sell_zone": {
+        "raw_value": "3390-3400",
+        "normalized_value": null,
+        "data_quality_flag": "CONTEXTUALLY_INCOMPATIBLE",
+        "possible_intended_value": "UNKNOWN",
+        "note": "raw as posted; NOT corrected"
+      },
+      "stop_loss": "4025",
+      "position_size": "half-size (explicitly stated)",
+      "targets": [
+        {
+          "label": "TP1",
+          "value": "3967"
+        },
+        {
+          "label": "TP2",
+          "value": "3957"
+        },
+        {
+          "label": "TP3",
+          "value": "3940"
+        },
+        {
+          "label": "TP4",
+          "value": "3910"
+        }
+      ],
+      "management_events": [
+        {
+          "ts_displayed": "01/07/2026 12:22",
+          "instruction": "Stop loss hit",
+          "text": "Unfortunately, our stop loss was hit"
+        }
+      ],
+      "leg_outcome": "STOPPED",
+      "source_asset_ids": [
+        "sa-7a0e7d69d704192b",
+        "sa-8a4754bf56b58cc9"
+      ]
+    }
+  ],
+  "net_campaign_outcome": "UNKNOWN",
+  "entry_zone": {
+    "note": "two legs — see 'legs' (LEG A 3970-3980 OK; LEG B 3372-3385 CONTEXTUALLY_INCOMPATIBLE)"
+  },
+  "structural_invalidation": "LEG A SL 4030; LEG B SL 4025 (both displayed as 'SL'; recorded raw)",
+  "targets": [
+    {
+      "leg": "B",
+      "label": "TP1",
+      "value": "3967"
+    },
+    {
+      "leg": "B",
+      "label": "TP2",
+      "value": "3957"
+    },
+    {
+      "leg": "B",
+      "label": "TP3",
+      "value": "3940"
+    },
+    {
+      "leg": "B",
+      "label": "TP4",
+      "value": "3910"
+    }
+  ],
+  "management_events": [
+    {
+      "ts_displayed": "01/07/2026 08:33",
+      "instruction": "Move SL to entry (breakeven)"
+    },
+    {
+      "ts_displayed": "01/07/2026 08:33",
+      "note": "wanted a break of 3940; possible retracement toward 3985-3995"
+    },
+    {
+      "ts_displayed": "01/07/2026 12:22",
+      "instruction": "Stop loss hit",
+      "text": "Unfortunately, our stop loss was hit"
+    }
+  ],
+  "veto_cancellation_evidence": [],
+  "mfe_decimal_string": null,
+  "mae_decimal_string": null,
+  "explicit_facts": [
+    "Instrument XAUUSD; direction SELL",
+    "Displayed date 01/07/2026 on all messages; NO timezone shown",
+    "Signal/management times displayed: 08:2x, 08:33, 08:45, 12:22, 19:26",
+    "Beginning-of-month risk statement: 'small position size ... wider stop loss ... half my usual size'",
+    "'Last month, we took 22 trades across Gold and BTC, with only 2 losses'",
+    "LEG A: SELL 3970-3980, SL 4030, 'Fast dump! Take TP1 now'",
+    "LEG B (re-entry 08:45): raw Entry zone 3372-3385, raw Best sell zone 3390-3400, SL 4025, half-size, TP1 3967/TP2 3957/TP3 3940/TP4 3910",
+    "12:22: 'Unfortunately, our stop loss was hit'; 19:26: 'Gold and BTC breaking down'",
+    "Community reactions to the re-entry post were mixed/confused (many ?/thinking reactions) — observed, not interpreted",
+    "Video sa-4c42c8642c35de2a: .mov 4096x2018, 24.37fps, 510.02s, video+audio; transcript PENDING_LOCAL_TRANSCRIPTION"
+  ],
+  "explicit_spoken_statements": [
+    {
+      "status": "PENDING_LOCAL_TRANSCRIPTION",
+      "note": "audio present but not transcribed locally (no offline transcription model installed). Spoken methodology NOT independently recorded here; Gemini's transcribed quotes are held separately as external-review claims, UNVERIFIED."
+    }
+  ],
+  "video_transcript_status": "PENDING_LOCAL_TRANSCRIPTION",
+  "video_metadata": {
+    "source_asset_id": "sa-4c42c8642c35de2a",
+    "container": "QuickTime .mov",
+    "resolution": "4096x2018",
+    "fps": 24.366,
+    "frame_count": 12427,
+    "duration_seconds": 510.02,
+    "video_codec": "H.264 (cv2)",
+    "audio_present": true,
+    "audio_codec": "undetermined_locally (mp4/.mov soun track)",
+    "platform_shown": "TradingView",
+    "processing_tool": "opencv-python 4.13.0 (local, no cloud)",
+    "note": "retrospective post-trade breakdown"
+  },
+  "directly_visible_chart_observations": [
+    {
+      "item": "symbol",
+      "value": "Gold Spot / U.S. Dollar (XAUUSD)",
+      "frames_s": [
+        0,
+        276
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "feed",
+      "value": "Pepperstone (0s) AND Vantage (276s) — the feed CHANGES; BTC section is Bybit",
+      "frames_s": [
+        0,
+        276,
+        390
+      ],
+      "confidence": "HIGH",
+      "note": "corrects Gemini's uniform 'Pepperstone' claim"
+    },
+    {
+      "item": "timeframe",
+      "value": "15-minute (0s, 276s); BTC section 1-hour",
+      "frames_s": [
+        0,
+        276,
+        390
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "displayed_date_axis",
+      "value": "spans ~29 Jun - 3 Jul 2026; move of interest around 30 Jun / 01 Jul",
+      "frames_s": [
+        0
+      ],
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "item": "session_labels",
+      "value": "'Asia High' (~4023) and 'Asia Low' (~3950) lines present",
+      "frames_s": [
+        0
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "smc_labels_15m",
+      "value": "FVG, BPR, CHoCH, OB on-chart labels",
+      "frames_s": [
+        0
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "indicator_panel_15m",
+      "value": "TF 15; CHoCH 4037.41; Asia break HIGH; OB retest 4053.58; Current OB 4053.58; Fresh OB 4378.25",
+      "frames_s": [
+        0
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "htf_annotations",
+      "value": "labeled zones 'H4 OB', 'M15 Bearish FVG', 'H4 Bearish FVG', 'WEEKLY bearish fvg', 'WEEKLY CHOCH', plus a '$$$' liquidity marker",
+      "frames_s": [
+        276
+      ],
+      "confidence": "HIGH",
+      "note": "verifies Gemini's H4 OB / M15 FVG / H4 FVG / Weekly CHoCH claim; but the frame header shows TF 15 (Gemini said 4h) and feed Vantage (Gemini said Pepperstone)"
+    },
+    {
+      "item": "instrument_transition",
+      "value": "BTCUSDT Perpetual Contract, 1h, on Bybit (price ~60,128) — a separate BTC analysis appended (~6:15+)",
+      "frames_s": [
+        390
+      ],
+      "confidence": "HIGH",
+      "note": "corrects Gemini: exchange is Bybit, NOT Binance"
+    },
+    {
+      "item": "retrospective",
+      "value": "post-trade breakdown; the move has already played out and zones are annotated after the fact",
+      "frames_s": [
+        0,
+        276
+      ],
+      "confidence": "HIGH"
+    }
+  ],
+  "strong_inferences": [
+    "The methodology visibly uses session-liquidity levels (Asia High/Low) + Smart-Money-Concepts (OB, FVG, BPR, CHoCH) — supported by on-chart labels",
+    "The re-entry 33xx prices are almost certainly typos (a SELL with SL 4025 and TPs 3910-3967 cannot have a 3372-3385 entry) — but recorded raw and NOT corrected per policy",
+    "The stop was hit because price rallied ABOVE the sell (SL 4025/4030) — consistent with the chart showing a bounce from the Asia Low up through ~4055"
+  ],
+  "weak_inferences": [
+    "HYPOTHESIS: the visible feed switch (Pepperstone->Vantage) may be for higher-timeframe history or spread reasons — not explained in the sampled frames",
+    "HYPOTHESIS: the confused community reactions relate to the 33xx typo — not confirmed"
+  ],
+  "candidate_hypotheses": [
+    {
+      "id": "H-VETO-001",
+      "status": "UNTESTED",
+      "text": "An Asia-low break without bearish displacement, downside FVG, bearish CHoCH or valid OB-retest confirmation may be a liquidity trap rather than confirmed continuation."
+    },
+    {
+      "id": "H-MGMT-001",
+      "status": "UNTESTED",
+      "text": "The rapid TP1 on the initial leg may have influenced the decision to re-enter."
+    },
+    {
+      "id": "H-RISK-001",
+      "status": "UNTESTED",
+      "text": "Half-size and wider-stop usage was an explicit beginning-of-month risk protocol, not evidence of reduced setup confidence."
+    }
+  ],
+  "contradictions": [
+    "Discord LEG B raw entry (3372-3385) / best sell (3390-3400) vs SL 4025, TPs 3910-3967, and video price ~3970-4064 — CONTEXTUALLY_INCOMPATIBLE (typo-suspected), recorded raw",
+    "Gemini's transcribed 'video says 3990 is a sell area' vs Discord 'SELL 3970-3980' — the 3990 side is a SPOKEN claim, UNVERIFIED without transcript; the Discord side is verified",
+    "Gemini labelled the feed 'Pepperstone' throughout and the BTC exchange 'Binance'; frames show a Pepperstone->Vantage feed switch and the BTC chart is on Bybit"
+  ],
+  "unresolved_questions": [
+    "Timezone of the Discord timestamps (UNKNOWN)",
+    "Exact broker fill times/prices for both legs (UNKNOWN)",
+    "The spoken methodology (PENDING_LOCAL_TRANSCRIPTION) — Gemini's spoken quotes remain UNVERIFIED",
+    "Whether downside FVGs were truly absent on the initial dump (needs transcript + specific chart region)",
+    "MFE/MAE and the true price path (requires XAUUSD market data — not downloaded)",
+    "Why the charting feed switches Pepperstone<->Vantage",
+    "The intended values behind the 33xx typo (kept UNKNOWN)"
+  ],
+  "external_review": {
+    "source": "derived/external_reviews/FP-CAMPAIGN-002_gemini_blind_report.txt (independent blind review; NOT canonical)",
+    "verified_claims": [
+      "Direction SELL; initial 3970-3980 / SL 4030; TPs 3967/3957/3940/3910; re-entry SL 4025; stop-hit 12:22; half-size; signal times 08:2x/08:33/08:45 (verified from Discord)",
+      "33xx re-entry zones are typo-suspected / contextually incompatible (matches our raw+flag record)",
+      "Video: XAUUSD, Asia High/Low, FVG/OB/CHoCH labels, and HTF annotations 'H4 OB / M15 Bearish FVG / H4 Bearish FVG / WEEKLY CHoCH' (verified in frames)",
+      "Video transitions to a separate BTC analysis (verified)"
+    ],
+    "corrected_claims": [
+      "Gemini: feed 'Pepperstone' throughout -> frames show Pepperstone AND Vantage (feed switches)",
+      "Gemini: BTC on 'Binance' -> frames show Bybit (BTCUSDT Perpetual)",
+      "Gemini: HTF view at '4h' -> the annotated frame header shows TF 15"
+    ],
+    "unverified_pending_transcript": [
+      "'3990 is a sell area' and all spoken quotes (01:04 etc.)",
+      "'SL placed above the Asia High' rationale",
+      "'no downside FVGs on the initial dump' admission",
+      "'broke Asia low, lost OB/FVG, got trapped' narrative",
+      "the narrator's admission of a mistake"
+    ],
+    "note": "Gemini claims are held separately and are NOT promoted to canonical facts except where independently verified above."
+  },
+  "confidence_by_field": {
+    "instrument": "HIGH",
+    "direction": "HIGH",
+    "leg_a_entry": "HIGH",
+    "leg_a_stop": "HIGH",
+    "leg_b_stop": "HIGH",
+    "leg_b_targets": "HIGH",
+    "leg_b_entry_zone": "RAW_ONLY_CONTEXTUALLY_INCOMPATIBLE",
+    "displayed_date": "HIGH",
+    "timezone": "UNKNOWN",
+    "video_symbol": "HIGH",
+    "video_feed": "HIGH(mixed Pepperstone/Vantage/Bybit)",
+    "spoken_methodology": "PENDING_LOCAL_TRANSCRIPTION",
+    "net_outcome": "UNKNOWN"
+  },
+  "video_alignment": {
+    "classification": "STRONGLY_INFERRED_SAME_CAMPAIGN",
+    "supporting": [
+      "Same instrument XAUUSD; same date context 01 Jul 2026; SELL; Asia High ~4023 / Asia Low ~3950 bracket the 3970-3980 sell and the 3910-3967 targets; the retrospective breakdown reviews a stop-out matching the 12:22 message"
+    ],
+    "not_direct_because": [
+      "No shared explicit id in the video; exact time alignment not proven (TZ unknown; retrospective; feed differs)"
+    ],
+    "time_alignment_claimed": false
+  },
+  "source_asset_ids": [
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a"
+  ]
+}

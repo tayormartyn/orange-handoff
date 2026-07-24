@@ -1,0 +1,86 @@
+{
+ "banner": "NO BROKER ACTION | NO ORDER SUBMISSION | REVIEW-ONLY SHADOW PROPOSAL",
+ "card_type": "REVIEW_ONLY_SHADOW_PROPOSAL",
+ "campaign_id": "XAU-F008-20260724",
+ "revision": 3,
+ "source_timestamp_utc": "2026-07-24T08:34:31+00:00",
+ "direction": "LONG",
+ "zone": "4040-4050",
+ "posted_follower_stop": "4015 (posted follower stop; personal stop UNKNOWN; structural invalidation NOT STATED)",
+ "constitution_version": "0.1.0",
+ "constitution_sha256": "7bce618f29d1d44a48bef085d539b05a289393ebe33fe4d304632016777defde",
+ "theoretical_legs": [
+  {
+   "leg_id": "XAU-F008-20260724/near",
+   "price": "4050",
+   "size": "1/3",
+   "kind": "LIMIT",
+   "state": "PROPOSED"
+  },
+  {
+   "leg_id": "XAU-F008-20260724/mid",
+   "price": "4045.00",
+   "size": "1/3",
+   "kind": "LIMIT",
+   "state": "PROPOSED"
+  },
+  {
+   "leg_id": "XAU-F008-20260724/far",
+   "price": "4040",
+   "size": "1/3",
+   "kind": "LIMIT",
+   "state": "PROPOSED"
+  }
+ ],
+ "fill_state": {
+  "LANE_A": "NOT_ADJUDICATED (no price data used at proposal time)",
+  "LANE_B": "NOT_ADJUDICATED (no price data used at proposal time)"
+ },
+ "management_state": {
+  "instruction_events": [
+   {
+    "instruction_type": "TP1_TAKE",
+    "message_id": 46097,
+    "timestamp_utc": "2026-07-24T08:44:24+00:00"
+   },
+   {
+    "instruction_type": "SL_TO_ENTRY",
+    "scope": null,
+    "message_id": 46098,
+    "timestamp_utc": "2026-07-24T09:02:32+00:00"
+   }
+  ]
+ },
+ "strict_follower_status": {
+  "state": "PROPOSED",
+  "note": "management update; adjudication pending OHLC"
+ },
+ "policy_sensitivity_status": {
+  "state": "PROPOSED",
+  "disclaimer": "POLICY_SENSITIVITY lane; NOT Farouk's actual result"
+ },
+ "unresolved_ambiguities": [],
+ "detector_v0_2_label": "SHADOW_CANDIDATE_MEDIUM",
+ "detector_v0_3_label": "SHADOW_CANDIDATE_MEDIUM",
+ "pre_mark_comparisons": {
+  "PM-F001-SELL-4150-4184": "EXPIRED",
+  "PM-F002-SUPPLY-4430-4480": "NOT_MATCHED",
+  "PM-F003-SELL-4250-4260": "EXPIRED",
+  "PM-F004-DEMAND-3850-3863": "NOT_MATCHED"
+ },
+ "evidence_links": {
+  "message_ids": [
+   46096,
+   46097,
+   46098
+  ],
+  "frozen_evidence_sha256": "17aef118c357d2b988e030569a6942c72c0ddb32a48d24bfd8099a6033c69778",
+  "forward_ledger": "forward_validation_ledger_v0_2.jsonl"
+ },
+ "acknowledgement_state": "REVIEW",
+ "acknowledgement_note": "REVIEW/ACKNOWLEDGED/REJECTED is an annotation with zero execution consequence",
+ "review_only": true,
+ "executable": false,
+ "trade_ready": false,
+ "observation_only": true
+}

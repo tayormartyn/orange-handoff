@@ -1,0 +1,73 @@
+{
+  "note": "PDF supplies fuller/clearer wording for existing sources; existing FP-EDU IDs RETAINED; PDF pages recorded as SUPPLEMENTAL_COMPILED_EVIDENCE; primary screenshot provenance NOT overwritten.",
+  "repairs": [
+    {
+      "source_id": "FP-EDU-011 SCOB",
+      "pdf_pages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "upgrade": "fuller body; adds target rule 'at least 2R risk-to-reward or next liquidity zone'",
+      "completeness": "-> fuller",
+      "transcription_confidence": "HIGH (text-layer)"
+    },
+    {
+      "source_id": "FP-EDU-013 Trend Continuation",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "upgrade": "fuller body (2826ch)",
+      "completeness": "-> fuller"
+    },
+    {
+      "source_id": "FP-EDU-021 Trade Entry Checklist",
+      "pdf_pages": [
+        4
+      ],
+      "upgrade": "confirms checklist intro (requirements diagram image-only)",
+      "completeness": "partial (diagram)"
+    },
+    {
+      "source_id": "FP-EDU-025 3-Drive",
+      "pdf_pages": [
+        1,
+        2
+      ],
+      "upgrade": "adds Fib 61.8%/78.6% correction detail + Impulsive Move/Building Liquidity",
+      "completeness": "-> fuller",
+      "transcription_confidence": "HIGH"
+    },
+    {
+      "source_id": "FP-EDU-026 Volume Profile",
+      "pdf_pages": [
+        5
+      ],
+      "upgrade": "confirms VA=68% (1 SD)",
+      "completeness": "confirmed"
+    },
+    {
+      "source_id": "FP-EDU-017 Ranging",
+      "pdf_pages": [
+        8
+      ],
+      "upgrade": "adds 'Ranging Structure' definition (range = no clear direction)"
+    },
+    {
+      "source_id": "FP-EDU-015 Inducement / FP-EDU-014 POI / FP-EDU-012 Inefficiencies",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "upgrade": "fuller/confirming text"
+    },
+    {
+      "source_id": "FP-EDU-022 Candlestick Patterns",
+      "pdf_pages": "Whaleroom_Candlestick_Patterns.pdf (7pp)",
+      "upgrade": "a compiled candlestick doc supplements the Discord candlestick post"
+    }
+  ]
+}

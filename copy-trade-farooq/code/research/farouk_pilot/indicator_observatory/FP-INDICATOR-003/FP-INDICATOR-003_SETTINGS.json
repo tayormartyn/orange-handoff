@@ -1,0 +1,35 @@
+{
+  "indicator": "[kyle] v1",
+  "evidence": "spoken + FP-INDICATOR-001 [kyle] v1 dialog (settings dialog not fully re-captured here)",
+  "POC_VAH_VAL": {
+    "periods": [
+      "daily",
+      "3D",
+      "5D",
+      "weekly",
+      "2W",
+      "monthly"
+    ],
+    "T_variants": "present but UNEXPLAINED (UNKNOWN)"
+  },
+  "SFP": {
+    "colours": "green / red",
+    "marker": "dot / dot-line"
+  },
+  "Liquidity_Sweep": {
+    "lookback_spoken": "~8 bars ('I did some eight bars')"
+  },
+  "Moving_Averages": {
+    "options": [
+      20,
+      21,
+      34,
+      50,
+      55
+    ],
+    "types": "EMA/SMA (togglable)",
+    "farouk_uses": false,
+    "added_because": "'Carl said ... a lot of people use the EMA'"
+  },
+  "source_asset_id": "sa-a41992a559e1930c"
+}

@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "title": "TradingView logging-only webhook payload template",
+    "version": "0.1",
+    "mode": "DESIGN_ONLY",
+    "status": "PROPOSED — not yet configured in TradingView; do not treat placeholders as confirmed",
+    "purpose": "Observation/evidence only. Contains NO broker instruction, NO API keys, NO secrets.",
+    "notes": [
+      "TradingView placeholders use the {{...}} syntax and are substituted by TradingView at fire time.",
+      "Placeholders marked TO_VERIFY have NOT been confirmed against the live Farouk Playbook alert setup and must be checked in Stage 1/2 before relying on them.",
+      "The shared secret/token is NOT in this body — it lives in the endpoint path and/or an HTTP header (see safety spec).",
+      "If a placeholder is unsupported for a given alert, leave the field out rather than sending a literal unresolved {{...}} string; the receiver treats an unresolved {{...}} as parse_status=UNRESOLVED_PLACEHOLDER."
+    ]
+  },
+
+  "schema_version": "tv-webhook-0.1",
+  "source": "TradingView",
+
+  "alert_name": "LIVE001_<ALERT_NAME>  (TO_VERIFY: TradingView has no generic {{alert_name}} placeholder; the identifying name is hardcoded per-alert in the message, mirroring the alert's own Name)",
+
+  "symbol": "{{ticker}}  (CONFIRMED-COMMON placeholder; e.g. XAUUSD)",
+  "exchange": "{{exchange}}  (CONFIRMED-COMMON placeholder; e.g. PEPPERSTONE)",
+  "timeframe": "{{interval}}  (CONFIRMED-COMMON placeholder; chart interval, e.g. 3)",
+  "chart_interval": "{{interval}}  (same source as timeframe; kept as an explicit field for clarity)",
+
+  "event_text": "<hardcoded per-alert descriptive text, e.g. 'A+ or better setup' or 'Farouks Playbook: A+ LONG on XAUUSD 3'>",
+
+  "trigger_price": "{{close}}  (TO_VERIFY: {{close}} is the common bar-close placeholder; confirm it reflects the intended trigger price for THIS indicator alert, not a delayed value)",
+
+  "trigger_time": "{{time}}  (TO_VERIFY: confirm whether {{time}} is the bar-open/bar-close time and its timezone; the exported CSV used UTC 'Z' timestamps — reconcile format at Stage 3)",
+  "server_time_hint": "{{timenow}}  (TO_VERIFY: {{timenow}} is the alert firing time; confirm format/timezone)",
+
+  "direction": "<OPTIONAL, hardcoded per-alert if the alert is directional: LONG | SHORT | NA>",
+  "grade": "<OPTIONAL, hardcoded per-alert if applicable: A | A+ | NA (A+++ has never been observed)>",
+  "event_type": "<OPTIONAL, hardcoded per-alert: A_PLUS | SWEEP_HIGH | SWEEP_LOW | CHOCH_UP | CHOCH_DOWN | ENGULFING | BPR_TAPPED | ANY_ALERT | ...>",
+
+  "schema_nonce": "<OPTIONAL static or per-alert constant to help dedupe/version; TradingView cannot generate a random nonce, so this is a STATIC schema tag, not a security nonce (TO_VERIFY if any {{...}} unique id exists)>",
+
+  "safety_assertions": {
+    "contains_broker_instruction": false,
+    "contains_api_keys_or_secrets": false,
+    "is_execution_request": false,
+    "lane": "LOGGING_ONLY"
+  },
+
+  "_example_resolved_illustrative_only": {
+    "schema_version": "tv-webhook-0.1",
+    "source": "TradingView",
+    "alert_name": "LIVE001_APLUS_XAUUSD_3M",
+    "symbol": "XAUUSD",
+    "exchange": "PEPPERSTONE",
+    "timeframe": "3",
+    "chart_interval": "3",
+    "event_text": "A+ or better setup",
+    "trigger_price": "4146.48",
+    "trigger_time": "2026-07-06T18:33:01Z",
+    "server_time_hint": "2026-07-06T18:33:01Z",
+    "direction": "LONG",
+    "grade": "A+",
+    "event_type": "A_PLUS",
+    "schema_nonce": "tv-webhook-0.1",
+    "safety_assertions": {
+      "contains_broker_instruction": false,
+      "contains_api_keys_or_secrets": false,
+      "is_execution_request": false,
+      "lane": "LOGGING_ONLY"
+    },
+    "_example_note": "Illustrative ONLY. Prices/times are copied from prior evidence to show shape; not a live capture. Placeholder resolution TO_VERIFY."
+  }
+}

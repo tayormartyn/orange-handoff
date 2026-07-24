@@ -1,0 +1,15 @@
+{
+ "predicate_id": "H_FPL_07_v2",
+ "status": "FROZEN — effective NEXT session onward (prospective only)",
+ "ratified": "2026-07-21 (operator, D-056)",
+ "window": {
+  "type": "FORWARD_ONLY",
+  "rule": "a directional-A fire PRECEDES a campaign post iff the next Farouk campaign post occurs within 60 minutes AFTER the fire AND no opposite-direction directional-A fire occurs between the fire and that post",
+  "opposite_direction_disqualifier": "REQUIRED — without it, a same-direction fire an hour out would score as 'preceding' while a contradictory fire sat between it and the post; the disqualifier is the load-bearing part of the revision",
+  "consistency": "the fire's direction (A LONG/A SHORT) must match the post's direction (LONG/SHORT)"
+ },
+ "reasoning_cited": "v1's +/-4h SYMMETRIC window is unfit by construction for a ~1-post/day source firing ~2 directional-A alerts/hour (LIVE013 measured 11 fires/5.5h): it guarantees resulting_post != none for essentially every fire and therefore measures nothing. v2 makes 'precede' meaningful by (a) forward-only, (b) tight 60-min horizon, (c) opposite-direction disqualifier.",
+ "per_fire_fields": "UNCHANGED from pre-registration: session, day_of_week, hours_to_daily_close_21Z, hours_to_weekly_close, 3m_bar_close, stated_no_trade_condition_in_force (source cited), resulting_post (now under the v2 window rule)",
+ "boundary": "TODAY'S LIVE013 SESSION IS NOT RESCORED under v2. It was scored under v1 (NEGATIVE on precede) and that result STANDS. Applying v2 to already-observed data = retrospective fitting. The raw fire data (live013_window_fires.json) is preserved; a future analysis MAY apply v2 to it ONLY if explicitly labelled RETROSPECTIVE_NOT_PROSPECTIVE and NEVER counted as prospective evidence.",
+ "supersedes": "H_FPL_07_v1 — superseded-by-design-flaw (not deleted; v1 rows retained in h_fpl_07_scores_v1.json)"
+}

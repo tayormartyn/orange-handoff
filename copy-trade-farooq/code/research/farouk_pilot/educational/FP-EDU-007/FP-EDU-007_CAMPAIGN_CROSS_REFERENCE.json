@@ -1,0 +1,21 @@
+{
+  "record_id": "FP-EDU-007_CAMPAIGN_CROSS_REFERENCE",
+  "note": "This video teaches an EMA-based method (Vishal), DIFFERENT from the [kyle] SMC method behind Campaigns 001-004. Do NOT claim universal rules from one teaching example. Frozen campaign files NOT modified.",
+  "assessments": {
+    "C004_H4BOS_H1nBOS_3mOB_5mOB_stack": "NOT corroborated by this video — C004's stack is [kyle] SMC (BOS/nBOS/OB); FP-EDU-007 uses EMA confluence instead. The two are PARALLEL methods; EDU-007 neither confirms nor refutes the specific SMC stack.",
+    "CHoCH_absent_on_entry_TF": "NOT ADDRESSED — this method does not use CHoCH at all (EMA-based). Cannot speak to CHoCH universality in the SMC method (C003/C004 remain the evidence there).",
+    "multi_TF_OB_confluence_can_qualify": "GENERAL PRINCIPLE SUPPORTED (multi-TF confluence is central to both methods) BUT with DIFFERENT objects — EMA alignment here vs OB stack in C004. Do not equate the two confluence types.",
+    "HTF_preferred_zone_with_LTF_tradable_zone": "SUPPORTED in principle — EDU-007 = 1H direction (HTF context) + 1m entry (LTF execution), structurally analogous to C004's H1 preferred OB + lower-TF entry. Confirms HTF-bias / LTF-execution layering as a recurring shape.",
+    "narrows_F_CONFLUENCE_UNKNOWN": "NO (for the SMC/[kyle] state machine) — EDU-007 is a different (EMA) method and states NO minimum confluence count; it does NOT narrow the SMC confluence threshold. It supplies a SEPARATE EMA-confluence model that would need its own family."
+  },
+  "campaigns_referenced": [
+    "FP-CAMPAIGN-001",
+    "FP-CAMPAIGN-002",
+    "FP-CAMPAIGN-003",
+    "FP-CAMPAIGN-004"
+  ],
+  "source_asset_ids": [
+    "sa-271518d77732835c",
+    "sa-b03f71eee08044e7"
+  ]
+}

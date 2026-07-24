@@ -1,0 +1,13 @@
+{
+  "name": "stage-c-tooling",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Isolated local Wrangler toolchain for the always-on TradingView LOGGING-ONLY receiver. Gate C-INSTALL only. No login, no deploy, no Cloudflare resources, no Worker source, no TradingView config.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "wrangler-version": "wrangler --version"
+  },
+  "devDependencies": {
+    "wrangler": "^4.107.1"
+  }
+}

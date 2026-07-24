@@ -1,0 +1,27 @@
+{
+  "contract_id": "source_tier_contract_v0_1",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE / versioned",
+  "tiers": {
+    "TIER_1_PUBLISHED_FOLLOWER_METHOD": {
+      "definition": "what Farouk posts to the room that a follower can mirror (zone, legs, stop, management)",
+      "authority": "HIGH for what he PUBLISHED; does NOT reveal his private book",
+      "sources": "Telegram campaigns (F001/F002...), FP-EDU-002/003 documented rules DR-201..306/501..502",
+      "used_by": "Constitution v0.1 strict lane (FROZEN), whaleroom comparator (research)"
+    },
+    "TIER_2_ADVANCED_EDUCATION_METHOD": {
+      "definition": "concepts taught in Farouk Education (2).pdf and advanced corpus (OTE, PO3, SCOB, VP, NY models, structural-trigger priority)",
+      "authority": "MEDIUM / COMPILED_DERIVATIVE — teaching material, NOT proof of how his live account trades",
+      "sources": "AER-001..011 (this contract), FP-EDU-025/026/028/029/030/031/032/033/011/013/015",
+      "used_by": "hierarchical router v0.1 (FREEZE/annotate only); NO live use",
+      "promotion_rule": "a TIER_2 rule may become TIER_3-supported ONLY with prospective campaign evidence AND Farouk's own pre/post-trade explanation supporting it. Never promoted from documentary text alone."
+    },
+    "TIER_3_PERSONAL_LIVE_METHOD_UNCONFIRMED": {
+      "definition": "how his PRIVATE account actually trades (fills, sizing, true stop, discretionary entries)",
+      "authority": "UNKNOWN — not observable; MR-010 'posted lane != his book'",
+      "sources": "NONE confirmed",
+      "explicit_non_assertion": "The Education PDF does NOT prove Tier 3. We never assert the PDF shows how his private account always trades."
+    }
+  },
+  "default_tier_for_pdf_rules": "TIER_2_ADVANCED_EDUCATION_METHOD",
+  "review_only": true, "executable": false, "observation_only": true
+}

@@ -1,0 +1,124 @@
+{
+ "master": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT.md",
+  "sha16": "8730301c05cfca00"
+ },
+ "fwd_ledger": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\forward_validation_ledger_v0_2.jsonl",
+  "sha16": "934c58f03fb5a06e"
+ },
+ "freeze": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_v0_1.jsonl",
+  "sha16": "df2d3fc9312646d1"
+ },
+ "freeze_backfill": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_backfill_v0_1.jsonl",
+  "sha16": "a0c0c7567f2e20a5"
+ },
+ "constitution": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\follower_constitution_v0_1.json",
+  "sha16": "7bce618f29d1d44a"
+ },
+ "guards": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\guards.py",
+  "sha16": "213b4463bda22707"
+ },
+ "interpreter": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\interpreter.py",
+  "sha16": "7602755342a6748a"
+ },
+ "engine": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\engine.py",
+  "sha16": "5b68965304bcfb31"
+ },
+ "premarks": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\pre_mark_candidates_v0_1.jsonl",
+  "sha16": "c3b9a280c77731f5"
+ },
+ "refusals": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\entry_refusals_v0_1.jsonl",
+  "sha16": "bd7553bb9a1b8836"
+ },
+ "tracker_policy": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\market_tracker\\tracker_policy_addendum_v0_1.json",
+  "sha16": "dc414624d448822c"
+ },
+ "indicator_audit": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\ORANGE_INDICATOR_KNOWLEDGE_AUDIT.md",
+  "sha16": "18c19e59ab8ef267"
+ },
+ "alert_mapping": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\FP_INDICATOR_001_ALERT_MAPPING_REPORT.md",
+  "sha16": "504757599436694a"
+ },
+ "fpi006": {
+  "path": "research\\farouk_pilot\\indicator_observatory\\FP-INDICATOR-006\\FINDINGS.md",
+  "sha16": "3c8336f54691f15d"
+ },
+ "fplo1": {
+  "path": "research\\farouk_pilot\\live_observations\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001_REPORT.md",
+  "sha16": "944a9b2a9bbdf96a"
+ },
+ "phone_batch": {
+  "path": "research\\farouk_pilot\\live_observations\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001\\PHONE_ALERT_BATCH_001_A_PLUS_A_TRIPLE_PLUS_SUMMARY.md",
+  "sha16": "0124f6be76d46939"
+ },
+ "ob_policy": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md",
+  "sha16": "247df0be551ecdd9"
+ },
+ "sunday_topdown": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\SUNDAY_TOPDOWN_METHODOLOGY_CONSOLIDATION.md",
+  "sha16": "c75f34396d1966de"
+ },
+ "video_report": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\derived\\live_video_20260719\\EVIDENCE_REPORT_LIVE_20260719.md",
+  "sha16": "ee684a1f5cd6896c"
+ },
+ "correction": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\derived\\live_video_20260719\\CORRECTION_001_INDICATOR_PRIOR_ART.md",
+  "sha16": "f59aecc95d38b29c"
+ },
+ "video_source": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\derived\\live_video_20260719\\SOURCE_CONTROL.json",
+  "sha16": "0c36751bc0734e9e"
+ },
+ "cards_f004": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\cards\\XAU-F004-20260716.json",
+  "sha16": "b9e15a3434002060",
+  "volatile_excluded": "market_data"
+ },
+ "cards_f005": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\cards\\XAU-F005-20260717.json",
+  "sha16": "729b68f64042e8b7",
+  "volatile_excluded": "market_data"
+ },
+ "knowledge_register": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\knowledge\\orange_knowledge_register_v1.json",
+  "sha16": "14f7f47b6dbedc77"
+ },
+ "intake_class": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\intake_reliability\\intake_classification_v0_1.jsonl",
+  "sha16": "bb514175320ceb7d"
+ },
+ "intake_quar": {
+  "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\intake_reliability\\intake_quarantine_v0_1.jsonl",
+  "sha16": "c5f9a88131054377"
+ },
+ "config": {
+  "path": "config.py",
+  "sha16": "72efb664fa135b52"
+ },
+ "ctrader_config": {
+  "path": "ctrader_config.py",
+  "sha16": "63663dbc6cfa0059"
+ },
+ "operator_testimony": {
+  "path": "OPERATOR_RECOLLECTION (no artifact; informal verbal testimony, 2026-07-21)",
+  "sha16": "NO_ARTIFACT"
+ },
+ "g1_ear": {
+  "path": "research/farouk_pilot/stage2_rule_mining/g1_verifications_v0_1.jsonl",
+  "sha16": "append-only"
+ }
+}

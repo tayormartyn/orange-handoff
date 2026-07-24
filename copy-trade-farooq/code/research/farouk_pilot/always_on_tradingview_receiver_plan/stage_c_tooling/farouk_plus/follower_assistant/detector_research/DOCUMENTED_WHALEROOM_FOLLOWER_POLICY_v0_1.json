@@ -1,0 +1,25 @@
+{
+  "policy_id": "DOCUMENTED_WHALEROOM_FOLLOWER_POLICY_v0_1",
+  "status": "RESEARCH_COMPARATOR / NOT_LIVE / NOT_AUTHORITATIVE / does NOT modify Constitution v0.1",
+  "documentary_basis": "DR-304 (tranches), DR-306 (3-point/average BE), DR-301 (+50 BE)",
+  "policies": {
+    "A_CURRENT_STRICT_ORANGE": {"entries": 3, "spacing": "near/mid/far equal thirds",
+      "shared_stop": true, "be_basis": "PER_LEG", "be_trigger": "posted 'sl to entry' instruction",
+      "unfilled_on_riskoff": "CANCEL", "vague_take_some": "0.25", "source": "Constitution v0.1 (frozen)"},
+    "B_DOCUMENTED_WHALEROOM_AVERAGE_BE": {"entries": 3, "spacing": "even where applicable",
+      "shared_stop": true, "be_basis": "CAMPAIGN_AVERAGE", "be_trigger": "+50 pips FROM AVERAGE (DR-306/301)",
+      "no_fourth_losing_entry": true, "vague_take_some": "UNKNOWN (documents give templates, not vague-phrase meaning)",
+      "source": "DR-306/DR-301"},
+    "C_DOCUMENTED_CONSERVATIVE_TP": {"entries": 3, "shared_stop": true, "be_basis": "CAMPAIGN_AVERAGE",
+      "tp_template": "50/30/20 at posted TP1/TP2/TP3", "source": "DR-304",
+      "requires": "posted TP LEVELS", "f001_f002_note": "F001/F002 posted NO TP levels -> template INAPPLICABLE -> UNKNOWN"},
+    "D_DOCUMENTED_ADVANCED_TP": {"entries": 3, "shared_stop": true, "be_basis": "CAMPAIGN_AVERAGE",
+      "tp_template": "30/30 + move SL to entry (+50) + leave remainder running", "source": "DR-304",
+      "requires": "posted TP LEVELS for the 30/30", "f001_f002_note": "no posted TP levels -> partial UNKNOWN"}
+  },
+  "precedence_rule_v0_1": "EXPLICIT_POSTED_TELEGRAM_INSTRUCTION > DOCUMENTED_TEMPLATE_DEFAULT, per action, per timestamp. A documented default applies ONLY where no explicit posted instruction covers that action. Precedence is versioned; changing it = a new precedence version.",
+  "vague_take_some_representation": {
+    "TAKE_50_EXPLICIT": "0.50", "CONSERVATIVE_DOCUMENTED_PLAN": "50/30/20", "ADVANCED_DOCUMENTED_PLAN": "30/30/runner",
+    "TAKE_SOME_UNSCOPED_constitution_v0_1": "0.25 (design default)", "TAKE_SOME_UNSCOPED_documentary_meaning": "UNKNOWN"},
+  "review_only": true, "executable": false, "trade_ready": false, "observation_only": true
+}

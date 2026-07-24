@@ -1,0 +1,15 @@
+{
+  "contract_id": "execution_cost_scenarios_v0_1",
+  "status": "RESEARCH_ONLY / SIMULATION_ONLY",
+  "price_semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN",
+  "rule": "cost scenarios adjust SIMULATED fill prices for reporting; they NEVER rewrite the underlying strategy outcome (raw + cost-adjusted reported side by side). No 'correct' Pepperstone spread is invented.",
+  "scenarios": {
+    "ZERO_COST": {"spread_usd": "0", "slippage_usd": "0", "note": "reference; no cost"},
+    "FIXED_SPREAD": {"spread_usd": "0.30", "slippage_usd": "0", "note": "ASSUMPTION, not measured"},
+    "SLIPPAGE": {"spread_usd": "0.30", "slippage_usd": "0.20", "note": "ASSUMPTION, not measured"},
+    "LATENCY_ADJUSTED": {"spread_usd": "0.30", "slippage_usd": "0.20", "latency_price_use": "fill at first-eligible-bar price after intent (already causal)", "note": "ASSUMPTION"},
+    "PESSIMISTIC": {"spread_usd": "0.50", "slippage_usd": "0.50", "note": "worst-case ASSUMPTION"}
+  },
+  "all_assumptions_visible_in_result": true,
+  "review_only": true, "executable": false, "observation_only": true
+}

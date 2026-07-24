@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nana Sybil's Hearth — leave your heavy days at the cottage door</title>
+<meta name="description" content="A bright little cottage garden where Nana Sybil reads your dreams, tells the old stories, and keeps a place by the fire for you. Come in, my dreamers.">
+<style>
+  :root{
+    --white:#fdfbf6; --cream:#f6f1e6; --paper:#fffdf8;
+    --green-deep:#3a5c3f; --green:#5c8a5e; --green-soft:#88b07f; --sage:#e5ecdd;
+    --gold:#c99a3f; --gold-soft:#e6c874; --sun:#f3e6c4;
+    --ink:#2f3a2c; --ink-soft:#5a6152; --poppy:#c34a2f; --rule:#d8cdb4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 26px}
+  a{color:inherit}
+
+  /* HERO — bright garden */
+  .hero{position:relative;min-height:94vh;display:flex;align-items:center;justify-content:center;text-align:center;
+    color:#fff;background-color:#88b07f;
+    background:
+      linear-gradient(180deg, rgba(45,62,40,.12) 0%, rgba(40,58,38,.22) 45%, rgba(30,48,32,.74) 100%),
+      url('nana-garden.jpg');
+    background-size:cover;background-position:center 22%;}
+  .hero-inner{max-width:780px;padding:48px 26px}
+  .kicker{letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:var(--sun);margin-bottom:22px;
+    text-shadow:0 1px 12px rgba(0,0,0,.35)}
+  .hero h1{font-size:clamp(2.5rem,6.5vw,4.4rem);line-height:1.06;text-shadow:0 2px 28px rgba(30,40,25,.55)}
+  .hero .tag{font-style:italic;font-size:clamp(1.1rem,3vw,1.55rem);margin-top:20px;text-shadow:0 1px 14px rgba(0,0,0,.4)}
+  .hero .sub{margin-top:10px;font-size:1.02rem;opacity:.95;text-shadow:0 1px 10px rgba(0,0,0,.4)}
+  /* email capture */
+  .door{margin-top:34px;background:rgba(253,251,246,.94);border-radius:18px;padding:24px 22px;max-width:520px;
+    margin-left:auto;margin-right:auto;box-shadow:0 20px 60px rgba(30,45,25,.35);color:var(--ink)}
+  .door p{font-family:Georgia,serif;font-style:italic;color:var(--green-deep);margin-bottom:14px;font-size:1.02rem}
+  .form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .form input{flex:1 1 180px;padding:14px 16px;border-radius:30px;border:1px solid var(--rule);
+    background:#fff;color:var(--ink);font-size:1rem}
+  .btn{display:inline-block;padding:14px 26px;border-radius:30px;font-weight:600;font-size:1rem;border:none;
+    cursor:pointer;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-green{background:var(--green-deep);color:#fff;box-shadow:0 8px 22px rgba(58,92,63,.4)}
+  .scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;opacity:.7;font-size:.8rem}
+
+  section{padding:92px 0}
+  /* LORE */
+  .lore{background:var(--paper)}
+  .lore .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center}
+  @media(max-width:760px){.lore .grid{grid-template-columns:1fr;gap:30px}}
+  .frame{background:var(--sage);border:1px solid var(--rule);border-radius:8px;aspect-ratio:3/4;
+    display:flex;align-items:center;justify-content:center;color:var(--green);font-family:Georgia,serif;
+    font-style:italic;padding:20px;text-align:center;
+    background-image:linear-gradient(135deg, rgba(255,255,255,.4), rgba(200,220,180,.2));
+    box-shadow:0 14px 40px rgba(60,80,50,.14)}
+  /* replace .frame with: <img src="nana-garden.jpg"> for a real photo */
+  .lore h2{color:var(--green-deep);font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:6px}
+  .lore .lead{font-family:Georgia,serif;font-style:italic;color:var(--gold);font-size:1.15rem;margin-bottom:22px}
+  .lore p{color:var(--ink-soft);font-size:1.06rem;margin-bottom:16px}
+  .ruleline{width:56px;height:3px;background:var(--gold-soft);border-radius:2px;margin:18px 0}
+
+  /* DREAM BOOK (opening-soon preview) */
+  .book{background:linear-gradient(180deg,var(--sage) 0%, var(--paper) 100%);text-align:center}
+  .book h2{color:var(--green-deep);font-size:clamp(1.9rem,4vw,2.6rem)}
+  .book .intro{max-width:560px;margin:10px auto 12px;color:var(--ink-soft)}
+  .soon-tag{display:inline-block;background:var(--gold);color:#fff;font-size:.72rem;letter-spacing:.18em;
+    text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:34px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:28px 24px;
+    box-shadow:0 12px 34px rgba(60,80,50,.1);display:flex;flex-direction:column}
+  .card h3{color:var(--green-deep);font-size:1.35rem;margin-bottom:6px}
+  .card .price{font-family:Georgia,serif;color:var(--gold);font-size:1.6rem;margin:6px 0 14px}
+  .card p{color:var(--ink-soft);font-size:.98rem;flex:1;margin-bottom:18px}
+  .card .btn-soon{background:var(--sage);color:var(--green-deep);border:1px dashed var(--green-soft);
+    text-align:center;font-weight:600;padding:12px;border-radius:30px;cursor:default}
+  .disclaim{max-width:620px;margin:34px auto 0;font-size:.85rem;color:var(--ink-soft);font-style:italic}
+
+  footer{background:var(--green-deep);color:var(--sun);padding:52px 0;text-align:center}
+  footer .mark{font-family:Georgia,serif;font-size:1.3rem;letter-spacing:.08em;color:var(--gold-soft)}
+  footer .socials{margin:18px 0;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  footer .social{padding:11px 24px;border-radius:30px;border:1px solid rgba(255,255,255,.3);
+    text-decoration:none;color:#fff;font-weight:600}
+  footer .fine{opacity:.75;max-width:640px;margin:16px auto 0;font-size:.8rem;line-height:1.6}
+</style>
+</head>
+<body>
+
+  <!-- HERO : THE COTTAGE DOOR -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="kicker">Come in, my dreamers</div>
+      <h1>Nana Sybil's Hearth</h1>
+      <div class="tag">Leave your heavy day at the cottage door.</div>
+      <div class="sub">A bright little garden where dreams are read, old stories are told, and you're always welcome.</div>
+      <div class="door">
+        <p>"Leave your name at the door, my love — I'll send you Nana's weekly letter and the Dream of the Week."</p>
+        <!-- TODO: connect to your email service (Mailchimp / ConvertKit / Beehiiv / Formspree). Replace action="#". -->
+        <form class="form" action="#" method="post" onsubmit="alert('Thank you, my darling — connect this to your email service to go live.');return false;">
+          <input type="text" name="name" placeholder="Your name, love" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <button class="btn btn-green" type="submit">Come in ✨</button>
+        </form>
+      </div>
+    </div>
+    <div class="scroll">wander in ↓</div>
+  </header>
+
+  <!-- LORE -->
+  <section class="lore">
+    <div class="wrap">
+      <div class="grid">
+        <div class="frame">Nana in her garden<br>(drop a photo here)</div>
+        <div>
+          <h2>The keeper of the garden</h2>
+          <div class="lead">"There's no such thing as a silly dream by this fire, my love."</div>
+          <p>Nana Sybil is a warm place out of time — a stone cottage, a wild garden full of poppies and foxgloves, and a kettle that's always on. Each day she reads a dream, tells an old story, and offers a moment of quiet before you sleep.</p>
+          <div class="ruleline"></div>
+          <p>She carries a real family's tradition of dream-lore — handed down through Romani Traveller roots and an Irish gift for reading dreams — and she's brought to life with AI, with a real person behind every reading. Her words are for comfort and gentle reflection, always offered with care.</p>
+          <p>So whatever kind of day you've had… wander in. The gate's open, and there's a chair waiting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DREAM BOOK : opening-soon preview (NO live checkout yet) -->
+  <section class="book" id="dreambook">
+    <div class="wrap">
+      <h2>The Dream Book</h2>
+      <p class="intro">One day, when the garden's full of dreamers, Nana will open her book. Here's what she'll offer — gently, and only when the time is right.</p>
+      <span class="soon-tag">Opening soon</span>
+      <div class="cards">
+        <div class="card">
+          <h3>The Bespoke Dream Translation</h3>
+          <div class="price">£19</div>
+          <p>Leave Nana your dream, and she'll send back a beautifully written reflection to sit with — comfort and insight, never a verdict.</p>
+          <div class="btn-soon">Opening soon</div>
+        </div>
+        <div class="card">
+          <h3>The Hearth-side Letter</h3>
+          <div class="price">from £5/mo</div>
+          <p>A gentle letter from Nana each month — a story, a reflection, and a place kept warm for you by the fire.</p>
+          <div class="btn-soon">Opening soon</div>
+        </div>
+        <div class="card">
+          <h3>A Reading in Her Voice</h3>
+          <div class="price">+£10</div>
+          <p>Have your written reflection read aloud in Nana's own warm voice, to keep and listen to whenever you need it.</p>
+          <div class="btn-soon">Opening soon</div>
+        </div>
+      </div>
+      <p class="disclaim">Nana's readings are for comfort and reflection — never therapy, diagnosis, or a substitute for professional support. If you're struggling, she'll always point you gently toward real help, never a checkout.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="mark">Nana Sybil's Hearth</div>
+      <p style="margin-top:8px;opacity:.9">The kettle's on. I'll be here.</p>
+      <div class="socials">
+        <a class="social" href="https://youtube.com/@NanaSybil" target="_blank" rel="noopener">▶ YouTube</a>
+        <a class="social" href="#" target="_blank" rel="noopener">♪ TikTok</a>
+        <a class="social" href="#" target="_blank" rel="noopener">◎ Instagram</a>
+      </div>
+      <p class="fine">Nana Sybil is an AI-crafted storytelling character, made with love and a real family's tradition of dream-lore. Her readings are for comfort and reflection and are not a substitute for professional support. If you're struggling, please reach out to someone you trust or a support line in your country — you're never as alone as you feel.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

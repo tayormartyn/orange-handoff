@@ -1,0 +1,150 @@
+{
+  "telegram:baseline:256": {
+    "candidates": [
+      {
+        "event_type": "ENTRY",
+        "proposed_fields": {
+          "asset": "XAUUSD",
+          "direction": "buy",
+          "entry_low": "4315",
+          "entry_high": "4323",
+          "stop": "4295"
+        },
+        "evidence_quote": "XAUUSD buy 4323-4315 sl 4295",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:257": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {
+          "tp1": "4,328",
+          "tp2": "4,332",
+          "tp3": "4,345"
+        },
+        "evidence_quote": "TP1 : 4,328   TP2 : 4,332   TP3 : 4,345",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:258": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_TP",
+        "proposed_fields": {},
+        "evidence_quote": "take tp on highest entry hold lowest entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:259": {
+    "candidates": [
+      {
+        "event_type": "MOVE_STOP",
+        "proposed_fields": {},
+        "evidence_quote": "sl to entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:260": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "50 pips he follow the rules take tp and move sl to entry!!!!",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:261": {
+    "candidates": []
+  },
+  "telegram:baseline:262": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_TP",
+        "proposed_fields": {},
+        "evidence_quote": "take tp 2",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:263": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "making bread and trading",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:264": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "tp 1 -2 hit show profit in `🪙・bragging-rights`",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:265": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "Reason for the long:  Price sweeps the Asian low and created a bullish FVG on the 5-minute, with the target being the BPR at the 4336–4340 level. You guys see the indicator",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:266": {
+    "candidates": [
+      {
+        "event_type": "STOP_HIT",
+        "proposed_fields": {},
+        "evidence_quote": "sl entry hit after tp 2",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:267": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "Gold is unpredictable right now and the spread is wide. For the next trade, don’t risk your profits!",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:268": {
+    "candidates": []
+  },
+  "telegram:baseline:269": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "I hope you guys like the indicator.",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  }
+}

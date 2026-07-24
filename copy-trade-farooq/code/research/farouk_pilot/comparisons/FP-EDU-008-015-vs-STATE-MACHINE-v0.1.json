@@ -1,0 +1,64 @@
+{
+  "comparison_id": "FP-EDU-008-015-vs-STATE-MACHINE-v0.1",
+  "state_machine_ref": "FAROUK_STATE_MACHINE_SPEC_v0.1",
+  "note": "Written SMC curriculum (matches the [kyle]/SMC campaign method). Impacts are definitional refinements; core blockers persist. Spec NOT modified (delta proposed separately).",
+  "impacts": [
+    {
+      "target": "STRUCTURE_FOUND",
+      "status": "NARROWED",
+      "reason": "010 defines major (swings) vs internal (fractal) structure; 010-SUPPL defines BOS = key swing broken."
+    },
+    {
+      "target": "displacement_strength (OB-quality feature)",
+      "status": "NARROWED (qualitative only)",
+      "reason": "010-SUPPL: displacement = strong fast move breaking key levels w/ momentum (candle close). AMBIGUOUS provenance; NO numeric threshold -> still not codeable."
+    },
+    {
+      "target": "ZONE_MITIGATED / RETURN_TO_VALUE",
+      "status": "NARROWED",
+      "reason": "008 defines mitigation = return to an inefficiency/OB/S-D zone (BFI rebalance). PARTIAL_FRAGMENT confidence."
+    },
+    {
+      "target": "ZONE_REGISTERED (OB sub-types)",
+      "status": "NARROWED",
+      "reason": "011 adds a single-candle OB (SCOB) with candle-close-above-inducement validity."
+    },
+    {
+      "target": "fvg_created (FVG types)",
+      "status": "NARROWED",
+      "reason": "012 enumerates Volume imbalance / FVG / Opening gap."
+    },
+    {
+      "target": "level-quality attribute",
+      "status": "SUPPORTED (new candidate)",
+      "reason": "009 strong vs weak high/low -> a named quality attribute (aligns with C004 hierarchy)."
+    },
+    {
+      "target": "SWEEP / VETOED (inducement)",
+      "status": "SUPPORTED (new candidate)",
+      "reason": "015 inducement = trap/liquidity grab before reversal -> a fade + veto concept."
+    },
+    {
+      "target": "candidate NEW setup families",
+      "status": "SUPPORTED",
+      "reason": "013 TREND_CONTINUATION_ENTRY and 014 POI_SWEEP_ENTRY are two concrete entry chains to add as families."
+    },
+    {
+      "target": "QUALIFIED_CANDIDATE / F_CONFLUENCE_UNKNOWN",
+      "status": "STILL_BLOCKED",
+      "reason": "no minimum confluence COUNT stated across 011/014/009."
+    },
+    {
+      "target": "F_TZ_UNKNOWN / F_REPAINT_UNKNOWN",
+      "status": "UNCHANGED",
+      "reason": "static Discord diagrams; no timezone or repaint/timing evidence."
+    }
+  ],
+  "blocker_summary": {
+    "F_CONFLUENCE_UNKNOWN": "STILL_BLOCKED",
+    "displacement": "PARTIALLY_NARROWED (qualitative, no threshold, ambiguous provenance)",
+    "F_TZ_UNKNOWN": "UNCHANGED",
+    "F_REPAINT_UNKNOWN": "UNCHANGED"
+  },
+  "source_batch": "evidence_images (10 screenshots)"
+}

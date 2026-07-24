@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "FP-INDICATOR-004",
+  "title": "Part Three — Opening Range Breakout and Session Scalping",
+  "source_type": "EDUCATIONAL_VIDEO / INDICATOR_COMPANION",
+  "performance_status": "NOT_A_TRADE",
+  "gold_statistics_inclusion": "NO",
+  "rights_class": "PRIVATE_LOCAL_RESEARCH",
+  "rights_record_id": "RR-FP-IND-SERIES",
+  "source_asset": {
+    "asset_id": "sa-7004096984f87411",
+    "sha256": "7004096984f87411582b2168f1e12dac4c2b4806d9dd6811523eb2aa9e57657b",
+    "original_filename": "Schermopname_2025-12-14_om_17.12.15.mov",
+    "byte_size": 349754888
+  },
+  "canonical_mapping": {
+    "attested_time": "17.12.15",
+    "spoken_identity_check": "explicit \"part three ... the orb, Asia/London/NY orb\"",
+    "conflict": "NONE — spoken intro confirms attested mapping"
+  },
+  "duplicates_skipped": [
+    "(1).mov",
+    "(2).mov"
+  ]
+}

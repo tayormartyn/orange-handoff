@@ -1,0 +1,80 @@
+{
+  "telegram:baseline:352": {"candidates": [
+    {"event_type":"ENTRY","proposed_fields":{"asset":"XAUUSD","direction":"SELL","entry_low":"4078","entry_high":"4092","stop":"4120","size":null},"evidence_quote":"XAUUSD SELL 4078-4092  SL4120","leg_ref":null,"parent_ref":null,"confidence":0.95}
+  ]},
+  "telegram:baseline:353": {"candidates": [
+    {"event_type":"MOVE_STOP","proposed_fields":{},"evidence_quote":"move sl to entry","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:354": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{},"evidence_quote":"Reasons for the sell: H1 OB, 15-minute OB, 5-minute OB, and bearish DAILY FVG.","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:355": {"candidates": [
+    {"event_type":"RE_ENTER","proposed_fields":{"size":0.25},"evidence_quote":"Re-enter quarter size.","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:356": {"candidates": [
+    {"event_type":"ADD","proposed_fields":{"size":null},"evidence_quote":"Small size—we can go higher, all right.","leg_ref":null,"parent_ref":null,"confidence":0.5}
+  ]},
+  "telegram:baseline:357": {"candidates": [
+    {"event_type":"PARTIAL_TP","proposed_fields":{},"evidence_quote":"tp 1 again!!!!!!!!!","leg_ref":null,"parent_ref":null,"confidence":0.85}
+  ]},
+  "telegram:baseline:358": {"candidates": [
+    {"event_type":"MOVE_STOP","proposed_fields":{},"evidence_quote":"sl to entry","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:359": {"candidates": []},
+  "telegram:baseline:360": {"candidates": [
+    {"event_type":"STOP_HIT","proposed_fields":{},"evidence_quote":"SL got hit again.","leg_ref":null,"parent_ref":null,"confidence":0.9},
+    {"event_type":"RE_ENTER","proposed_fields":{"asset":"XAUUSD","direction":"SELL","entry_low":"4084","entry_high":"4094","stop":"4120","size":null},"evidence_quote":"XAUUSD SELL 4084-4094  SL4120","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:361": {"candidates": [
+    {"event_type":"PARTIAL_CLOSE","proposed_fields":{},"evidence_quote":"Closed the worst entry, holding the best entry!!","leg_ref":null,"parent_ref":null,"confidence":0.8}
+  ]},
+  "telegram:baseline:362": {"candidates": [
+    {"event_type":"MOVE_STOP","proposed_fields":{},"evidence_quote":"And move SL to entry.","leg_ref":null,"parent_ref":null,"confidence":0.9},
+    {"event_type":"CONDITIONAL","proposed_fields":{},"evidence_quote":"If we get stopped out, I’ll look for another trade.","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:363": {"candidates": []},
+  "telegram:baseline:364": {"candidates": [
+    {"event_type":"PARTIAL_TP","proposed_fields":{},"evidence_quote":"Take profits, it’s moving fast, but we stick to the plan.","leg_ref":null,"parent_ref":null,"confidence":0.6}
+  ]},
+  "telegram:baseline:365": {"candidates": [
+    {"event_type":"PARTIAL_TP","proposed_fields":{},"evidence_quote":"90 pips take 2 tp's","leg_ref":null,"parent_ref":null,"confidence":0.75}
+  ]},
+  "telegram:baseline:366": {"candidates": [
+    {"event_type":"PARTIAL_CLOSE","proposed_fields":{},"evidence_quote":"I closed My fist entry in profit","leg_ref":null,"parent_ref":null,"confidence":0.8}
+  ]},
+  "telegram:baseline:367": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{},"evidence_quote":"100+ pips!!!!!","leg_ref":null,"parent_ref":null,"confidence":0.85}
+  ]},
+  "telegram:baseline:368": {"candidates": [
+    {"event_type":"CONDITIONAL","proposed_fields":{},"evidence_quote":"Again, if we get stopped, I’ll give another trade.","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:369": {"candidates": [
+    {"event_type":"CLOSE","proposed_fields":{},"evidence_quote":"Take profit, guys, please.","leg_ref":null,"parent_ref":null,"confidence":0.75}
+  ]},
+  "telegram:baseline:370": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{},"evidence_quote":"We did it again hahaha","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:371": {"candidates": []},
+  "telegram:baseline:372": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{},"evidence_quote":"150 pips!!!!!","leg_ref":null,"parent_ref":null,"confidence":0.85}
+  ]},
+  "telegram:baseline:373": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{},"evidence_quote":"No need for a trade breakdown, I’ll explain later today on YouTube.","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:374": {"candidates": [
+    {"event_type":"CLOSE","proposed_fields":{},"evidence_quote":"I’ll exit and wait for the next one","leg_ref":null,"parent_ref":null,"confidence":0.8}
+  ]},
+  "telegram:baseline:375": {"candidates": [
+    {"event_type":"MOVE_STOP","proposed_fields":{},"evidence_quote":"If you’re holding, just place your SL at entry","leg_ref":null,"parent_ref":null,"confidence":0.7}
+  ]},
+  "telegram:baseline:376": {"candidates": [
+    {"event_type":"ENTRY","proposed_fields":{"asset":"BTCUSD","direction":"BUY","entry_low":"59800","entry_high":"59000","stop":"57800","size":null},"evidence_quote":"BTCUSD BUY  ENTRY 59800-59000  SL 57800  LOW LOT","leg_ref":null,"parent_ref":null,"confidence":0.9}
+  ]},
+  "telegram:baseline:377": {"candidates": []},
+  "telegram:baseline:378": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{},"evidence_quote":"Alright guys, we had a really profitable week!","leg_ref":null,"parent_ref":null,"confidence":0.85}
+  ]},
+  "telegram:baseline:379": {"candidates": [
+    {"event_type":"COMMENTARY","proposed_fields":{"asset":"BTCUSD"},"evidence_quote":"Take Profit levels BTC  60.7k 61.0k 61.4k 62.0k 63.0k","leg_ref":null,"parent_ref":null,"confidence":0.6}
+  ]}
+}

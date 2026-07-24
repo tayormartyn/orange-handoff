@@ -1,0 +1,170 @@
+{
+ "comparator_id": "whaleroom_comparator_v0_1",
+ "status": "RESEARCH_ONLY / OFFLINE / NOT_LIVE / does NOT modify Constitution v0.1 / no order",
+ "precedence_rule": "precedence_rule_v0_1 (EXPLICIT_POSTED > DOCUMENTED_TEMPLATE per action/ts)",
+ "campaigns": [
+  {
+   "campaign_id": "XAU-F001-20260714",
+   "direction": "LONG",
+   "filled_legs": 1,
+   "cancelled_legs": 2,
+   "campaign_average_entry": "4019",
+   "single_fill_note": "ONLY 1 OF 3 LEGS FILLED -> average == single fill; average-entry machinery collapses to per-leg for this campaign",
+   "posted_stop": "3985",
+   "raw_mae_pips_from_avg_UNBOUNDED": "-53.60",
+   "raw_mfe_pips_from_avg_UNBOUNDED": "837.70",
+   "mfe_window_note": "UNBOUNDED = path-high over ALL available 1m bars from signal to end-of-data; it OVERSTATES what a follower would see at campaign freeze. The frozen card's campaign-bounded MFE/MAE is the authoritative pair (below).",
+   "card_frozen_strict_mfe": "55.20",
+   "card_frozen_strict_mae": "-53.60",
+   "card_frozen_policy_mfe": "55.20",
+   "card_frozen_policy_mae": "-53.60",
+   "plus50_from_avg_reachable": true,
+   "plus50_first_bar_ts": 1784020260,
+   "feed_sensitive_events": 10,
+   "cost_adjustment": "UNKNOWN (spread/commission for follower's broker not in scope; raw only)",
+   "policies": {
+    "A_CURRENT_STRICT_ORANGE": {
+     "be_basis": "PER_LEG",
+     "be_trigger": "posted 'sl to entry'",
+     "unfilled_legs": "CANCELLED (risk-off)",
+     "realized_pips_per_unit": "4.42",
+     "runner": "none (strict banks & scratches)",
+     "source": "FROZEN strict_follower_lane (Constitution v0.1)"
+    },
+    "B_DOCUMENTED_WHALEROOM_AVERAGE_BE": {
+     "be_basis": "CAMPAIGN_AVERAGE",
+     "be_trigger": "+50 pips FROM AVERAGE (DR-306/301)",
+     "unfilled_legs": "would REMAIN WORKING under DR-306 (no 4th losing add); but mid/far here were never touched -> same fill set as A",
+     "realized_pips_per_unit": "4.42",
+     "unrealized_pips_per_unit": null,
+     "runner": "kept (policy-sensitivity lane)",
+     "equivalence_to_A": "MECHANICALLY IDENTICAL to A on this campaign because only 1 leg filled -> average==fill and +50-from-average == +50-from-leg",
+     "source": "FROZEN policy_sensitivity_lane + DR-306/301"
+    },
+    "C_DOCUMENTED_CONSERVATIVE_TP": {
+     "tp_template": "50/30/20 at posted TP1/TP2/TP3 (DR-304)",
+     "result": "UNKNOWN",
+     "reason": "F001/F002 posted NO explicit TP LEVELS -> template inputs absent -> UNKNOWN (not fabricated)"
+    },
+    "D_DOCUMENTED_ADVANCED_TP": {
+     "tp_template": "30/30 + move SL to entry(+50) + runner (DR-304)",
+     "thirty_thirty_result": "UNKNOWN",
+     "thirty_thirty_reason": "no posted TP levels for the 30/30 tranche -> UNKNOWN",
+     "runner_mfe_pips_card_bounded": "55.20",
+     "runner_mfe_pips_unbounded_diag": "837.70",
+     "runner_note": "the runner's UNREALIZED MFE is the ONLY quantity approaching the posted pip claim; it is UNREALIZED path-high, NOT a realized follower result. A runner left open would ultimately exit at its BE/stop, not at MFE."
+    }
+   },
+   "precedence_events": [
+    {
+     "instruction": "TP1_TAKE",
+     "ts": "2026-07-14T09:10:46+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    },
+    {
+     "instruction": "SL_TO_ENTRY",
+     "ts": "2026-07-14T10:48:55+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    },
+    {
+     "instruction": "TAKE_PCT_OFF",
+     "ts": "2026-07-14T11:37:05+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    },
+    {
+     "instruction": "FINAL_CLOSE",
+     "ts": "2026-07-14T12:32:09+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    }
+   ]
+  },
+  {
+   "campaign_id": "XAU-F002-20260714",
+   "direction": "SHORT",
+   "filled_legs": 1,
+   "cancelled_legs": 2,
+   "campaign_average_entry": "4084.58",
+   "single_fill_note": "ONLY 1 OF 3 LEGS FILLED -> average == single fill; average-entry machinery collapses to per-leg for this campaign",
+   "posted_stop": "4144",
+   "raw_mae_pips_from_avg_UNBOUNDED": "-158.70",
+   "raw_mfe_pips_from_avg_UNBOUNDED": "672.30",
+   "mfe_window_note": "UNBOUNDED = path-high over ALL available 1m bars from signal to end-of-data; it OVERSTATES what a follower would see at campaign freeze. The frozen card's campaign-bounded MFE/MAE is the authoritative pair (below).",
+   "card_frozen_strict_mfe": "120.30",
+   "card_frozen_strict_mae": "-42.10",
+   "card_frozen_policy_mfe": "718.43",
+   "card_frozen_policy_mae": "-112.57",
+   "plus50_from_avg_reachable": true,
+   "plus50_first_bar_ts": 1784035860,
+   "feed_sensitive_events": 6,
+   "cost_adjustment": "UNKNOWN (spread/commission for follower's broker not in scope; raw only)",
+   "policies": {
+    "A_CURRENT_STRICT_ORANGE": {
+     "be_basis": "PER_LEG",
+     "be_trigger": "posted 'sl to entry'",
+     "unfilled_legs": "CANCELLED (risk-off)",
+     "realized_pips_per_unit": "9.95",
+     "runner": "none (strict banks & scratches)",
+     "source": "FROZEN strict_follower_lane (Constitution v0.1)"
+    },
+    "B_DOCUMENTED_WHALEROOM_AVERAGE_BE": {
+     "be_basis": "CAMPAIGN_AVERAGE",
+     "be_trigger": "+50 pips FROM AVERAGE (DR-306/301)",
+     "unfilled_legs": "would REMAIN WORKING under DR-306 (no 4th losing add); but mid/far here were never touched -> same fill set as A",
+     "realized_pips_per_unit": "16.21",
+     "unrealized_pips_per_unit": "417.33",
+     "runner": "kept (policy-sensitivity lane)",
+     "equivalence_to_A": "MECHANICALLY IDENTICAL to A on this campaign because only 1 leg filled -> average==fill and +50-from-average == +50-from-leg",
+     "source": "FROZEN policy_sensitivity_lane + DR-306/301"
+    },
+    "C_DOCUMENTED_CONSERVATIVE_TP": {
+     "tp_template": "50/30/20 at posted TP1/TP2/TP3 (DR-304)",
+     "result": "UNKNOWN",
+     "reason": "F001/F002 posted NO explicit TP LEVELS -> template inputs absent -> UNKNOWN (not fabricated)"
+    },
+    "D_DOCUMENTED_ADVANCED_TP": {
+     "tp_template": "30/30 + move SL to entry(+50) + runner (DR-304)",
+     "thirty_thirty_result": "UNKNOWN",
+     "thirty_thirty_reason": "no posted TP levels for the 30/30 tranche -> UNKNOWN",
+     "runner_mfe_pips_card_bounded": "718.43",
+     "runner_mfe_pips_unbounded_diag": "672.30",
+     "runner_note": "the runner's UNREALIZED MFE is the ONLY quantity approaching the posted pip claim; it is UNREALIZED path-high, NOT a realized follower result. A runner left open would ultimately exit at its BE/stop, not at MFE."
+    }
+   },
+   "precedence_events": [
+    {
+     "instruction": "TP1_TAKE",
+     "ts": "2026-07-14T13:34:33+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    },
+    {
+     "instruction": "SL_TO_ENTRY",
+     "ts": "2026-07-14T13:54:26+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    },
+    {
+     "instruction": "TAKE_PCT_OFF",
+     "ts": "2026-07-14T13:54:26+00:00",
+     "pct": null,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    },
+    {
+     "instruction": "TAKE_PCT_OFF",
+     "ts": "2026-07-14T14:20:12+00:00",
+     "pct": 0.5,
+     "precedence": "EXPLICIT_POSTED overrides DOCUMENTED_TEMPLATE at this action/ts"
+    }
+   ]
+  }
+ ],
+ "headline_finding": "On BOTH F001 and F002 only 1 of 3 legs filled, so documented average-entry policies (B/D) are MECHANICALLY IDENTICAL to strict per-leg (A) for these campaigns. Conservative/Advanced TP templates (C/D 30-30) are UNKNOWN because no TP levels were posted. The posted ~700-pip magnitude corresponds ONLY to an UNREALIZED runner MFE, not any realized follower policy. The strict-vs-Farouk divergence is therefore NOT explained by BE-basis or TP-template choice on this data; his private fills/sizing remain UNKNOWN.",
+ "review_only": true,
+ "executable": false,
+ "trade_ready": false,
+ "observation_only": true
+}

@@ -1,0 +1,75 @@
+{
+  "record_id": "FP-CAMPAIGN-004_INDICATOR_OBSERVATIONS",
+  "source_video_asset": "sa-e576af86dfbd4158",
+  "symbol": "XAUUSD (Gold Spot/USD)",
+  "feed": "Pepperstone",
+  "platform": "TradingView",
+  "date_shown": "Wed 24 Jun '26",
+  "chart_timezone": "UNRESOLVED (not clearly labelled; prior Pepperstone campaigns showed UTC+2)",
+  "panel_source_indicator": "UNKNOWN (kyle-family CHoCH/Asia-break/OB-retest/Current-OB/Fresh-OB panel; NOT directly attributed to [kyle] v1 vs v2 in this video)",
+  "panel_observations_by_timeframe": {
+    "3m": {
+      "TF": 3,
+      "CHoCH": "X",
+      "Asia_break": "LOW",
+      "OB_retest": 4036.56,
+      "Current_OB": 4036.56,
+      "Fresh_OB": "X",
+      "verification": "DIRECTLY_VISIBLE (ref_00-20, ref_00-30) — matches user-stated values EXACTLY"
+    },
+    "4H": {
+      "TF": 240,
+      "CHoCH": 4121.58,
+      "Asia_break": "LOW",
+      "OB_retest": 4359.93,
+      "Current_OB": 4359.93,
+      "Fresh_OB": 4359.93,
+      "verification": "DIRECTLY_VISIBLE (ref_00-10) — bonus (not in the user-stated set)"
+    },
+    "5m": {
+      "TF": 5,
+      "CHoCH": "X",
+      "Asia_break": "LOW",
+      "OB_retest": "X",
+      "Current_OB": 4096.61,
+      "Fresh_OB": 4379.08,
+      "verification": "USER-STATED, NOT independently located in captured frames (this video's captures showed 3m + 4H). Fresh OB 4379.08 is consistent with FP-INDICATOR-001's 5m panel. Classification: UNRESOLVED for this video."
+    }
+  },
+  "other_visible_objects": [
+    {
+      "object": "Asia High / Asia Low",
+      "value": "Asia High ~4102, Asia Low ~4048 (4H labels)",
+      "confidence": "HIGH"
+    },
+    {
+      "object": "OB zones",
+      "value": "green demand OBs ~3982-3995 & ~3995-4005 (the 3m/5m OBs 'that created the low')",
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "object": "FVG zones",
+      "value": "pink FVGs ~4090-4110 & ~4050-4065 ('VG' labels)",
+      "confidence": "MEDIUM"
+    },
+    {
+      "object": "H1 unmitigated OB (contingency)",
+      "value": "~4070-4076 (grey supply + blue 4073.11/4076.15 lines)",
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "object": "scenario drawing",
+      "value": "projected rally to ~4073-76 then dump to ~3960 toward 3930-3900 (orange box + down-arrow)",
+      "confidence": "HIGH"
+    },
+    {
+      "object": "teal Asia band",
+      "value": "~3925-3935 (lower band)",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "notes": "CHoCH is TF-dependent (3m=X, 4H=4121.58). Panel confirms the Asia break=LOW state on both verified TFs. No indicator ownership guessed.",
+  "source_asset_ids": [
+    "sa-e576af86dfbd4158"
+  ]
+}

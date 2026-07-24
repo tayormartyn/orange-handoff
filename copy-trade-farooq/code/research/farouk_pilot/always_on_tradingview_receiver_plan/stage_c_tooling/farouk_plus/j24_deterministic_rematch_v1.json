@@ -1,0 +1,89 @@
+{
+  "rematch_id": "j24_deterministic_rematch_v1",
+  "generated_on": "2026-07-11",
+  "setup_id": "XAU-J24-20260623",
+  "revision": 2,
+  "append_only_note": "Day-4 and Day-5 INSUFFICIENT_DATA records are preserved untouched; this revision-2 record supersedes them for reporting based on NEW screenshot-recovered evidence.",
+  "entry_source": "MT5 position widgets (msgs 45015/45017/45021, sha256-addressed) \u2014 NOT a posted zone; fill_divergence noted (his 'sellzone 4140' vs actual fill 4132.02)",
+  "direction": "SHORT",
+  "fill": 4132.02,
+  "hard_sl": "never posted (sellzone-note only); SL moved to entry ~10:25:04Z",
+  "precision": "1m (Pepperstone export, Jun-23 fully covered)",
+  "fill_plausibility": {
+    "bars_containing_4132.02_before_10:20:43Z": 7,
+    "first_last": [
+      "2026-06-23 10:02",
+      "2026-06-23 10:20"
+    ]
+  },
+  "claim_checks": [
+    {
+      "claim": "70 pips tp1 (msg 45017)",
+      "at_utc": "2026-06-23T10:43:25",
+      "level_required": 4124.99,
+      "level_touched_by_claim_time_utc": "2026-06-23 10:42",
+      "min_low_by_claim_time": 4124.26,
+      "achieved_pips_from_fill": 77.6,
+      "claimed_pips": 70.3,
+      "supported": true
+    },
+    {
+      "claim": "100 pips tp2 (msg 45018)",
+      "at_utc": "2026-06-23T10:57:09",
+      "level_required": 4122.02,
+      "level_touched_by_claim_time_utc": "2026-06-23 10:51",
+      "min_low_by_claim_time": 4120.06,
+      "achieved_pips_from_fill": 119.6,
+      "claimed_pips": 100.0,
+      "supported": true
+    },
+    {
+      "claim": "170 pips (msg 45021)",
+      "at_utc": "2026-06-23T12:14:10",
+      "level_required": 4114.99,
+      "level_touched_by_claim_time_utc": "2026-06-23 12:13",
+      "min_low_by_claim_time": 4113.07,
+      "achieved_pips_from_fill": 189.5,
+      "claimed_pips": 170.3,
+      "supported": true
+    }
+  ],
+  "mfe_usd_from_fill": 26.73,
+  "mfe_pips": 267,
+  "mae_usd_from_fill": 8.55,
+  "mae_pips": 85,
+  "favourable_extreme": 4105.29,
+  "adverse_extreme": 4140.57,
+  "be_stop_after_1025Z": {
+    "price_returned_to_fill": true,
+    "first_return_utc": "2026-06-23 10:34"
+  },
+  "window_utc": "2026-06-23 08:00 .. 13:55 (to the J25 signal)",
+  "status": "VERIFIED_WIN",
+  "status_precision": "1m-confirmed",
+  "claim_verdict": "SUPPORTED (all three claim levels touched 1-6 min BEFORE his messages; widget values exact from his fill)",
+  "adjudication_note": "SHORT from 4132.02 (screenshot-recovered): 70p level touched 10:42Z (msg 10:43:25), 100p level 10:51Z (msg 10:57), 170p level 12:13Z (msg 12:14:10); MFE 267p (low 4105.29); no hard SL ever posted; the position provably survived to +170p (widgets). FOLLOWER-DIVERGENCE CAVEAT: price returned to the fill price at 10:34Z after the 10:25Z 'sl to entry' instruction \u2014 a follower with SL exactly at 4132.02 would have scratched flat BEFORE the 267p move; his own position survived (stop elsewhere or feed difference). Third quantified case of his-outcome vs follower-outcome divergence -> R6 follower-fill expectancy input (preserved for R6 design; NOT an execution artefact).",
+  "fill_divergence_preserved_for_R6": true,
+  "updated_final_june_counts": {
+    "strict_setup_count": 30,
+    "entry_executions": 33,
+    "grouped_campaign_count": 24,
+    "VERIFIED_WIN": 19,
+    "VERIFIED_LOSS": 2,
+    "PARTIAL": 9,
+    "CONTRADICTED": 0,
+    "AMBIGUOUS_INTRABAR": 0,
+    "INSUFFICIENT_DATA": 0,
+    "note": "J24 INSUFFICIENT->VERIFIED_WIN (revision 2, screenshot-recovered entry); Day-4/5 records preserved append-only"
+  },
+  "updated_cumulative_sprint_sample": {
+    "trades_matched": 34,
+    "sessions": 18,
+    "VERIFIED_WIN": 21,
+    "VERIFIED_LOSS": 3,
+    "PARTIAL": 10,
+    "CONTRADICTED": 0,
+    "INSUFFICIENT_DATA": 0,
+    "precision_split": "11 x 1m-confirmed (J24-J30 June + S1-S4 July), 23 x 5m-fallback"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "FP-EDU-007",
+  "title": "Scalping Strategy on the 1-, 5-, and 15-Minute Charts — Farouk & Vishal",
+  "source_type": "CROSS_ASSET_EDUCATIONAL_VIDEO",
+  "performance_status": "NOT_A_TRADE",
+  "gold_statistics_inclusion": "NO",
+  "rights_class": "PRIVATE_LOCAL_RESEARCH",
+  "source_date": "2025-10-12",
+  "duration": "00:45:12.35",
+  "mp4_m4a_durations_align": true,
+  "rights_record_id": "RR-FP-EDU-007",
+  "source_assets": {
+    "GMT20251012-140632_Recording_1920x1200.mp4": {
+      "asset_id": "sa-271518d77732835c",
+      "sha256": "271518d77732835c9581e0a24b2ea26854096eeed9fd1f2a259530cdaa3f88a6",
+      "kind": "video"
+    },
+    "GMT20251012-140632_Recording.m4a": {
+      "asset_id": "sa-b03f71eee08044e7",
+      "sha256": "b03f71eee08044e70d44fbc07be4cc39cab474029b48fd99feafff16186325ac",
+      "kind": "audio"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+ "campaign_fidelity": [
+  {
+   "campaign_id": "SIM-A-LANE-A-LIFECYCLE",
+   "profile": "LANE_A_CONSTITUTION_V0_1",
+   "cost_scenario": "ZERO_COST",
+   "three_legs_created": true,
+   "legs_filled": 2,
+   "legs_cancelled": 1,
+   "per_leg_be_applied": 2,
+   "be_fidelity": true,
+   "reconciliation": "RECONCILED",
+   "ambiguous_intrabar": false,
+   "zone_touched_before_receipt": false,
+   "manual_review_count": 0,
+   "eligible_for_training": false,
+   "eligible_for_performance_attribution": false,
+   "included_record_class": "SIMULATION_ONLY",
+   "cost_assumptions": {
+    "spread_usd": "0",
+    "slippage_usd": "0",
+    "penalty_per_unit_usd": "0",
+    "semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN"
+   }
+  },
+  {
+   "campaign_id": "SIM-B-DELAY-DRIFT",
+   "profile": "LANE_A_CONSTITUTION_V0_1",
+   "cost_scenario": "ZERO_COST",
+   "three_legs_created": true,
+   "legs_filled": 0,
+   "legs_cancelled": 0,
+   "per_leg_be_applied": 0,
+   "be_fidelity": true,
+   "reconciliation": "RECONCILED",
+   "ambiguous_intrabar": false,
+   "zone_touched_before_receipt": true,
+   "manual_review_count": 0,
+   "eligible_for_training": false,
+   "eligible_for_performance_attribution": false,
+   "included_record_class": "SIMULATION_ONLY",
+   "cost_assumptions": {
+    "spread_usd": "0",
+    "slippage_usd": "0",
+    "penalty_per_unit_usd": "0",
+    "semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN"
+   }
+  },
+  {
+   "campaign_id": "SIM-C-AMBIGUOUS",
+   "profile": "LANE_A_CONSTITUTION_V0_1",
+   "cost_scenario": "ZERO_COST",
+   "three_legs_created": true,
+   "legs_filled": 3,
+   "legs_cancelled": 0,
+   "per_leg_be_applied": 0,
+   "be_fidelity": false,
+   "reconciliation": "AMBIGUOUS",
+   "ambiguous_intrabar": true,
+   "zone_touched_before_receipt": false,
+   "manual_review_count": 0,
+   "eligible_for_training": false,
+   "eligible_for_performance_attribution": false,
+   "included_record_class": "SIMULATION_ONLY",
+   "cost_assumptions": {
+    "spread_usd": "0",
+    "slippage_usd": "0",
+    "penalty_per_unit_usd": "0",
+    "semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN"
+   }
+  }
+ ]
+}

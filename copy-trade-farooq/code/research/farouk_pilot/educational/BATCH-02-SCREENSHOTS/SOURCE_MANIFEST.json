@@ -1,0 +1,44 @@
+{
+  "batch": "education_batches/batch_02",
+  "total_images": 33,
+  "exact_dups_vs_prior_batches": 0,
+  "author_corpuswide": "SeaScalper-Farouk (WR)",
+  "new_sources": [
+    "FP-EDU-034 Open Interest",
+    "FP-EDU-035 Displacement"
+  ],
+  "provenance_upgrades": {
+    "FP-EDU-009": "19/04/2025 21:11 (was: ts not in frame -> now CONFIRMED)",
+    "FP-EDU-016": "29/03/2025 22:44 (CORRECTS earlier 27/06/2025 misread)",
+    "FP-EDU-013": "01/03/2025 21:13 (confirmed)",
+    "FP-EDU-015": "01/03/2025 01:02",
+    "FP-EDU-017": "22/02/2025 01:00",
+    "FP-EDU-030": "21/02/2025 10:49 (PDF-only MEDIUM -> Discord CONFIRMED)",
+    "FP-EDU-031": "22/02/2025 21:14 (PDF-only -> Discord CONFIRMED)",
+    "FP-EDU-032": "22/02/2025 21:36 (PDF-only -> Discord CONFIRMED)",
+    "FP-EDU-028": "Discord screenshot present (author visible; ts not in OTE crops) -> provenance improved from PDF-only",
+    "FP-EDU-008": "mitigation full body (confirmed)",
+    "FP-EDU-012": "confirmed",
+    "FP-EDU-014": "confirmed",
+    "FP-EDU-026": "confirmed",
+    "FP-EDU-021": "confirmed"
+  },
+  "assignment_counts": {
+    "FP-EDU-021": 1,
+    "FP-EDU-028": 2,
+    "FP-EDU-030": 2,
+    "FP-EDU-014": 5,
+    "FP-EDU-017": 4,
+    "FP-EDU-026": 2,
+    "FP-EDU-031": 2,
+    "FP-EDU-032": 1,
+    "FP-EDU-015": 2,
+    "FP-EDU-013": 2,
+    "FP-EDU-016": 4,
+    "FP-EDU-009": 3,
+    "FP-EDU-008": 1,
+    "FP-EDU-034": 1,
+    "FP-EDU-035": 1
+  },
+  "note": "Mostly Discord-screenshot provenance for posts already registered (batch_01 and/or the compiled PDF). Only 2 genuinely new posts. Discord screenshots UPGRADE the PDF-derived sources (028/030/031/032) to CONFIRMED author+timestamp."
+}

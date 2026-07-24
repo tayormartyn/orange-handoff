@@ -1,0 +1,38 @@
+{
+  "integration_id": "training_batch_002b_capture_only_integration",
+  "generated_on": "2026-07-11",
+  "mode": "REVIEW_ONLY / CAPTURE_ONLY / SINGLE_SESSION / EXTENDS_NOT_EDITS",
+  "new_capture_fields": {
+    "audit_r_midpoint": "claim-based R estimate per FP-AUDIT-001/002 methodology, computed at outcome-review time",
+    "audit_r_low": "sensitivity lower bound",
+    "audit_r_high": "sensitivity upper bound",
+    "audit_source_id": "FP-AUDIT-002 (methodology lineage)",
+    "audit_convention_notes": "conventions applied (flats-excluded accounting; managed-credit vs target-hit; unknowns bracketed)",
+    "stop_width_dataset_reference": "pointer into the calibration set (32 sprint widths + 6 May samples + spoken anchors)",
+    "stop_width_anchor_class": ["MAY_SAMPLE", "VIDEO_SPOKEN_ANCHOR", "POSTED_SL", "STRUCTURAL_INVALIDATION", "UNKNOWN"],
+    "stop_width_value_if_known": "USD width beyond zone far edge",
+    "stop_width_context": ["fresh_level", "mitigated_level", "strong_level", "weak_level", "HTF_supply_demand", "unknown"]
+  },
+  "constraints": {
+    "audit_r_midpoint": ["capture-only", "never a live entry score", "never a risk-size or position-size field", "never an execution gate", "dimensionless outcome ratio from posted prices — no sizing semantics"],
+    "stop_width_dataset_extension": ["capture-only", "research input to stop_width_by_level_type v0.1", "does NOT alter the follower lane after entry", "does NOT permit stop widening after entry (Batch-001B never-widen ratification stands)"]
+  },
+  "version_discipline": {
+    "detector_v0_3": "live labels UNCHANGED for Cycle 004 (v0.2 parallel A/B preserved)",
+    "detector_v0_4": "may consume these fields only after offline replay; any SCORING use of audit_r_midpoint additionally requires human ratification (claim-derived input feeding scores = policy question)"
+  },
+  "cycle_004_readiness": [
+    "capture audit_r_midpoint/low/high when the setup is linkable to the audited convention",
+    "capture stop-width anchor class/value/context whenever an SL is posted or structural invalidation is visible",
+    "full 8C+8D+8F+001B capture spec otherwise unchanged"
+  ],
+  "not_done_this_step": ["Cycle 004 not run", "May-trade OHLC matching not run (batch-003 option)"],
+  "current_calibration_snapshot": {
+    "sprint_widths_n32": {"median_usd": 20.0, "range": [10.0, 85.0], "strong_tagged": [20.0, 25.0, 25.0, 37.0, 42.0, 85.0]},
+    "may_samples_n6": [20, 24, 40, 25, 25, 20],
+    "spoken_anchor": "'3-400 pips' = $30-40 named level-based norm (FP-EDU-001-B)"
+  },
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged",
+              "not_integration_ready": "unchanged", "execution_surface": "none",
+              "redaction": "spreadsheet sizing/account/compounding content remains redacted/excluded"}
+}

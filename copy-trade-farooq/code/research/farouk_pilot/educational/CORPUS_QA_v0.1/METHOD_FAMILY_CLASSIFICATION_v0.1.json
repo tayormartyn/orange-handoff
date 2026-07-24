@@ -1,0 +1,90 @@
+{
+  "note": "Each source classified into one or more classes; setup-family candidates vs context/feature vs indicators explicitly separated. Quiz->rule only where a confirmed answer exists.",
+  "setup_family_candidates": {
+    "TREND_CONTINUATION": [
+      "FP-EDU-013"
+    ],
+    "POI_SWEEP_ENTRY": [
+      "FP-EDU-014"
+    ],
+    "INDUCEMENT_FADE": [
+      "FP-EDU-015"
+    ],
+    "SCOB_REVERSAL": [
+      "FP-EDU-011"
+    ],
+    "THREE_DRIVE_REVERSAL": [
+      "FP-EDU-025"
+    ],
+    "CONSOLIDATION_BREAKOUT_OR_FADE": [
+      "FP-EDU-017"
+    ]
+  },
+  "context_or_feature_candidates": {
+    "candlestick_patterns": [
+      "FP-EDU-022",
+      "FP-EDU-019(partial)"
+    ],
+    "accumulation_wyckoff_schematics": [
+      "FP-EDU-019"
+    ],
+    "volume_profile_POC_VAH_VAL": [
+      "FP-EDU-026"
+    ],
+    "strong_weak_highs_lows": [
+      "FP-EDU-009"
+    ],
+    "mitigation": [
+      "FP-EDU-008"
+    ],
+    "BOS_displacement": [
+      "FP-EDU-016",
+      "FP-EDU-010"
+    ],
+    "FVG_OB_location": [
+      "FP-EDU-012",
+      "FP-EDU-011"
+    ]
+  },
+  "third_party_or_separate_indicators": {
+    "Market_Cipher_B": [
+      "FP-EDU-023"
+    ],
+    "SpaceMan": [
+      "(referenced in repair STX example)"
+    ],
+    "Craters_Reality_EMA_method": [
+      "FP-EDU-007"
+    ],
+    "kyle_v1_v2": [
+      "FP-INDICATOR-001..004 (not FP-EDU)"
+    ]
+  },
+  "entry_confirmation": [
+    "FP-EDU-021 (structure-break requirements)",
+    "FP-EDU-024 (confluence ranking)",
+    "FP-EDU-022 (candles)"
+  ],
+  "quiz_or_assessment": {
+    "FP-EDU-018": "confirmed answer=DOWN -> heuristic recordable",
+    "FP-EDU-020": "no confirmed answer in frame -> NOT promoted to a rule"
+  },
+  "worked_examples": [
+    "FP-EDU-027 (BTC)",
+    "repair STX/LINK/cluster examples",
+    "campaign-004 fragments"
+  ],
+  "explanatory_market_narrative": [
+    "FP-EDU-008 (BFI rebalancing)",
+    "FP-EDU-023 (smart-money via oscillator)"
+  ],
+  "core_smc_ict_education": [
+    "FP-EDU-008",
+    "FP-EDU-009",
+    "FP-EDU-010",
+    "FP-EDU-011",
+    "FP-EDU-012",
+    "FP-EDU-016",
+    "FP-EDU-024"
+  ]
+}

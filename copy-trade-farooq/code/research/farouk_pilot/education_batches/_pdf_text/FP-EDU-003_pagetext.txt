@@ -1,0 +1,40 @@
+# FP-EDU-003 page-level text extraction
+# source: C:\Users\Marty\signal-terminal\research\farouk_pilot\raw\documents\FP-EDU-003_Whaleroom_Trading_Guide.pdf
+# sha256: 8b0a95608f41b5e4a2bf79a4876e720e13be9b6ad8db065860b7f9cd7b6d3b1d
+# pages: 12
+
+===== PAGE 1/12 =====
+
+
+===== PAGE 2/12 =====
+
+
+===== PAGE 3/12 =====
+
+
+===== PAGE 4/12 =====
+
+
+===== PAGE 5/12 =====
+
+
+===== PAGE 6/12 =====
+
+
+===== PAGE 7/12 =====
+
+
+===== PAGE 8/12 =====
+
+
+===== PAGE 9/12 =====
+
+
+===== PAGE 10/12 =====
+
+
+===== PAGE 11/12 =====
+
+
+===== PAGE 12/12 =====
+

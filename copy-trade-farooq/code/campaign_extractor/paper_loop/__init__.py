@@ -1,0 +1,24 @@
+"""
+UNIFIED LIVE PAPER DECISION LOOP V0.1 — wires proven components (Q4A kernel, Pepperstone quote
+store, Telegram evidence, Vision V1.1 review structures) into the smallest complete PAPER-only,
+OBSERVATION_ONLY end-to-end loop. Reuses Q4A unchanged. No order/fill/outcome/R anywhere.
+"""
+SCHEMA_VERSION = "unified-signal-v0.1"
+LOOP_VERSION = "paper-loop-v0.1"
+
+PROVIDERS = ("FAROUK", "RUPES", "JOSH_NAVIGATOR", "OTHER")
+SOURCE_TYPES = ("TEXT", "IMAGE_CONFIRMED")
+DIRECTIONS = ("BUY", "SELL")
+
+PAPER_STATUSES = ("PAPER_READY", "PAPER_OUTSIDE_ZONE", "PAPER_UNKNOWN", "NEEDS_REVIEW")
+LABELS = ("OBSERVATION_ONLY", "PAPER_ONLY", "NOT_A_FILL", "NOT_AN_OUTCOME")
+
+# Q4A UNKNOWN reasons that are QUOTE/COVERAGE problems -> PAPER_UNKNOWN (never REJECT)
+PAPER_UNKNOWN_REASONS = ("NO_COVERAGE", "NO_FRESH_QUOTE", "MISSING_BID", "MISSING_ASK",
+                         "STALE_BID", "STALE_ASK", "THRESHOLD_CONFIG_MISSING",
+                         "SESSION_INTEGRITY_FAILURE", "PARSE_TIME_MISSING")
+# reasons that are SIGNAL problems -> NEEDS_REVIEW
+NEEDS_REVIEW_REASONS = ("AMBIGUOUS_DIRECTION", "ENTRY_RANGE_MISSING", "ENTRY_RANGE_INVALID",
+                        "CLOCK_ANOMALY", "UNSUPPORTED_ASSET", "NOT_HUMAN_CONFIRMED",
+                        "INVALID_STOP_GEOMETRY", "UNCERTAIN_PROVIDER")
+CONFIRM_DECISIONS = ("CONFIRM", "CORRECT", "REJECT", "NEEDS_MORE_EVIDENCE")

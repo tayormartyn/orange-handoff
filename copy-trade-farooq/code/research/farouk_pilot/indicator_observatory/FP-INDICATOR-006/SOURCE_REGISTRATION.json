@@ -1,0 +1,32 @@
+{
+  "record_id": "FP-INDICATOR-006",
+  "title": "Live with Farouk, Sunday 5 July 2026 — Smart Money Suite live session",
+  "classification": "MIXED_SOURCE (indicator-primary)",
+  "classification_rationale": "Primarily a live walkthrough/use of the 'Farouk's Playbook — Smart Money Suite' indicator (settings shown incl. detection engine, features, alarms) — but materially contains methodology teaching (Asia/London/US logic, mitigation, CHoCH, candle-close) and live XAUUSD/BTC market analysis. One physical source, separated evidence sections; NOT split into multiple IDs.",
+  "evidence_sections": [
+    "INDICATOR_WALKTHROUGH",
+    "METHODOLOGY_TEACHING",
+    "MARKET_UPDATE"
+  ],
+  "next_id_rationale": "existing FP-INDICATOR-001..005; next available = 006. FP-LIVE-OBSERVATION-001 reserved for the forward alert/repaint test and NOT used here. No renumbering.",
+  "file": {
+    "original_path": "C:\\Users\\Marty\\Downloads\\Live with Farouk, Sunday, 5 July 2026.mp4",
+    "staged_path": "research/farouk_pilot/raw/live_with_farouk_2026-07-05/Live with Farouk, Sunday, 5 July 2026.mp4",
+    "sha256": "4328a875cb55d147a524a1b817209159ccdc734f972521b35718a8f4439e12d8",
+    "asset_id": "sa-4328a875cb55d147",
+    "bytes": 614053015
+  },
+  "hash_verified": "original == staged (both 4328a875…9e12d8)",
+  "platform": "TradingView",
+  "indicator": "Farouk's Playbook — Smart Money Suite",
+  "keep_separate_from": [
+    "[kyle] v1/v2",
+    "SpaceMan",
+    "Market Cipher B",
+    "Craters-Reality / EMA",
+    "Education curriculum"
+  ],
+  "source_asset_ids": [
+    "sa-4328a875cb55d147"
+  ]
+}

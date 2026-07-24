@@ -1,0 +1,167 @@
+{
+  "record_id": "FP-EDU-007",
+  "claim_count": 20,
+  "note": "Farouk's and Vishal's views kept separate; merged only where they explicitly agree. Promotional phrasing ('1,2,3% a day') NOT treated as validated performance. Transcript base.en ('Vishal'->'Fischal'; 'Craters Reality'/'TR-Main' phonetic; 'VWAP'->'view up').",
+  "claims": [
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "04:30",
+      "speaker": "-",
+      "quote_or_paraphrase": "4-chart layered layout of SUIUSDT.P (SUI/TetherUS Perpetual, Binance): 1m / 5m / 15m / 1h; EMA ribbon + Psy-Hi/Lo, Daily Open, AWR/AMR; XAUUSD in a browser tab; timezone UTC+4; date 12-10-2025",
+      "confidence": "HIGH",
+      "note": ""
+    },
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "36:00",
+      "speaker": "-",
+      "quote_or_paraphrase": "~31-40min is an Excel 'Building Capital' compounding calculator (500 -> 11795 over 300 days at ~1%/day) with SEPARATE 'Crypto' and 'Gold' sheet tabs",
+      "confidence": "HIGH",
+      "note": ""
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:14",
+      "speaker": "Farouk(intro)",
+      "quote_or_paraphrase": "'[Vishal] is only using EMAs and some indicators ... he scalps under 1 minute, 5 minutes, fifteen minutes and one hour; looking for 1,2,3% a day'",
+      "confidence": "HIGH",
+      "note": "identifies Vishal's method as EMA-based"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "02:20",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'I use four time frames: one minute, five minutes, 15 minutes, one hour. I like to see them all together'",
+      "confidence": "HIGH",
+      "note": ""
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "02:43",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'if in one hour the price is below the 50 EMA, that means it's still bearish ... one hour to see the direction for a day'",
+      "confidence": "HIGH",
+      "note": "1H = bias/direction"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "03:37",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'15 minutes and then I come to five minutes and then one minute. So I usually take trades on the one minute'",
+      "confidence": "HIGH",
+      "note": "top-down 15->5->1; entry on 1m"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "03:53",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'once I take a trade, I'll keep monitoring one minute and five minutes together'",
+      "confidence": "HIGH",
+      "note": "5m = monitoring with 1m"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "04:00",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'I use the indicator called TR-Main / Craters Reality Main ... 50 EMA, 35/5 EMA (yellow), 13 (red), 200 (white), 800 (purple)'",
+      "confidence": "MEDIUM-HIGH",
+      "note": "indicator + EMA set (phonetic)"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:42",
+      "speaker": "Farouk",
+      "quote_or_paraphrase": "'it works really good with gold ... he's gonna show it on Sui, but I use it on gold on the low timeframe ... 1-4 candles, 0.1-0.2 lot, make $200'",
+      "confidence": "HIGH",
+      "note": "XAUUSD applicability SUPPORTED"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "16:16",
+      "speaker": "Farouk",
+      "quote_or_paraphrase": "'I'm doing the same thing with the VWAP and gold ... two/three screens ... also scalping'",
+      "confidence": "MEDIUM",
+      "note": "Farouk uses VWAP/own system on gold (differs from Vishal's EMAs)"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "39:31",
+      "speaker": "Farouk",
+      "quote_or_paraphrase": "'after I get 1%, I put my stop-loss to entry and get more ... know when you made your daily profit and stop'",
+      "confidence": "HIGH",
+      "note": "breakeven at 1%; daily-profit discipline"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "41:45",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'200 EMA plus 50 EMA aligning, so this is your target ... you take 90% out'",
+      "confidence": "MEDIUM",
+      "note": "target = EMA confluence"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "25:14",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'you need to wait for specific set of analysis setups ... otherwise you get this 50 EMA cross all the time'",
+      "confidence": "MEDIUM",
+      "note": "not every EMA cross is valid -> implies rejected setups (veto)"
+    },
+    {
+      "category": "STRONG_INFERENCE",
+      "timestamp": "-",
+      "speaker": "-",
+      "quote_or_paraphrase": "Setup TF is not a single named timeframe; the 'setup' is multi-TF EMA CONFLUENCE (1H direction + 15m/5m alignment) rather than an OB/FVG on one TF",
+      "confidence": "MEDIUM-HIGH",
+      "note": ""
+    },
+    {
+      "category": "STRONG_INFERENCE",
+      "timestamp": "-",
+      "speaker": "-",
+      "quote_or_paraphrase": "Lower-TF (1m) entries are expected to ALIGN with 1H direction (below 50 EMA -> shorts); entering against the 1H is not encouraged",
+      "confidence": "MEDIUM",
+      "note": ""
+    },
+    {
+      "category": "WEAK_INFERENCE",
+      "timestamp": "28:56",
+      "speaker": "Vishal",
+      "quote_or_paraphrase": "'we can take it right now also' suggests entries can be taken LIVE/intrabar on the 1m (not strictly on candle close)",
+      "confidence": "LOW",
+      "note": ""
+    },
+    {
+      "category": "CONTRADICTION",
+      "timestamp": "-",
+      "speaker": "-",
+      "quote_or_paraphrase": "This method uses NO CHoCH/BOS/nBOS/OB/FVG/SFP panel (Vishal is EMA-based); it therefore does NOT share the [kyle] SMC object language of FP-INDICATOR-001-004 / Campaign 004",
+      "confidence": "MEDIUM-HIGH",
+      "note": "method divergence, not a factual contradiction"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "-",
+      "speaker": "-",
+      "quote_or_paraphrase": "Whether all TFs MUST align (strictness), what happens on TF CONFLICT, candle-close requirement, and a minimum confluence COUNT are NOT explicitly stated",
+      "confidence": "-",
+      "note": ""
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "-",
+      "speaker": "-",
+      "quote_or_paraphrase": "Exact stop/target timeframe rules (structure-based; breakeven at 1%; target at 200+50 EMA) not tied to a specific TF",
+      "confidence": "-",
+      "note": ""
+    },
+    {
+      "category": "WEAK_INFERENCE",
+      "timestamp": "01:45",
+      "speaker": "-",
+      "quote_or_paraphrase": "Crypto-specific = the DEMO instrument SUIUSDT.P (Binance); the method is claimed cross-asset (gold + crypto)",
+      "confidence": "MEDIUM",
+      "note": ""
+    }
+  ]
+}

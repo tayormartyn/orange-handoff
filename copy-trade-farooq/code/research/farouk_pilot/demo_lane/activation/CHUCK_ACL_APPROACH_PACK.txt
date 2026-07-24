@@ -1,0 +1,109 @@
+================================================================================
+CHUCK REVIEW PACK (APPROACH) - SELF-VERIFYING ACL PROVISIONING TOOL
+Date: 2026-07-22   Tool: Provision-OrangeAcl.ps1  (SHA-256 FEF11EB6843F63A8...)
+================================================================================
+Read-only build + dry-run proof done autonomously. NOTHING was provisioned on the
+live system: no real Windows users created, real approvals dir and credential store
+untouched, seven services untouched, no gate changed, nothing connected. Actual
+provisioning is a SEPARATE human-triggered elevated activation step after this review.
+
+--------------------------------------------------------------------------------
+1. APPROACH (unchanged from D-094 / D-095 design)
+--------------------------------------------------------------------------------
+Two OS principals, least privilege:
+  svc-orange-approver : CREATE-ONLY on the approvals dir (immutability); DENIED the
+                        credential store (cannot obtain broker creds -> cannot place orders).
+  svc-orange-executor : READ-ONLY on the approvals dir (cannot forge/alter/rename/delete
+                        an approval); READS the credential store (to place orders when gated).
+Plus DPAPI: the broker token is stored under the EXECUTOR principal's DPAPI (CurrentUser),
+so the approver cannot decrypt it even if it read the bytes.
+
+Exact commands the elevated run executes (Mode GenerateCommands):
+  New-LocalUser svc-orange-approver ; New-LocalUser svc-orange-executor
+  icacls "<APPROVALS_DIR>" /inheritance:r
+  icacls "<APPROVALS_DIR>" /grant "svc-orange-approver:(OI)(CI)(RX,WD,AD)" /deny "svc-orange-approver:(OI)(CI)(DE,DC)"
+  icacls "<APPROVALS_DIR>" /grant "svc-orange-executor:(OI)(CI)(RX)"        /deny "svc-orange-executor:(OI)(CI)(WD,AD,DE,DC)"
+  icacls "<APPROVALS_DIR>" /grant "BUILTIN\Administrators:(OI)(CI)F" "NT AUTHORITY\SYSTEM:(OI)(CI)F"
+  icacls "<CRED_STORE>"    /inheritance:r
+  icacls "<CRED_STORE>"    /grant "svc-orange-executor:(OI)(CI)(RX)"
+  icacls "<CRED_STORE>"    /deny  "svc-orange-approver:(OI)(CI)(R,W)"
+  icacls "<CRED_STORE>"    /grant "BUILTIN\Administrators:(OI)(CI)F" "NT AUTHORITY\SYSTEM:(OI)(CI)F"
+  # then, AS svc-orange-executor:  python -m ...read_only_ctrader_preflight.store_secret
+
+--------------------------------------------------------------------------------
+2. DRY-RUN PROOF (Mode DryRunProof) - 10 passed, 0 failed
+--------------------------------------------------------------------------------
+Proven on a SCRATCH dir with the current user as an ACL stand-in (no principals, no
+real paths, no admin). The stand-in has the executor deny applied to itself, so the
+ACCESS-DENIED enforcement is genuinely exercised:
+  ok  executor stand-in CANNOT create an approval
+  ok  executor stand-in CANNOT modify an approval
+  ok  executor stand-in CANNOT rename an approval
+  ok  executor stand-in CANNOT delete an approval
+  ok  executor stand-in CAN still read an approval        (read-only role intact)
+  ok  approver stand-in CANNOT read the credential store  (cannot obtain broker creds)
+  ok  rollback RESTORES modify access to the approval
+  ok  rollback RESTORES read access to the credential store
+  ok  idempotent: re-applying the deny does not duplicate ACEs
+  ok  command generation references both principals + inheritance:r
+
+DEFECT CAUGHT + FIXED BY THE DRY-RUN (this is why it exists):
+  The tool initially used the delete code 'D' inside the specific-rights parens.
+  icacls parses 'D' over-broadly and it also blocked READ (the executor could not read
+  an approval). Verified: deny(WD,AD,DE) -> READ_OK; deny(WD,AD,D) -> READ_FAIL. Fixed
+  to 'DE' (delete) + 'DC' (delete-child), matching the D-094 design. Delete/rename stay
+  denied; read works. Re-proved 10/10.
+
+--------------------------------------------------------------------------------
+3. WHAT REMAINS FOR THE ELEVATED (human-run) STEP - cannot be done without admin
+--------------------------------------------------------------------------------
+  a. Create the two named principals (New-LocalUser requires admin).
+  b. Apply the ACLs referencing those principals to the REAL approvals dir + cred store.
+  c. Store the broker token under the EXECUTOR principal's DPAPI (run store_secret AS
+     svc-orange-executor), and prove the APPROVER cannot decrypt it (cross-principal;
+     needs both principals to exist).
+  d. Run the ACCESS-DENIED ACCEPTANCE TEST as each opposing principal (needs runas with
+     the created principals' credentials).
+
+Current environment: ELEVATED_ADMIN = False. So (a)-(d) are correctly deferred; every
+mechanism that CAN be proven without admin (deny enforcement, reversibility, idempotency,
+command generation, verification-harness logic) IS proven above.
+
+--------------------------------------------------------------------------------
+4. ACCESS-DENIED ACCEPTANCE TEST (Mode Verify, at the elevated run)
+--------------------------------------------------------------------------------
+For each forbidden op, run AS the opposing principal and assert ACCESS DENIED:
+  as svc-orange-executor: create / modify / rename / delete an approval  -> ACCESS DENIED
+  as svc-orange-approver: read the credential store / load broker creds  -> ACCESS DENIED
+Plus: as svc-orange-approver, attempt to decrypt the executor-DPAPI token -> FAILS.
+PASS iff every forbidden op is ACCESS DENIED and the executor can still READ approvals
+and the approver can still CREATE (immutably) an approval.
+
+--------------------------------------------------------------------------------
+5. IDEMPOTENT + REVERSIBLE
+--------------------------------------------------------------------------------
+  Idempotent : New-LocalUser guarded by existence check; icacls /grant and /deny REPLACE
+               matching ACEs (no duplication) - proven (ACE count unchanged on re-apply).
+  Reversible : the tool snapshots prior ACLs before Apply and Mode Rollback restores them;
+               deny removal restores access - proven on scratch.
+
+--------------------------------------------------------------------------------
+6. OPERATOR'S SINGLE GO-ACTION (at activation, after Chuck approves the approach)
+--------------------------------------------------------------------------------
+  In an ELEVATED PowerShell:
+    .\Provision-OrangeAcl.ps1 -Mode Apply -ApprovalsDir "<governed approvals dir>" -ConfirmLiveActivation
+  then:
+    .\Provision-OrangeAcl.ps1 -Mode Verify   (must report all ACCESS DENIED = acceptance)
+  Rollback if needed:
+    .\Provision-OrangeAcl.ps1 -Mode Rollback
+
+--------------------------------------------------------------------------------
+7. OQ-7 REBOOT EVIDENCE (logged)
+--------------------------------------------------------------------------------
+  Last boot 2026-07-19T23:37:49; uptime ~2.57 days, no reboot. Recorded toward OQ-7
+  (Windows auto-reboots previously killed capture twice this week).
+
+================================================================================
+END - approach + dry-run proof for review BEFORE the elevated activation run.
+Nothing provisioned, no principals created, no gate flipped, nothing connected.
+================================================================================

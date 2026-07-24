@@ -1,0 +1,54 @@
+{
+  "run_stamp": "2026-06-29T00:00:00Z-manual",
+  "archive_path": "..\\..\\data\\signal_archive.db",
+  "archive_sha256_note": "see archive_fingerprint",
+  "fixture_dates": [
+    "2026-06-17",
+    "2026-06-18",
+    "2026-06-24",
+    "2026-06-25",
+    "2026-06-26"
+  ],
+  "media_capture_implemented_at_ingest": false,
+  "media_available_count": 0,
+  "per_date": {
+    "2026-06-17": {
+      "messages": 14,
+      "farouk": 14,
+      "non_farouk": 0,
+      "fixture_hash": "051a33165596a5e17ca986811b6304c3e9f3a3080c761e1ae303c3eebc0e16fe"
+    },
+    "2026-06-18": {
+      "messages": 20,
+      "farouk": 20,
+      "non_farouk": 0,
+      "fixture_hash": "32c9a205d846b8584fc194ceaf25c7e68762b3956aa9e559a4f8fb9e705ae2c2"
+    },
+    "2026-06-24": {
+      "messages": 17,
+      "farouk": 17,
+      "non_farouk": 0,
+      "fixture_hash": "56361704c66a8e8063e3d19328f6638e79226ca12ae31aa3ac67740d272d37e4"
+    },
+    "2026-06-25": {
+      "messages": 8,
+      "farouk": 8,
+      "non_farouk": 0,
+      "fixture_hash": "e5ccdac74e288b3f687c88dd9c90b0d21620637f81a99db85c9d54082f5fd6d4"
+    },
+    "2026-06-26": {
+      "messages": 28,
+      "farouk": 28,
+      "non_farouk": 0,
+      "fixture_hash": "3bf1d0c38d3d3644560f21b6a71a2ee4889956fcfff2f119be60774e8d152961"
+    }
+  },
+  "media_status_totals": {
+    "TEXT_ONLY": 86,
+    "MEDIA_REFERENCE_ONLY": 1
+  },
+  "sender_totals": {
+    "Farouk": 87
+  },
+  "hash_mismatches": []
+}

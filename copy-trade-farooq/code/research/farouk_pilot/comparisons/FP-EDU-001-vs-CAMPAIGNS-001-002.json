@@ -1,0 +1,77 @@
+{
+  "comparison_id": "FP-EDU-001-vs-CAMPAIGNS-001-002",
+  "note": "Educational SourceClaims (spoken teaching) tested against Campaign 001 (win) and 002 (loss). A spoken claim is NOT promoted to a confirmed rule. Two campaigns + one video -> NO final strategy declared.",
+  "source_asset_ids": [
+    "sa-944789f92a8092cc",
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f",
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a"
+  ],
+  "tests": [
+    {
+      "n": 1,
+      "question": "Does Farouk teach that a session break requires displacement/FVG confirmation?",
+      "edu_evidence": "Requires a RETEST + confirmation (OB/CHoCH) after a break (EDU-C-003/005); FVG/BPR cited as long signals (EDU-C-006). The word 'displacement' does NOT appear; no explicit 'a break REQUIRES displacement/FVG to be valid'.",
+      "c001": "not_observable (no displacement assessment available)",
+      "c002": "external_review(UNVERIFIED) claims the loss followed a break with NO downside FVG",
+      "verdict": "INSUFFICIENT_EVIDENCE for the strict 'displacement required' wording; PARTIALLY_SUPPORTED that confirmation/FVG matter"
+    },
+    {
+      "n": 2,
+      "question": "Does he teach CHoCH as a required entry confirmation?",
+      "edu_evidence": "CHoCH ('change of character') is taught as A confirmation (EDU-C-005), among OB-retest and other confirmations; not stated as the sole mandatory trigger.",
+      "c001": "panel showed a CHoCH value near the entry (not proven to be the trigger)",
+      "c002": "panel showed a CHoCH value (relationship to entry unclear)",
+      "verdict": "PARTIALLY_SUPPORTED as a confirmation; INSUFFICIENT to call CHoCH strictly required"
+    },
+    {
+      "n": 3,
+      "question": "Does he require an OB retest inside/near the intended entry zone?",
+      "edu_evidence": "Strongly taught: entry = retest of the OB after BOS (EDU-C-003); the OB zone IS the entry area.",
+      "c001": "SUPPORTED — panel 'OB retest 4123.51' sits INSIDE the entry zone 4116-4126 (winning trade)",
+      "c002": "NOT_SUPPORTED — panel 'OB retest 4053.58' is NOT at the 3970-3980 sell (losing trade)",
+      "verdict": "SUPPORTED_IN_TEACHING; consistent with C001 (win) and its absence in C002 (loss) — candidate discriminator, not a rule"
+    },
+    {
+      "n": 4,
+      "question": "Is entering far from the higher-timeframe location discouraged?",
+      "edu_evidence": "Implied: 'higher timeframe is stronger', wait for price to REACH the OB/HTF levels (EDU-C-004).",
+      "c001": "entered near an HTF supply that held (win) — consistent",
+      "c002": "entered FAR below the HTF bearish zones (loss) — consistent with a discouraged location",
+      "verdict": "PARTIALLY_SUPPORTED (implied in teaching; directionally consistent with both campaigns)"
+    },
+    {
+      "n": 5,
+      "question": "Does missing displacement turn a break into a trap?",
+      "edu_evidence": "The 'trap' concept is taught (EDU-C-007: liquidity grab before a big move), but the explicit causal link 'missing displacement/FVG => trap' is NOT clearly stated in this video.",
+      "c001": "not_observable",
+      "c002": "external_review(UNVERIFIED) makes exactly this claim for the loss",
+      "verdict": "INSUFFICIENT_EVIDENCE — trap concept present; the displacement-absence link is only in the (unverified) C002 external review"
+    },
+    {
+      "n": 6,
+      "question": "Is TP1-then-breakeven standard management?",
+      "edu_evidence": "Taught: move stop to breakeven on the retest (EDU-C-008); take profit at known levels (EDU-C-011).",
+      "c001": "SUPPORTED — Discord: 'take TP1 ... move stop to breakeven'",
+      "c002": "SUPPORTED — Discord LEG A: 'Take TP1 now' + 'Move sl to entry'",
+      "verdict": "SUPPORTED_BY_BOTH campaigns and the teaching"
+    },
+    {
+      "n": 7,
+      "question": "Is recovery/re-entry core method or an exceptional protocol?",
+      "edu_evidence": "Taught as a response to stop-outs/mistakes (EDU-C-010: 'if we hit stop loss we look for a recovery trade' / 're-enter ... even I make mistakes').",
+      "c001": "not_applicable (no stop-out)",
+      "c002": "SUPPORTED — LEG B was a re-entry after LEG A",
+      "verdict": "SUPPORTED as a defined CONTINGENCY/recovery protocol (conditional on a stop-out), NOT the primary A+ setup"
+    }
+  ],
+  "no_final_strategy_declared": true,
+  "remaining_gaps": [
+    "'displacement' never spoken -> the displacement/FVG-required and displacement=>trap links rest on the UNVERIFIED C002 external review",
+    "No market data for any campaign -> structural claims not price-verified",
+    "Transcript is base.en (some SMC terms phonetic) -> a higher-accuracy pass could recover more nuance",
+    "Discord/chart timezones still not reconciled (EDU platform shows UTC+2; Discord TZ unknown)"
+  ]
+}

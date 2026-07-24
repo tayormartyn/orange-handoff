@@ -1,0 +1,21 @@
+{
+  "indicator": "Farouk's Playbook — Smart Money Suite (FP-INDICATOR-006 = same indicator as FP-INDICATOR-005)",
+  "relationship_to_005": "SAME indicator, later live session; FP-INDICATOR-006 REVEALS the detection-engine settings (CHoCH pivot 5, FVG lookback 50, Min FVG 0.5 ATR, Min BPR 0.2 ATR, auto-remove, max zones 10) that were NOT_SHOWN in 005 -> FULLER_VERSION of the 005 settings evidence.",
+  "distinct_from": {
+    "[kyle] v1/v2": "present on the chart but HIDDEN (eye-off) — separate indicator; not merged",
+    "SpaceMan": "unrelated",
+    "Market Cipher B": "unrelated (FP-EDU-023)",
+    "Craters-Reality / EMA": "unrelated (FP-EDU-007)"
+  },
+  "other_indicators_on_chart_hidden": [
+    "[kyle] v2",
+    "[kyle] v1",
+    "BGS Liquidity Inefficiency Indicator",
+    "SeaScalper — Bias Levels v2"
+  ],
+  "do_not_merge_note": "similar objects (OB/FVG/BPR/Asia levels) across indicators do NOT imply the same system.",
+  "panel_attribution": "the CHoCH/Asia-break/OB-retest/Current-OB/Fresh-OB panel is shown LIVE as this indicator's output -> reconfirms the FP-INDICATOR-005 attribution and the Campaign-panel attribution.",
+  "source_asset_ids": [
+    "sa-4328a875cb55d147"
+  ]
+}

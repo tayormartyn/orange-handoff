@@ -1,0 +1,309 @@
+{
+  "name": "Sybil's Hearth — W1 Dream Intake + Safety",
+  "nodes": [
+    {
+      "id": "n1",
+      "name": "Webhook — Submission",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        300
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sybils-hearth-dream",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "webhookId": "sybils-hearth-dream"
+    },
+    {
+      "id": "n2",
+      "name": "Create Submission",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2,
+      "position": [
+        260,
+        300
+      ],
+      "parameters": {
+        "resource": "record",
+        "operation": "create",
+        "base": {
+          "__rl": true,
+          "value": "YOUR_BASE_ID",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "Submissions",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Raw Dream Text": "={{ $json.body.dreamText }}",
+            "Source": "={{ $json.body.source || 'form' }}",
+            "Submitter Handle": "={{ $json.body.handle || '' }}",
+            "Status": "new"
+          }
+        }
+      },
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_CRED_ID",
+          "name": "Airtable PAT"
+        }
+      }
+    },
+    {
+      "id": "n3",
+      "name": "Keyword Backstop",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        520,
+        300
+      ],
+      "parameters": {
+        "jsCode": "// Keyword backstop — forces a human review even if the model misses.\n// Full logic in prompts/safety-layer.md. This is a cheap second net.\nconst text = ($json.dreamText || \"\").toLowerCase();\nconst HARD = [\"kill myself\",\"end my life\",\"don't want to be here\",\"want to die\",\n              \"suicidal\",\"hurt myself\",\"self harm\",\"self-harm\"];\nconst forced = HARD.some(k => text.includes(k));\nreturn [{ json: { ...$json, keywordForcedFlag: forced } }];"
+      }
+    },
+    {
+      "id": "n4",
+      "name": "Safety Classifier (LLM)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        780,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $env.ANTHROPIC_API_KEY }}"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"model\":\"claude-sonnet-4-latest\",\"max_tokens\":300,\"system\":\"You are a safety classifier for \\\"Sybil's Hearth\\\", a gentle dream-reflection brand.\\nYou receive ONE user submission (usually a described dream). Decide whether it is\\nsafe to pass to the creative engine, or shows REAL-WORLD distress and must go to a\\nhuman. You do not reply, you do not interpret. Output ONLY the JSON verdict.\\n\\nCRITICAL: dream CONTENT is not distress. Frightening/violent/sad/death-themed DREAMS\\nare SAFE. FLAG only when the person expresses REAL present distress about their waking\\nlife, or discloses real danger/harm.\\n\\nFLAG categories: self_harm_suicide, abuse, acute_crisis, harm_to_others,\\nminor_safeguarding, eating_disorder. Everything else (incl. scary dreams, grief,\\nordinary sadness) = SAFE. WHEN UNSURE, FLAG with category \\\"ambiguous\\\".\\n\\nOutput JSON only:\\n{\\\"classification\\\":\\\"SAFE|FLAG\\\",\\\"category\\\":\\\"...\\\",\\\"confidence\\\":\\\"low|medium|high\\\",\\\"reason\\\":\\\"one sentence\\\"}\\n(Full spec + examples: prompts/w1-safety-classifier.md)\",\"messages\":[{\"role\":\"user\",\"content\":\"={{ $json.dreamText }}\"}]}"
+      }
+    },
+    {
+      "id": "n5",
+      "name": "Parse Verdict",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        300
+      ],
+      "parameters": {
+        "jsCode": "// Parse the classifier's JSON out of the Anthropic response, combine with backstop.\nlet verdict;\ntry { verdict = JSON.parse($json.content[0].text); }\ncatch (e) { verdict = { classification: \"FLAG\", category: \"ambiguous\",\n  confidence: \"low\", reason: \"unparseable classifier output — routing to human\" }; }\nconst forced = $('Keyword Backstop').first().json.keywordForcedFlag;\nconst flagged = forced || verdict.classification === \"FLAG\";\nreturn [{ json: { ...$('Keyword Backstop').first().json, verdict, flagged } }];"
+      }
+    },
+    {
+      "id": "n6",
+      "name": "IF Flagged",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1300,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "leftValue": "={{ $json.flagged }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "n7",
+      "name": "Route → Care Queue",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        200
+      ],
+      "parameters": {
+        "resource": "record",
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "YOUR_BASE_ID",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "Submissions",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $('Create Submission').item.json.id }}",
+            "Safety Flag": true,
+            "Status": "care_queue"
+          }
+        }
+      },
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_CRED_ID",
+          "name": "Airtable PAT"
+        }
+      }
+    },
+    {
+      "id": "n8",
+      "name": "Route → Screened",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        420
+      ],
+      "parameters": {
+        "resource": "record",
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "YOUR_BASE_ID",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "Submissions",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $('Create Submission').item.json.id }}",
+            "Status": "screened"
+          }
+        }
+      },
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_CRED_ID",
+          "name": "Airtable PAT"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook — Submission": {
+      "main": [
+        [
+          {
+            "node": "Create Submission",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Submission": {
+      "main": [
+        [
+          {
+            "node": "Keyword Backstop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Keyword Backstop": {
+      "main": [
+        [
+          {
+            "node": "Safety Classifier (LLM)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Safety Classifier (LLM)": {
+      "main": [
+        [
+          {
+            "node": "Parse Verdict",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Verdict": {
+      "main": [
+        [
+          {
+            "node": "IF Flagged",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Flagged": {
+      "main": [
+        [
+          {
+            "node": "Route → Care Queue",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Route → Screened",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {},
+  "meta": {
+    "note": "Sybil's Hearth scaffold — attach credentials, verify node versions, paste module text."
+  }
+}

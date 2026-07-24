@@ -1,0 +1,741 @@
+{
+  "rule_version": "v0.1",
+  "transition_count": 45,
+  "note": "Setups are NOT forced through identical guards (per-family branches). QUALIFIED_CANDIDATE is the Alpha terminal state; QU-07 hands off to REFERENCE-ONLY docs, never to execution.",
+  "transitions": [
+    {
+      "transition_id": "SC-01",
+      "region": "SESSION_CONTEXT",
+      "source_state": "OUTSIDE_SESSION",
+      "destination_state": "SESSION_RANGE_FORMING",
+      "triggering_event": "SESSION_STARTED",
+      "required_guards": [
+        "G_SESSION_WINDOW_KNOWN"
+      ],
+      "veto_guards": [
+        "G_TZ_UNRESOLVED"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004/FP-001 session windows",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "canonical timezone",
+      "failure_reason_code": "F_TZ_UNKNOWN"
+    },
+    {
+      "transition_id": "SC-02",
+      "region": "SESSION_CONTEXT",
+      "source_state": "SESSION_RANGE_FORMING",
+      "destination_state": "SESSION_RANGE_LOCKED",
+      "triggering_event": "SESSION_RANGE_LOCKED",
+      "required_guards": [
+        "G_15MIN_ELAPSED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "15m",
+      "evidence_source": "FP-004 '15 minutes'",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "exact window per session",
+      "failure_reason_code": "F_WINDOW_UNCONFIRMED"
+    },
+    {
+      "transition_id": "SC-03",
+      "region": "SESSION_CONTEXT",
+      "source_state": "SESSION_RANGE_LOCKED",
+      "destination_state": "SESSION_ACTIVE",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_RANGE_LOCKED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "SC-04",
+      "region": "SESSION_CONTEXT",
+      "source_state": "SESSION_ACTIVE",
+      "destination_state": "SESSION_CLOSED",
+      "triggering_event": "SESSION_STARTED",
+      "required_guards": [
+        "G_SESSION_END"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "session end",
+      "evidence_source": "FP-002 session times",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "timezone/DST",
+      "failure_reason_code": "F_TZ_UNKNOWN"
+    },
+    {
+      "transition_id": "SC-05",
+      "region": "SESSION_CONTEXT",
+      "source_state": "SESSION_CLOSED",
+      "destination_state": "OUTSIDE_SESSION",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "-",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "VL-01",
+      "region": "VALUE_LOCATION",
+      "source_state": "VALUE_UNKNOWN",
+      "destination_state": "INSIDE_VALUE",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_VALUE_AREA_COMPUTED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003 POC/VAH/VAL",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "value-area calc + POC 'T'",
+      "failure_reason_code": "F_VALUE_CALC_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-02",
+      "region": "VALUE_LOCATION",
+      "source_state": "INSIDE_VALUE",
+      "destination_state": "ABOVE_VALUE",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_CLOSE_ABOVE_VAH"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "VAH calc",
+      "failure_reason_code": "F_VALUE_CALC_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-03",
+      "region": "VALUE_LOCATION",
+      "source_state": "INSIDE_VALUE",
+      "destination_state": "BELOW_VALUE",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_CLOSE_BELOW_VAL"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003 'below VAL bearish'",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "VAL calc",
+      "failure_reason_code": "F_VALUE_CALC_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-04",
+      "region": "VALUE_LOCATION",
+      "source_state": "INSIDE_VALUE",
+      "destination_state": "AT_POC",
+      "triggering_event": "POC_TOUCHED",
+      "required_guards": [
+        "G_PRICE_AT_POC"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "POC calc + 'T'",
+      "failure_reason_code": "F_POC_T_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-05",
+      "region": "VALUE_LOCATION",
+      "source_state": "ABOVE_VALUE",
+      "destination_state": "AT_VAH",
+      "triggering_event": "VAH_TOUCHED",
+      "required_guards": [
+        "G_PRICE_AT_VAH"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "VAH calc",
+      "failure_reason_code": "F_VALUE_CALC_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-06",
+      "region": "VALUE_LOCATION",
+      "source_state": "BELOW_VALUE",
+      "destination_state": "AT_VAL",
+      "triggering_event": "VAL_TOUCHED",
+      "required_guards": [
+        "G_PRICE_AT_VAL"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "VAL calc",
+      "failure_reason_code": "F_VALUE_CALC_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-07",
+      "region": "VALUE_LOCATION",
+      "source_state": "VWAP_OPPOSED",
+      "destination_state": "VWAP_ALIGNED",
+      "triggering_event": "VWAP_CROSSED",
+      "required_guards": [
+        "G_PRICE_TRADE_SIDE_OF_VWAP"
+      ],
+      "veto_guards": [
+        "G_VWAP_SESSION_RESET_UNKNOWN"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002 VWAP bias",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "which VWAP TF + reset repaint",
+      "failure_reason_code": "F_VWAP_ANCHOR_UNKNOWN"
+    },
+    {
+      "transition_id": "VL-08",
+      "region": "VALUE_LOCATION",
+      "source_state": "VWAP_ALIGNED",
+      "destination_state": "VWAP_OPPOSED",
+      "triggering_event": "VWAP_CROSSED",
+      "required_guards": [
+        "G_PRICE_OPPOSITE_VWAP"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_VWAP_ANCHOR_UNKNOWN"
+    },
+    {
+      "transition_id": "LE-01",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "NO_LIQUIDITY_EVENT",
+      "destination_state": "LIQUIDITY_APPROACH",
+      "triggering_event": "PRICE_ENTERED_ZONE",
+      "required_guards": [
+        "G_LEVEL_MARKED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "proximity threshold",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "LE-02",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "LIQUIDITY_APPROACH",
+      "destination_state": "SWEEP_CANDIDATE",
+      "triggering_event": "LIQUIDITY_LEVEL_BREACHED",
+      "required_guards": [
+        "G_WICK_BREACH"
+      ],
+      "veto_guards": [
+        "G_BODY_CLOSE_BEYOND"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002/003 'swept the high'",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "wick-depth / 8-bar lookback",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "LE-03",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SWEEP_CANDIDATE",
+      "destination_state": "SWEEP_CONFIRMED",
+      "triggering_event": "CLOSE_RETURNED_INSIDE",
+      "required_guards": [
+        "G_CLOSE_BACK_INSIDE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002/003",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "LE-04",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SWEEP_CANDIDATE",
+      "destination_state": "SWEEP_INVALIDATED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_CLOSE_BEYOND_LEVEL"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003 'failed to come below'",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "LE-05",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SWEEP_CANDIDATE",
+      "destination_state": "SFP_CANDIDATE",
+      "triggering_event": "SFP_MARKER_APPEARED",
+      "required_guards": [
+        "G_PRIOR_SWING",
+        "G_NO_CANDLE_CLOSE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003 SFP",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "SFP repaint + intrabar/close",
+      "failure_reason_code": "F_REPAINT_UNKNOWN"
+    },
+    {
+      "transition_id": "LE-06",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SFP_CANDIDATE",
+      "destination_state": "SFP_CONFIRMED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_CLOSE_BACK_INSIDE",
+        "G_RETEST_HELD"
+      ],
+      "veto_guards": [
+        "G_RECLAIM"
+      ],
+      "timeout_expiry": "N bars",
+      "evidence_source": "FP-003 'sweep retest'",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "SFP marker persistence",
+      "failure_reason_code": "F_REPAINT_UNKNOWN"
+    },
+    {
+      "transition_id": "LE-07",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SFP_CANDIDATE",
+      "destination_state": "SWEEP_INVALIDATED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_RECLAIM"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "LE-08",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SWEEP_CONFIRMED",
+      "destination_state": "NO_LIQUIDITY_EVENT",
+      "triggering_event": "SETUP_EXPIRED",
+      "required_guards": [],
+      "veto_guards": [],
+      "timeout_expiry": "session/age",
+      "evidence_source": "-",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "LE-09",
+      "region": "LIQUIDITY_EVENT",
+      "source_state": "SFP_CONFIRMED",
+      "destination_state": "NO_LIQUIDITY_EVENT",
+      "triggering_event": "SETUP_EXPIRED",
+      "required_guards": [],
+      "veto_guards": [],
+      "timeout_expiry": "session/age",
+      "evidence_source": "-",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "OE-01",
+      "region": "ORB_EVENT",
+      "source_state": "ORB_NOT_ACTIVE",
+      "destination_state": "ORB_FORMING",
+      "triggering_event": "SESSION_STARTED",
+      "required_guards": [
+        "G_SESSION_WINDOW_KNOWN"
+      ],
+      "veto_guards": [
+        "G_TZ_UNRESOLVED"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "timezone",
+      "failure_reason_code": "F_TZ_UNKNOWN"
+    },
+    {
+      "transition_id": "OE-02",
+      "region": "ORB_EVENT",
+      "source_state": "ORB_FORMING",
+      "destination_state": "ORB_LOCKED",
+      "triggering_event": "SESSION_RANGE_LOCKED",
+      "required_guards": [
+        "G_15MIN_ELAPSED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "15m",
+      "evidence_source": "FP-004 '15 minutes'",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "exact window",
+      "failure_reason_code": "F_WINDOW_UNCONFIRMED"
+    },
+    {
+      "transition_id": "OE-03",
+      "region": "ORB_EVENT",
+      "source_state": "ORB_LOCKED",
+      "destination_state": "BREAKOUT_UNCONFIRMED",
+      "triggering_event": "ORB_BROKEN",
+      "required_guards": [
+        "G_PRICE_BEYOND_ORB"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "wick-vs-body at break",
+      "failure_reason_code": "F_WICK_CLOSE_RULE"
+    },
+    {
+      "transition_id": "OE-04",
+      "region": "ORB_EVENT",
+      "source_state": "BREAKOUT_UNCONFIRMED",
+      "destination_state": "BREAKOUT_CONFIRMED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_CLOSE_BEYOND_ORB"
+      ],
+      "veto_guards": [
+        "G_INTRABAR_ONLY"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004 'lost the orb'",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "OE-05",
+      "region": "ORB_EVENT",
+      "source_state": "BREAKOUT_UNCONFIRMED",
+      "destination_state": "FAILED_BREAKOUT",
+      "triggering_event": "CLOSE_RETURNED_INSIDE",
+      "required_guards": [
+        "G_CLOSE_BACK_INSIDE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004 double-top",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "OE-06",
+      "region": "ORB_EVENT",
+      "source_state": "ORB_LOCKED",
+      "destination_state": "ORB_EXPIRED",
+      "triggering_event": "SESSION_STARTED",
+      "required_guards": [
+        "G_SESSION_END"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "session end",
+      "evidence_source": "FP-004",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "timezone",
+      "failure_reason_code": "F_TZ_UNKNOWN"
+    },
+    {
+      "transition_id": "OE-07",
+      "region": "ORB_EVENT",
+      "source_state": "FAILED_BREAKOUT",
+      "destination_state": "ORB_LOCKED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_RANGE_STILL_VALID"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "re-arm rule",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "OE-08",
+      "region": "ORB_EVENT",
+      "source_state": "BREAKOUT_CONFIRMED",
+      "destination_state": "ORB_EXPIRED",
+      "triggering_event": "SETUP_EXPIRED",
+      "required_guards": [],
+      "veto_guards": [],
+      "timeout_expiry": "session end",
+      "evidence_source": "-",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "SS-01",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "SCANNING",
+      "destination_state": "STRUCTURE_FOUND",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_STRUCTURE_PRESENT"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002/003/004",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "structure def per family",
+      "failure_reason_code": "F_FAMILY_UNDEFINED"
+    },
+    {
+      "transition_id": "SS-02",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "STRUCTURE_FOUND",
+      "destination_state": "ZONE_REGISTERED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_ORIGIN_EVIDENCE_IMMUTABLE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "-",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "SS-03",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "ZONE_REGISTERED",
+      "destination_state": "ARMED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_FAMILY_GUARDS_PASS"
+      ],
+      "veto_guards": [
+        "G_ANY_UNKNOWN_GUARD"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "families",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "family guards",
+      "failure_reason_code": "F_UNKNOWN_INPUT"
+    },
+    {
+      "transition_id": "SS-04",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "ARMED",
+      "destination_state": "PRICE_APPROACHING",
+      "triggering_event": "PRICE_ENTERED_ZONE",
+      "required_guards": [
+        "G_PRICE_NEAR_ZONE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "-",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "proximity",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "SS-05",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "PRICE_APPROACHING",
+      "destination_state": "RETRACE_DETECTED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_RETRACE_INTO_ZONE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002/004 retest",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "retrace tolerance",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "SS-06",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "RETRACE_DETECTED",
+      "destination_state": "ZONE_MITIGATED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_ZONE_TESTED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-003 'mitigated'",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "mitigation def",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "SS-07",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "ARMED",
+      "destination_state": "STRUCTURE_INVALIDATED",
+      "triggering_event": "ZONE_INVALIDATED",
+      "required_guards": [
+        "G_CLOSE_THROUGH_INVAL"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002/003",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "stop rule",
+      "failure_reason_code": "F_STOP_UNKNOWN"
+    },
+    {
+      "transition_id": "SS-08",
+      "region": "STRUCTURAL_SETUP",
+      "source_state": "RETRACE_DETECTED",
+      "destination_state": "STRUCTURE_INVALIDATED",
+      "triggering_event": "ZONE_INVALIDATED",
+      "required_guards": [
+        "G_CLOSE_THROUGH_INVAL"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "-",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "stop rule",
+      "failure_reason_code": "F_STOP_UNKNOWN"
+    },
+    {
+      "transition_id": "QU-01",
+      "region": "QUALIFICATION",
+      "source_state": "NOT_ELIGIBLE",
+      "destination_state": "WAITING_FOR_TRIGGER",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_ZONE_MITIGATED",
+        "G_SETUP_ARMED"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "families",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "QU-02",
+      "region": "QUALIFICATION",
+      "source_state": "WAITING_FOR_TRIGGER",
+      "destination_state": "QUALIFIED_CANDIDATE",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_TRIGGER_CLOSED",
+        "G_CONFLUENCE_MET",
+        "G_BIAS_ALIGNED"
+      ],
+      "veto_guards": [
+        "G_ANY_UNKNOWN_GUARD",
+        "G_VETO_INSIDE_RANGE"
+      ],
+      "timeout_expiry": "N bars",
+      "evidence_source": "FP-002/003/004 combine",
+      "implementation_feasibility": "BLOCKED",
+      "unresolved_threshold": "confluence count + repaint",
+      "failure_reason_code": "F_CONFLUENCE_UNKNOWN"
+    },
+    {
+      "transition_id": "QU-03",
+      "region": "QUALIFICATION",
+      "source_state": "WAITING_FOR_TRIGGER",
+      "destination_state": "VETOED",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [
+        "G_VETO_INSIDE_RANGE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-004 'inside orb no trade'",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "chop def",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "QU-04",
+      "region": "QUALIFICATION",
+      "source_state": "WAITING_FOR_TRIGGER",
+      "destination_state": "EXPIRED",
+      "triggering_event": "SETUP_EXPIRED",
+      "required_guards": [
+        "G_MAX_AGE"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "N bars",
+      "evidence_source": "-",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "max-age value",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "QU-05",
+      "region": "QUALIFICATION",
+      "source_state": "WAITING_FOR_TRIGGER",
+      "destination_state": "BIAS_CHANGED",
+      "triggering_event": "BIAS_CHANGED",
+      "required_guards": [
+        "G_BIAS_FLIP"
+      ],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "FP-002 VWAP flip",
+      "implementation_feasibility": "PARTIAL",
+      "unresolved_threshold": "bias basis",
+      "failure_reason_code": "F_THRESHOLD_UNSET"
+    },
+    {
+      "transition_id": "QU-06",
+      "region": "QUALIFICATION",
+      "source_state": "BIAS_CHANGED",
+      "destination_state": "NOT_ELIGIBLE",
+      "triggering_event": "BAR_CLOSED",
+      "required_guards": [],
+      "veto_guards": [],
+      "timeout_expiry": "n/a",
+      "evidence_source": "-",
+      "implementation_feasibility": "DETERMINISTIC_NOW",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    },
+    {
+      "transition_id": "QU-07",
+      "region": "QUALIFICATION",
+      "source_state": "QUALIFIED_CANDIDATE",
+      "destination_state": "REF_HANDOFF(reference_only)",
+      "triggering_event": "n/a",
+      "required_guards": [
+        "G_OBSERVATION_EMIT_ONLY"
+      ],
+      "veto_guards": [
+        "G_ANY_EXECUTION"
+      ],
+      "timeout_expiry": "n/a",
+      "evidence_source": "boundary",
+      "implementation_feasibility": "REFERENCE_ONLY",
+      "unresolved_threshold": "-",
+      "failure_reason_code": "F_NONE"
+    }
+  ]
+}

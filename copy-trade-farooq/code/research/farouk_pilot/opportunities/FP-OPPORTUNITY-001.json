@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "opportunity",
+  "opportunity_id": "FP-OPPORTUNITY-001",
+  "related_campaign": "FP-CAMPAIGN-003 (SEPARATE — do NOT merge)",
+  "symbol": "XAUUSD",
+  "direction": "BUY (long)",
+  "statement_ts_displayed": "29/06/2026 15:32",
+  "exact_statement": "I missed the long at 4000. The OB + FVG setup was exactly the plan we made yesterday.",
+  "facts": [
+    "Farouk did NOT execute it (spoken: 'I missed this trade, I was taking a shower')",
+    "OB + FVG was explicitly named as the setup",
+    "described as PREPLANNED ('the plan we made yesterday')",
+    "another participant appears to have taken it: Discord names Myhanh ('The Queen'); the video audio says 'Miss Stanley' and also 'Mr. Columbus' got a trade (participant identity ambiguous across sources)",
+    "Farouk shared a participant's broker-app screenshot congratulating them"
+  ],
+  "explicit_prohibition": "Outcome must NOT be treated as Farouk's executed performance — he missed it; any profit belongs to the participant(s).",
+  "source_asset_ids": [
+    "sa-bc200fb932058fc3",
+    "sa-036eef476c3ce1b2"
+  ],
+  "status": "RECORDED_UNTESTED"
+}

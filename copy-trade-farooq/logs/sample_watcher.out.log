@@ -1,0 +1,4 @@
+[2026-07-24T11:21:21Z] evidence watcher started pid=18728 | CAPTURE/RESEARCH ONLY | NO BROKER | NO EXECUTION
+[2026-07-24T11:21:21Z] listener/wire/tracker are separate processes and are NEVER touched
+[2026-07-24T11:21:21Z] ROUTER SWEEP HOOK REGISTERED | activation_ts=1784892081 module_sha=30707e05b4196aa0 pid=18728
+[2026-07-24T11:21:21Z] backfill quarantine manifest written; F001/F002 + placeholder ids = NON_ANALYTICAL_BACKFILL

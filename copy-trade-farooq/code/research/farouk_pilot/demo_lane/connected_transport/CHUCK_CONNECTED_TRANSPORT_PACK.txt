@@ -1,0 +1,145 @@
+================================================================================
+CHUCK EVIDENCE PACK — connected_transport v0_1 (OFFLINE build, TRANSPORT_BUILD_AUTHORISED)
+Returned for Chuck's review BEFORE any external connection. No connection, no OAuth, no
+gate flip, no order was performed. All 'broker' interaction is in-memory or 127.0.0.1.
+================================================================================
+
+--------------------------------------------------------------------------------
+0. HEADLINE
+--------------------------------------------------------------------------------
+  connected-transport suite ............ PASS 54 / 54   (loopback-only; egress-guarded)
+  executor network-free isolation ...... RE-PROVEN 3 ways (import graph + clean-interp booby-trap + sys.modules)
+  demo_lane regression ................. 62/62 demo_lane, 45/45 order_adapter, 10/10 seal_approval (unchanged)
+  gates ................................ EXECUTION/CTRADER/DEMO = False (single source, untouched)
+  DEPLOY / CONNECT ..................... NONE. Offline build; returned for review.
+
+--------------------------------------------------------------------------------
+1. MODULE SEPARATION  (executor->transport = 0, executor->mapper = 0, transport->mapper allowed)
+--------------------------------------------------------------------------------
+Package: research/farouk_pilot/demo_lane/connected_transport/  (subpackage, mirrors demo_lane/preflight/)
+Proof A — recursive import graph (AST closure of demo_lane.executor):
+    connected_transport NOT in closure; protobuf_mapper NOT in closure;
+    socket / ssl / twisted / ctrader_open_api NOT in closure.   (test 13)
+Proof B — clean interpreter + SOCKET BOOBY-TRAP: a fresh interpreter deletes+blocks
+    {socket,_socket,ssl,_ssl,twisted,connected_transport,ctrader_open_api} via a meta_path finder,
+    then `import demo_lane.executor` -> SUCCEEDS network-free; connected_transport / protobuf_mapper
+    NOT in sys.modules.
+Proof C — the INTENDED edge exists: transport imports the approved mapper
+    (`from .. import protobuf_mapper`; used for the deterministic client-order-id).  (test 13)
+There is NO edge executor -> transport and NO edge executor -> mapper.
+
+--------------------------------------------------------------------------------
+2. CAPABILITIES BUILT (all offline-tested)
+--------------------------------------------------------------------------------
+  connection lifecycle .............. open -> authenticate -> reconcile -> READY (bring_up)
+  auth state machine ................ CONNECTED->APP_AUTHED->ACCOUNT_AUTHED->READY; out-of-order rejected
+  framing / decode .................. 4-byte big-endian length prefix; fragmented + combined reassembly;
+                                      oversized-length fail-closed (framing.py, Deframer)
+  heartbeat ......................... send-when-idle, in-stream recv skip, staleness timeout
+  bounded reconnect / backoff ....... backoff (1,2,5,15,30)s capped; RECONNECT_MAX_ATTEMPTS
+  request correlation ............... deterministic client_msg_id; in-flight/resolved refused
+  event handling .................... known events recorded; UNKNOWN inbound -> fail-closed
+  response-timeout .................. recv timeout -> OUTCOME_UNKNOWN
+  disconnect handling ............... on_disconnect -> DISCONNECTED, actions refused
+  reconcile-first-after-reconnect ... RECONCILE_ONLY window; action refused until READY
+  sanitised alarms .................. every alarm/log passes credentials.sanitise() (secrets redacted)
+
+PERMITTED OUTBOUND FAMILIES (framing.PERMITTED_OUTBOUND — exactly these; NO generic console/raw send):
+  APP_AUTH_REQ, ACCOUNT_AUTH_REQ, HEARTBEAT, RECONCILE_REQ, OPEN_LIMIT_REQ (approved LIMIT open),
+  CANCEL_PENDING_REQ (Orange-owned), CLOSE_REDUCE_REQ (risk-reducing, Orange-owned),
+  AMEND_STOP_REQ (permitted Lane-A stop mod). Inbound: the matching acks/rejections/fills/events only.
+
+--------------------------------------------------------------------------------
+3. GATES / ARMING / DESTINATION  (gates stay False; no override; fixed demo)
+--------------------------------------------------------------------------------
+  * Gate authority is the SINGLE SOURCE demo_lane.config / demo_lane.gate — NOT redefined here.
+    tc.production_armed() = (DEMO_EXECUTION_ENABLED AND not EXECUTION_ENABLED AND not CTRADER...) = False.
+  * build_production_transport().open() -> NotArmed (send-refused-gates-false).           (test 4)
+  * ProductionConnector.connect() -> refused (fixed endpoint + gates False).              (test 4)
+  * test_only_policy() drives a FAKE/loopback (IS_MOCK) connector ONLY; a non-mock connector -> NotArmed. (test 4)
+  * FIXED destination: egress_guard.assert_endpoint_allowed permits ONLY demo.ctraderapi.com:5035,
+    and only when armed. No LIVE_HOST constant exists; no caller/CLI/env host+port override exists.  (test 2)
+
+--------------------------------------------------------------------------------
+4. EXTERNAL-EGRESS GUARD (airtight across the WHOLE suite)
+--------------------------------------------------------------------------------
+  install_test_egress_guard() patches socket.connect / connect_ex / getaddrinfo process-wide to
+  loopback-ONLY, installed as the FIRST line of the test module.
+  * connect to a public IP (8.8.8.8:53) -> EgressRefused.                                 (test 2)
+  * getaddrinfo("demo.ctraderapi.com") -> EgressRefused (cannot even resolve).            (test 2)
+  * 127.0.0.1 loopback permitted -> the real-socket lifecycle test runs on it.            (test 12)
+  Every non-loopback socket connection in this suite FAILS by construction.
+
+--------------------------------------------------------------------------------
+5. CREDENTIALS  (provider interface + FAKE provider only; redaction)
+--------------------------------------------------------------------------------
+  * CredentialProvider interface + FakeCredentialProvider (IS_FAKE). No real token/secret anywhere
+    in source/env/argv/logs. The DPAPI-backed real provider is a later, separately-reviewed step
+    (not imported here).
+  * repr(provider) renders "REDACTED", never the secret.                                  (test 3)
+  * credentials.sanitise() redacts token/secret/password/authorization keys in every alarm/log;
+    a probe alarm carrying access_token shows no plaintext.                               (tests 3, 11)
+
+--------------------------------------------------------------------------------
+6. SINGLE SOURCE (transport SENDS + RETURNS; never reinterprets)
+--------------------------------------------------------------------------------
+  NOT duplicated here: sizing, price validation, approval, gate authority, the 7-field reconciliation
+  equality (stays in the executor), campaign interpretation. Transport builds requests from an
+  already-approved BrokerOrderRequest and returns broker facts verbatim.
+  * deterministic correlation; duplicate/in-flight key -> refused (no blind resend).      (tests 6, 7)
+  * lost ack -> OUTCOME_UNKNOWN, correlation retained, NO auto-resend.                     (test 7)
+  * reconnect -> RECONCILE_ONLY, no send until reconcile done.                            (tests 5, 9)
+  * unknown order/position -> no-touch; known-owned mismatch -> ratified containment.     (test 8)
+
+--------------------------------------------------------------------------------
+7. REQUIRED-MINIMUM TEST MAP (all present, all green)
+--------------------------------------------------------------------------------
+  lifecycle ............................ test 5 (bring_up -> READY) + test 12 (loopback)
+  fragmented / combined framing ........ test 1
+  heartbeat send/recv/timeout .......... test 10
+  auth-state ordering .................. test 5 (ACCOUNT before APP -> StateError)
+  send-refused-before-auth ............. test 5
+  send-refused-gates-false ............. test 4
+  correlation .......................... test 6
+  broker rejection ..................... test 6
+  loss-before-send ..................... test 7
+  loss-after-send-before-ack ........... test 7
+  OUTCOME_UNKNOWN ...................... test 7
+  reconnect -> reconcile-before-action . test 9 (+ RECONCILE_ONLY at test 5)
+  duplicate-send prevention ............ test 6 (+ unknown-request-no-resend test 7)
+  unknown-event fail-closed ............ test 11
+  sanitised logging .................... tests 3, 11
+  ZERO external egress ................. test 2
+  executor still no edge ............... test 13 + clean-interp booby-trap (section 1)
+
+--------------------------------------------------------------------------------
+8. FILE MANIFEST (SHA-256, first 20)   — 1485 lines total
+--------------------------------------------------------------------------------
+  __init__.py                      28551774b34d34f71a6d
+  transport_config.py              2331b4b601844dc5592d
+  egress_guard.py                  f8804681ea60120cc5b3
+  credentials.py                   42d9250a63bd261464d5
+  framing.py                       6a9e7ec355db8e7c0616
+  state.py                         ab2bb61d1facc7d0274a
+  fake_wire.py                     11cbac95e8960e063112
+  transport.py                     345ba4a39c1bde698cc8
+  tests_connected_transport.py     cacb3eb756848f0956c1
+
+--------------------------------------------------------------------------------
+9. RAW TEST OUTPUT
+--------------------------------------------------------------------------------
+  $ python -m demo_lane.connected_transport.tests_connected_transport
+    PASS 54 connected-transport checks
+  $ clean-interp + socket booby-trap:
+    CLEAN-INTERP + SOCKET BOOBY-TRAP: demo_lane.executor imported NETWORK-FREE (no socket/ssl/twisted/transport/mapper)
+    connected_transport in sys.modules: False
+    protobuf_mapper   in sys.modules: False
+  $ regression (unchanged by this additive package):
+    tests_demo_lane: 62/62 pass ; tests_order_adapter: 45 passed ; tests_seal_approval: 10 passed
+    (tests_protobuf_mapper needs .venv-ctrader real protobuf — pre-existing env requirement, unrelated)
+
+================================================================================
+NOT DONE (prohibited): no external connection, no OAuth, no gate flip, no order. STOP + REPORT.
+Next (only on Chuck's approval): real ProtoCodec (mapper-backed) + DPAPI provider + live-channel
+wiring — each a separate, separately-reviewed step. This package remains offline until then.
+================================================================================

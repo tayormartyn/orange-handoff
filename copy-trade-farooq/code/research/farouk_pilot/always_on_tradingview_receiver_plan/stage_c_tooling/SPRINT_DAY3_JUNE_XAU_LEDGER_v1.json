@@ -1,0 +1,1370 @@
+{
+  "ledger_id": "XAU_JUNE_DISCRETIONARY_LEDGER_v1",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY",
+  "source": "bounded copied-session backward fetch 2026-06-01..2026-06-29 (1256 msgs whole-channel, 273 gold-trades)",
+  "storage": "june_history_backfill_v1.db (append-only) + prospective_media_v1 (photos)",
+  "authority_note": "All outcomes are the poster's own claims (RESULT_CLAIM_ONLY); no OHLC matching run.",
+  "setups": [
+    {
+      "setup_id": "XAU-J01-20260602",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44083,
+      "first_msg_utc": "2026-06-02T11:12:18+00:00",
+      "message_ids": [
+        44083,
+        44085,
+        44086,
+        44097
+      ],
+      "direction": "LONG",
+      "entry_zone": "4519-4529",
+      "sl": "4500",
+      "tp_levels": [
+        "4535",
+        "4540",
+        "4560"
+      ],
+      "result_claim": "'almost hit TP1, took partial profits' then closed manually (44097)",
+      "outcome_claim_class": "UNCLEAR_SMALL",
+      "management_notes": "close worst hold best; closed early",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J02-20260602",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44089,
+      "first_msg_utc": "2026-06-02T13:02:03+00:00",
+      "message_ids": [
+        44089,
+        44090,
+        44092,
+        44097
+      ],
+      "direction": "LONG",
+      "entry_zone": "4505-4514",
+      "sl": "4480",
+      "tp_levels": [
+        "4520",
+        "4540",
+        "4570"
+      ],
+      "result_claim": "'TP almost instantly, then SL entry triggered' (44097)",
+      "outcome_claim_class": "WIN_CLAIM_SMALL",
+      "management_notes": "TP1 + breakeven exit",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J03-20260602",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44102,
+      "first_msg_utc": "2026-06-02T15:58:50+00:00",
+      "message_ids": [
+        44102,
+        44106,
+        44107
+      ],
+      "direction": "LONG",
+      "entry_zone": "4490-4502",
+      "sl": "4468",
+      "tp_levels": [
+        "4508",
+        "4520",
+        "4540",
+        "4560"
+      ],
+      "result_claim": "'Cutting the trade for -40-50 pips' (44106) — EXPLICIT LOSS",
+      "outcome_claim_class": "LOSS_CLAIM",
+      "management_notes": "manual cut before SL; 'win streak is over' (44107)",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J04-20260603",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44142,
+      "first_msg_utc": "2026-06-03T11:48:33+00:00",
+      "message_ids": [
+        44142,
+        44143,
+        44145,
+        44146,
+        44147,
+        44148,
+        44150,
+        44152,
+        44154,
+        44155,
+        44156,
+        44158,
+        44159,
+        44161,
+        44162,
+        44170
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4463-4470",
+      "sl": "4487",
+      "tp_levels": [
+        "4430"
+      ],
+      "result_claim": "waterfall: sl-entry hit then 2-3 re-entries, tp1s, 'Close here' (44170)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "3 executions (44142, re-enter 44147, re-enter 44155/56 low lot)",
+      "media_captured": [
+        {
+          "message_id": 44145,
+          "sha256": "c5469fed95267e06af626a9ab2bcc3b66fe5e03931feec9e948db60527e68c40",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/c5469fed95267e06af626a9ab2bcc3b66fe5e03931feec9e948db60527e68c40.jpg",
+          "bytes": 19684
+        },
+        {
+          "message_id": 44152,
+          "sha256": "bb9d29d4bde5d4af5d7534b708a010ab641362d1828cf24b8c180f7debda8b2b",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/bb9d29d4bde5d4af5d7534b708a010ab641362d1828cf24b8c180f7debda8b2b.jpg",
+          "bytes": 21589
+        },
+        {
+          "message_id": 44158,
+          "sha256": "16aab43f533973129fbe906c56deb5b5c4c666c80c4e0ee35b9a31a4e22bf1fc",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/16aab43f533973129fbe906c56deb5b5c4c666c80c4e0ee35b9a31a4e22bf1fc.jpg",
+          "bytes": 19107
+        },
+        {
+          "message_id": 44159,
+          "sha256": "3261ab1eda77743a81510665b4a25bc83833438a8edfa6fc07f40f2bb8a9d3ca",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/3261ab1eda77743a81510665b4a25bc83833438a8edfa6fc07f40f2bb8a9d3ca.jpg",
+          "bytes": 19279
+        },
+        {
+          "message_id": 44161,
+          "sha256": "e903a5300d347c3f574d75c5a6ddb89b346ce76e3241ed08e62ba728b169320f",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/e903a5300d347c3f574d75c5a6ddb89b346ce76e3241ed08e62ba728b169320f.jpg",
+          "bytes": 18691
+        },
+        {
+          "message_id": 44162,
+          "sha256": "a0f6c46ddc180966af23204193509552098078234fcd4e7e283afafa41407418",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/a0f6c46ddc180966af23204193509552098078234fcd4e7e283afafa41407418.jpg",
+          "bytes": 19727
+        },
+        {
+          "message_id": 44170,
+          "sha256": "cb6797fd10c69a51fe05da2ac2339585fd0680b841bfdcc4cd6f450ee6dde93e",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/cb6797fd10c69a51fe05da2ac2339585fd0680b841bfdcc4cd6f450ee6dde93e.jpg",
+          "bytes": 19558
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J05-20260603",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44173,
+      "first_msg_utc": "2026-06-03T14:12:56+00:00",
+      "message_ids": [
+        44173,
+        44175,
+        44176,
+        44181
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4456-4462",
+      "sl": "4480",
+      "tp_levels": [
+        "4440",
+        "4410"
+      ],
+      "result_claim": "50 pips tp1 (44175); '100 pips sl enty' (44181)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "don't risk profits (44174)",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J06-20260603",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44198,
+      "first_msg_utc": "2026-06-03T17:52:04+00:00",
+      "message_ids": [
+        44198,
+        44200,
+        44202,
+        44205
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4440-4446",
+      "sl": "4470",
+      "tp_levels": [
+        "4436",
+        "4429",
+        "4420",
+        "4400"
+      ],
+      "result_claim": "'Tp 1 hit' (44200); 'close in profit or play it out' (44205)",
+      "outcome_claim_class": "WIN_CLAIM_SMALL",
+      "management_notes": "evening trade; day recap 'Gold Trades Recap (5X)' (44203)",
+      "media_captured": [
+        {
+          "message_id": 44202,
+          "sha256": "074764c8e46589e2926e7e4ff3996a6d5df1f6c96e3af04c1e9ce84683ee650f",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/074764c8e46589e2926e7e4ff3996a6d5df1f6c96e3af04c1e9ce84683ee650f.jpg",
+          "bytes": 18319
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J07-20260604",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44223,
+      "first_msg_utc": "2026-06-04T06:03:34+00:00",
+      "message_ids": [
+        44223,
+        44224,
+        44233,
+        44236,
+        44238,
+        44239,
+        44244
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4474-4485",
+      "sl": "4515",
+      "tp_levels": [
+        "4461",
+        "4445",
+        "4420"
+      ],
+      "result_claim": "tp1 hit (44236/44238); sl to entry (44239); still in (44244)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "copy-account scalps same day EXCLUDED (44227/44228/44234 '2 wins on the bot')",
+      "media_captured": [
+        {
+          "message_id": 44236,
+          "sha256": "119732d26824ab5caebfa3f168326f59185fe638da624f8dd698d4e1bc875e7c",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/119732d26824ab5caebfa3f168326f59185fe638da624f8dd698d4e1bc875e7c.jpg",
+          "bytes": 18717
+        },
+        {
+          "message_id": 44238,
+          "sha256": "aa69143362784d10ac7ee8fa278a39d11defd58f3d87b3d852555111e1f4c619",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/aa69143362784d10ac7ee8fa278a39d11defd58f3d87b3d852555111e1f4c619.jpg",
+          "bytes": 18765
+        },
+        {
+          "message_id": 44244,
+          "sha256": "6baa55df04a44294797357b36206a69eeee2be8806218082d5919d6154d78572",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/6baa55df04a44294797357b36206a69eeee2be8806218082d5919d6154d78572.jpg",
+          "bytes": 17345
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J08-20260604",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44248,
+      "first_msg_utc": "2026-06-04T11:10:09+00:00",
+      "message_ids": [
+        44248,
+        44249,
+        44252,
+        44253,
+        44255
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4479-4488",
+      "sl": "4515",
+      "tp_levels": [
+        "4470",
+        "4445",
+        "4420"
+      ],
+      "result_claim": "'close for a small loss... 1 win, 1 loss today' (44255) — EXPLICIT LOSS",
+      "outcome_claim_class": "LOSS_CLAIM",
+      "management_notes": "manual close before SL ('just missed our sl')",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J09-20260611",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44503,
+      "first_msg_utc": "2026-06-11T07:58:30+00:00",
+      "message_ids": [
+        44503,
+        44504,
+        44505,
+        44506,
+        44507,
+        44508
+      ],
+      "direction": "LONG",
+      "entry_zone": "4090-4103",
+      "sl": "4080",
+      "tp_levels": [
+        "4190"
+      ],
+      "result_claim": "tp1 70 pips (44505); 'Sl entry hit' (44508)",
+      "outcome_claim_class": "WIN_CLAIM_SCRATCH",
+      "management_notes": "HIGH RISK; breakeven exit after 70 pips",
+      "media_captured": [
+        {
+          "message_id": 44505,
+          "sha256": "5a34301fcf2655b761136535d655bbfc698244557259b7dc59c5daa7263ac5c3",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/5a34301fcf2655b761136535d655bbfc698244557259b7dc59c5daa7263ac5c3.jpg",
+          "bytes": 18553
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J10-20260611",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44508,
+      "first_msg_utc": "2026-06-11T08:22:49+00:00",
+      "message_ids": [
+        44508,
+        44509,
+        44534
+      ],
+      "direction": "LONG",
+      "entry_zone": "3-point layered re-entry (zone not restated)",
+      "sl": "4060",
+      "tp_levels": [],
+      "result_claim": "never explicitly closed; 44534 'Sorry it didn't happen on the first trade' + 'wins and losses are part of the game' implies loss",
+      "outcome_claim_class": "UNCLEAR_IMPLIED_LOSS",
+      "management_notes": "sl moved to 4060 (44509); outcome not explicitly posted",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J11-20260611",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44510,
+      "first_msg_utc": "2026-06-11T13:58:19+00:00",
+      "message_ids": [
+        44510,
+        44511,
+        44513,
+        44520,
+        44525,
+        44526,
+        44533,
+        44534,
+        44535
+      ],
+      "direction": "LONG",
+      "entry_zone": "not stated ('Recovery trade: Gold buy')",
+      "sl": "4035",
+      "tp_levels": [],
+      "result_claim": "'500 pips' (44526) -> '800 pips' (44534), out (44535)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "recovery trade; entry zone never numerically stated",
+      "media_captured": [
+        {
+          "message_id": 44520,
+          "sha256": "d83393bc60d62f3191ff693ba4a6990270db88e65180f32ac5b5418d670b93f7",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/d83393bc60d62f3191ff693ba4a6990270db88e65180f32ac5b5418d670b93f7.jpg",
+          "bytes": 20296
+        },
+        {
+          "message_id": 44525,
+          "sha256": "6beaa55cd64e8b2f42c4ce1d6fa4703af8d623907f75e8d8708842be44da3000",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/6beaa55cd64e8b2f42c4ce1d6fa4703af8d623907f75e8d8708842be44da3000.jpg",
+          "bytes": 19822
+        },
+        {
+          "message_id": 44533,
+          "sha256": "5f792fa140fadf2c8400865a7d4c0dc27ebb935554362efafbdbc17b552e4d4e",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/5f792fa140fadf2c8400865a7d4c0dc27ebb935554362efafbdbc17b552e4d4e.jpg",
+          "bytes": 22285
+        },
+        {
+          "message_id": 44535,
+          "sha256": "eefd2f43ab81d7212272c7702df32f3840db96c3cb1abbc97b765f2d12f6d767",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/eefd2f43ab81d7212272c7702df32f3840db96c3cb1abbc97b765f2d12f6d767.jpg",
+          "bytes": 23133
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J12-20260615",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44666,
+      "first_msg_utc": "2026-06-15T09:40:01+00:00",
+      "message_ids": [
+        44666,
+        44667,
+        44668,
+        44669
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4339-4345",
+      "sl": "4360",
+      "tp_levels": [
+        "4334",
+        "4329",
+        "4319"
+      ],
+      "result_claim": "50 pips (44667); 'SL at entry hit... still up 50-60 pips' (44669)",
+      "outcome_claim_class": "WIN_CLAIM_SCRATCH",
+      "management_notes": "scalp",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J13-20260615",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44680,
+      "first_msg_utc": "2026-06-15T14:04:10+00:00",
+      "message_ids": [
+        44680,
+        44681,
+        44682,
+        44683,
+        44684,
+        44685,
+        44686,
+        44687
+      ],
+      "direction": "LONG",
+      "entry_zone": "4350-4355",
+      "sl": "4330",
+      "tp_levels": [
+        "4364",
+        "4372",
+        "4390"
+      ],
+      "result_claim": "tp1 instantly (44682); 'SL at entry hit after a 100-pip move' (44687)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "HIGH RISK",
+      "media_captured": [
+        {
+          "message_id": 44683,
+          "sha256": "f393f56a251b53b5fa9020563597464e3b5ce5d4abe3e5d88852bcfbea168dbd",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/f393f56a251b53b5fa9020563597464e3b5ce5d4abe3e5d88852bcfbea168dbd.jpg",
+          "bytes": 20966
+        },
+        {
+          "message_id": 44684,
+          "sha256": "ac6ce6af2c486c7758db0bc14e2f47cb4c7835ce877a0576b49ba4e60d12f7c9",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/ac6ce6af2c486c7758db0bc14e2f47cb4c7835ce877a0576b49ba4e60d12f7c9.jpg",
+          "bytes": 20335
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J14-20260615",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44688,
+      "first_msg_utc": "2026-06-15T14:35:08+00:00",
+      "message_ids": [
+        44688,
+        44689,
+        44690,
+        44691
+      ],
+      "direction": "LONG",
+      "entry_zone": "4348-4358",
+      "sl": "4330",
+      "tp_levels": [],
+      "result_claim": "'SL at entry hit again after a 100-pip move' (44691)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "re-entry of J13 idea",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J15-20260615",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44692,
+      "first_msg_utc": "2026-06-15T15:06:22+00:00",
+      "message_ids": [
+        44692,
+        44693,
+        44694,
+        44695,
+        44696
+      ],
+      "direction": "LONG",
+      "entry_zone": "4346-4356",
+      "sl": "4330",
+      "tp_levels": [],
+      "result_claim": "'SL to entry was hit' (44696) — '4 scalps'",
+      "outcome_claim_class": "WIN_CLAIM_SCRATCH",
+      "management_notes": "re-entry",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J16-20260615",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44697,
+      "first_msg_utc": "2026-06-15T15:37:15+00:00",
+      "message_ids": [
+        44697,
+        44698,
+        44699,
+        44700,
+        44701
+      ],
+      "direction": "LONG",
+      "entry_zone": "4340-4350",
+      "sl": "4330",
+      "tp_levels": [
+        "4364",
+        "4370",
+        "4390"
+      ],
+      "result_claim": "'SL to entry was hit again' (44701)",
+      "outcome_claim_class": "SCRATCH_CLAIM",
+      "management_notes": "low lot re-entry",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J17-20260615",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44701,
+      "first_msg_utc": "2026-06-15T16:42:35+00:00",
+      "message_ids": [
+        44701,
+        44704,
+        44707
+      ],
+      "direction": "LONG",
+      "entry_zone": "4330-4339",
+      "sl": "4318",
+      "tp_levels": [],
+      "result_claim": "'SL was hit on this trade. Result: 6 trades, 1 loss.' (44707) — EXPLICIT LOSS",
+      "outcome_claim_class": "LOSS_CLAIM",
+      "management_notes": "last re-entry; full SL",
+      "media_captured": [
+        {
+          "message_id": 44704,
+          "sha256": "689e696afdc59aaa721ecab4e01e19f3ff9af7910d5f8f9f785c3874db85cca9",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/689e696afdc59aaa721ecab4e01e19f3ff9af7910d5f8f9f785c3874db85cca9.jpg",
+          "bytes": 222866
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J18-20260616",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44731,
+      "first_msg_utc": "2026-06-16T09:40:22+00:00",
+      "message_ids": [
+        44731,
+        44732,
+        44733,
+        44734,
+        44735
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4346-4356",
+      "sl": "4372",
+      "tp_levels": [],
+      "result_claim": "tp1, 'out of the trade after securing tp 1' (44735); per 44752 'Trade 1: 50-60 pips'",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "scalp",
+      "media_captured": [
+        {
+          "message_id": 44733,
+          "sha256": "25212a01515063447fe5c7185fb6d55676715e783e0391f1b3675d1bd3e90e8f",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/25212a01515063447fe5c7185fb6d55676715e783e0391f1b3675d1bd3e90e8f.jpg",
+          "bytes": 18565
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J19-20260616",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44736,
+      "first_msg_utc": "2026-06-16T10:10:08+00:00",
+      "message_ids": [
+        44736,
+        44737,
+        44739,
+        44740,
+        44741,
+        44743,
+        44745,
+        44746,
+        44749,
+        44752,
+        44753
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4346-4356",
+      "sl": "4375",
+      "tp_levels": [],
+      "result_claim": "'we have 100 pips so tp 2' (44746); 'SL to entry hit after a 130-pips' (44749); per 44752 'Trade 2: 130 pips'",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "'8 trades this week with only 1 loss' (44753)",
+      "media_captured": [
+        {
+          "message_id": 44741,
+          "sha256": "1c172acfe19e85febbb6e0a9c5e1cf1f2c05c383e4f5ba6027a1fb50d257164c",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/1c172acfe19e85febbb6e0a9c5e1cf1f2c05c383e4f5ba6027a1fb50d257164c.jpg",
+          "bytes": 19385
+        },
+        {
+          "message_id": 44743,
+          "sha256": "07806314cd07e12a95c566e8ea5343cafddfaa5b23d8a1e2f9503f0db4da46af",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/07806314cd07e12a95c566e8ea5343cafddfaa5b23d8a1e2f9503f0db4da46af.jpg",
+          "bytes": 20657
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J20-20260617",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44765,
+      "first_msg_utc": "2026-06-17T08:57:07+00:00",
+      "message_ids": [
+        44765,
+        44766,
+        44769,
+        44770,
+        44771,
+        44772,
+        44773,
+        44776,
+        44778,
+        44781
+      ],
+      "direction": "LONG",
+      "entry_zone": "4315-4323",
+      "sl": "4295",
+      "tp_levels": [
+        "4328",
+        "4332",
+        "4345"
+      ],
+      "result_claim": "'100 pips take tp 2' (44773); 'tp 1-2 hit' (44776); 'sl entry hit after tp 2' (44781)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "",
+      "media_captured": [
+        {
+          "message_id": 44770,
+          "sha256": "8d8d7bb86e59e6965edc37c32f6abdd099268c6a1b9c160b64b71dedc22a4a9f",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/8d8d7bb86e59e6965edc37c32f6abdd099268c6a1b9c160b64b71dedc22a4a9f.jpg",
+          "bytes": 19377
+        },
+        {
+          "message_id": 44772,
+          "sha256": "605a12d85a080d0e25781be8ed9fd29e813068445099e1a0db0c363775a53922",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/605a12d85a080d0e25781be8ed9fd29e813068445099e1a0db0c363775a53922.jpg",
+          "bytes": 20515
+        },
+        {
+          "message_id": 44773,
+          "sha256": "0de266497ed3a1889d6866f7ab605b874c5438ed320308f20ab557978d26ccfa",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/0de266497ed3a1889d6866f7ab605b874c5438ed320308f20ab557978d26ccfa.jpg",
+          "bytes": 19720
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J21-20260618",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44834,
+      "first_msg_utc": "2026-06-18T10:18:39+00:00",
+      "message_ids": [
+        44834,
+        44835,
+        44836,
+        44837,
+        44838,
+        44839,
+        44841,
+        44842
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4269-4280",
+      "sl": "4300",
+      "tp_levels": [],
+      "result_claim": "'just missed my sl' (44837) then '110 pips tp2' (44838), tp3 (44839), '200 pips' (44841)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "NEAR-SL: 'if it hit yours wait for the next trade' — followers may have been stopped",
+      "media_captured": [
+        {
+          "message_id": 44835,
+          "sha256": "13c854499c4818448c2440beee9384565dc5c4a5b067bdafa1ff17f804adfaa6",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/13c854499c4818448c2440beee9384565dc5c4a5b067bdafa1ff17f804adfaa6.jpg",
+          "bytes": 18730
+        },
+        {
+          "message_id": 44836,
+          "sha256": "3a0014c614488e45df4c94f74ca3dd390404866c1cfa28273a84c71fcab74a52",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/3a0014c614488e45df4c94f74ca3dd390404866c1cfa28273a84c71fcab74a52.jpg",
+          "bytes": 19231
+        },
+        {
+          "message_id": 44837,
+          "sha256": "1ca53528f85b8706f93f8c80f80468a221f5d5ac528e66c2fbdf4004dbd0020a",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/1ca53528f85b8706f93f8c80f80468a221f5d5ac528e66c2fbdf4004dbd0020a.jpg",
+          "bytes": 27609
+        },
+        {
+          "message_id": 44838,
+          "sha256": "86b3f2506f84cdfc0da8f9b03885d8f49ea58724d0b24d09ee8d048596ea604d",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/86b3f2506f84cdfc0da8f9b03885d8f49ea58724d0b24d09ee8d048596ea604d.jpg",
+          "bytes": 19501
+        },
+        {
+          "message_id": 44839,
+          "sha256": "be49c2bed172172012de1305b6987b809592d50b136b2db334fb83c7bf3559c1",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/be49c2bed172172012de1305b6987b809592d50b136b2db334fb83c7bf3559c1.jpg",
+          "bytes": 20116
+        },
+        {
+          "message_id": 44841,
+          "sha256": "28559f2710d7fd34d2ecf1e5483daab8d4700d097719ed362e106942cc36d85f",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/28559f2710d7fd34d2ecf1e5483daab8d4700d097719ed362e106942cc36d85f.jpg",
+          "bytes": 19365
+        },
+        {
+          "message_id": 44842,
+          "sha256": "4d7d66e970353b75f97682dd36a5e1cdf615e80f1c4146d73b63a71e5c4d0721",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/4d7d66e970353b75f97682dd36a5e1cdf615e80f1c4146d73b63a71e5c4d0721.jpg",
+          "bytes": 20469
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J22-20260618",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44843,
+      "first_msg_utc": "2026-06-18T11:12:51+00:00",
+      "message_ids": [
+        44843,
+        44844,
+        44845,
+        44846,
+        44847,
+        44848,
+        44849,
+        44851
+      ],
+      "direction": "LONG",
+      "entry_zone": "4231-4241",
+      "sl": "4318 AS POSTED (impossible for a LONG; likely typo for 4218)",
+      "tp_levels": [],
+      "result_claim": "tp1 (44844/45); risk-free (44849); 'sl entry hit on the BUY' (44851)",
+      "outcome_claim_class": "WIN_CLAIM_SCRATCH",
+      "management_notes": "SL as posted is above entry — recorded verbatim, flagged",
+      "media_captured": [
+        {
+          "message_id": 44845,
+          "sha256": "51f8a0215ddfcfe9f861d8a5ad9df02eff0b8a83c1127f6d39393f0da0451659",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/51f8a0215ddfcfe9f861d8a5ad9df02eff0b8a83c1127f6d39393f0da0451659.jpg",
+          "bytes": 19160
+        },
+        {
+          "message_id": 44846,
+          "sha256": "e1463a1359f59103715824bbcb603bba6e4cc1be8383f6956a81cda5dda5a58f",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/e1463a1359f59103715824bbcb603bba6e4cc1be8383f6956a81cda5dda5a58f.jpg",
+          "bytes": 19140
+        },
+        {
+          "message_id": 44847,
+          "sha256": "45b4b17a498b4d3bee35e59041882e95fc808f6304136db8717bdc27bd87ef24",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/45b4b17a498b4d3bee35e59041882e95fc808f6304136db8717bdc27bd87ef24.jpg",
+          "bytes": 37510
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J23-20260619",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 44898,
+      "first_msg_utc": "2026-06-19T09:35:25+00:00",
+      "message_ids": [
+        44898,
+        44902,
+        44903,
+        44906,
+        44909
+      ],
+      "direction": "LONG",
+      "entry_zone": "4154-4164",
+      "sl": "4135",
+      "tp_levels": [],
+      "result_claim": "'closed all trades some in profit, some at a loss... I'll count it as a loss overall' (44906/44909) — EXPLICIT LOSS",
+      "outcome_claim_class": "LOSS_CLAIM",
+      "management_notes": "'win streak is over' (again)",
+      "media_captured": [],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J24-20260623",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": null,
+      "first_msg_utc": "2026-06-23T10:20:43+00:00",
+      "message_ids": [
+        45014,
+        45015,
+        45016,
+        45017,
+        45018,
+        45021
+      ],
+      "direction": "SHORT",
+      "entry_zone": "NOT CAPTURED (sellzone ~4140 per 45014)",
+      "sl": "entry (sl moved to entry)",
+      "tp_levels": [],
+      "result_claim": "'70 pips take tp 1' (45017); '100 pips tp 2' (45018); '170 pips' (45021)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "ENTRY MESSAGE MISSING from gold-trades — mgmt-only evidence; entry likely posted elsewhere/deleted",
+      "media_captured": [
+        {
+          "message_id": 45015,
+          "sha256": "70dea261ccc1c9e1c15be328101201116b34a76ca463b05afa901f5b0e890e2d",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/70dea261ccc1c9e1c15be328101201116b34a76ca463b05afa901f5b0e890e2d.jpg",
+          "bytes": 18610
+        },
+        {
+          "message_id": 45017,
+          "sha256": "834d69e81dba2752ad71f1bad6832a5c767544b8acd912909ce18ff98eb7e04c",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/834d69e81dba2752ad71f1bad6832a5c767544b8acd912909ce18ff98eb7e04c.jpg",
+          "bytes": 19140
+        },
+        {
+          "message_id": 45018,
+          "sha256": "fb1a0c6459ebcb32255774fddc47de0102c9851f24ac43a6f36c65614f5cfbd7",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/fb1a0c6459ebcb32255774fddc47de0102c9851f24ac43a6f36c65614f5cfbd7.jpg",
+          "bytes": 19292
+        },
+        {
+          "message_id": 45021,
+          "sha256": "451411250c6f3384883b67d64f079451a73942e0ef4d8020452d9a01dccb9869",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/451411250c6f3384883b67d64f079451a73942e0ef4d8020452d9a01dccb9869.jpg",
+          "bytes": 19287
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "NEEDS_HUMAN_REVIEW"
+      }
+    },
+    {
+      "setup_id": "XAU-J25-20260623",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 45024,
+      "first_msg_utc": "2026-06-23T13:55:42+00:00",
+      "message_ids": [
+        45024,
+        45025,
+        45026,
+        45027,
+        45028,
+        45029,
+        45030,
+        45031,
+        45032,
+        45033,
+        45034,
+        45039
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4138-4155",
+      "sl": "4180",
+      "tp_levels": [
+        "4130 (mgmt level)"
+      ],
+      "result_claim": "50 pips (45025); re-enter (45026); '100 pisp' (45030); '130 pips' (45032); 'take tp 3 170 pips' (45034)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "re-entered once; holding 0.5 sl-to-entry into close (45039)",
+      "media_captured": [
+        {
+          "message_id": 45028,
+          "sha256": "9aef2c10072057532a470e84514c2de66117e559f3b3e848ec6b7968d12e0685",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/9aef2c10072057532a470e84514c2de66117e559f3b3e848ec6b7968d12e0685.jpg",
+          "bytes": 19034
+        },
+        {
+          "message_id": 45029,
+          "sha256": "832e2dfa672668fb21b7f0f5a0f961c8b00275805421dae0b469244415a60836",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/832e2dfa672668fb21b7f0f5a0f961c8b00275805421dae0b469244415a60836.jpg",
+          "bytes": 18918
+        },
+        {
+          "message_id": 45032,
+          "sha256": "9f2f0a270039c553ff04e8fe114534fa143745a96b5398eacacb40df813edfac",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/9f2f0a270039c553ff04e8fe114534fa143745a96b5398eacacb40df813edfac.jpg",
+          "bytes": 19357
+        },
+        {
+          "message_id": 45034,
+          "sha256": "008a1620903b870a811644aaf02ecb44b1b916d8283933d8539af30eb1e449c5",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/008a1620903b870a811644aaf02ecb44b1b916d8283933d8539af30eb1e449c5.jpg",
+          "bytes": 19365
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J26-20260624",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 45086,
+      "first_msg_utc": "2026-06-24T14:32:13+00:00",
+      "message_ids": [
+        45086,
+        45087,
+        45089,
+        45090,
+        45093,
+        45095,
+        45097,
+        45099,
+        45102,
+        45116,
+        45117
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4030-4045",
+      "sl": "4130",
+      "tp_levels": [],
+      "result_claim": "'100 pips tp 1' (45087) -> '200 pisp tp 4' (45095) -> '300 pips' (45102) -> '650 pips taking 90% off' (45117)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "HIGH RISK LOW LOT; re-entry plan 4070-4080 stated (45097) but not needed",
+      "media_captured": [
+        {
+          "message_id": 45095,
+          "sha256": "5fa285c2afa3374cc0800165688ef65bbc7d23b9d167c2b4af44266acee05056",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/5fa285c2afa3374cc0800165688ef65bbc7d23b9d167c2b4af44266acee05056.jpg",
+          "bytes": 20828
+        },
+        {
+          "message_id": 45099,
+          "sha256": "9440515473b39cf9863ddaaf74ae1a234bfbe71f2394b4f3a93aeba91eaacaa4",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/9440515473b39cf9863ddaaf74ae1a234bfbe71f2394b4f3a93aeba91eaacaa4.jpg",
+          "bytes": 20286
+        },
+        {
+          "message_id": 45102,
+          "sha256": "b41a044618b3a1ed64cac7833042f6458a8faaf2d337ecc84cc5949c699dc7dd",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/b41a044618b3a1ed64cac7833042f6458a8faaf2d337ecc84cc5949c699dc7dd.jpg",
+          "bytes": 20673
+        },
+        {
+          "message_id": 45116,
+          "sha256": "dac6cc1edea28e0e633bab2a7870c248e586e44384635f38e1b943a229761abe",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/dac6cc1edea28e0e633bab2a7870c248e586e44384635f38e1b943a229761abe.jpg",
+          "bytes": 20867
+        },
+        {
+          "message_id": 45117,
+          "sha256": "62d1a654ab226374719293af2a998c688bc4ba684ad8aa979623f21ce1ed34ba",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/62d1a654ab226374719293af2a998c688bc4ba684ad8aa979623f21ce1ed34ba.jpg",
+          "bytes": 21661
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J27-20260625",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 45150,
+      "first_msg_utc": "2026-06-25T14:42:30+00:00",
+      "message_ids": [
+        45150,
+        45152,
+        45153,
+        45154,
+        45155,
+        45156,
+        45158
+      ],
+      "direction": "LONG",
+      "entry_zone": "4006-4016",
+      "sl": "3970",
+      "tp_levels": [
+        "4022",
+        "4027",
+        "4040",
+        "4065",
+        "open"
+      ],
+      "result_claim": "'300 pips' (45154); hold 25% (45156); leave 10% (45158)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "",
+      "media_captured": [
+        {
+          "message_id": 45153,
+          "sha256": "e6a5244d39478236e79828c08461319182c19fb10f8b820fb493b7a4f04d3df1",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/e6a5244d39478236e79828c08461319182c19fb10f8b820fb493b7a4f04d3df1.jpg",
+          "bytes": 19664
+        },
+        {
+          "message_id": 45156,
+          "sha256": "99b689858d79348d714050995112773b78480b4c082a6de2f7c4eb464c38bde7",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/99b689858d79348d714050995112773b78480b4c082a6de2f7c4eb464c38bde7.jpg",
+          "bytes": 91038
+        },
+        {
+          "message_id": 45158,
+          "sha256": "cd28819a2d5cc3d97c99490b8c6de0f9d835e08804b6777baf191cc6ed79d7f0",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/cd28819a2d5cc3d97c99490b8c6de0f9d835e08804b6777baf191cc6ed79d7f0.jpg",
+          "bytes": 19986
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J28-20260626",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 45195,
+      "first_msg_utc": "2026-06-26T13:58:29+00:00",
+      "message_ids": [
+        45195,
+        45196,
+        45197,
+        45198,
+        45199,
+        45200,
+        45201,
+        45202,
+        45203
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4078-4092",
+      "sl": "4120",
+      "tp_levels": [],
+      "result_claim": "100 pips sl-to-entry (45196); re-enter quarter (45198); tp1 again (45200); 'SL got hit again' (45203 — BE stops)",
+      "outcome_claim_class": "WIN_CLAIM_SCRATCH",
+      "management_notes": "half size high risk; 2 executions with BE stop-outs after profit",
+      "media_captured": [
+        {
+          "message_id": 45202,
+          "sha256": "fb2d3915e02fd8e4fdeb2f9c5c8d1eee9181f04876c63d42f37c50ff53bf3d63",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/fb2d3915e02fd8e4fdeb2f9c5c8d1eee9181f04876c63d42f37c50ff53bf3d63.jpg",
+          "bytes": 19191
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J29-20260626",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 45203,
+      "first_msg_utc": "2026-06-26T14:12:55+00:00",
+      "message_ids": [
+        45203,
+        45204,
+        45205,
+        45206,
+        45207,
+        45208,
+        45209,
+        45210,
+        45213,
+        45214,
+        45215,
+        45217,
+        45218
+      ],
+      "direction": "SHORT",
+      "entry_zone": "4084-4094",
+      "sl": "4120",
+      "tp_levels": [],
+      "result_claim": "'90 pips take 2 tps' (45208); '100+ pips' (45210); '150 pips' (45215); 'missed by 1 pip... most of you got stopped out at entry. I'll exit' (45217)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "followers likely BE-stopped; his exit in profit; 'zero losses' week claim (45239)",
+      "media_captured": [
+        {
+          "message_id": 45206,
+          "sha256": "da8f24cb1b1ed2c839444606af9b488600c48853c78ae2a4d14e8b7640a29668",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/da8f24cb1b1ed2c839444606af9b488600c48853c78ae2a4d14e8b7640a29668.jpg",
+          "bytes": 19332
+        },
+        {
+          "message_id": 45209,
+          "sha256": "82ec1dfbced8c02ea7d9150ee0c4e08df7ef194d25af37e3703ffd36954b3708",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/82ec1dfbced8c02ea7d9150ee0c4e08df7ef194d25af37e3703ffd36954b3708.jpg",
+          "bytes": 23139
+        },
+        {
+          "message_id": 45210,
+          "sha256": "f03786d7ad500aaa515fa4d7c9ebe48bb998cbee6ed3c2f3be3fac54d7f6d301",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/f03786d7ad500aaa515fa4d7c9ebe48bb998cbee6ed3c2f3be3fac54d7f6d301.jpg",
+          "bytes": 19220
+        },
+        {
+          "message_id": 45214,
+          "sha256": "60e9fe15c4800039446aa54bf514e178a0a5b67515df2d25c5f656e165cd92d4",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/60e9fe15c4800039446aa54bf514e178a0a5b67515df2d25c5f656e165cd92d4.jpg",
+          "bytes": 19192
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    },
+    {
+      "setup_id": "XAU-J30-20260629",
+      "status": "RESULT_CLAIM_ONLY",
+      "entry_message_id": 45268,
+      "first_msg_utc": "2026-06-29T08:59:32+00:00",
+      "message_ids": [
+        45268,
+        45269,
+        45270,
+        45271,
+        45274,
+        45275,
+        45276,
+        45278,
+        45279,
+        45280,
+        45281,
+        45284,
+        45285,
+        45287
+      ],
+      "direction": "LONG",
+      "entry_zone": "4035-4045",
+      "sl": "4010",
+      "tp_levels": [
+        "4050",
+        "4055",
+        "4062",
+        "4080",
+        "4090"
+      ],
+      "result_claim": "tp1 (45270); '170 pips 50%' (45278); '200 pips' (45279); '240 pips' (45281); out 75% (45285); 'SL entry hit out of the trade' (45287)",
+      "outcome_claim_class": "WIN_CLAIM",
+      "management_notes": "overlaps start of live local capture",
+      "media_captured": [
+        {
+          "message_id": 45271,
+          "sha256": "ae221b0f55f7ceee9e48ed46f4540f2b5e9ca162c3b8bc5e53f71b11f1a646ca",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/ae221b0f55f7ceee9e48ed46f4540f2b5e9ca162c3b8bc5e53f71b11f1a646ca.jpg",
+          "bytes": 19756
+        },
+        {
+          "message_id": 45274,
+          "sha256": "087f82dd83042c0330113187fa2f5e07fc8bf3f8755295a120c9ac88c1ac6080",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/087f82dd83042c0330113187fa2f5e07fc8bf3f8755295a120c9ac88c1ac6080.jpg",
+          "bytes": 19104
+        },
+        {
+          "message_id": 45278,
+          "sha256": "10b4653e17aa9a8ced494835e4c5c0fe0508039b4feb2ed68e9bace0ea849b1d",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/10b4653e17aa9a8ced494835e4c5c0fe0508039b4feb2ed68e9bace0ea849b1d.jpg",
+          "bytes": 19391
+        },
+        {
+          "message_id": 45279,
+          "sha256": "bef72df03ee55ce0dfef093f1ca333f2cabe35d7fa5aceb0383adc661049811a",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/bef72df03ee55ce0dfef093f1ca333f2cabe35d7fa5aceb0383adc661049811a.jpg",
+          "bytes": 19739
+        },
+        {
+          "message_id": 45281,
+          "sha256": "e6946aec0771ee2c9629c2da2ab12cf3313e8687506ac399c0b9ada0d321beb0",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/e6946aec0771ee2c9629c2da2ab12cf3313e8687506ac399c0b9ada0d321beb0.jpg",
+          "bytes": 20572
+        },
+        {
+          "message_id": 45285,
+          "sha256": "da6929c1d55280f9e1d67ee254b16dd896fcd8112eeb6a9f4f10f9d5ae8bc749",
+          "path": "campaign_extractor/prospective/data/prospective_media_v1/da6929c1d55280f9e1d67ee254b16dd896fcd8112eeb6a9f4f10f9d5ae8bc749.jpg",
+          "bytes": 20894
+        }
+      ],
+      "fable_extraction_validated": {
+        "review_only": true,
+        "executable": false,
+        "trade_ready": false,
+        "verdict": "EXTRACTED"
+      }
+    }
+  ],
+  "validator": {
+    "validated": 30,
+    "rejected": 0
+  },
+  "summary": {
+    "distinct_setups": 30,
+    "entry_executions_including_re-entries": 33,
+    "active_trading_days": 14,
+    "outcome_claim_classes": {
+      "UNCLEAR_SMALL": 1,
+      "WIN_CLAIM_SMALL": 2,
+      "LOSS_CLAIM": 4,
+      "WIN_CLAIM": 16,
+      "WIN_CLAIM_SCRATCH": 5,
+      "UNCLEAR_IMPLIED_LOSS": 1,
+      "SCRATCH_CLAIM": 1
+    },
+    "explicit_loss_claims": [
+      "XAU-J03-20260602",
+      "XAU-J08-20260604",
+      "XAU-J17-20260615",
+      "XAU-J23-20260619"
+    ],
+    "implied_loss": [
+      "XAU-J10-20260611"
+    ],
+    "june_claim_comparison": {
+      "claimed": "22 trades, 2 losers",
+      "reconstructed": "30 distinct setups (33 entry executions) across 14 active days; 4 EXPLICIT self-admitted losses + 1 implied + ~6 breakeven scratches",
+      "verdict": "CONTRADICTED (loss count: >=4 admitted vs 2 claimed); trade count ~consistent under setup-idea counting (24-30 vs 22)"
+    },
+    "setup_linked_photos": 62
+  }
+}

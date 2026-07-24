@@ -1,0 +1,109 @@
+{
+  "comparison_id": "FP-CAMPAIGN-004-vs-STATE-MACHINE-v0.1",
+  "state_machine_ref": "FAROUK_STATE_MACHINE_SPEC_v0.1",
+  "note": "Which observed transitions the campaign supports. Terminal states NOT forced where evidence is absent. Alpha detector reaches at most QUALIFIED_CANDIDATE; execution/campaign lifecycle is REFERENCE_ONLY.",
+  "observed_transitions": [
+    {
+      "state_or_transition": "STRUCTURE_FOUND",
+      "supported": "SUPPORTED",
+      "evidence": "H4 BOS + H1 nBOS + 3m OB + 5m OB identified (Discord + video)",
+      "note": ""
+    },
+    {
+      "state_or_transition": "ZONE_REGISTERED",
+      "supported": "SUPPORTED",
+      "evidence": "signal zone 4030-4045 + OB zones registered; drawn scenario",
+      "note": ""
+    },
+    {
+      "state_or_transition": "ARMED",
+      "supported": "SUPPORTED",
+      "evidence": "signal posted 15:32; setup active",
+      "note": ""
+    },
+    {
+      "state_or_transition": "ENTRY_ZONE_ACTIVE",
+      "supported": "SUPPORTED",
+      "evidence": "price entered 4030-4045; official fill 4029.76",
+      "note": ""
+    },
+    {
+      "state_or_transition": "BREAKOUT / ASIA_BREAK",
+      "supported": "SUPPORTED",
+      "evidence": "panel Asia break=LOW (verified 3m + 4H)",
+      "note": ""
+    },
+    {
+      "state_or_transition": "TP1_REACHED",
+      "supported": "SUPPORTED",
+      "evidence": "'100 pips tp 1'; video 'TP1 is secured, took more than TP1'",
+      "note": ""
+    },
+    {
+      "state_or_transition": "BREAKEVEN_ELIGIBLE",
+      "supported": "SUPPORTED",
+      "evidence": "'move sl to entry' at 100 pips; video '50 pips stop to entry'",
+      "note": ""
+    },
+    {
+      "state_or_transition": "PARTIAL_SCALE_OUT",
+      "supported": "SUPPORTED",
+      "evidence": "'im taking 50% off now'; lot 1.0->0.5 on the card",
+      "note": ""
+    },
+    {
+      "state_or_transition": "RUNNER_ACTIVE",
+      "supported": "SUPPORTED",
+      "evidence": "sell 0.5 remaining (15:58), 'trade is risk-free'",
+      "note": ""
+    },
+    {
+      "state_or_transition": "CONTINGENCY_ZONE_REGISTERED",
+      "supported": "SUPPORTED",
+      "evidence": "4070-4080 (pref 4070-75) unmitigated H1 OB registered + drawn",
+      "note": ""
+    },
+    {
+      "state_or_transition": "CONTINGENCY_ARMED",
+      "supported": "SUPPORTED",
+      "evidence": "ARMED_CONTINGENCY; pre-declared re-entry plan; video 'maybe another sell later today'",
+      "note": ""
+    },
+    {
+      "state_or_transition": "COMPLETED",
+      "supported": "NOT_SUPPORTED",
+      "evidence": "no final runner closure shown -> do NOT force COMPLETED",
+      "note": ""
+    },
+    {
+      "state_or_transition": "INVALIDATED",
+      "supported": "NOT_SUPPORTED",
+      "evidence": "not stopped; SL never hit in the evidence",
+      "note": ""
+    },
+    {
+      "state_or_transition": "EXPIRED",
+      "supported": "NOT_SUPPORTED",
+      "evidence": "no expiry observed",
+      "note": ""
+    }
+  ],
+  "specific_assessments": {
+    "CHoCH_absent_while_valid": "YES — 3m panel CHoCH=X while the short setup was valid and moved favourably. Supports Invariant-adjacent finding that CHoCH is not a universal guard.",
+    "CHoCH_setup_family_dependent": "SUPPORTED (one more case) — qualification here came from BOS + multi-TF OB confluence, not CHoCH. Consistent with SFP_REVERSAL/ORB families not requiring CHoCH.",
+    "multi_TF_OB_confluence_supplied_qualification": "YES — H4 BOS + H1 nBOS + 3m OB + 5m OB is the stated qualifier (maps to STRUCTURE_FOUND -> ZONE_REGISTERED -> ARMED -> QUALIFIED_CANDIDATE in the STRUCTURAL_SETUP/QUALIFICATION regions).",
+    "preferred_H1_OB_quality_hierarchy": "YES — the unmitigated H1 OB (4070-75, origin of the move) is explicitly ranked above the entry zone; implies a QUALITY grading the state machine currently lacks (ob_fresh + HTF-origin + unmitigated).",
+    "contingency_pre_planned_not_recovery": "YES — declared in advance + drawn, before any stop -> CONTINGENCY_ARMED as a planned parallel setup identity, NOT a post-INVALIDATED resurrection (respects Invariant I-4).",
+    "50pct_scaleout_breakeven_matches_teaching": "YES — TP1 -> SL-to-entry -> 50% off -> runner matches the FP-EDU breakeven + partial-scale teaching and the Whale Room Guide 'advanced' partial style."
+  },
+  "blocker_narrowing": {
+    "F_CONFLUENCE_UNKNOWN": "PARTIALLY_NARROWED — supplies a concrete EXPLICIT_CAMPAIGN_CONFLUENCE_EXAMPLE (H4 BOS + H1 nBOS + 3m OB + 5m OB). This informs the confluence guard with a worked instance but n=1 does NOT set a universal threshold; the blocker is NOT resolved.",
+    "F_CHOCH_UNIVERSALITY": "NARROWED — evidence that CHoCH is NOT a universal required guard (C003 + C004 both valid with CHoCH=X on entry TF).",
+    "F_TZ_UNKNOWN": "NOT_NARROWED — chart timezone unlabelled here.",
+    "F_REPAINT_UNKNOWN": "NOT_NARROWED — historical video cannot establish repaint/timing."
+  },
+  "terminal_state_reached_by_alpha": "up to QUALIFIED_CANDIDATE (observation). Everything from entry onward (TP1/BE/scale/runner/contingency execution) is CAMPAIGN_LIFECYCLE_REFERENCE_ONLY — outside the Alpha detector; NO execution modelled.",
+  "source_asset_ids": [
+    "sa-e576af86dfbd4158"
+  ]
+}

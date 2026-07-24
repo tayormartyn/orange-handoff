@@ -1,0 +1,27 @@
+{
+  "contract_id": "objective_lane_contract_v0_1",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE",
+  "isolation_rule": "No records, performance results, or policy decisions may cross-contaminate objectives. Each objective keeps its own frozen artifacts; the router tags every node with its objective_lane.",
+  "objectives": {
+    "OBJECTIVE_A_FOLLOWER": {
+      "definition": "mirror Farouk's published follower method as-is",
+      "frozen": ["Constitution v0.1 strict lane (sha 7bce618f...)", "F001/F002 outcomes"],
+      "research_only": ["DOCUMENTED_WHALEROOM_FOLLOWER_POLICY_v0_1 comparator"],
+      "router_may": "annotate context around published zone; MUST NOT modify follower entries"},
+    "OBJECTIVE_B_ENHANCED_FOLLOWER": {
+      "definition": "keep Farouk's published DIRECTION + ZONE, but study optional refined entries",
+      "candidates_research_only": ["OTE pullback", "reactive-confirmation entry", "refined-entry policies"],
+      "router_may": "enumerate refined-entry candidates as SHADOW; MUST NOT select one or route it"},
+    "OBJECTIVE_C_INDEPENDENT": {
+      "definition": "Orange derives regime/liquidity/POI/confirmation/entry WITHOUT relying on Farouk's published zone",
+      "inputs": "causal market features only (no published zone as an input to selection)",
+      "router_may": "produce a blind independent hypothesis (already wired via hypothesis_generator); MUST NOT create live proposals"}
+  },
+  "cross_contamination_guards": [
+    "objective_lane stamped on every router node",
+    "OBJECTIVE_C hypothesis cannot read Farouk's published zone selection as a feature",
+    "no shared performance ledger across objectives",
+    "no objective may promote another's candidate"
+  ],
+  "review_only": true, "executable": false, "observation_only": true
+}

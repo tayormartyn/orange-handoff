@@ -1,0 +1,59 @@
+{
+  "schema_id": "forward_validation_ledger_v0_2",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / APPEND_ONLY",
+  "storage": "farouk_plus/forward_validation_ledger_v0_2.jsonl — one JSON record per line, append-only; corrections are new records with revision+1, never edits",
+  "authority": "outcome_status comes ONLY from the deterministic OHLC matcher (Day-2 semantics); labels come ONLY from detector v0.2 through the ai_review validator + extended forbidden-token guard",
+  "record_fields": {
+    "setup_id": "string — XAU-F###-YYYYMMDD (forward series)",
+    "revision": "int — 1..n, append-only corrections",
+    "message_ids": "int[] — entry + management + result messages captured so far",
+    "timestamp_utc": "string — entry message ISO-8601 UTC",
+    "instrument": "string — XAUUSD only in this lane",
+    "direction": "LONG | SHORT",
+    "entry_zone": "string 'lo-hi' | null if not numerically posted",
+    "sl": "string | null (as posted; verbatim, typos flagged in notes)",
+    "tp_levels": "string[] (as posted; may be empty)",
+    "detector_v0_2_label": "REJECT | WATCH | SHADOW_CANDIDATE_LOW | SHADOW_CANDIDATE_MEDIUM | HUMAN_REVIEW_REQUIRED | EXPIRED_UNREVIEWED",
+    "detector_score": "int",
+    "scoring_features_used": {
+      "attempt_number": "int",
+      "first_attempt_flag": "bool",
+      "re_entry_flag": "bool",
+      "after_1530z_flag": "bool",
+      "caution_language": "bool (safe-named text feature; never produces sizing fields)",
+      "reason_stated_on_arrival": "bool",
+      "claim_quality": "OK | DEGRADED | NO_HISTORY"
+    },
+    "excluded_outcome_side_diagnostics": {
+      "note": "recorded ONLY after outcome matching, marked outcome_side=true, never feed labels",
+      "mae_pips_from_mid": "int | null",
+      "mfe_pips_from_mid": "int | null",
+      "be_stop_language_seen": "bool | null"
+    },
+    "media": "[{message_id, sha256, path}] — captured screenshots (sha256-addressed)",
+    "tv_alert_alignment": "null | {alert_ids: string[], sequence: 'CHoCH/Sweep/A...'} — recorded when the indicator lane fired near the entry",
+    "human_review_status": "QUEUED | REVIEWED_AGREE | REVIEWED_DISAGREE | NOT_QUEUED_REJECT | PENDING",
+    "ohlc_required_window": "{start_utc, end_utc, timeframe: '1m', source: 'PEPPERSTONE_TradingView_export', requested_on, received: bool}",
+    "outcome_status": "VERIFIED_WIN | VERIFIED_LOSS | PARTIAL | CONTRADICTED | AMBIGUOUS_INTRABAR | INSUFFICIENT_DATA | PENDING_OHLC",
+    "outcome_matched_at_utc": "string | null",
+    "claim_vs_achievable": "{claimed_pips: int|null, achievable_pips: int|null, inflation_ratio: float|null} — R6 inputs for future claim_quality",
+    "notes": "string — free text; typos in posts, session context, anything a reviewer needs"
+  },
+  "validation": {
+    "input_packs": "ai_review.schema.validate_evidence_pack",
+    "emitted_records": "ai_review.schema.validate_reviewer_output + extended forbidden-token guard (copy_trade, nano, live, demo_execute, trade_ready, broker_route, account_id, risk_size, ... as keys/labels); safety stamp (review_only=True, executable=False, trade_ready=False) applied by the VALIDATOR only",
+    "forbidden_labels": ["TRADE_READY", "EXECUTE", "ORDER", "LOT_SIZE", "BROKER_ROUTE", "ACCOUNT_ID", "RISK_SIZE", "COPY_TRADE", "NANO", "LIVE", "DEMO_EXECUTE"]
+  },
+  "thresholds_for_out_of_sample_evaluation": {
+    "min_forward_trades": 15,
+    "min_alert_aligned_if_available": 10,
+    "min_sessions": 5,
+    "ohlc_match_sla_hours": 48
+  },
+  "explicitly_not": [
+    "not execution", "not copy trading", "not a nano account connection",
+    "not broker/cTrader/QST connectivity", "not trade-ready",
+    "no gate changes; NOT_INTEGRATION_READY unchanged"
+  ]
+}

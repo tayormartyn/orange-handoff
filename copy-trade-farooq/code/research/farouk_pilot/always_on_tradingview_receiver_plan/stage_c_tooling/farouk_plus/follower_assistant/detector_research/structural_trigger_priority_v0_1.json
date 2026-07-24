@@ -1,0 +1,23 @@
+{
+  "contract_id": "structural_trigger_priority_v0_1",
+  "status": "RESEARCH_HYPOTHESIS / NON_AUTHORITATIVE",
+  "provenance": "Farouk Education (2).pdf p1 verbatim: 'In Order of Importance: 1.Break of Structure 2. FVG Inversion 3. Level Reclaim 4. Swing Failure Pattern (AKA Burj Khalifa pattern)' (AER-007, FP-EDU-028)",
+  "priority_hypothesis": [
+    {"rank": 1, "trigger": "BREAK_OF_STRUCTURE", "note": "strongest per document"},
+    {"rank": 2, "trigger": "FVG_INVERSION"},
+    {"rank": 3, "trigger": "LEVEL_RECLAIM"},
+    {"rank": 4, "trigger": "SWING_FAILURE_PATTERN", "aka": "BURJ_KHALIFA"}
+  ],
+  "two_separate_layers": {
+    "STRUCTURAL_CONFIRMATION": ["BOS", "FVG_INVERSION", "LEVEL_RECLAIM", "SFP"],
+    "EXECUTION_CANDLE_CONFIRMATION": ["ENGULFING (DR-208)", "HAMMER (DR-501)", "SHOOTING_STAR (DR-501)", "REJECTION_CANDLE", "other documented completed-candle triggers"]
+  },
+  "rules": [
+    "priority RANKS structural confirmation methods; it does NOT auto-replace execution-candle confirmation",
+    "do NOT silently substitute one layer for the other",
+    "do NOT require all four structural triggers",
+    "record the STRONGEST causally-available structural trigger AND every lower-priority alternative",
+    "structural priority is a hypothesis to validate prospectively; not a gate"
+  ],
+  "review_only": true, "executable": false, "observation_only": true
+}

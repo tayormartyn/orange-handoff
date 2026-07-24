@@ -1,0 +1,177 @@
+{
+  "rule_version": "v0.1",
+  "common_fields_REQUIRED_on_every_event": [
+    "event_id",
+    "timestamp_utc",
+    "source_timezone",
+    "symbol",
+    "timeframe",
+    "bar_open_time",
+    "bar_close_time",
+    "bid",
+    "ask",
+    "mid",
+    "rule_version",
+    "source_indicator",
+    "evidence_confidence"
+  ],
+  "field_notes": {
+    "source_timezone": "raw TZ of the emitting source; NEVER assumed canonical",
+    "mid": "(bid+ask)/2",
+    "evidence_confidence": "HIGH|MEDIUM|LOW|UNKNOWN",
+    "source_indicator": "[kyle] v1 | [kyle] v2 | price | UNKNOWN — never guessed"
+  },
+  "events": {
+    "BAR_OPENED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "open_price"
+      ]
+    },
+    "BAR_UPDATED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "current_price",
+        "is_intrabar=true",
+        "INTRABAR_WARNING"
+      ]
+    },
+    "BAR_CLOSED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    "SESSION_STARTED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "session_name(Asia|London|NY)",
+        "session_open_utc",
+        "session_def_timezone",
+        "dst_context"
+      ]
+    },
+    "SESSION_RANGE_LOCKED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "session_name",
+        "range_high",
+        "range_low",
+        "range_mid",
+        "window_minutes(=15?)"
+      ]
+    },
+    "PRICE_ENTERED_ZONE": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "zone_id",
+        "zone_kind",
+        "zone_low",
+        "zone_high"
+      ]
+    },
+    "PRICE_EXITED_ZONE": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "zone_id",
+        "exit_side"
+      ]
+    },
+    "LIQUIDITY_LEVEL_BREACHED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "level_id",
+        "level_price",
+        "breach_side",
+        "by_wick_or_body"
+      ]
+    },
+    "CLOSE_RETURNED_INSIDE": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "level_id",
+        "close_price"
+      ]
+    },
+    "ORB_BROKEN": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "session_name",
+        "orb_side",
+        "break_price",
+        "by_wick_or_body"
+      ]
+    },
+    "POC_TOUCHED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "poc_id",
+        "poc_period",
+        "poc_price",
+        "T_variant_flag(UNKNOWN)"
+      ]
+    },
+    "VAH_TOUCHED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "va_id",
+        "period",
+        "vah_price"
+      ]
+    },
+    "VAL_TOUCHED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "va_id",
+        "period",
+        "val_price"
+      ]
+    },
+    "VWAP_CROSSED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "vwap_timeframe",
+        "vwap_price",
+        "cross_side"
+      ]
+    },
+    "SFP_MARKER_APPEARED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "swing_ref",
+        "marker_price",
+        "REPAINT_STATUS=UNKNOWN",
+        "intrabar_or_close=UNKNOWN"
+      ]
+    },
+    "BIAS_CHANGED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "old_bias",
+        "new_bias",
+        "basis"
+      ]
+    },
+    "ZONE_INVALIDATED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "zone_id",
+        "invalidation_price",
+        "reason"
+      ]
+    },
+    "SETUP_EXPIRED": {
+      "required_common": "see common_fields",
+      "event_specific": [
+        "setup_id",
+        "expiry_reason",
+        "age_bars"
+      ]
+    }
+  },
+  "intrabar_policy": "BAR_UPDATED and any intrabar marker carry INTRABAR_WARNING; guards that require confirmation MUST wait for BAR_CLOSED unless future evidence explicitly permits intrabar (see invariants)."
+}

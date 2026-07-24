@@ -1,0 +1,23 @@
+{
+  "part": "Two",
+  "indicator_owner": "[kyle] v1 (POC/SFP/liquidity/EMA; strongly supported by FP-INDICATOR-001 v1 dialog + matching EMA set)",
+  "rules": {
+    "1_definitions": {
+      "POC": "Point of Control (auto-printed from a fixed-range volume profile, per period).",
+      "VAH": "Value Area High — Farouk says 'very high'.",
+      "VAL": "Value Area Low — Farouk says 'very low'.",
+      "SFP": "Swing Fail Pattern — wick through a swing, NO candle close, then reverse; 'prints a dot line'.",
+      "liquidity_sweep": "market makers sweep a liquidity pool (equal highs/lows) then reverse."
+    },
+    "2_value_area_basis": "FIXED-RANGE volume profile per PERIOD: daily, 3-day, 5-day, weekly, 2-week, monthly (auto-plotted). NOT session/visible-range.",
+    "3_poc_T_variants": "NOT explained in Part Two -> still UNKNOWN (unchanged from FP-INDICATOR-001).",
+    "4_usage": "Below VAL=bearish (retest=short); reclaim VAH=bullish; TARGET = next POC ('long until the next weekly POC'); SCALE between POCs (5D/3D/VAH/VAL). Trapped-traders = swept-high SFP. 'Go heavy on gold, make $200-300, log out' (scalp).",
+    "5_sfp_sequence": "prior swing high/low -> wick through (no candle close) -> close back inside -> prints a DOT / dot-line marker -> RETEST -> confirm (combine with volume candles = high sell/buy pressure; or box candle-close) -> TARGET (reversal) -> INVALIDATION (fails to break / reclaims and pushes through).",
+    "6_distinctions": "PARTIAL. SFP and liquidity sweep are closely related (both sweeps of a level); the box CANDLE-CLOSE breakdown is a distinct concept. Farouk says 'combine, not one thing'. CHoCH/MSS/BOS NOT cleanly separated here (only 'break of structure' mentioned in Part Three). Distinctions loosely defined.",
+    "7_ownership": "'The POC indicator' = [kyle] v1. SFP + liquidity sweeps + EMAs also v1.",
+    "8_visible_settings": "see FP-INDICATOR-003_SETTINGS.json",
+    "9_repaint_intrabar_close_alert": "SFP uses 'no candle close' (closed-bar reasoning); repaint / dot-print timing / alerts NOT stated -> UNKNOWN.",
+    "author_note": "'Carl said you need to put it [the EMAs]' -> author handle ~ 'kyle'/'Carl'. Farouk: 'I never use the EMAs.'"
+  },
+  "source_asset_id": "sa-a41992a559e1930c"
+}

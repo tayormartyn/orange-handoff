@@ -1,0 +1,32 @@
+{
+  "mapping_id": "fp_indicator_001_alert_mapping",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / SINGLE_SESSION",
+  "provenance": {
+    "current_alert_surface": "Farouk's Playbook — Smart Money Suite (FP-INDICATOR-005 per R-INDICATOR-PANEL)",
+    "evidence": ["raw/farouk_playbook_indicator_update/farouk_indicator_alert_conditions.png (Jul-5)",
+                  "panel frames (video 002 / campaign screenshots)",
+                  "Gate-G/H alert-lane captures (real CHoCH/Sweep/A payloads; GATE_H1 A+ capture)"],
+    "fp_indicator_001_role": "[kyle]/POC era context only (ORB windows, POC plots, SFP; panel NOT present there; repaint UNKNOWN caveat -> F5)"
+  },
+  "alert_conditions_mapped": [
+    {"name": "Sweep low", "direction_hint": "LONG-bias onset", "lane6": "liquidity sweep frame; stop_outside_zone anchor (beyond swept extreme)", "usefulness": "HIGH"},
+    {"name": "Sweep high", "direction_hint": "SHORT-bias onset", "lane6": "same", "usefulness": "HIGH"},
+    {"name": "CHoCH up", "direction_hint": "LONG", "lane6": "structure shift + panel CHoCH price = numeric anchor; confluence rank 1", "usefulness": "HIGH"},
+    {"name": "CHoCH down", "direction_hint": "SHORT", "lane6": "same", "usefulness": "HIGH"},
+    {"name": "Bullish BPR formed", "direction_hint": "LONG", "lane6": "constructible zone (EDU-002 A+ basis)", "usefulness": "HIGH"},
+    {"name": "Bearish BPR formed", "direction_hint": "SHORT", "lane6": "same", "usefulness": "HIGH"},
+    {"name": "Asia Trap Bullish", "direction_hint": "LONG", "lane6": "Asia H/L liquidity frame (core rule)", "usefulness": "HIGH"},
+    {"name": "Asia Trap Bearish", "direction_hint": "SHORT", "lane6": "same", "usefulness": "HIGH"},
+    {"name": "Bullish Engulfing", "direction_hint": "LONG", "lane6": "confirmation only, no level", "usefulness": "MEDIUM-LOW (noisy alone)"},
+    {"name": "Bearish Engulfing", "direction_hint": "SHORT", "lane6": "confirmation only", "usefulness": "MEDIUM-LOW"},
+    {"name": "A+++ setup", "direction_hint": "via payload", "lane6": "graded stack (ratified); formula invisible", "usefulness": "MEDIUM (record + correlate, weight 0 per R-AGRADES)"},
+    {"name": "A+ or better", "direction_hint": "via payload", "lane6": "same", "usefulness": "MEDIUM"},
+    {"name": "Any alert() function call", "direction_hint": "payload-dependent", "lane6": "catch-all for payload-borne events (A LONG/SHORT observed in Gate-G captures); script-controlled timing -> repaint guard mandatory", "usefulness": "REQUIRED for payloads"}
+  ],
+  "panel_numeric_fields": ["CHoCH <price>", "Asia break LOW/HIGH/X", "OB retest <price/X>", "Current OB <price>", "Fresh OB <price>"],
+  "a_long_short_detectability": "through alert() payload text (Gate-G evidence: CHoCH->Sweep->A sequences); dedicated named conditions UNCONFIRMED_BELOW_FOLD; payload parsing specified in the builder",
+  "insufficient_or_noisy": ["Engulfing alone", "A-grades without formula (record-only)", "[kyle] POC T-variants (meaning UNKNOWN — do not use)", "SFP markers (attribution unconfirmed)", "any intra-bar/repaintable value (excluded by F5)"],
+  "repaint_guard": "repaint/intrabar behaviour never demonstrated -> only bar-close-confirmed values (alert payload at/after close, or panel value from a closed bar) may create a valid pre-mark; uncertain -> PRE_MARK_INSUFFICIENT_CONTEXT",
+  "safety": {"tradingview_alerts": "untouched", "listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none"}
+}

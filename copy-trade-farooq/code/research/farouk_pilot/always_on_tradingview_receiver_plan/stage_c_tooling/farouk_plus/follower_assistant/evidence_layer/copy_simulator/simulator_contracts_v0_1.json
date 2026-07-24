@@ -1,0 +1,35 @@
+{
+  "contract_id": "copy_execution_simulator_contracts_v0_1",
+  "status": "RESEARCH_ONLY / SIMULATION_ONLY / NO_BROKER_EXECUTION",
+  "simulator_version": "copy_execution_simulator_v0_1",
+  "hard_stamps": {"SIMULATION_ONLY": true, "NO_BROKER_EXECUTION": true},
+  "record_types": {
+    "SIMULATION_CAMPAIGN": "the simulated campaign envelope",
+    "EXECUTION_INTENT": "a simulated intent to place a layered order (never sent)",
+    "SIMULATED_ORDER": "a simulated resting limit/leg (never sent to a broker)",
+    "SIMULATED_ACK": "a simulated acknowledgement",
+    "SIMULATED_FILL": "a market-data-driven simulated fill",
+    "SIMULATED_PARTIAL_FILL": "a simulated partial fill where data supports it",
+    "SIMULATED_CANCEL": "a simulated cancellation of an unfilled leg",
+    "SIMULATED_MODIFY": "a simulated stop/BE modification",
+    "SIMULATED_POSITION_STATE": "expected/observed simulated position snapshot",
+    "RECONCILIATION_RESULT": "RECONCILED | DIVERGENCE_DETECTED | AMBIGUOUS",
+    "EXECUTION_COST_ASSUMPTION": "the cost scenario applied",
+    "AMBIGUITY_STATE": "AMBIGUOUS_INTRABAR_ORDER with pessimistic/optimistic/unresolved",
+    "COPY_FIDELITY_RESULT": "campaign + aggregate fidelity metrics"
+  },
+  "required_fields_every_record": ["campaign_id", "source_message_hash", "proposal_version",
+    "constitution_version", "simulator_version", "market_data_source", "decision_timestamp",
+    "event_timestamp", "local_processing_timestamp", "idempotency_key", "provenance",
+    "SIMULATION_ONLY", "NO_BROKER_EXECUTION"],
+  "lane_a_authority": {
+    "constitution_version": "0.1.0", "constitution_sha256": "7bce618f29d1d44a48bef085d539b05a289393ebe33fe4d304632016777defde",
+    "legs": "3 near/mid/far equal thirds", "unscoped_be_basis": "PER_LEG (leg fill price)",
+    "risk_off": "cancel unfilled legs", "vague_take_some_pct": "0.25", "shared_stop": true,
+    "note": "Lane A is NOT replaced; the Whaleroom comparator is a SEPARATE research profile only"
+  },
+  "eligibility": {"eligible_for_training": false, "eligible_for_performance_attribution": false,
+                  "reason": "simulation/research evidence only; not a broker fill"},
+  "price_semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN",
+  "review_only": true, "executable": false, "observation_only": true
+}

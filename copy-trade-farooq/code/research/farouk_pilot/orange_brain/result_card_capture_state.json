@@ -1,0 +1,35 @@
+{
+ "schema": "result_card_capture_state_v1",
+ "purpose": "Standing operator task (D-041): every genuine prospective campaign's result-card screenshots must be captured (operator screenshot of the Discord/Telegram result-card images) because his ACTUAL FILL PRICES appear ONLY there and Orange never reads media (OQ-10). This feeds LANE_A_ENTRY_MODEL_ADVERSE_DIVERGENCE - without it the watch item silently under-records. A campaign that reaches a terminal state without a capture entry here triggers a (0!) alarm in the operator brief, same treatment as the weekly plan.",
+ "campaigns": {
+  "XAU-F004-20260716": {
+   "captured": false,
+   "exempt": "PREDATES_TASK - fills never captured; outcome bar-derived"
+  },
+  "XAU-F005-20260717": {
+   "captured": false,
+   "exempt": "NO_FILL campaign - no fills exist to capture"
+  },
+  "XAU-F006-20260720": {
+   "captured": true,
+   "source": "operator screenshots 2026-07-20/21 (4 fills: 4013.02/4009.64/4007.68/4005.72)"
+  },
+  "XAU-F007-20260721": {
+   "captured": true,
+   "source": "operator full image set 2026-07-22: result cards msg 45974 (exit 4063.72) + 45978 (exit 4066.59), fills 4060.55/4059.71 (ALREADY_INGESTED 2026-07-21, hashed); source M5 chart drawn SL 4059.71 + open BUY 1 +943.00 USD (operator-transcribed, unhashed). Reconciled: F007_SOURCE_RECONCILIATION_20260722.md (mechanism CONFIRMED, +5.38 untouched)"
+  },
+  "XAU-F001-20260714": {
+   "captured": false,
+   "exempt": "NON_PROSPECTIVE_BACKFILL (F001)"
+  },
+  "XAU-F002-20260714": {
+   "captured": false,
+   "exempt": "NON_PROSPECTIVE_BACKFILL (F002)"
+  },
+  "XAU-F003-20260716": {
+   "captured": false,
+   "exempt": "AUTHENTIC_NOT_PROSPECTIVE (F003, predates task)"
+  }
+ },
+ "update_rule": "operator screenshots the result cards at campaign close -> record fills here with capture date -> watch-item row updated. Campaigns terminal without capture and without exempt -> standing alarm."
+}

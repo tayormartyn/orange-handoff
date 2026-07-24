@@ -1,0 +1,100 @@
+{
+  "comparison_id": "FP-INDICATOR-001-002-003-004",
+  "sources": {
+    "FP-INDICATOR-001": "2h45m live Zoom teaching (2025-12-21), asset sa-5635e60e29be4868 — applies the indicators live on Gold",
+    "FP-INDICATOR-002": "Part One companion (2025-12-14, 6:50), sa-ee1b41d2b4661a2a — [kyle] v2",
+    "FP-INDICATOR-003": "Part Two companion (2025-12-14, 5:44), sa-a41992a559e1930c — [kyle] v1 (POC/SFP/liquidity/EMA)",
+    "FP-INDICATOR-004": "Part Three companion (2025-12-14, 7:58), sa-7004096984f87411 — [kyle] v1 (ORB)"
+  },
+  "confirmed_rules": [
+    "ORB = the first 15 minutes of a session; Asia/London/NY; retest is the core entry (FP-001 v1 dialog + Part Three spoken).",
+    "Candle-CLOSE confirms a box break; a wick that sweeps = fakeout (Part One + general FP-001).",
+    "POC / VAH / VAL used as levels; target = the next POC; scale between POCs (Part Two + FP-001 POC labels).",
+    "EMAs 20/21/34/50/55 live inside [kyle] v1 (FP-001 dialog + Part Two spoken); Farouk does not use them.",
+    "'Signal Times' setting has little/no value (FP-001 'does nothing' + Part Three).",
+    "Inside a range/ORB = chop = no trade; trade the retest outside it (Part One box + Part Three ORB)."
+  ],
+  "newly_clarified_rules": [
+    "OWNERSHIP: [kyle] v2 draws the volume candles, the session RANGE boxes AND the VWAP — previously unknown (FP-001 only opened v1).",
+    "Volume 'yellow' candles = RELATIVE VOLUME (Volume Multiplier 2, Length 20) — mechanic now known.",
+    "Session RANGE boxes (full-session: London 08:00-13:00, NY 17:00-21:00, Tokyo 21:00-03:00, GMT) are DISTINCT from the 15-min ORB.",
+    "VWAP role = BIAS FILTER (above=bullish/below=bearish) + dynamic S/R; multi-timeframe (session/daily/weekly/monthly).",
+    "SFP mechanic = wick through a swing with NO candle close -> prints a DOT line -> sweep-retest entry.",
+    "Liquidity-sweep lookback ~ '8 bars' (spoken).",
+    "POC/VAH/VAL are computed from a FIXED-RANGE volume profile per period (daily/3D/5D/weekly/2W/monthly).",
+    "ORB anatomy: green = top, blue midline = 'hidden liquidity', bottom = downside."
+  ],
+  "contradictions": [
+    {
+      "item": "Signal Times",
+      "FP-INDICATOR-001": "'makes no difference, does nothing — I'll remove it'",
+      "FP-INDICATOR-004": "'if you want to adjust the time you can do the signal'",
+      "resolution": "net = low/no value; wording inconsistent, not reconciled"
+    },
+    {
+      "item": "Default timezone differs BETWEEN the two indicators",
+      "kyle_v2_sessions": "GMT (Part One dialog)",
+      "kyle_v1_ORB": "GMT+1 (FP-001 dialog)",
+      "resolution": "a 1-hour default offset between v2 and v1 — user must align manually; unreconciled"
+    },
+    {
+      "item": "Methodology emphasis",
+      "FP-INDICATOR-001_and_docs": "CHoCH/OB/FVG/BPR/displacement central",
+      "companion_series": "POC/ORB/VWAP/volume/SFP central; ~no CHoCH/BPR/displacement",
+      "resolution": "consistent with the FP-001 finding — likely two different teaching modules, NOT a factual contradiction"
+    }
+  ],
+  "timezone_differences": {
+    "kyle_v2_Market_Sessions": "GMT (London 08:00-13:00, NY 17:00-21:00, Tokyo 21:00-03:00)",
+    "kyle_v1_ORB": "GMT+1 (Asia 03:00-03:15, London 09:00-09:15, NY 15:30-15:45)",
+    "FP-001_chart_clock": "UTC+1",
+    "campaigns_001_002_003_chart_clock": "UTC+2",
+    "note": "Four different timezone references across the evidence; canonical signal timezone remains UNRESOLVED. The v2/v1 1-hour default mismatch is the most actionable gap."
+  },
+  "indicator_ownership_of_plotted_objects": {
+    "[kyle] v2": [
+      "relative-volume ('yellow') candles",
+      "Market-Session RANGE boxes (full-session)",
+      "Multiframe VWAP (session/daily/weekly/monthly)"
+    ],
+    "[kyle] v1": [
+      "POC / VAH / VAL (multi-period + 'T' variants)",
+      "SFP (dot-line marker)",
+      "Liquidity Sweeps",
+      "ORB (Asia/London/NY, 15-min)",
+      "Moving Averages (EMA/SMA 20/21/34/50/55)"
+    ],
+    "Smart Zones Strategy PRO": "PRESENT but never opened/shown -> owns NONE of the confirmed objects here (UNKNOWN)",
+    "POC / POC Prototype": "separate POC indicators loaded but hidden in these videos -> relationship to [kyle] v1's POC UNKNOWN",
+    "evidence": "[kyle] v2 = directly visible dialog (FP-002 ref_00-40); [kyle] v1 = FP-001 dialog + FP-004 selection + FP-003 matching EMA set"
+  },
+  "unresolved_settings": [
+    "POC 'T' variant meaning (1DT/1WT/1MT/3DT/2DT) — unexplained across ALL four videos.",
+    "Smart Zones Strategy PRO, POC, POC Prototype internals — never opened.",
+    "Exact SFP / liquidity-sweep / VWAP-anchor parameters; full Style & Visibility tabs of both [kyle] indicators.",
+    "Which MA(s) anyone actually enables as the trend filter."
+  ],
+  "unresolved_repaint_alert_behaviour": {
+    "status": "NONE of the four videos states or demonstrates repaint / intrabar / closed-bar-only / alert-timing behaviour.",
+    "consequence": "No repaint or predictive claim is made. All deferred to FP-INDICATOR-001_PROSPECTIVE_CAPTURE_PLAN (forward-only capture)."
+  },
+  "relationship_long_session_vs_series": {
+    "chronology": "The 3-part companion series was recorded 2025-12-14; the 2h45m live session 2025-12-21 (one week later).",
+    "roles": "The series = the 'how the indicator works' REFERENCE (defines each [kyle] v1/v2 component). The long session = 'how Farouk applies it live' on Gold.",
+    "resolved_by_series": [
+      "ORB ownership ([kyle] v1)",
+      "volume-candle mechanic (relative volume, [kyle] v2)",
+      "VWAP role",
+      "session-box vs ORB distinction",
+      "SFP/liquidity/POC-period basics"
+    ],
+    "still_open_after_series": [
+      "POC 'T' meaning",
+      "repaint/alert behaviour",
+      "Smart Zones/POC-Prototype internals",
+      "[kyle] v2 vs v1 remain DISTINCT indicators (not assumed equivalent)"
+    ]
+  },
+  "no_final_strategy_declared": true,
+  "methodology_spec_v0_2_1_updated": false
+}

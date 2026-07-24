@@ -1,0 +1,19 @@
+{
+  "new": {
+    "ENTRY_CONFIRMATION": [
+      "FP-EDU-028 OTE"
+    ],
+    "SETUP_FAMILY(session)": [
+      "FP-EDU-031 NY Reversal",
+      "FP-EDU-032 NY Continuation",
+      "FP-EDU-033 Search&Destroy"
+    ],
+    "SETUP_FAMILY/STRUCTURAL(candidate PO3_AMD)": [
+      "FP-EDU-029 Power of 3"
+    ],
+    "CORE_SMC/LOCATION/NARRATIVE": [
+      "FP-EDU-030 Liquidity"
+    ]
+  },
+  "note": "Session models (NY Reversal/Continuation, Search&Destroy) are a NEW family cluster = SESSION_LIQUIDITY_MODELS. OTE = a Fib-based entry-confirmation/location tool. Power of 3/AMD = a structural 3-phase model. Liquidity = core concept + narrative."
+}

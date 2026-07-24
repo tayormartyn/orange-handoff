@@ -1,0 +1,20 @@
+{
+  "filename": "Live with Farouk, Sunday, 5 July 2026.mp4",
+  "original_path": "C:\\Users\\Marty\\Downloads\\Live with Farouk, Sunday, 5 July 2026.mp4",
+  "staged_path": "research/farouk_pilot/raw/live_with_farouk_2026-07-05/Live with Farouk, Sunday, 5 July 2026.mp4",
+  "sha256": "4328a875cb55d147a524a1b817209159ccdc734f972521b35718a8f4439e12d8",
+  "file_size_bytes": 614053015,
+  "duration": "02:08:27.82",
+  "resolution": "1920x1080",
+  "frame_rate": "30 fps",
+  "video_codec": "h264 (High, avc1)",
+  "audio_codec": "aac (LC)",
+  "audio_channels": "stereo (2)",
+  "audio_rate": "44100 Hz",
+  "bitrate": "637 kb/s",
+  "encoder": "Lavf63.3.100",
+  "fs_mtime_downloads": "2026-07-05 20:23:05 +0100",
+  "fs_mtime_staged": "2026-07-05 20:29:09 +0100",
+  "embedded_creation_time": "none reliable (only encoder tag)",
+  "publication_time": "UNKNOWN (do NOT infer from filesystem timestamps)"
+}

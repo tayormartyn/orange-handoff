@@ -1,0 +1,163 @@
+{
+  "retro_id": "orange_pre_mark_retrospective_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / RESEARCH_ONLY",
+  "anti_leakage": "pre-mark zones come verbatim from HIS OWN advance posts (timestamps precede everything computed); mechanical SL = far edge +/- $10 documented before computation; no post-dated evidence used",
+  "lane6_records": [
+    {
+      "pre_mark_id": "PM-45284",
+      "pre_mark_time_utc": "2026-06-29T12:43:27",
+      "pre_mark_zone": "4070-4080",
+      "pre_mark_direction": "SHORT",
+      "mechanical_sl": 4090,
+      "window_end_utc": "2026-06-30T21:00:00",
+      "farouk_reference": "S1 posted Jun-30 14:25 zone 4060-4075 (overlap 4070-4075 -> level match; mid-dist $7.5)",
+      "evidence_note": "message timestamp precedes pre-mark; zero lookahead",
+      "label": "PRE_MARK_EXPIRED",
+      "note": "zone never touched in window"
+    },
+    {
+      "pre_mark_id": "PM-45097",
+      "pre_mark_time_utc": "2026-06-24T14:50:21",
+      "pre_mark_zone": "4070-4080",
+      "pre_mark_direction": "SHORT",
+      "mechanical_sl": 4090,
+      "window_end_utc": "2026-06-26T21:00:00",
+      "farouk_reference": "J28 posted Jun-26 13:58 zone 4078-4092 (overlap 4078-4080 -> level match)",
+      "evidence_note": "message timestamp precedes pre-mark; zero lookahead",
+      "fill": 4070,
+      "fill_time_utc": "06-26 13:56",
+      "sl_hit_utc": "06-26 14:16",
+      "hypothetical_mfe_pips_before_sl": 31,
+      "hypothetical_mae_pips": 260,
+      "hypothetical_pips": -200.0,
+      "label": "PRE_MARK_MATCHED_FAROUK",
+      "outcome_note": "mechanical pre-mark filled EARLY and was STOPPED by the pre-post adverse move"
+    },
+    {
+      "pre_mark_id": "PM-44877",
+      "pre_mark_time_utc": "2026-06-18T22:13:46",
+      "pre_mark_zone": "4250-4260",
+      "pre_mark_direction": "SHORT",
+      "mechanical_sl": 4270,
+      "window_end_utc": "2026-06-19T16:55:00",
+      "farouk_reference": "no matching Farouk setup on Jun-19 (J23 was a BUY at 4154-4164)",
+      "evidence_note": "message timestamp precedes pre-mark; zero lookahead",
+      "label": "PRE_MARK_EXPIRED",
+      "note": "zone never touched in window"
+    }
+  ],
+  "aggregate": {
+    "advance_level_posts_found_in_corpus": 3,
+    "computed": [
+      {
+        "pre_mark_id": "PM-45284",
+        "pre_mark_time_utc": "2026-06-29T12:43:27",
+        "pre_mark_zone": "4070-4080",
+        "pre_mark_direction": "SHORT",
+        "mechanical_sl": 4090,
+        "window_end_utc": "2026-06-30T21:00:00",
+        "farouk_reference": "S1 posted Jun-30 14:25 zone 4060-4075 (overlap 4070-4075 -> level match; mid-dist $7.5)",
+        "evidence_note": "message timestamp precedes pre-mark; zero lookahead",
+        "label": "PRE_MARK_EXPIRED",
+        "note": "zone never touched in window"
+      },
+      {
+        "pre_mark_id": "PM-45097",
+        "pre_mark_time_utc": "2026-06-24T14:50:21",
+        "pre_mark_zone": "4070-4080",
+        "pre_mark_direction": "SHORT",
+        "mechanical_sl": 4090,
+        "window_end_utc": "2026-06-26T21:00:00",
+        "farouk_reference": "J28 posted Jun-26 13:58 zone 4078-4092 (overlap 4078-4080 -> level match)",
+        "evidence_note": "message timestamp precedes pre-mark; zero lookahead",
+        "fill": 4070,
+        "fill_time_utc": "06-26 13:56",
+        "sl_hit_utc": "06-26 14:16",
+        "hypothetical_mfe_pips_before_sl": 31,
+        "hypothetical_mae_pips": 260,
+        "hypothetical_pips": -200.0,
+        "label": "PRE_MARK_MATCHED_FAROUK",
+        "outcome_note": "mechanical pre-mark filled EARLY and was STOPPED by the pre-post adverse move"
+      },
+      {
+        "pre_mark_id": "PM-44877",
+        "pre_mark_time_utc": "2026-06-18T22:13:46",
+        "pre_mark_zone": "4250-4260",
+        "pre_mark_direction": "SHORT",
+        "mechanical_sl": 4270,
+        "window_end_utc": "2026-06-19T16:55:00",
+        "farouk_reference": "no matching Farouk setup on Jun-19 (J23 was a BUY at 4154-4164)",
+        "evidence_note": "message timestamp precedes pre-mark; zero lookahead",
+        "label": "PRE_MARK_EXPIRED",
+        "note": "zone never touched in window"
+      }
+    ],
+    "insufficient_context": "remaining 31 setups: no leak-free pre-post level evidence exists in captured data (TV alert lane started Jul-7; June intraday structure = OHLC only)"
+  },
+  "filters_lane4": {
+    "raw_all_34": {
+      "kept": 34,
+      "total_pips": 48.0,
+      "mean_pips": 1.4
+    },
+    "R2_attempt_cap_le2": {
+      "kept": 30,
+      "total_pips": 173.0,
+      "mean_pips": 5.8,
+      "removed": [
+        "J15",
+        "J16",
+        "J17",
+        "J29"
+      ],
+      "removed_pips": -125.0
+    },
+    "R2b_first_attempt_only": {
+      "kept": 26,
+      "total_pips": 500.0,
+      "mean_pips": 19.2,
+      "removed": [
+        "J08",
+        "J10",
+        "J14",
+        "J15",
+        "J16",
+        "J17",
+        "J19",
+        "J29"
+      ],
+      "removed_pips": -452.0
+    },
+    "R4b_no_late_entries": {
+      "kept": 30,
+      "total_pips": 337.4,
+      "mean_pips": 11.2,
+      "removed": [
+        "J03",
+        "J06",
+        "J16",
+        "J17"
+      ],
+      "removed_pips": -289.4
+    },
+    "R2b_plus_R4b": {
+      "kept": 24,
+      "total_pips": 614.4,
+      "mean_pips": 25.6,
+      "removed": [
+        "J03",
+        "J06",
+        "J08",
+        "J10",
+        "J14",
+        "J15",
+        "J16",
+        "J17",
+        "J19",
+        "J29"
+      ],
+      "removed_pips": -566.4
+    }
+  }
+}

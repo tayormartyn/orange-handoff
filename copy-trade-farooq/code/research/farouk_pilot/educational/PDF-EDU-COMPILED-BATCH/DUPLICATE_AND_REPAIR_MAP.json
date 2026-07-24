@@ -1,0 +1,70 @@
+{
+  "exact_duplicate_pdfs": {
+    "Farouks_Playbook (3).pdf": "FP-EDU-002",
+    "Whaleroom_Trading_Guide (5).pdf": "FP-EDU-003",
+    "Whaleroom_OrderBlocks_Strong_vs_Weak.pdf": "FP-EDU-004"
+  },
+  "compiled_pdf_pages_supplemental_to_existing": {
+    "FP-EDU-011": [
+      18,
+      19,
+      20,
+      21
+    ],
+    "FP-EDU-012": [
+      16
+    ],
+    "FP-EDU-013": [
+      14,
+      15
+    ],
+    "FP-EDU-014": [
+      13
+    ],
+    "FP-EDU-015": [
+      12
+    ],
+    "FP-EDU-017": [
+      8
+    ],
+    "FP-EDU-021": [
+      4
+    ],
+    "FP-EDU-025": [
+      1,
+      2
+    ],
+    "FP-EDU-026": [
+      5
+    ]
+  },
+  "candlestick_pdf": {
+    "maps_to": "FP-EDU-022 (SUPPLEMENTAL)",
+    "note": "7-page Whaleroom candlestick doc"
+  },
+  "new_pages": {
+    "FP-EDU-028 OTE": [
+      3
+    ],
+    "FP-EDU-029 Power-of-3/AMD": [
+      6
+    ],
+    "FP-EDU-030 Liquidity": [
+      7
+    ],
+    "FP-EDU-031 NY Reversal": [
+      9
+    ],
+    "FP-EDU-032 NY Continuation": [
+      10
+    ],
+    "FP-EDU-033 Search & Destroy": [
+      11
+    ]
+  },
+  "blank_or_image_pages": [
+    17,
+    22
+  ],
+  "dedup_basis": "text-layer wording + visible titles + numbered steps vs existing FP-EDU transcriptions; PDF hashes for the 3 exact-dup docs"
+}

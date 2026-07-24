@@ -1,0 +1,103 @@
+{
+  "comparison_id": "FP-COMP-001-vs-002",
+  "schema_note": "frozen comparison; pre/at-entry information only; NOT a strategy rule",
+  "campaigns": {
+    "FP-CAMPAIGN-001": {
+      "outcome": "WIN (visible profit cards)",
+      "symbol": "XAUUSD",
+      "direction": "SELL",
+      "date": "02/07/2026"
+    },
+    "FP-CAMPAIGN-002": {
+      "outcome": "net UNKNOWN; LEG A TP1_THEN_PROTECTED_AT_ENTRY; LEG B STOPPED",
+      "symbol": "XAUUSD",
+      "direction": "SELL",
+      "date": "01/07/2026"
+    }
+  },
+  "CRITICAL_CAVEATS": [
+    "Both video analyses are RETROSPECTIVE post-mortems; their SMC/Asia annotations are post-hoc, NOT genuine pre-entry evidence.",
+    "No market data downloaded -> the actual pre-entry structure is not independently verified for either campaign.",
+    "Campaign 002 key claims (no downside FVG, stop above Asia High, 3990 sell area) are UNVERIFIED (PENDING_LOCAL_TRANSCRIPTION).",
+    "TWO campaigns only -> NO strategy rule is declared."
+  ],
+  "dimensions": [
+    {
+      "dimension": "Asia-session break",
+      "c001": "panel Asia break=HIGH (retrospective annotation)",
+      "c002": "Asia High + Asia Low both drawn; Gemini(unverified) says Asia LOW was broken",
+      "data_availability": "RETROSPECTIVE_ONLY",
+      "candidate_difference": "different session-extreme involved (001 high-side context vs 002 Asia-low break) - NOT confirmed pre-entry"
+    },
+    {
+      "dimension": "CHoCH confirmation",
+      "c001": "panel CHoCH 4114.72 present (inside/near entry 4116-4126)",
+      "c002": "panel CHoCH 4037.41; Gemini(unverified) implies bearish CHoCH/displacement insufficient on the initial dump",
+      "data_availability": "RETROSPECTIVE_ONLY + UNVERIFIED",
+      "candidate_difference": "001 CHoCH sat near the entry zone; 002 CHoCH relationship unclear - CANDIDATE only"
+    },
+    {
+      "dimension": "OB-retest confirmation",
+      "c001": "panel OB retest 4123.51 INSIDE entry zone 4116-4126",
+      "c002": "panel OB retest 4053.58 (15m) ABOVE the 3970-3980 sell",
+      "data_availability": "RETROSPECTIVE_ONLY",
+      "candidate_difference": "001 OB-retest coincided with the entry zone; 002 OB-retest did not - CANDIDATE"
+    },
+    {
+      "dimension": "displacement / FVG creation",
+      "c001": "FVG/OB labels present; downside displacement NOT explicitly assessed",
+      "c002": "Gemini(UNVERIFIED) claims NO downside FVGs on the initial dump = trap",
+      "data_availability": "UNVERIFIED (needs transcript for 002; not confirmed for 001)",
+      "candidate_difference": "the MOST-cited candidate differentiator (H-VETO-001) - presence(001?) vs absence(002?) of downside displacement - but UNVERIFIED both sides"
+    },
+    {
+      "dimension": "higher-timeframe location",
+      "c001": "entry 4116-4126 just below a red supply ~4130-4140; stop 4140 at supply top",
+      "c002": "H4 OB / H4+M15 Bearish FVG / Weekly CHoCH ~4090-4145; entry 3970-3980 FAR below these HTF zones",
+      "data_availability": "RETROSPECTIVE_ONLY",
+      "candidate_difference": "001 entered near an HTF supply; 002 entered well below the HTF bearish zones - CANDIDATE"
+    },
+    {
+      "dimension": "entry timing",
+      "c001": "signal 17:48 (TZ UNKNOWN)",
+      "c002": "signals 08:2x / re-entry 08:45 (TZ UNKNOWN)",
+      "data_availability": "KNOWN_AT_ENTRY (times) but TZ UNKNOWN",
+      "candidate_difference": "different time-of-day/session; cannot map to session without TZ"
+    },
+    {
+      "dimension": "distance to invalidation",
+      "c001": "entry 4116-4126 -> stop 4140 = ~14-24 pts",
+      "c002": "LEG A 3970-3980 -> stop 4030 = ~50-60 pts (explicit wider beginning-of-month stop); LEG B raw entry incompatible",
+      "data_availability": "KNOWN_AT_ENTRY (from posted levels)",
+      "candidate_difference": "002 used a WIDER stop (explicit month-start protocol, H-RISK-001) - larger invalidation distance; NOT necessarily setup quality"
+    },
+    {
+      "dimension": "opposing liquidity",
+      "c001": "stop 4140 at top of red supply (opposing supply held)",
+      "c002": "Gemini(unverified): stop above the Asia High; price rallied through Asia High -> stop hit",
+      "data_availability": "RETROSPECTIVE_ONLY + UNVERIFIED",
+      "candidate_difference": "002 opposing liquidity (Asia High) above the stop was swept; 001 supply held - CANDIDATE, 002 side unverified"
+    }
+  ],
+  "candidate_winner_vs_loser_differences_PRELIMINARY": [
+    "CANDIDATE: 001 had OB-retest coinciding with the entry zone and entered near an HTF supply that held; 002 entered far below HTF bearish zones.",
+    "CANDIDATE (most cited, UNVERIFIED): 002 broke a session extreme (Asia Low) WITHOUT confirmed downside displacement/FVG (H-VETO-001); 001 displacement state not confirmed.",
+    "CANDIDATE: 002 used a wider beginning-of-month stop and half size (H-RISK-001) - a risk protocol, not proven to be setup-confidence.",
+    "CANDIDATE: 002 had opposing Asia-High liquidity above the stop which was swept; 001 opposing supply held."
+  ],
+  "no_rule_declared": true,
+  "remaining_unknowns": [
+    "Timezone for both",
+    "Actual fills/prices",
+    "002 spoken claims (PENDING transcript)",
+    "Market data for both (not downloaded)",
+    "Whether 001 truly had downside displacement (not assessed)"
+  ],
+  "source_asset_ids": [
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f",
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a"
+  ]
+}

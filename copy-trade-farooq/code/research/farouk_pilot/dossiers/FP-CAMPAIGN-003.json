@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "FP-CAMPAIGN-003",
+  "symbol": "XAUUSD",
+  "direction": "BUY",
+  "setup_family": "OB_FVG_ASIA_LOW_REBOUND",
+  "market_event_start_utc": null,
+  "market_event_end_utc": null,
+  "source_posting_ts_utc": null,
+  "timestamp_uncertainty_seconds": null,
+  "session_context": "Displayed 29/06/2026 (video shows 'Mon 29 Jun 26'); timezone UNKNOWN. Involved an Asia-LOW break (panel 'Asia break LOW'; spoken 'we lost the Asia low').",
+  "point_in_time_session_high": null,
+  "point_in_time_session_low": null,
+  "previous_completed_day_levels": {
+    "prev_high": null,
+    "prev_low": null,
+    "prev_close": null,
+    "note": "no market data downloaded"
+  },
+  "net_campaign_outcome": "WIN (TP1 + partials banked; final 25% runner stopped at breakeven = risk-free). Blue values NOT summed as P/L.",
+  "legs": [
+    {
+      "leg": "INITIAL",
+      "visible_entry": "4045.99",
+      "relation_to_published_zone": "inside/close to the posted 4045-4035 entry zone",
+      "first_result_card": "buy 1  4045.99 -> 4052.53  blue 654.00 (10:07)",
+      "note": "TP1 reached",
+      "source_asset_ids": [
+        "sa-de1197b472306864"
+      ]
+    },
+    {
+      "leg": "DEEPER_BEST",
+      "visible_entry": "4027.37",
+      "relation_to_published_zone": "OUTSIDE/below the published 4045-4035 zone",
+      "provenance": "UNKNOWN — material evidence gap",
+      "result_cards": [
+        "buy 1 4027.37->4041.74 blue 1437.00 (12:57)",
+        "buy 1 4027.37->4044.38 blue 1701.00 ('170 pips take 50% off')",
+        "buy 1 4027.37->4047.22 blue 1985.00 (13:04, '200 pips')",
+        "buy 0.5 4027.37->4050.93 blue 1178.00 (13:12, '240 pips')",
+        "buy 0.25 4027.37->4048.27 blue 522.50 (14:21, 'im out 75%')"
+      ],
+      "source_asset_ids": [
+        "sa-de1197b472306864",
+        "sa-19c3595caaa28406",
+        "sa-bc200fb932058fc3"
+      ]
+    }
+  ],
+  "multi_entry_analysis": {
+    "do_not_label_as": "simple one-entry winner",
+    "structure": "initial 4045.99 (in zone) + deeper best 4027.37 (below zone); size reduced 1 -> 0.5 -> 0.25 via partial exits; final runner stopped at breakeven",
+    "4027_37_source": "MATERIAL EVIDENCE GAP — the 4027.37 level is not visible in the posted Discord signal (zone was 4045-4035)",
+    "unresolved_possibilities_not_chosen": [
+      "add-on entry",
+      "recovery entry",
+      "re-entry",
+      "averaging/layering tranche",
+      "separate unposted entry"
+    ],
+    "note": "Video audio supports LAYERING ('so layering ... if it goes up to entry, close the worst entry, hold the best entry'), which makes averaging/layering the best-supported of the possibilities, but the exact posting/provenance of 4027.37 is still not shown — kept UNRESOLVED."
+  },
+  "math_observations": {
+    "pip_definition": "0.10 XAUUSD price movement is strongly consistent with one channel 'pip'",
+    "value_formula": "result cards strongly consistent with: price_movement x 100 x displayed_size = blue value",
+    "worked_examples": [
+      "4050.93-4027.37=23.56 -> ~240 pips x100 x0.5 = 1178.00",
+      "4047.22-4027.37=19.85 -> ~200 pips x100 x1 = 1985.00",
+      "4052.53-4045.99=6.54 -> ~65 pips x100 x1 = 654.00"
+    ],
+    "size_interpretation": "buy 1 / 0.5 / 0.25 are strongly consistent with LOT sizes",
+    "currency": "NO visible currency symbol on the blue values — recorded as UNKNOWN; must remain recorded",
+    "prohibition": "Do NOT sum the displayed blue values as realised campaign P/L."
+  },
+  "entry_zone": {
+    "published": "4045-4035 (BUY)",
+    "note": "see legs — a deeper 4027.37 entry sits below the published zone"
+  },
+  "structural_invalidation": "Published SL 4010; management moved stop to entry (breakeven) later; final runner stopped at breakeven",
+  "targets": [
+    {
+      "label": "TP1",
+      "value": "4050"
+    },
+    {
+      "label": "TP2",
+      "value": "4055"
+    },
+    {
+      "label": "TP3",
+      "value": "4062"
+    },
+    {
+      "label": "TP4",
+      "value": "4080"
+    },
+    {
+      "label": "TP5",
+      "value": "4090"
+    }
+  ],
+  "management_events": [
+    {
+      "ts_displayed": "29/06/2026 09:59",
+      "event": "BUY signal 4045-4035, SL 4010, TPs 4050/4055/4062/4080/4090"
+    },
+    {
+      "ts_displayed": "29/06/2026 10:07",
+      "event": "TP1 hit; result card buy 1 4045.99->4052.53 blue 654.00"
+    },
+    {
+      "ts_displayed": "29/06/2026 12:57",
+      "event": "close worst entry, hold best entry, move SL to entry, take profit on best entry; result buy 1 4027.37->4041.74 blue 1437.00"
+    },
+    {
+      "ts_displayed": "29/06/2026 13:04",
+      "event": "'200 pips'; buy 1 4027.37->4047.22 blue 1985.00"
+    },
+    {
+      "ts_displayed": "29/06/2026 13:12",
+      "event": "'240 pips'; buy 0.5 4027.37->4050.93 blue 1178.00"
+    },
+    {
+      "ts_displayed": "29/06/2026 13:43",
+      "event": "take profit; 'we lost the Asia low, best sell zone is 4070-4080'"
+    },
+    {
+      "ts_displayed": "29/06/2026 14:21",
+      "event": "'im out 75% (trade is risk free)'; buy 0.25 4027.37->4048.27 blue 522.50"
+    },
+    {
+      "ts_displayed": "29/06/2026 15:04",
+      "event": "'SL entry hit out of the trade' (final runner stopped at breakeven)"
+    }
+  ],
+  "veto_cancellation_evidence": [],
+  "mfe_decimal_string": null,
+  "mae_decimal_string": null,
+  "explicit_facts": [
+    "Date 29/06/2026; direction BUY; signal 09:59; entry zone 4045-4035; SL 4010",
+    "Targets 4050/4055/4062/4080/4090; TP1 hit",
+    "Result cards (blue, no currency symbol): buy1 4045.99->4052.53 654.00; buy1 4027.37->4041.74 1437.00; buy1 4027.37->4044.38 1701.00; buy1 4027.37->4047.22 1985.00; buy0.5 4027.37->4050.93 1178.00; buy0.25 4027.37->4048.27 522.50",
+    "12:57 management: close worst / hold best / move SL to entry / take profit on best",
+    "170 pips take 50% off; 200 pips; 240 pips; 'im out 75% (risk free)'; 15:04 'SL entry hit out of the trade'",
+    "Video sa-036eef476c3ce1b2: .mov 4096x2176, 21.37fps, 218.84s, has audio; transcribed locally (base.en)"
+  ],
+  "explicit_discord_statements": [
+    {
+      "ts": "12:57",
+      "text": "Normally I move my stoploss to entry at 50-60 pips, but my phone overheated and shut down. I'll send another trade for the US session."
+    },
+    {
+      "ts": "13:43",
+      "text": "Take some good profit, guys. We lost the Asia low our best sell zone is 4070-4080..."
+    },
+    {
+      "ts": "14:21",
+      "text": "im out 75% (trade is risk free)"
+    }
+  ],
+  "explicit_spoken_statements": [
+    {
+      "ts": "00:06",
+      "text": "we made this plan yesterday ... this is the level that made that high ... liquidity sitting here ... we had the FVG sitting at this level ... they mitigated and came to this OB, swept a little bit lower ... you can expect a reaction"
+    },
+    {
+      "ts": "00:24",
+      "text": "after this whole move they will come back ... you can expect at least 200 pips"
+    },
+    {
+      "ts": "00:52",
+      "text": "4045 Asian low and also this level ... I give you a zone where you can enter ... So layering and if it goes up to entry, close the worst entry, hold the best entry"
+    },
+    {
+      "ts": "01:37",
+      "text": "I was waiting for this zone (70-80) also to give a sell ... liquidity in London high and Asian high, tap it and then go down"
+    },
+    {
+      "ts": "02:18",
+      "text": "why did the market go down? because we don't have a candle close above the daily high ... we need at least one 1h candle close above the daily bearish FVG ... we never got this"
+    },
+    {
+      "ts": "02:48",
+      "text": "Don't enter another long here at this OB, already mitigated ... the market looks bearish on daily/4h/1h/15m/5m"
+    }
+  ],
+  "directly_visible_chart_observations": [
+    {
+      "item": "symbol/feed/tf",
+      "value": "Gold Spot/USD (XAUUSD), Pepperstone, 5m",
+      "frame": "ref_01-00",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "session_levels",
+      "value": "'Asia High' ~4076, 'Asia Low' ~4048, 'Daily FVG' ~4065 labels",
+      "frame": "ref_01-00",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "indicator_panel",
+      "value": "TF 5; CHoCH x; Asia break LOW; OB retest 4009.08; Current OB 4009.08; Fresh OB 4379.08",
+      "frame": "ref_01-00",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "projected_rebound",
+      "value": "grey/blue projected box + up-arrow toward the Daily FVG (~4065) — matches spoken 'expect a reaction / come back'",
+      "frame": "ref_01-00",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "ob_zone",
+      "value": "orange OB zone ~4007-4025 near the 4027.37 best entry and the 4009 OB",
+      "frame": "ref_01-00",
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "item": "sell_zone",
+      "value": "later sell zone ~4070-4080 (Asia High / yellow box)",
+      "frame": "ref_01-00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "item": "date",
+      "value": "Mon 29 Jun '26 on the axis",
+      "frame": "ref_01-00",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "retrospective_vs_preplanned",
+      "value": "Bar-Replay retrospective breakdown; Farouk claims the plan (OB+FVG, levels) was PREPLANNED 'yesterday' — pre-existence of exact drawings at entry not independently provable",
+      "frame": "multiple",
+      "confidence": "MEDIUM-HIGH"
+    }
+  ],
+  "strong_inferences": [
+    "The executed BUY was an OB/FVG rebound after an Asia-LOW sweep, targeting up toward the Daily FVG (~4065) — supported by both the panel (Asia break LOW, OB ~4009) and the spoken plan",
+    "The 4027.37 result cards all share ONE entry price with reducing size -> partial-exit management of a single deeper position, consistent with the spoken 'layering / close worst, hold best'",
+    "The SL-to-entry management was delayed/affected by 'my phone overheated and shut down' (explicit Discord)"
+  ],
+  "weak_inferences": [
+    "HYPOTHESIS: 4027.37 was the deeper 'best' layer of a layered/averaging entry below the published zone — best-supported by the audio but the exact posting is not shown",
+    "HYPOTHESIS: the intended continuation was capped because the required 1h-close-above-daily-FVG never occurred (spoken) — plausible but not price-verified"
+  ],
+  "external_review": {
+    "source": "derived/external_reviews/FP-CAMPAIGN-003_chatgpt_source_adjudication.txt (independent; NOT canonical)",
+    "verified_claims": [
+      "signal levels/SL/targets; TP1 hit; multiple-entry management (4045.99 and 4027.37); move stop to entry at 50-60 pips; 170 pips 50% off; size 1->0.5->0.25 final runner stopped at entry; 15:32 missed 4000 long as a preplanned OB+FVG setup; video shows Asia High/Low, Daily FVG, OB and a ~4070-4080 sell zone — ALL independently verified from screenshots/video"
+    ],
+    "note": "The adjudication itself instructs keeping conclusions UNTESTED until local transcription/dossier complete — consistent with this dossier."
+  },
+  "contradictions": [
+    "4027.37 entry vs the published 4045-4035 zone — the deeper entry is below the posted zone; provenance not shown (material gap, not necessarily a contradiction)"
+  ],
+  "unresolved_questions": [
+    "Provenance of the 4027.37 'best entry' (add-on / recovery / re-entry / averaging / unposted) — MATERIAL GAP",
+    "Timezone of the Discord timestamps (UNKNOWN)",
+    "Currency of the blue result-card values (no symbol shown)",
+    "Exact broker fills for both entries",
+    "Whether the exact chart drawings pre-existed at entry vs redrawn for the breakdown",
+    "MFE/MAE and true path (requires XAUUSD market data — not downloaded)"
+  ],
+  "candidate_hypotheses": [
+    {
+      "id": "H-003-LAYER",
+      "status": "UNTESTED",
+      "text": "Layered/averaging entries (in-zone + deeper) with 'close worst, hold best' is a deliberate part of the method, not an ad-hoc save."
+    },
+    {
+      "id": "H-003-CONFIRM",
+      "status": "UNTESTED",
+      "text": "Continuation to higher targets is gated on a 1h candle close above the daily bearish FVG / daily high."
+    }
+  ],
+  "confidence_by_field": {
+    "instrument": "HIGH",
+    "direction": "HIGH",
+    "published_entry_zone": "HIGH",
+    "stop": "HIGH",
+    "targets": "HIGH",
+    "initial_entry_4045_99": "HIGH",
+    "deeper_entry_4027_37_provenance": "UNKNOWN",
+    "blue_value_currency": "UNKNOWN",
+    "outcome": "WIN (partials+BE runner)",
+    "timezone": "UNKNOWN",
+    "asia_break": "LOW (panel-verified)"
+  },
+  "video_alignment": {
+    "classification": "DIRECT_SAME_CAMPAIGN",
+    "supporting": [
+      "same date 29/06/2026; same instrument XAUUSD; the video breakdown explicitly reviews THIS BUY (4045 zone, OB/FVG, layering, 4070-80 sell zone) and the missed 4000 long"
+    ],
+    "time_alignment_claimed": false
+  },
+  "source_asset_ids": [
+    "sa-de1197b472306864",
+    "sa-19c3595caaa28406",
+    "sa-bc200fb932058fc3",
+    "sa-036eef476c3ce1b2"
+  ]
+}

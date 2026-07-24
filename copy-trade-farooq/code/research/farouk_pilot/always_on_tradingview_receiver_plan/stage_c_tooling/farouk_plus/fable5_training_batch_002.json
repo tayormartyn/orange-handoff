@@ -1,0 +1,33 @@
+{
+  "batch_id": "fable5_training_batch_002",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / SINGLE_SESSION",
+  "processed": [
+    {"item": "farouk_trade_audit.xlsx", "evidence_id": "FP-AUDIT-001", "rights": "internal analysis artefact (own work, pre-Fable)", "topics": ["per-signal R audit 22 May-27 Jun (31 rows, 27 gold)", "6 pre-capture May gold trades", "re-entry/layering flagged as critical limitation"], "confidence": "HIGH", "changes_orange": true},
+    {"item": "farouk_final_reconciliation_audit.xlsx", "evidence_id": "FP-AUDIT-002", "rights": "internal analysis artefact", "topics": ["audited 26W/4L/1BE vs uploaded 28W/3L", "HONEST GOLD RANGE +0.27R..+0.35R per primary signal", "sign-off NOT YET"], "confidence": "HIGH", "changes_orange": true},
+    {"item": "Trading Journal - Farouk - Whale Room.xlsx", "evidence_id": "FP-JOURNAL-001", "rights": "RIGHTS_PENDING_PRIVATE_REVIEW (his shared journal)", "topics": ["Jul-2024 crypto journal, 260 trades 223W/18L/17F", "same management doctrine 2 years earlier", "win% convention excludes flats", "compounding sheet excluded"], "confidence": "MEDIUM-HIGH (claim-based, different asset class)", "changes_orange": "R6 claim-quality context"},
+    {"item": "Live with Farouk, Friday 3 July 2026.mp4 (transcribed, 2268 segments)", "evidence_id": "FP-EDU-001-B (register-date reconciliation: register says Jul-3; repo raw = Jul-5 stream; both exist)", "rights": "RIGHTS_PENDING_PRIVATE_REVIEW", "topics": ["'3-400 pips stop loss' spoken scale", "'too big stop loss' width judgement", "wick-relative placement", "'longer the range, bigger the move'"], "confidence": "MEDIUM-HIGH", "changes_orange": "stop-width dataset"}
+  ],
+  "skipped": ["GMT20251221/20251012 (ingested)", "2025-12-14 movs (deferred to batch 003)", "Exochart/Delta (out of scope)", "WhaleRoom_TradeRecap_1.pdf (later)", "Live Jul-5 transcript (deprioritised; Jul-3 covered era)"],
+  "headline_findings": [
+    "THIRD EXPECTANCY LANE: claim-based audit gives +0.27R..+0.35R per primary gold signal — near Model A, far above Model B; triangulation = literal automation ~0, claim/managed credit ~+0.3R, truth decided by 8C instruction-timing capture",
+    "ROW-LEVEL CROSS-VALIDATION: the independent prior audit matches our June ledger verdicts on every checked row (J01, J03, J08, J21, J22, J23) — ledger confidence rises",
+    "6 pre-capture May gold trades recovered (claim-only; incl. a 2.2R TP3 winner) + 6 stop-width samples",
+    "stop-width anchors: median holds ~$20-25; spoken '3-400 pips' ($30-40) as the normal level-based scale",
+    "management doctrine STABLE across 2 years and asset classes (Jul-2024 crypto journal shows identical BE/partial/early-cut language)",
+    "win-accounting convention (flats excluded from denominator) is long-standing — R6 claim-quality context"
+  ],
+  "lesson_classifications": {
+    "audit_r_expectancy_lane": "NEW_PROMISING_FEATURE (capture-only metric per XAU-F: audit_r_midpoint)",
+    "may_2026_trades": "HOLD_AS_REFERENCE (RESULT_CLAIM_ONLY backward extension; OHLC-matchable later)",
+    "stop_width_samples_plus_spoken_scale": "STRENGTHENS_EXISTING_FEATURE (stop_width_by_level_type v0.1 dataset)",
+    "range_size_move_size_heuristic": "WATCHLIST_FEATURE",
+    "doctrine_stability_2yr": "STRENGTHENS_EXISTING_FEATURE (R6 modelling confidence)",
+    "win_accounting_convention": "STRENGTHENS_EXISTING_FEATURE (R6 claim_quality context)",
+    "ledger_cross_validation": "STRENGTHENS_EXISTING_FEATURE (meta: Day-3/5 ledger confidence)",
+    "compounding_sheets": "REJECTED_OR_DUPLICATE (excluded by policy; reference only)"
+  },
+  "v03_verdict": "SUPPORTED",
+  "human_ratification_needed": "none this batch",
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none", "redaction": "xlsx sizing/account columns auto-redacted; compounding/lot/leverage content excluded"}
+}

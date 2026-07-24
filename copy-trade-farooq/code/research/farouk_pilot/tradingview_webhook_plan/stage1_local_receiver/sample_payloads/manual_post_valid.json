@@ -1,0 +1,22 @@
+{
+  "schema_version": "tv-webhook-0.1",
+  "source": "TradingView",
+  "alert_name": "LIVE001_APLUS_XAUUSD_3M",
+  "symbol": "XAUUSD",
+  "exchange": "PEPPERSTONE",
+  "timeframe": "3",
+  "chart_interval": "3",
+  "event_text": "A+ or better setup",
+  "trigger_price": "4146.48",
+  "trigger_time": "2026-07-06T18:33:01Z",
+  "direction": "LONG",
+  "grade": "A+",
+  "event_type": "A_PLUS",
+  "safety_assertions": {
+    "contains_broker_instruction": false,
+    "contains_api_keys_or_secrets": false,
+    "is_execution_request": false,
+    "lane": "LOGGING_ONLY"
+  },
+  "_note": "Manual Stage-1 test payload. Illustrative values only (copied from prior evidence to show shape). No credentials. Not a live capture."
+}

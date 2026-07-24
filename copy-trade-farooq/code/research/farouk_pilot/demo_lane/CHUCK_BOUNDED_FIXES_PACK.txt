@@ -1,0 +1,104 @@
+================================================================================
+CHUCK SHORT EVIDENCE PACK - two bounded fixes + offline protobuf mapper
+Date: 2026-07-22   (adapter previously PASSED; this returns the four authorised items)
+================================================================================
+Mock-only. No connection, no OAuth-trade scope, no gate flip, no order. The mapper
+constructs protobuf objects in memory only and imports no client/transport/socket.
+
+FILE MANIFEST (SHA-256)
+  executor.py            b86a3c2aefc258d547633dc330e9861a665cc898d23f9119d55b253272fe9d5c
+  order_adapter.py       7a7f7e2aa7126d595cfaf85e299ac90cf6634ef7aace00beb78e6439ab93b2f0
+  mock_order_channel.py  4cd517986f940f26a53252225af0a009ff6a28d93cec34e7d47923e8cfbe13c6
+  protobuf_mapper.py     3c01be13c053603653259f5150f1472fe58ae83715cc42a76a84b853ae98098d
+  tests_order_adapter.py 21c5c2a61ab0d1cc58d222d7d6f8d54f598c304f9986a72e119167e6171634e1
+  tests_protobuf_mapper  2ae016bf8023a4c17af64e8342ef5734e4d172101e6a9679850f345ab93a1437
+
+TEST RESULTS
+  tests_order_adapter    45 passed, 0 failed   (python)
+  tests_protobuf_mapper  23 passed, 0 failed   (.venv-ctrader)
+  tests_demo_lane        62/62 pass  (regression - no behaviour change)
+
+--------------------------------------------------------------------------------
+ITEM 1 - EMERGENCY UNWIND ORDERING (executor._verify_protection_or_unwind)
+--------------------------------------------------------------------------------
+Enforced order for an unprotected fill (partial remainder present):
+  CANCEL_REMAINING_ENTRY -> CONFIRM_CANCELLATION -> CLOSE_CURRENT_FILLED_QUANTITY
+  -> VERIFY_ZERO_PENDING_AND_POSITION -> ALARM -> HALT
+The filled portion is NEVER closed before the pending entry is addressed.
+Cancellation outcome UNKNOWN -> OUTCOME_UNKNOWN / RECONCILE_ONLY: no close, no new
+placement, reconcile broker state first (no false containment claim).
+Proving tests:
+  ok  6a-1 CANCEL happens BEFORE CLOSE (event trace order)          [cancel-before-close]
+  ok  6a-1 cancellation confirmed + zero-verify in trace
+  ok  6a-1 CONFIRMED CONTAINMENT: zero pending AND zero position    [zero pending+position]
+  ok  6a cancel-unknown enters RECONCILE_ONLY (no false containment)[outcome-unknown->reconcile]
+  ok  6a cancel-unknown did NOT close (no CLOSE in trace)
+  ok  6a cancel-unknown: filled position still present (not falsely contained)
+  ok  6a full-fill follows CLOSE-ONLY branch (close present, NO cancel) [fully-filled-no-remainder]
+  ok  6a-1b cancel-only (cancel present, NO close)                  [pure pending]
+
+--------------------------------------------------------------------------------
+ITEM 2 - PRODUCTION GATE AUTHORITY (order_adapter)
+--------------------------------------------------------------------------------
+RealOrderAdapter.for_production(channel) derives dispatch enablement SOLELY from the
+authoritative gates (production_policy reads config gates). It accepts NO caller/CLI/
+env 'enabled' override. The enabled test policy is BOUND to a MockOrderChannel.
+Proving tests:
+  ok  for_production dispatch is NOT_ARMED while authoritative gates are False
+  ok  for_production takes NO 'enabled' override (only 'channel')
+  ok  env/CLI override does NOT enable production dispatch
+  ok  test-only enabled policy WORKS with a MockOrderChannel
+  ok  test-only enabled policy REFUSES a non-mock channel
+  ok  gates still hard False after item-2 tests
+Preserved: EXECUTION_ENABLED / CTRADER_EXECUTION_ENABLED / DEMO_EXECUTION_ENABLED = False, False, False
+
+--------------------------------------------------------------------------------
+ITEM 3 - VOLUME TERMINOLOGY
+--------------------------------------------------------------------------------
+  MOCK_METADATA_VOLUME_CONVERSION   = PASS
+       (0.01 lot -> 100 protocol volume proven vs the ratified meta lotSize 10000)
+  REAL_PEPPERSTONE_VOLUME_CONVERSION = PENDING_READ_ONLY_PREFLIGHT
+       (production volume derives from the VERIFIED real symbol metadata x exact
+        ratified nominal quantity at runtime - it is NOT hard-coded)
+  ok  volume is an INPUT (250 -> 250; NOT hard-coded 100)   [protobuf mapper test]
+  ok  mapper does NOT hard-code volume (passes the input through)
+
+--------------------------------------------------------------------------------
+ITEM 4 - OFFLINE CTRADER PROTOBUF MAPPER (demo_lane/protobuf_mapper.py)
+--------------------------------------------------------------------------------
+Canonical request -> exact cTrader protobuf objects, IN MEMORY ONLY.
+  Approved LIMIT opening -> ProtoOANewOrderReq. Fields required + tested:
+    ok  approved demo account id set
+    ok  allowlisted XAUUSD symbol id set (41)
+    ok  orderType == LIMIT
+    ok  tradeSide == BUY   (SELL also proven)
+    ok  exact protocol volume (100)
+    ok  exact limit price
+    ok  protective stop in the INITIAL request (stopLoss)
+    ok  timeInForce == GOOD_TILL_DATE
+    ok  exact expiration timestamp
+    ok  deterministic clientOrderId (correlation only)  [same corr->same id; differs otherwise]
+    ok  missing protective stop refused / bad side refused / non-positive volume refused
+  Risk-reducing close of a positively-identified Orange-owned position -> ProtoOAClosePositionReq:
+    ok  close req: account + position + reduce volume set
+    ok  close refused unless ownership POSITIVELY verified
+  DOES NOT connect / import client / open socket / authenticate / send. It loads ONLY
+  the pb2 message classes via a stub-bootstrap that avoids running ctrader_open_api/
+  __init__ (which imports the Twisted Client):
+    ok  OFFLINE: twisted NOT imported
+    ok  OFFLINE: ctrader_open_api.client NOT imported
+    ok  OFFLINE: socket NOT imported
+    ok  mapper imports no Client/TcpProtocol/EndPoints
+
+--------------------------------------------------------------------------------
+UNTOUCHED (this build)
+--------------------------------------------------------------------------------
+  Gates: EXECUTION/CTRADER/DEMO = False/False/False (unchanged)
+  Live forward ledger anchor: a9d76f0e7eabd491 (unchanged across the build)
+  Live services: 7/7 up, listener liveness HEALTHY (Telegram head advanced by live
+                 capture, not by this build). No service command issued.
+
+================================================================================
+END - returned to Chuck before any live-adapter/live-channel step. Nothing was
+connected, no gate flipped, no order placed.
+================================================================================

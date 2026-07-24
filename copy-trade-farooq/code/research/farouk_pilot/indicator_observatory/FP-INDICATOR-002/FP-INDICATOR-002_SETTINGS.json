@@ -1,0 +1,39 @@
+{
+  "indicator": "[kyle] v2",
+  "evidence": "DIRECTLY_VISIBLE settings dialog (ref_00-40.png)",
+  "Relative_Volume": {
+    "Volume_Multiplier": 2,
+    "Volume_Length": 20
+  },
+  "Market_Sessions": {
+    "Timezone": "GMT",
+    "London_Range_Box": {
+      "enabled_in_view": false,
+      "session_timings": "08:00-13:00"
+    },
+    "New_York_Range_Box": {
+      "enabled_in_view": false,
+      "session_timings": "17:00-21:00"
+    },
+    "Tokyo_Range_Box": {
+      "enabled_in_view": false,
+      "colour": "red",
+      "session_timings": "21:00-03:00"
+    }
+  },
+  "Multiframe_VWAP": {
+    "Use_Multiframe_VWAP": true,
+    "Session_VWAP_colour": "blue",
+    "Daily_VWAP_colour": "orange",
+    "Weekly_VWAP_colour": "grey",
+    "Monthly_VWAP_colour": "cyan",
+    "Fill": "Session/Daily",
+    "Transparency_Session_Daily": 85
+  },
+  "tabs": [
+    "Inputs",
+    "Style",
+    "Visibility"
+  ],
+  "source_asset_id": "sa-ee1b41d2b4661a2a"
+}

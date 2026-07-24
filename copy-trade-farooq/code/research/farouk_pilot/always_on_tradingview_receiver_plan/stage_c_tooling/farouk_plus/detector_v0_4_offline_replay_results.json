@@ -1,0 +1,1008 @@
+{
+  "replay_id": "detector_v0_4_offline_replay",
+  "generated_on": "2026-07-12",
+  "mode": "OFFLINE / IN-SAMPLE ONLY / REVIEW_ONLY / NO LIVE PROMOTION",
+  "base": "detector v0.3 replay labels (unchanged, from detector_v0_3_replay_results.json)",
+  "n_records": 34,
+  "variants": {
+    "V4-LIT": "mitigated_level_exclusion literal (>=1 touch episode, 24h proxy) hard cap at WATCH",
+    "V4-SP": "mitigated_level_exclusion spent-aligned (>=3 episodes) hard cap at WATCH",
+    "V4-SPX": "V4-SP with candle-close-confirmed exemption",
+    "V4-TF": "TF-hierarchy grading of bos_candle_close_confirmed (multi-TF +1, single-TF +0)"
+  },
+  "matrices": {
+    "v03": {
+      "SHADOW_CANDIDATE_LOW": {
+        "n": 8,
+        "W": 5,
+        "L": 2,
+        "P": 1
+      },
+      "SHADOW_CANDIDATE_MEDIUM": {
+        "n": 14,
+        "W": 11,
+        "L": 0,
+        "P": 3
+      },
+      "WATCH": {
+        "n": 6,
+        "W": 4,
+        "L": 2,
+        "P": 0
+      },
+      "HUMAN_REVIEW_REQUIRED": {
+        "n": 3,
+        "W": 1,
+        "L": 1,
+        "P": 1
+      },
+      "REJECT": {
+        "n": 3,
+        "W": 0,
+        "L": 1,
+        "P": 2
+      }
+    },
+    "V4-LIT": {
+      "WATCH": {
+        "n": 27,
+        "W": 20,
+        "L": 4,
+        "P": 3
+      },
+      "HUMAN_REVIEW_REQUIRED": {
+        "n": 3,
+        "W": 1,
+        "L": 1,
+        "P": 1
+      },
+      "REJECT": {
+        "n": 3,
+        "W": 0,
+        "L": 1,
+        "P": 2
+      },
+      "SHADOW_CANDIDATE_MEDIUM": {
+        "n": 1,
+        "W": 0,
+        "L": 0,
+        "P": 1
+      }
+    },
+    "V4-SP": {
+      "WATCH": {
+        "n": 21,
+        "W": 15,
+        "L": 4,
+        "P": 2
+      },
+      "SHADOW_CANDIDATE_MEDIUM": {
+        "n": 7,
+        "W": 5,
+        "L": 0,
+        "P": 2
+      },
+      "HUMAN_REVIEW_REQUIRED": {
+        "n": 3,
+        "W": 1,
+        "L": 1,
+        "P": 1
+      },
+      "REJECT": {
+        "n": 3,
+        "W": 0,
+        "L": 1,
+        "P": 2
+      }
+    },
+    "V4-SPX": {
+      "WATCH": {
+        "n": 19,
+        "W": 14,
+        "L": 4,
+        "P": 1
+      },
+      "SHADOW_CANDIDATE_MEDIUM": {
+        "n": 9,
+        "W": 6,
+        "L": 0,
+        "P": 3
+      },
+      "HUMAN_REVIEW_REQUIRED": {
+        "n": 3,
+        "W": 1,
+        "L": 1,
+        "P": 1
+      },
+      "REJECT": {
+        "n": 3,
+        "W": 0,
+        "L": 1,
+        "P": 2
+      }
+    },
+    "V4-TF": {
+      "SHADOW_CANDIDATE_LOW": {
+        "n": 8,
+        "W": 5,
+        "L": 2,
+        "P": 1
+      },
+      "SHADOW_CANDIDATE_MEDIUM": {
+        "n": 14,
+        "W": 11,
+        "L": 0,
+        "P": 3
+      },
+      "WATCH": {
+        "n": 6,
+        "W": 4,
+        "L": 2,
+        "P": 0
+      },
+      "HUMAN_REVIEW_REQUIRED": {
+        "n": 3,
+        "W": 1,
+        "L": 1,
+        "P": 1
+      },
+      "REJECT": {
+        "n": 3,
+        "W": 0,
+        "L": 1,
+        "P": 2
+      }
+    }
+  },
+  "promoted_tier_losses": {
+    "v03": [
+      "XAU-J23-20260619",
+      "XAU-S2-20260707"
+    ],
+    "V4-LIT": [],
+    "V4-SP": [],
+    "V4-SPX": [],
+    "V4-TF": [
+      "XAU-J23-20260619",
+      "XAU-S2-20260707"
+    ]
+  },
+  "promoted_tier_winners_count": {
+    "v03": 16,
+    "V4-LIT": 0,
+    "V4-SP": 5,
+    "V4-SPX": 6,
+    "V4-TF": 16
+  },
+  "label_moves": {
+    "V4-LIT": [
+      {
+        "pack_id": "XAU-J01-20260602",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "P",
+        "touches": 5
+      },
+      {
+        "pack_id": "XAU-J02-20260602",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 2
+      },
+      {
+        "pack_id": "XAU-J04-20260603",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J05-20260603",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 14
+      },
+      {
+        "pack_id": "XAU-J07-20260604",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 3
+      },
+      {
+        "pack_id": "XAU-J09-20260611",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J12-20260615",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 1
+      },
+      {
+        "pack_id": "XAU-J13-20260615",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 2
+      },
+      {
+        "pack_id": "XAU-J18-20260616",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 11
+      },
+      {
+        "pack_id": "XAU-J20-20260617",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J21-20260618",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 12
+      },
+      {
+        "pack_id": "XAU-J22-20260618",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 2
+      },
+      {
+        "pack_id": "XAU-J23-20260619",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "L",
+        "touches": 3
+      },
+      {
+        "pack_id": "XAU-J25-20260623",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 8
+      },
+      {
+        "pack_id": "XAU-J26-20260624",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 7
+      },
+      {
+        "pack_id": "XAU-J27-20260625",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 24
+      },
+      {
+        "pack_id": "XAU-J30-20260629",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "P",
+        "touches": 2
+      },
+      {
+        "pack_id": "XAU-S1-20260630",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 1
+      },
+      {
+        "pack_id": "XAU-S2-20260707",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4lit_label": "WATCH",
+        "outcome": "L",
+        "touches": 26
+      },
+      {
+        "pack_id": "XAU-S3-20260708",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "W",
+        "touches": 6
+      },
+      {
+        "pack_id": "XAU-S4-20260710",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4lit_label": "WATCH",
+        "outcome": "P",
+        "touches": 18
+      }
+    ],
+    "V4-SP": [
+      {
+        "pack_id": "XAU-J01-20260602",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "P",
+        "touches": 5
+      },
+      {
+        "pack_id": "XAU-J04-20260603",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J05-20260603",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 14
+      },
+      {
+        "pack_id": "XAU-J07-20260604",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 3
+      },
+      {
+        "pack_id": "XAU-J09-20260611",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J18-20260616",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 11
+      },
+      {
+        "pack_id": "XAU-J20-20260617",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J21-20260618",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 12
+      },
+      {
+        "pack_id": "XAU-J23-20260619",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "L",
+        "touches": 3
+      },
+      {
+        "pack_id": "XAU-J25-20260623",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 8
+      },
+      {
+        "pack_id": "XAU-J26-20260624",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 7
+      },
+      {
+        "pack_id": "XAU-J27-20260625",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 24
+      },
+      {
+        "pack_id": "XAU-S2-20260707",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4sp_label": "WATCH",
+        "outcome": "L",
+        "touches": 26
+      },
+      {
+        "pack_id": "XAU-S3-20260708",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "W",
+        "touches": 6
+      },
+      {
+        "pack_id": "XAU-S4-20260710",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4sp_label": "WATCH",
+        "outcome": "P",
+        "touches": 18
+      }
+    ],
+    "V4-SPX": [
+      {
+        "pack_id": "XAU-J01-20260602",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "P",
+        "touches": 5
+      },
+      {
+        "pack_id": "XAU-J04-20260603",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J05-20260603",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 14
+      },
+      {
+        "pack_id": "XAU-J07-20260604",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 3
+      },
+      {
+        "pack_id": "XAU-J09-20260611",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J18-20260616",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 11
+      },
+      {
+        "pack_id": "XAU-J20-20260617",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 10
+      },
+      {
+        "pack_id": "XAU-J21-20260618",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 12
+      },
+      {
+        "pack_id": "XAU-J23-20260619",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "L",
+        "touches": 3
+      },
+      {
+        "pack_id": "XAU-J25-20260623",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 8
+      },
+      {
+        "pack_id": "XAU-J26-20260624",
+        "v03": "SHADOW_CANDIDATE_MEDIUM",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 7
+      },
+      {
+        "pack_id": "XAU-J27-20260625",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "W",
+        "touches": 24
+      },
+      {
+        "pack_id": "XAU-S2-20260707",
+        "v03": "SHADOW_CANDIDATE_LOW",
+        "v4spx_label": "WATCH",
+        "outcome": "L",
+        "touches": 26
+      }
+    ],
+    "V4-TF": []
+  },
+  "records": [
+    {
+      "pack_id": "XAU-J01-20260602",
+      "outcome": "P",
+      "touches": 5,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J02-20260602",
+      "outcome": "W",
+      "touches": 2,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J03-20260602",
+      "outcome": "L",
+      "touches": 15,
+      "v03_label": "WATCH",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "WATCH",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J04-20260603",
+      "outcome": "W",
+      "touches": 10,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J05-20260603",
+      "outcome": "W",
+      "touches": 14,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J06-20260603",
+      "outcome": "W",
+      "touches": 10,
+      "v03_label": "WATCH",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "WATCH",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J07-20260604",
+      "outcome": "W",
+      "touches": 3,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J08-20260604",
+      "outcome": "L",
+      "touches": 2,
+      "v03_label": "WATCH",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "WATCH",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J09-20260611",
+      "outcome": "W",
+      "touches": 10,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J10-20260611",
+      "outcome": "L",
+      "touches": null,
+      "v03_label": "HUMAN_REVIEW_REQUIRED",
+      "v4lit_label": "HUMAN_REVIEW_REQUIRED",
+      "v4sp_label": "HUMAN_REVIEW_REQUIRED",
+      "v4spx_label": "HUMAN_REVIEW_REQUIRED",
+      "v4tf_label": "HUMAN_REVIEW_REQUIRED",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J11-20260611",
+      "outcome": "P",
+      "touches": null,
+      "v03_label": "HUMAN_REVIEW_REQUIRED",
+      "v4lit_label": "HUMAN_REVIEW_REQUIRED",
+      "v4sp_label": "HUMAN_REVIEW_REQUIRED",
+      "v4spx_label": "HUMAN_REVIEW_REQUIRED",
+      "v4tf_label": "HUMAN_REVIEW_REQUIRED",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J12-20260615",
+      "outcome": "W",
+      "touches": 1,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J13-20260615",
+      "outcome": "W",
+      "touches": 2,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J14-20260615",
+      "outcome": "W",
+      "touches": 3,
+      "v03_label": "WATCH",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "WATCH",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J15-20260615",
+      "outcome": "P",
+      "touches": 7,
+      "v03_label": "REJECT",
+      "v4lit_label": "REJECT",
+      "v4sp_label": "REJECT",
+      "v4spx_label": "REJECT",
+      "v4tf_label": "REJECT",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J16-20260615",
+      "outcome": "P",
+      "touches": 10,
+      "v03_label": "REJECT",
+      "v4lit_label": "REJECT",
+      "v4sp_label": "REJECT",
+      "v4spx_label": "REJECT",
+      "v4tf_label": "REJECT",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J17-20260615",
+      "outcome": "L",
+      "touches": 10,
+      "v03_label": "REJECT",
+      "v4lit_label": "REJECT",
+      "v4sp_label": "REJECT",
+      "v4spx_label": "REJECT",
+      "v4tf_label": "REJECT",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J18-20260616",
+      "outcome": "W",
+      "touches": 11,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J19-20260616",
+      "outcome": "W",
+      "touches": 13,
+      "v03_label": "WATCH",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "WATCH",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J20-20260617",
+      "outcome": "W",
+      "touches": 10,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J21-20260618",
+      "outcome": "W",
+      "touches": 12,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J22-20260618",
+      "outcome": "W",
+      "touches": 2,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J23-20260619",
+      "outcome": "L",
+      "touches": 3,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J25-20260623",
+      "outcome": "W",
+      "touches": 8,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J26-20260624",
+      "outcome": "W",
+      "touches": 7,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J27-20260625",
+      "outcome": "W",
+      "touches": 24,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J28-20260626",
+      "outcome": "P",
+      "touches": 0,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J29-20260626",
+      "outcome": "W",
+      "touches": 1,
+      "v03_label": "WATCH",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "WATCH",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J30-20260629",
+      "outcome": "P",
+      "touches": 2,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-S1-20260630",
+      "outcome": "W",
+      "touches": 1,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-S2-20260707",
+      "outcome": "L",
+      "touches": 26,
+      "v03_label": "SHADOW_CANDIDATE_LOW",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "WATCH",
+      "v4tf_label": "SHADOW_CANDIDATE_LOW",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-S3-20260708",
+      "outcome": "W",
+      "touches": 6,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-S4-20260710",
+      "outcome": "P",
+      "touches": 18,
+      "v03_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4lit_label": "WATCH",
+      "v4sp_label": "WATCH",
+      "v4spx_label": "SHADOW_CANDIDATE_MEDIUM",
+      "v4tf_label": "SHADOW_CANDIDATE_MEDIUM",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    },
+    {
+      "pack_id": "XAU-J24-20260623",
+      "outcome": "W",
+      "touches": null,
+      "v03_label": "HUMAN_REVIEW_REQUIRED",
+      "v4lit_label": "HUMAN_REVIEW_REQUIRED",
+      "v4sp_label": "HUMAN_REVIEW_REQUIRED",
+      "v4spx_label": "HUMAN_REVIEW_REQUIRED",
+      "v4tf_label": "HUMAN_REVIEW_REQUIRED",
+      "review_only": true,
+      "executable": false,
+      "trade_ready": false,
+      "observation_only": true
+    }
+  ],
+  "review_only": true
+}

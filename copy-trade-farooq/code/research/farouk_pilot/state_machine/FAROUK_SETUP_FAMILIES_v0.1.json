@@ -1,0 +1,96 @@
+{
+  "rule_version": "v0.1",
+  "note": "Each family has its OWN branch/guards — setups are NOT forced through identical guards. Tag = evidence level; feasibility separate.",
+  "families": [
+    {
+      "family": "ORB_CONTINUATION",
+      "tag": "EVIDENCE_SUPPORTED",
+      "evidence": "FP-INDICATOR-004: ORB break + RETEST + continuation, 'aim for the level'",
+      "regions_used": [
+        "SESSION_CONTEXT",
+        "ORB_EVENT",
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "BREAKOUT_CONFIRMED + retest holds",
+      "primary_veto": "inside-ORB chop",
+      "feasibility": "PARTIAL (close rule clear; timezone + retest-tolerance pending)"
+    },
+    {
+      "family": "ORB_FAILED_BREAKOUT",
+      "tag": "EVIDENCE_SUPPORTED",
+      "evidence": "FP-INDICATOR-004: double-top/'failed to go higher' then reverse",
+      "regions_used": [
+        "ORB_EVENT",
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "FAILED_BREAKOUT (close back inside) + reverse",
+      "primary_veto": "no clean prior break",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "family": "SFP_REVERSAL",
+      "tag": "EVIDENCE_SUPPORTED",
+      "evidence": "FP-INDICATOR-003: SFP wick/no-close -> dot line -> sweep-retest",
+      "regions_used": [
+        "LIQUIDITY_EVENT",
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "SFP_CONFIRMED + retest",
+      "primary_veto": "reclaim/close beyond swing",
+      "feasibility": "BLOCKED (SFP marker repaint + intrabar-vs-close timing UNKNOWN)"
+    },
+    {
+      "family": "POC_VALUE_REJECTION",
+      "tag": "PARTIALLY_SUPPORTED",
+      "evidence": "FP-INDICATOR-003: below VAL bearish / reclaim VAH bullish; target next POC",
+      "regions_used": [
+        "VALUE_LOCATION",
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "AT_VAL/AT_VAH/AT_POC rejection",
+      "primary_veto": "acceptance into value",
+      "feasibility": "BLOCKED (value-area calculation + POC 'T' meaning UNKNOWN)"
+    },
+    {
+      "family": "VWAP_RECLAIM_OR_REJECTION",
+      "tag": "PARTIALLY_SUPPORTED",
+      "evidence": "FP-INDICATOR-002: above=bullish/below=bearish; hold->long / lose->short",
+      "regions_used": [
+        "VALUE_LOCATION(VWAP sub-axis)",
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "VWAP_CROSSED reclaim/reject + retest",
+      "primary_veto": "sideways/weakened VWAP",
+      "feasibility": "PARTIAL (which VWAP TF authoritative + session-reset repaint UNKNOWN)"
+    },
+    {
+      "family": "STRONG_OB_REVERSAL",
+      "tag": "HYPOTHESIS_ONLY",
+      "evidence": "FP-EDU-004 docs (sweep->displacement->FVG); NOT a shown [kyle] object; 'cluster' spoken only",
+      "regions_used": [
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "strong-OB retest",
+      "primary_veto": "weak/mitigated OB",
+      "feasibility": "BLOCKED (no indicator object owns it; displacement metric undefined)"
+    },
+    {
+      "family": "FVG_CONTINUATION",
+      "tag": "HYPOTHESIS_ONLY",
+      "evidence": "FP-EDU-002 Playbook FVG continuation; barely present in indicator videos",
+      "regions_used": [
+        "STRUCTURAL_SETUP",
+        "QUALIFICATION"
+      ],
+      "trigger": "FVG close-above/retrace/continue",
+      "primary_veto": "FVG filled (invalid)",
+      "feasibility": "BLOCKED (no confirmed indicator ownership of FVG here)"
+    }
+  ]
+}

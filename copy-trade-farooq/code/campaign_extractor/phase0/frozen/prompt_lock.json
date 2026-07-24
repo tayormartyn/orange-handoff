@@ -1,0 +1,7 @@
+{
+  "prompt_version": "prompt-0.2.0",
+  "extractor_version": "extractor-0.1.0",
+  "prompt_sha256": "95bbf6a4b18ebdd7fc4db2a3e1449ab2e7b7e65a7cf16da461d8ea251a802ef4",
+  "frozen_at": "2026-06-29",
+  "note": "Frozen after refinements 1&2 landed on June 26 dev set. No more edits."
+}

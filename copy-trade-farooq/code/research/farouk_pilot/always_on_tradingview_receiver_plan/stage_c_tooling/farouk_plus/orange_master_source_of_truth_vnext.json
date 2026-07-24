@@ -1,0 +1,68 @@
+{
+  "doc_id": "orange_master_source_of_truth_vnext",
+  "as_of": "2026-07-12T11:45Z",
+  "supersedes": "orange_master_source_of_truth (2026-07-11T20:00Z pair, preserved untouched)",
+  "update_discipline": "extend/re-issue with new as-of date; SINGLE-SESSION writes to farouk_plus only",
+  "mission": "Farouk-plus XAU intelligence/shadow engine: learn the method, separate Farouk-private edge from follower-capturable edge, test Orange pre-marking vs late Telegram following. Review-only forever unless governance changes gates.",
+  "safety": {
+    "execution": "absent or hard-disabled (broker/QST/cTrader/nano/copy)",
+    "permits_leases_orders": "none",
+    "gates": "PAPER / PREVIEW / False / False (+ ORDER_SENDING_ENABLED=False / ORDER_MANAGEMENT_ENABLED=False)",
+    "not_integration_ready": "unchanged",
+    "labels": ["REJECT", "WATCH", "SHADOW_CANDIDATE_LOW", "SHADOW_CANDIDATE_MEDIUM", "HUMAN_REVIEW_REQUIRED", "PRE_MARK_*"],
+    "enforcement": "ai_review fail-closed validator + extended forbidden-token guard; stamp from validator only"
+  },
+  "live_infrastructure": {
+    "listener": {"pid": 23012, "started_utc": "2026-07-12T11:18:08Z", "mode": "PREVIEW", "command": "python -u module_a_telegram.py", "logs": "data/listener_logs/listener_20260712_131808.out/.err.log", "capture": "text+photo live; copied-session backfill proven; sha256 media store; append-only DBs", "note": "ONLY live capture process; never restart from a work session; report if dead"},
+    "retired_listener": {"pid": 87988, "retired": "2026-07-12 ~10:06Z laptop power-down (heat); window recovered by copied-session backfill"},
+    "forward_cursor": {"last_msg": 45646, "last_cycle": "CYCLE_003", "store_max": 45648, "post_cursor_msgs": {"45647": "NON_XAU (navigatorjosh HYPE/Hormuz chatter; photo preserved)", "45648": "IRRELEVANT (admin newsfeed-channel notice)"}, "cycles_001_003": "clean NO_NEW_XAU_SETUP (market closed; reopens ~2026-07-12T22:00Z)"},
+    "alert_lane": "Worker->R2 capture exists (read-only evidence); fires only when market open",
+    "feeds": {"his": "Vantage (XAUUSD-VIP)", "reference": "Pepperstone", "typical_divergence_usd": "0.5-2"}
+  },
+  "evidence_base": {
+    "matched_trades": 34, "sessions": 18, "wins": 21, "losses": 3, "partials": 10, "contradicted": 0,
+    "audit_lane": "FP-AUDIT-002: +0.27R..+0.35R per primary gold signal",
+    "expectancy_triangulation": {"literal_follower_model_b": "~0 raw (+25.6 filtered)", "managed_credit_model_a": "+132p/trade", "audit_r_lane": "~+0.3R", "decider": "8C instruction-timing capture"},
+    "central_caveat": "follower-capturable edge != Farouk private fills (earlier fills, wider discretionary stops, Vantage feed); Batch-003 adds first concrete posted-vs-actual SL gap (~$5, 19-Mar recap row)",
+    "batch_003_additions": {"fp_recap_001": "Feb-17..Mar-27 2026 recap, 25+ trades, claim conventions documented", "stop_width_samples": "+19 (median ~$21, range 8-89) - cross-period match with existing ~$20"}
+  },
+  "detector": {
+    "active": "v0.3 (with v0.2 parallel per record - forward A/B); labels UNCHANGED through Batch 003/003B",
+    "v03_replay": {"MEDIUM": "14 = 11W/0L/3P (zero-loss top tier)", "driver": "F2 zone_touch_count (Batch-003 doctrine-confirmed)"},
+    "v04_backlog_offline_only": ["displacement_fvg_artifact_test (loss-backed, FVG-presence design)", "mitigated_level_exclusion (NEW; RATIFICATION-GATED before any scoring use)", "confirmation_tf_hierarchy grading (+confidence only)", "layering-cap flag", "rubric-count input", "audit-R scoring (needs ratification)"],
+    "v04_rule": "offline replay before any use; never live in this era"
+  },
+  "r6": {
+    "lanes": ["farouk_private_fill", "posted_zone_follower", "post_time_follower (canonical)", "management_instruction_follower (expectancy lane)", "headline_claim (discounted)", "orange_pre_mark"],
+    "ratified": ["no 2R assumption", "never-widen binds follower lanes", "claim discount (inflation_ratio>1.25 -> HR)"],
+    "batch_003_strengthens": {"lane_5": "85%+ = W/(W+L) MISSED+REMOVED excluded; +3000p no-entry 'win'; paper-vs-real separation quote", "lanes_2_3": "limit-at-zone 'cheat code' doctrine; SL-to-entry at TP1 routine"}
+  },
+  "lane6": {
+    "builder_spec": "v0.1 complete; repaint guard active (untested); 13-condition alert mapping",
+    "batch_003": "core hypothesis strengthened (pre-marking = his own workflow); indicator panel-level semantics pack merged as builder inputs",
+    "active_candidates": [
+      {"id": "PM-F001-SELL-4150-4184", "label": "PRE_MARK_OBSERVED", "match": "PENDING", "expires": "2026-07-17", "status": "untouched through reboot + 003/003B"},
+      {"id": "PM-F002-SUPPLY-4430-4480", "label": "PRE_MARK_OBSERVED", "match": "PENDING", "expires": "2026-07-31", "status": "untouched through reboot + 003/003B"}],
+    "retro_lesson": "levels matched 2/3, 0 profitable fills - stop-width is the binding constraint"
+  },
+  "training_recovery": {
+    "batches_complete": ["001", "001B", "002", "002B", "003", "003B"],
+    "batch_003_evidence": ["FP-B003-01..06", "FP-RECAP-001"],
+    "batch_003b": "five capture-only merges: stop-width extension, SL-gap note, indicator semantics, limit-at-zone doctrine, claim conventions",
+    "corpus": "~200 artefacts recovered on disk, 33 FP-EDU records",
+    "ratifications": ["BOS candle-close = +confidence only", "graded confluence stack", "no 2R", "never-widen (follower lanes)"],
+    "ratification_queue": [{"item": "mitigated_level_exclusion", "needed_before": "any v0.4 scoring use", "blocking_now": false}]
+  },
+  "feature_stack_additions_003b": ["entry_mechanic_evidence", "pre_planned_evidence", "posted_sl_price", "actual_stop_evidence", "posted_vs_actual_sl_gap_usd", "indicator_level_source_kind", "claim_convention_notes", "claim_has_entry_sl"],
+  "stop_width_dataset": "32 sprint widths (median $20) + 6 May samples + spoken $30-40 anchor + 19 Feb-Mar 2026 recap samples (median ~$21)",
+  "proven": ["record materially real (0 contradicted)", "v0.3 > v0.2 in-sample", "corpus not lost", "forward stack armed", "stop-width median stable across quarters (Batch-003)", "pre-marking is his own doctrine (Batch-003)"],
+  "not_proven": ["v0.3 out-of-sample", "lane-6 pre-mark match rate", "true Orange fill lag", "broker/demo readiness", "matching his private execution", "78-80% Asia-high claim (watchlist)"],
+  "demo_readiness_blockers": [">=15 forward XAU-F records", ">=5 forward sessions", "OHLC within 48h where possible", "v0.2/v0.3 forward A/B results", "fill_lag_cost measured", "pre-mark match/miss evidence", "100% human review", "no contradiction/unacceptable loss leakage", "governance sign-off for any gate change"],
+  "next_actions": [
+    "Cycle 004 / XAU-F001 at first real XAU post after tonight ~22:00Z reopen (listener PID 23012 live) under full 8C+8D+8F+001B+002B+003B capture spec; v0.2/v0.3 parallel; PM comparison; same-day 1m OHLC; 48h match",
+    "detector v0.4 offline replay (displacement + mitigated_level_exclusion + TF-hierarchy + prior backlog); mitigated_level_exclusion ratification-gated",
+    "optional OHLC matching: Feb-Mar 2026 recap trades (tests 85% claim) + May option",
+    "re-issue master with Cycle-004 results when XAU-F001 exists"
+  ],
+  "key_files_added_since_0711": ["ORANGE_CONTROLLED_REBOOT_STATUS.*", "FABLE5_TRAINING_BATCH_003_REPORT.md + 2 JSONs", "TRAINING_BATCH_003B_CAPTURE_ONLY_INTEGRATION.*"]
+}

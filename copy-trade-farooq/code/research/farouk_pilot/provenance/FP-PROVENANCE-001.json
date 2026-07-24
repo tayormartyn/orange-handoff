@@ -1,0 +1,25 @@
+{
+  "record_type": "provenance",
+  "provenance_id": "FP-PROVENANCE-001",
+  "status": "PENDING_SCREENSHOT",
+  "purpose": "Link the three documents to Farouk as their publisher/authorial source.",
+  "links": {
+    "FP-EDU-002": {
+      "file": "Farouks_Playbook",
+      "asset_id": "sa-4cb77d9d6b13478a",
+      "authorship_claim": "footer 'FAROUK'S PLAYBOOK - WHALEROOM'; header 'My personal trading playbook'"
+    },
+    "FP-EDU-003": {
+      "file": "Whaleroom_Trading_Guide",
+      "asset_id": "sa-8b0a95608f41b5e4",
+      "authorship_claim": "'WHALEROOM Daily Gold Traders' branding"
+    },
+    "FP-EDU-004": {
+      "file": "Whaleroom_OrderBlocks_Strong_vs_Weak",
+      "asset_id": "sa-c005bffefcc3a90e",
+      "authorship_claim": "footer 'FAROUK'S PLAYBOOK - WHALEROOM'"
+    }
+  },
+  "note": "The provenance SCREENSHOT (Farouk personally posting/describing the three docs) was NOT supplied - authorship currently rests on the documents' own branding/footers, which is SUGGESTIVE not proven. Provenance is NOT permission for redistribution.",
+  "operator_action_required": "supply the provenance screenshot to establish the Farouk-as-publisher link"
+}

@@ -1,0 +1,8 @@
+{
+  "cursor_id": "farouk_plus_forward_scoring_v0_2",
+  "last_processed_message_id": 45742,
+  "last_processed_posted_at_utc": "2026-07-14T15:53:18+00:00",
+  "last_cycle": "CYCLE_006_SCAN_07_RETURN_HOME",
+  "last_cycle_run_at_utc": "2026-07-14T16:21:11Z",
+  "note": "CYCLE 006 TRIGGERED: XAU-F001-20260714 (BUY, closed) + XAU-F002-20260714 (SELL, open) created with full capture stack + frozen v0.2/v0.3 A/B; cursor 45742 = store max; 45737 gap-filled (empty); OHLC request outstanding (PENDING_OHLC)"
+}

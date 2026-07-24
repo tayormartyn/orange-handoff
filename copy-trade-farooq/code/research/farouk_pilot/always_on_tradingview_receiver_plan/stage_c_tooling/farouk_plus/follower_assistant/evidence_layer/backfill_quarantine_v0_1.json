@@ -1,0 +1,19 @@
+{
+ "manifest": "backfill_quarantine_v0_1",
+ "written_at_utc": "2026-07-24T11:21:21Z",
+ "rule": "is_analytical: setup_id not in explicit set, not placeholder, and F-index >= 3",
+ "non_analytical_explicit_ids": [
+  "XAU-F001-20260714",
+  "XAU-F002-20260714"
+ ],
+ "placeholder_prefix": "XAU-F???",
+ "campaign3_min_setup_num": 3,
+ "excluded_from": [
+  "campaign_3_to_15_counts",
+  "expectancy",
+  "hypothesis_agreement",
+  "enhanced_entry_comparisons",
+  "profitability_reports"
+ ],
+ "append_only_note": "quarantined records are preserved; never deleted or rewritten"
+}

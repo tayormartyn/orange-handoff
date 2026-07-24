@@ -1,0 +1,182 @@
+{
+  "record_id": "FP-INDICATOR-001",
+  "source_video_asset": "sa-5635e60e29be4868",
+  "chat_log_asset": "sa-249ac9a39b2bb93c",
+  "platform": "TradingView",
+  "timezone_shown_on_chart": "UTC+1 (bottom-right clock)",
+  "note": "Identity from DIRECTLY VISIBLE on-chart indicator list (scene_00-58-30) and the [kyle] v1 settings dialog (scene_01-29-10). Where a setting/name was not visible it is UNKNOWN - not guessed. A historical recording cannot establish repaint/intrabar/closed-bar behaviour; those are UNKNOWN and deferred to the prospective capture plan.",
+  "chart_environment": {
+    "symbol": "XAUUSD (Gold Spot / U.S. Dollar)",
+    "primary_feed": "OANDA",
+    "other_tabs_seen": [
+      "XAUUSD x4 (feeds not all confirmed)",
+      "DXY (US Dollar Index)",
+      "BTCUSDT.P"
+    ],
+    "timeframes_seen": [
+      "30s (button)",
+      "1m",
+      "5m"
+    ],
+    "layout_name": "green 2",
+    "session_date_shown": "2025-12-18 .. 2025-12-21 (recording GMT20251221-181518)",
+    "also_mentioned": "micro gold vs XAUUSD comparison (chat 01:48); VT Markets broker (chat)"
+  },
+  "applied_indicators_visible": [
+    {
+      "name": "POC Prototype",
+      "author_publisher": "UNKNOWN (no author string visible)",
+      "version": "'Prototype' label",
+      "role_observed": "point-of-control / volume-profile (developing)",
+      "confidence": "HIGH (name visible)"
+    },
+    {
+      "name": "POC",
+      "author_publisher": "UNKNOWN",
+      "version": "UNKNOWN",
+      "role_observed": "point-of-control levels; multi-period POC values plotted on the price scale",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Smart Zones Strategy PRO",
+      "author_publisher": "UNKNOWN",
+      "version": "'PRO'",
+      "role_observed": "zones/strategy overlay (supply/demand zones) - specifics NOT opened in any captured frame",
+      "confidence": "MEDIUM (name visible, settings never shown)"
+    },
+    {
+      "name": "[kyle] v2",
+      "author_publisher": "author handle 'kyle' (TradingView bracket convention)",
+      "version": "v2",
+      "role_observed": "PRESENT on chart but its settings were NOT opened; MUST NOT be assumed equivalent to v1",
+      "confidence": "HIGH name / UNKNOWN internals"
+    },
+    {
+      "name": "[kyle] v1",
+      "author_publisher": "author handle 'kyle'",
+      "version": "v1",
+      "role_observed": "primary indicator whose settings WERE opened - see kyle_v1_settings",
+      "confidence": "HIGH"
+    }
+  ],
+  "kyle_v1_settings": {
+    "source_frame": "scene_01-29-10.png (settings dialog, Inputs tab)",
+    "dialog_tabs": [
+      "Inputs",
+      "Style",
+      "Visibility"
+    ],
+    "LIQUIDITY_SWEEPS": {
+      "enabled_in_view": false,
+      "Bull_colour": "green",
+      "Bear_colour": "red"
+    },
+    "MOVING_AVERAGE": {
+      "note": "5 configurable MA rows, ALL UNCHECKED in the captured view",
+      "rows": [
+        {
+          "type": "EMA",
+          "length": 20,
+          "source": "Close"
+        },
+        {
+          "type": "SMA",
+          "length": 21,
+          "source": "Close"
+        },
+        {
+          "type": "SMA",
+          "length": 34,
+          "source": "Close"
+        },
+        {
+          "type": "EMA",
+          "length": 50,
+          "source": "Close"
+        },
+        {
+          "type": "SMA",
+          "length": 55,
+          "source": "Close"
+        }
+      ],
+      "relation": "these are the candidate 'Trend EMA' referenced in FP-EDU-004; exact one(s) used = UNKNOWN (all off in view)"
+    },
+    "OPENING_RANGE_BREAKOUT": {
+      "Timezone": "GMT+1",
+      "Asia_ORB": {
+        "enabled_in_view": false,
+        "opening_range": "03:00-03:15",
+        "signal_times": "04:00-04:15"
+      },
+      "London_ORB": {
+        "enabled_in_view": false,
+        "opening_range": "09:00-09:15",
+        "signal_times": "09:00-09:15"
+      },
+      "NY_ORB": {
+        "enabled_in_view": true,
+        "opening_range": "15:30-15:45",
+        "signal_times": "15:00-15:15"
+      },
+      "spoken_clarification": "Farouk: ORB = the first 15 minutes of a session; GMT+1; London 09:00-09:15; NY 15:30. He said the 'signal times' setting 'makes no difference, does nothing - I'm going to remove it' [01:26-01:27]."
+    },
+    "POC_PLOTS_ON_SCALE": {
+      "label_format": "[kyle] v1: <period> : POC <price>",
+      "periods_seen": [
+        "1M",
+        "1W",
+        "3D",
+        "2D",
+        "1D",
+        "1DT",
+        "5D",
+        "1WT",
+        "2W",
+        "3DT",
+        "2DT"
+      ],
+      "example_values": {
+        "1D/2D/3D/1W/1M": "~4,238.800 (clustered)",
+        "1DT": "4,187.700",
+        "5D/1WT/2W": "~4,163.200",
+        "3DT": "4,162.600",
+        "2DT": "4,154.500"
+      },
+      "T_suffix_meaning": "UNKNOWN - 'T' variants (1DT/1WT/3DT/2DT) plot DIFFERENT prices than the non-T periods; audience explicitly asked 'difference between POC 1D and 1DT?' / 'what does 1MT mean?' / 'what does dt mean on the POCs?' and it was NOT answered in the chat. Do NOT guess."
+    },
+    "other_controls": [
+      "'Defaults' preset dropdown",
+      "Cancel / Ok"
+    ]
+  },
+  "plotted_objects_observed": [
+    {
+      "object": "POC levels",
+      "evidence": "labelled horizontal levels on the price scale (multi-period + T variants)"
+    },
+    {
+      "object": "SFP markers ('SFP' text labels)",
+      "evidence": "on 5m chart (scene_01-29-10); Farouk 'the SFP is really nice ... gives you a buy' [01:26:48] (SFP = Swing Failure Pattern, inferred)"
+    },
+    {
+      "object": "small circle markers on candles",
+      "evidence": "blue circles near swing points (scene_00-58-30) - source indicator UNKNOWN ([kyle] signals suspected, not confirmed)"
+    },
+    {
+      "object": "ORB range boxes",
+      "evidence": "opening-range breakout regions (setting enabled for NY)"
+    },
+    {
+      "object": "MA lines",
+      "evidence": "not visibly enabled in captured frames (all MA rows off)"
+    },
+    {
+      "object": "Smart Zones / supply-demand zones",
+      "evidence": "pink/red + blue zones drawn across the session (source: Smart Zones Strategy PRO suspected, NOT confirmed)"
+    }
+  ],
+  "acquisition": "Chat: indicator claimed via Whop membership -> TradingView 'trending view' claim / Discord (community answers). Not a public/open script.",
+  "panel_fields_note": "The bottom-right CHoCH / Asia break / OB retest / Current OB / Fresh OB PANEL seen in FP-CAMPAIGN-001/002/003 was NOT visibly present in any captured frame of this session. Whether it is a [kyle] v2 / Smart Zones feature is UNKNOWN.",
+  "repaint_intrabar_closed_bar": "NOT DEMONSTRATED and NOT STATED by Farouk. UNKNOWN. See PROSPECTIVE_CAPTURE_PLAN."
+}

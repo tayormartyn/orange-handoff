@@ -1,0 +1,37 @@
+{
+  "contract_id": "outcome_contract_v0_1",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE / append-only / immutable-freeze",
+  "purpose": "Attach a post-decision campaign OUTCOME to an immutable router freeze WITHOUT modifying the freeze. Outcomes live in a separate append-only ledger.",
+  "outcome_ledger": "router_outcomes_v0_1.jsonl (MUST NOT be any router_freeze*.jsonl)",
+  "immutability_rules": [
+    "never edit the freeze", "never append outcome values inside the freeze record",
+    "never replace the freeze hash", "never regenerate the freeze using outcome information",
+    "never rewrite a genuine prospective ledger line",
+    "never promote a synthetic/backfill record into prospective evidence"
+  ],
+  "outcome_status_enum": ["PENDING", "COMPLETE", "INCOMPLETE_DATA", "AMBIGUOUS_INTRABAR_ORDER",
+                          "INVALID_SOURCE", "CAUSAL_INTEGRITY_FAILURE", "DATA_INTEGRITY_FAILURE",
+                          "CAMPAIGN_ABANDONED"],
+  "idempotency_key": "sha256(campaign_id | freeze_logical_hash | outcome_observation_cutoff | outcome_contract_version)",
+  "idempotency_rules": [
+    "repeating the same outcome event must not produce another outcome record",
+    "restart/reprocessing must not duplicate records",
+    "conflicting outcome evidence appends a CONTRADICTION/revision event, never overwrites",
+    "the original freeze remains unchanged"
+  ],
+  "attachment_references": ["campaign_id", "freeze_id (freeze logical_hash)", "freeze_hash",
+    "source_event_hash", "decision_timestamp", "market_data_cutoff_timestamp", "router_version",
+    "outcome_observation_cutoff", "outcome_attachment_timestamp", "outcome_contract_version",
+    "evaluator_version", "record_provenance", "eligibility_flags"],
+  "instrument_conventions": {
+    "xauusd_pip_size": "0.10 USD (DR-301) — EXPLICIT research convention, NOT a broker-fill claim",
+    "broker_spread": "NOT_ASSUMED", "bid_ask_semantics": "NOT_ASSUMED", "slippage": "NOT_ASSUMED",
+    "price_semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN",
+    "result_class": "RESEARCH_MARKET_RESULT (not a broker fill)"
+  },
+  "intrabar_policy": "if stop and target are both touched inside one 1m bar with no LTF evidence -> AMBIGUOUS_INTRABAR_ORDER; NEVER choose the profitable ordering; record pessimistic_case/optimistic_case/ordering_unknown; withhold the definitive training label",
+  "causal_separation": {"features_available_at_decision": "from the freeze (bar_close<=decision_ts)",
+    "labels_observed_after_decision": "from bars with open > decision_ts only",
+    "hard_rule": "labels never modify candidate generation / OTE anchors / setup-family / source-tier / lane decisions / the original hypothesis"},
+  "review_only": true, "executable": false, "observation_only": true
+}

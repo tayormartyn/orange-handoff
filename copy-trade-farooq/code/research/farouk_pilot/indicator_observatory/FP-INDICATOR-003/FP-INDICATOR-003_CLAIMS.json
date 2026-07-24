@@ -1,0 +1,79 @@
+{
+  "record_id": "FP-INDICATOR-003",
+  "claim_count": 9,
+  "note": "SourceClaims; NOT promoted to rules. Promotional phrases ('high probability','beautiful') NOT treated as validated performance. Transcript base.en (phonetic: '[kyle]'->'Carl'/'calls'; VAH/VAL->'very high/very low'; SFP->'swing fell'; '15 min'->'50 min').",
+  "claims": [
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:00",
+      "quote_or_paraphrase": "'part two ... more about the POC ... you will see the POC very high very low' (=VAH/VAL)",
+      "chart_evidence": "POC/VAH/VAL",
+      "confidence": "HIGH",
+      "classification_note": "explicit part-two identity"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:37",
+      "quote_or_paraphrase": "'remove the noise (weekly/2-week/monthly), leave the daily very high/very low ... below that is bearish, retest short; reclaim -> up'",
+      "chart_evidence": "daily POC/VAH/VAL",
+      "confidence": "HIGH",
+      "classification_note": "value-area usage"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:31",
+      "quote_or_paraphrase": "'crank the weekly POC, long it until the next weekly POC ... scale between POCs (5D/3D/VAH/VAL)'",
+      "chart_evidence": "POC levels",
+      "confidence": "MEDIUM-HIGH",
+      "classification_note": "targets = next POC"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "02:07",
+      "quote_or_paraphrase": "'SFP swing fail pattern ... fail to go higher = a sweep ... it prints a dot line ... sweep retest long/short'",
+      "chart_evidence": "SFP dot line",
+      "confidence": "MEDIUM-HIGH",
+      "classification_note": "SFP mechanics"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "03:57",
+      "quote_or_paraphrase": "'liquidity sweep ... they swept liquidity, now short ... wait for retest ... combine with SFP, POCs, VWAP'",
+      "chart_evidence": "liquidity sweep",
+      "confidence": "MEDIUM-HIGH",
+      "classification_note": "liquidity sweep + combine"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "04:54",
+      "quote_or_paraphrase": "'Carl said you need to put the EMAs ... 20, 21, 34, 50, 55 ... I never use the EMA'",
+      "chart_evidence": "EMA toggle",
+      "confidence": "MEDIUM",
+      "classification_note": "EMA set matches [kyle] v1"
+    },
+    {
+      "category": "STRONG_INFERENCE",
+      "timestamp": "whole",
+      "quote_or_paraphrase": "POC/VAH/VAL/SFP/liquidity/EMA are all [kyle] v1 components (EMA set + POC match FP-INDICATOR-001 v1)",
+      "chart_evidence": "-",
+      "confidence": "MEDIUM-HIGH",
+      "classification_note": "ownership"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "01:12",
+      "quote_or_paraphrase": "POC 'T' variant meaning still not explained",
+      "chart_evidence": "POC scale",
+      "confidence": "-",
+      "classification_note": "gap"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "-",
+      "quote_or_paraphrase": "Repaint/dot-print timing/alerts of SFP & liquidity markers",
+      "chart_evidence": "-",
+      "confidence": "-",
+      "classification_note": "deferred"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "contract_id": "volume_profile_boundary_v0_1",
+  "status": "FAIL_CLOSED / VOLUME_PROFILE_METHOD_SUPPORTED / VOLUME_PROFILE_DATA_UNAVAILABLE",
+  "provenance": "Farouk Education (2).pdf p5 (VAH/VAL/POC, 68% value area, POC magnet) + VR-06/VR-20 (VP in his toolkit) (AER-003, FP-EDU-026)",
+  "methodology_fields": ["VAH", "VAL", "POC", "value_area_percentage", "low_volume_nodes",
+                          "high_volume_nodes", "profile_range_session", "source_timestamp"],
+  "data_audit": {
+    "true_volume_at_price": "NOT AVAILABLE (no volume-at-price feed)",
+    "captured_tradingview_VAH_VAL_POC": "NOT AVAILABLE (not exported)",
+    "profile_settings": "UNKNOWN",
+    "tick_volume_only": "the Pepperstone bar feed carries at most tick/bar volume, NOT volume-at-price",
+    "ordinary_bar_volume_only": "insufficient to build a genuine volume profile"
+  },
+  "hard_rule": "Do NOT fabricate Volume Profile from OHLC or time-at-price. Until adequate DIRECT data exists, all VAH/VAL/POC/value-area values remain UNKNOWN.",
+  "frozen_state": {"VOLUME_PROFILE_METHOD_SUPPORTED": true, "VOLUME_PROFILE_DATA_UNAVAILABLE": true,
+                   "VAH": "UNKNOWN", "VAL": "UNKNOWN", "POC": "UNKNOWN", "value_area_percentage": "UNKNOWN"},
+  "unblock_condition": "direct volume-at-price OR captured TradingView VAH/VAL/POC with profile settings + source timestamp",
+  "review_only": true, "executable": false, "observation_only": true
+}

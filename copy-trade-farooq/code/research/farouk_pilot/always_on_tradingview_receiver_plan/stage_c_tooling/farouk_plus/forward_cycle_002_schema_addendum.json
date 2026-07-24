@@ -1,0 +1,52 @@
+{
+  "addendum_id": "forward_cycle_002_schema_addendum",
+  "extends": "forward_validation_ledger_schema_v0_2.json",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / APPEND_ONLY / SINGLE_SESSION_WRITES",
+  "single_session_note": "All farouk_plus write-steps serialised to ONE session. Model A (v0_1) and Model B (v0_1b) expectancy artefacts are both permanent; never overwrite one with the other.",
+  "new_required_block_management_timing": {
+    "applies_to": "every XAU-F setup record, filled incrementally as messages arrive",
+    "fields": {
+      "instruction_events": "[{instruction_type, message_id, timestamp_utc}] — types: TP1_TAKE | SL_TO_ENTRY | CLOSE_WORST | HOLD_BEST | TAKE_PCT_OFF | FINAL_CLOSE | RE_ENTER | OTHER",
+      "tp1_instruction_ts_utc": "string | null",
+      "sl_to_entry_instruction_ts_utc": "string | null",
+      "close_worst_instruction_ts_utc": "string | null",
+      "hold_best_instruction_ts_utc": "string | null",
+      "scratch_trigger_ts_utc": "string | null — first BE-return AFTER the sl_to_entry instruction (deterministic from OHLC)",
+      "scratch_mode": "LITERAL | MODEL_ASSUMED | NONE — LITERAL only when the instruction timestamp precedes the BE-return",
+      "tp_banking_timing": "[{claim_message_id, level, level_first_traded_ts_utc, claim_posted_ts_utc, posted_before_touch: bool}]",
+      "purpose": "collapse the Model-A/Model-B expectancy band with REAL instruction timing per trade"
+    }
+  },
+  "new_record_type_PRE_MARK_CANDIDATE": {
+    "fields": [
+      "pre_mark_id", "evidence_window_start_utc", "evidence_window_end_utc", "frozen_window_hash",
+      "pre_mark_time_utc", "pre_mark_source", "pre_mark_direction", "pre_mark_zone",
+      "invalidation_level_or_structure", "invalidation_width",
+      "farouk_post_match_status", "leakage_check_status", "expiry_time_utc"
+    ],
+    "farouk_post_match_status_enum": ["PENDING", "PRE_MARK_MATCHED_FAROUK", "PRE_MARK_DID_NOT_MATCH", "PRE_MARK_EXPIRED"],
+    "leakage_check_status_enum": ["CLEAN", "LEAK_DETECTED_INVALIDATED"],
+    "invalidation_research_track": {
+      "separate_from_entry_level_research": true,
+      "grading": "level_correct and invalidation_survived graded INDEPENDENTLY",
+      "rationale": "Step-8 retrospective: correct level died to a $10 mechanical stop where his posted stops ($40+ wide) survived — stop-width is the binding constraint",
+      "leak_free_prior": "his posted SL-width distribution from the 34-setup ledger (learnable without lookahead)"
+    }
+  },
+  "cycle_002_requirements": [
+    "new XAU/Gold entry post -> XAU-F001: detector v0.2 score, HR queue, same-day 1m OHLC request, 48h deterministic match, management_timing block filled as messages arrive",
+    "alert/context before a post -> PRE_MARK_CANDIDATE with frozen-window hash + leakage check + entry AND invalidation hypotheses",
+    "outcome matching computes BOTH Model A and Model B follower expectancy per record until >=15 forward trades collapse the band",
+    "no cycle run without an actual new setup; empty days log NO_NEW_XAU_SETUP markers"
+  ],
+  "forbidden_outputs_unchanged": ["TRADE_READY", "EXECUTE", "ORDER", "LOT_SIZE", "BROKER_ROUTE",
+                                    "ACCOUNT_ID", "RISK_SIZE", "COPY_TRADE", "NANO", "LIVE", "DEMO_EXECUTE"],
+  "enforcement_unchanged": "ai_review fail-closed validator + extended guard; stamp from validator only",
+  "safety": {
+    "listener_pid_87988": "untouched; read-only health checks; never restarted by the workflow",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "execution_surface": "none"
+  }
+}

@@ -1,0 +1,3477 @@
+{
+ "schema_version": "1.0.0",
+ "source_asset_id": "sa-b03f71eee08044e7",
+ "record_type": "transcript",
+ "tool": "faster-whisper",
+ "model": "base.en",
+ "duration_s": 2712.35,
+ "segment_count": 577,
+ "note": "LOCAL offline; SMC/indicator terms preserved verbatim; no diarization (Farouk vs Vishal separated later by content); no upload.",
+ "source_asset_ids": [
+  "sa-b03f71eee08044e7"
+ ],
+ "segments": [
+  {
+   "idx": 1,
+   "start_hms": "00:00:00.370",
+   "text": "Alright, alright, good evening everybody, for Lucas here with Fischal.",
+   "confidence_est": 0.6455
+  },
+  {
+   "idx": 2,
+   "start_hms": "00:00:04.130",
+   "text": "So guys, this is the strategy, the scalping strategy that Fischal is using.",
+   "confidence_est": 0.6455
+  },
+  {
+   "idx": 3,
+   "start_hms": "00:00:09.370",
+   "text": "I'm also having confidence with Fischal, like I'm also using the same strategy.",
+   "confidence_est": 0.6455
+  },
+  {
+   "idx": 4,
+   "start_hms": "00:00:14.370",
+   "text": "He's only using EMA's and some indicators, so he's going to explain how he's kept",
+   "confidence_est": 0.6455
+  },
+  {
+   "idx": 5,
+   "start_hms": "00:00:20.370",
+   "text": "under one minute, five minutes, fifteen minutes and one hour.",
+   "confidence_est": 0.6455
+  },
+  {
+   "idx": 6,
+   "start_hms": "00:00:23.370",
+   "text": "He's looking for one, two, three percent a day.",
+   "confidence_est": 0.6455
+  },
+  {
+   "idx": 7,
+   "start_hms": "00:00:26.370",
+   "text": "And also using this, by the way, my system, I'm also looking at more timeframes,",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 8,
+   "start_hms": "00:00:31.090",
+   "text": "under low timeframes, 1, 5 and 15.",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 9,
+   "start_hms": "00:00:34.090",
+   "text": "And to see how I can make my daily profit.",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 10,
+   "start_hms": "00:00:38.290",
+   "text": "So I'm looking for, again, like 1, 2, 3, 5%",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 11,
+   "start_hms": "00:00:41.530",
+   "text": "and make my 2, 3, 500 dollars and I'm done for the day.",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 12,
+   "start_hms": "00:00:44.890",
+   "text": "I don't have to sit all day on the screen.",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 13,
+   "start_hms": "00:00:47.130",
+   "text": "People take like when you scalp, you sit like the whole day from the screen.",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 14,
+   "start_hms": "00:00:50.330",
+   "text": "No, you just have to look for a nice setup and you can take a trade",
+   "confidence_est": 0.7083
+  },
+  {
+   "idx": 15,
+   "start_hms": "00:00:54.970",
+   "text": "you make a daily profit and you're done.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 16,
+   "start_hms": "00:00:57.570",
+   "text": "So, Fisher is gonna explain how you do it",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 17,
+   "start_hms": "00:01:00.130",
+   "text": "and how he does it.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 18,
+   "start_hms": "00:01:01.530",
+   "text": "And also he's gonna show you what kind of indicators",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 19,
+   "start_hms": "00:01:05.450",
+   "text": "he's using.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 20,
+   "start_hms": "00:01:06.690",
+   "text": "And also he's gonna explain like when he started",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 21,
+   "start_hms": "00:01:10.690",
+   "text": "this whole strategy, he's doing down this for I think",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 22,
+   "start_hms": "00:01:14.130",
+   "text": "eight, nine months, maybe even longer.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 23,
+   "start_hms": "00:01:17.010",
+   "text": "I think a year, yeah, Fisher.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 24,
+   "start_hms": "00:01:18.770",
+   "text": "Yes.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 25,
+   "start_hms": "00:01:20.130",
+   "text": "Yeah, one year, Fisher starting this thing",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 26,
+   "start_hms": "00:01:22.890",
+   "text": "and he's really profitable.",
+   "confidence_est": 0.6952
+  },
+  {
+   "idx": 27,
+   "start_hms": "00:01:24.530",
+   "text": "And it really works guys.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 28,
+   "start_hms": "00:01:27.410",
+   "text": "Like I hope this will help you for scalping.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 29,
+   "start_hms": "00:01:30.750",
+   "text": "And like don't hold tokens too long.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 30,
+   "start_hms": "00:01:34.130",
+   "text": "Like don't hold crypto too long.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 31,
+   "start_hms": "00:01:35.610",
+   "text": "Don't hold all this alt code too long",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 32,
+   "start_hms": "00:01:37.650",
+   "text": "because if you hold it too long, you will lose money.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 33,
+   "start_hms": "00:01:40.330",
+   "text": "And also find this strategy that Fisher's gonna show now",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 34,
+   "start_hms": "00:01:42.790",
+   "text": "it works really good with gold.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 35,
+   "start_hms": "00:01:45.490",
+   "text": "So people want to trade gold.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 36,
+   "start_hms": "00:01:47.370",
+   "text": "He's gonna show it on Sui,",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 37,
+   "start_hms": "00:01:48.410",
+   "text": "but I use it on gold on the low timeframe.",
+   "confidence_est": 0.7651
+  },
+  {
+   "idx": 38,
+   "start_hms": "00:01:52.850",
+   "text": "one, two, three, four candles using 0.1,",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 39,
+   "start_hms": "00:01:57.330",
+   "text": "lot size, 0.2 lot size, make my $200.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 40,
+   "start_hms": "00:02:01.130",
+   "text": "Do this three times a day and you're done.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 41,
+   "start_hms": "00:02:03.490",
+   "text": "So we're gonna show you this.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 42,
+   "start_hms": "00:02:06.730",
+   "text": "This is recorded.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 43,
+   "start_hms": "00:02:08.090",
+   "text": "You just have to watch it a couple of times.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 44,
+   "start_hms": "00:02:10.570",
+   "text": "And if you have any questions,",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 45,
+   "start_hms": "00:02:12.890",
+   "text": "you can always ask me as the team section or in the zooms.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 46,
+   "start_hms": "00:02:17.370",
+   "text": "So go for official.",
+   "confidence_est": 0.7855
+  },
+  {
+   "idx": 47,
+   "start_hms": "00:02:20.180",
+   "text": "Okay guys, yeah, I use four time frame, one minute, five minutes, 15 minutes, one hour.",
+   "confidence_est": 0.5976
+  },
+  {
+   "idx": 48,
+   "start_hms": "00:02:28.740",
+   "text": "I like to see them all together for me, like a better understanding of my other prize action.",
+   "confidence_est": 0.5976
+  },
+  {
+   "idx": 49,
+   "start_hms": "00:02:34.940",
+   "text": "I use one hour, why?",
+   "confidence_est": 0.5976
+  },
+  {
+   "idx": 50,
+   "start_hms": "00:02:36.860",
+   "text": "Because one hour gives me the direction of, you know, what is happening.",
+   "confidence_est": 0.5976
+  },
+  {
+   "idx": 51,
+   "start_hms": "00:02:43.300",
+   "text": "If you see right now, I'm just like, okay, this is 50 EMA for me.",
+   "confidence_est": 0.5976
+  },
+  {
+   "idx": 52,
+   "start_hms": "00:02:47.180",
+   "text": "You know, if in one hour, you know, the price is below the 50 EMA, that means it's still bearish.",
+   "confidence_est": 0.6337
+  },
+  {
+   "idx": 53,
+   "start_hms": "00:02:55.380",
+   "text": "Okay. And then, so this gives me confident that, you know, it's like still buyers haven't",
+   "confidence_est": 0.6337
+  },
+  {
+   "idx": 54,
+   "start_hms": "00:03:02.380",
+   "text": "come in place. So one hour, you know, that's why I use higher time frame to see the direction",
+   "confidence_est": 0.6337
+  },
+  {
+   "idx": 55,
+   "start_hms": "00:03:08.780",
+   "text": "for a day, you know, like one hour time frame is an indication of insect day trading. So that",
+   "confidence_est": 0.6337
+  },
+  {
+   "idx": 56,
+   "start_hms": "00:03:15.660",
+   "text": "gives me confidence or confluence that you know, so what's happening in the market and",
+   "confidence_est": 0.6194
+  },
+  {
+   "idx": 57,
+   "start_hms": "00:03:21.690",
+   "text": "15 minutes, you know, it's the four times, you know, it's like the four candles of, you",
+   "confidence_est": 0.6194
+  },
+  {
+   "idx": 58,
+   "start_hms": "00:03:26.970",
+   "text": "know, 15 minutes becomes, you know, so one hour. So this also gives me like, you know,",
+   "confidence_est": 0.6194
+  },
+  {
+   "idx": 59,
+   "start_hms": "00:03:32.870",
+   "text": "so if you can see, okay, I'll explain this all together. And so I'm just giving you",
+   "confidence_est": 0.6194
+  },
+  {
+   "idx": 60,
+   "start_hms": "00:03:37.570",
+   "text": "a word with like why I use what I use. So 15 minutes and then I come to five minutes",
+   "confidence_est": 0.6194
+  },
+  {
+   "idx": 61,
+   "start_hms": "00:03:44.130",
+   "text": "and then one minute. So I usually take crates on the one minute. Like I use and then once",
+   "confidence_est": 0.6423
+  },
+  {
+   "idx": 62,
+   "start_hms": "00:03:53.890",
+   "text": "I take a trade, I'll be keep monitoring one minute and five minutes together. So this is",
+   "confidence_est": 0.6423
+  },
+  {
+   "idx": 63,
+   "start_hms": "00:03:59.730",
+   "text": "how I use it. Okay, first of all, I use the indicator called TR-Main, Craters Reality-Main,",
+   "confidence_est": 0.6423
+  },
+  {
+   "idx": 64,
+   "start_hms": "00:04:09.010",
+   "text": "this one. So this gives me this these emails okay if you can see here okay this is this is 50",
+   "confidence_est": 0.7835
+  },
+  {
+   "idx": 65,
+   "start_hms": "00:04:18.290",
+   "text": "EMA and the and the yellow one is you know 35 5 EMA and then this is 13 red one is 13",
+   "confidence_est": 0.7835
+  },
+  {
+   "idx": 66,
+   "start_hms": "00:04:28.210",
+   "text": "and the white one is 200 and the purple one is 800 EMA. So this indicator allows me if you see",
+   "confidence_est": 0.7835
+  },
+  {
+   "idx": 67,
+   "start_hms": "00:04:37.490",
+   "text": "here. So these are the EMA's. We use 51350, 200 and 800. So this particular, this is free",
+   "confidence_est": 0.6852
+  },
+  {
+   "idx": 68,
+   "start_hms": "00:04:47.530",
+   "text": "indicator. You can use it or else you can add EMA's separately. But my whole strategy",
+   "confidence_est": 0.6852
+  },
+  {
+   "idx": 69,
+   "start_hms": "00:04:54.810",
+   "text": "depends on the EMA's. So I use EMA. And then you can use other stuff on this, I use psychological",
+   "confidence_est": 0.6852
+  },
+  {
+   "idx": 70,
+   "start_hms": "00:05:05.040",
+   "text": "levels and all those stuff, you can use them if you want. So you can play around with those things.",
+   "confidence_est": 0.6633
+  },
+  {
+   "idx": 71,
+   "start_hms": "00:05:10.880",
+   "text": "Anything is impressing with you, then you can use them. But I usually use the EMA's.",
+   "confidence_est": 0.6633
+  },
+  {
+   "idx": 72,
+   "start_hms": "00:05:20.080",
+   "text": "This is the indicator and then in one R, you know, Saka'i use Vwap level.",
+   "confidence_est": 0.6633
+  },
+  {
+   "idx": 73,
+   "start_hms": "00:05:25.380",
+   "text": "Y in only one timeframe in Saka'i use Vwap is, you know, if you see here, you know,",
+   "confidence_est": 0.6633
+  },
+  {
+   "idx": 74,
+   "start_hms": "00:05:30.180",
+   "text": "50 EMA on 5 minutes is some M25 2.5134 but the same EMA in 1 hour 50 EMA which comes to 2.7",
+   "confidence_est": 0.6681
+  },
+  {
+   "idx": 75,
+   "start_hms": "00:05:41.540",
+   "text": "but Vwop is not like that. It stays the same for whole day like if we see here",
+   "confidence_est": 0.6681
+  },
+  {
+   "idx": 76,
+   "start_hms": "00:05:49.460",
+   "text": "this was the yesterday, yesterday's Vwop, the green one is the Vwop level okay and then if we",
+   "confidence_est": 0.6681
+  },
+  {
+   "idx": 77,
+   "start_hms": "00:05:56.580",
+   "text": "If we see here, this is the daily open and then look at this, from day, the view of level",
+   "confidence_est": 0.5808
+  },
+  {
+   "idx": 78,
+   "start_hms": "00:06:03.580",
+   "text": "stays the same.",
+   "confidence_est": 0.5808
+  },
+  {
+   "idx": 79,
+   "start_hms": "00:06:05.140",
+   "text": "If I turn on the same thing here, if you see here, right now we are at the view of 2.50",
+   "confidence_est": 0.5808
+  },
+  {
+   "idx": 80,
+   "start_hms": "00:06:13.460",
+   "text": "and none are also and it stays the same.",
+   "confidence_est": 0.5808
+  },
+  {
+   "idx": 81,
+   "start_hms": "00:06:15.460",
+   "text": "So, since I'm using and there's four screens, four charts, and single, this thing, I just",
+   "confidence_est": 0.5808
+  },
+  {
+   "idx": 82,
+   "start_hms": "00:06:23.340",
+   "text": "don't want to jumble up.",
+   "confidence_est": 0.5808
+  },
+  {
+   "idx": 83,
+   "start_hms": "00:06:25.020",
+   "text": "So that's why NOSA-CAI use only in one NOSA, the view of level.",
+   "confidence_est": 0.5626
+  },
+  {
+   "idx": 84,
+   "start_hms": "00:06:30.180",
+   "text": "Apart from this NOSA-CAI use, this is RSI, this is Stochastic RSI and then this is MACB.",
+   "confidence_est": 0.5626
+  },
+  {
+   "idx": 85,
+   "start_hms": "00:06:37.660",
+   "text": "So yeah, these are the things NOSA-CAI use most probably in my trading strategy.",
+   "confidence_est": 0.5626
+  },
+  {
+   "idx": 86,
+   "start_hms": "00:06:45.940",
+   "text": "Okay, first of all, NOSA-CAI-",
+   "confidence_est": 0.5626
+  },
+  {
+   "idx": 87,
+   "start_hms": "00:06:48.540",
+   "text": "I'm sure I have a question for you.",
+   "confidence_est": 0.5626
+  },
+  {
+   "idx": 88,
+   "start_hms": "00:06:51.740",
+   "text": "because we have a lot of new people.",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 89,
+   "start_hms": "00:06:54.740",
+   "text": "I want also to show them like,",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 90,
+   "start_hms": "00:06:57.140",
+   "text": "how do you split the screen?",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 91,
+   "start_hms": "00:06:59.020",
+   "text": "Like how do you, I know that for the other people,",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 92,
+   "start_hms": "00:07:01.300",
+   "text": "like how do you split the screen like in form?",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 93,
+   "start_hms": "00:07:04.500",
+   "text": "Yeah, this is like, you know,",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 94,
+   "start_hms": "00:07:06.660",
+   "text": "so you see this layered setup in the trading view, okay?",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 95,
+   "start_hms": "00:07:10.620",
+   "text": "You just have to come here, click this.",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 96,
+   "start_hms": "00:07:13.060",
+   "text": "So you can choose how much screen you want to.",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 97,
+   "start_hms": "00:07:16.020",
+   "text": "If you want six screens, you can split screen six.",
+   "confidence_est": 0.7522
+  },
+  {
+   "idx": 98,
+   "start_hms": "00:07:19.340",
+   "text": "If you want to, you can use two.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 99,
+   "start_hms": "00:07:22.380",
+   "text": "If you want four, you can use four.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 100,
+   "start_hms": "00:07:24.920",
+   "text": "Since I have three screens,",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 101,
+   "start_hms": "00:07:26.700",
+   "text": "so I can spare this one for one screen.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 102,
+   "start_hms": "00:07:29.300",
+   "text": "So yeah, this is how you can do it.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 103,
+   "start_hms": "00:07:33.800",
+   "text": "And you can save it, whatever.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 104,
+   "start_hms": "00:07:37.120",
+   "text": "You can save the setups layout.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 105,
+   "start_hms": "00:07:40.360",
+   "text": "Once you do that, and then this stays the same.",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 106,
+   "start_hms": "00:07:44.540",
+   "text": "If whatever, this is a scalping strategy or something,",
+   "confidence_est": 0.5466
+  },
+  {
+   "idx": 107,
+   "start_hms": "00:07:48.720",
+   "text": "Once you do this, if I just copy this or if I open another chart, something like this,",
+   "confidence_est": 0.6715
+  },
+  {
+   "idx": 108,
+   "start_hms": "00:07:58.020",
+   "text": "and then if I open this way from, it opens for me.",
+   "confidence_est": 0.6715
+  },
+  {
+   "idx": 109,
+   "start_hms": "00:08:08.640",
+   "text": "I don't have to do anything, but every time minutes or whatever coin you are trading on,",
+   "confidence_est": 0.6715
+  },
+  {
+   "idx": 110,
+   "start_hms": "00:08:15.840",
+   "text": "So you need to change the see every settings, you know,",
+   "confidence_est": 0.6118
+  },
+  {
+   "idx": 111,
+   "start_hms": "00:08:19.360",
+   "text": "like everything will be same once you set save this as a layout.",
+   "confidence_est": 0.6118
+  },
+  {
+   "idx": 112,
+   "start_hms": "00:08:25.120",
+   "text": "So yeah, yes sir. Yes guys. I hope you guys understood back.",
+   "confidence_est": 0.6118
+  },
+  {
+   "idx": 113,
+   "start_hms": "00:08:33.950",
+   "text": "It's good. You know what I also so the TR main indicator you're using.",
+   "confidence_est": 0.6118
+  },
+  {
+   "idx": 114,
+   "start_hms": "00:08:40.670",
+   "text": "Did you play with the settings?",
+   "confidence_est": 0.6118
+  },
+  {
+   "idx": 115,
+   "start_hms": "00:08:41.950",
+   "text": "Yeah, I have turned off so many things here. Show EM is these all will be on like show M levels.",
+   "confidence_est": 0.6669
+  },
+  {
+   "idx": 116,
+   "start_hms": "00:08:53.200",
+   "text": "Okay, if you click on that, this gives you like M levels and it's like see here like M these are",
+   "confidence_est": 0.6669
+  },
+  {
+   "idx": 117,
+   "start_hms": "00:09:02.720",
+   "text": "the pivot levels and it's like you can play around with those things. If you want to have",
+   "confidence_est": 0.6669
+  },
+  {
+   "idx": 118,
+   "start_hms": "00:09:08.320",
+   "text": "daily high, daily weekly high, weekly though.",
+   "confidence_est": 0.5322
+  },
+  {
+   "idx": 119,
+   "start_hms": "00:09:11.320",
+   "text": "If you want those, you can, I just use only EMS and I turn on the show weekly range levels",
+   "confidence_est": 0.5322
+  },
+  {
+   "idx": 120,
+   "start_hms": "00:09:23.320",
+   "text": "and the monthly range levels for high time, for a minute, so confluence.",
+   "confidence_est": 0.5322
+  },
+  {
+   "idx": 121,
+   "start_hms": "00:09:28.320",
+   "text": "I just turn on those and then daily open.",
+   "confidence_est": 0.5322
+  },
+  {
+   "idx": 122,
+   "start_hms": "00:09:31.320",
+   "text": "This is the daily open what you're seeing here.",
+   "confidence_est": 0.5322
+  },
+  {
+   "idx": 123,
+   "start_hms": "00:09:34.320",
+   "text": "So it constantly gives me, like, you know,",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 124,
+   "start_hms": "00:09:36.940",
+   "text": "it's a way we are in terms of, you know,",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 125,
+   "start_hms": "00:09:39.220",
+   "text": "that daily open.",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 126,
+   "start_hms": "00:09:40.460",
+   "text": "So we opened as a daily candle is red as of now.",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 127,
+   "start_hms": "00:09:44.900",
+   "text": "So it gives me, you know,",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 128,
+   "start_hms": "00:09:46.340",
+   "text": "like how we are finished with this thing here.",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 129,
+   "start_hms": "00:09:50.420",
+   "text": "And then I turn off these things and then sessions.",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 130,
+   "start_hms": "00:09:55.820",
+   "text": "I don't want to see the sessions in this thing.",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 131,
+   "start_hms": "00:09:58.860",
+   "text": "So I don't show market session.",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 132,
+   "start_hms": "00:10:02.820",
+   "text": "I was like, if I turn on this,",
+   "confidence_est": 0.6102
+  },
+  {
+   "idx": 133,
+   "start_hms": "00:10:03.980",
+   "text": "it comes like, which session are we creating on?",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 134,
+   "start_hms": "00:10:09.140",
+   "text": "So I don't want to jump up in my screen.",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 135,
+   "start_hms": "00:10:12.420",
+   "text": "So I use the psychological level,",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 136,
+   "start_hms": "00:10:14.900",
+   "text": "psychological high and psychological low.",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 137,
+   "start_hms": "00:10:17.100",
+   "text": "So this stage for us a week.",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 138,
+   "start_hms": "00:10:19.540",
+   "text": "So these levels also like good.",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 139,
+   "start_hms": "00:10:23.780",
+   "text": "Okay, so this indicator is basically like give you",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 140,
+   "start_hms": "00:10:27.260",
+   "text": "all the session levels, the weekly levels",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 141,
+   "start_hms": "00:10:29.540",
+   "text": "and also give you the EMA's",
+   "confidence_est": 0.628
+  },
+  {
+   "idx": 142,
+   "start_hms": "00:10:31.300",
+   "text": "and the psychological high and psychological low and pivot levels also and the pivot levels",
+   "confidence_est": 0.6353
+  },
+  {
+   "idx": 143,
+   "start_hms": "00:10:36.660",
+   "text": "and all these things. Oh, that's really nice man. There's a really nice view. So okay, now",
+   "confidence_est": 0.6353
+  },
+  {
+   "idx": 144,
+   "start_hms": "00:10:41.380",
+   "text": "you have the screens. Yes. Yeah, along with that, it gives me the vector candles also.",
+   "confidence_est": 0.6353
+  },
+  {
+   "idx": 145,
+   "start_hms": "00:10:46.660",
+   "text": "So these vector candles, my regular candles are like,",
+   "confidence_est": 0.6353
+  },
+  {
+   "idx": 146,
+   "start_hms": "00:10:52.020",
+   "text": "wide and gray, gray and this thing. So whenever, you know, we have more volume,",
+   "confidence_est": 0.6353
+  },
+  {
+   "idx": 147,
+   "start_hms": "00:10:58.980",
+   "text": "If you see here, whenever you are seeing this red candle, this is the red vector candle,",
+   "confidence_est": 0.8093
+  },
+  {
+   "idx": 148,
+   "start_hms": "00:11:03.860",
+   "text": "this is green vector candle, which means the simple meaning of this candles are like,",
+   "confidence_est": 0.8093
+  },
+  {
+   "idx": 149,
+   "start_hms": "00:11:10.340",
+   "text": "this candle has more volume than the previous 10 candles, like 200% more volume than the previous",
+   "confidence_est": 0.8093
+  },
+  {
+   "idx": 150,
+   "start_hms": "00:11:18.100",
+   "text": "candles and the blue one is 150% more volume than the previous 10 candles. If you see the red candle,",
+   "confidence_est": 0.8093
+  },
+  {
+   "idx": 151,
+   "start_hms": "00:11:25.220",
+   "text": "which means there's a more selling than the previous 10 candles 200% and then this purple one is 150%.",
+   "confidence_est": 0.6654
+  },
+  {
+   "idx": 152,
+   "start_hms": "00:11:35.380",
+   "text": "So right now if you see we are crossing the 50 EMA with the",
+   "confidence_est": 0.6654
+  },
+  {
+   "idx": 153,
+   "start_hms": "00:11:41.060",
+   "text": "vector candle which means that there is a little bit of volume coming in.",
+   "confidence_est": 0.6654
+  },
+  {
+   "idx": 154,
+   "start_hms": "00:11:48.820",
+   "text": "So yeah this is how we this is what it knows like this indicator of us.",
+   "confidence_est": 0.6654
+  },
+  {
+   "idx": 155,
+   "start_hms": "00:11:54.340",
+   "text": "Okay, so very nice, nice, nice. Okay, now we you explained how to do the screens, the indicator,",
+   "confidence_est": 0.7131
+  },
+  {
+   "idx": 156,
+   "start_hms": "00:12:02.130",
+   "text": "people just have to play with it and get used to it. Now, let's say, how do you take a trade?",
+   "confidence_est": 0.7131
+  },
+  {
+   "idx": 157,
+   "start_hms": "00:12:09.730",
+   "text": "What how do you do it? Yeah, okay, first of all, I was like, I look at the one-hour time from",
+   "confidence_est": 0.7131
+  },
+  {
+   "idx": 158,
+   "start_hms": "00:12:15.890",
+   "text": "one hour in a second, it's still bearish for me, until I said they claim this 50 EMA.",
+   "confidence_est": 0.7131
+  },
+  {
+   "idx": 159,
+   "start_hms": "00:12:22.210",
+   "text": "So the whole market, whole market bias will be in a",
+   "confidence_est": 0.5461
+  },
+  {
+   "idx": 160,
+   "start_hms": "00:12:26.530",
+   "text": "like a bearish. If you see here, look at this and it's like when",
+   "confidence_est": 0.5461
+  },
+  {
+   "idx": 161,
+   "start_hms": "00:12:32.170",
+   "text": "we dropped from 3.92 to 2.33 dollars. So see they never in a",
+   "confidence_est": 0.5461
+  },
+  {
+   "idx": 162,
+   "start_hms": "00:12:39.400",
+   "text": "circle claimed the 50 EMA. So when they claimed it, they gave a",
+   "confidence_est": 0.5461
+  },
+  {
+   "idx": 163,
+   "start_hms": "00:12:44.920",
+   "text": "good move upside. See look at this and so until this happens",
+   "confidence_est": 0.5461
+  },
+  {
+   "idx": 164,
+   "start_hms": "00:12:49.040",
+   "text": "there is still a bearish momentum for me, you know, until they claim it. But yeah, this",
+   "confidence_est": 0.6494
+  },
+  {
+   "idx": 165,
+   "start_hms": "00:12:57.940",
+   "text": "is how you know, but it doesn't matter. Like, you know, I don't take a bird trade based",
+   "confidence_est": 0.6494
+  },
+  {
+   "idx": 166,
+   "start_hms": "00:13:03.260",
+   "text": "on the one-hour time frame because, you know that, you know, in one hour, you know, we",
+   "confidence_est": 0.6494
+  },
+  {
+   "idx": 167,
+   "start_hms": "00:13:08.940",
+   "text": "have bearish and then one minute, you know, so we can be bullish. So similar way, you know,",
+   "confidence_est": 0.6494
+  },
+  {
+   "idx": 168,
+   "start_hms": "00:13:13.940",
+   "text": "In one hour, we can be bullish and then bullish.",
+   "confidence_est": 0.552
+  },
+  {
+   "idx": 169,
+   "start_hms": "00:13:17.840",
+   "text": "Then in one minute, we can be bearish.",
+   "confidence_est": 0.552
+  },
+  {
+   "idx": 170,
+   "start_hms": "00:13:21.440",
+   "text": "Hope you know that.",
+   "confidence_est": 0.552
+  },
+  {
+   "idx": 171,
+   "start_hms": "00:13:23.940",
+   "text": "High time frame is a bearish and then low time frame is a we can be bullish.",
+   "confidence_est": 0.552
+  },
+  {
+   "idx": 172,
+   "start_hms": "00:13:28.940",
+   "text": "See, that's what this strategy of mine, this is this whatever.",
+   "confidence_est": 0.552
+  },
+  {
+   "idx": 173,
+   "start_hms": "00:13:33.940",
+   "text": "I look this only I look for in a second to aim just 1% or 2% more, not more than that.",
+   "confidence_est": 0.552
+  },
+  {
+   "idx": 174,
+   "start_hms": "00:13:43.610",
+   "text": "So if I'm taking a trade from here, you know,",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 175,
+   "start_hms": "00:13:46.890",
+   "text": "I just look at my this thing until I was like 2.50",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 176,
+   "start_hms": "00:13:52.430",
+   "text": "on the socienter 2.53.",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 177,
+   "start_hms": "00:13:54.470",
+   "text": "So this kind of move, you know,",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 178,
+   "start_hms": "00:13:56.130",
+   "text": "I'm looking not more than that.",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 179,
+   "start_hms": "00:13:58.310",
+   "text": "So you need to understand, you know,",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 180,
+   "start_hms": "00:14:00.090",
+   "text": "like what extent or what point of view, you know,",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 181,
+   "start_hms": "00:14:05.090",
+   "text": "circuit what reading because see,",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 182,
+   "start_hms": "00:14:07.970",
+   "text": "if you see overall trend, it is bearish",
+   "confidence_est": 0.5002
+  },
+  {
+   "idx": 183,
+   "start_hms": "00:14:12.150",
+   "text": "And then you cannot expect market to go higher massively.",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 184,
+   "start_hms": "00:14:19.150",
+   "text": "If you have that kind of this thing,",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 185,
+   "start_hms": "00:14:21.150",
+   "text": "you know, because see, for example,",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 186,
+   "start_hms": "00:14:23.750",
+   "text": "you know, I had taken today, you know,",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 187,
+   "start_hms": "00:14:25.350",
+   "text": "I had taken that trade here 2.51 2.51.",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 188,
+   "start_hms": "00:14:30.470",
+   "text": "And then I close it on 2.54.",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 189,
+   "start_hms": "00:14:32.470",
+   "text": "If you I can send the this thing also see this is almost 0.8.",
+   "confidence_est": 0.6268
+  },
+  {
+   "idx": 190,
+   "start_hms": "00:14:40.470",
+   "text": "it's 6%. It did went up to another 1%. But yeah, once they",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 191,
+   "start_hms": "00:14:45.470",
+   "text": "in a sec, they reached here in a sec, I closed, I just closed it",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 192,
+   "start_hms": "00:14:48.470",
+   "text": "and I didn't bother anything. And it's like, I made around $120 or",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 193,
+   "start_hms": "00:14:52.310",
+   "text": "something. Yeah, that's it for me. Yeah, that's good. That's",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 194,
+   "start_hms": "00:14:56.710",
+   "text": "the whole thing. That's the whole point of this, because you're",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 195,
+   "start_hms": "00:14:59.670",
+   "text": "looking for just 1%. You're sticking to your system. And",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 196,
+   "start_hms": "00:15:03.350",
+   "text": "you're looking for for a scalp. You don't care if it go higher,",
+   "confidence_est": 0.7354
+  },
+  {
+   "idx": 197,
+   "start_hms": "00:15:07.070",
+   "text": "You don't care if it go, if it go like to the moon, like you're just looking for what you're looking for.",
+   "confidence_est": 0.6039
+  },
+  {
+   "idx": 198,
+   "start_hms": "00:15:12.990",
+   "text": "Because if you like, if they have a lack of structure, they will retest it again. You will take another trace.",
+   "confidence_est": 0.6039
+  },
+  {
+   "idx": 199,
+   "start_hms": "00:15:19.030",
+   "text": "Yeah. If you see, you know, if I would have left that rate, I think 2.5 from here, and it's a bad taken 2.5.",
+   "confidence_est": 0.6039
+  },
+  {
+   "idx": 200,
+   "start_hms": "00:15:28.470",
+   "text": "It went to, you know, 2%, 1.5% up.",
+   "confidence_est": 0.6039
+  },
+  {
+   "idx": 201,
+   "start_hms": "00:15:31.230",
+   "text": "And then it dropped 2.79%.",
+   "confidence_est": 0.6039
+  },
+  {
+   "idx": 202,
+   "start_hms": "00:15:35.900",
+   "text": "See, this is what I don't want.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 203,
+   "start_hms": "00:15:38.500",
+   "text": "Like, I don't want to in a circle around trip my entry.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 204,
+   "start_hms": "00:15:42.620",
+   "text": "If I am up like $10, $20, well and good.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 205,
+   "start_hms": "00:15:45.860",
+   "text": "And I said, the moment you're like, I'm up at least 0.2% or something, I put much to",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 206,
+   "start_hms": "00:15:51.220",
+   "text": "a plus to entry.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 207,
+   "start_hms": "00:15:52.220",
+   "text": "And I said, I don't, if at all you're going to say, it is round tripping and then I just",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 208,
+   "start_hms": "00:15:57.340",
+   "text": "close my trades.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 209,
+   "start_hms": "00:15:58.340",
+   "text": "And I was like, I can take another trade.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 210,
+   "start_hms": "00:16:01.260",
+   "text": "So instead of losing in a circle, I'll get out of the market.",
+   "confidence_est": 0.5653
+  },
+  {
+   "idx": 211,
+   "start_hms": "00:16:05.060",
+   "text": "Sometimes I miss out so many tricks, but that's okay for me.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 212,
+   "start_hms": "00:16:10.060",
+   "text": "I really don't bother about those things.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 213,
+   "start_hms": "00:16:14.060",
+   "text": "No, to be honest, efficient.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 214,
+   "start_hms": "00:16:16.060",
+   "text": "I'm doing also the same thing with the view up and gold.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 215,
+   "start_hms": "00:16:22.060",
+   "text": "I'm doing also like two screens, sometimes three.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 216,
+   "start_hms": "00:16:26.060",
+   "text": "I'm also scalping.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 217,
+   "start_hms": "00:16:27.060",
+   "text": "I'm also looking for one, two candles and risking like 0.03 lot size.",
+   "confidence_est": 0.6233
+  },
+  {
+   "idx": 218,
+   "start_hms": "00:16:34.060",
+   "text": "doing this like a couple of times and I make my $500, $600 and I'm done.",
+   "confidence_est": 0.6322
+  },
+  {
+   "idx": 219,
+   "start_hms": "00:16:41.060",
+   "text": "So it's actually a similar strategy but I find your strategy a little bit better because you're using EMA's",
+   "confidence_est": 0.6322
+  },
+  {
+   "idx": 220,
+   "start_hms": "00:16:48.060",
+   "text": "and you're using also the hourly so for the intradate trade you see like if you are down training or up",
+   "confidence_est": 0.6322
+  },
+  {
+   "idx": 221,
+   "start_hms": "00:16:56.620",
+   "text": "trending so that's really good. Nice man, nice.",
+   "confidence_est": 0.6197
+  },
+  {
+   "idx": 222,
+   "start_hms": "00:17:01.340",
+   "text": "Yes sir. Okay guys, this is the overview of it and it's like what we use, what we don't",
+   "confidence_est": 0.6197
+  },
+  {
+   "idx": 223,
+   "start_hms": "00:17:06.820",
+   "text": "use and then how I use it. Exactly. So this is how it is. See 50 EMA is the guidelines",
+   "confidence_est": 0.6197
+  },
+  {
+   "idx": 224,
+   "start_hms": "00:17:14.700",
+   "text": "for me. I look at 50 EMA for bearish or bullish and confidence. They are claiming 50 EMA that",
+   "confidence_est": 0.6197
+  },
+  {
+   "idx": 225,
+   "start_hms": "00:17:25.220",
+   "text": "is good well and good for me and say if they are rejecting 50 EME that also means I observe",
+   "confidence_est": 0.6015
+  },
+  {
+   "idx": 226,
+   "start_hms": "00:17:30.380",
+   "text": "more. Okay, first of all, I'll tell you that if you see here 5 and 13, okay, this yellow",
+   "confidence_est": 0.6015
+  },
+  {
+   "idx": 227,
+   "start_hms": "00:17:37.260",
+   "text": "and red is 5 and 13. Though these two EMEs are in a sub trend continuation, okay, if we",
+   "confidence_est": 0.6015
+  },
+  {
+   "idx": 228,
+   "start_hms": "00:17:46.700",
+   "text": "are bullish, for example, I had taken us long from 2.5, 1ish or something. If see here,",
+   "confidence_est": 0.6015
+  },
+  {
+   "idx": 229,
+   "start_hms": "00:17:54.580",
+   "text": "When I said they are holding the 5 VMA, 5 VMA, 5 VMA, and then 13 MA, they came back to 13, they took support on 13 and then went up.",
+   "confidence_est": 0.7372
+  },
+  {
+   "idx": 230,
+   "start_hms": "00:18:02.680",
+   "text": "So until they lose 5 and 13, that is the trend continuation.",
+   "confidence_est": 0.7372
+  },
+  {
+   "idx": 231,
+   "start_hms": "00:18:07.460",
+   "text": "So once they lose it, so you should know that they are coming back to 50 MA.",
+   "confidence_est": 0.7372
+  },
+  {
+   "idx": 232,
+   "start_hms": "00:18:14.650",
+   "text": "So this happens all the time frame.",
+   "confidence_est": 0.7372
+  },
+  {
+   "idx": 233,
+   "start_hms": "00:18:16.850",
+   "text": "Okay, it's not only on one minute or five minutes, you know, so 15 minutes or one arc.",
+   "confidence_est": 0.7372
+  },
+  {
+   "idx": 234,
+   "start_hms": "00:18:21.950",
+   "text": "It happens always.",
+   "confidence_est": 0.7372
+  },
+  {
+   "idx": 235,
+   "start_hms": "00:18:23.950",
+   "text": "If you see here in one R also, let's go back any time frame.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 236,
+   "start_hms": "00:18:30.360",
+   "text": "Okay, let's go see here.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 237,
+   "start_hms": "00:18:34.680",
+   "text": "Okay, they claimed here.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 238,
+   "start_hms": "00:18:39.180",
+   "text": "Look at this.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 239,
+   "start_hms": "00:18:40.480",
+   "text": "They claimed the 50 EMA, went right down and then they claimed it again.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 240,
+   "start_hms": "00:18:45.680",
+   "text": "If you see here, this is one R time frame.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 241,
+   "start_hms": "00:18:47.980",
+   "text": "Okay, it's not the small time frame.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 242,
+   "start_hms": "00:18:50.080",
+   "text": "They are above the 5 EMA, 5 EMA, 5 EMA.",
+   "confidence_est": 0.7333
+  },
+  {
+   "idx": 243,
+   "start_hms": "00:18:53.880",
+   "text": "they lost five came back to 13 and then took support on 15 and they continued higher again.",
+   "confidence_est": 0.6963
+  },
+  {
+   "idx": 244,
+   "start_hms": "00:19:01.240",
+   "text": "So they are continuing they are holding five VMA. So you can hold the trade until you know",
+   "confidence_est": 0.6963
+  },
+  {
+   "idx": 245,
+   "start_hms": "00:19:07.480",
+   "text": "that they lose five and 13 if they lose it if you would have taken a long here and then",
+   "confidence_est": 0.6963
+  },
+  {
+   "idx": 246,
+   "start_hms": "00:19:14.440",
+   "text": "until they lose it if you could have a se kept it as a 2.65 percent this is one",
+   "confidence_est": 0.6963
+  },
+  {
+   "idx": 247,
+   "start_hms": "00:19:20.420",
+   "text": "one hour time from one is I'm talking about.",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 248,
+   "start_hms": "00:19:22.840",
+   "text": "So this is how in the five and 13 you can use EMA and 50 ama is the guidelines.",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 249,
+   "start_hms": "00:19:29.730",
+   "text": "50 ama is ultimate thing.",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 250,
+   "start_hms": "00:19:30.930",
+   "text": "So if they lose it see here and it was like they lost the 50 ama came back retested on",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 251,
+   "start_hms": "00:19:37.450",
+   "text": "the resistance.",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 252,
+   "start_hms": "00:19:38.450",
+   "text": "You know, so it took a resistance if you were to have taken a shot here, this is like 2.3",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 253,
+   "start_hms": "00:19:43.650",
+   "text": "by percent.",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 254,
+   "start_hms": "00:19:45.320",
+   "text": "So this is how in the suck I use it.",
+   "confidence_est": 0.4641
+  },
+  {
+   "idx": 255,
+   "start_hms": "00:19:48.980",
+   "text": "the 5 and 13 EMA's or why I look at 5 and 13 is you know that that those are the trend",
+   "confidence_est": 0.5065
+  },
+  {
+   "idx": 256,
+   "start_hms": "00:19:55.260",
+   "text": "continuation. So yeah, so 5 and 13 are trend continuation 50 EMA's you know, so right now",
+   "confidence_est": 0.5065
+  },
+  {
+   "idx": 257,
+   "start_hms": "00:20:05.100",
+   "text": "you know, see now why are to create here like 5.1 right 2.5 one. So if you see here this",
+   "confidence_est": 0.5065
+  },
+  {
+   "idx": 258,
+   "start_hms": "00:20:13.980",
+   "text": "this area, okay?",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 259,
+   "start_hms": "00:20:16.140",
+   "text": "I tried longing from here because I was like,",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 260,
+   "start_hms": "00:20:18.820",
+   "text": "it was claiming 50 EMA, okay?",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 261,
+   "start_hms": "00:20:22.370",
+   "text": "It was around the horing around 50 EMA",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 262,
+   "start_hms": "00:20:24.610",
+   "text": "and then they broke out.",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 263,
+   "start_hms": "00:20:26.370",
+   "text": "I tried to set along it here",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 264,
+   "start_hms": "00:20:28.410",
+   "text": "and then I closed somewhere here itself",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 265,
+   "start_hms": "00:20:30.130",
+   "text": "and I was not in the trade and I was like for long.",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 266,
+   "start_hms": "00:20:35.710",
+   "text": "But I observed something here on five minutes.",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 267,
+   "start_hms": "00:20:39.290",
+   "text": "See, this is this strategy,",
+   "confidence_est": 0.6886
+  },
+  {
+   "idx": 268,
+   "start_hms": "00:20:41.410",
+   "text": "If you see two or three time frame,",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 269,
+   "start_hms": "00:20:47.710",
+   "text": "R and R are claiming the 50MA together.",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 270,
+   "start_hms": "00:20:51.450",
+   "text": "So that is a good confluence.",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 271,
+   "start_hms": "00:20:53.030",
+   "text": "And it's like you need to wait for R and R set that to happen.",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 272,
+   "start_hms": "00:20:56.430",
+   "text": "So you can take long here, you can take long here,",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 273,
+   "start_hms": "00:21:00.790",
+   "text": "but if you get a confluence, see here,",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 274,
+   "start_hms": "00:21:05.790",
+   "text": "this one, okay, this area and this area,",
+   "confidence_est": 0.689
+  },
+  {
+   "idx": 275,
+   "start_hms": "00:21:10.850",
+   "text": "area. Those are the three same areas. If you see here, they went down the 50 me, they",
+   "confidence_est": 0.6659
+  },
+  {
+   "idx": 276,
+   "start_hms": "00:21:19.440",
+   "text": "retested on the 50 me, they came back and still they haven't broken the structure here",
+   "confidence_est": 0.6659
+  },
+  {
+   "idx": 277,
+   "start_hms": "00:21:26.440",
+   "text": "and then they are holding it really good. And right now, it's happening right now also",
+   "confidence_est": 0.6659
+  },
+  {
+   "idx": 278,
+   "start_hms": "00:21:31.720",
+   "text": "and so we can go to go to, you know, it's a current time frame. I'll show you and it's",
+   "confidence_est": 0.6659
+  },
+  {
+   "idx": 279,
+   "start_hms": "00:21:36.240",
+   "text": "like why it is a good long from here right now also and it's just a good long because",
+   "confidence_est": 0.6544
+  },
+  {
+   "idx": 280,
+   "start_hms": "00:21:41.880",
+   "text": "I'll give you a why you know I think you know it's a good long towards 5, 6 or something",
+   "confidence_est": 0.6544
+  },
+  {
+   "idx": 281,
+   "start_hms": "00:21:49.840",
+   "text": "but yeah see here one minute five minutes five minutes they are claiming claiming with",
+   "confidence_est": 0.6544
+  },
+  {
+   "idx": 282,
+   "start_hms": "00:21:57.080",
+   "text": "the vector candle right here and this is why you know I when they retest it here I took",
+   "confidence_est": 0.6544
+  },
+  {
+   "idx": 283,
+   "start_hms": "00:22:05.570",
+   "text": "along here because they went up, they retested on the this thing. They haven't",
+   "confidence_est": 0.6193
+  },
+  {
+   "idx": 284,
+   "start_hms": "00:22:11.830",
+   "text": "here so broken 50 ma on the listing and this is the first time you know they are",
+   "confidence_est": 0.6193
+  },
+  {
+   "idx": 285,
+   "start_hms": "00:22:16.630",
+   "text": "you know crossing 250 ma so most of them you know so they call this as a",
+   "confidence_est": 0.6193
+  },
+  {
+   "idx": 286,
+   "start_hms": "00:22:22.430",
+   "text": "golden crossover right so this is like they crossed here you know",
+   "confidence_est": 0.6193
+  },
+  {
+   "idx": 287,
+   "start_hms": "00:22:28.030",
+   "text": "I took along here 5-1 or something and when this was happening if we see here",
+   "confidence_est": 0.6193
+  },
+  {
+   "idx": 288,
+   "start_hms": "00:22:34.190",
+   "text": "on 15 minutes, okay, they would, what did they do?",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 289,
+   "start_hms": "00:22:40.510",
+   "text": "After the big dump, they came back to 50 MA, okay?",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 290,
+   "start_hms": "00:22:44.710",
+   "text": "So, and then from there,",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 291,
+   "start_hms": "00:22:45.910",
+   "text": "and I was like, they rejected it.",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 292,
+   "start_hms": "00:22:47.190",
+   "text": "They rejected, they rejected, and then they tried to claim,",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 293,
+   "start_hms": "00:22:50.690",
+   "text": "this is the second time they wanted to claim.",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 294,
+   "start_hms": "00:22:53.430",
+   "text": "And now, if you see here, what I showed you here,",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 295,
+   "start_hms": "00:22:56.590",
+   "text": "went up, came down, and then they are,",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 296,
+   "start_hms": "00:23:00.330",
+   "text": "and I was holding this low, all right?",
+   "confidence_est": 0.6733
+  },
+  {
+   "idx": 297,
+   "start_hms": "00:23:03.500",
+   "text": "Similar way look at this answer. They went up. They came down. They are holding this low. So they",
+   "confidence_est": 0.7574
+  },
+  {
+   "idx": 298,
+   "start_hms": "00:23:10.460",
+   "text": "they haven't broke a structure here. And this is the third time you know, so they are attempting.",
+   "confidence_est": 0.7574
+  },
+  {
+   "idx": 299,
+   "start_hms": "00:23:17.420",
+   "text": "In fact, if you see right now, this is the fourth time they are attempting on the 15 minutes",
+   "confidence_est": 0.7574
+  },
+  {
+   "idx": 300,
+   "start_hms": "00:23:23.100",
+   "text": "and on five minutes also. So that's why I was like, I was telling you look at this and I was",
+   "confidence_est": 0.7574
+  },
+  {
+   "idx": 301,
+   "start_hms": "00:23:29.100",
+   "text": "are rejected after this pump they went up they rejected this this was a short for you",
+   "confidence_est": 0.6808
+  },
+  {
+   "idx": 302,
+   "start_hms": "00:23:36.820",
+   "text": "uh 1.6 percent and this is the first time they after this dump you know so this this",
+   "confidence_est": 0.6808
+  },
+  {
+   "idx": 303,
+   "start_hms": "00:23:43.220",
+   "text": "is where you know so they are claiming and they are claiming with the vector candles.",
+   "confidence_est": 0.6808
+  },
+  {
+   "idx": 304,
+   "start_hms": "00:23:47.860",
+   "text": "So any any pullback you get here so this is the long why because see just now explain",
+   "confidence_est": 0.6808
+  },
+  {
+   "idx": 305,
+   "start_hms": "00:23:56.830",
+   "text": "They are claiming 50 am a they are claiming they are trying to claim 50 the 15 am a and they already claimed one",
+   "confidence_est": 0.5258
+  },
+  {
+   "idx": 306,
+   "start_hms": "00:24:05.830",
+   "text": "One minute fire 50 am a right. So if you get a",
+   "confidence_est": 0.5258
+  },
+  {
+   "idx": 307,
+   "start_hms": "00:24:11.470",
+   "text": "Retest here. So this is the good long",
+   "confidence_est": 0.5258
+  },
+  {
+   "idx": 308,
+   "start_hms": "00:24:15.310",
+   "text": "Until you know circle until they come to 200 am on the five minutes",
+   "confidence_est": 0.5258
+  },
+  {
+   "idx": 309,
+   "start_hms": "00:24:21.710",
+   "text": "See 200 am a",
+   "confidence_est": 0.5258
+  },
+  {
+   "idx": 310,
+   "start_hms": "00:24:23.710",
+   "text": "200 EMA, these kind of acts as a resistance and support. If you see here right now, and",
+   "confidence_est": 0.5881
+  },
+  {
+   "idx": 311,
+   "start_hms": "00:24:35.740",
+   "text": "one more thing is, look at this, 50 EMA and 200 EMA are right here. So this is why Nusak",
+   "confidence_est": 0.5881
+  },
+  {
+   "idx": 312,
+   "start_hms": "00:24:43.100",
+   "text": "I think, and then I look at RSI's and the V-WOP level. If you see Nusak MACD, Nusak Crossing,",
+   "confidence_est": 0.5881
+  },
+  {
+   "idx": 313,
+   "start_hms": "00:24:51.020",
+   "text": "So these are the bullish dips from here.",
+   "confidence_est": 0.5907
+  },
+  {
+   "idx": 314,
+   "start_hms": "00:24:55.220",
+   "text": "The stock stick is gone up and the RSI is also up.",
+   "confidence_est": 0.5907
+  },
+  {
+   "idx": 315,
+   "start_hms": "00:25:01.220",
+   "text": "So better wait for an Suck retest or else better wait for an Suck Stuck stick to come",
+   "confidence_est": 0.5907
+  },
+  {
+   "idx": 316,
+   "start_hms": "00:25:06.980",
+   "text": "down and then take a long from here.",
+   "confidence_est": 0.5907
+  },
+  {
+   "idx": 317,
+   "start_hms": "00:25:10.020",
+   "text": "So this is the good long, so in my opinion.",
+   "confidence_est": 0.5907
+  },
+  {
+   "idx": 318,
+   "start_hms": "00:25:14.140",
+   "text": "So but for this, you need to wait for specific set of analysis setups.",
+   "confidence_est": 0.5907
+  },
+  {
+   "idx": 319,
+   "start_hms": "00:25:19.820",
+   "text": "is how you know, you can make money on this. Otherwise, you know, you get this 50 ama cross",
+   "confidence_est": 0.6364
+  },
+  {
+   "idx": 320,
+   "start_hms": "00:25:24.820",
+   "text": "source all the time. But if you get it like, you know, one, two, three, this is the perfect",
+   "confidence_est": 0.6364
+  },
+  {
+   "idx": 321,
+   "start_hms": "00:25:31.820",
+   "text": "timing. And as a word, we are recording right now, because it's happening right now. And",
+   "confidence_est": 0.6364
+  },
+  {
+   "idx": 322,
+   "start_hms": "00:25:36.740",
+   "text": "this is the good example. So this is for this, these movements are like, you need to wait.",
+   "confidence_est": 0.6364
+  },
+  {
+   "idx": 323,
+   "start_hms": "00:25:42.420",
+   "text": "So that's how in Osaka you can make your money and if you get a full back here and then",
+   "confidence_est": 0.6124
+  },
+  {
+   "idx": 324,
+   "start_hms": "00:25:49.780",
+   "text": "they don't break structure on this.",
+   "confidence_est": 0.6124
+  },
+  {
+   "idx": 325,
+   "start_hms": "00:25:52.380",
+   "text": "So this is a good long and as a given if you take along from here, I think yeah, I think",
+   "confidence_est": 0.6124
+  },
+  {
+   "idx": 326,
+   "start_hms": "00:25:59.780",
+   "text": "you will get it on the this thing.",
+   "confidence_est": 0.6124
+  },
+  {
+   "idx": 327,
+   "start_hms": "00:26:01.980",
+   "text": "So just aim for in Osaka daily open or in sort of 200 EMA 1% or something.",
+   "confidence_est": 0.6124
+  },
+  {
+   "idx": 328,
+   "start_hms": "00:26:07.420",
+   "text": "So that's your that's your treat.",
+   "confidence_est": 0.6124
+  },
+  {
+   "idx": 329,
+   "start_hms": "00:26:12.500",
+   "text": "a quick scope like one to one two percent and that's it. So, so to sum it up like you",
+   "confidence_est": 0.7767
+  },
+  {
+   "idx": 330,
+   "start_hms": "00:26:19.780",
+   "text": "look in at one minute to see if they cross and then you look at the five minutes and then you",
+   "confidence_est": 0.7767
+  },
+  {
+   "idx": 331,
+   "start_hms": "00:26:25.220",
+   "text": "look at the 15 how many times they tested this level they want to go up and you look at also the",
+   "confidence_est": 0.7767
+  },
+  {
+   "idx": 332,
+   "start_hms": "00:26:30.420",
+   "text": "vector candles if they claim the the EMA's with vector candles then you see like okay then you",
+   "confidence_est": 0.7767
+  },
+  {
+   "idx": 333,
+   "start_hms": "00:26:36.820",
+   "text": "have a bias like okay I'm gonna take a long or take a short I have a question for you official like",
+   "confidence_est": 0.7767
+  },
+  {
+   "idx": 334,
+   "start_hms": "00:26:42.500",
+   "text": "Yes, sir.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 335,
+   "start_hms": "00:26:43.500",
+   "text": "I'm like, maybe a good thing.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 336,
+   "start_hms": "00:26:46.940",
+   "text": "Can we put alarm under on the EMA?",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 337,
+   "start_hms": "00:26:49.940",
+   "text": "I think so.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 338,
+   "start_hms": "00:26:50.940",
+   "text": "On the VWAP this one.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 339,
+   "start_hms": "00:26:53.080",
+   "text": "Oh, I think yes, sir.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 340,
+   "start_hms": "00:26:55.080",
+   "text": "Like we can.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 341,
+   "start_hms": "00:26:56.080",
+   "text": "Can you press the right?",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 342,
+   "start_hms": "00:26:58.080",
+   "text": "Right.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 343,
+   "start_hms": "00:26:59.080",
+   "text": "Yeah.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 344,
+   "start_hms": "00:27:00.080",
+   "text": "Right.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 345,
+   "start_hms": "00:27:01.110",
+   "text": "Your mouse.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 346,
+   "start_hms": "00:27:02.500",
+   "text": "Yeah.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 347,
+   "start_hms": "00:27:03.500",
+   "text": "Yeah.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 348,
+   "start_hms": "00:27:04.500",
+   "text": "Yeah.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 349,
+   "start_hms": "00:27:05.500",
+   "text": "You can add alarm.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 350,
+   "start_hms": "00:27:06.500",
+   "text": "Yeah.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 351,
+   "start_hms": "00:27:07.500",
+   "text": "Where you can.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 352,
+   "start_hms": "00:27:08.500",
+   "text": "Yeah.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 353,
+   "start_hms": "00:27:09.500",
+   "text": "So that's good.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 354,
+   "start_hms": "00:27:10.500",
+   "text": "So that's good.",
+   "confidence_est": 0.5755
+  },
+  {
+   "idx": 355,
+   "start_hms": "00:27:11.500",
+   "text": "me. You can say like, okay, Victor, Vector Candles crossing. So you can actually do when",
+   "confidence_est": 0.6089
+  },
+  {
+   "idx": 356,
+   "start_hms": "00:27:18.240",
+   "text": "they cross. So you have to play with the settings as well. Like you see like, okay, if they,",
+   "confidence_est": 0.6089
+  },
+  {
+   "idx": 357,
+   "start_hms": "00:27:23.200",
+   "text": "you said the five, 13, 13, they retested on this, wait for this thing because I said,",
+   "confidence_est": 0.6089
+  },
+  {
+   "idx": 358,
+   "start_hms": "00:27:30.080",
+   "text": "they are rejecting from a 50 me. But if they show any strength here, because see, that's",
+   "confidence_est": 0.6089
+  },
+  {
+   "idx": 359,
+   "start_hms": "00:27:35.600",
+   "text": "what I was telling you guys, the wait for it was a greatest reset on the stock history",
+   "confidence_est": 0.6089
+  },
+  {
+   "idx": 360,
+   "start_hms": "00:27:41.440",
+   "text": "So wait for it to in a sec turn around and then take a long",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 361,
+   "start_hms": "00:27:46.440",
+   "text": "See whenever in a sec stochastic is up.",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 362,
+   "start_hms": "00:27:49.440",
+   "text": "So we need to wait because it will full pull back so many.",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 363,
+   "start_hms": "00:27:54.440",
+   "text": "I have seen this so many times.",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 364,
+   "start_hms": "00:27:56.440",
+   "text": "So wait until you know circuit.",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 365,
+   "start_hms": "00:27:58.440",
+   "text": "It starts to go up or something and then we can take a long one",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 366,
+   "start_hms": "00:28:03.440",
+   "text": "this.",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 367,
+   "start_hms": "00:28:04.440",
+   "text": "We can actually put alarm as well.",
+   "confidence_est": 0.6461
+  },
+  {
+   "idx": 368,
+   "start_hms": "00:28:08.300",
+   "text": "alarm as well and then when it crosses like the EMA is crossing or it tested this 50 EMA or the",
+   "confidence_est": 0.7923
+  },
+  {
+   "idx": 369,
+   "start_hms": "00:28:14.780",
+   "text": "view up then you can take a long use. So you just have to take a scalp long and you just have to",
+   "confidence_est": 0.7923
+  },
+  {
+   "idx": 370,
+   "start_hms": "00:28:22.060",
+   "text": "monitor the trade because you're scalping. So you guys cannot like leave this trade and go to the",
+   "confidence_est": 0.7923
+  },
+  {
+   "idx": 371,
+   "start_hms": "00:28:27.100",
+   "text": "supermarket. You need to sit behind the shark because scalping you need to sit behind the shark.",
+   "confidence_est": 0.7923
+  },
+  {
+   "idx": 372,
+   "start_hms": "00:28:32.780",
+   "text": "So this is a good one official. So that's it. That's how you use it. Do you want to add anything anymore?",
+   "confidence_est": 0.7182
+  },
+  {
+   "idx": 373,
+   "start_hms": "00:28:41.920",
+   "text": "Yeah, no sir. Now if you see here, they are the EMA's as a crossing. Sorry, the stochastic",
+   "confidence_est": 0.7182
+  },
+  {
+   "idx": 374,
+   "start_hms": "00:28:51.050",
+   "text": "is as I started to and as I go up, we started to go up. They took a support on the 50 EMA.",
+   "confidence_est": 0.7182
+  },
+  {
+   "idx": 375,
+   "start_hms": "00:28:56.970",
+   "text": "This is good long. Now also we can take it right now also. Let's say, you can put your stop",
+   "confidence_est": 0.5727
+  },
+  {
+   "idx": 376,
+   "start_hms": "00:29:10.320",
+   "text": "plus somewhere here. Then you're waiting to come up. Wait until you have stock sticks to come up.",
+   "confidence_est": 0.5727
+  },
+  {
+   "idx": 377,
+   "start_hms": "00:29:21.660",
+   "text": "That's your trade. The stochastic can also cross. They're crossing and then you see,",
+   "confidence_est": 0.5727
+  },
+  {
+   "idx": 378,
+   "start_hms": "00:29:27.340",
+   "text": "they're going to go up. Then you're also waiting. What is the purple EMA on the top side?",
+   "confidence_est": 0.5727
+  },
+  {
+   "idx": 379,
+   "start_hms": "00:29:31.100",
+   "text": "Is that two? That's 800.",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 380,
+   "start_hms": "00:29:32.700",
+   "text": "Oh, 800. Okay. That's a major one.",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 381,
+   "start_hms": "00:29:34.980",
+   "text": "So they claim that that's actually really good, good long as well.",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 382,
+   "start_hms": "00:29:39.060",
+   "text": "Yeah. Nice.",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 383,
+   "start_hms": "00:29:40.950",
+   "text": "Yeah. So that's how you, you scalp, especially when you look for a couple of percentage,",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 384,
+   "start_hms": "00:29:48.590",
+   "text": "when the mark is a little bit like no volume and the weekend is good.",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 385,
+   "start_hms": "00:29:53.830",
+   "text": "Also during the day, when there is like less volume, that's, oh, sorry, a lot of volume,",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 386,
+   "start_hms": "00:29:58.270",
+   "text": "that's really good.",
+   "confidence_est": 0.5815
+  },
+  {
+   "idx": 387,
+   "start_hms": "00:29:59.390",
+   "text": "So guys, test it.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 388,
+   "start_hms": "00:30:02.390",
+   "text": "Test it.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 389,
+   "start_hms": "00:30:03.030",
+   "text": "See if it works for you.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 390,
+   "start_hms": "00:30:05.830",
+   "text": "Watch this video a couple of times.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 391,
+   "start_hms": "00:30:07.470",
+   "text": "And yeah, if you have any questions,",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 392,
+   "start_hms": "00:30:12.650",
+   "text": "like we're going to do a lot of zooms.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 393,
+   "start_hms": "00:30:14.450",
+   "text": "So you can ask questions.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 394,
+   "start_hms": "00:30:16.570",
+   "text": "And you can ask the questions if you're still struggling",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 395,
+   "start_hms": "00:30:19.130",
+   "text": "to do this.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 396,
+   "start_hms": "00:30:19.970",
+   "text": "And we can also do this next week on gold together.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 397,
+   "start_hms": "00:30:24.130",
+   "text": "We're going to test it on gold.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 398,
+   "start_hms": "00:30:26.690",
+   "text": "Then I'm going to show you my strategy, how I do it on gold.",
+   "confidence_est": 0.7186
+  },
+  {
+   "idx": 399,
+   "start_hms": "00:30:29.570",
+   "text": "This is similar like visual. I'm using more the view up and I'm using also like other stuff like",
+   "confidence_est": 0.7017
+  },
+  {
+   "idx": 400,
+   "start_hms": "00:30:36.210",
+   "text": "flat candles and gaps and also looking at the Dixie. So that's a good one,",
+   "confidence_est": 0.7017
+  },
+  {
+   "idx": 401,
+   "start_hms": "00:30:43.650",
+   "text": "Fischl. Thank you very much. Yes. Thank you for sharing. Can you just show the people again the",
+   "confidence_est": 0.7017
+  },
+  {
+   "idx": 402,
+   "start_hms": "00:30:49.490",
+   "text": "the tRNA indicator? Yeah, sure. This is our greatest reality mean. Yes, yes. So play with",
+   "confidence_est": 0.5717
+  },
+  {
+   "idx": 403,
+   "start_hms": "00:30:58.900",
+   "text": "it and it's really good. It's a free one. Yeah, free one. Oh, really nice. It's really good.",
+   "confidence_est": 0.5717
+  },
+  {
+   "idx": 404,
+   "start_hms": "00:31:05.430",
+   "text": "All right. Thank you, sir. Yes, sir. But yes, sir. So guys, before we hop off, official",
+   "confidence_est": 0.5717
+  },
+  {
+   "idx": 405,
+   "start_hms": "00:31:16.500",
+   "text": "is going to show you like, okay, he's doing this scalping and with his indicators and",
+   "confidence_est": 0.6477
+  },
+  {
+   "idx": 406,
+   "start_hms": "00:31:22.100",
+   "text": "with his timeframes and he's monitoring the trades and he's looking for one, two, three",
+   "confidence_est": 0.6477
+  },
+  {
+   "idx": 407,
+   "start_hms": "00:31:28.260",
+   "text": "percent a day. I think he's looking for one percent and if you get more, that's really",
+   "confidence_est": 0.6477
+  },
+  {
+   "idx": 408,
+   "start_hms": "00:31:32.180",
+   "text": "good. So, Fischl, how many do you do this now?",
+   "confidence_est": 0.6477
+  },
+  {
+   "idx": 409,
+   "start_hms": "00:31:38.690",
+   "text": "From first, I started this, I started with $17,000. Right now I'm at",
+   "confidence_est": 0.6477
+  },
+  {
+   "idx": 410,
+   "start_hms": "00:31:45.490",
+   "text": "at 20,200 or something.",
+   "confidence_est": 0.5458
+  },
+  {
+   "idx": 411,
+   "start_hms": "00:31:48.650",
+   "text": "Yeah, 20,200.",
+   "confidence_est": 0.5458
+  },
+  {
+   "idx": 412,
+   "start_hms": "00:31:53.850",
+   "text": "Yeah, so somewhere here, you know, it's like 18th.",
+   "confidence_est": 0.5458
+  },
+  {
+   "idx": 413,
+   "start_hms": "00:31:59.160",
+   "text": "Even if I'm not sick, so just focusing on 1%, but yeah, I'm still ahead of like four",
+   "confidence_est": 0.5458
+  },
+  {
+   "idx": 414,
+   "start_hms": "00:32:05.000",
+   "text": "or five days.",
+   "confidence_est": 0.5458
+  },
+  {
+   "idx": 415,
+   "start_hms": "00:32:07.760",
+   "text": "So even if you do this, and as I continue to do this, after a hundred days, I'll be having",
+   "confidence_est": 0.5458
+  },
+  {
+   "idx": 416,
+   "start_hms": "00:32:14.040",
+   "text": "you know, I started with 17k and then maybe I'll end up",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 417,
+   "start_hms": "00:32:18.260",
+   "text": "in a having 45,000.",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 418,
+   "start_hms": "00:32:19.940",
+   "text": "Even if I own like 40,000 with this,",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 419,
+   "start_hms": "00:32:23.900",
+   "text": "that's 100% for me in three months, I'm happy.",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 420,
+   "start_hms": "00:32:28.740",
+   "text": "So if I continue this, the same 1% goal for a year,",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 421,
+   "start_hms": "00:32:33.740",
+   "text": "I'll be ended up having so 319,000 dollars.",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 422,
+   "start_hms": "00:32:37.540",
+   "text": "But yeah, let's say, we have started this journey",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 423,
+   "start_hms": "00:32:41.140",
+   "text": "from this month.",
+   "confidence_est": 0.6161
+  },
+  {
+   "idx": 424,
+   "start_hms": "00:32:42.140",
+   "text": "It's just been like 10 days and I'm still a map like 20,200 or something.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 425,
+   "start_hms": "00:32:48.020",
+   "text": "So, yes, let's see, we'll keep on posting you, keep on updating our balances, what is happening.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 426,
+   "start_hms": "00:32:56.700",
+   "text": "So, yeah.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 427,
+   "start_hms": "00:32:58.140",
+   "text": "So you're looking for 1% and sometimes you get more like 2%, 3%.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 428,
+   "start_hms": "00:33:04.100",
+   "text": "1%, 2%.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 429,
+   "start_hms": "00:33:05.460",
+   "text": "Yeah.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 430,
+   "start_hms": "00:33:06.460",
+   "text": "And so the first day you're looking for $170 to make.",
+   "confidence_est": 0.5507
+  },
+  {
+   "idx": 431,
+   "start_hms": "00:33:11.140",
+   "text": "Yeah, I started the gold one also. Like I started on 7 October and then I'm already",
+   "confidence_est": 0.5846
+  },
+  {
+   "idx": 432,
+   "start_hms": "00:33:21.000",
+   "text": "thousand dollars. So yeah, nice. So you doubled your account in how many days?",
+   "confidence_est": 0.5846
+  },
+  {
+   "idx": 433,
+   "start_hms": "00:33:26.300",
+   "text": "Three days. Let's go. You see, that's really good. Like you you start even with small capital",
+   "confidence_est": 0.5846
+  },
+  {
+   "idx": 434,
+   "start_hms": "00:33:31.940",
+   "text": "like $500. Yeah. People need to understand like how powerful like how powerful this is,",
+   "confidence_est": 0.5846
+  },
+  {
+   "idx": 435,
+   "start_hms": "00:33:39.940",
+   "text": "two. So you're actually made 33% in three days or maybe even more. Yeah. So that's really good.",
+   "confidence_est": 0.7106
+  },
+  {
+   "idx": 436,
+   "start_hms": "00:33:48.340",
+   "text": "So you're looking, so the first day, you were looking to make 1% on gold. So there's $5.",
+   "confidence_est": 0.7106
+  },
+  {
+   "idx": 437,
+   "start_hms": "00:33:55.510",
+   "text": "Yeah. And actually, I ended up earning $50 or something first day. And then I stopped.",
+   "confidence_est": 0.7106
+  },
+  {
+   "idx": 438,
+   "start_hms": "00:34:03.110",
+   "text": "And then second day in the Sakai pond around 120, 130 or something.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 439,
+   "start_hms": "00:34:08.110",
+   "text": "And then I stopped.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 440,
+   "start_hms": "00:34:11.110",
+   "text": "And third of all.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 441,
+   "start_hms": "00:34:12.110",
+   "text": "Gold give you good moves.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 442,
+   "start_hms": "00:34:14.110",
+   "text": "Let's do 3%.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 443,
+   "start_hms": "00:34:15.110",
+   "text": "Let's do 3% with 500 capital.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 444,
+   "start_hms": "00:34:18.110",
+   "text": "So you're looking for, let's say the first day, $15.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 445,
+   "start_hms": "00:34:21.110",
+   "text": "The second day, let's 5050.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 446,
+   "start_hms": "00:34:23.110",
+   "text": "And let's say day 10, you're looking for $20 ish.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 447,
+   "start_hms": "00:34:27.110",
+   "text": "And then you're like, you're already ahead of the curve.",
+   "confidence_est": 0.6298
+  },
+  {
+   "idx": 448,
+   "start_hms": "00:34:31.110",
+   "text": "Like to be honest guys, you're looking for 1% you can also look out. That's your daily profit",
+   "confidence_est": 0.7154
+  },
+  {
+   "idx": 449,
+   "start_hms": "00:34:36.390",
+   "text": "It depends on your capital how you start with it",
+   "confidence_est": 0.7154
+  },
+  {
+   "idx": 450,
+   "start_hms": "00:34:38.790",
+   "text": "Like if you start with 10k you of course you're gonna make you need to make like hundred dollars a day or something like that",
+   "confidence_est": 0.7154
+  },
+  {
+   "idx": 451,
+   "start_hms": "00:34:45.470",
+   "text": "So actually we are here to tell you like there's a one percentage enough",
+   "confidence_est": 0.7154
+  },
+  {
+   "idx": 452,
+   "start_hms": "00:34:50.390",
+   "text": "It's enough cap it enough money to in a second for a day because he knows like other day",
+   "confidence_est": 0.7154
+  },
+  {
+   "idx": 453,
+   "start_hms": "00:34:56.090",
+   "text": "in the crypto crash, the flash crash. If I am in the trade, like if I am holding something",
+   "confidence_est": 0.6485
+  },
+  {
+   "idx": 454,
+   "start_hms": "00:35:05.090",
+   "text": "in the trade, then that is when you are like, I get affected to these things. If you are",
+   "confidence_est": 0.6485
+  },
+  {
+   "idx": 455,
+   "start_hms": "00:35:09.970",
+   "text": "in a skull thing, if you are in no position in any time, like so that that won't affect",
+   "confidence_est": 0.6485
+  },
+  {
+   "idx": 456,
+   "start_hms": "00:35:17.890",
+   "text": "you guys like they do flash crash they do anything in a circuit even black swan event",
+   "confidence_est": 0.5943
+  },
+  {
+   "idx": 457,
+   "start_hms": "00:35:25.550",
+   "text": "is anything could happen in the market I'm not saying it was like this will happen every",
+   "confidence_est": 0.5943
+  },
+  {
+   "idx": 458,
+   "start_hms": "00:35:31.030",
+   "text": "day but you don't know when that those things will happen but that doesn't affect you so",
+   "confidence_est": 0.5943
+  },
+  {
+   "idx": 459,
+   "start_hms": "00:35:37.870",
+   "text": "many people are so long that low levels but see even I know it was a far root entered",
+   "confidence_est": 0.5943
+  },
+  {
+   "idx": 460,
+   "start_hms": "00:35:46.590",
+   "text": "long on the, I think what,",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 461,
+   "start_hms": "00:35:49.410",
+   "text": "always right?",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 462,
+   "start_hms": "00:35:51.370",
+   "text": "Tao.",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 463,
+   "start_hms": "00:35:52.370",
+   "text": "Yeah, Tao.",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 464,
+   "start_hms": "00:35:53.530",
+   "text": "But see, when everything is crashing,",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 465,
+   "start_hms": "00:35:58.330",
+   "text": "we are afraid to put more money.",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 466,
+   "start_hms": "00:36:01.730",
+   "text": "We don't take into such a big position,",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 467,
+   "start_hms": "00:36:04.770",
+   "text": "size. Even though,",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 468,
+   "start_hms": "00:36:06.170",
+   "text": "Safaruk is up like 300% or 400% or something,",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 469,
+   "start_hms": "00:36:10.170",
+   "text": "he's just making too, how much sir?",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 470,
+   "start_hms": "00:36:12.890",
+   "text": "How much you made out of that?",
+   "confidence_est": 0.3924
+  },
+  {
+   "idx": 471,
+   "start_hms": "00:36:15.510",
+   "text": "With with gold, you mean? No, the tao tao tao tao trade. Oh, tao tao trade",
+   "confidence_est": 0.532
+  },
+  {
+   "idx": 472,
+   "start_hms": "00:36:22.070",
+   "text": "Like it was when they dumped",
+   "confidence_est": 0.532
+  },
+  {
+   "idx": 473,
+   "start_hms": "00:36:26.190",
+   "text": "Let's see",
+   "confidence_est": 0.532
+  },
+  {
+   "idx": 474,
+   "start_hms": "00:36:28.190",
+   "text": "You made how much money sir? I think I made two hundred thirty dollars and I was risking",
+   "confidence_est": 0.532
+  },
+  {
+   "idx": 475,
+   "start_hms": "00:36:34.880",
+   "text": "I was risking like ten twenty dollars something like that",
+   "confidence_est": 0.532
+  },
+  {
+   "idx": 476,
+   "start_hms": "00:36:39.240",
+   "text": "Yeah, see that's what I was like these",
+   "confidence_est": 0.532
+  },
+  {
+   "idx": 477,
+   "start_hms": "00:36:41.240",
+   "text": "What I mean to tell you is that when the flash crash happens, this blood thing happens.",
+   "confidence_est": 0.4797
+  },
+  {
+   "idx": 478,
+   "start_hms": "00:36:50.420",
+   "text": "We are afraid to put more money.",
+   "confidence_est": 0.4797
+  },
+  {
+   "idx": 479,
+   "start_hms": "00:36:53.440",
+   "text": "See, the same position, if Farukudev, you would have made massive money.",
+   "confidence_est": 0.4797
+  },
+  {
+   "idx": 480,
+   "start_hms": "00:37:03.440",
+   "text": "But see, that is the psychology of everybody, us.",
+   "confidence_est": 0.4797
+  },
+  {
+   "idx": 481,
+   "start_hms": "00:37:08.240",
+   "text": "I was like even even ice-cult, so many things. I was in and out, in and out so many times,",
+   "confidence_est": 0.6724
+  },
+  {
+   "idx": 482,
+   "start_hms": "00:37:14.480",
+   "text": "but I was just risking $50, nothing not much. I made around $1,500 or $1,600 in that crash.",
+   "confidence_est": 0.6724
+  },
+  {
+   "idx": 483,
+   "start_hms": "00:37:23.360",
+   "text": "But yeah, if I would have reached more money, I was like, I would have made money.",
+   "confidence_est": 0.6724
+  },
+  {
+   "idx": 484,
+   "start_hms": "00:37:27.600",
+   "text": "But that's what I was saying.",
+   "confidence_est": 0.6724
+  },
+  {
+   "idx": 485,
+   "start_hms": "00:37:29.120",
+   "text": "The nice thing is, Fischl, when you have this crash, or you have no crash, it's also about,",
+   "confidence_est": 0.6724
+  },
+  {
+   "idx": 486,
+   "start_hms": "00:37:35.360",
+   "text": "for me the most important thing is time. I don't want to stay too long in a trade so",
+   "confidence_est": 0.7295
+  },
+  {
+   "idx": 487,
+   "start_hms": "00:37:41.600",
+   "text": "the most important is time so like the 230 dollars 240 dollars that I made I was",
+   "confidence_est": 0.7295
+  },
+  {
+   "idx": 488,
+   "start_hms": "00:37:46.720",
+   "text": "like 10 seconds in the trader. Yeah. If you make 10 seconds 200 like I'm gonna close",
+   "confidence_est": 0.7295
+  },
+  {
+   "idx": 489,
+   "start_hms": "00:37:51.680",
+   "text": "it I don't care like if they go to the moon and actually they went higher but I",
+   "confidence_est": 0.7295
+  },
+  {
+   "idx": 490,
+   "start_hms": "00:37:56.040",
+   "text": "don't care because I know how to make it same thing with gold like when you start",
+   "confidence_est": 0.7295
+  },
+  {
+   "idx": 491,
+   "start_hms": "00:37:59.760",
+   "text": "scalping on gold with his system with you using fish or like you're doing a couple",
+   "confidence_est": 0.7295
+  },
+  {
+   "idx": 492,
+   "start_hms": "00:38:04.200",
+   "text": "candles. I think you're going to see the hang of it. You can actually make like 5 or 6% a day.",
+   "confidence_est": 0.7626
+  },
+  {
+   "idx": 493,
+   "start_hms": "00:38:10.760",
+   "text": "Like I was scalping gold with my wife and like we are making a couple hundred dollars in a couple",
+   "confidence_est": 0.7626
+  },
+  {
+   "idx": 494,
+   "start_hms": "00:38:18.360",
+   "text": "of minutes. We look in also like a system like we are doing more the orb, like the open range",
+   "confidence_est": 0.7626
+  },
+  {
+   "idx": 495,
+   "start_hms": "00:38:25.080",
+   "text": "breakouts. We are already up ahead of the curb. But also I know like when to stop. I know, okay,",
+   "confidence_est": 0.7271
+  },
+  {
+   "idx": 496,
+   "start_hms": "00:38:33.800",
+   "text": "this is the level. I'm now over trading, I'm going to stop. But I'm using like, let's say this wallet,",
+   "confidence_est": 0.7271
+  },
+  {
+   "idx": 497,
+   "start_hms": "00:38:39.320",
+   "text": "I used to put a world room, I started with 5k. And I was looking for one, two, three percent a day.",
+   "confidence_est": 0.7271
+  },
+  {
+   "idx": 498,
+   "start_hms": "00:38:46.440",
+   "text": "And now I'm I think 11k between the 10 and 11k up. So I'm starting with 5k. So you can do",
+   "confidence_est": 0.7271
+  },
+  {
+   "idx": 499,
+   "start_hms": "00:38:54.280",
+   "text": "capital 5k. Yes sir. Yeah so 5k so like I started with 5k and I was looking for one",
+   "confidence_est": 0.6868
+  },
+  {
+   "idx": 500,
+   "start_hms": "00:39:03.550",
+   "text": "two percent and I'm now I'm now ending like 10, 9, 10k or something 11k or something like",
+   "confidence_est": 0.6868
+  },
+  {
+   "idx": 501,
+   "start_hms": "00:39:12.030",
+   "text": "that. So I'm 70 days ahead. Yeah so you're looking for 1% but you get more because you",
+   "confidence_est": 0.6868
+  },
+  {
+   "idx": 502,
+   "start_hms": "00:39:19.030",
+   "text": "you look at that volume. You are 75 days ahead, sir.",
+   "confidence_est": 0.6836
+  },
+  {
+   "idx": 503,
+   "start_hms": "00:39:22.110",
+   "text": "Yeah, yeah, yeah, on this one. So, I think even 11K, something like that, and now I have",
+   "confidence_est": 0.6836
+  },
+  {
+   "idx": 504,
+   "start_hms": "00:39:27.990",
+   "text": "to do the curve. People need to understand, like, you're looking just for a couple of",
+   "confidence_est": 0.6836
+  },
+  {
+   "idx": 505,
+   "start_hms": "00:39:31.900",
+   "text": "percent. And I, after I get 1%, I take my, I take my $15 and I put my stop-loss to entry",
+   "confidence_est": 0.6836
+  },
+  {
+   "idx": 506,
+   "start_hms": "00:39:38.540",
+   "text": "and I get more. Like, you don't have to cut the trades. The most important thing is then",
+   "confidence_est": 0.6836
+  },
+  {
+   "idx": 507,
+   "start_hms": "00:39:43.060",
+   "text": "you need to know, okay, I made my daily profit, I did my daily percentage. I'm going to put",
+   "confidence_est": 0.6836
+  },
+  {
+   "idx": 508,
+   "start_hms": "00:39:48.300",
+   "text": "my stop loss to entry and I'm done and I'm just let it right and sometimes I just let",
+   "confidence_est": 0.757
+  },
+  {
+   "idx": 509,
+   "start_hms": "00:39:53.740",
+   "text": "I don't look at the chart and I see oh man TP4 hits whoa and I am actually now 10k up",
+   "confidence_est": 0.757
+  },
+  {
+   "idx": 510,
+   "start_hms": "00:40:01.420",
+   "text": "and to be honest fish on I'm gonna I'm gonna do this for a hundred days I'm not gonna I'm",
+   "confidence_est": 0.757
+  },
+  {
+   "idx": 511,
+   "start_hms": "00:40:07.240",
+   "text": "just gonna keep this doing this for a hundred days I said like I'm gonna do this for a month",
+   "confidence_est": 0.757
+  },
+  {
+   "idx": 512,
+   "start_hms": "00:40:11.080",
+   "text": "but I'm gonna do this 5k for a hundred days and then see because a hundred days is going",
+   "confidence_est": 0.757
+  },
+  {
+   "idx": 513,
+   "start_hms": "00:40:14.980",
+   "text": "So first see in 100 days, of course, you're going to lose trades, but see in 100 days,",
+   "confidence_est": 0.6817
+  },
+  {
+   "idx": 514,
+   "start_hms": "00:40:21.580",
+   "text": "how we can end in 100 days, you just have to make $130.",
+   "confidence_est": 0.6817
+  },
+  {
+   "idx": 515,
+   "start_hms": "00:40:27.260",
+   "text": "And the volume that gold can give you, like, especially if you do like, you have a good",
+   "confidence_est": 0.6817
+  },
+  {
+   "idx": 516,
+   "start_hms": "00:40:33.460",
+   "text": "entry, your risk like 0.03 or 0.05, you can actually make easy $120 to $100 a day.",
+   "confidence_est": 0.6817
+  },
+  {
+   "idx": 517,
+   "start_hms": "00:40:42.660",
+   "text": "Look at our trades, sir, and that's what we took.",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 518,
+   "start_hms": "00:40:46.060",
+   "text": "Okay, let's see.",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 519,
+   "start_hms": "00:40:47.920",
+   "text": "We took a sweet trade.",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 520,
+   "start_hms": "00:40:49.720",
+   "text": "Yeah, see, yeah, really good.",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 521,
+   "start_hms": "00:40:52.320",
+   "text": "Look, keep keeping it.",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 522,
+   "start_hms": "00:40:55.120",
+   "text": "See, this was a good confluence because 15 minutes, five minutes, one minute, everything",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 523,
+   "start_hms": "00:41:01.420",
+   "text": "was in a sec pumping, and so this was like, see, we were looking for a percent.",
+   "confidence_est": 0.4317
+  },
+  {
+   "idx": 524,
+   "start_hms": "00:41:07.840",
+   "text": "end up getting like 2.9% 3% move even you can put it as a stop loss a little bigger if you want",
+   "confidence_est": 0.635
+  },
+  {
+   "idx": 525,
+   "start_hms": "00:41:17.440",
+   "text": "to ask one to one so yeah foreign so so now how much how much percent it went up since we started",
+   "confidence_est": 0.635
+  },
+  {
+   "idx": 526,
+   "start_hms": "00:41:25.760",
+   "text": "so 2.3% so 3% up you're looking for 1% and let's say with your risk management and my risk",
+   "confidence_est": 0.635
+  },
+  {
+   "idx": 527,
+   "start_hms": "00:41:35.200",
+   "text": "mentioned you can make like two three hundred dollars on a scale on one candle and you don't",
+   "confidence_est": 0.7631
+  },
+  {
+   "idx": 528,
+   "start_hms": "00:41:40.800",
+   "text": "have to bother yourself and look at the one hour now you're going to resistance yeah go go",
+   "confidence_est": 0.7631
+  },
+  {
+   "idx": 529,
+   "start_hms": "00:41:45.360",
+   "text": "into 50 me so this could be your target okay if you are in a circle long on this you are 200",
+   "confidence_est": 0.7631
+  },
+  {
+   "idx": 530,
+   "start_hms": "00:41:54.560",
+   "text": "me on the this thing look at that answer 200 me plus 50 me aligning so this is your target",
+   "confidence_est": 0.7631
+  },
+  {
+   "idx": 531,
+   "start_hms": "00:42:02.000",
+   "text": "So you can get out.",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 532,
+   "start_hms": "00:42:03.620",
+   "text": "So officially you take down 90% out.",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 533,
+   "start_hms": "00:42:05.820",
+   "text": "What do you do now?",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 534,
+   "start_hms": "00:42:06.860",
+   "text": "Like you have 75% out, 75% out and then put stop loss in profit somewhere here and then",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 535,
+   "start_hms": "00:42:14.500",
+   "text": "let it right.",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 536,
+   "start_hms": "00:42:15.700",
+   "text": "Okay, that's good.",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 537,
+   "start_hms": "00:42:17.450",
+   "text": "Or else you can't get out sir.",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 538,
+   "start_hms": "00:42:18.970",
+   "text": "You know, you got already 3% said yeah, I know it might come back down here again and",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 539,
+   "start_hms": "00:42:25.370",
+   "text": "then when I was a runner see, that's what I was telling you guys that you know, so wait",
+   "confidence_est": 0.461
+  },
+  {
+   "idx": 540,
+   "start_hms": "00:42:29.610",
+   "text": "for a stochastic to reset and then starts to move up.",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 541,
+   "start_hms": "00:42:34.810",
+   "text": "So the moment you're saying,",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 542,
+   "start_hms": "00:42:37.210",
+   "text": "see look at this the moment in a sec they did this.",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 543,
+   "start_hms": "00:42:42.610",
+   "text": "So this is very nice.",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 544,
+   "start_hms": "00:42:43.610",
+   "text": "You can take a long on this and now they are already up.",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 545,
+   "start_hms": "00:42:47.310",
+   "text": "So if you want to reenter this grade,",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 546,
+   "start_hms": "00:42:50.910",
+   "text": "what you have to do is wait until you know the stochastic to reset.",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 547,
+   "start_hms": "00:42:55.710",
+   "text": "So let them come back down and then maybe",
+   "confidence_est": 0.5919
+  },
+  {
+   "idx": 548,
+   "start_hms": "00:42:59.510",
+   "text": "So you can take along but yeah, you already got that I don't bother to insert re-enter on a sec",
+   "confidence_est": 0.5926
+  },
+  {
+   "idx": 549,
+   "start_hms": "00:43:06.630",
+   "text": "Do this thing",
+   "confidence_est": 0.5926
+  },
+  {
+   "idx": 550,
+   "start_hms": "00:43:08.630",
+   "text": "You make a daily profit already like come on guys. We are sitting here. We're recording",
+   "confidence_est": 0.5926
+  },
+  {
+   "idx": 551,
+   "start_hms": "00:43:12.150",
+   "text": "We are now I think 30 minutes in or so and he took this trade under the last",
+   "confidence_est": 0.5926
+  },
+  {
+   "idx": 552,
+   "start_hms": "00:43:18.230",
+   "text": "before he ended this Sony screen and",
+   "confidence_est": 0.5926
+  },
+  {
+   "idx": 553,
+   "start_hms": "00:43:21.790",
+   "text": "Like you're in the state for 50 minutes or 10 minutes and you're done. You made the daily profit guys",
+   "confidence_est": 0.5926
+  },
+  {
+   "idx": 554,
+   "start_hms": "00:43:27.030",
+   "text": "like for me swing trade doesn't work holding a too long doesn't work if you",
+   "confidence_est": 0.8373
+  },
+  {
+   "idx": 555,
+   "start_hms": "00:43:33.110",
+   "text": "want to hold too long hold it for spots okay when you when you have a big",
+   "confidence_est": 0.8373
+  },
+  {
+   "idx": 556,
+   "start_hms": "00:43:36.950",
+   "text": "crash if you want to do that but when you want to make your profit like the",
+   "confidence_est": 0.8373
+  },
+  {
+   "idx": 557,
+   "start_hms": "00:43:41.150",
+   "text": "most like the the most richest people in in trading they are really traders",
+   "confidence_est": 0.8373
+  },
+  {
+   "idx": 558,
+   "start_hms": "00:43:45.750",
+   "text": "they are scalpers they are doing this for one candle two candles and that's it",
+   "confidence_est": 0.8373
+  },
+  {
+   "idx": 559,
+   "start_hms": "00:43:49.990",
+   "text": "like I know a lot of influencers they they they scalp look at even how they",
+   "confidence_est": 0.8373
+  },
+  {
+   "idx": 560,
+   "start_hms": "00:43:55.550",
+   "text": "play Nezdak or they play gold. They're looking at the one minute, they scalp.",
+   "confidence_est": 0.7658
+  },
+  {
+   "idx": 561,
+   "start_hms": "00:43:59.450",
+   "text": "And this is a strategy that Fisher is using and I'm using it as well and it",
+   "confidence_est": 0.7658
+  },
+  {
+   "idx": 562,
+   "start_hms": "00:44:03.650",
+   "text": "helps. So guys focus, back test it before you use it. Maybe it doesn't work for",
+   "confidence_est": 0.7658
+  },
+  {
+   "idx": 563,
+   "start_hms": "00:44:10.070",
+   "text": "you. Maybe it works for you and maybe it can make you profitable. But please guys",
+   "confidence_est": 0.7658
+  },
+  {
+   "idx": 564,
+   "start_hms": "00:44:14.050",
+   "text": "like know when you make your profit, exit the trade and don't sit on the",
+   "confidence_est": 0.7658
+  },
+  {
+   "idx": 565,
+   "start_hms": "00:44:18.230",
+   "text": "screen and there is always a new trade. You can always trade the next day again.",
+   "confidence_est": 0.7658
+  },
+  {
+   "idx": 566,
+   "start_hms": "00:44:22.690",
+   "text": "And that's it guys like you see if his or started with 17k",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 567,
+   "start_hms": "00:44:26.410",
+   "text": "He's now way up and for me also like we started one October guys",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 568,
+   "start_hms": "00:44:30.970",
+   "text": "We started now one October and actually to this weekend. I didn't trade I didn't trade for two days",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 569,
+   "start_hms": "00:44:37.210",
+   "text": "So one two three four five six seven eight nine. So I traded",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 570,
+   "start_hms": "00:44:42.490",
+   "text": "Nine days this month",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 571,
+   "start_hms": "00:44:44.740",
+   "text": "Like I don't have to trade. I don't have to force traits. I'm just gonna wait for Monday again to trade",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 572,
+   "start_hms": "00:44:48.580",
+   "text": "I'm just enjoying the weekend with my family. So",
+   "confidence_est": 0.7398
+  },
+  {
+   "idx": 573,
+   "start_hms": "00:44:51.700",
+   "text": "So guys, thank you very much, Fischl, thank you for doing this for the community.",
+   "confidence_est": 0.5999
+  },
+  {
+   "idx": 574,
+   "start_hms": "00:44:58.300",
+   "text": "And let's see if it helps them and I think it will help them if they just stay disciplined",
+   "confidence_est": 0.5999
+  },
+  {
+   "idx": 575,
+   "start_hms": "00:45:05.300",
+   "text": "and how you explain it is really good, really good Fischl, like really good.",
+   "confidence_est": 0.5999
+  },
+  {
+   "idx": 576,
+   "start_hms": "00:45:10.800",
+   "text": "Okay, thank you sir.",
+   "confidence_est": 0.5999
+  },
+  {
+   "idx": 577,
+   "start_hms": "00:45:11.800",
+   "text": "Thank you.",
+   "confidence_est": 0.5999
+  }
+ ]
+}

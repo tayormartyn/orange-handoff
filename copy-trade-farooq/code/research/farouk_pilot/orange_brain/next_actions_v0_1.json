@@ -1,0 +1,58 @@
+{
+ "generated_at": "2026-07-20T13:05:00Z",
+ "actions": [
+  {
+   "rank": 1,
+   "objective": "H-FPL-05 scoring: harness BUILT + first interim run DONE 2026-07-20T13:36Z (SC-XAU-A MISS by 1.37pt breach; SC-XAU-B HIT_REJECTION w/ same-bar caveat; SC-XAU-C not triggered; BTC not scorable locally). Re-run score_h_fpl_05.py through the week; FINAL run after Fri 21:00Z.",
+   "why_now": "Zero-leakage pre-registered forward test; final verdict lands Friday.",
+   "named_blocker": "none — predicates frozen (params sha 501882a8), scorer re-runnable",
+   "required_inputs": "derived/live_video_20260719/h_fpl_05/ (frozen params + scorer); tracker ingestion log",
+   "Claude_Code_required": true,
+   "live_system_impact": "NONE (writes only into h_fpl_05/)",
+   "proof_of_completion": "H_FPL_05_SCORE_<Fri-final>.md marked FINAL",
+   "stop_condition": "final run written",
+   "deferred_alternatives": "none needed"
+  },
+  {
+   "rank": 2,
+   "objective": "Martyn reviews the actionable quarantine queue (18 as of 07-20; alert-flagged first: 45784, 45896, 45901, 45916, 45922, 45924, 45934) and a durable resolution record format is defined (OQ-8)",
+   "why_now": "Only human-resolvable; queue grew live today; keeps fail-loud lane trustworthy.",
+   "named_blocker": "PENDING_OPERATOR_REVIEW on 18 durable records + missing resolution record format (OQ-8)",
+   "required_inputs": "intake_quarantine_v0_1.jsonl bounded texts (already durable)",
+   "Claude_Code_required": false,
+   "live_system_impact": "NONE (append-only resolutions)",
+   "proof_of_completion": "resolution_status updated append-only for all 6",
+   "stop_condition": "queue empty",
+   "deferred_alternatives": "review only the 3 pre-Sunday ones"
+  },
+  {
+   "rank": 3,
+   "objective": "TASK 1B — corpus layer (REINSTATED by operator, D-010; next build task after Friday's final H-FPL-05 score): transcribe+ingest every training/breakdown video, resolve or precisely list uncaptured Discord links, ingest training docs + full historical Telegram archive text + all indicator captures; idempotent ingestion (ALREADY_INGESTED on duplicates), per-item source_id/class/tier/ingested_at/content_hash/provenance/supersedes, retrieval index, counts by class+tier",
+   "why_now": "Stage 2 rule mining is blocked without it; stops Martyn supplying the same videos a third time; dropped off the plan twice already.",
+   "named_blocker": "no corpus store exists; Martyn to assemble the source material list (his action 3)",
+   "required_inputs": "orange_brain/work_orders/TASK_1B_CORPUS_SPEC.md; Martyn's material list; existing derived transcripts + indicator captures",
+   "Claude_Code_required": true,
+   "live_system_impact": "NONE (new research store only)",
+   "proof_of_completion": "acceptance tests: full holdings list query; duplicate re-submit returns ALREADY_INGESTED; indicator query returns corpus material not fresh analysis",
+   "stop_condition": "acceptance tests green; STOP AND REPORT",
+   "deferred_alternatives": "none — order fixed: H-FPL-05 final -> 1B -> H-FPL-02 -> Stage 2"
+  }
+ ],
+ "fixed_order_after_friday": [
+  "1: H-FPL-05 FINAL (Fri post-21:00Z)",
+  "2: TASK 1B corpus ingest",
+  "3: PARSER COVERAGE REPLAY (prerequisite, read-only)",
+  "4: ALERT_LANE_MONITOR build (prerequisite)",
+  "5: DEMO COPY-TRADE LANE (gated; needs 3+4 proven)",
+  "6: H-FPL-02 offline event study (params frozen)",
+  "7: Stage 2 rule mining",
+  "8: full back-data replay / hypothesis screening"
+ ],
+ "rejected_circular_work": [
+  "re-investigating known indicator existence",
+  "rewriting the Sunday video summary",
+  "adding a new setup family without evidence",
+  "documentation with no decision effect",
+  "fitting retrospective/backfill data to appear active"
+ ]
+}

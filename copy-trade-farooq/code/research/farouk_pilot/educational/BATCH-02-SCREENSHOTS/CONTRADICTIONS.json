@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "BOS-TS",
+      "type": "TRANSCRIPTION CORRECTION",
+      "detail": "FP-EDU-016 BOS timestamp: 29/03/2025 22:44 (batch_02, 2 clearer crops) vs 27/06/2025 22:44 (earlier batch_01 misread). Adopt 29/03/2025 22:44."
+    },
+    {
+      "id": "CANDLE-CLOSE",
+      "type": "UNRESOLVED (pre-existing)",
+      "detail": "016 (candle close required) vs 021 (not mandatory) — unaffected by batch_02."
+    },
+    {
+      "id": "OI-vs-SMC",
+      "type": "TOOL MULTIPLICITY",
+      "detail": "Open Interest (034) is a futures-data input, distinct from the price-action SMC toolset."
+    }
+  ]
+}

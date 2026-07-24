@@ -1,0 +1,394 @@
+{
+  "observation_id": "FP-LIVE-OBSERVATION-001",
+  "capture_set": "first event set (2026-07-06, ~06:00-07:06 local)",
+  "raw_folder": "live_observations/FP-LIVE-OBSERVATION-001/FP-LIVE-OBSERVATION-001/raw (NOTE: nested folder — the capture used a doubled FP-LIVE-OBSERVATION-001 path; user-stated path was the single folder)",
+  "total_images": 39,
+  "live_images": 13,
+  "originals_unmodified": true,
+  "originals_preserved": true,
+  "note": "Local machine clock ~UTC+1 (chart bottom-right shows UTC+1). Indicator internal timezone field = Europe/Berlin (UTC+2 in July DST). Alert timestamps in the TradingView log are the alert-engine times.",
+  "images": [
+    {
+      "filename": "Screenshot 2026-07-05 154008.png",
+      "sha256": "9a853fe88caa77a6cc24a7d24570f3730ceff6706e18e08d15ddbfb5165aa681",
+      "bytes": 166392,
+      "dims": "780x871",
+      "mtime_local": "2026-07-05 15:40:09",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 175132.png",
+      "sha256": "14d48ec5863c095dfd91d3b425d4acf1774033ca79985ba5550d00e7dd6f921e",
+      "bytes": 188159,
+      "dims": "1727x898",
+      "mtime_local": "2026-07-05 17:51:32",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 175343.png",
+      "sha256": "2a1beb40df8b0c5543c79556cd111057000c103bb66e4bd35d8a231e90cd01d1",
+      "bytes": 56816,
+      "dims": "637x631",
+      "mtime_local": "2026-07-05 17:53:43",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 175459.png",
+      "sha256": "357e7afc1101e48d54a47590f86126e5c4b27481aea12612bc9ac21b7b646e90",
+      "bytes": 53575,
+      "dims": "643x628",
+      "mtime_local": "2026-07-05 17:54:59",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 175647.png",
+      "sha256": "698d9d91c62e6b41920908e2a0054348bc610aea72484b1a700b67172ec842c2",
+      "bytes": 54374,
+      "dims": "637x613",
+      "mtime_local": "2026-07-05 17:56:48",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 181559.png",
+      "sha256": "8a1ca72d6d889a8285635a118ff20089c3d83abb972592eec5f6db9cdd4fd30e",
+      "bytes": 20712,
+      "dims": "71x617",
+      "mtime_local": "2026-07-05 18:16:01",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 181617.png",
+      "sha256": "7e1f2c9902a13216065c840cf749990ef0e0e3b8b2212f232d52d6ab4cb69f42",
+      "bytes": 315921,
+      "dims": "1221x707",
+      "mtime_local": "2026-07-05 18:16:19",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 202532.png",
+      "sha256": "7d94bb16254f7ce5babb8a587fc59df43e8545c9fce27abca08c289038639442",
+      "bytes": 215,
+      "dims": "11x72",
+      "mtime_local": "2026-07-05 20:25:32",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 202543.png",
+      "sha256": "c05f54fac61237c8f8d095a7b4f734de3607117decfdebb56950239aad5412c9",
+      "bytes": 5606,
+      "dims": "746x58",
+      "mtime_local": "2026-07-05 20:25:44",
+      "set": "PREP_2026-07-05"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 060020.png",
+      "sha256": "478507770aa2ee3354573b122b96b0ddd1dc4bdb48677f2586b3687e0cb58169",
+      "bytes": 163213,
+      "dims": "1530x922",
+      "mtime_local": "2026-07-06 06:00:21",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 060509.png",
+      "sha256": "d9103c58e8cfa9e2ef4ec6e99d766a17edfc49bcc563c17989c655409dfee1f4",
+      "bytes": 170420,
+      "dims": "1562x992",
+      "mtime_local": "2026-07-06 06:05:10",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 064110.png",
+      "sha256": "dd0ecc00aea64f5723ff41e094eab6266dd947c6aa62af45b70beec9dd5b3903",
+      "bytes": 178227,
+      "dims": "1812x880",
+      "mtime_local": "2026-07-06 06:41:10",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 064936.png",
+      "sha256": "2ca2fe791bb1cd0d80be2158d42c18bf25a2c0ce08ac4fd9ad4c7794896693b3",
+      "bytes": 316609,
+      "dims": "660x706",
+      "mtime_local": "2026-07-06 06:49:37",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 065055.png",
+      "sha256": "ff1823594b5f8339a90dae635d55c7ce854ba836e57465e149999b650e959597",
+      "bytes": 213201,
+      "dims": "1827x958",
+      "mtime_local": "2026-07-06 06:50:56",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 065340.png",
+      "sha256": "bfde04f920205e3561d77456a7487c0dc5d6326b2e9550eebea31ac2fc0fef48",
+      "bytes": 210937,
+      "dims": "1781x930",
+      "mtime_local": "2026-07-06 06:53:41",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 065403.png",
+      "sha256": "be270723eff0cb22175f4f1303a3c2315ba0b19d8f832e0d4432d47b3a6e48d7",
+      "bytes": 431,
+      "dims": "2x525",
+      "mtime_local": "2026-07-06 06:54:03",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 065422.png",
+      "sha256": "1065455f73dced67ded6055d013cf0ba900f841312e05318f54a379e1e477e8b",
+      "bytes": 212497,
+      "dims": "1837x966",
+      "mtime_local": "2026-07-06 06:54:23",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 065750.png",
+      "sha256": "21d73378f424ec4e434afa3e8d61ba7cf97178d1038cf0100ef4f7265363f120",
+      "bytes": 242443,
+      "dims": "1832x982",
+      "mtime_local": "2026-07-06 06:57:52",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 070017.png",
+      "sha256": "0f01c4d050505186e1dfad391ebbf4eaf29f57884a754edb0a990622bdab8797",
+      "bytes": 213697,
+      "dims": "1777x882",
+      "mtime_local": "2026-07-06 07:00:18",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 070214.png",
+      "sha256": "8b757e8f93ca49c93ff493347078663bf68cf460007981732136610ccfd9513e",
+      "bytes": 238078,
+      "dims": "1810x991",
+      "mtime_local": "2026-07-06 07:02:15",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 070424.png",
+      "sha256": "2fb5d44ded3e6b901375ddb522e1d315b6fc642259504e96e0225f3758004aaa",
+      "bytes": 53682,
+      "dims": "630x361",
+      "mtime_local": "2026-07-06 07:04:25",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 070626.png",
+      "sha256": "d58542ccfc786c9b11f0f3aece3e649b12a15838ca07895cd7ca95624a2457e7",
+      "bytes": 68044,
+      "dims": "660x418",
+      "mtime_local": "2026-07-06 07:06:27",
+      "set": "LIVE_CAPTURE_2026-07-06"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 074610.png",
+      "sha256": "cb01cdc1538d1688a7935ea70f3a335679f08d184e21b94cca7033a9ea02b67c",
+      "bytes": 51109,
+      "mtime_local": "2026-07-06 07:46:10",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "645x367",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 075729.png",
+      "sha256": "c252adc19bb9c50ad1306c0d5b79ec4d072b768809de13f53340fd64a3433829",
+      "bytes": 49880,
+      "mtime_local": "2026-07-06 07:57:30",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "626x358",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 080338.png",
+      "sha256": "c52dc304cc22fa0be9686966163901272aa35c223bc287db45dd2e4e1a3e0aac",
+      "bytes": 50914,
+      "mtime_local": "2026-07-06 08:03:39",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "667x362",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 081641.png",
+      "sha256": "21a5a0f417873e288f592ddf1eeabeb1cbd6379a3daf8b309c67e28547b984fe",
+      "bytes": 25190,
+      "mtime_local": "2026-07-06 08:16:42",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "408x363",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 081718.png",
+      "sha256": "84f5bd99ee8c766c815099828a1701d2119d7650f1f7ef74089ebe8b95998c9b",
+      "bytes": 40691,
+      "mtime_local": "2026-07-06 08:17:19",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "646x293",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 081756.png",
+      "sha256": "5ae66f314d2d899c6bb39adf384fc817abd3c2fdf385c44b50cd5dc573071e92",
+      "bytes": 14604,
+      "mtime_local": "2026-07-06 08:17:57",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "358x242",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 081839.png",
+      "sha256": "513ffe85e2ceccd5210eb3f7e877199eabbc1a017b437757ec648c463b75c306",
+      "bytes": 13811,
+      "mtime_local": "2026-07-06 08:18:40",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "382x215",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 081910.png",
+      "sha256": "f4c63c68231ed762991ffa22280257b681522edccfd4dfc84c3212c923c6958a",
+      "bytes": 13774,
+      "mtime_local": "2026-07-06 08:19:10",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "365x183",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 081954.png",
+      "sha256": "bbf5c73f8358f7bd9cf8610bad6d93752268a70c97b40a1850d78ceedad2ee4f",
+      "bytes": 24255,
+      "mtime_local": "2026-07-06 08:19:55",
+      "set": "CONTINUATION_002_2026-07-06",
+      "dims": "455x312",
+      "type": "screenshot"
+    },
+    {
+      "filename": "XAUUSD 4,152.45 ▼ −0.54% Unnamed and 65 more pages - Personal - Microsoft​ Edge 2026-07-06 06-05-40.mp4",
+      "sha256": "5d04d8217a7f5f82c57a0eaae29065ed79f5db9edcd114bad79a93048d4c6ea0",
+      "bytes": 1919399065,
+      "mtime_local": "2026-07-06 06:30:12",
+      "set": "CONTINUATION_002_2026-07-06",
+      "type": "screen_recording"
+    },
+    {
+      "filename": "XAUUSD 4,158.40 ▼ −0.4% Unnamed and 65 more pages - Personal - Microsoft​ Edge 2026-07-06 06-37-36.mp4",
+      "sha256": "1d8a0697e9efe5664acbfdbf16bcd5941ce039b4c84a30e7cd7edb2ea014f328",
+      "bytes": 65656495,
+      "mtime_local": "2026-07-06 06:38:23",
+      "set": "CONTINUATION_002_2026-07-06",
+      "type": "screen_recording"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 083516.png",
+      "sha256": "ef97a58f271eb099bd54b82d3286faed0613718bb276dc18f67bc1670f193056",
+      "bytes": 24252,
+      "dims": "395x321",
+      "mtime_local": "2026-07-06 08:35:17",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084225.png",
+      "sha256": "0cdca86513fd48a9ade53a8b674a661b227c4159bf30440be3b99144ac3499ae",
+      "bytes": 25052,
+      "dims": "433x332",
+      "mtime_local": "2026-07-06 08:42:26",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084308.png",
+      "sha256": "e708597c4efa8d9590303900591376efd6d8acf4b07ba9436f9e9bc0d358f44c",
+      "bytes": 12014,
+      "dims": "351x221",
+      "mtime_local": "2026-07-06 08:43:09",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084338.png",
+      "sha256": "91fd54ba84b563728092639cdd1b984699df7d8acd9dc640fdddeb42c8d4295d",
+      "bytes": 23769,
+      "dims": "377x317",
+      "mtime_local": "2026-07-06 08:43:39",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084405.png",
+      "sha256": "b8c99b94006632b436757839e8bde87d01f3c145d4908a754e8af9f8d917ac04",
+      "bytes": 31490,
+      "dims": "433x365",
+      "mtime_local": "2026-07-06 08:44:06",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084433.png",
+      "sha256": "33e0fe40985a6aeb51cfc25d28a2151cc9c9dcd41b4171baf67b6b3c7479ab0b",
+      "bytes": 12760,
+      "dims": "368x203",
+      "mtime_local": "2026-07-06 08:44:34",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084503.png",
+      "sha256": "016c0827ee6377fb4aa79f562da986ca1565ca87c85aedd7fdbba4fe71ecf9fd",
+      "bytes": 24157,
+      "dims": "405x335",
+      "mtime_local": "2026-07-06 08:45:04",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    },
+    {
+      "filename": "Screenshot 2026-07-06 084748.png",
+      "sha256": "718af41e39080b9f9487abb41b6581d039f3c6096248a13f49ed2efda7affd92",
+      "bytes": 261209,
+      "dims": "1867x967",
+      "mtime_local": "2026-07-06 08:47:49",
+      "set": "CONTINUATION_003_2026-07-06",
+      "type": "screenshot"
+    }
+  ],
+  "recordings": [
+    {
+      "filename": "XAUUSD 4,152.45 ▼ −0.54% Unnamed and 65 more pages - Personal - Microsoft​ Edge 2026-07-06 06-05-40.mp4",
+      "sha256": "5d04d8217a7f5f82c57a0eaae29065ed79f5db9edcd114bad79a93048d4c6ea0",
+      "bytes": 1919399065,
+      "mtime_local": "2026-07-06 06:30:12",
+      "set": "CONTINUATION_002_2026-07-06",
+      "type": "screen_recording"
+    },
+    {
+      "filename": "XAUUSD 4,158.40 ▼ −0.4% Unnamed and 65 more pages - Personal - Microsoft​ Edge 2026-07-06 06-37-36.mp4",
+      "sha256": "1d8a0697e9efe5664acbfdbf16bcd5941ce039b4c84a30e7cd7edb2ea014f328",
+      "bytes": 65656495,
+      "mtime_local": "2026-07-06 06:38:23",
+      "set": "CONTINUATION_002_2026-07-06",
+      "type": "screen_recording"
+    }
+  ],
+  "continuation_002": {
+    "new_screenshots": 9,
+    "new_recordings": 2,
+    "recordings_detail": {
+      "Rec1 (…06-05-40.mp4)": "24:33, 1920x1140 h264 aac stereo — ALERT-SETUP session (~06:05:40-06:30:13 UTC+1); captured the named Sweep-low toast firing at 06:24:00 UTC+1",
+      "Rec2 (…06-37-36.mp4)": "0:48.82, 1920x1140 h264 aac stereo — post-06:33-cluster chart+log view (~06:37:36 UTC+1)"
+    },
+    "note": "All originals unmodified. Chart clock = UTC+1 (confirmed on video); indicator timezone field = Europe/Berlin."
+  },
+  "continuation_003": {
+    "new_screenshots": 8,
+    "new_recordings": 0,
+    "window": "2026-07-06 08:35-08:47 (events 08:24-08:42 UTC+1)",
+    "note": "First appearance of A+ and CHoCH-up alerts. Originals unmodified. Chart clock UTC+1; indicator TZ Europe/Berlin.",
+    "new_named_alerts_seen": {
+      "LIVE001_APLUS_XAUUSD_3M": "created 06:19:52 (msg 'A+ or better')",
+      "LIVE001_CHOCH_UP_XAUUSD_3M": "created 06:23:33 (msg 'CHoCH up')"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "doc_id": "fable5_training_batch_003",
+  "as_of": "2026-07-12T10:25+02:00",
+  "mode": "BATCH_003_EXTRACTION_REVIEW_ONLY",
+  "live_priority_gate": {"max_msg_id": 45647, "new_xau_after_45646": false, "msg_45647": "non-XAU HYPE/crypto chatter, NON_TRIGGERING, left for Cycle 004", "cycle_004_triggered": false},
+  "processed": [
+    {"evidence_id": "FP-B003-01", "source": "Downloads/Schermopname_2025-12-14_om_16.45.20.mov", "sha256_at": "derived/transcripts/batch_003/FP-B003-01/FP-B003-01_source_meta.json", "rights": "member-recorded WhaleRoom video; private research only", "topics": ["session range boxes", "yellow market-maker candles", "VWAP semantics"], "confidence": "HIGH transcript / LOW spoken digits", "changes_orange": "strengthens indicator_price_level_extraction + zone_touch_count doctrine"},
+    {"evidence_id": "FP-B003-02", "source": "Downloads/Schermopname_2025-12-14_om_17.03.11.mov", "rights": "same", "topics": ["POC/VAH/VAL", "SFP sweep dots", "liquidity sweeps", "EMA module (unused by him)", "combine-indicators doctrine"], "confidence": "HIGH/LOW as above", "changes_orange": "strengthens indicator_price_level_extraction; EMA = no feature"},
+    {"evidence_id": "FP-B003-03", "source": "Downloads/Schermopname_2025-12-14_om_17.12.15.mov", "rights": "same", "topics": ["ORB Asia/London/NY", "orb mid = hidden liquidity", "no-trade-inside-orb", "breakout-retest entries", "untested-level magnet"], "confidence": "HIGH/LOW", "changes_orange": "strengthens Lane-6 panel-level semantics"},
+    {"evidence_id": "FP-B003-04", "source": "Downloads/Schermopname 2026-06-29 om 16.37.24.mov", "rights": "same", "topics": ["pre-marked plan day-ahead", "zone entry", "layering close-worst/hold-best", "1H-close-vs-daily-FVG confirmation", "mitigated OB = do not re-enter", "multi-TF bearish alignment"], "confidence": "HIGH/LOW", "changes_orange": "strengthens Lane-6 pre-mark hypothesis; seeds mitigated_level_exclusion (v0.4)"},
+    {"evidence_id": "FP-B003-05", "source": "Downloads/Schermopname 2026-07-01 om 20.16.35.mov", "rights": "same", "topics": ["LOSS post-mortem", "no-FVG dump = sweep not displacement", "weak break", "sideways-clear-cluster-dump pattern", "stop above Asia high", "sweep+BOS bias flip", "paper-trade-vs-real-account lane separation", "weekly CHoCH context"], "confidence": "HIGH/LOW", "changes_orange": "strengthens displacement_fvg_artifact_test (v0.4) with loss-backed causal rule"},
+    {"evidence_id": "FP-B003-06", "source": "Downloads/Schermopname 2026-07-02 om 19.40.23.mov", "rights": "same", "topics": ["multi-TF candle-close confirmation stack 5m/15m/1H/W", "4H OB as target+shelf", "untested OB/FVG = strong", "78-80% Asia-high 22-year claim", "BE with layered entries", "deeper mitigation preference", "month-green accounting"], "confidence": "HIGH/LOW", "changes_orange": "strengthens bos_candle_close_confirmed + strong_ob rubric; watchlist asia_high_break_session_prior"},
+    {"evidence_id": "FP-RECAP-001", "source": "Downloads/WhaleRoom_TradeRecap_1.pdf", "bytes": 7209, "rights": "member-distributed WhaleRoom PDF; private research only", "topics": ["Feb-17..Mar-27 2026 recap", "25+ trades 18W/3L/5 missed claim 85%+", "per-trade entry+SL", "SL-to-entry management", "limit-order doctrine", "claim accounting conventions"], "confidence": "HIGH (printed prices)", "changes_orange": "extends stop_width dataset +19 samples; strengthens R6 lane-5 claim discount"}
+  ],
+  "skipped": [
+    {"item": "Schermopname_2025-12-14_om_16.45.20 (1)/(2).mov + _17.12.15 (1)/(2).mov", "reason": "byte-identical duplicates of canonical files"},
+    {"item": "recap row 27-03 GOLD SHORT SL=5075", "reason": "data error (SL impossible vs ~4433 market); excluded from width dataset"},
+    {"item": "EMA module", "reason": "he states he never uses it; no feature"}
+  ],
+  "stop_width_samples_feb_mar_2026": {
+    "count_usable": 19,
+    "median_usd_midpoint": 21,
+    "range_usd": [8, 89],
+    "wide_tail_note": "55/84/89 on counter-trend shorts noted 'low lot' in source (claim-context only; no sizing fields)",
+    "samples": [
+      {"date": "18-02", "dir": "LONG", "entry": "4890-4885", "sl": 4868, "width_usd": [17, 22], "result": "REMOVED"},
+      {"date": "19-02", "dir": "LONG", "entry": "4980", "sl": 4967, "width_usd": [13, 13], "result": "MISSED"},
+      {"date": "20-02", "dir": "LONG", "entry": "5006-5000", "sl": 4983, "width_usd": [17, 23], "result": "WIN +150p"},
+      {"date": "20-02b", "dir": "LONG", "entry": "4997-4990", "sl": 4975, "width_usd": [15, 22], "result": "REMOVED"},
+      {"date": "20-02c", "dir": "LONG", "entry": "5025-5020", "sl": 5000, "width_usd": [20, 25], "result": "MISSED"},
+      {"date": "24-02", "dir": "LONG", "entry": "5044-5038", "sl": 5020, "width_usd": [18, 24], "result": "WIN +100p"},
+      {"date": "26-02", "dir": "LONG", "entry": "5142-5130", "sl": 5120, "width_usd": [10, 22], "result": "WIN +300p held 10%"},
+      {"date": "27-02", "dir": "LONG", "entry": "5115-5107", "sl": 5088, "width_usd": [19, 27], "result": "REMOVED"},
+      {"date": "02-03", "dir": "LONG", "entry": "5351-5340", "sl": 5330, "width_usd": [10, 21], "result": "LOSS"},
+      {"date": "12-03", "dir": "LONG", "entry": "5050-5035", "sl": 5010, "width_usd": [25, 40], "result": "MISSED"},
+      {"date": "17-03", "dir": "LONG", "entry": "4992-4980", "sl": 4966, "width_usd": [14, 26], "result": "WIN +300p all TPs"},
+      {"date": "18-03", "dir": "SHORT", "entry": "4870", "sl": 4925, "width_usd": [55, 55], "result": "WIN +500p"},
+      {"date": "19-03", "dir": "LONG", "entry": "4775", "sl": 4767, "width_usd": [8, 8], "result": "LOSS; note 'SL hit at 4762' -> posted-vs-actual gap ~$5"},
+      {"date": "19-03b", "dir": "SHORT", "entry": "4619", "sl": 4708, "width_usd": [89, 89], "result": "WIN +400p low lot"},
+      {"date": "19-03c", "dir": "SHORT", "entry": "4624", "sl": 4708, "width_usd": [84, 84], "result": "WIN +350p"},
+      {"date": "20-03", "dir": "LONG", "entry": "4619-4610", "sl": 4585, "width_usd": [25, 34], "result": "WIN +90p SL-to-entry at TP1"},
+      {"date": "20-03b", "dir": "LONG", "entry": "4583", "sl": 4560, "width_usd": [23, 23], "result": "LOSS"},
+      {"date": "25-03", "dir": "LONG", "entry": "4554-4548", "sl": 4530, "width_usd": [18, 24], "result": "WIN TP1"},
+      {"date": "27-03", "dir": "SHORT", "entry": "4433", "sl": 4472, "width_usd": [39, 39], "result": "WIN +170p"}
+    ]
+  },
+  "lessons": [
+    {"id": "L1", "lesson": "stop-width cross-period stability: Feb-Mar median ~$21 vs existing ~$20", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["stop_width_by_level_type v0.1"]},
+    {"id": "L2", "lesson": "posted-vs-actual SL gap (~$5, 19-03) documents stops effectively wider than posted", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["R6 central caveat", "capture 8F feed notes"]},
+    {"id": "L3", "lesson": "stop above structural anchor (Asia high) outside zone", "class": "ALREADY_IN_ORANGE", "maps_to": ["stop_outside_zone"]},
+    {"id": "L4", "lesson": "no-FVG one-leg move = sweep not displacement; 'weak break'; sideways-clear-cluster-dump = genuine; loss-backed", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["detector v0.4 displacement_fvg_artifact_test"], "numeric_displacement": "none spoken; FVG-presence design confirmed"},
+    {"id": "L5", "lesson": "mitigated OB must not be re-entered (spent level)", "class": "NEW_PROMISING_FEATURE", "maps_to": ["detector v0.4 mitigated_level_exclusion (ratification-gated)"]},
+    {"id": "L6", "lesson": "untested 4H OB/FVG = strong target+shelf; freshness dominates rubric", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["strong_ob_rubric_v0_1"]},
+    {"id": "L7", "lesson": "VWAP touch-count exhaustion ('tested so many times -> will lose it')", "class": "ALREADY_IN_ORANGE", "maps_to": ["zone_touch_count F2"]},
+    {"id": "L8", "lesson": "confirmation TF hierarchy: 1H close vs daily FVG; 5m+15m+1H stack = high confirmation; weekly close for continuation", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["bos_candle_close_confirmed", "graded confluence stack"]},
+    {"id": "L9", "lesson": "indicator panel level semantics (boxes/VWAP/POC/VAH/VAL/SFP/orb top-mid-bottom/yellow candles) machine-extractable", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["indicator_price_level_extraction", "Lane-6 pre-mark builder", "13-condition alert mapping"]},
+    {"id": "L10", "lesson": "pre-marking is his own workflow (plan made day-ahead; 'limit orders are a cheat code'); limit-at-zone canonical", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["Lane-6 pre-mark hypothesis", "R6 lanes 2/3", "fill_lag_cost"]},
+    {"id": "L11", "lesson": "layering: close worst / hold best (verbatim); BE with couple entries; SL-to-entry at TP1 routine; held-10% runner; weekend flat", "class": "ALREADY_IN_ORANGE", "maps_to": ["be_at_average_for_layered", "tranche schedules", "R4b", "R6 lane-4"]},
+    {"id": "L12", "lesson": "mitigation depth: overshoot-sweep into OB expected; deeper entries preferred; '75-80' depth quote (digits low-confidence)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["capture 8D leg events", "mitigation-depth fields"]},
+    {"id": "L13", "lesson": "claim accounting: 85%+ = W/(W+L), MISSED+REMOVED excluded; +3000p no-entry 'win'; hypothetical missed framing; one impossible SL row", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["R6 lane-5 claim discount", "audit_r conventions"]},
+    {"id": "L14", "lesson": "'paper trade but I took it on my real account' - explicit posted-lane vs private-book separation", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["R6 central caveat", "lane separation"]},
+    {"id": "L15", "lesson": "78-80% Asia-high-break session prior claimed from 22-year data", "class": "WATCHLIST_FEATURE", "maps_to": ["NEEDS_FORWARD_EVIDENCE; offline verification before any use"]},
+    {"id": "L16", "lesson": "conviction/size linkage mentions (bigger when confident; low lot on wide stops)", "class": "WATCHLIST_FEATURE", "maps_to": ["claim-context notes only; NO sizing fields"]}
+  ],
+  "verdicts": {
+    "detector_v0_3": "SUPPORTED; live labels unchanged",
+    "detector_v0_4_backlog": "STRENGTHENED (displacement test loss-backed; +mitigated_level_exclusion candidate)",
+    "lane_6": "STRENGTHENED",
+    "r6": "STRENGTHENED",
+    "human_ratification": "none required now; mitigated_level_exclusion ratification-gated before scoring use",
+    "ohlc_matching": "RECOMMEND LATER: Feb-Mar 2026 match of the 20 recap trades (tests the 85% claim deterministically) alongside existing May option; NOT run now"
+  },
+  "safety": {"listener_pid_87988": "running/untouched", "gates": "PAPER/PREVIEW/False/False", "not_integration_ready": "unchanged", "execution_built": false, "permits_leases_orders": "none", "sizing_fields_produced": false},
+  "next": "Cycle 004 / XAU-F001 at first XAU post after Sun ~22:00Z reopen (msg 45647 pending there); then v0.4 offline replay; optional Feb-Mar + May OHLC matching; Orange master re-issue with Batch-003 deltas"
+}

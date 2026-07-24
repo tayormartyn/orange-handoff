@@ -1,0 +1,7 @@
+{
+  "schema_version": "tv-webhook-0.1",
+  "source": "TradingView",
+  "alert_name": "LIVE001_TEST_BADAUTH",
+  "event_text": "this POST is sent WITHOUT (or with an incorrect) X-TV-Token header and must be REJECTED with 401",
+  "_note": "Manual Stage-1 negative test. The body itself is harmless; the point is the missing/incorrect shared-secret header. No credentials, no broker instruction."
+}

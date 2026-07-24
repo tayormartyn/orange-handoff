@@ -1,0 +1,47 @@
+{
+  "review": {
+    "pack_id": "FP-LIVE-VIDEO-EXPLAINER-001",
+    "extracted_instrument": "XAUUSD",
+    "direction": null,
+    "entry_zone": null,
+    "sl": null,
+    "tp_levels": [],
+    "result_claim": null,
+    "evidence_used": [
+      45642
+    ],
+    "confidence": 0.7,
+    "contradictions": [],
+    "missing_evidence": [
+      "full 95-min transcript pending completion at write time; frame survey done"
+    ],
+    "ohlc_required": false,
+    "verdict": "EXTRACTED",
+    "evidence_id": "FP-LIVE-VIDEO-EXPLAINER-001",
+    "source_filename": "Live with Farouk, Friday, 10 July 2026.mp4",
+    "source_path": "C:/Users/Marty/Downloads/",
+    "modified_time_local": "2026-07-11 16:27:42",
+    "bytes": 386910020,
+    "sha256": "f1200fed0ebc5832613bff5882cd976ef80fbe3bba5bd60e360a1d5f853ed892",
+    "duration_min": 95.1,
+    "rights_status": "RIGHTS_PENDING_PRIVATE_REVIEW (his own YouTube live, linked by him in msg 45642; private research use only; no redistribution; no long quotes)",
+    "apparent_trade_dates": "Jul-10 evening stream (~17:16-18:52Z per on-screen clock): S4 recap + weekend/next-week outlook",
+    "linked_setups": [
+      "XAU-S4-20260710"
+    ],
+    "explanation_timing": "post-hoc for S4 + pre-planned forward levels",
+    "key_points": [
+      "HIS LIVE FEED IS VANTAGE (12h chart tab 'Gold Spot / U.S. Dollar - Vantage'; MT5 'XAUUSD-VIP') — explains his-fill vs Pepperstone-feed divergences",
+      "Same indicator stack as video 002 across all tabs (Farouk's Playbook Smart Money Suite, SeaScalper Bias Levels v2, BGS Liquidity Inefficiency, [kyle] v1/v2)",
+      "PRE-MARKED forward supply zones drawn on the DAILY: ~4150-4180 and ~4430-4480 (green boxes) — testable Lane-6 pre-marks for the coming week",
+      "HTF red levels marked: 4246.34/4244.10 and 4180.46 (the S2 stop region remains a mapped level)",
+      "Multi-asset tabs: XAUUSD (multiple), BTCUSDT.P, SOLUSDT.P — one workspace for all his lanes"
+    ],
+    "widget_or_sensitive_fields": "broker-platform tabs visible; no account ids/tickets readable in sampled frames; nothing recorded beyond platform name as evidence",
+    "review_only": true,
+    "executable": false,
+    "trade_ready": false,
+    "observation_only": true
+  },
+  "validator_negative_check": "PASS — forbidden execution-surface field in reviewer output: 'broker_route'"
+}

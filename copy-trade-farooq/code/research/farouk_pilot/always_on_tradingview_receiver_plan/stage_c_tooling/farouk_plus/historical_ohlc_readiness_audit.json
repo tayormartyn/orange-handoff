@@ -1,0 +1,72 @@
+{
+  "doc_id": "historical_ohlc_readiness_audit",
+  "as_of": "2026-07-12T14:05Z",
+  "mode": "HISTORICAL_OHLC_READINESS_AUDIT_READ_ONLY",
+  "live_priority_gate": {"listener_pid_23012": "running/untouched", "store_max_msg_id": 45649, "note": "45649 = known IRRELEVANT admin/relay request; nothing after; market closed until ~22:00Z", "cycle_006_triggered": false},
+  "matching_run": false,
+  "internet_used": false,
+  "local_assets": {
+    "downloads_1m_csv": ["XAUUSD_1M_2026-06-01_to_2026-06-11", "XAUUSD_1M_2026-06-01_to_2026-06-15", "XAUUSD_1M_2026-06-11_to_2026-06-21", "XAUUSD_1M_2026-06-15_to_2026-06-30", "XAUUSD_1M_2026-06-30_1300_to_2026-07-01_0400_UTC", "XAUUSD_1M_2026-07-07_1000_to_1600_UTC", "XAUUSD_1M_2026-07-08_1100_to_1630_UTC", "XAUUSD_1M_2026-07-10_1130_to_2200_UTC", "PEPPERSTONE_XAUUSD, 1.csv (+1 dup)", "XAUUSD_5M_2026-06-01_to_2026-06-30"],
+    "tick_store": {
+      "path": "data/price_cache/XAUUSD/<year>/<month0>/<day>/<hour>h.ticks",
+      "indexing_verified": "month dirs 0-INDEXED (2026\\01=Feb, 2026\\02=Mar, 2026\\04=May; verified from epoch-ms timestamps)",
+      "feb_2026": "days 2,3,4,6,10,11,12,13,16,17,19,25 - partial hours only",
+      "mar_2026": "days 10,11,12,16,18,25,26 - partial hours only",
+      "may_2026": "day 22 (17h only); days 25-31 FULL 24h",
+      "jun_2026": "25 days (plus Downloads 1m CSVs cover June fully)"
+    },
+    "raw_market_data_dir": "empty"
+  },
+  "may_six_trades": {
+    "source": "FP-AUDIT-001 farouk_trade_audit.xlsx Row Audit (widths reconcile with 002B six-sample set 20/24/40/25/25/20)",
+    "match_ready_now": 6,
+    "rows": [
+      {"id": "M1", "dt": "2026-05-25 09:50", "dir": "SHORT", "zone": "4567-4575", "sl": 4595, "tps": [4560, 4551, 4530], "audited": "Win TP1", "window": "2026-05-25T08:50Z -> 2026-05-27T10:00Z", "coverage": "FULL (ticks)"},
+      {"id": "M2", "dt": "2026-05-26 10:26", "dir": "SHORT", "zone": "4533-4541", "sl": 4565, "tps": [4527, 4522, 4511], "audited": "Win >=TP2", "window": "2026-05-26T09:26Z -> 2026-05-28T11:00Z", "coverage": "FULL (ticks)"},
+      {"id": "M3", "dt": "2026-05-27 14:14", "dir": "SHORT", "zone": "4452-4460", "sl": 4500, "tps": [4440, 4425, 4390], "audited": "Win TP1", "window": "2026-05-27T13:14Z -> 2026-05-29T15:00Z", "coverage": "FULL (ticks)"},
+      {"id": "M4", "dt": "2026-05-28 16:19", "dir": "SHORT", "zone": "4494-4510", "sl": 4535, "tps": [4483, 4455, 4390], "audited": "Managed profit", "window": "2026-05-28T15:19Z -> 2026-05-30T17:00Z", "coverage": "FULL (ticks)"},
+      {"id": "M5", "dt": "2026-05-29 11:30", "dir": "LONG", "zone": "4520-4527", "sl": 4495, "tps": [4540, 4570, 4580], "audited": "Managed win 90p -> BE", "window": "2026-05-29T10:30Z -> 2026-06-02 (48 trading hours)", "coverage": "FULL (ticks + June 1m CSVs)"},
+      {"id": "M6", "dt": "2026-05-29 14:25", "dir": "LONG", "zone": "4520-4530", "sl": 4500, "tps": [4550, 4570, 4580], "audited": "Win TP3 (2.2R)", "window": "2026-05-29T13:25Z -> 2026-06-02", "coverage": "FULL (ticks + June 1m CSVs)"}
+    ],
+    "why_not_run_now": "tick->1m aggregation step does not exist yet; outcome_matcher_v0_1 consumes caller-provided OHLC rows, so the end-to-end path is not 'already supported'; recommended as a separate approved offline step",
+    "min_timeframe": "1m (tick-derived bars exceed this)"
+  },
+  "feb_mar_recap_trades": {
+    "source": "FP-RECAP-001 via fable5_training_batch_003.json samples (19 usable + 1 excluded error row)",
+    "match_ready_now": 0,
+    "note": "recap rows carry DATES ONLY (no intraday times) -> full-day + 48h windows required; tick coverage on recap dates absent or a few hours",
+    "rows": [
+      {"date": "18-02", "dir": "LONG", "zone": "4890-4885", "sl": 4868, "claim": "REMOVED", "coverage": "none", "export": "A"},
+      {"date": "19-02", "dir": "LONG", "zone": "4980", "sl": 4967, "claim": "MISSED", "coverage": "ticks 09-10h only - INSUFFICIENT", "export": "A"},
+      {"date": "20-02", "dir": "LONG", "zone": "5006-5000", "sl": 4983, "claim": "WIN +150p", "coverage": "none", "export": "A"},
+      {"date": "20-02b", "dir": "LONG", "zone": "4997-4990", "sl": 4975, "claim": "REMOVED", "coverage": "none", "export": "A"},
+      {"date": "20-02c", "dir": "LONG", "zone": "5025-5020", "sl": 5000, "claim": "MISSED", "coverage": "none", "export": "A"},
+      {"date": "24-02", "dir": "LONG", "zone": "5044-5038", "sl": 5020, "claim": "WIN +100p", "coverage": "none", "export": "A+B"},
+      {"date": "26-02", "dir": "LONG", "zone": "5142-5130", "sl": 5120, "claim": "WIN +300p held 10%", "coverage": "none", "export": "B"},
+      {"date": "27-02", "dir": "LONG", "zone": "5115-5107", "sl": 5088, "claim": "REMOVED", "coverage": "none", "export": "B"},
+      {"date": "02-03", "dir": "LONG", "zone": "5351-5340", "sl": 5330, "claim": "LOSS", "coverage": "none", "export": "B"},
+      {"date": "12-03", "dir": "LONG", "zone": "5050-5035", "sl": 5010, "claim": "MISSED", "coverage": "ticks 08-14h - INSUFFICIENT", "export": "C"},
+      {"date": "17-03", "dir": "LONG", "zone": "4992-4980", "sl": 4966, "claim": "WIN +300p all TPs", "coverage": "none", "export": "C"},
+      {"date": "18-03", "dir": "SHORT", "zone": "4870", "sl": 4925, "claim": "WIN +500p", "coverage": "ticks 06-07h - INSUFFICIENT", "export": "C"},
+      {"date": "19-03", "dir": "LONG", "zone": "4775", "sl": 4767, "claim": "LOSS; 'SL hit at 4762' gap note", "coverage": "none", "export": "C+D", "priority_note": "the documented posted-vs-actual SL-gap row - highest single-row value"},
+      {"date": "19-03b", "dir": "SHORT", "zone": "4619", "sl": 4708, "claim": "WIN +400p low lot(claim-context)", "coverage": "none", "export": "C+D"},
+      {"date": "19-03c", "dir": "SHORT", "zone": "4624", "sl": 4708, "claim": "WIN +350p", "coverage": "none", "export": "C+D"},
+      {"date": "20-03", "dir": "LONG", "zone": "4619-4610", "sl": 4585, "claim": "WIN +90p SL-to-entry at TP1", "coverage": "none", "export": "D"},
+      {"date": "20-03b", "dir": "LONG", "zone": "4583", "sl": 4560, "claim": "LOSS", "coverage": "none", "export": "D"},
+      {"date": "25-03", "dir": "LONG", "zone": "4554-4548", "sl": 4530, "claim": "WIN TP1", "coverage": "ticks Mar-25 16-23h + Mar-26 00-04h - INSUFFICIENT", "export": "D"},
+      {"date": "27-03", "dir": "SHORT", "zone": "4433", "sl": 4472, "claim": "WIN +170p", "coverage": "none", "export": "D"},
+      {"date": "27-03-err", "status": "EXCLUDED (SL 5075 impossible vs ~4433 market - data error; never match)"}
+    ]
+  },
+  "missing_exports": [
+    {"id": "C", "instrument": "XAUUSD (Pepperstone)", "timeframe": "1m", "start_utc": "2026-03-11T00:00Z", "end_utc": "2026-03-20T00:00Z", "filename": "XAUUSD_1M_2026-03-11_to_2026-03-20.csv", "priority": 1, "value": "SL-gap row 19-03 + 18-03 +500p + 12-03/17-03 + 19-03b/c"},
+    {"id": "D", "instrument": "XAUUSD (Pepperstone)", "timeframe": "1m", "start_utc": "2026-03-20T00:00Z", "end_utc": "2026-03-29T00:00Z", "filename": "XAUUSD_1M_2026-03-20_to_2026-03-29.csv", "priority": 2, "value": "two losses + 25-03/27-03 + 19-03 48h tails"},
+    {"id": "A", "instrument": "XAUUSD (Pepperstone)", "timeframe": "1m", "start_utc": "2026-02-17T00:00Z", "end_utc": "2026-02-25T00:00Z", "filename": "XAUUSD_1M_2026-02-17_to_2026-02-25.csv", "priority": 3, "value": "Feb cluster (5 rows + 24-02 start)"},
+    {"id": "B", "instrument": "XAUUSD (Pepperstone)", "timeframe": "1m", "start_utc": "2026-02-25T00:00Z", "end_utc": "2026-03-05T00:00Z", "filename": "XAUUSD_1M_2026-02-25_to_2026-03-05.csv", "priority": 4, "value": "26-02 +300p, 02-03 LOSS, 24-02 tail"},
+    {"id": "E", "instrument": "XAUUSD (Pepperstone)", "timeframe": "1m", "start_utc": "2026-05-25T00:00Z", "end_utc": "2026-06-01T00:00Z", "filename": "XAUUSD_1M_2026-05-25_to_2026-06-01.csv", "priority": "optional", "value": "cross-check of tick-derived May bars"}
+  ],
+  "value_ranking": ["Feb-Mar recap claim validation (tests the 85% claim deterministically) - needs A-D", "May six-trade validation - needs NO export (local ticks; E optional cross-check)", "stop-width/invalidation calibration - upgraded by both (19 recap + 6 May samples become outcome-verified)", "Lane-6 level validation - forward test, needs none of these"],
+  "recommendation_not_executed": "separate approved offline step: write deterministic tick->1m aggregator (~50 lines) feeding outcome_matcher_v0_1, run the six May trades, reconcile vs FP-AUDIT-001 R values",
+  "safety": {"execution_built": false, "permits_leases_orders": "none", "gates": "PAPER/PREVIEW/False/False", "v03_labels": "unchanged", "v04_live": false, "tradingview_worker_r2": "untouched", "not_integration_ready": "unchanged", "sizing_fields": "not extracted from xlsx"},
+  "next": "Cycle 006 / XAU-F001 stays priority at ~22:00Z reopen; offline: export C then D (then A, B); separate approved session runs the May six-trade match from local ticks; Feb-Mar match once exports land"
+}

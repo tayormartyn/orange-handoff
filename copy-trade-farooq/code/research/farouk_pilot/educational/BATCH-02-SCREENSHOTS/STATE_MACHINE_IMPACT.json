@@ -1,0 +1,25 @@
+{
+  "ref": "FAROUK_STATE_MACHINE_SPEC_v0.1 (NOT modified)",
+  "impacts": [
+    {
+      "target": "displacement definition",
+      "status": "NARROWED (dedicated post)",
+      "reason": "035 gives a dedicated definition (strong directional move -> structure shift + imbalance); still no numeric size."
+    },
+    {
+      "target": "open-interest input",
+      "status": "NEW (out-of-scope input)",
+      "reason": "034 adds a futures-OI directional read — a new data class, not in the SMC state machine."
+    },
+    {
+      "target": "session models (031/032/033)",
+      "status": "PROVENANCE-CONFIRMED",
+      "reason": "NY Reversal/Continuation now Discord-dated -> candidate SESSION_LIQUIDITY_MODELS family strengthened."
+    },
+    {
+      "target": "F_CONFLUENCE_UNKNOWN / thresholds",
+      "status": "UNCHANGED",
+      "reason": "no counts or numeric thresholds added."
+    }
+  ]
+}

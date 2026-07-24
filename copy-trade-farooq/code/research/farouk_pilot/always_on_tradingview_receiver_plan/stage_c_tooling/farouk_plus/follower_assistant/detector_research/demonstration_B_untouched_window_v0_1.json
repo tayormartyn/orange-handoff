@@ -1,0 +1,30 @@
+{
+ "demonstration": "B_PRE_REGISTERED_UNTOUCHED_WINDOW",
+ "registration": {
+  "source_file": "XAUUSD_1M_PEPPERSTONE_2026-07-08_to_2026-07-15_CANONICAL.csv",
+  "instrument": "XAUUSD",
+  "timezone": "UTC",
+  "timestamp_semantics": "bar OPEN epoch seconds (close=open+60)",
+  "window_utc_day": "2026-07-08",
+  "window_bar_count": 492,
+  "selection_method": "earliest full UTC day in canonical file that is NOT 2026-07-14 (F001/F002 excluded)",
+  "selection_timestamp_utc": "2026-07-15T12:26:19+00:00",
+  "window_source_sha256": "7922b387edcfd454504cc3545bb63a0e15a25d0124aeebb2838ec2c83b92d119",
+  "warmup_note": "detectors self-warm from the window's own Asia session; no external context injected",
+  "authorised_families": [
+   "FVG_CONTINUATION_5M",
+   "ASIA_SESSION_FAKEOUT"
+  ]
+ },
+ "result": "VALID_AUTHORISED_SETUP_DETECTED",
+ "fvg_continuation_matches": 8,
+ "asia_fakeout_matches": 0,
+ "asia_fakeout_confirmed": 0,
+ "window_substituted": false,
+ "f001_f002_used": false,
+ "volume_profile": "DATA_UNAVAILABLE (not fabricated)",
+ "eligible_for_training": false,
+ "eligible_for_prospective_evidence": false,
+ "review_only": true,
+ "observation_only": true
+}

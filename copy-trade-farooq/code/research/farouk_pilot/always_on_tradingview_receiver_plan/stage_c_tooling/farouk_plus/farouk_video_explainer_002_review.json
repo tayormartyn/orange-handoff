@@ -1,0 +1,55 @@
+{
+  "review": {
+    "pack_id": "FP-LIVE-VIDEO-EXPLAINER-002",
+    "extracted_instrument": "XAUUSD",
+    "direction": "SHORT",
+    "entry_zone": "posted 4072-4083 (S3); his drawn sell box tops ~4087-4088 on his own chart",
+    "sl": "S3 posted 4125; S2 stop discussion: followers at 4180/4186",
+    "tp_levels": [
+      "4020 stated exit: 'if we come to 4,020 I will exit the trade'"
+    ],
+    "result_claim": "'I took two TPs, letting a small part run for lower levels' (S3, at recording time 14:19Z Jul-8)",
+    "evidence_used": [
+      45560
+    ],
+    "confidence": 0.85,
+    "contradictions": [],
+    "missing_evidence": [
+      "his own S2/S3 fill prices not shown in this video (chart-only, no position widgets)"
+    ],
+    "ohlc_required": false,
+    "verdict": "EXTRACTED",
+    "evidence_id": "FP-LIVE-VIDEO-EXPLAINER-002",
+    "source_filename": "Schermopname 2026-07-08 om 16.19.48.mov",
+    "source_path": "C:/Users/Marty/Downloads/",
+    "modified_time_local": "2026-07-11 16:33:36",
+    "bytes": 200778955,
+    "sha256": "f061b23cc55c04071cccba7ea674eb1187f42d2293213029ba460bccf93d4cf4",
+    "duration_min": 5.5,
+    "rights_status": "RIGHTS_PENDING_PRIVATE_REVIEW (his own breakdown video, distributed by him to members via msg 45560 CDN link; private research use only; no redistribution; no long quotes)",
+    "apparent_trade_dates": "explains S2 (Jul-7 LOSS) retrospect + S3 (Jul-8 SELL) live-running + forward levels",
+    "linked_setups": [
+      "XAU-S2-20260707",
+      "XAU-S3-20260708"
+    ],
+    "explanation_timing": "S2 = post-hoc; S3 = mid-trade (recorded ~14:19Z, before the 15:32Z full-tp); forward levels = pre-planned",
+    "key_points": [
+      "S2 stop-out confirmed in his own words: 'just stopped out and then dropped'; followers had stops 4180/4186 — matches deterministic 4180.52 graze",
+      "STOP-WIDTH LESSON (explicit): 'Next time I'm gonna put my stop loss a little bit higher... or look for a nice entry' — stop placement is adaptive/discretionary, learned from near-misses",
+      "S3 construction: OB + broken Asia low with big candle close + retest + M5 CHoCH; 'I was hoping it would go a bit higher to grab more of my sells' (layered sell intent)",
+      "His chart's drawn sell box tops ~4087-4088 vs posted 4072-4083 — the private zone is wider/higher than the posted one (fill-divergence mechanism visible)",
+      "Indicator panel publishes machine-readable levels live: CHoCH 4065.38, Asia break LOW, OB retest 4065.94, Current/Fresh OB 4045.18 — Lane-6 pre-marking = his own indicator output",
+      "Pre-announced forward levels: 4150 sell zone, 4120 good, CHoCH 4099, sell possible 4165, buy zone monthly-low ~4000-4020 (1h OB + BPR)",
+      "EXPLICIT HTF VETO in his own words: 'I'm not actually wanting to look for buys today at all... the market is bearish on the four hour' (R5 evidence)",
+      "FOMC discipline: 'today's FOMC, I recommend you guys not to take a lot of trades' (news feature evidence)",
+      "Claim culture: 'win rates always between the 90 and 80 percent'; 'end of month we always end clean'",
+      "Management at recording time: 'stop loss to entry and let the trade run' — yet deterministic data shows 9 returns to 4083 by 13:05Z; his position survived to full-tp 15:32 -> his BE reference was his own (lower/better) fill, not the posted zone edge"
+    ],
+    "widget_or_sensitive_fields": "none visible in this video (charts only); indicator names visible and recorded as evidence",
+    "review_only": true,
+    "executable": false,
+    "trade_ready": false,
+    "observation_only": true
+  },
+  "validator_negative_check": "PASS — forbidden execution-surface field in reviewer output: 'broker_route'"
+}

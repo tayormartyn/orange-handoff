@@ -1,0 +1,462 @@
+{
+  "matcher": "day4 deterministic v1 (pip=$0.10, achievable-fill, LONG+SHORT)",
+  "source_csv": "XAUUSD_1M_PEPPERSTONE_2026-06-21_to_2026-07-10_FULL_EXPORT.csv",
+  "coverage_utc": "2026-06-21 22:01 .. 2026-07-10 20:54",
+  "results": [
+    {
+      "setup_id": "XAU-J24-20260623",
+      "direction": "SHORT",
+      "signal_utc": "2026-06-23 10:20",
+      "bars_in_window": 331,
+      "claimed": "WIN_CLAIM (entry msg missing; sellzone ~4140 per 45014)",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "entry message not captured \u2014 no numeric zone/SL to test (OHLC present)",
+      "claim_verdict": "UNCLEAR",
+      "adjudication_note": "Entry message never captured \u2014 no numeric zone/SL to test although OHLC covers the day. The 70/100/170-pip claims reference a ~4140 sellzone; price fell 4140->~4123 area that morning, directionally consistent but unverifiable without the entry post."
+    },
+    {
+      "setup_id": "XAU-J25-20260623",
+      "direction": "SHORT",
+      "signal_utc": "2026-06-23 13:55",
+      "bars_in_window": 301,
+      "claimed": "WIN_CLAIM",
+      "entry_zone": "4138.0-4155.0",
+      "sl": 4180.0,
+      "entry_zone_touched_utc": "2026-06-23 13:59",
+      "sl_touched_utc": null,
+      "favourable_extreme": 4122.97,
+      "adverse_extreme": 4144.79,
+      "mfe_usd_from_best_zone_fill": 32.03,
+      "mae_usd_from_best_zone_fill": -10.21,
+      "mfe_pips01": 320,
+      "tp_touches": [
+        {
+          "level": 4130.0,
+          "touched_utc": "2026-06-23 14:27"
+        }
+      ],
+      "claim_snapshots": [
+        {
+          "claim": "50 pips",
+          "at_utc": "2026-06-23T13:57:28",
+          "note": "before entry touch"
+        },
+        {
+          "claim": "100 pips",
+          "at_utc": "2026-06-23T14:27:27",
+          "max_achievable_pips01": 152,
+          "claimed_pips": 100,
+          "supported": true
+        },
+        {
+          "claim": "130 pips",
+          "at_utc": "2026-06-23T14:28:51",
+          "max_achievable_pips01": 160,
+          "claimed_pips": 130,
+          "supported": true
+        },
+        {
+          "claim": "tp3 170 pips",
+          "at_utc": "2026-06-23T14:34:48",
+          "max_achievable_pips01": 201,
+          "claimed_pips": 170,
+          "supported": true
+        }
+      ],
+      "status": "VERIFIED_WIN",
+      "claim_verdict": "SUPPORTED",
+      "adjudication_note": "SL 4180 never touched; TP 4130 hit 14:27Z; MFE 320p; all post-entry pip claims supported. '50 pips' at 13:57 predates zone touch (13:59) but matches a market fill at post time (price 4131-4137)."
+    },
+    {
+      "setup_id": "XAU-J26-20260624",
+      "direction": "SHORT",
+      "signal_utc": "2026-06-24 14:32",
+      "bars_in_window": 361,
+      "claimed": "WIN_CLAIM",
+      "entry_zone": "4030.0-4045.0",
+      "sl": 4130.0,
+      "entry_zone_touched_utc": "2026-06-24 14:33",
+      "sl_touched_utc": null,
+      "favourable_extreme": 3959.14,
+      "adverse_extreme": 4034.65,
+      "mfe_usd_from_best_zone_fill": 85.86,
+      "mae_usd_from_best_zone_fill": -10.35,
+      "mfe_pips01": 859,
+      "tp_touches": [],
+      "claim_snapshots": [
+        {
+          "claim": "100 pips tp1",
+          "at_utc": "2026-06-24T14:39:53",
+          "max_achievable_pips01": 163,
+          "claimed_pips": 100,
+          "supported": true
+        },
+        {
+          "claim": "120 pips",
+          "at_utc": "2026-06-24T14:42:10",
+          "max_achievable_pips01": 196,
+          "claimed_pips": 120,
+          "supported": true
+        },
+        {
+          "claim": "200 pips tp4",
+          "at_utc": "2026-06-24T14:47:14",
+          "max_achievable_pips01": 247,
+          "claimed_pips": 200,
+          "supported": true
+        },
+        {
+          "claim": "300 pips",
+          "at_utc": "2026-06-24T15:13:09",
+          "max_achievable_pips01": 375,
+          "claimed_pips": 300,
+          "supported": true
+        },
+        {
+          "claim": "650 pips 90% off",
+          "at_utc": "2026-06-24T18:04:15",
+          "max_achievable_pips01": 755,
+          "claimed_pips": 650,
+          "supported": true
+        }
+      ],
+      "status": "VERIFIED_WIN",
+      "claim_verdict": "SUPPORTED",
+      "adjudication_note": "SL 4130 never touched; MAE none beyond zone; MFE 859p; every claim incl. '650 pips' supported (755p achievable at that moment)."
+    },
+    {
+      "setup_id": "XAU-J27-20260625",
+      "direction": "LONG",
+      "signal_utc": "2026-06-25 14:42",
+      "bars_in_window": 261,
+      "claimed": "WIN_CLAIM",
+      "entry_zone": "4006.0-4016.0",
+      "sl": 3970.0,
+      "entry_zone_touched_utc": "2026-06-25 14:46",
+      "sl_touched_utc": null,
+      "favourable_extreme": 4044.08,
+      "adverse_extreme": 4005.09,
+      "mfe_usd_from_best_zone_fill": 38.08,
+      "mae_usd_from_best_zone_fill": 0.91,
+      "mfe_pips01": 381,
+      "tp_touches": [
+        {
+          "level": 4022.0,
+          "touched_utc": "2026-06-25 15:21"
+        },
+        {
+          "level": 4027.0,
+          "touched_utc": "2026-06-25 15:22"
+        },
+        {
+          "level": 4040.0,
+          "touched_utc": "2026-06-25 15:22"
+        },
+        {
+          "level": 4065.0,
+          "touched_utc": null
+        }
+      ],
+      "claim_snapshots": [
+        {
+          "claim": "300 pips",
+          "at_utc": "2026-06-25T15:24:17",
+          "max_achievable_pips01": 345,
+          "claimed_pips": 300,
+          "supported": true
+        }
+      ],
+      "status": "VERIFIED_WIN",
+      "claim_verdict": "SUPPORTED",
+      "adjudication_note": "SL 3970 never touched (MAE $0.91); TP1/2/3 hit; '300 pips' supported (345p achievable)."
+    },
+    {
+      "setup_id": "XAU-J28-20260626",
+      "direction": "SHORT",
+      "signal_utc": "2026-06-26 13:58",
+      "bars_in_window": 181,
+      "claimed": "WIN_CLAIM_SCRATCH (then 'SL got hit again' = BE stops)",
+      "entry_zone": "4078.0-4092.0",
+      "sl": 4120.0,
+      "entry_zone_touched_utc": "2026-06-26 14:04",
+      "sl_touched_utc": null,
+      "favourable_extreme": 4071.42,
+      "adverse_extreme": 4096.04,
+      "mfe_usd_from_best_zone_fill": 20.58,
+      "mae_usd_from_best_zone_fill": 4.04,
+      "mfe_pips01": 206,
+      "tp_touches": [],
+      "claim_snapshots": [
+        {
+          "claim": "100 pips sl-to-entry",
+          "at_utc": "2026-06-26T14:01:12",
+          "note": "before entry touch"
+        }
+      ],
+      "status": "PARTIAL",
+      "claim_verdict": "SUPPORTED_WITHIN_FILL_TOLERANCE",
+      "adjudication_note": "Hard SL never touched; MFE 206p. '100 pips' at 14:01 predates zone touch (14:04) but matches a market fill at the zone's bottom edge (~96p to the 14:01 low). Outcome was his own BE-stop scratch \u2014 consistent with price action, not independently provable."
+    },
+    {
+      "setup_id": "XAU-J29-20260626",
+      "direction": "SHORT",
+      "signal_utc": "2026-06-26 14:12",
+      "bars_in_window": 196,
+      "claimed": "WIN_CLAIM",
+      "entry_zone": "4084.0-4094.0",
+      "sl": 4120.0,
+      "entry_zone_touched_utc": "2026-06-26 14:12",
+      "sl_touched_utc": null,
+      "favourable_extreme": 4075.62,
+      "adverse_extreme": 4096.04,
+      "mfe_usd_from_best_zone_fill": 18.38,
+      "mae_usd_from_best_zone_fill": 2.04,
+      "mfe_pips01": 184,
+      "tp_touches": [],
+      "claim_snapshots": [
+        {
+          "claim": "90 pips",
+          "at_utc": "2026-06-26T14:31:55",
+          "max_achievable_pips01": 139,
+          "claimed_pips": 90,
+          "supported": true
+        },
+        {
+          "claim": "100+ pips",
+          "at_utc": "2026-06-26T14:35:17",
+          "max_achievable_pips01": 139,
+          "claimed_pips": 100,
+          "supported": true
+        },
+        {
+          "claim": "150 pips",
+          "at_utc": "2026-06-26T14:38:44",
+          "max_achievable_pips01": 168,
+          "claimed_pips": 150,
+          "supported": true
+        }
+      ],
+      "status": "VERIFIED_WIN",
+      "claim_verdict": "SUPPORTED",
+      "adjudication_note": "SL never touched; MFE 184p; 90/100/150-pip claims all supported; his in-profit exit before the retrace to entry ('missed by 1 pip') matches the 4096.04 adverse extreme."
+    },
+    {
+      "setup_id": "XAU-J30-20260629",
+      "direction": "LONG",
+      "signal_utc": "2026-06-29 08:59",
+      "bars_in_window": 421,
+      "claimed": "WIN_CLAIM",
+      "entry_zone": "4035.0-4045.0",
+      "sl": 4010.0,
+      "entry_zone_touched_utc": "2026-06-29 09:32",
+      "sl_touched_utc": "2026-06-29 14:13",
+      "favourable_extreme": 4052.53,
+      "adverse_extreme": 4000.66,
+      "mfe_usd_from_best_zone_fill": 17.53,
+      "mae_usd_from_best_zone_fill": 34.34,
+      "mfe_pips01": 175,
+      "tp_touches": [
+        {
+          "level": 4050.0,
+          "touched_utc": "2026-06-29 12:10"
+        },
+        {
+          "level": 4055.0,
+          "touched_utc": null
+        },
+        {
+          "level": 4062.0,
+          "touched_utc": null
+        },
+        {
+          "level": 4080.0,
+          "touched_utc": null
+        },
+        {
+          "level": 4090.0,
+          "touched_utc": null
+        }
+      ],
+      "claim_snapshots": [
+        {
+          "claim": "tp1 hit",
+          "at_utc": "2026-06-29T09:04:34",
+          "note": "before entry touch"
+        },
+        {
+          "claim": "170 pips 50% off",
+          "at_utc": "2026-06-29T12:03:34",
+          "max_achievable_pips01": 128,
+          "claimed_pips": 170,
+          "supported": false
+        },
+        {
+          "claim": "200 pips",
+          "at_utc": "2026-06-29T12:04:28",
+          "max_achievable_pips01": 128,
+          "claimed_pips": 200,
+          "supported": false
+        },
+        {
+          "claim": "240 pips",
+          "at_utc": "2026-06-29T12:12:08",
+          "max_achievable_pips01": 175,
+          "claimed_pips": 240,
+          "supported": false
+        }
+      ],
+      "status": "PARTIAL",
+      "claim_verdict": "CONTRADICTED_MAGNITUDE",
+      "adjudication_note": "Win direction real: 'tp1 hit' 09:04 true for a market fill (high 4050.52); trade never lost from announced fills before profits. BUT 170/200/240-pip claims are contradicted \u2014 max achievable was 128p (12:03, high 4047.83), 128p (12:04), 175p (12:12, high 4052.53): overstated 33-56%. BE stop on runner ~13:59 (price crossed zone bottom); hard SL 4010 touched 14:11-14:15 (low 4000.66) after his exit \u2014 holders of the original SL were stopped."
+    },
+    {
+      "setup_id": "XAU-J01-20260602",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J02-20260602",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J03-20260602",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J04-20260603",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J05-20260603",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J06-20260603",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J07-20260604",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J08-20260604",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J09-20260611",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J10-20260611",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J11-20260611",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J12-20260615",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J13-20260615",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J14-20260615",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J15-20260615",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J16-20260615",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J17-20260615",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J18-20260616",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J19-20260616",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J20-20260617",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J21-20260618",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J22-20260618",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    },
+    {
+      "setup_id": "XAU-J23-20260619",
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no OHLC coverage \u2014 export begins 2026-06-21 22:01Z",
+      "claim_verdict": "UNVERIFIED_NO_OHLC"
+    }
+  ],
+  "adjudication_summary": {
+    "statuses": {
+      "INSUFFICIENT_DATA": 24,
+      "VERIFIED_WIN": 4,
+      "PARTIAL": 2
+    },
+    "covered_window_utc": "2026-06-21 22:01 .. 2026-06-30 (June portion)",
+    "uncovered": "June 1-21 (23 setups) \u2014 TradingView export contains only loaded chart bars (~20k cap)",
+    "cumulative_sprint_sample": "Day2 (4) + Day4 (6) = 10 outcome-matched XAU trades across 9 sessions (Jun 23,24,25,26,29 + Jun 30, Jul 7,8,10) \u2014 >=10 trades / >=5 sessions threshold MET",
+    "cumulative_results": "6 VERIFIED_WIN, 1 VERIFIED_LOSS, 3 PARTIAL, 0 CONTRADICTED (setup-level); 1 magnitude contradiction (J30) + 1 mild overstatement (S1 1000+p vs 922p)"
+  }
+}

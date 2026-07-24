@@ -1,0 +1,57 @@
+{
+  "doc_id": "fable5_training_batch_003_transcription_relaunch_status",
+  "as_of": "2026-07-12T10:10+02:00",
+  "mode": "BATCH_003_DETACHED_TRANSCRIPTION_RELAUNCH_TRANSCRIPTION_ONLY",
+  "status": "ALL_SIX_TRANSCRIPTIONS_COMPLETE",
+  "live_priority_check": {
+    "db": "campaign_extractor/prospective/data/prospective_evidence_v1.db (read-only ?mode=ro)",
+    "max_telegram_message_id": 45647,
+    "messages_after_45646": 1,
+    "msg_45647": {
+      "posted_utc": "2026-07-12T06:08:17+00:00",
+      "evidence_id": "5643049f1e34560e",
+      "media": "MessageMediaPhoto",
+      "classification": "NOT_XAU_GOLD - forwarded navigatorjosh post: market slow/stagnant, Strait-of-Hormuz uncertainty, waiting on entry for HYPE (crypto); keyword hits sl/entry were false positives (slow / HYPE entry)",
+      "action": "left unscored for next forward-scoring cycle; cursor NOT advanced (Cycle-004's job)"
+    },
+    "alert_lane": "market closed until Sun ~22:00Z; cannot fire; not consulted remotely",
+    "cycle_004_triggered": false
+  },
+  "relaunch": {
+    "helper_script": "stage_c_tooling/farouk_plus/tools/batch_003_transcribe.py (reads source media, writes only transcripts/logs/progress/meta; touches nothing else)",
+    "interpreter": "C:/Users/Marty/signal-terminal/.venv-vision/Scripts/python.exe (faster-whisper base.en cpu/int8, VAD, local/offline)",
+    "launch_command": "Start-Process -FilePath <venv python> -ArgumentList '\"<tools>/batch_003_transcribe.py\"' -WorkingDirectory <tools> -WindowStyle Hidden -PassThru",
+    "detached_pid_launcher": 68224,
+    "detached_pid_worker": 66520,
+    "started_local": "2026-07-12 10:05:25",
+    "survives_session_end": true,
+    "output_root": "stage_c_tooling/farouk_plus/derived/transcripts/batch_003/",
+    "batch_logs": ["_master.log", "_master_progress.txt"],
+    "per_item_files": ["<ID>_transcript.txt", "<ID>_transcript.json", "<ID>_source_meta.json (path/bytes/mtime/sha256/evidence-id placeholder)", "_run.log", "_progress.txt"]
+  },
+  "jobs": [
+    {"id": "FP-B003-01", "item": "2025-12-14 video A", "source": "C:/Users/Marty/Downloads/Schermopname_2025-12-14_om_16.45.20.mov", "audio_s": 410, "segments": 58, "elapsed_s": 26, "status": "DONE"},
+    {"id": "FP-B003-02", "item": "2025-12-14 video B", "source": "C:/Users/Marty/Downloads/Schermopname_2025-12-14_om_17.03.11.mov", "audio_s": 344, "segments": 49, "elapsed_s": 19, "status": "DONE"},
+    {"id": "FP-B003-03", "item": "2025-12-14 video C", "source": "C:/Users/Marty/Downloads/Schermopname_2025-12-14_om_17.12.15.mov", "audio_s": 478, "segments": 76, "elapsed_s": 26, "status": "DONE"},
+    {"id": "FP-B003-04", "item": "Jun-29 FP-CAMPAIGN gold breakdown", "source": "C:/Users/Marty/Downloads/Schermopname 2026-06-29 om 16.37.24.mov", "audio_s": 219, "segments": 45, "elapsed_s": 14, "status": "DONE"},
+    {"id": "FP-B003-05", "item": "Jul-1 FP-CAMPAIGN gold breakdown", "source": "C:/Users/Marty/Downloads/Schermopname 2026-07-01 om 20.16.35.mov", "audio_s": 509, "segments": 182, "elapsed_s": 34, "status": "DONE"},
+    {"id": "FP-B003-06", "item": "Jul-2 FP-CAMPAIGN gold breakdown", "source": "C:/Users/Marty/Downloads/Schermopname 2026-07-02 om 19.40.23.mov", "audio_s": 381, "segments": 72, "elapsed_s": 21, "status": "DONE"}
+  ],
+  "job_count": 6,
+  "duplicates_skipped": ["Schermopname_2025-12-14_om_16.45.20 (1)/(2).mov", "Schermopname_2025-12-14_om_17.12.15 (1)/(2).mov"],
+  "result": "FINISHED ok=6/6 failed=none at 2026-07-12T09:07:51Z (~2.5 min total)",
+  "not_done_by_rule": ["WhaleRoom_TradeRecap_1.pdf processing", "extraction", "evidence registration", "batch report", "merge queue", "orange master update", "May OHLC"],
+  "unchanged": {
+    "listener_pid_87988": "running/untouched; transcriber is a separate process tree; no python killed",
+    "gates": "MODE=PAPER / LISTENER_MODE=PREVIEW / EXECUTION_ENABLED=False / CTRADER_EXECUTION_ENABLED=False",
+    "not_integration_ready": "unchanged",
+    "execution_built": false,
+    "permits_leases_orders": "none",
+    "tradingview_worker_broker": "untouched",
+    "detector_v0_3_labels": "unchanged", "v0_4": "backlog only", "lane6": "untouched", "r6": "untouched"
+  },
+  "next_steps": [
+    "Batch 003 extraction from the six transcripts + WhaleRoom_TradeRecap_1.pdf -> FABLE5_TRAINING_BATCH_003_REPORT.md + fable5_training_batch_003.json + merge queue + Orange master update",
+    "priority override: new XAU/Gold post after Sun ~22:00Z reopen -> Cycle 004 / XAU-F001 first (msg 45647 also pending for that cycle)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+ "demonstration": "A_KNOWN_PATTERN_TECHNICAL_FIXTURE",
+ "label": "TECHNICAL_FIXTURE_NOT_EDGE_EVIDENCE",
+ "eligible_for_training": false,
+ "eligible_for_prospective_evidence": false,
+ "family": "ASIA_SESSION_FAKEOUT",
+ "asia_fakeout_short_detected": true,
+ "asia_fakeout_short_confirmed": true,
+ "match_sample": {
+  "direction": "SHORT",
+  "asia_high": "2010",
+  "asia_low": "1990",
+  "confirmed": true,
+  "first_lower_low_at": 1772432100
+ },
+ "causal_note": "detector uses completed candles only (resample drops open bar; failed_close on completed bars)",
+ "profitability": "NOT ESTABLISHED (fixture only)",
+ "review_only": true,
+ "observation_only": true
+}

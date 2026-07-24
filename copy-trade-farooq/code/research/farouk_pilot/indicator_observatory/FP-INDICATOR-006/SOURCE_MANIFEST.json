@@ -1,0 +1,11 @@
+{
+  "source_id": "FP-INDICATOR-006",
+  "asset_id": "sa-4328a875cb55d147",
+  "sha256": "4328a875cb55d147a524a1b817209159ccdc734f972521b35718a8f4439e12d8",
+  "bytes": 614053015,
+  "staged_folder": "raw/live_with_farouk_2026-07-05",
+  "working_analysis": "_analysis/ (transcript + frames)",
+  "originals_unmodified": true,
+  "downloads_copy_preserved": true,
+  "note": "filesystem mtime (2026-07-05 20:23 download) is NOT the publication time."
+}

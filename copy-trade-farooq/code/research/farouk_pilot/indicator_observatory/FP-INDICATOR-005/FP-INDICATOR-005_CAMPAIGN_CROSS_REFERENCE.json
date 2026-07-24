@@ -1,0 +1,24 @@
+{
+  "note": "This indicator likely produced the CHoCH/Asia-break/OB-retest/Current-OB/Fresh-OB panel in the campaigns. Frozen dossiers NOT modified.",
+  "links": [
+    {
+      "campaign": "FP-CAMPAIGN-004",
+      "detail": "3m panel (TF3/CHoCH X/Asia break LOW/OB retest 4036.56/Current OB 4036.56/Fresh OB X) — same panel schema as this indicator -> the C004 panel values are attributable to 'Farouk's Playbook — Smart Money Suite' (strongly supported)."
+    },
+    {
+      "campaign": "FP-CAMPAIGN-001/002/003 + FP-INDICATOR-001",
+      "detail": "same panel + Asia High/Low + OB + FVG objects -> same indicator family; previously logged as 'UNKNOWN kyle-family panel', now attributable to this indicator."
+    },
+    {
+      "campaign": "all",
+      "detail": "London/US high-low liquidity (NEW here) matches the session-liquidity framing used in campaign breakdowns."
+    }
+  ],
+  "caution": "Attribution is STRONGLY SUPPORTED (same panel schema, same chart context) but not proven per-campaign (the campaign videos did not show this indicator's dialog title).",
+  "campaigns_referenced": [
+    "FP-CAMPAIGN-001",
+    "FP-CAMPAIGN-002",
+    "FP-CAMPAIGN-003",
+    "FP-CAMPAIGN-004"
+  ]
+}

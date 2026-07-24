@@ -1,0 +1,36 @@
+{
+  "contract_id": "champion_challenger_contracts_v0_1",
+  "status": "BUILT_NOT_FIT / RESEARCH_ONLY / NON_AUTHORITATIVE",
+  "model_adapter_contract": {
+    "adapters": ["DOCUMENTARY_FIXED_PRIORITY_BASELINE", "NO_TRADE_BASELINE",
+                 "LOGISTIC_REGRESSION_CHALLENGER", "REGULARISED_LINEAR_CHALLENGER",
+                 "SHALLOW_TREE_OR_GBM_CHALLENGER"],
+    "note": "interfaces + deterministic test stubs ONLY; challengers are UNFITTED stubs in v0.1",
+    "fit_rule": "fit() raises FittingNotAuthorised unless an explicit future authorization token is supplied (never supplied this stage)",
+    "predict_rule": "deterministic stub predictions for plumbing/tests; no learned parameters exist"
+  },
+  "split_contract": {
+    "group_key": "campaign_id (no campaign row may appear in more than one split)",
+    "ordering": "chronological by decision_ts",
+    "scheme": "walk-forward expanding train window; evaluate on the next fold",
+    "eligibility_enforced": "only rows with eligible_for_training=true enter train; eligible_for_validation for eval",
+    "feature_allowlist": "DECISION_TIME_FEATURE + IDENTITY/PROVENANCE only; POST_DECISION_LABEL fields HARD-REJECTED as features",
+    "seed": "fixed where relevant"
+  },
+  "metric_contract": {
+    "metrics": ["candidate_recall", "false_positive_rate", "precision", "calibration", "brier_score",
+                "log_loss", "no_trade_accuracy", "mfe_summary", "mae_summary", "stop_first_rate",
+                "target_first_rate", "expectancy_research_price", "lane_comparison"],
+    "every_metric_exposes": ["denominator", "eligibility_filter"],
+    "small_sample": "returns INSUFFICIENT_SAMPLE rather than misleading statistics",
+    "expectancy_note": "explicitly RESEARCH-PRICE assumptions; TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN"
+  },
+  "promotion_contract": {
+    "state": "SHADOW_ONLY / DISABLED",
+    "automatic_promotion": false, "live_model_mutation": false,
+    "rollback_metadata": "champion + challenger versions + dataset hash recorded; no promotion executed",
+    "authorization_required": "explicit future review + learning-activation gate ratification"
+  },
+  "model_fitting_this_stage": "NOT_PERFORMED",
+  "review_only": true, "executable": false, "observation_only": true
+}

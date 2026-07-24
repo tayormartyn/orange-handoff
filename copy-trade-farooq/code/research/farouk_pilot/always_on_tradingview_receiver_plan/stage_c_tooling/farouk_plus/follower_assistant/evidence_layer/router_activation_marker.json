@@ -1,0 +1,9 @@
+{
+ "activation_ts_utc": 1784892081,
+ "pid": 18728,
+ "module_content_sha256": "30707e05b4196aa0b4bd4e9a2fd0cd682ca5c3c4e8a9c675959ec107af389987",
+ "module_path": "C:\\Users\\Marty\\signal-terminal\\research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\strategy_router.py",
+ "activation_ts_source": "watcher_startup_wallclock_utc",
+ "timestamp_precision_seconds": 1,
+ "router_version": "strategy_router_v0_1"
+}

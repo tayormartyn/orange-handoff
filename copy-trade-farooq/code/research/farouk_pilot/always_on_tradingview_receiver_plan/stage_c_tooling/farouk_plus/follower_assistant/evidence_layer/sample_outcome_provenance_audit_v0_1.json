@@ -1,0 +1,26 @@
+{
+ "audit_id": "sample_outcome_provenance_audit_v0_1",
+ "finding": "2 SCHEMA_BACKFILL_NOT_PROSPECTIVE COMPLETE records were mis-routed into the GENUINE outcome ledger; all eligibility flags already False so no contamination was possible, but relocated for a physically-clean genuine ledger.",
+ "genuine_ledger_original_sha256": "97f11d3a055a1a7d609037b830c0c0b35ba61c39615057d6f703a1285a4ad022",
+ "records_relocated": [
+  {
+   "campaign_id": "XAU-F001-20260714",
+   "record_class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+   "idempotency_key": "3c8597dcca3c5088636cf459955d3539fe85f323c82e263966a9031171c2b151",
+   "freeze_hash": "7f9fb6c2cb019f4ac71573d370c3f12c6a08495fee9ccd6734748046dccd46c9"
+  },
+  {
+   "campaign_id": "XAU-F002-20260714",
+   "record_class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+   "idempotency_key": "25dde51b584ee4c467333c0dec3c0e26e790b0bb3a02e2188541b22563665b35",
+   "freeze_hash": "d27d3658500857d1268c6e694abee34f71c3aeb20d83e5c60a9e012e67fb732a"
+  }
+ ],
+ "preserved_in": "router_outcomes_backfill_v0_1.jsonl",
+ "records_moved": 2,
+ "genuine_ledger_now": "EMPTY (AWAITING_AUTHENTIC_CAMPAIGN)",
+ "routing_fix": "outcome_pipeline.ledger_for_class routes backfill->backfill ledger, synthetic->integration ledger, genuine->genuine ledger going forward",
+ "append_only_note": "no evidence deleted; records preserved in backfill ledger before genuine ledger was reset",
+ "review_only": true,
+ "observation_only": true
+}

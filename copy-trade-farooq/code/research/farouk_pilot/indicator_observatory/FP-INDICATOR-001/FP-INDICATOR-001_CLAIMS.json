@@ -1,0 +1,194 @@
+{
+  "record_id": "FP-INDICATOR-001",
+  "claim_count": 20,
+  "categories": [
+    "EXPLICIT_SPOKEN_CLAIM",
+    "DIRECTLY_VISIBLE_FACT",
+    "STRONG_INFERENCE",
+    "WEAK_INFERENCE",
+    "UNRESOLVED"
+  ],
+  "note": "Spoken claims are SourceClaims; NOT promoted to rules. Transcript is base.en (SMC terms phonetic; '[kyle] v1'->'Calphi one'/'calls'; 'FVG'->'FEG'/'FGG'; preserved uncorrected).",
+  "claims": [
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "00:58:30",
+      "source": "video sa-5635e60e29be4868",
+      "quote_or_paraphrase": "On-chart indicator list: POC Prototype, POC, Smart Zones Strategy PRO, [kyle] v2, [kyle] v1",
+      "chart_evidence": "scene_00-58-30.png",
+      "confidence": "HIGH",
+      "relation_to_v0_2_1": "new: names the actual indicators behind the methodology"
+    },
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "01:29:10",
+      "source": "video sa-5635e60e29be4868",
+      "quote_or_paraphrase": "[kyle] v1 inputs: Liquidity Sweeps (Bull green/Bear red); MAs EMA20/SMA21/SMA34/EMA50/SMA55; ORB Asia03:00 London09:00 NY15:30 tz GMT+1; multi-period POC incl. T-variants",
+      "chart_evidence": "scene_01-29-10.png",
+      "confidence": "HIGH",
+      "relation_to_v0_2_1": "new: ORB + POC layers not in v0.2.1; MAs relate to FP-EDU-004 'Trend EMA'"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:00:48",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "Indicator named phonetically 'Calphi one' / 'calls indicator' (= [kyle] v1). 'If you have the opening range breakout setting on the [kyle] one indicator ... time zone GMT plus one ... the opening range for London ... first 15 minutes ... London opens nine o'clock until 9.15'",
+      "chart_evidence": "matches [kyle] v1 ORB settings (London 09:00-09:15, GMT+1)",
+      "confidence": "HIGH (visual corroborates; audio phonetic)",
+      "relation_to_v0_2_1": "new: ORB session framework"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:26:27",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'The signal times ... makes no difference. It does nothing ... I'm going to remove it ... the ORB is just the 15 minutes.'",
+      "chart_evidence": "[kyle] v1 has Asia/London/NY 'Signal Times' fields",
+      "confidence": "HIGH",
+      "relation_to_v0_2_1": "new: Farouk deprecates a specific indicator setting"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:02:15",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'this cluster that made that high ... the price is bullish' / [00:07:29] 'the original cluster ... this zone here what started this high'",
+      "chart_evidence": "clusters drawn as origin zones",
+      "confidence": "MEDIUM-HIGH",
+      "relation_to_v0_2_1": "'cluster' ~ Order Block (v0.2.1 sec.3/4) in Farouk's usage - a terminology variant, chat asked 'is clusters and order blocks the same?'"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:11:27",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'this flat candle they took it, they swept it, they went up ... another flat candle sitting here so 4360 is also a level'",
+      "chart_evidence": "flat (no-wick) candles marked as levels",
+      "confidence": "MEDIUM-HIGH",
+      "relation_to_v0_2_1": "new term 'flat candle' = an equal-high/low liquidity level (relates to v0.2.1 sec.2 session liquidity)"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:22:23",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'no candle close above, short ... if they hold support' / [00:04:34] 'a candle close above ... it's bullish'",
+      "chart_evidence": "candle-close confirmation on chart",
+      "confidence": "HIGH",
+      "relation_to_v0_2_1": "MATCHES v0.2.1 sec.6 candle-close confirmation"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:22:30",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'they sweep all the equal lows and take all these flat candles and gaps ... then we're gonna look for longs'",
+      "chart_evidence": "equal-lows sweep then reverse",
+      "confidence": "MEDIUM-HIGH",
+      "relation_to_v0_2_1": "relates to v0.2.1 sec.2 sweep/trap logic"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:06:54",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'we have also F[V]G. They test this mid-level of this FVG. They push up. They mitigate it already'",
+      "chart_evidence": "FVG mid-level test",
+      "confidence": "MEDIUM",
+      "relation_to_v0_2_1": "MATCHES v0.2.1 sec.3/7 FVG + mitigation"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:48:09",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'the golden pocket is home like 4120 ... if they take out the high and come back to the 50%, the structure is still really good'",
+      "chart_evidence": "fib retrace level",
+      "confidence": "MEDIUM",
+      "relation_to_v0_2_1": "new: 'golden pocket' (fib 0.618/50%) not in v0.2.1"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:26:48",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'The SFP is really nice. Here, gives you a buy that's good. But sometimes it gives you a buy on the top and it's not good.'",
+      "chart_evidence": "SFP labels on chart",
+      "confidence": "MEDIUM",
+      "relation_to_v0_2_1": "new: SFP (Swing Failure Pattern) marker; Farouk notes false positives at tops"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:51:22",
+      "source": "audio sa-c5508175ec0d635b",
+      "quote_or_paraphrase": "'I close many positions at break even because I've seen it making the staircase up'",
+      "chart_evidence": "-",
+      "confidence": "MEDIUM",
+      "relation_to_v0_2_1": "MATCHES v0.2.1 sec.10 breakeven management"
+    },
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "01:31:00",
+      "source": "video sa-5635e60e29be4868",
+      "quote_or_paraphrase": "Volume-profile / POC histogram view (horizontal pink profile) used to derive POC levels",
+      "chart_evidence": "ref_01-32-00 / ref_01-34-00 / contact_sheet",
+      "confidence": "MEDIUM-HIGH",
+      "relation_to_v0_2_1": "new: POC/volume-profile basis for levels"
+    },
+    {
+      "category": "STRONG_INFERENCE",
+      "timestamp": "whole",
+      "source": "video+audio",
+      "quote_or_paraphrase": "The session's primary tools are POC (volume-profile levels) + ORB (session opening-range breakout) + clusters/flat-candles/SFP; CHoCH/BPR/displacement are largely ABSENT from the spoken content of THIS session",
+      "chart_evidence": "term scan: 0 'CHoCH', 0 'BPR', 0 'displacement'; heavy POC/ORB/flat-candle/cluster",
+      "confidence": "MEDIUM-HIGH",
+      "relation_to_v0_2_1": "divergence: v0.2.1 emphasises CHoCH/OB/FVG/BPR; this session emphasises POC/ORB/clusters - possibly a different teaching module"
+    },
+    {
+      "category": "STRONG_INFERENCE",
+      "timestamp": "01:10-01:16",
+      "source": "chat sa-249ac9a39b2bb93c",
+      "quote_or_paraphrase": "The [kyle] indicator plots multi-period POC with a 'T' variant (1DT/1WT/1MT/3DT/2DT); a 'bonus' ORB indicator shows session ranges (Tokyo appears as 'Sydney'); acquired via Whop membership",
+      "chart_evidence": "audience questions in chat log",
+      "confidence": "MEDIUM (audience-sourced)",
+      "relation_to_v0_2_1": "new: indicator distribution + POC-variant structure"
+    },
+    {
+      "category": "WEAK_INFERENCE",
+      "timestamp": "00:58:30",
+      "source": "video sa-5635e60e29be4868",
+      "quote_or_paraphrase": "Small circle markers on candles may be [kyle] entry/signal markers",
+      "chart_evidence": "blue circles near swings",
+      "confidence": "LOW",
+      "relation_to_v0_2_1": "unconfirmed - marker source not opened"
+    },
+    {
+      "category": "WEAK_INFERENCE",
+      "timestamp": "whole",
+      "source": "video sa-5635e60e29be4868",
+      "quote_or_paraphrase": "The pink/blue supply-demand zones across the session are likely from 'Smart Zones Strategy PRO'",
+      "chart_evidence": "zones persist across frames",
+      "confidence": "LOW",
+      "relation_to_v0_2_1": "Smart Zones settings never opened - attribution unconfirmed"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "01:10:54",
+      "source": "chat sa-249ac9a39b2bb93c",
+      "quote_or_paraphrase": "Meaning of the POC 'T' suffix (1DT vs 1D, 1MT vs 1M) - asked by audience, unanswered",
+      "chart_evidence": "POC scale labels",
+      "confidence": "-",
+      "relation_to_v0_2_1": "gap - requires a companion video / settings Visibility tab"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "whole",
+      "source": "-",
+      "quote_or_paraphrase": "Whether [kyle] v2 differs from v1, and what Smart Zones Strategy PRO / POC Prototype compute - settings never opened",
+      "chart_evidence": "-",
+      "confidence": "-",
+      "relation_to_v0_2_1": "gap for companion videos"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "whole",
+      "source": "-",
+      "quote_or_paraphrase": "Repaint / intrabar / closed-bar-only / predictive behaviour of any indicator - NOT demonstrated or stated",
+      "chart_evidence": "-",
+      "confidence": "-",
+      "relation_to_v0_2_1": "cannot be established from a historical recording; see prospective plan"
+    }
+  ]
+}

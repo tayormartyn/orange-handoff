@@ -1,0 +1,178 @@
+{
+  "telegram:baseline:327": {
+    "candidates": [
+      {
+        "event_type": "ENTRY",
+        "proposed_fields": {
+          "asset": "XAUUSD",
+          "direction": "SELL",
+          "entry_low": "4030",
+          "entry_high": "4045",
+          "stop": "4130",
+          "size": null
+        },
+        "evidence_quote": "XAUUSD SELL 4030-4045  SL 4130  HIGH RISK  LOW LOT",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:328": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_TP",
+        "proposed_fields": {},
+        "evidence_quote": "tp 1",
+        "leg_ref": null,
+        "parent_ref": null
+      },
+      {
+        "event_type": "MOVE_STOP",
+        "proposed_fields": {},
+        "evidence_quote": "move sl to entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:329": {
+    "candidates": []
+  },
+  "telegram:baseline:330": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "fist entry is my own I forget to press enter second is Whaleroom",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:331": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "120 pisp",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:332": {
+    "candidates": []
+  },
+  "telegram:baseline:333": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "Reasons for the sell:",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:334": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_TP",
+        "proposed_fields": {},
+        "evidence_quote": "take tp 4",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:335": {
+    "candidates": [
+      {
+        "event_type": "CONDITIONAL",
+        "proposed_fields": {},
+        "evidence_quote": "Re-entry plan:",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:336": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_CLOSE",
+        "proposed_fields": {},
+        "evidence_quote": "im taking 50% off now",
+        "leg_ref": null,
+        "parent_ref": null
+      },
+      {
+        "event_type": "MOVE_STOP",
+        "proposed_fields": {},
+        "evidence_quote": "sl to entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:337": {
+    "candidates": []
+  },
+  "telegram:baseline:338": {
+    "candidates": []
+  },
+  "telegram:baseline:339": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_CLOSE",
+        "proposed_fields": {},
+        "evidence_quote": "take another 25% off",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:340": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "LETS GO!!!",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:341": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "Waiting for a retest before entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:342": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_CLOSE",
+        "proposed_fields": {},
+        "evidence_quote": "take more off!!!",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:343": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_CLOSE",
+        "proposed_fields": {},
+        "evidence_quote": "taking 90% off",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  }
+}

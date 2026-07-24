@@ -1,0 +1,28 @@
+{
+  "indicator": "[kyle] v1",
+  "evidence": "indicator selected (ref_00-40) + FP-INDICATOR-001 v1 ORB dialog; settings dialog open in several frames",
+  "ORB": {
+    "sessions": [
+      "Asia",
+      "London",
+      "New York"
+    ],
+    "opening_range": "first 15 minutes",
+    "timezone": "GMT+1 (config)",
+    "objects": {
+      "top_line": "green",
+      "midline": "blue ('hidden liquidity')",
+      "bottom_line": "downside"
+    },
+    "session_times_per_FP001": {
+      "Asia": "03:00-03:15",
+      "London": "09:00-09:15",
+      "NY": "15:30-15:45"
+    }
+  },
+  "Signal_Times": {
+    "per_session": true,
+    "farouk_verdict": "'does nothing / makes no difference' (FP-INDICATOR-001); little/no value"
+  },
+  "source_asset_id": "sa-7004096984f87411"
+}

@@ -1,0 +1,110 @@
+{
+  "new_sources": [
+    {
+      "source_id": "FP-EDU-028",
+      "title": "Optimal Trade Entry (OTE)",
+      "author": "Farouk/Whale Room (inferred; compiled PDF)",
+      "discord_timestamp": "NOT_IN_PDF",
+      "source_type": "COMPILED_DERIVATIVE_EVIDENCE",
+      "pdf_page": 3,
+      "provenance_confidence": "MEDIUM (no Discord header)",
+      "completeness": "full text",
+      "methodology_family": "ENTRY_CONFIRMATION; LOCATION_OR_VALUE_TOOL (Fib)",
+      "state_machine_relevance": "stop placement + R:R + Fib zone",
+      "measurable_rules": [
+        "OTE zone = Fib 61.8% or 78.6% retracement",
+        "wait for confirmation (candlestick or BOS) before entry",
+        "stop loss just outside the OTE zone",
+        "aim for >=2R / next liquidity"
+      ]
+    },
+    {
+      "source_id": "FP-EDU-029",
+      "title": "Power of 3 (Po3) / AMD — Accumulation, Manipulation, Distribution",
+      "author": "Farouk/Whale Room (inferred)",
+      "discord_timestamp": "NOT_IN_PDF",
+      "source_type": "COMPILED_DERIVATIVE_EVIDENCE",
+      "pdf_page": 6,
+      "provenance_confidence": "MEDIUM",
+      "completeness": "full text",
+      "methodology_family": "SETUP_FAMILY (candidate: PO3_AMD) / STRUCTURAL_CONTEXT",
+      "state_machine_relevance": "3-phase model (accumulation->manipulation/sweep->distribution)",
+      "measurable_rules": [
+        "Accumulation = tight range/low volatility near HTF liquidity",
+        "Manipulation = fake breakout sweeps liquidity then returns inside",
+        "Distribution = the real move"
+      ]
+    },
+    {
+      "source_id": "FP-EDU-030",
+      "title": "Liquidity",
+      "author": "Farouk/Whale Room (inferred)",
+      "discord_timestamp": "NOT_IN_PDF",
+      "source_type": "COMPILED_DERIVATIVE_EVIDENCE",
+      "pdf_page": 7,
+      "provenance_confidence": "MEDIUM",
+      "completeness": "full text",
+      "methodology_family": "CORE_SMC; LOCATION_OR_VALUE_TOOL; EXPLANATORY_MARKET_NARRATIVE",
+      "state_machine_relevance": "liquidity pools (stops above/below obvious points)",
+      "measurable_rules": [
+        "retail stops above/below obvious points = liquidity",
+        "institutions trigger stops to fill orders (NARRATIVE)"
+      ]
+    },
+    {
+      "source_id": "FP-EDU-031",
+      "title": "NY Reversal — How to Trade It",
+      "author": "Farouk/Whale Room (inferred)",
+      "discord_timestamp": "NOT_IN_PDF",
+      "source_type": "COMPILED_DERIVATIVE_EVIDENCE",
+      "pdf_page": 9,
+      "provenance_confidence": "MEDIUM",
+      "completeness": "full text",
+      "methodology_family": "SETUP_FAMILY (session); STRUCTURAL_CONTEXT",
+      "state_machine_relevance": "session-time gated reversal",
+      "measurable_rules": [
+        "London move flips after NY open 13:30 UTC",
+        "NY window 13:30-15:00 UTC",
+        "require confirmation (break structure / reclaim key level)",
+        "target clean levels/imbalances/liquidity"
+      ]
+    },
+    {
+      "source_id": "FP-EDU-032",
+      "title": "NY Continuation",
+      "author": "Farouk/Whale Room (inferred)",
+      "discord_timestamp": "NOT_IN_PDF",
+      "source_type": "COMPILED_DERIVATIVE_EVIDENCE",
+      "pdf_page": 10,
+      "provenance_confidence": "MEDIUM",
+      "completeness": "full text",
+      "methodology_family": "SETUP_FAMILY (session)",
+      "state_machine_relevance": "session continuation",
+      "measurable_rules": [
+        "continue London direction",
+        "wait for a retest before entry",
+        "NY open strong move = continuation confirmation",
+        "TP at previous highs/lows / liquidity"
+      ]
+    },
+    {
+      "source_id": "FP-EDU-033",
+      "title": "Search & Destroy — Asia/London/NY session model",
+      "author": "Farouk/Whale Room (inferred)",
+      "discord_timestamp": "NOT_IN_PDF",
+      "source_type": "COMPILED_DERIVATIVE_EVIDENCE",
+      "pdf_page": 11,
+      "provenance_confidence": "MEDIUM",
+      "completeness": "full text",
+      "methodology_family": "SETUP_FAMILY (session) / STRUCTURAL_CONTEXT",
+      "state_machine_relevance": "session-liquidity sweep sequencing",
+      "measurable_rules": [
+        "Asia = ranging, builds liquidity (scalp only)",
+        "London = first volatility, sweeps the Asian range",
+        "NY = (real move / continuation of the sweep)"
+      ]
+    }
+  ],
+  "id_range": "FP-EDU-028..FP-EDU-033",
+  "provenance_caveat": "All from the COMPILED PDF with NO Discord author/timestamp -> MEDIUM provenance; upgrade to CONFIRMED only if original Discord screenshots surface."
+}

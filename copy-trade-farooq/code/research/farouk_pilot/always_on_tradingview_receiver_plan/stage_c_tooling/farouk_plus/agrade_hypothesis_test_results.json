@@ -1,0 +1,709 @@
+{
+ "meta": {
+  "generated": "2026-07-13T03:55Z",
+  "design": "frozen pre-computation (see script docstring)",
+  "source": "TradingView_Alerts_Log_2026-07-06.csv (server-side log, 05:24Z-21:00Z)",
+  "review_only": true,
+  "executable": false
+ },
+ "summary": {
+  "n_events_alert_log": 111,
+  "graded_events": {
+   "APLUS_setups": 4,
+   "A_dir_events": 21
+  },
+  "aplus_with_pattern_and_bpr": 2,
+  "aplus_with_pattern_only": 2,
+  "aplus_with_bpr_only": 4,
+  "aplus_with_sweep": 3,
+  "A_with_pattern_same_bar": 12,
+  "A_total": 21,
+  "engulfing_plus_bpr_bars_without_APLUS": 3,
+  "engulfing_plus_bpr_bars_total": 5
+ },
+ "events": [
+  {
+   "bar_close_utc": "2026-07-06T05:33:00+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T05:57:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T06:45:00+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T07:24:00+00:00",
+   "grade_label": "APLUS",
+   "direction": null,
+   "raw_msgs": [
+    "A+ or better setup",
+    "Farouks Playbook: A+ SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": true,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern_and_bpr": false,
+   "hypA_pattern_only": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T07:27:00+00:00",
+   "grade_label": "APLUS",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A+ SHORT on XAUUSD 3",
+    "A+ or better setup"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": true,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern_and_bpr": true,
+   "hypA_pattern_only": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T09:30:00+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T09:39:01+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T10:39:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T11:03:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T11:24:01+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T11:45:01+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T11:54:00+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T13:42:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T13:45:00+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T15:36:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": true,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T15:51:01+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": true,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T16:30:00+00:00",
+   "grade_label": "APLUS",
+   "direction": null,
+   "raw_msgs": [
+    "A+ or better setup",
+    "Farouks Playbook: A+ LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": true,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern_and_bpr": false,
+   "hypA_pattern_only": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T16:45:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T16:57:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T17:21:01+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T17:24:00+00:00",
+   "grade_label": "A",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A LONG on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T17:27:01+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": false,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": false,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T18:33:01+00:00",
+   "grade_label": "APLUS",
+   "direction": "LONG",
+   "raw_msgs": [
+    "Farouks Playbook: A+ LONG on XAUUSD 3",
+    "A+ or better setup"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": true,
+    "sweep_5bars": true,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern_and_bpr": true,
+   "hypA_pattern_only": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T19:03:00+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": false,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  },
+  {
+   "bar_close_utc": "2026-07-06T19:57:01+00:00",
+   "grade_label": "A",
+   "direction": "SHORT",
+   "raw_msgs": [
+    "Farouks Playbook: A SHORT on XAUUSD 3"
+   ],
+   "components_observable": {
+    "pattern_same_bar": true,
+    "bpr_5bars": true,
+    "sweep_5bars": false,
+    "choch_5bars": false,
+    "asia_trap_5bars": false
+   },
+   "unobservable": [
+    "FVG",
+    "OB",
+    "trend/EMA",
+    "freshness",
+    "session-position"
+   ],
+   "timeframe": "3m",
+   "instrument": "XAUUSD (Pepperstone)",
+   "repaint_status": "UNKNOWN (alert-fire time only; bar-close alignment assumed from :00/:01 stamps)",
+   "hypA_necessary_pattern": true,
+   "hypB": "INSUFFICIENT_EVIDENCE (only 3 of 6-8 boxes observable by construction)"
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+  "video": "FP-EDU-001 Live with Farouk 3 Jul 2026",
+  "source_asset_id": "sa-944789f92a8092cc",
+  "total_duration": "01:50:15",
+  "note": "chapter boundaries approximate, derived from transcript topic shifts + sampled frames (not a full segment-by-segment classification). Feed and timeframe switch within the video.",
+  "chapters": [
+    {
+      "start": "00:00:00",
+      "end": "00:04:00",
+      "instrument": "XAUUSD",
+      "chart_provider": "n/a (intro/black)",
+      "timeframe": "n/a",
+      "topic": "Intro / waiting screen",
+      "live_or_retrospective": "n/a",
+      "visible_levels": [],
+      "contains_methodology_claim": false
+    },
+    {
+      "start": "00:04:00",
+      "end": "00:20:00",
+      "instrument": "XAUUSD (Gold Spot/USD)",
+      "chart_provider": "FXCM",
+      "timeframe": "5m/15m/1h/4H",
+      "topic": "Break-of-structure -> retest -> OB entry concept; multi-timeframe order blocks; 'higher timeframe is stronger'",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (TradingView Bar-Replay over historical price)",
+      "visible_levels": [
+        "OB (5m/15m/1h/4H)",
+        "break of structure"
+      ],
+      "contains_methodology_claim": true
+    },
+    {
+      "start": "00:20:00",
+      "end": "00:25:00",
+      "instrument": "XAUUSD",
+      "chart_provider": "FXCM",
+      "timeframe": "5m/15m + weekly",
+      "topic": "Asia High/Low range; A+ setup = break Asia High + retest (~78%); Asia-High veto",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (replay)",
+      "visible_levels": [
+        "Asia High",
+        "Asia Low",
+        "weekly range"
+      ],
+      "contains_methodology_claim": true
+    },
+    {
+      "start": "00:25:00",
+      "end": "00:45:00",
+      "instrument": "XAUUSD",
+      "chart_provider": "FXCM / Pepperstone",
+      "timeframe": "5m/15m/1h/4H",
+      "topic": "Live analysis: confirmation, stop placement, 'recovery trade' after stop-out; Q&A",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (replay)",
+      "visible_levels": [
+        "OB",
+        "CHoCH",
+        "Asia High/Low"
+      ],
+      "contains_methodology_claim": true
+    },
+    {
+      "start": "00:45:00",
+      "end": "01:00:00",
+      "instrument": "XAUUSD",
+      "chart_provider": "Pepperstone",
+      "timeframe": "15m/1h/4H/weekly",
+      "topic": "CHoCH / FVG / BPR; higher-timeframe context; indicator behaviour Q&A",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (replay)",
+      "visible_levels": [
+        "CHoCH",
+        "FVG",
+        "BPR",
+        "OB"
+      ],
+      "contains_methodology_claim": true
+    },
+    {
+      "start": "01:00:00",
+      "end": "01:20:00",
+      "instrument": "XAUUSD",
+      "chart_provider": "Pepperstone",
+      "timeframe": "15m/1h",
+      "topic": "'Trap' concept (liquidity grab before a big move); re-entry after mistakes; more analysis + Q&A",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (replay)",
+      "visible_levels": [
+        "trap/liquidity",
+        "OB",
+        "CHoCH"
+      ],
+      "contains_methodology_claim": true
+    },
+    {
+      "start": "01:20:00",
+      "end": "01:40:00",
+      "instrument": "XAUUSD",
+      "chart_provider": "Pepperstone",
+      "timeframe": "15m",
+      "topic": "Continued analysis + trading-psychology Q&A ('biggest thing that changed your trading'); live hand-drawn annotations",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (replay)",
+      "visible_levels": [
+        "Asia High",
+        "Asia Low",
+        "supply zones"
+      ],
+      "contains_methodology_claim": true
+    },
+    {
+      "start": "01:40:00",
+      "end": "01:50:15",
+      "instrument": "XAUUSD (BTCUSDT.P / HYPEUSDT.P open in tabs; brief crypto references)",
+      "chart_provider": "Pepperstone",
+      "timeframe": "15m",
+      "topic": "Recap ('big FVG / BPR -> look for a long') + final Q&A",
+      "live_or_retrospective": "LIVE_EDUCATIONAL (replay)",
+      "visible_levels": [
+        "FVG",
+        "BPR"
+      ],
+      "contains_methodology_claim": true
+    }
+  ]
+}

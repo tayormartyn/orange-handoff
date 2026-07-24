@@ -1,0 +1,50 @@
+{
+ "manifest_schema_version": "orange_candidate_dataset_v0_1",
+ "generator_version": "dataset_generator_v0_1",
+ "generation_timestamp_utc": 1784119801,
+ "generation_timestamp_note": "VOLATILE \u2014 excluded from canonical_dataset_hash",
+ "source_freeze_ledger_hashes": {
+  "router_freeze_backfill_v0_1.jsonl": "a0c0c7567f2e20a56bd74104e68c2ef501acc485faae85a435149b0badd0ee55",
+  "router_freeze_v0_1.jsonl": "ABSENT"
+ },
+ "source_outcome_ledger_hash": "ABSENT",
+ "included_campaign_ids": [
+  "XAU-F001-20260714",
+  "XAU-F002-20260714"
+ ],
+ "excluded_campaign_ids": [],
+ "exclusion_reasons": {},
+ "record_class_counts": {
+  "SCHEMA_BACKFILL_NOT_PROSPECTIVE": 2
+ },
+ "lane_counts": {
+  "A_FOLLOWER": 2
+ },
+ "source_tier_counts": {
+  "TIER_2_ADVANCED_EDUCATION_METHOD": 2
+ },
+ "outcome_status_counts": {
+  "PENDING": 2
+ },
+ "eligible_row_count": 0,
+ "ineligible_row_count": 2,
+ "row_count": 2,
+ "canonical_dataset_hash": "acb57a85204198dbf3e8d4bc7e822cf5405da931154ebae33d6ed25c35d62c76",
+ "feature_export_excludes": [
+  "activation_result",
+  "activation_time",
+  "stop_target_ordering",
+  "mfe_pips",
+  "mae_pips",
+  "mfe_price",
+  "mae_price",
+  "stop_first",
+  "target_first",
+  "invalidation_ts",
+  "no_trade_result",
+  "lane_comparison",
+  "outcome_status"
+ ],
+ "review_only": true,
+ "observation_only": true
+}

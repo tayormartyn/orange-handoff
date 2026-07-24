@@ -1,0 +1,22 @@
+{
+ "corpus_message_count": 393,
+ "class_counts": {
+  "PARSED_COMMENTARY": 39,
+  "IRRELEVANT": 287,
+  "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE": 41,
+  "ORPHAN_MANAGEMENT_MESSAGE": 14,
+  "PARSED_NEW_CAMPAIGN": 2,
+  "PARSED_MANAGEMENT_INSTRUCTION": 10
+ },
+ "silent_relevant_drop_count": 0,
+ "generated_valid_variants": 60,
+ "valid_parse_rate": 1.0,
+ "generated_invalid_variants": 4,
+ "false_positive_campaign_rate": 0.0,
+ "quarantine_count": 41,
+ "orphan_count": 14,
+ "new_campaigns": 2,
+ "guarantee": "EVERY_RELEVANT_HISTORICAL_MESSAGE = PARSED_CORRECTLY OR QUARANTINED",
+ "review_only": true,
+ "observation_only": true
+}

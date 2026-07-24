@@ -1,0 +1,34 @@
+{
+  "register_id": "mode_evidence_register_v0_1",
+  "status": "RESEARCH_ONLY / OFFLINE / NOT_AUTHORITATIVE",
+  "purpose": "Per-campaign classification of PUBLISHED_FOLLOWER_MODE vs REACTIVE_PLAYBOOK_MODE evidence (DECISION 4). Does NOT assert Farouk never uses limits or deliberately traps followers.",
+  "mode_definitions": {
+    "PUBLISHED_FOLLOWER_MODE": "posts a pre-planned zone + legs + stop that a follower can mirror as resting limits",
+    "REACTIVE_PLAYBOOK_MODE": "reacts to live structure; posted levels are commentary, actual entries private/discretionary"
+  },
+  "classes": ["FOLLOWER_MODE_SUPPORTED", "REACTIVE_MODE_SUPPORTED", "HYBRID_MODE_SUPPORTED",
+              "PRIVATE_EXECUTION_UNKNOWN", "INSUFFICIENT_EVIDENCE"],
+  "campaigns": [
+    {"campaign_id": "XAU-F001-20260714", "direction": "LONG", "zone": "4007-4019",
+     "posted_structure": "3-point zone + posted follower stop 3985",
+     "evidence_for_follower_mode": ["explicit zone + 3 entry points + posted stop",
+                                    "explicit management posts (SL_TO_ENTRY, TAKE_PCT_OFF, FINAL_CLOSE)",
+                                    "'if your SL entry got hit, I'll send another trade' = follower-directed"],
+     "evidence_for_reactive_mode": ["only near leg filled; mid/far never reached -> his own entry may differ",
+                                    "posted pip milestones (90/130 pips) framed as running commentary",
+                                    "personal stop UNKNOWN; structural invalidation NOT stated"],
+     "classification": "HYBRID_MODE_SUPPORTED",
+     "private_execution": "PRIVATE_EXECUTION_UNKNOWN (his actual fills/size not observable)",
+     "caveat": "does NOT assert limits-only or trap; both readings fit"},
+    {"campaign_id": "XAU-F002-20260714", "direction": "SHORT", "zone": "4084-4094",
+     "posted_structure": "3-point zone + posted follower stop 4144; near leg = MARKET_AT_SIGNAL_CLOSE",
+     "evidence_for_follower_mode": ["explicit zone + stop", "explicit TP1_TAKE, SL_TO_ENTRY, 'take 50% off' (allowlisted 0.50)"],
+     "evidence_for_reactive_mode": ["near leg modelled as market-at-signal-close, not a resting limit -> reactive entry",
+                                    "mid/far limits never touched", "retrospective .mov breakdown posted after = teaching, not signal"],
+     "classification": "HYBRID_MODE_SUPPORTED",
+     "private_execution": "PRIVATE_EXECUTION_UNKNOWN",
+     "caveat": "market-at-signal near leg leans reactive; posted zone leans follower; HYBRID"}
+  ],
+  "aggregate_note": "2/2 campaigns HYBRID_MODE_SUPPORTED with PRIVATE_EXECUTION_UNKNOWN. Sample far too small for any general claim about his mode. Do NOT generalise.",
+  "review_only": true, "executable": false, "observation_only": true
+}

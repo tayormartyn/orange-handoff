@@ -1,0 +1,98 @@
+{
+ "observer_version": "intake_observer_v0_1",
+ "generated_at_utc": "2026-07-24T11:43:20+00:00",
+ "messages_seen": 646,
+ "class_counts": {
+  "PARSED_COMMENTARY": 61,
+  "IRRELEVANT": 453,
+  "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE": 81,
+  "ORPHAN_MANAGEMENT_MESSAGE": 20,
+  "PARSED_NEW_CAMPAIGN": 7,
+  "PARSED_MANAGEMENT_INSTRUCTION": 24
+ },
+ "silent_relevant_drop_count": 0,
+ "last_new_campaign": "XAU-F007-20260721",
+ "last_freeze_present": "XAU-F008-20260724",
+ "open_quarantine": 83,
+ "total_alerts": 110,
+ "recent_route": [
+  {
+   "id": 46016,
+   "class": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46017,
+   "class": "PARSED_COMMENTARY",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46018,
+   "class": "PARSED_COMMENTARY",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46019,
+   "class": "PARSED_COMMENTARY",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46020,
+   "class": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46021,
+   "class": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46022,
+   "class": "PARSED_COMMENTARY",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46023,
+   "class": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46024,
+   "class": "IRRELEVANT",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46025,
+   "class": "IRRELEVANT",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46026,
+   "class": "PARSED_COMMENTARY",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46096,
+   "class": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46097,
+   "class": "ORPHAN_MANAGEMENT_MESSAGE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46098,
+   "class": "ORPHAN_MANAGEMENT_MESSAGE",
+   "note": "DUPLICATE_SUPPRESSED"
+  },
+  {
+   "id": 46099,
+   "class": "PARSED_COMMENTARY",
+   "note": "DUPLICATE_SUPPRESSED"
+  }
+ ],
+ "note": "READ-ONLY observability; no write controls; every relevant message is PARSED or QUARANTINED",
+ "review_only": true,
+ "observation_only": true
+}

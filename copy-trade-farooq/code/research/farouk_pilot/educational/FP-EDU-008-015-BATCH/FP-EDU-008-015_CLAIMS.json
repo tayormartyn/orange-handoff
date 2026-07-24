@@ -1,0 +1,107 @@
+{
+  "batch": "FP-EDU-008-015",
+  "claim_count": 10,
+  "note": "Written SourceClaims transcribed verbatim from screenshots (see TRANSCRIPTIONS.md). NOT promoted to rules. No author/timestamp visible on any image. No wording invented.",
+  "claims": [
+    {
+      "source_id": "FP-EDU-008",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Price is fractal (small waves within larger waves); BFI constantly balance/rebalance positions -> price returns to inefficiencies/imbalances/order blocks/supply-demand zones (mitigation).",
+      "mapping_confidence": "STRONGLY_SUPPORTED / PARTIAL_FRAGMENT",
+      "provenance_note": "title/author/timestamp ABSENT; beginning missing; content usable at reduced confidence"
+    },
+    {
+      "source_id": "FP-EDU-009",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Strong High = manipulated up + broke structure DOWN (BOS) + returns to it (RTO zone) = great short. Strong Low = manipulated down + broke structure UP (BOS) + returns = great long. Weak High = from a strong low, broke nothing = liquidity target. Weak Low = from a strong high, failed to break = will be broken later.",
+      "mapping_confidence": "STRONGLY_SUPPORTED",
+      "provenance_note": "full 4 definitions visible; no author/timestamp"
+    },
+    {
+      "source_id": "FP-EDU-010",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Major structure (swing LH/LL) vs Internal structure (fractal sub-waves within it); if major structure is bearish, short when price moves higher; understanding both improves timing.",
+      "mapping_confidence": "CONFIRMED",
+      "provenance_note": "explicit 'Major Structure'/'Internal Structure' labels; END of post (beginning missing)"
+    },
+    {
+      "source_id": "FP-EDU-010-SUPPLEMENTAL-CANDIDATE",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "A structure break (BOS) happens when a key swing point is broken -> shift bearish<->bullish. Displacement = a strong, fast price move that breaks key levels with high momentum (Candle close). Wait for confirmation to avoid fakeouts.",
+      "mapping_confidence": "AMBIGUOUS",
+      "provenance_note": "continuity to 010 UNPROVEN (no overlapping text/shared title); kept as supplemental candidate"
+    },
+    {
+      "source_id": "FP-EDU-011",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "A valid Single Candle Order Block (SCOB): candle close above the inducement zone / candle close below = Point of Interest (POI). Confluences (volume analysis; daily/weekly/monthly session levels) strengthen it; 'the more confluences align, the stronger the trade setup'.",
+      "mapping_confidence": "STRONGLY_SUPPORTED",
+      "provenance_note": "'Single Candle Order Block (valid)' in-diagram; top confluence list may belong to an entry-model post"
+    },
+    {
+      "source_id": "FP-EDU-012",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Three types of price inefficiency: Volume imbalance, Fair value gap, Opening gap. Price tends to return to fill them, providing entry areas; opening-gap reversal back to the gap = a good entry.",
+      "mapping_confidence": "CONFIRMED",
+      "provenance_note": "caption 'Types of price inefficiencies' + 3 named types; END of post"
+    },
+    {
+      "source_id": "FP-EDU-013",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Trend Continuation entry: a Low-Time-Frame Break of Structure (BOS) leaves an FVG; price fills the gap (mitigation) and continues. Be patient (setups take time); manage risk (size to loss, set targets).",
+      "mapping_confidence": "STRONGLY_SUPPORTED",
+      "provenance_note": "numbered steps 4-5 visible; steps 1-3 (beginning) missing"
+    },
+    {
+      "source_id": "FP-EDU-014",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "High-Probability POI entry: strong move breaks a prior pattern -> POI/imbalance origin -> liquidity develops both sides -> gradual return toward origin -> sweep into the POI -> lower-timeframe confirmation -> target opposing liquidity. Checklist: confirmation on a smaller TF; areas with lots of liquidity; patience.",
+      "mapping_confidence": "STRONGLY_SUPPORTED",
+      "provenance_note": "distinctive sweep-into-POI sequence distinguishes it from 013; beginning missing"
+    },
+    {
+      "source_id": "FP-EDU-015",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Inducement happens a lot before major reversals or breakouts; if you see it, be patient and wait [for confirmation]. Diagram shows a 3-Drive into fib levels (0.618-0.79) with 'Enter short' after the inducement.",
+      "mapping_confidence": "STRONGLY_SUPPORTED",
+      "provenance_note": "INTRO ONLY; ending missing; text cropped both sides"
+    },
+    {
+      "source_id": "UNASSIGNED-STANDALONE",
+      "category": "DIRECTLY_VISIBLE_WRITTEN_CLAIM",
+      "claim_text": "Worked example on BTCUSDT SPOT 1h (BITGET): Asia/London sessions, EQH (equal highs), Sweep, Deviation; tip 'Always wait for confirmations. Let the market show its hand before entering.'",
+      "mapping_confidence": "UNASSIGNED",
+      "provenance_note": "live-chart example; no title/text/timestamp continuity to any FP-EDU source; provenance PENDING"
+    }
+  ],
+  "repair_addendum": {
+    "note": "batch_01 provenance repair. These are Farouk-authored WORKED EXAMPLES with resolved author+timestamp, NOT the missing 008-015 titles/beginnings.",
+    "claims": [
+      {
+        "source": "batch_01/122209",
+        "category": "DIRECTLY_VISIBLE_FACT",
+        "author": "SeaScalper-Farouk (WR/Whale Room)",
+        "discord_timestamp": "12/07/2024 07:14",
+        "text": "Worked example: a short scalp on STX; started looking for shorts approaching the quarterly open (SpaceMan BTC indicator); labels Old Cluster / Break Down cluster / Rounded Top / shooting star / stoploss above shooting star.",
+        "resolves": "AUTHOR + TIMESTAMP provenance (Farouk); NEW indicator name: SpaceMan BTC indicator"
+      },
+      {
+        "source": "batch_01/125249",
+        "category": "DIRECTLY_VISIBLE_FACT",
+        "author": "SeaScalper-Farouk (WR)",
+        "discord_timestamp": "21/07/2024 06:20",
+        "text": "Worked example: Chainlink up ~50%, at major resistance = Quarterly Open, grabbed liquidity but failed to break twice -> wait for a trigger to long or short.",
+        "resolves": "author+timestamp; liquidity-grab/wait-for-trigger concept (inducement-adjacent)"
+      },
+      {
+        "source": "batch_01/125715",
+        "category": "DIRECTLY_VISIBLE_FACT",
+        "author": "SeaScalper-Farouk (WR)",
+        "discord_timestamp": "15/07/2024 02:56",
+        "text": "Worked example/question: after stalling with no acceptance above 50% of the cluster -> long or short? Labels: cluster zones, stalling.",
+        "resolves": "author+timestamp; cluster acceptance-above-50% concept"
+      }
+    ],
+    "corpus_author_corroboration": "Farouk posts as SeaScalper-Farouk with a WR (Whale Room) badge and @Whale mentions (matches the sea-scalper-farouk route). This CORROBORATES (moderately) that the 008-015 education posts share the same author, but does NOT show the specific title/author/timestamp of any 008-015 post (different posts)."
+  }
+}

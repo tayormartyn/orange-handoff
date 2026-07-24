@@ -1,0 +1,43 @@
+{
+ "denominator": 3,
+ "included_record_classes": [
+  "SIMULATION_ONLY"
+ ],
+ "excluded_records": "none (all simulation-only; none eligible for performance attribution)",
+ "exclusion_reasons": [
+  "SIMULATION_ONLY: no broker fill; no perf attribution"
+ ],
+ "three_leg_fidelity": {
+  "rate": 1.0,
+  "numerator": 3,
+  "denominator": 3
+ },
+ "reconciliation_rate": {
+  "rate": 0.6666666666666666,
+  "numerator": 2,
+  "denominator": 3
+ },
+ "ambiguous_intrabar_rate": {
+  "rate": 0.3333333333333333,
+  "numerator": 1,
+  "denominator": 3
+ },
+ "zone_touched_before_receipt_rate": {
+  "rate": 0.3333333333333333,
+  "numerator": 1,
+  "denominator": 3
+ },
+ "manual_review_rate": {
+  "rate": 0.0,
+  "numerator": 0,
+  "denominator": 3
+ },
+ "simulation_completion_rate": {
+  "rate": 1.0,
+  "numerator": 3,
+  "denominator": 3
+ },
+ "profitability_claim": "NONE (synthetic/backfill/simulation \u2014 not a broker result)",
+ "price_semantics": "TRADINGVIEW_PRICE_SEMANTICS_UNVERIFIED / BROKER_EXECUTION_EQUIVALENCE_UNPROVEN",
+ "sample_warning": "INSUFFICIENT_SAMPLE (n=3 < 5); rates indicative only"
+}

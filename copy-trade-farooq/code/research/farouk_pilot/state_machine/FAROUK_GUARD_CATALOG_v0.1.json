@@ -1,0 +1,367 @@
+{
+  "rule_version": "v0.1",
+  "guard_count": 45,
+  "note": "Fail-closed: any UNKNOWN input trips G_ANY_UNKNOWN_GUARD and BLOCKS. Boolean/veto/data guards only — NO probability/win-rate scoring.",
+  "guards": [
+    {
+      "guard_id": "G_SESSION_WINDOW_KNOWN",
+      "description": "session open/close window resolved for the active session",
+      "type": "data_availability",
+      "evidence": "FP-004/FP-002/FP-001",
+      "unknown_handling": "BLOCK_TRANSITION (timezone unresolved)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_TZ_UNRESOLVED",
+      "description": "VETO: canonical timezone not selected",
+      "type": "veto/data",
+      "evidence": "comparison TZ conflict",
+      "unknown_handling": "BLOCK_TRANSITION",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_15MIN_ELAPSED",
+      "description": "15-minute opening window has elapsed",
+      "type": "boolean",
+      "evidence": "FP-004 '15 minutes'",
+      "unknown_handling": "DEGRADE_CONFIDENCE if window unconfirmed",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_RANGE_LOCKED",
+      "description": "session/ORB range high/low/mid frozen",
+      "type": "boolean",
+      "evidence": "FP-004",
+      "unknown_handling": "BLOCK if repaint unknown",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_SESSION_END",
+      "description": "active session window ended",
+      "type": "boolean",
+      "evidence": "FP-002 times",
+      "unknown_handling": "BLOCK_TRANSITION (timezone)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_VALUE_AREA_COMPUTED",
+      "description": "POC/VAH/VAL available for the period",
+      "type": "data_availability",
+      "evidence": "FP-003",
+      "unknown_handling": "BLOCK_TRANSITION (calc unknown)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_CLOSE_ABOVE_VAH",
+      "description": "bar closes above VAH",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "BLOCK (VAH calc)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_CLOSE_BELOW_VAL",
+      "description": "bar closes below VAL",
+      "type": "boolean",
+      "evidence": "FP-003 'below VAL bearish'",
+      "unknown_handling": "BLOCK (VAL calc)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_PRICE_AT_POC",
+      "description": "price within tolerance of a POC",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "BLOCK (POC calc + 'T' meaning)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_PRICE_AT_VAH",
+      "description": "price at VAH",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "BLOCK",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_PRICE_AT_VAL",
+      "description": "price at VAL",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "BLOCK",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_PRICE_TRADE_SIDE_OF_VWAP",
+      "description": "price on the trade-direction side of chosen VWAP",
+      "type": "boolean",
+      "evidence": "FP-002 bias",
+      "unknown_handling": "DEGRADE_CONFIDENCE (which VWAP TF?)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_PRICE_OPPOSITE_VWAP",
+      "description": "price crossed to opposite side of VWAP",
+      "type": "boolean",
+      "evidence": "FP-002",
+      "unknown_handling": "DEGRADE_CONFIDENCE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_VWAP_SESSION_RESET_UNKNOWN",
+      "description": "VETO: VWAP session-reset/repaint behaviour unknown",
+      "type": "veto",
+      "evidence": "-",
+      "unknown_handling": "DEGRADE_CONFIDENCE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_LEVEL_MARKED",
+      "description": "a liquidity level exists to approach",
+      "type": "data_availability",
+      "evidence": "FP-003",
+      "unknown_handling": "NOT_APPLICABLE if none",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_WICK_BREACH",
+      "description": "wick pierced the level",
+      "type": "boolean",
+      "evidence": "FP-002/003",
+      "unknown_handling": "DEGRADE_CONFIDENCE (wick-depth unset)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_BODY_CLOSE_BEYOND",
+      "description": "VETO: body already closed beyond (=break, not sweep)",
+      "type": "veto",
+      "evidence": "FP-002",
+      "unknown_handling": "-",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_CLOSE_BACK_INSIDE",
+      "description": "bar closed back inside the level",
+      "type": "boolean",
+      "evidence": "FP-002/003",
+      "unknown_handling": "-",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_CLOSE_BEYOND_LEVEL",
+      "description": "bar closed beyond the level",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "-",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_PRIOR_SWING",
+      "description": "a prior swing high/low exists",
+      "type": "boolean",
+      "evidence": "FP-003 SFP",
+      "unknown_handling": "DEGRADE_CONFIDENCE (swing def)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_NO_CANDLE_CLOSE",
+      "description": "no candle closed beyond the swing",
+      "type": "boolean",
+      "evidence": "FP-003 'no candle close'",
+      "unknown_handling": "BLOCK (intrabar vs close unknown)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_RETEST_HELD",
+      "description": "post-event retest held",
+      "type": "boolean",
+      "evidence": "FP-002/003/004",
+      "unknown_handling": "DEGRADE_CONFIDENCE (tolerance)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_RECLAIM",
+      "description": "VETO: price reclaimed/closed through the level",
+      "type": "veto",
+      "evidence": "FP-003",
+      "unknown_handling": "-",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_PRICE_BEYOND_ORB",
+      "description": "price beyond ORB high/low",
+      "type": "boolean",
+      "evidence": "FP-004",
+      "unknown_handling": "DEGRADE (wick vs body)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_CLOSE_BEYOND_ORB",
+      "description": "bar CLOSED beyond ORB",
+      "type": "boolean",
+      "evidence": "FP-004 'lost the orb'",
+      "unknown_handling": "-",
+      "feasibility": "DETERMINISTIC"
+    },
+    {
+      "guard_id": "G_INTRABAR_ONLY",
+      "description": "VETO: only intrabar breach, no close",
+      "type": "veto",
+      "evidence": "invariant",
+      "unknown_handling": "BLOCK_TRANSITION",
+      "feasibility": "DETERMINISTIC"
+    },
+    {
+      "guard_id": "G_RANGE_STILL_VALID",
+      "description": "ORB range still valid after a failed break",
+      "type": "boolean",
+      "evidence": "FP-004",
+      "unknown_handling": "DEGRADE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_STRUCTURE_PRESENT",
+      "description": "a family-specific structure is present",
+      "type": "boolean",
+      "evidence": "families",
+      "unknown_handling": "NOT_APPLICABLE per family",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_ORIGIN_EVIDENCE_IMMUTABLE",
+      "description": "setup origin evidence captured + immutable",
+      "type": "boolean",
+      "evidence": "invariant",
+      "unknown_handling": "-",
+      "feasibility": "DETERMINISTIC"
+    },
+    {
+      "guard_id": "G_FAMILY_GUARDS_PASS",
+      "description": "the setup family's own guards pass",
+      "type": "composite",
+      "evidence": "families",
+      "unknown_handling": "BLOCK if any UNKNOWN guard",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_ANY_UNKNOWN_GUARD",
+      "description": "VETO: any required input is UNKNOWN",
+      "type": "veto",
+      "evidence": "unknown-policy",
+      "unknown_handling": "BLOCK_TRANSITION",
+      "feasibility": "DETERMINISTIC (fail-closed)"
+    },
+    {
+      "guard_id": "G_PRICE_NEAR_ZONE",
+      "description": "price within approach distance of the zone",
+      "type": "boolean",
+      "evidence": "-",
+      "unknown_handling": "DEGRADE (distance unset)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_RETRACE_INTO_ZONE",
+      "description": "price retraced into the zone",
+      "type": "boolean",
+      "evidence": "FP-002/004 retest",
+      "unknown_handling": "DEGRADE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_ZONE_TESTED",
+      "description": "zone tested/mitigated",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "DEGRADE (mitigation def)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_CLOSE_THROUGH_INVAL",
+      "description": "bar closed through the invalidation level",
+      "type": "boolean",
+      "evidence": "FP-002/003",
+      "unknown_handling": "DEGRADE (stop rule unknown)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_ZONE_MITIGATED",
+      "description": "zone reached mitigation",
+      "type": "boolean",
+      "evidence": "FP-003",
+      "unknown_handling": "DEGRADE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_SETUP_ARMED",
+      "description": "setup is ARMED",
+      "type": "boolean",
+      "evidence": "STRUCTURAL_SETUP",
+      "unknown_handling": "-",
+      "feasibility": "DETERMINISTIC"
+    },
+    {
+      "guard_id": "G_TRIGGER_CLOSED",
+      "description": "trigger candle CLOSED at the zone",
+      "type": "boolean",
+      "evidence": "FP-002/003",
+      "unknown_handling": "BLOCK if intrabar-only",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_CONFLUENCE_MET",
+      "description": "required confluence count met",
+      "type": "composite",
+      "evidence": "FP-004 'combine'",
+      "unknown_handling": "BLOCK (confluence count UNKNOWN)",
+      "feasibility": "BLOCKED"
+    },
+    {
+      "guard_id": "G_BIAS_ALIGNED",
+      "description": "VWAP/value bias aligns with setup direction",
+      "type": "boolean",
+      "evidence": "FP-002",
+      "unknown_handling": "DEGRADE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_VETO_INSIDE_RANGE",
+      "description": "VETO: price inside ORB/range (chop)",
+      "type": "veto",
+      "evidence": "FP-004 'inside orb no trade'",
+      "unknown_handling": "-",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_MAX_AGE",
+      "description": "setup exceeded max age",
+      "type": "boolean",
+      "evidence": "-",
+      "unknown_handling": "DEGRADE (max-age unset)",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_BIAS_FLIP",
+      "description": "bias flipped against the setup",
+      "type": "boolean",
+      "evidence": "FP-002",
+      "unknown_handling": "DEGRADE",
+      "feasibility": "PARTIAL"
+    },
+    {
+      "guard_id": "G_OBSERVATION_EMIT_ONLY",
+      "description": "emit observation ONLY (no order/size/broker)",
+      "type": "invariant",
+      "evidence": "boundary",
+      "unknown_handling": "-",
+      "feasibility": "DETERMINISTIC"
+    },
+    {
+      "guard_id": "G_ANY_EXECUTION",
+      "description": "VETO: any execution/broker/size instruction",
+      "type": "veto",
+      "evidence": "invariant",
+      "unknown_handling": "BLOCK (never allowed in Alpha)",
+      "feasibility": "DETERMINISTIC"
+    }
+  ]
+}

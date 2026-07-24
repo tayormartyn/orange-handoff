@@ -1,0 +1,78 @@
+{
+  "comparison_id": "FP-EDU-001-vs-CAMPAIGNS-001-002-003",
+  "note": "Educational SourceClaims tested against C001/C002/C003. Claims are NOT promoted to rules. The 'missing displacement => trap' hypothesis is NOT promoted (no direct evidence). No final strategy from 3 campaigns + 1 video.",
+  "tests": [
+    {
+      "claim": "OB retest at/near the entry (EDU-C-003)",
+      "c001": "SUPPORTED (OB retest 4123.51 inside entry zone, win)",
+      "c002": "NOT_SUPPORTED (OB retest not at entry, loss)",
+      "c003": "SUPPORTED (OB ~4009 at the deeper 4027.37 layer, win)",
+      "verdict": "SUPPORTED in the two wins, absent in the loss — candidate discriminator (not a rule)"
+    },
+    {
+      "claim": "OB + FVG confluence (EDU-C-006 + teaching)",
+      "c001": "partial (FVG labels present)",
+      "c002": "UNVERIFIED (Gemini: FVG absent)",
+      "c003": "SUPPORTED — explicit OB + Daily FVG setup (and the missed 4000 long named OB+FVG)",
+      "verdict": "SUPPORTED_BY_C003; strongest single instance of OB+FVG confluence"
+    },
+    {
+      "claim": "CHoCH as confirmation (EDU-C-005)",
+      "c001": "panel CHoCH near entry",
+      "c002": "panel CHoCH present",
+      "c003": "panel CHoCH x (none) — win did NOT need it",
+      "verdict": "PARTIAL/INSUFFICIENT — CHoCH is A confirmation, not consistently required across wins"
+    },
+    {
+      "claim": "higher-timeframe location (EDU-C-004)",
+      "c001": "near HTF supply (win)",
+      "c002": "far from HTF zones (loss)",
+      "c003": "OB rebound toward Daily FVG (win)",
+      "verdict": "SUPPORTED directionally across all three"
+    },
+    {
+      "claim": "session-level trap/reversal logic (EDU-C-007/012)",
+      "c001": "sell into swept high (win)",
+      "c002": "UNVERIFIED trap narrative",
+      "c003": "SUPPORTED — Asia-low sweep then reversal up (win); also named the 4070-80 sell zone at swept highs",
+      "verdict": "SUPPORTED_BY_C003 (sweep-then-reverse); C002 side remains unverified"
+    },
+    {
+      "claim": "TP1 then breakeven (EDU-C-008)",
+      "c001": "SUPPORTED",
+      "c002": "SUPPORTED (LEG A)",
+      "c003": "SUPPORTED (move SL to entry)",
+      "verdict": "SUPPORTED_BY_ALL_THREE + teaching"
+    },
+    {
+      "claim": "recovery / add-on management (EDU-C-010)",
+      "c001": "n/a",
+      "c002": "recovery after stop (LEG B)",
+      "c003": "add-on/layering ('close worst, hold best')",
+      "verdict": "SUPPORTED as management; C002=recovery, C003=layering — two distinct sub-protocols"
+    },
+    {
+      "claim": "target selection from opposing structure (EDU-C-011 + teaching)",
+      "c001": "targets below (profit side) at structure",
+      "c002": "TPs 3910-3967 at structure",
+      "c003": "upside targets to Daily FVG; opposing 4070-80 sell zone named at swept highs",
+      "verdict": "SUPPORTED_ACROSS — targets anchored to structural/opposing levels"
+    }
+  ],
+  "displacement_trap_hypothesis": {
+    "status": "NOT_PROMOTED",
+    "reason": "No direct evidence in C003 or the EDU video for 'missing displacement => trap'; the only assertion is C002's UNVERIFIED external review."
+  },
+  "no_final_strategy_declared": true,
+  "source_asset_ids": [
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f",
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a",
+    "sa-de1197b472306864",
+    "sa-19c3595caaa28406",
+    "sa-bc200fb932058fc3",
+    "sa-036eef476c3ce1b2"
+  ]
+}

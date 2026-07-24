@@ -1,0 +1,109 @@
+{
+  "date": "2026-06-17",
+  "candidates_file": "candidates_june17.json",
+  "model": "claude-opus-4-8 (recorded)",
+  "candidates": 12,
+  "verdicts": {
+    "ACCEPTED": 8,
+    "NEEDS_REVIEW": 4
+  },
+  "event_diff": {
+    "matched": 5,
+    "missed_truth_only": 1,
+    "extra_ext_only": 0
+  },
+  "btc_or_other_asset_events_excluded_from_gold": 0,
+  "gold_legs": {
+    "leg-1": {
+      "leg_id": "leg-1",
+      "track": "PROVIDER",
+      "direction": "buy",
+      "entry": "4315",
+      "stop": "4295",
+      "parent_leg_id": null,
+      "status": "STOPPED",
+      "remaining_fraction": 1.0,
+      "partial_tp_count": 1,
+      "flags": [],
+      "opened_seq": 0,
+      "closed_seq": 8,
+      "opened_by_hash": "bc977ef3e524c01ab229eb9001c032ee74bdbea3af37135c538106303a835644",
+      "closed_by_hash": "82130eef5c2b8a18fb14e5cc620b02d295fc49fd98706413f7f93aca3430fcb0",
+      "realized_r": null
+    }
+  },
+  "leg_resolution": {
+    "resolved": [
+      {
+        "msg": "telegram:baseline:259",
+        "event": "MOVE_STOP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:262",
+        "event": "PARTIAL_TP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:266",
+        "event": "STOP_HIT",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      }
+    ],
+    "stayed_needs_review": [
+      {
+        "msg": "telegram:baseline:258",
+        "event": "PARTIAL_TP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "ranking/sub-fill/multi-target language"
+      }
+    ],
+    "association_check": [
+      {
+        "mid": 259,
+        "event": "MOVE_STOP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 262,
+        "event": "PARTIAL_TP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 266,
+        "event": "STOP_HIT",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      }
+    ],
+    "wrong_associations": []
+  },
+  "rejected": [],
+  "divergences": [
+    {
+      "mid": 264,
+      "truth": [
+        "PARTIAL_TP"
+      ],
+      "ext": [],
+      "missed": [
+        "PARTIAL_TP"
+      ],
+      "extra": []
+    }
+  ]
+}

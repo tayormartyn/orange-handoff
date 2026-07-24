@@ -1,0 +1,79 @@
+{
+  "check_id": "s3_hold_best_leg_check_v0_1",
+  "generated_on": "2026-07-11",
+  "setup_id": "XAU-S3-20260708",
+  "direction": "SHORT",
+  "posted_zone": "4072-4083",
+  "hard_sl": 4125.0,
+  "instruction_45553_utc": "2026-07-08T13:01:19Z",
+  "far_edge_leg": {
+    "fill_level": 4083.0,
+    "fill_bar_utc": "12:47",
+    "fill_bar_high": 4083.31,
+    "fill_confirmed": true,
+    "be_returns_after_fill_bar": 9,
+    "first_be_return_pre_instruction": "12:49",
+    "first_be_return_post_instruction": "13:05",
+    "hard_sl_touched": false,
+    "mfe_pips": 613,
+    "mae_pips": 36,
+    "tp1_plus50_reached_utc": "12:56",
+    "tp2_plus100_reached_utc": "12:59",
+    "runner_exit": {
+      "reason": "BE_RETURN",
+      "utc": "13:05",
+      "runner_pips_weighted": 0.0
+    },
+    "leg_supported_pips_literal_playbook": 50.0
+  },
+  "context_prices": {
+    "at_full_tp_msg_15:32": 4023.3,
+    "window_end_close": 4075.06,
+    "window_end_utc": "18:14"
+  },
+  "leg_reconstruction": {
+    "near_edge_leg_model_b_baseline": {
+      "fill": 4072.0,
+      "fill_utc": "12:14",
+      "result_pips": 25.0,
+      "note": "BE-scratched 12:28 after banking TP1 tranche (Model B v0_1b row)"
+    },
+    "far_edge_hold_best_leg": {
+      "fill": 4083.0,
+      "fill_utc": "12:47",
+      "result_pips": 50.0,
+      "note": "banked +50p (TP1 12:56, TP2 12:59) then runner BE-stopped 13:05Z \u2014 4 min after the 13:01:19Z instruction; 9 separate returns to >=4083 after the fill bar"
+    },
+    "s3_leg_resolved_blend_50_50": 37.5,
+    "no_be_counterfactual": "even a runner with NO BE-stop marks only +79p at window end (18:14 close 4075.06) unless it exits near the 15:32 'full tp' moment (4023.3, +597p) \u2014 exit timing, not leg choice, is the value"
+  },
+  "comparison": {
+    "model_A_s3": "large positive (posted-TP/achievable-credited exits; ~+220-500p class per its divergence table)",
+    "model_B_s3": 25.0,
+    "leg_resolved_s3": 37.5,
+    "step_8d_estimate": "+300..+500p on the hold-best leg \u2014 REFUTED by this check (actual +50p): the premise that price did not return to 4083 was wrong (9 BE-returns; first post-instruction at 13:05Z)"
+  },
+  "materiality": {
+    "model_B_raw_total_pips": {
+      "before": 48.0,
+      "after": 60.5,
+      "mean_before": 1.4,
+      "mean_after": 1.8
+    },
+    "model_B_filtered_R2b_R4b": {
+      "before_total": 614.4,
+      "after_total": 626.9,
+      "mean_before": 25.6,
+      "mean_after": 26.1
+    },
+    "verdict": "IMMATERIAL \u2014 the one HIGH-sensitivity leg case resolves to ~+12.5p on the 34-trade total; the Model-A/B band does NOT narrow via leg reconstruction",
+    "strengthened_conclusion": "the literal SL-to-entry instruction destroys follower runners REGARDLESS of leg choice (near or far edge); his private edge is that his own stops provably were not at the literal instructed levels (widget evidence). Instruction timing remains the only band-collapsing data (Step-8C capture)."
+  },
+  "safety": {
+    "listener_pid_87988": "untouched",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "execution_surface": "none",
+    "volumes": "no volume/lot/account/ticket fields recorded"
+  }
+}

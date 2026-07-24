@@ -1,0 +1,110 @@
+{
+  "comparison_id": "FP-COMP-001-002-003-004",
+  "note": "Pre/at-entry evidence only. C002 spoken claims UNVERIFIED; no market data for any campaign. FOUR campaigns -> NO final strategy declared. Frozen files (FP-COMP-001-vs-002, FP-COMP-001-002-003) NOT modified.",
+  "campaigns": {
+    "FP-CAMPAIGN-001": "XAUUSD SELL WIN (02/07)",
+    "FP-CAMPAIGN-002": "XAUUSD SELL net-UNKNOWN/loss (01/07)",
+    "FP-CAMPAIGN-003": "XAUUSD BUY WIN partials (29/06)",
+    "FP-CAMPAIGN-004": "XAUUSD SELL PARTIALLY_OBSERVED (24/06)"
+  },
+  "dimensions": [
+    {
+      "dimension": "session break",
+      "c001": "Asia HIGH context",
+      "c002": "Asia LOW (unverified)",
+      "c003": "Asia break LOW (bought the sweep)",
+      "c004": "Asia break LOW (panel-verified); sold with the bearish structure",
+      "candidate": "C004 sold WITH an Asia-low-break bearish context (vs C003 which BOUGHT the Asia-low sweep) — direction depends on structure, not the break alone"
+    },
+    {
+      "dimension": "CHoCH state",
+      "c001": "panel CHoCH 4114.72",
+      "c002": "panel CHoCH 4037.41",
+      "c003": "panel CHoCH x (win)",
+      "c004": "3m CHoCH=X (valid short); 4H CHoCH=4121.58",
+      "candidate": "CHoCH ABSENT on the entry TF in BOTH winning-direction shorts/buys (C003 buy, C004 short) -> CHoCH is NOT universally required (setup-family dependent)"
+    },
+    {
+      "dimension": "OB retest / confluence",
+      "c001": "OB retest inside entry zone (win)",
+      "c002": "OB retest NOT at entry (loss)",
+      "c003": "OB ~4009 at deeper entry (win)",
+      "c004": "EXPLICIT multi-TF stack: H4 BOS + H1 nBOS + 3m OB + 5m OB (that made the low)",
+      "candidate": "multi-TF OB confluence is the recurring qualifier; C004 states it most explicitly"
+    },
+    {
+      "dimension": "higher-timeframe location / quality",
+      "c001": "near HTF supply (win)",
+      "c002": "far from HTF (loss)",
+      "c003": "OB toward Daily FVG (win)",
+      "c004": "explicit QUALITY HIERARCHY: unmitigated H1 OB (4070-75) that originated the move ranks above the entry zone",
+      "candidate": "entering at / planning around the higher-quality HTF-origin OB recurs in the winners"
+    },
+    {
+      "dimension": "multi-entry / contingency",
+      "c001": "sell1/sell2 cards",
+      "c002": "LEG B re-entry after stop (recovery)",
+      "c003": "layered averaging (close worst/hold best)",
+      "c004": "PRE-PLANNED contingency at a higher-quality H1 OB (ARMED, not activated) + separate Farouk personal entry",
+      "candidate": "C004 = a PRE-DECLARED contingency (distinct from C002's post-stop recovery) -> two different multi-entry protocols"
+    },
+    {
+      "dimension": "TP1 + breakeven",
+      "c001": "TP1 + BE",
+      "c002": "LEG A TP1 + BE",
+      "c003": "TP1 + BE (50-60 pips)",
+      "c004": "TP1 100 pips -> SL to entry (BE)",
+      "candidate": "TP1-then-breakeven CONSISTENT across all four"
+    },
+    {
+      "dimension": "partial scale-out",
+      "c001": "close worst/hold best",
+      "c002": "stopped before partials",
+      "c003": "50% then 75% out + runner",
+      "c004": "50% off (lot 1.0->0.5) + risk-free runner",
+      "candidate": "50%-off + runner recurs (C003, C004)"
+    },
+    {
+      "dimension": "official vs personal",
+      "c001": "-",
+      "c002": "-",
+      "c003": "-",
+      "c004": "Whale Room official 4029.76 vs Farouk personal 4038.19 kept SEPARATE",
+      "candidate": "NEW: explicit official/personal separation — do not conflate personal fills with official performance"
+    },
+    {
+      "dimension": "outcome observability",
+      "c001": "WIN",
+      "c002": "net UNKNOWN",
+      "c003": "WIN (partials+BE runner)",
+      "c004": "PARTIALLY_OBSERVED (runner + target UNKNOWN)",
+      "candidate": "outcome discipline: C004 not claimed a full win"
+    }
+  ],
+  "candidate_winner_patterns_PRELIMINARY": [
+    "Multi-TF OB confluence + entry at/around a higher-quality HTF-origin OB recurs in the favourable campaigns (C001, C003, C004).",
+    "TP1 -> breakeven -> 50% off -> runner is the consistent management shape.",
+    "CHoCH is NOT a universal gate (absent on the entry TF in C003 and C004).",
+    "Two distinct multi-entry protocols: PRE-PLANNED contingency (C004) vs post-stop recovery (C002)."
+  ],
+  "no_final_strategy_declared": true,
+  "remaining_unknowns": [
+    "timezones (all)",
+    "actual fills",
+    "C004 runner + 3930-3900 target",
+    "C002 spoken (unverified)",
+    "no market data"
+  ],
+  "source_asset_ids": [
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f",
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a",
+    "sa-de1197b472306864",
+    "sa-19c3595caaa28406",
+    "sa-bc200fb932058fc3",
+    "sa-036eef476c3ce1b2",
+    "sa-e576af86dfbd4158"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "doc_id": "detector_v0_4_feature_effects",
+  "as_of": "2026-07-12T12:05Z",
+  "mode": "OFFLINE / IN-SAMPLE ONLY / REVIEW_ONLY / NO LIVE PROMOTION",
+  "sample": "34 matched historical XAU setups (in-sample; 21W/3L/10P at campaign level, 6 loss-outcomes at setup rows incl. HR/WATCH tiers)",
+  "features": [
+    {
+      "feature": "mitigated_level_exclusion (literal, >=1 touch episode, V4-LIT)",
+      "effect": "HARMFUL - catastrophic over-filtering",
+      "numbers": "21/34 labels moved; promoted-tier winners 16 -> 0; only XAU-J28 (P, 0 touches) survives in MEDIUM; promoted losses 2 -> 0 but at total tier destruction",
+      "root_cause": "the 24h touch-episode PROXY marks nearly every zone as touched>=1; the doctrine's 'already mitigated' cannot be operationalised as >=1 proxy-touch",
+      "verdict": "REJECTED in this form; must not be retested until true formation-time touch counts exist (forward capture)"
+    },
+    {
+      "feature": "mitigated_level_exclusion (spent-aligned, >=3 episodes, V4-SP)",
+      "effect": "MIXED - removes both promoted-tier losses, heavy winner cost",
+      "numbers": "15/34 moved; promoted losses 2 -> 0 (J23, S2 demoted to WATCH); promoted winners 16 -> 5; the whole LOW tier empties (all 8 LOW records have >=3 proxy touches); MEDIUM 14 -> 7 (5W/0L/2P)",
+      "objections": ["converts F2 from confidence input into a GATE - violates the ratified graded-confluence-stack posture (ratification #2)", "threshold >=3 chosen on this sample; J23 sits exactly on the boundary (3 touches) - selection on the target", "in-sample; n(losses) small"],
+      "verdict": "NOT recommended for promotion; retained as an offline research variant only; requires human ratification (gate-type feature) AND forward true-formation-time data"
+    },
+    {
+      "feature": "mitigated_level_exclusion (spent-aligned + candle-close exemption, V4-SPX)",
+      "effect": "MIXED - best cap variant, same structural objections",
+      "numbers": "13/34 moved; promoted losses 0; promoted winners 6; MEDIUM 9 (6W/0L/3P, S3/S4 retained via exemption); 10 winners still demoted",
+      "verdict": "research variant only; same ratification + forward-data requirements as V4-SP"
+    },
+    {
+      "feature": "confirmation_tf_hierarchy grading (multi-TF +1, single-TF +0, V4-TF)",
+      "effect": "NEUTRAL in-sample - zero label changes",
+      "numbers": "0/34 moved (S3 loses its +1 but stays MEDIUM at score 2; S4 multi-TF stack keeps +1); evidence density 2/34 records",
+      "verdict": "harmless; keep as capture-grading input; cannot be evaluated until forward records raise candle-close evidence density; +confidence-only per standing ratification #1"
+    },
+    {
+      "feature": "displacement_fvg_artifact_test (enrichment)",
+      "effect": "UNTESTABLE IN-SAMPLE - no score computed (honest refusal, not a failure)",
+      "reason": "requires FVG-presence in the leg that FORMED each zone; zone formation times are not retrospectively recoverable (the same limitation that forced F2's 24h proxy); fabricating a proxy would be scoring noise",
+      "doctrine_support": "unchanged - loss-backed (Jul-1 post-mortem, FP-B003-05); strongest evidence class",
+      "designed_test": "forward: capture zone formation timestamp + 8D leg events per XAU-F record, then deterministic FVG-presence check on the forming leg from 1m OHLC with a frozen window; offline alternative: dedicated OHLC pass over recap-era trades IF formation times become citable",
+      "verdict": "remains v0.4 backlog with the designed test; no replay verdict possible"
+    },
+    {
+      "feature": "limit_at_zone evidence (entry_mechanic_evidence)",
+      "effect": "NOT SCORABLE - capture-only confirmed",
+      "reason": "retrospectively UNKNOWN for essentially all 34 setups (entry mechanics were never posted); no variance to score",
+      "verdict": "remains capture-only (003B field); correct as designed"
+    },
+    {
+      "feature": "posted_vs_actual_sl_gap notes",
+      "effect": "NOT SCORABLE - capture-only confirmed",
+      "reason": "evidence exists for ~3 cases total (J11/J24 widget context, S2 video note, 19-Mar recap row - the latter outside this sample); far too sparse",
+      "verdict": "remains capture-only (003B fields); valuable as central-caveat evidence, never a score input"
+    },
+    {
+      "feature": "indicator_semantics pack (indicator_level_source_kind)",
+      "effect": "NOT SCORABLE YET - zero indicator-sourced records in the 34-sample",
+      "reason": "panel levels were not captured in the sprint era; first scorable data arrives via Lane-6 forward pre-marks",
+      "verdict": "remains capture-only + Lane-6 builder input"
+    },
+    {
+      "feature": "claim_convention_notes",
+      "effect": "NOT SCORABLE and TOO CLAIM-DERIVED",
+      "reason": "claim-derived by definition - the 002B policy bar applies (claim-derived inputs feeding scores require human ratification); also no per-record variance to test",
+      "verdict": "remains capture-only; flagged as the most claim-derived item in the backlog - do not score"
+    }
+  ],
+  "overfit_risk_statement": "HIGH and structural: n=34 with 6 loss-rows; F2 proxy thresholds chosen in-sample; V4-SP/SPX reach 0 promoted losses by selecting the threshold on the same sample they are judged on (J23 sits exactly at the boundary); four variants were tried on one sample (forking-paths risk); ONLY forward validation on >=15 XAU-F records with true formation times can distinguish real stratification from proxy artefact",
+  "review_only": true,
+  "executable": false,
+  "trade_ready": false
+}

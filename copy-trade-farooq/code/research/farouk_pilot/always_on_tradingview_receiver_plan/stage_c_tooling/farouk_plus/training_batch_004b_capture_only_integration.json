@@ -1,0 +1,50 @@
+{
+  "doc_id": "training_batch_004b_capture_only_integration",
+  "as_of": "2026-07-12T12:45Z",
+  "mode": "BATCH_004B_CAPTURE_ONLY_MERGE_NO_LIVE_SCORER_CHANGE",
+  "live_priority_gate": {"listener_pid_23012": "running/untouched (only python process)", "store_max_msg_id": 45648, "new_xau_after_45648": false, "cycle_006_triggered": false},
+  "new_capture_fields": {
+    "london_high_low_panel_evidence": "London H/L panel levels visible/citable in setup context (values + bar-close-confirmed flag; UNKNOWN if not visible)",
+    "us_high_low_panel_evidence": "same for US H/L panel levels",
+    "orb_timing_context": "session ORB (ASIA | LONDON_0900_GMT+1 | NY_1530; first-15-minutes definition), breakout/retest state, nearby unretested orb breakout",
+    "magnet_logic_evidence": "citable unmitigated levels / unretested orb breakouts / unfilled gaps named as draw targets, with message/media refs; UNKNOWN if none cited (also per PRE_MARK_CANDIDATE)",
+    "stop_feasibility_context": "FEASIBLE | INFEASIBLE_STATED | UNKNOWN - statements that a stop was placeable/unplaceable (also per PRE_MARK_CANDIDATE)",
+    "mitigation_depth_pct_if_stated": "spoken/visible depth as % of zone; numeric only when stated, never inferred; UNKNOWN otherwise",
+    "anticipatory_be_threshold_pips": "standing follower BE threshold in force (currently 50-60p per Jul-5 verbatim); doctrine reference, not computed",
+    "anticipatory_be_evidence": "evidence that followers were expected to BE before the instruction (doctrine restatements, 'you should already have done it' class), ids/ts",
+    "limit_at_zone_evidence": "citable limit-order evidence for THIS setup (posted 'Limit Long/Buy/Sell' labels, pending statements); extends 003B entry_mechanic_evidence",
+    "claim_convention_evidence": "which claim-accounting convention the setup's claims use, citing the instance; extends 003B claim_convention_notes"
+  },
+  "enum_and_value_extensions": {
+    "indicator_level_source_kind_added": ["LONDON_HIGH", "LONDON_LOW", "US_HIGH", "US_LOW", "FLAT_CANDLE", "GAP"],
+    "scratch_mode_added": "DOCTRINE_ANTICIPATED (BE move preceding the instruction message)"
+  },
+  "cycle_006_readiness_additions": [
+    "would +50-60p anticipatory BE have applied (entry+50-60p touch before SL-to-entry instruction; deterministic once OHLC imported)",
+    "formal SL-to-entry EARLY vs LATE vs the doctrine threshold (instruction ts vs first entry+50-60p touch)",
+    "London/US H/L or ORB context visible/citable (bar-close-confirmed only; repaint guard applies)",
+    "any level treated as magnet/liquidity draw",
+    "stop feasibility mentioned (FEASIBLE/INFEASIBLE_STATED/UNKNOWN)",
+    "mitigation depth visible or stated (% if stated; entry-depth deterministic from OHLC otherwise; never guessed)"
+  ],
+  "constraints": "all capture-only: never scored by v0.3, never gates, no sizing semantics; never-widen ratification stands; stop-feasibility/magnet fields feed Lane-6 invalidation track + stop_width_by_level_type v0.2 research only",
+  "not_merged": [
+    "FP-B004-Z1 stays REJECTED/off-method (guest EMA scalping family); nothing enters the XAU engine",
+    "fvg_claim_chain stays v0.4/v0.5 backlog (capture-first; no scoring)",
+    "london_us_session_break_priors + bot-lane watch stay WATCHLIST",
+    "no ratification requested; mitigated_level_exclusion gate unchanged"
+  ],
+  "not_run_this_step": ["Cycle 006", "detector v0.4 replay", "OHLC matching"],
+  "master_update": "ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT_ADDENDUM_BATCH004B.md written (extend-not-edit; vNEXT pair preserved)",
+  "safety": {
+    "listener_pid_23012": "running/untouched",
+    "gates": "PAPER/PREVIEW/False/False",
+    "not_integration_ready": "unchanged",
+    "execution_built": false,
+    "permits_leases_orders": "none",
+    "v03_live_labels": "unchanged",
+    "v04_used_or_promoted": false,
+    "sizing_or_order_fields_produced": false
+  },
+  "next": "Cycle 006 / XAU-F001 at first real XAU post after tonight ~22:00Z reopen under the full spec incl. these fields; optional Feb-Mar + May OHLC matching; v0.4 forward re-replay after >=15 XAU-F records"
+}

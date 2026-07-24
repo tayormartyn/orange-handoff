@@ -1,0 +1,70 @@
+{
+ "generated_at": "2026-07-20T13:05:00Z",
+ "questions": [
+  {
+   "oq_id": "OQ-1",
+   "q": "entry_refusals_v0_1.jsonl holds one record (msg 60008 / XAU-F008-20260716). Believed to be the 07-16 watcher-race fix verification canary (synthetic out-of-range ids). Confirm provenance; if unexplained, treat as contamination candidate.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-2",
+   "q": "'Lane C' terminology: not present in the repo corpus; defined in this brain as the future controlled-execution route (NOT built, gated). Confirm with Martyn that this matches his intent; note 'lane6' = indicator alert lane is distinct.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-3",
+   "q": "A+/A+++ webhook delivery remains DELIVERY_UNVERIFIED (armed 07-14, never fired). Closes only when a real A+ fires end-to-end.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-4",
+   "q": "Indicator detection-engine unknowns REMAINING: A-grade formula, repaint intrabar behaviour, Asia session TZ input, [kyle] POC T-variants, SFP attribution. (Below-fold alert conditions RESOLVED 2026-07-20 — catalogue complete at 13, D-012. Indicator MANUAL not held — new gap per TASK 1B Q2.)",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-5",
+   "q": "Panel-OCR panel-to-bar correlation task (uses K-016 corpus): scoped but NOT approved yet.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-6",
+   "q": "F004 card contains a -89.82 field alongside +15.18 — believed Lane-B/counterfactual column; confirm field semantics before quoting card internals.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-7",
+   "q": "Two unplanned Windows reboots in one week (07-15, 07-19 22:37Z) killed capture; root cause (Windows Update active hours?) unconfirmed — operator decision needed, Orange must not change power settings.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-11",
+   "q": "OQ-11 (education limb RESOLVED 2026-07-20): farouk-education is a Discord channel NOT relayed to Telegram (selective relay, K-049) - zero archive presence is EXPLAINED, not a gap; its content was manually scraped by the operator into the training folder and enters the corpus via TASK 1B (verified holdings: course modules 1/3/4/6 + Farouk Education PDF + Playbook PDF + Whaleroom PDFs + Zoom sessions; modules 2 and 5 remain the only visible holes - previously flagged, operator DON'T KNOW). REMAINING limb: forex-nasdaq-silver-trades (126+58 archive posts, out of gold scope) - characterise read-only when convenient; candidate separate lane alongside limit-order-trades. No gate changes.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-13",
+   "q": "SOURCE CONTRADICTION - SIZING LADDER, BIDIRECTIONAL (sharpened 2026-07-21, D-053; NOT RESOLVED, recorded not reconciled). Spoken ladder (Sunday 5 July audio, FR-079 segment; OPERATOR INTERPRETATION flagged as interpretation, not verbatim; SOURCE_REPORTED, PERSONAL_LIVE_METHOD_UNCONFIRMED): ~$1,000 account -> 0.1-0.2 lots; $15,000-20,000 -> 1 lot. Whaleroom Trading Guide (FP-EDU-003) lot table: $1,000 -> 0.03-0.06; $20,000 -> 1.60-3.20. THE SCHEMES DIVERGE IN OPPOSITE DIRECTIONS AT EACH END: spoken ~3x LARGER at $1k, ~2-3x SMALLER at $20k - a single era-drift explanation cannot account for both. Candidate explanations, NONE selected: different account type (XAUUSD-STD vs XAUUSD-VIP, OQ-12 link); different product/leverage assumption; different risk basis (fixed-fraction vs fixed-lot); spoken approximation vs stated rule; genuine revision over time. STATED RESOLUTION ROUTE (read-only, NOT NOW): correlate the OCR dataset's lot labels to account label and date - may discriminate between explanations. STANDING DISCLAIMER: all sizing material is DOCUMENTARY EVIDENCE ONLY - no sizing logic is implemented under any gate; the demo spec's fixed 0.01 nominal is unaffected.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-12",
+   "q": "ACCOUNT VARIANT (registered 2026-07-21, D-046): OCR full pass surfaced a second account label - XAUUSD-STD (msg 45103, 2026-06-24, sell 0.4 @4137.61->4130.74) alongside the usual XAUUSD-VIP (53 rows). Does STD indicate different lot conventions, a different product, or the same signals on another account? DATA ANSWER SO FAR: UNVERIFIABLE - the single STD row carries NO readable result figure, so multiplier equivalence can neither be confirmed nor denied (all 47 reconciled rows are VIP). NOT ASSUMED equivalent: the STD row is excluded from any mixed-row arithmetic until a result-bearing STD card appears; per-account multiplier field added to the extractor contract.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-10",
+   "q": "Result cards are IMAGES on media-only messages (text just the Whale marker) - Orange is BLIND to Farouk's reported outcomes (confirmed live on F006: 45939/45941 cards showing 4 fills and exits, preserved as images, never read). RE-RANKED 2026-07-21 (operator, D-041): no longer only the fidelity-gap measurement - result-card fills are THE INPUT to LANE_A_ENTRY_MODEL_ADVERSE_DIVERGENCE, the one emerging signal that could cut against the project's core premise; every fill recorded so far came from operator screenshots. OCR PROPOSAL DUE when the current queue clears: tier SOURCE_REPORTED_OUTCOME, never Lane A outcome, never training-eligible. INTERIM MITIGATION ACTIVE: standing operator task result_card_capture_state.json + brain_refresh (0!) alarm when a campaign reaches terminal state without captured cards (weekly-plan alarm parity).",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-9",
+   "q": "OQ-9 CLOSED SAFE 2026-07-20 (operator screenshots): Discord display name is SeaScalper-Farouk (capitalised, hyphenated) while the relayed handle is seascalperfarouk (lowercase) - they DIFFER, proving the relay embeds the UNIQUE Discord username, not the mutable display name. Exact-match fail-closed retained. Author gate provenance fully closed.",
+   "blocking": false
+  },
+  {
+   "oq_id": "OQ-8",
+   "q": "Quarantine review has NO durable resolution record format: 18 modern-era quarantines are unresolved-by-record (some informally reviewed in session notes only). Define an append-only quarantine-resolution record so the actionable queue can shrink truthfully.",
+   "blocking": false
+  }
+ ]
+}

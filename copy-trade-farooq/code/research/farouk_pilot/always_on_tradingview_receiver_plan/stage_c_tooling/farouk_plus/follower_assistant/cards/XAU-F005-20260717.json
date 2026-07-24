@@ -1,0 +1,179 @@
+{
+ "banner": "NO BROKER ACTION | NO ORDER SUBMISSION | REVIEW-ONLY SHADOW PROPOSAL",
+ "card_type": "REVIEW_ONLY_SHADOW_PROPOSAL",
+ "campaign_id": "XAU-F005-20260717",
+ "direction": "SHORT",
+ "zone": "3998-4008",
+ "posted_follower_stop": "4043 (posted follower stop; personal stop UNKNOWN; structural invalidation NOT STATED)",
+ "source_timestamp_utc": "2026-07-17T10:33:22+00:00",
+ "evidence_links": {
+  "message_ids": [
+   45878,
+   45879,
+   45881,
+   45885
+  ],
+  "frozen_evidence_sha256": "8adfda63d122e8281db5b60b84db37be6d27a8b5e30e7bc2afdd55b66cc2299b",
+  "forward_ledger": "forward_validation_ledger_v0_2.jsonl",
+  "tracker_ledger": "market_tracker/tracker_ledger_v0_1.jsonl"
+ },
+ "constitution_sha256": "7bce618f29d1d44a48bef085d539b05a289393ebe33fe4d304632016777defde",
+ "acknowledgement_note": "REVIEW/ACKNOWLEDGED/REJECTED is an annotation with zero execution consequence",
+ "constitution_version": "0.1.0",
+ "theoretical_legs": [
+  {
+   "leg_id": "XAU-F005-20260717/near",
+   "price": "3998",
+   "kind": "LIMIT",
+   "state": "CANCELLED",
+   "fill_price": null,
+   "open_size": "0",
+   "be_price": null,
+   "tags": []
+  },
+  {
+   "leg_id": "XAU-F005-20260717/mid",
+   "price": "4003.00",
+   "kind": "LIMIT",
+   "state": "CANCELLED",
+   "fill_price": null,
+   "open_size": "0",
+   "be_price": null,
+   "tags": []
+  },
+  {
+   "leg_id": "XAU-F005-20260717/far",
+   "price": "4008",
+   "kind": "LIMIT",
+   "state": "CANCELLED",
+   "fill_price": null,
+   "open_size": "0",
+   "be_price": null,
+   "tags": []
+  }
+ ],
+ "campaign_average_entry": null,
+ "market_data": {
+  "provider": "PEPPERSTONE_TV_BAR_FEED",
+  "last_bar_ts": 1784768100,
+  "last_close": "4128.41",
+  "staleness_seconds": 99,
+  "bars_seen": 4838,
+  "stream_hash": "026f3fc54b54e77b83304f5437c4ce031e09a69f951e86682edc9004bbd8036e",
+  "gaps": [
+   [
+    1784046540,
+    1784066460
+   ],
+   [
+    1784149080,
+    1784152860
+   ],
+   [
+    1784189040,
+    1784189280
+   ],
+   [
+    1784200560,
+    1784200680
+   ],
+   [
+    1784235480,
+    1784239260
+   ],
+   [
+    1784321280,
+    1784498460
+   ],
+   [
+    1784581080,
+    1784584860
+   ],
+   [
+    1784667480,
+    1784671260
+   ],
+   [
+    1784716200,
+    1784716320
+   ],
+   [
+    1784737080,
+    1784742300
+   ],
+   [
+    1784753880,
+    1784757660
+   ]
+  ],
+  "anomaly_count": 17,
+  "distance_to_near_edge_pips": "-1304.10"
+ },
+ "current_theoretical_open_size": "0",
+ "strict_follower_lane": {
+  "lifecycle": "OUTCOME_FROZEN",
+  "path": [
+   "PROPOSAL_CREATED",
+   "WAITING_FOR_ZONE",
+   "ZONE_TOUCHED",
+   "NO_FILL",
+   "OUTCOME_FROZEN"
+  ],
+  "state": "NO_FILL",
+  "realized_pips_per_unit": "0.00",
+  "unrealized_pips_per_unit": null,
+  "mae_pips": null,
+  "mfe_pips": null
+ },
+ "policy_sensitivity_lane": {
+  "lifecycle": "OUTCOME_FROZEN",
+  "state": "CLOSED",
+  "realized_pips_per_unit": "94.17",
+  "unrealized_pips_per_unit": null,
+  "mae_pips": "-8.70",
+  "mfe_pips": "326.70",
+  "disclaimer": "POLICY_SENSITIVITY lane; NOT Farouk's actual result"
+ },
+ "management_instructions": [
+  {
+   "instruction_type": "TP1_TAKE",
+   "message_id": 45879,
+   "timestamp_utc": "2026-07-17T11:33:39+00:00"
+  },
+  {
+   "instruction_type": "SL_TO_ENTRY",
+   "scope": null,
+   "message_id": 45881,
+   "timestamp_utc": "2026-07-17T11:37:47+00:00"
+  },
+  {
+   "instruction_type": "EXPLICIT_FULL_EXIT",
+   "size_basis": "ALL_CURRENTLY_REMAINING_OPEN_FILLED_SIZE",
+   "raw_instruction": "close 100%",
+   "morphology": "CLOSE_PERCENTAGE_v0_1",
+   "message_id": 45885,
+   "timestamp_utc": "2026-07-17T12:44:27+00:00"
+  }
+ ],
+ "unresolved_ambiguities": [],
+ "plus50_diagnostic": {
+  "reachable": false,
+  "first_bar_ts": null,
+  "status": "DIAGNOSTIC_ONLY_P09_DISABLED"
+ },
+ "last_state_transition": "OUTCOME_FROZEN",
+ "outcome_status": "FROZEN",
+ "detector_v0_2_label": "SHADOW_CANDIDATE_MEDIUM",
+ "detector_v0_3_label": "SHADOW_CANDIDATE_MEDIUM",
+ "pre_mark_comparisons": {
+  "PM-F001-SELL-4150-4184": "NOT_MATCHED",
+  "PM-F002-SUPPLY-4430-4480": "NOT_MATCHED",
+  "PM-F003-SELL-4250-4260": "NOT_MATCHED",
+  "PM-F004-DEMAND-3850-3863": "NOT_MATCHED"
+ },
+ "acknowledgement_state": "REVIEW",
+ "review_only": true,
+ "executable": false,
+ "trade_ready": false,
+ "observation_only": true
+}

@@ -1,0 +1,42 @@
+{
+  "batch": "FP-EDU-016",
+  "note": "Written SMC curriculum behind Campaigns 001-004. NOT universal rules from one example; frozen dossiers not modified.",
+  "links": [
+    {
+      "post": "FP-EDU-008 Mitigation",
+      "campaign": "C001/C003 OB retest = mitigation; C003 'already mitigated, don't enter'",
+      "assessment": "full definition of the mitigation the campaigns act on"
+    },
+    {
+      "post": "FP-EDU-016 BOS / FP-EDU-010",
+      "campaign": "C004 'H4 BOS + H1 nBOS'",
+      "assessment": "BOS definition matches campaign structure language (nBOS still not defined in the corpus)"
+    },
+    {
+      "post": "FP-EDU-009 Strong/Weak",
+      "campaign": "C004 preferred-zone quality hierarchy",
+      "assessment": "strong-vs-weak underpins the quality ranking"
+    },
+    {
+      "post": "FP-EDU-011 SCOB",
+      "campaign": "C001/C003/C004 OB retests; C004 3m/5m OB",
+      "assessment": "OB validity definition"
+    },
+    {
+      "post": "FP-EDU-026 Volume Profile (POC/VAH/VAL)",
+      "campaign": "FP-INDICATOR POC panel; FP-EDU-018 'acceptance above 50% of cluster'",
+      "assessment": "value-area language matches the [kyle] POC panel + cluster-acceptance heuristic"
+    },
+    {
+      "post": "FP-EDU-014/015 POI/Inducement",
+      "campaign": "C003 Asia-low sweep; C004 sweep-then-reverse",
+      "assessment": "sweep-into-POI + inducement match campaign sweeps"
+    }
+  ],
+  "campaigns_referenced": [
+    "FP-CAMPAIGN-001",
+    "FP-CAMPAIGN-002",
+    "FP-CAMPAIGN-003",
+    "FP-CAMPAIGN-004"
+  ]
+}

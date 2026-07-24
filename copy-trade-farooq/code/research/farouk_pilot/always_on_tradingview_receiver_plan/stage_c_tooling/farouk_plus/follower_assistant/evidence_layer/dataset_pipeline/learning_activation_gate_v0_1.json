@@ -1,0 +1,22 @@
+{
+  "gate_id": "learning_activation_gate_v0_1",
+  "status": "PROPOSED_RESEARCH_GATE_NOT_AUTHORISED",
+  "purpose": "Propose (NOT ratify) the conditions under which fitting a real model would even be considered. No number here is project law; nothing here authorises fitting.",
+  "explicit_non_authorisation": "This gate is a DRAFT. Fitting requires separate explicit future authorization + human ratification.",
+  "no_hardcoded_count": "Deliberately does NOT hard-code 15 (or any count) as law; 15 forward records / 5 sessions is an EXISTING documented promotion condition (DETECTOR_V0_4_PROMOTION_GATE.md:9), referenced not re-legislated.",
+  "considerations": [
+    "number of independent genuine prospective campaigns",
+    "number of training-eligible candidates",
+    "outcome completeness rate",
+    "class balance (activated vs no-trade vs invalidated)",
+    "session/regime diversity",
+    "data-integrity failure rate",
+    "ambiguous intrabar exclusion rate",
+    "parser / copy-fidelity quality",
+    "chronological split viability (enough folds without leakage)",
+    "minimum evaluation denominator per metric",
+    "stability of results under explicit cost assumptions"
+  ],
+  "requires_before_fitting": ["explicit future authorization", "human ratification", "pre-registered feature set + model class + metric", "chronological hold-out design"],
+  "review_only": true, "executable": false, "observation_only": true
+}

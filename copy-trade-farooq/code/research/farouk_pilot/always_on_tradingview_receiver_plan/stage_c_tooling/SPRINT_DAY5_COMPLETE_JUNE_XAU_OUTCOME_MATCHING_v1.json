@@ -1,0 +1,60 @@
+{
+  "day": "SPRINT_DAY5",
+  "date": "2026-07-11",
+  "mode": "COMPLETE_JUNE_XAUUSD_OUTCOME_MATCHING",
+  "import_attempt": {
+    "expected": ["XAUUSD_1M_2026-06-01_to_2026-06-11", "XAUUSD_1M_2026-06-11_to_2026-06-21"],
+    "found_in_downloads": [
+      {"name": "XAUUSD_1M_2026-06-01_to_2026-06-11.csv.csv", "bytes": 1401508,
+       "sha256": "2e0d565d3d8e6453c813335bb427e553b1527446b26546ccbc0cc317b88b53af"},
+      {"name": "XAUUSD_1M_2026-06-11_to_2026-06-21.csv.csv", "bytes": 1401508,
+       "sha256": "2e0d565d3d8e6453c813335bb427e553b1527446b26546ccbc0cc317b88b53af"}
+    ],
+    "diagnosis": "BOTH files are byte-identical to the Day-4 export (same sha256) — the TradingView chart was not scrolled back before exporting, so the export still contains only the loaded bars 2026-06-21T22:01Z..2026-07-10T20:54Z. No June 1-21 bars exist in either file.",
+    "pepperstone_named_files_checked": [
+      {"name": "PEPPERSTONE_XAUUSD, 1.csv", "coverage": "2026-07-08T16:12Z..2026-07-09T12:18Z", "verdict": "old Jul-08/09 import source, not June"},
+      {"name": "PEPPERSTONE_XAUUSD, 1 (1).csv", "coverage": "2026-07-09T18:01Z..2026-07-10T08:09Z", "verdict": "old Jul-09/10 import source, not June"}
+    ],
+    "copied_to_price_data": false,
+    "copy_rationale": "content already present bit-for-bit as price_data/XAUUSD_1M_PEPPERSTONE_2026-06-21_to_2026-07-10_FULL_EXPORT.csv — duplicating it under June-window names would misrepresent coverage",
+    "june_1_21_coverage": "STILL MISSING"
+  },
+  "new_matches_run": 0,
+  "self_admitted_losses_tested": 0,
+  "self_admitted_losses_pending": ["XAU-J03-20260602", "XAU-J08-20260604", "XAU-J17-20260615", "XAU-J23-20260619"],
+  "final_june_counts_unchanged_from_day4": {
+    "strict_setup_count": 30,
+    "entry_executions": 33,
+    "grouped_campaign_count": 24,
+    "VERIFIED_WIN": 4,
+    "VERIFIED_LOSS": 0,
+    "PARTIAL": 2,
+    "CONTRADICTED_setup_level": 0,
+    "INSUFFICIENT_DATA": 24,
+    "magnitude_contradictions": ["XAU-J30-20260629 (170/200/240p claimed vs 128/128/175p achievable)"]
+  },
+  "cumulative_sprint_sample": {
+    "trades_matched": 10,
+    "sessions": 9,
+    "VERIFIED_WIN": 6,
+    "VERIFIED_LOSS": 1,
+    "PARTIAL": 3,
+    "CONTRADICTED": 0,
+    "threshold_10_trades_5_sessions": "MET"
+  },
+  "june_claim_22_trades_2_losers": "STILL CONTRADICTED (>=4 self-admitted losses in his own June posts); deterministic loss verification still blocked by the missing Jun-1-21 OHLC window",
+  "reexport_instructions": {
+    "why_it_failed": "TradingView's 'Export chart data' writes ONLY the bars currently loaded in the chart (~20k bar cap ≈ 3 weeks of 1m). The chart must be scrolled/paged back until June 1 bars are visible/loaded BEFORE exporting.",
+    "option_a_precise": "On the 1m PEPPERSTONE:XAUUSD chart, keep dragging the chart left (or press Home/use 'Go to date' 2026-06-01) until bars from Jun-01 are on screen; wait for history to load; then Export chart data. Verify the FIRST row's epoch is <= 1780358400 (2026-06-02 00:00Z) before uploading. Repeat if the 20k cap trims the tail — two overlapping exports (loaded-to-Jun-01 and loaded-to-Jun-11) are fine; the importer dedups by timestamp.",
+    "option_b_fallback_5m": "If 1m history that far back will not load, switch the SAME chart to 5m, use 'Go to date' 2026-06-01, and export once — ~6,000 bars covers ALL of June. Matching then runs at 5m precision (entry/SL/TP touch detection still valid; claim-timing snapshots coarser). Name it XAUUSD_5M_2026-06-01_to_2026-06-30.csv.",
+    "verification_hint": "A correct June-1-onward 1m export will be ~2.5-3.0 MB (roughly 27k+ bars), not 1.4 MB."
+  },
+  "safety": {
+    "listener_pid_87988": "running/untouched (start 2026-07-10 21:54:45 unchanged)",
+    "broker_qst_ctrader_execution": "absent",
+    "permits_leases_orders": "none",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "ai_output": "none used; deterministic matching remains authority (nothing new to match)"
+  }
+}

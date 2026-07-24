@@ -1,0 +1,23 @@
+{
+  "queue_id": "fable5_training_batch_002_merge_queue",
+  "generated_on": "2026-07-11",
+  "mode": "REVIEW_ONLY — nothing merges into live scoring automatically",
+  "MERGE_NOW_CAPTURE_ONLY": [
+    {"feature": "audit_r_midpoint", "source": "FP-AUDIT-001/002 methodology", "target": "XAU-F capture schema: record the claim-based R midpoint (audit method) per setup alongside the deterministic lanes — a recordable third expectancy lane"},
+    {"feature": "stop_width_dataset_extension", "source": "FP-AUDIT-001 May rows + FP-EDU-001-B spoken '3-400 pips' scale", "target": "stop_width_by_level_type v0.1 calibration set (+6 samples + spoken anchor)"}
+  ],
+  "MERGE_IN_DETECTOR_V0_4_OFFLINE": [],
+  "NEEDS_FORWARD_EVIDENCE": [
+    {"feature": "range_size_move_size_heuristic", "source": "FP-EDU-001-B ('the longer the range, the bigger the move')", "note": "watchlist; needs definition + forward samples"}
+  ],
+  "HUMAN_RATIFICATION_REQUIRED": [],
+  "HOLD_AS_REFERENCE": [
+    {"item": "6 May-2026 gold trades (FP-AUDIT-001 rows, claim-only)", "note": "RESULT_CLAIM_ONLY backward ledger extension; deterministically matchable if May OHLC is ever exported (batch-003 option)"},
+    {"item": "FP-JOURNAL-001 crypto journal", "note": "doctrine-stability + win-accounting-convention evidence; different asset class — never used for gold calibration numbers"},
+    {"item": "compounding sheets ('200 USD to 2 crore', '$1k->$25k')", "note": "excluded by policy; marketing-register context only"},
+    {"item": "WhaleRoom_TradeRecap_1.pdf + 2025-12-14 movs", "note": "batch 003 candidates"}
+  ],
+  "REJECT_DUPLICATE": ["GMT-zoom sets (already ingested)", "Exochart/Delta tutorials (out of scope per R-OI)"],
+  "enforcement": "ai_review fail-closed validator + extended guard on all resulting records; labels capped; no automatic promotion",
+  "safety": {"gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none"}
+}

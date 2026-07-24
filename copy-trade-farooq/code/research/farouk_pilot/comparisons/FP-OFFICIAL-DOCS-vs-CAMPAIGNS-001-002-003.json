@@ -1,0 +1,194 @@
+{
+  "comparison_id": "FP-OFFICIAL-DOCS-vs-CAMPAIGNS-001-002-003",
+  "note": "Official documents (Playbook, Whale Room Guide, Strong/Weak OB) tested against C001/C002/C003. Doc claims are teaching SourceClaims, NOT promoted to rules. Both campaign videos are retrospective; no market data. The project's LOCKED 1.0% campaign-wide risk cap is NOT replaced by any document figure.",
+  "source_asset_ids": [
+    "sa-4cb77d9d6b13478a",
+    "sa-8b0a95608f41b5e4",
+    "sa-c005bffefcc3a90e",
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f",
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a",
+    "sa-de1197b472306864",
+    "sa-19c3595caaa28406",
+    "sa-bc200fb932058fc3",
+    "sa-036eef476c3ce1b2"
+  ],
+  "claims": [
+    {
+      "claim": "OB definition + retest entry (PB-OB-001/002)",
+      "classification": "SUPPORTED",
+      "evidence": "C001 OB retest 4123.51 inside the entry zone (win); C003 OB ~4009 at the deeper entry (win)"
+    },
+    {
+      "claim": "Mitigated/weak OB should be avoided (OB-WEAK-001)",
+      "classification": "SUPPORTED",
+      "evidence": "C003 spoken 'don't enter another long here at this OB, already mitigated'"
+    },
+    {
+      "claim": "Liquidity sweep then reversal (PB-LIQ-001)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 Asia-low sweep then rebound; exact wick-close mechanics not tick-verified"
+    },
+    {
+      "claim": "Asia-session fakeout sequence (PB-ASIA-001)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 was the reverse (Asia-LOW fakeout -> bullish); C001/C002 involved Asia breaks; not price-verified"
+    },
+    {
+      "claim": "Strong OB = sweep+displacement+FVG+fresh+aligned (OB-STRONG-002)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 (sweep+OB+FVG target, in-context) and C001 (fresh OB at HTF) partially match; 'displacement' never observed"
+    },
+    {
+      "claim": "BPR overlap / BPR setups (PB-BPR-001/002)",
+      "classification": "NOT_OBSERVABLE",
+      "evidence": "BPR appears in the docs/edu but not clearly in campaign frames"
+    },
+    {
+      "claim": "FVG construction + invalid-after-fill (PB-FVG-001/002)",
+      "classification": "INSUFFICIENT_EVIDENCE",
+      "evidence": "FVG labels appear (incl. Daily FVG in C003) but the 3-candle construction and fill-invalidation are not tick-verified"
+    },
+    {
+      "claim": "FVG continuation state machine (PB-FVG-004)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 = bottom -> FVG/OB -> continuation toward the Daily FVG (pattern matches)"
+    },
+    {
+      "claim": "5m->3m->1m + candle-must-close (PB-MTF-001 / PB-CANDLE-CLOSE)",
+      "classification": "NOT_OBSERVABLE",
+      "evidence": "campaign videos show 5m/15m/1h/4h but not the 1m trigger sequence or entry-candle timing"
+    },
+    {
+      "claim": "Engulfing 2x + reversal-candle confirmation (PB-ENGULF-001 / PB-CANDLE-001)",
+      "classification": "NOT_OBSERVABLE",
+      "evidence": "entry candle mechanics not visible in the campaigns"
+    },
+    {
+      "claim": "Confluence scoring 6/6 & letter grades (PB-CONF-001/002)",
+      "classification": "NOT_OBSERVABLE",
+      "evidence": "no explicit scoring shown in campaigns"
+    },
+    {
+      "claim": "Pip convention 0.10 = 1 pip (WR-PIP-001)",
+      "classification": "SUPPORTED",
+      "evidence": "C003 result-card math verified exactly (e.g. 4050.93-4027.37=23.56 -> ~240 pips)"
+    },
+    {
+      "claim": "Break-even at +50 pips (WR-BE-001 / WR-3PT-004)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 spoken 'normally I move my stoploss to entry at 50-60 pips' (matches the +50-pip BE rule)"
+    },
+    {
+      "claim": "TP1-then-breakeven management (WR-BE-001 + campaigns)",
+      "classification": "SUPPORTED",
+      "evidence": "TP1 + move-to-BE seen in C001, C002-LEG-A and C003"
+    },
+    {
+      "claim": "3-point / layered entries, shared stop, avg, max-3 (WR-3PT-*)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 shows LAYERING with an initial + deeper entry and 'close worst, hold best'; a full 3 entries with one shared stop and the average-BE are NOT all independently visible; C002 re-entry is a different (post-stop) protocol"
+    },
+    {
+      "claim": "Partial-exit schedules 50/30/20 or 30/30/runner (WR-TP-001/002)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "C003 scaled 50% then 75% out with a runner (closer to the Advanced runner style); exact fixed schedule differs"
+    },
+    {
+      "claim": "Stop-loss beyond structure, never widen (WR-SL-001)",
+      "classification": "PARTIALLY_SUPPORTED",
+      "evidence": "published stops sit beyond structure (C001/C003); 'never widen' not directly tested"
+    },
+    {
+      "claim": "Risk 1-2% per trade / max 2% lot (WR-RISK-001 / PB-RISK-001)",
+      "classification": "CONTRADICTED",
+      "evidence": "The project's LOCKED cap is 1.0% CAMPAIGN-WIDE; the documents specify 1-2% PER TRADE. Recorded as a document claim; the project cap is NOT changed. Per-trade campaign risk not verifiable (no P/L)."
+    },
+    {
+      "claim": "R:R at least 1:2 (PB-RR-001)",
+      "classification": "NOT_OBSERVABLE",
+      "evidence": "R:R not computed (no fills/market data)"
+    }
+  ],
+  "order_block_quality_model": {
+    "model": "ORDER_BLOCK_QUALITY_MODEL v0 (provisional, NO numerical thresholds assigned)",
+    "features": [
+      {
+        "feature": "sweep_present",
+        "type": "boolean",
+        "official_teaching": "strong OB swept liquidity just before forming; weak OB did not",
+        "observed_campaign_evidence": "C003 = Asia-low sweep before the OB rebound (supports); C001/C002 not tick-verified",
+        "current_inference": "sweep-before-OB is a strong-OB marker",
+        "unresolved_threshold": "how far/definitively the level must be swept",
+        "required_future_evidence": "tick/OHLC data to confirm the wick-through+close-back-inside"
+      },
+      {
+        "feature": "displacement_strength",
+        "type": "continuous/ordinal",
+        "official_teaching": "big displacement (strong) vs small/lazy impulse (weak)",
+        "observed_campaign_evidence": "NOT_OBSERVABLE without price data; 'displacement' never spoken in FP-EDU-001",
+        "current_inference": "central to OB quality per the doc",
+        "unresolved_threshold": "magnitude that qualifies as 'displacement'",
+        "required_future_evidence": "measure impulse size vs ATR/range on tick data"
+      },
+      {
+        "feature": "fvg_created",
+        "type": "boolean",
+        "official_teaching": "strong OB leaves an FVG; weak OB leaves none",
+        "observed_campaign_evidence": "C003 references FVG/Daily FVG around the setup (partial)",
+        "current_inference": "FVG-left-behind separates strong from weak",
+        "unresolved_threshold": "FVG size that counts",
+        "required_future_evidence": "detect the 3-candle imbalance after the OB"
+      },
+      {
+        "feature": "ob_touch_count",
+        "type": "integer",
+        "official_teaching": "fresh/first-tap is strongest; tapped-multiple is weak/spent",
+        "observed_campaign_evidence": "C003 spoken 'already mitigated, don't enter another long here' (supports the mitigated-veto)",
+        "current_inference": "prior-tap count degrades an OB",
+        "unresolved_threshold": "how many taps = 'spent'",
+        "required_future_evidence": "count retests from price history"
+      },
+      {
+        "feature": "ob_fresh",
+        "type": "boolean",
+        "official_teaching": "unmitigated = strong",
+        "observed_campaign_evidence": "C003 mitigated-OB veto (supports)",
+        "current_inference": "freshness ~ first-tap strength",
+        "unresolved_threshold": "definition of 'mitigated'",
+        "required_future_evidence": "price-return check"
+      },
+      {
+        "feature": "trend_alignment",
+        "type": "categorical(aligned/counter/chop)",
+        "official_teaching": "strong OB aligned with Trend EMA/HTF bias; weak OB against-trend or in chop",
+        "observed_campaign_evidence": "C001/C003 wins were at HTF levels in-context; C002 loss far from HTF zones",
+        "current_inference": "alignment with HTF bias favours quality",
+        "unresolved_threshold": "which EMA/what bias definition",
+        "required_future_evidence": "define + compute the Trend EMA/bias"
+      },
+      {
+        "feature": "bpr_overlap",
+        "type": "boolean",
+        "official_teaching": "OB inside a BPR = strongest confluence (bonus)",
+        "observed_campaign_evidence": "NOT_OBSERVABLE in the campaigns (BPR appears in the docs/edu, not clearly in campaign frames)",
+        "current_inference": "bonus confluence, not required",
+        "unresolved_threshold": "overlap tolerance",
+        "required_future_evidence": "detect BPR + overlap on charts"
+      },
+      {
+        "feature": "market_chop_state",
+        "type": "categorical(trend/range/chop)",
+        "official_teaching": "weak OB forms in chop/range",
+        "observed_campaign_evidence": "NOT_OBSERVABLE",
+        "current_inference": "chop degrades OB quality",
+        "unresolved_threshold": "chop vs trend classifier",
+        "required_future_evidence": "a regime classifier on price data"
+      }
+    ],
+    "note": "NO numerical thresholds assigned. This is a feature list for future evidence-gathering, not a detector."
+  },
+  "no_final_strategy_declared": true
+}

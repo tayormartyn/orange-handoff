@@ -1,0 +1,116 @@
+{
+  "indicator": "Farouk's Playbook — Smart Money Suite (FP-INDICATOR-005)",
+  "note": "TradingView 'Create alert' interface for this indicator. EVIDENCE ONLY — no alert/webhook created or activated. 10 screenshots (added AFTER the video pass) inventoried + hashed.",
+  "screenshots": [
+    {
+      "filename": "farouk_indicator_alert_conditions.png",
+      "sha256": "91679b898afe0b46315f6d03e17d268fd1969446ccdb32de3d551dc8ff92fbad",
+      "content": "full condition dropdown (Farouk conditions)",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 161936.png",
+      "sha256": "ae363e1847db395ca729e8e3767f46fd0c5432a30a98905f40496d12ae729dbe",
+      "content": "Create-alert dialog + dropdown (shows 'Crossing' boundary at bottom)",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 162212.png",
+      "sha256": "f9eef00c36bb0a14f35f750d9ee10805825f5e4e2400457c01f1e8eea81aba1e",
+      "content": "condition dropdown (near-dup of the conditions view)",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 162826.png",
+      "sha256": "5f738ed58924816843f4ffb064315bcea5515c954c7df98a4d3e574c48cf309a",
+      "content": "condition dropdown (full list, UTC+1)",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 163347.png",
+      "sha256": "28efec47d33542262c97017e004cdf46a92ba9c8cf442cf8f140bfc1fee6a38f",
+      "content": "dropdown scrolled: Farouk conditions end at 'CHoCH down' -> generic 'Crossing/Crossing Up/Crossing Down + SHOW MORE'",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 163743.png",
+      "sha256": "e9b34d58261df86608f43b2182b8b30dff25bbc10db6dfe4c1a821ffa5d522d0",
+      "content": "A+++ setup dialog: Message='A+++ setup', Trigger=Once only, Notifications=App/Toasts",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 164018.png",
+      "sha256": "b4d1181d26b62de3379c806cc0279482a6d3e18a2f381899f404c0dab3277beb",
+      "content": "Any alert() function call dialog: Message=indicator name, NO Trigger/frequency row (script-controlled)",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 164132.png",
+      "sha256": "f7c883d941d165f05922542d24257fde99c8bc3c1ee3322356e7b15090725009",
+      "content": "Frequency dropdown: Once only / Once per bar / Once per bar close / Once per minute (A+++ condition)",
+      "status": "ANALYZED"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 163256.png",
+      "sha256": "0cbfaad68e5b1ebab53a30eecfb1511e67e6c50fecb8e65b614b237661ba8881",
+      "content": "alert-dialog detail crop",
+      "status": "INVENTORIED_NOT_INDIVIDUALLY_TRANSCRIBED (consistent with analyzed set)"
+    },
+    {
+      "filename": "Screenshot 2026-07-05 163621.png",
+      "sha256": "fe72d9a119e0af5e4e3d2e071d7c6c9bf3c1d7be390d8862740f28b8fe8d2c58",
+      "content": "alert-dialog detail crop",
+      "status": "INVENTORIED_NOT_INDIVIDUALLY_TRANSCRIBED (consistent with analyzed set)"
+    }
+  ],
+  "farouk_specific_alert_conditions": [
+    "Any alert() function call (script-controlled)",
+    "Bullish BPR formed",
+    "Bearish BPR formed",
+    "Bullish Engulfing",
+    "Bearish Engulfing",
+    "Sweep low",
+    "Sweep high",
+    "Asia Trap Bearish",
+    "Asia Trap Bullish",
+    "A+++ setup",
+    "A+ or better",
+    "CHoCH up",
+    "CHoCH down"
+  ],
+  "generic_tradingview_conditions": {
+    "note": "begin AFTER 'CHoCH down' (separator)",
+    "list": [
+      "Crossing",
+      "Crossing Up",
+      "Crossing Down",
+      "(SHOW MORE: Greater Than, Less Than, Entering/Exiting Channel, Moving Up/Down % — standard TradingView, not expanded)"
+    ]
+  },
+  "any_alert_function_call": {
+    "present": true,
+    "meaning": "the indicator emits script-controlled alert() calls; when this condition is chosen, TradingView shows NO Trigger/frequency row -> frequency is set IN-SCRIPT (alert() freq argument). Runtime message = whatever the script's alert() passes (not shown).",
+    "visible_message_default": "Farouk's Playbook — Smart Money Suite (Smart Money Suite)"
+  },
+  "frequency_controls_standard": [
+    "Once only (triggers once when condition met)",
+    "Once per bar (once per bar when met)",
+    "Once per bar close (triggers at bar close)",
+    "Once per minute (while condition remains met)"
+  ],
+  "frequency_note": "Applies to the named alertcondition() conditions (e.g., A+++ setup example = 'Once only'). 'Once per bar close' (closed-bar firing) is available but user-selected, not enforced.",
+  "message_payloads": {
+    "named_conditions": "pre-filled with the CONDITION NAME as plain text (e.g., 'A+++ setup'); editable ('>'); no {{placeholders}}/JSON visible",
+    "any_alert_call": "indicator name; actual content = script alert() at runtime (unknown)"
+  },
+  "notifications_shown": [
+    "App",
+    "Toasts"
+  ],
+  "webhook_shown": "NOT selected in these captures (App/Toasts default)",
+  "timezone_on_chart": "UTC+1; symbol XAUUSD 3m Pepperstone",
+  "source_asset_ids": [
+    "sa-e8a33802a013d74f (video)",
+    "alert screenshots (hashed above)"
+  ]
+}

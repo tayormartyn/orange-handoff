@@ -1,0 +1,64 @@
+{
+  "doc_id": "orange_controlled_reboot_status",
+  "as_of": "2026-07-12T11:25Z",
+  "mode": "CONTROLLED_REBOOT_LISTENER_RESTORE_CYCLE_004_CHECK",
+  "cause": "laptop powered down due to heat (~2026-07-12 10:06Z, inferred from whale_room.session last write)",
+  "restored_from": ["ORANGE_MASTER_SOURCE_OF_TRUTH.md/.json (as-of 2026-07-11)", "FABLE5_TRAINING_BATCH_003_REPORT.md + 2 JSONs", "forward_cursor.json", "pre_mark_candidates_v0_1.jsonl", "MONITORING_RESUME_STATUS.md"],
+  "listener": {
+    "old_pid_87988": "DEAD (no such PID; zero python processes at reboot)",
+    "new_pid": 23012,
+    "started_local": "2026-07-12 13:18:08",
+    "started_utc": "2026-07-12T11:18:08Z",
+    "command": "\"C:\\Python314\\python.exe\" -u module_a_telegram.py",
+    "working_dir": "C:\\Users\\Marty\\signal-terminal",
+    "mode": "PREVIEW",
+    "channel": "-1001902136163",
+    "log_stdout": "data/listener_logs/listener_20260712_131808.out.log",
+    "log_stderr": "data/listener_logs/listener_20260712_131808.err.log (empty)",
+    "exactly_one_listener": true,
+    "media_preservation": "active (banner-verified)"
+  },
+  "catch_up": {
+    "cursor_before": 45646,
+    "store_max_before": 45647,
+    "backfill_possible": true,
+    "method": "copied-session (temp copy of whale_room.session; authorized connect, no login; iter_messages min_id=45646; capture-only via ProspectiveRecorder + quote context BROKER_NOT_CONNECTED; disconnect; temp session removed; live listener untouched; nothing sent)",
+    "telegram_msgs_after_45646": [45647, 45648],
+    "recovered": [{"id": 45648, "posted_utc": "2026-07-12T10:57:00Z", "chars": 94, "media": null, "fwd_origin": "1937743421:post30107"}],
+    "store_max_after": 45648,
+    "classification": {
+      "45647": "NON_XAU (forwarded navigatorjosh: slow market, Hormuz uncertainty, waiting on HYPE entry; photo already preserved live)",
+      "45648": "IRRELEVANT (forwarded terrilyn admin announcement: new 'newsfeed' channel; no market content)"
+    },
+    "alert_lane": "not read - cannot fire (market closed until ~2026-07-12T22:00Z reopen; Sunday); same treatment as cycles 002/003"
+  },
+  "cycle_004": {
+    "triggered": false,
+    "xau_f001_created": false,
+    "reason": "no XAU/Gold setup, management, or relevant context after msg 45646 (one NON_XAU + one IRRELEVANT)",
+    "forward_cursor": "left at 45646 / CYCLE_003 (45647/45648 examined, non-triggering)",
+    "ohlc_export_required": false,
+    "pending": "XAU-F001 at first real XAU post after ~22:00Z gold reopen under full 8C+8D+8F+001B+002B capture spec, v0.2/v0.3 parallel"
+  },
+  "pre_mark_candidates": {
+    "PM-F001-SELL-4150-4184": {"label": "PRE_MARK_OBSERVED", "match": "PENDING", "expires": "2026-07-17", "status": "ACTIVE/unchanged"},
+    "PM-F002-SUPPLY-4430-4480": {"label": "PRE_MARK_OBSERVED", "match": "PENDING", "expires": "2026-07-31", "status": "ACTIVE/unchanged"}
+  },
+  "gates_verified_from_source": {
+    "MODE": "PAPER (config.py L15)",
+    "LISTENER_MODE": "PREVIEW (config.py L363)",
+    "EXECUTION_ENABLED": "False (config.py L472)",
+    "CTRADER_EXECUTION_ENABLED": "False (ctrader_config.py L28; broker_readonly/config.py L20)",
+    "ORDER_SENDING_ENABLED": "False (demo_executor/config.py L15)",
+    "ORDER_MANAGEMENT_ENABLED": "False (demo_executor/config.py L16)"
+  },
+  "safety": {
+    "execution_paths": "broker/QST/cTrader/nano/copy absent or hard-disabled; only process = single PREVIEW listener",
+    "permits_leases_orders": "none created",
+    "tradingview_worker_r2_secrets": "untouched",
+    "not_integration_ready": "unchanged",
+    "sizing_or_order_fields_produced": false,
+    "detector": "v0.3 active forward scorer, v0.2 parallel A/B, v0.4 offline backlog only - unchanged"
+  },
+  "next": "Cycle 004 / XAU-F001 at first real XAU post after tonight ~22:00Z gold reopen (listener PID 23012 live); then v0.4 offline replay; optional Feb-Mar 2026 + May OHLC matching; Orange master re-issue with Batch-003 + reboot deltas"
+}

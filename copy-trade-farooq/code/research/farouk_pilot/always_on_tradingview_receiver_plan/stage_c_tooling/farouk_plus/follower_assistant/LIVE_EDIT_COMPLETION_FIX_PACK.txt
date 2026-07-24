@@ -1,0 +1,111 @@
+================================================================================
+REVIEW EVIDENCE PACK — LIVE_EDIT_COMPLETION_CREATES_NO_CAMPAIGN fix (D-106) — PHASE A
+Date: 2026-07-22   OFFLINE build + proof. DEPLOY HELD (Phase B: F008 closed + clean window + this review).
+================================================================================
+NO live-system touch: no service restarted, no live ledger written. live_wire.py is EDITED ON DISK
+(staged); the running listener/wire still execute their prior in-memory code until a Phase-B restart.
+
+--------------------------------------------------------------------------------
+1. FILE MANIFEST (SHA-256, first 25)
+--------------------------------------------------------------------------------
+  follower_assistant/live_wire.py                 a8cc4706cef62c7544cd8e89e   (single-source refactor + edit branch + guard wiring + edited_at plumbing)
+  parser_replay/edit_completion_guard.py          420d2e23b7ae05f5ee2f1573e   (the look-ahead guard — safety heart)
+  parser_replay/tests_edit_completion_guard.py    5f5e8587ac59ebf1269265974   (guard window/boundary/fail-closed tests)
+  follower_assistant/tests_edit_completion_lookup.py 48ee1bdec2e2dd5ed6cc309d9 (OUTCOME-LOOKUP exhaustive tests)
+  follower_assistant/tests_live_wire.py           c0f669ff3d258720fc61b1a2c   (wire regression + matrix + Q1 gate-inherit + Q2 multi-edit)
+  (harness schema fixes: tests_full_exit_replay.py, edit_sweep_proof.py — stale rowseq/edited cols added)
+
+--------------------------------------------------------------------------------
+2. TEST RESULTS (all offline)
+--------------------------------------------------------------------------------
+  tests_edit_completion_guard.py        9 passed, 0 failed   (backdating case FIRST)
+  tests_edit_completion_lookup.py      10 passed, 0 failed   (the outcome-lookup safety heart)
+  tests_live_wire.py                   35 live-wire checks PASS  (regression + matrix + Q1 + Q2)
+  tests_full_exit_replay.py            40 full-exit + EXACT-SEQUENCE checks PASS
+  parser_coverage_replay.py (43k)      REGRESSION 12/12 PASS   (all rows reconciled; classification intact)
+  edit_sweep_proof.py                  PASS   (GREEN rowseq sweep; real-DB new_messages identical 641 rows)
+
+--------------------------------------------------------------------------------
+3. ITEM 1 — SINGLE-SOURCE REFACTOR + BYTE-IDENTITY (the pass/fail gate)
+--------------------------------------------------------------------------------
+The ENTRY-creation block was extracted into _emit_campaign(...), called by BOTH the CREATED path
+and the completing-edit path. For source=='created' the emitted records are byte-identical to the
+former inline block (same fields, strings, card note).
+BYTE-IDENTITY PROVEN:
+  * tests_full_exit_replay: 40/40 including the EXACT-SEQUENCE replay + F004 freeze causal cutoff,
+    hermetic temp world -> the refactored CREATED path reproduces the frozen outcomes byte-for-byte.
+  * 43k parser_coverage_replay: 12/12, every row reconciled, classification layer unchanged.
+  * Live F001-F007 frozen records are PHYSICALLY UNTOUCHED (the new code was never run against the
+    real ledger): forward anchor fdba2dfac769a5de UNCHANGED; freeze ledger = 4 records UNCHANGED.
+  => empty diff on F001-F007 frozen outcomes.
+
+--------------------------------------------------------------------------------
+4. ITEM 2 — edit-completion time plumbed + T=0 at edit-completion
+--------------------------------------------------------------------------------
+new_edit_rows now selects telegram_edited_at_utc -> msg['edited_at']. The completing-edit path sets
+posted_at = edit-completion time before _emit_campaign, so build_setup_record stamps timestamp_utc
+there and strategy_router.freeze_router freezes T=0 at edit-completion (NOT the original post).
+PROVEN (tests_live_wire case a): the F008-shaped edit (post 14:03:48, edit 14:04:00) creates a
+campaign whose timestamp_utc starts 2026-07-22T14:04:00 (edit-completion), not 14:03:48.
+
+--------------------------------------------------------------------------------
+5. ITEM 3 — THE LOOK-AHEAD GUARD + OUTCOME-LOOKUP (the safety heart) — over-tested
+--------------------------------------------------------------------------------
+Guard (edit_completion_guard, 9/9): outcome in (post, edit] -> BLOCKED; boundary ts==edit -> BLOCKED;
+outcome after edit -> PROSPECTIVE; prior-trade outcome -> not blocking; malformed -> fail-closed.
+Outcome-lookup (_gold_outcome_evidence_ts, 10/10):
+  ok  entry's OWN 'missing stop' review is NOT counted   <-- the exact mis-count you flagged
+  ok  in-window MANAGEMENT review IS counted -> BLOCKED
+  ok  management just-AFTER-edit -> PROSPECTIVE (F008-would-have-worked)
+  ok  boundary: outcome EXACTLY at edit-completion -> BLOCKED
+  ok  terminal + orphan-management both counted
+  ok  non-outcome setup + a parse-review NOT counted
+  ok  malformed ledger line skipped (no crash) ; absent ledger -> empty
+
+--------------------------------------------------------------------------------
+6. ITEM 4 — MATRIX (tests_live_wire)
+--------------------------------------------------------------------------------
+  case (a)         completing edit, no campaign, pre-outcome  -> PROPOSAL_EMITTED_FROM_EDIT (ONE new campaign, T=0 at edit)
+  case (a-BLOCKED) slow completing edit AFTER outcome         -> RETROSPECTIVE_EDIT_COMPLETION_BLOCKED (NO campaign)
+  case (c)         edit to a message that ALREADY has a campaign -> EDIT_REVISION_RECORDED (unchanged; no new campaign)
+
+--------------------------------------------------------------------------------
+7. LIVE SYSTEM UNTOUCHED / GATES
+--------------------------------------------------------------------------------
+  Gates: EXECUTION/CTRADER/DEMO = False; PAPER/PREVIEW. 7/7 services up (running prior code).
+  forward ledger anchor fdba2dfac769a5de UNCHANGED; freeze ledger 4 records UNCHANGED. No restart.
+  F008 stays a NON-PROSPECTIVE capture gap; no backdated freeze; prospective count stays 4.
+
+--------------------------------------------------------------------------------
+8. REVIEW Q1 — GATE INHERITANCE ON THE EDIT PATH (author + instrument scope)
+--------------------------------------------------------------------------------
+The edit branch does NOT re-implement the gate; it classifies via the SAME interpreter.classify(),
+whose FIRST act (interpreter.py:105) is  if not is_farouk_gold(raw_text): return NOT_FAROUK_GOLD.
+is_farouk_gold requires the literal header  ^seascalperfarouk Posted in .*gold-trades . So a
+non-Farouk author, or a crypto/non-gold channel, short-circuits to NOT_FAROUK_GOLD BEFORE any
+pricing check; the edit branch's  ce["kind"] == "ENTRY"  (live_wire.py:380) is then False and the
+message can NEVER reach _emit_campaign. Gate applies on the edit path, not just parse-validity.
+PROVEN (tests_live_wire case 13):
+  edit:11(500) "kyledoops Posted in captains-take ... XAUUSD SELL 4161-4171 SL 4187" (valid gold
+               body, NON-Farouk author) -> EDIT_REVISION_RECORDED(no campaign affected), NO campaign
+  edit:12(501) "seascalperfarouk Posted in crypto-trades ... BTCUSD BUY 62000-61000 SL 60000"
+               (crypto, K-047)                          -> EDIT_REVISION_RECORDED(no campaign affected)
+  proposal count unchanged.  => author-gate + instrument-scope inherited on the edit path.
+
+--------------------------------------------------------------------------------
+9. REVIEW Q2 — MULTIPLE-EDIT SEQUENCING (edit1 creates, edit2 must not re-create)
+--------------------------------------------------------------------------------
+build_setup_record stamps message_ids=[int(msg id)] (interpreter.py:423). After a completing edit1
+creates a campaign, that campaign's message_ids contains the id; a later edit2 to the SAME message
+matches `touched` (live_wire.py:363) and takes CASE (c) -> EDIT_REVISION_RECORDED, appending only a
+CAMPAIGN_PAUSE. It never reaches CASE (a), so NO second campaign and NO re-freeze (freeze is
+downstream of a new XAU_F_SETUP, which case (c) does not emit).
+PROVEN (tests_live_wire case 14):
+  edit:13(400/r2) completing edit, pre-outcome -> PROPOSAL_EMITTED_FROM_EDIT(XAU-F003-20260722)
+  edit:14(400/r3) later edit, same message     -> EDIT_REVISION_RECORDED(['XAU-F003-20260722'])
+  proposal count +1 total (not +2).  => second edit modifies, never re-creates or re-freezes.
+
+================================================================================
+END — Phase A complete and proven (incl. review Q1 + Q2). DEPLOY HELD for Phase B
+(F008 closed + clean window + review). Recorded in the brain as D-108.
+================================================================================

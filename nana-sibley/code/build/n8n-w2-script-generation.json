@@ -1,0 +1,313 @@
+{
+  "name": "Sybil's Hearth — W2 Script Generation",
+  "nodes": [
+    {
+      "id": "m1",
+      "name": "Poll Screened",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "m2",
+      "name": "Get Screened Submissions",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2,
+      "position": [
+        260,
+        300
+      ],
+      "parameters": {
+        "resource": "record",
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "YOUR_BASE_ID",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "Submissions",
+          "mode": "list"
+        },
+        "filterByFormula": "={{ \"Status='screened'\" }}",
+        "options": {}
+      },
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_CRED_ID",
+          "name": "Airtable PAT"
+        }
+      }
+    },
+    {
+      "id": "m3",
+      "name": "Assemble Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        520,
+        300
+      ],
+      "parameters": {
+        "jsCode": "// Assemble the 4 layers. PASTE the real module text from the repo into the\n// constants below (prompts/system-prompt.md, character-modules, format-modules,\n// output-schema.md), or fetch them from a 'Prompts' Airtable table.\nconst SYSTEM = `<<PASTE prompts/system-prompt.md code block>>`;\nconst CHARACTER_CARDS = {\n  nan_sybil: `<<PASTE nan-sybil.md (+ presence-and-stillness)>>`,\n  maeve: `<<PASTE maeve.md>>`, jesse: `<<PASTE jesse.md>>`,\n  family: `<<PASTE all three for multi-character>>`,\n};\nconst FORMAT_MODULES = {\n  hero_dream_short: `<<PASTE hero-dream-short.md>>`,\n  validation_moment: `<<PASTE validation-moment.md>>`,\n  fireside_tale: `<<PASTE fireside-tale.md>>`,\n  dream_of_the_week: `<<PASTE dream-of-the-week.md>>`,\n  multi_character: `<<PASTE multi-character.md>>`,\n};\nconst OUTPUT_SCHEMA = `<<PASTE prompts/output-schema.md code block>>`;\n\nconst rec = $json;                       // the screened Submissions record\nconst format = rec.format || \"hero_dream_short\";\nconst character = format === \"multi_character\" ? \"family\"\n                : (rec.character || [\"nan_sybil\",\"maeve\",\"jesse\"][($runIndex||0)%3]);\n\nconst task = [\n  \"FORMAT: \" + format,\n  \"CHARACTER: \" + character,\n  \"DREAM/TOPIC: \" + rec.dreamText,\n  \"VARIABLES: \" + JSON.stringify(rec.variables || {}),\n].join(\"\\n\");\n\nconst fullPrompt = [SYSTEM, CHARACTER_CARDS[character], FORMAT_MODULES[format],\n  \"OUTPUT SCHEMA:\\n\" + OUTPUT_SCHEMA, \"TASK INPUT:\\n\" + task].join(\"\\n\\n\");\n\nreturn [{ json: { fullPrompt, character, format, submissionId: rec.submissionId } }];"
+      }
+    },
+    {
+      "id": "m4",
+      "name": "Script Engine (LLM)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        780,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $env.ANTHROPIC_API_KEY }}"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"model\":\"claude-sonnet-4-latest\",\"max_tokens\":1500,\"temperature\":0.5,\"system\":\"={{ $json.fullPrompt }}\",\"messages\":[{\"role\":\"user\",\"content\":\"Return the script JSON now.\"}]}"
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1500
+    },
+    {
+      "id": "m5",
+      "name": "Validate Script",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        300
+      ],
+      "parameters": {
+        "jsCode": "// Validate the engine's JSON. Throwing here + 'Retry On Fail' on this node\n// gives the 3x retry from the W2 pseudocode.\nconst BANNED = [\"wellbeing\",\"journey\",\"self-care\",\"your energy\",\"content\",\n                \"subscribe\",\" guys\",\"manifest\",\"vibe\"];\nlet out;\ntry { out = JSON.parse($json.content[0].text); }\ncatch (e) { throw new Error(\"Invalid JSON from engine — retry\"); }\n\nconst CHARS = [\"nan_sybil\",\"maeve\",\"jesse\",\"family\"];\nconst FORMATS = [\"hero_dream_short\",\"validation_moment\",\"fireside_tale\",\n                 \"dream_of_the_week\",\"multi_character\"];\nif (!CHARS.includes(out.character)) throw new Error(\"bad character enum\");\nif (!FORMATS.includes(out.format)) throw new Error(\"bad format enum\");\n\nconst allText = JSON.stringify(out.script_lines || []).toLowerCase();\nif (BANNED.some(w => allText.includes(w.trim()))) throw new Error(\"banned word present\");\n\n// speaker integrity\nif (out.format !== \"multi_character\") {\n  const ok = (out.script_lines||[]).every(l => l.speaker === out.character);\n  if (!ok) throw new Error(\"wrong speaker for single-character format\");\n}\nreturn [{ json: { validated: out, character: out.character, format: out.format,\n  submissionId: $('Assemble Prompt').first().json.submissionId } }];"
+      },
+      "retryOnFail": true,
+      "maxTries": 3
+    },
+    {
+      "id": "m6",
+      "name": "IF Safety Flag",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1300,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "leftValue": "={{ $json.validated.safety_flag }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "m7",
+      "name": "Route → Care Queue",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        200
+      ],
+      "parameters": {
+        "resource": "record",
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "YOUR_BASE_ID",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "Submissions",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.submissionId }}",
+            "Safety Flag": true,
+            "Status": "care_queue"
+          }
+        }
+      },
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_CRED_ID",
+          "name": "Airtable PAT"
+        }
+      }
+    },
+    {
+      "id": "m8",
+      "name": "Create Script (needs_review)",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        420
+      ],
+      "parameters": {
+        "resource": "record",
+        "operation": "create",
+        "base": {
+          "__rl": true,
+          "value": "YOUR_BASE_ID",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "Scripts",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Character": "={{ $json.character }}",
+            "Format": "={{ $json.format }}",
+            "Script JSON": "={{ JSON.stringify($json.validated) }}",
+            "Status": "needs_review",
+            "Version": 1
+          }
+        }
+      },
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_CRED_ID",
+          "name": "Airtable PAT"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Poll Screened": {
+      "main": [
+        [
+          {
+            "node": "Get Screened Submissions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Screened Submissions": {
+      "main": [
+        [
+          {
+            "node": "Assemble Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Assemble Prompt": {
+      "main": [
+        [
+          {
+            "node": "Script Engine (LLM)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Script Engine (LLM)": {
+      "main": [
+        [
+          {
+            "node": "Validate Script",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Script": {
+      "main": [
+        [
+          {
+            "node": "IF Safety Flag",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Safety Flag": {
+      "main": [
+        [
+          {
+            "node": "Route → Care Queue",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create Script (needs_review)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {},
+  "meta": {
+    "note": "Sybil's Hearth scaffold — attach credentials, verify node versions, paste module text."
+  }
+}

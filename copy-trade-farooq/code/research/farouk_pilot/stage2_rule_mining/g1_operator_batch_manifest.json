@@ -1,0 +1,137 @@
+[
+ {
+  "rule": "FR-008",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_sunday_5_july_2026",
+  "media": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "timestamp": "00:21:57",
+  "load_bearing": "Price digits garbled ('10... 1009', 'stop loss 90, 3,990') \u2014 CRITICAL price-level ambiguit",
+  "statement": "Sweep-then-reverse: after a liquidity sweep of a session high/low expe"
+ },
+ {
+  "rule": "FR-013",
+  "bucket": "AUTO_RETRY",
+  "source_id": "fp-gmt20251221_181518_recording_1",
+  "media": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "timestamp": "[02:10:28]-[02:11:13]",
+  "load_bearing": "'weak/week high/low' = wick high/low mishear pervasive through the whole segment; construc",
+  "statement": "Pivot-level system: after a break of structure, box the move from wick"
+ },
+ {
+  "rule": "FR-027",
+  "bucket": "EAR",
+  "source_id": "fp-gmt20251221_181518_recording_1",
+  "media": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "timestamp": "[01:18:50]-[01:19:25]",
+  "load_bearing": "'candle glow' = mishear of 'candle close'. | Price digits spoken as 'four zero seventy fou",
+  "statement": "A break is valid only with a candle close beyond the level: a wick-onl"
+ },
+ {
+  "rule": "FR-034",
+  "bucket": "AUTO_RETRY",
+  "source_id": "fp-live_with_farouk_sunday_12_july_2026",
+  "media": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "timestamp": "01:11:55",
+  "load_bearing": "Timeframe numbers (1/3/5-minute) are load-bearing for a scalp rule and within the mishear-",
+  "statement": "Internal-structure scalping: sub-5-minute internal breaks (1m break co"
+ },
+ {
+  "rule": "FR-039",
+  "bucket": "AUTO_RETRY",
+  "source_id": "fp-live_with_farouk_sunday_5_july_2026",
+  "media": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "timestamp": "00:29:11",
+  "load_bearing": "'FEGC' is a garbled FVG term; timeframe list (3-day, 12h) should be audio-confirmed.",
+  "statement": "Level strength scales with timeframe: daily > 12h > 4h > 1h > 15m > 5m"
+ },
+ {
+  "rule": "FR-041",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_sunday_5_july_2026",
+  "media": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "timestamp": "01:22:08",
+  "load_bearing": "Garbled phrasing 'it's nine times, I don't trade nine times' \u2014 could be 'nine times out of",
+  "statement": "Monday/Asia avoidance: no Monday-Asia trades (weekend gap risk); he sk"
+ },
+ {
+  "rule": "FR-051",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_friday_3_july_2026",
+  "media": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "timestamp": "00:28:30",
+  "load_bearing": "'this week' = this wick mishear; 'stop plus' = stop loss. | 'Stop plus' = stop loss mishea",
+  "statement": "Stops are structural ('easy invalidation'): a little beyond the tested"
+ },
+ {
+  "rule": "FR-055",
+  "bucket": "EAR",
+  "source_id": "fp-gmt20251221_181518_recording_1",
+  "media": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "timestamp": "[01:41:35]-[01:42:27]",
+  "load_bearing": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 40",
+  "statement": "Aggressive scaling out: partial profits early and often (fixed fractio"
+ },
+ {
+  "rule": "FR-056",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_sunday_5_july_2026",
+  "media": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "timestamp": "00:09:50",
+  "load_bearing": "Pip counts (200/250) and dollar equivalences are load-bearing numbers.",
+  "statement": "Daily target frame: ~100-300 pips per day taken as sub-5m scalps (a sm"
+ },
+ {
+  "rule": "FR-058",
+  "bucket": "EAR",
+  "source_id": "fp-schermopname_2026_06_29_om_16_37_24",
+  "media": "store\\03\\036eef476c3ce1b2__Schermopname 2026-06-29 om 16.37.24.mov",
+  "timestamp": "[00:00:53]-[00:01:09]",
+  "load_bearing": "Transcript contradicts itself ('close the worst entry... hold your best' vs 'the worst ent",
+  "statement": "Return-to-entry protocol: when price comes back to the averaged entry "
+ },
+ {
+  "rule": "FR-061",
+  "bucket": "AUTO_RETRY",
+  "source_id": "fp-live_with_farouk_friday_3_july_2026",
+  "media": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "timestamp": "01:05:10",
+  "load_bearing": "'the 50 minutes or the five minutes FPG' \u2014 15-minute mishear plus self-correction; exact i",
+  "statement": "Invalidation-cut: when price reclaims the 5m FVG + OB against the posi"
+ },
+ {
+  "rule": "FR-063",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_sunday_5_july_2026",
+  "media": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "timestamp": "00:56:20",
+  "load_bearing": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabili",
+  "statement": "React-don't-predict doctrine: wait for the market to show its hand, pl"
+ },
+ {
+  "rule": "FR-076",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_friday_3_july_2026",
+  "media": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "timestamp": "00:30:06",
+  "load_bearing": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but",
+  "statement": "Focus: one instrument (gold - the system's statistics are gold-built),"
+ },
+ {
+  "rule": "FR-086",
+  "bucket": "EAR",
+  "source_id": "fp-live_with_farouk_sunday_5_july_2026",
+  "media": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "timestamp": "00:03:42",
+  "load_bearing": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digi",
+  "statement": "Playbook indicator usage doctrine (PRIOR ART FP-INDICATOR-005/006 - tr"
+ },
+ {
+  "rule": "FR-099",
+  "bucket": "EAR",
+  "source_id": "fp-gmt20251221_181518_recording_1",
+  "media": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "timestamp": "[00:03:32]",
+  "load_bearing": "'Five, 55% chance' ambiguous (55%? 5 days?); percentage needs audio check.",
+  "statement": "Weekly temporal patterns: Monday+Tuesday set the week's high/low range"
+ }
+]

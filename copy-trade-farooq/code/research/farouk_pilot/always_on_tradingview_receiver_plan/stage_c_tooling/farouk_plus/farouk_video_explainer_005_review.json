@@ -1,0 +1,64 @@
+{
+  "review": {
+    "pack_id": "FP-LIVE-VIDEO-EXPLAINER-005",
+    "extracted_instrument": "XAUUSD (multi-asset round-up: SOL/BTC/oil/silver sections excluded from XAU lanes)",
+    "direction": null, "entry_zone": null, "sl": null, "tp_levels": [], "result_claim": null,
+    "evidence_used": [45650],
+    "confidence": 0.7, "contradictions": [], "missing_evidence": ["no frames sampled this pass (visual channel = spoken references only)"],
+    "ohlc_required": false, "verdict": "EXTRACTED",
+    "evidence_id": "FP-LIVE-VIDEO-EXPLAINER-005",
+    "source_filename": "Live with Farouk, Sunday, 12 July 2026.mp4",
+    "source_path": "C:/Users/Marty/Downloads/",
+    "modified_time_local": "2026-07-12 22:19:41",
+    "bytes": 299880028,
+    "sha256": "942dc4af6f74504bd0ffeb80d37153943696c6dc51e42467e083707ede85cb5d",
+    "duration_min": 75.2,
+    "transcript": "derived/transcripts/explainer_005/FP-LIVE-VIDEO-EXPLAINER-005_transcript.json (1048 segments, complete, durable)",
+    "rights_status": "RIGHTS_PENDING_PRIVATE_REVIEW (his own YouTube live, linked in msg 45650; private research only)",
+    "apparent_context": "Sunday Jul-12 pre-reopen round-up; forward levels for Monday",
+    "linked_setups": ["Friday (Jul-10) gold sell retrospective (S4-era)", "PM-F001 corroboration", "PM-F003/PM-F004 seeds"],
+    "gold_levels_with_timestamps": [
+      {"ts": "00:23:12", "level": "4135/4136 + 4125-4130", "class": "unmitigated 5m OB + liquidity; long-side caution"},
+      {"ts": "00:24:31", "level": "break 4150 -> HTF sell zone (12h BPR + 1h OB)", "class": "SELL after 1h BOS"},
+      {"ts": "00:27:32", "level": "4160-4165-4170", "class": "near-term SELL zone (inside PM-F001)"},
+      {"ts": "00:28:14", "level": "4250 (OB-1h + weekly old OB + unmitigated BPR)", "class": "HTF SELL; 'marked before two days three days daily'"},
+      {"ts": "00:33:09", "level": "4250-4260 sell zone; 'invalidation easy'; 'bigger stop loss'", "class": "HTF SELL"},
+      {"ts": "00:30:14", "level": "4250 = 50% of the move", "class": "confluence note"},
+      {"ts": "00:35:23", "level": "4140-4150 break-up pivot", "class": "bias level"},
+      {"ts": "00:34:57", "level": "3850-3860-3863 untested OB + FVG mid", "class": "downside magnet / bounce zone (restated 01:14:55)"},
+      {"ts": "00:30:37", "level": "accumulate 4000s-3000s spot, 5-10y", "class": "lane-1 personal aside; excluded from follower lanes"}
+    ],
+    "method_evidence": {
+      "selection_rule": "unmitigated/untested OB/FVG/BPR/flat candles (58 refs)",
+      "confluence_stack": "OB+FVG+BPR + session H/L + origin-of-move + liquidity + 50%-retrace + channel (00:30:20)",
+      "magnet_doctrine": "00:21:19 'they will go to that level'; 01:03:40 'like magnets'",
+      "session_trigger": "Asia H/L break + 5/15m close (00:54:05); session-start direction first ~1-1.5h (01:04:40)",
+      "stop_rule": "above level/flat candle; bigger when mitigated levels above (00:53:36); 4250-60 = bigger stop (00:33:25)",
+      "entry_mechanics": "limit at zone (00:10:46); snipe after mitigation (01:05:49); wait for Monday to form (01:14:05)",
+      "discretion": "zone choice/boundaries discretionary ('I think/maybe'); NO reproducible grade rule; A-grade formula remains UNKNOWN",
+      "indicator_announcement": "panel CHANGE announced this week: +internal structure break, remove something (01:09:46-01:11:26) -> re-verify alert/panel mapping when shipped"
+    },
+    "management_evidence": {
+      "friday_gold": "sell after Asia-low retest pre-London + 5/15m/1h BOS (00:21:53); +190-200p -> SL-to-entry -> BE-scratch stop-out (00:22:26)",
+      "btc": "TP1+TP2 then SL-to-entry, profit at 64 (00:09:05)",
+      "risk_free_framing": "00:11:06",
+      "new_claim_watch": "'silver is first going and then gold' per 22-year data (00:50:23)"
+    },
+    "pre_mark_comparisons": {
+      "PM-F001-SELL-4150-4184": {"verdict": "PARTIAL_MATCH (video-corroboration lane)", "arithmetic": "[4160,4170] within [4150,4184]; direction SELL agrees; ts 00:27:32", "formal_post_match": "PENDING/unchanged (not a Telegram gold-trades post)"},
+      "PM-F002-SUPPLY-4430-4480": {"verdict": "INSUFFICIENT_EVIDENCE", "arithmetic": "zone not discussed (no 44xx reference); unchanged, pending"}
+    },
+    "new_seeds": ["PM-F003-SELL-4250-4260 (exp 2026-07-19)", "PM-F004-DEMAND-3850-3863 (exp 2026-07-31)"],
+    "widget_or_sensitive_fields": "none recorded; sizing digits in crypto sections excluded by policy",
+    "review_only": true, "executable": false, "trade_ready": false, "observation_only": true
+  },
+  "knowledge_incorporation": {
+    "evidence_register": "this file + MD twin",
+    "methodology_corpus": "review MD method section (construction recipe with timestamps)",
+    "level_construction_spec": "corroborates LANE6_PRE_MARK_BUILDER_SPEC inputs; adds 50%-of-move confluence note (capture-only)",
+    "feature_candidate_backlog": "silver_leads_gold_prior (WATCHLIST); indicator_panel_change_watch (NEW watch item)",
+    "replay_test_backlog": "none new (magnet/mitigation items already queued)",
+    "lane6_guarded_annotation": "PM-F003 + PM-F004 instantiated; PM-F001 video-corroboration noted",
+    "v03_live_scoring": "NOTHING ADDED (confirmed)"
+  }
+}

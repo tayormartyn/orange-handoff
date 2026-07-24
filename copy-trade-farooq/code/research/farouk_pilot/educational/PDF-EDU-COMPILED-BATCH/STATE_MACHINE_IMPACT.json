@@ -1,0 +1,51 @@
+{
+  "ref": "FAROUK_STATE_MACHINE_SPEC_v0.1 (NOT modified)",
+  "impacts": [
+    {
+      "target": "stop placement",
+      "status": "NARROWED",
+      "reason": "FP-EDU-028 OTE: stop just OUTSIDE the OTE (Fib) zone."
+    },
+    {
+      "target": "reward-to-risk",
+      "status": "NARROWED",
+      "reason": "FP-EDU-028/011: aim >=2R (or next liquidity). First explicit R:R target."
+    },
+    {
+      "target": "Fib / OTE location",
+      "status": "NEW (candidate)",
+      "reason": "61.8%/78.6% OTE zone (setup-specific, NOT mandatory across all setups)."
+    },
+    {
+      "target": "session timing (SESSION_CONTEXT)",
+      "status": "NARROWED (NY-specific)",
+      "reason": "NY open 13:30 UTC; NY window 13:30-15:00 UTC (031). NOT universal TZ authority — model-specific."
+    },
+    {
+      "target": "PO3_AMD / session-sweep families",
+      "status": "SUPPORTED (candidates)",
+      "reason": "029 Po3, 031-033 session models = new candidate families."
+    },
+    {
+      "target": "F_CONFLUENCE_UNKNOWN",
+      "status": "UNCHANGED",
+      "reason": "no confluence count added."
+    },
+    {
+      "target": "value-area calc",
+      "status": "PARTIALLY_NARROWED",
+      "reason": "68% confirmed but profile window/period still unknown -> not a complete algorithm."
+    },
+    {
+      "target": "F_REPAINT/timezone-authority",
+      "status": "UNCHANGED",
+      "reason": "compiled PDF, no live/canonical evidence."
+    }
+  ],
+  "caveats": [
+    "68% is NOT a complete VP algorithm",
+    "13:30 UTC is NY-model-specific, NOT universal timezone authority",
+    "61.8/78.6 are OTE-specific, not mandatory everywhere",
+    "institution/smart-money = narrative"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "integration_id": "two_video_lessons_orange_integration_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / SINGLE_SESSION_WRITES",
+  "sources": ["FP-LIVE-VIDEO-EXPLAINER-001 (sha256 f1200fed…d892)", "FP-LIVE-VIDEO-EXPLAINER-002 (sha256 f061b23c…4cf4)"],
+  "immutability_note": "extends — does not edit — FAROUK_PLUS_RULESET_v0_1, R6 model v0_1, Lane-6 v0_1, 8C addendum, 8D schema",
+  "durable_lessons": [
+    "method substantially mechanical: Asia H/L + London/US lows frame; lost Asia low w/ decisive close flips bias; unmitigated OB/FVG/BPR retest + M5/M15 CHoCH confirmation; 4H veto",
+    "indicator panel exposes exact machine-readable prices (CHoCH/OB-retest/Fresh-OB/Asia-break) -> Lane-6 = read that lane",
+    "stop width adaptive by level type; re-learned after near-misses",
+    "layered entries: 4-5 equal tranches, one stop, tranche exits, BE after profit (8D schema confirmed)",
+    "his-vs-follower gap = fill-lag + stop-width + feed difference (Vantage vs Pepperstone)",
+    "R2b provenance upgraded: his own stated doctrine ('after the range you don't enter again'), empirically confirmed by both verified SL losses",
+    "PRE_MARK seeds live: sell ~4150-4184 ('80-84 BE' plan); weekly supply 4430-4480 (leak-free, registered pre-post)"
+  ],
+  "feature_classifications": {
+    "stop_width_by_level_type": "PROMISING_SCORING_FEATURE",
+    "fill_lag_cost": "PROMISING_SCORING_FEATURE",
+    "indicator_price_level_extraction": "PROMISING_SCORING_FEATURE",
+    "vantage_vs_pepperstone_feed_difference": "WATCHLIST_FEATURE",
+    "layered_zone_tranche_map": "WATCHLIST_FEATURE",
+    "mitigated_level_wider_invalidation": "NEEDS_FORWARD_EVIDENCE",
+    "rejected_this_batch": []
+  },
+  "lane6_backlog_updates": [
+    "pre-mark levels may come from indicator-visible CHoCH/OB/FVG/BPR/Asia-break prices (preferred source)",
+    "every PRE_MARK_CANDIDATE must include invalidation_width AND stop_width_by_level_type",
+    "anti-leakage contract unchanged: evidence_ts < pre_mark_time <= post_time; frozen-window hash; post-dated citations auto-invalidate"
+  ],
+  "r6_updates": [
+    "fill_lag_cost measured on every XAU-F record (post-time fill minus indicator-level first-touch, signed)",
+    "lane separation extended: farouk_private_fill | posted_zone_fill | post_time_fill | orange_ready_fill(lane6) | management_instruction_outcome | headline_claim — never merged"
+  ],
+  "cycle_002_capture_additions": [
+    "exact indicator levels when visible in screenshots/videos/posts (verbatim prices)",
+    "feed/source notes where available",
+    "level_type_tag: FRESH | MITIGATED | RETEST | OB | FVG | BPR | ASIA_BREAK | HTF_SUPPLY_DEMAND (multi-tag allowed)"
+  ],
+  "forbidden_unchanged": ["TRADE_READY", "EXECUTE", "ORDER", "LOT_SIZE", "BROKER_ROUTE", "ACCOUNT_ID",
+                           "RISK_SIZE", "COPY_TRADE", "NANO", "LIVE", "DEMO_EXECUTE"],
+  "safety": {
+    "listener_pid_87988": "untouched",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "execution_surface": "none; no trade-ready labels created"
+  }
+}

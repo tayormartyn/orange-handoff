@@ -1,0 +1,369 @@
+{
+  "fixture_date": "2026-06-25",
+  "fixture_hash": "e5ccdac74e288b3f687c88dd9c90b0d21620637f81a99db85c9d54082f5fd6d4",
+  "message_count": 8,
+  "farouk_count": 8,
+  "non_farouk_count": 0,
+  "messages": [
+    {
+      "message_key": "telegram:baseline:344",
+      "message_id": "344",
+      "sent_at_utc": "2026-06-25 14:42",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "0a3c76f998aa3afe30d687212233621eafb510e4235e9a6c873a877ca106428b",
+      "content_hash_recomputed": "0a3c76f998aa3afe30d687212233621eafb510e4235e9a6c873a877ca106428b",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` XAUUSD BUY 4016-4006  SL 3970   Take Profit Targets:  TP1: 4022 TP2: 4027 TP3: 4040 TP4: 4065 TP5: open",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [
+          {
+            "event_type": "NEW_CAMPAIGN",
+            "track": "PROVIDER",
+            "leg_ref": null,
+            "parent_ref": null,
+            "fields": {},
+            "association_status": "CONFIRMED",
+            "evidence_quote": "XAUUSD BUY 4016-4006"
+          },
+          {
+            "event_type": "OPEN_LEG",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "asset": {
+                "value": "XAUUSD",
+                "provenance": "LITERAL_TEXT"
+              },
+              "direction": {
+                "value": "BUY",
+                "provenance": "LITERAL_TEXT"
+              },
+              "entry_low": {
+                "value": "4006",
+                "provenance": "LITERAL_TEXT"
+              },
+              "entry_high": {
+                "value": "4016",
+                "provenance": "LITERAL_TEXT"
+              },
+              "stop": {
+                "value": "3970",
+                "provenance": "LITERAL_TEXT"
+              },
+              "tp1": {
+                "value": "4022",
+                "provenance": "LITERAL_TEXT"
+              },
+              "tp2": {
+                "value": "4027",
+                "provenance": "LITERAL_TEXT"
+              },
+              "tp3": {
+                "value": "4040",
+                "provenance": "LITERAL_TEXT"
+              },
+              "size": {
+                "value": null,
+                "provenance": "UNSUPPORTED",
+                "size_quality": "NOT_STATED"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "XAUUSD BUY 4016-4006  SL 3970",
+            "note": "RULING (Option A): tp1/tp2/tp3 literal. TP4=4065 and TP5='open' are in the text but BEYOND the published tp1-3 schema -> logged as a schema limitation (see known_limitations). TP5='open' has no numeric target -> NULL. Size not stated -> NULL."
+          }
+        ],
+        "notes": "Campaign open: gold BUY leg-1 with a 5-target TP ladder (only tp1-3 are schema fields)."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:345",
+      "message_id": "345",
+      "sent_at_utc": "2026-06-25 15:22",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "47540b88e1aa37cf2f40bcd213be863bc4c00f7157a199e24c2dbb2599e219fd",
+      "content_hash_recomputed": "47540b88e1aa37cf2f40bcd213be863bc4c00f7157a199e24c2dbb2599e219fd",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` tp sl entry",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [
+          {
+            "event_type": "PARTIAL_TP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {},
+            "association_status": "CONFIRMED",
+            "evidence_quote": "tp",
+            "note": "RULING: 'tp sl entry' = partial TP (non-terminal) + SL->entry (matches June 24 #328)."
+          },
+          {
+            "event_type": "MOVE_STOP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "stop_to": {
+                "value": "entry",
+                "provenance": "LITERAL_TEXT"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "sl entry"
+          }
+        ],
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:346",
+      "message_id": "346",
+      "sent_at_utc": "2026-06-25 15:22",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_recomputed": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale`",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [],
+        "notes": "EMPTY body -> image-only -> MEDIA_MISSING. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:347",
+      "message_id": "347",
+      "sent_at_utc": "2026-06-25 15:24",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "37bf0a87b805e8043e7c1d2ddd999fa386d31611d0b710b5f73503850a78d154",
+      "content_hash_recomputed": "37bf0a87b805e8043e7c1d2ddd999fa386d31611d0b710b5f73503850a78d154",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 300 pips 💙💙💙",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [],
+        "notes": "COMMENTARY — '300 pips' magnitude + emoji. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:348",
+      "message_id": "348",
+      "sent_at_utc": "2026-06-25 15:24",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "bde09a1692abcf0a7ec6bba976b37c8c76df43cac57b9d397b3238ac50d5e049",
+      "content_hash_recomputed": "bde09a1692abcf0a7ec6bba976b37c8c76df43cac57b9d397b3238ac50d5e049",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` show profit in `🪙・bragging-rights`",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [],
+        "notes": "COMMENTARY — member-directed ('show profit in bragging-rights'), not an account trade action."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:349",
+      "message_id": "349",
+      "sent_at_utc": "2026-06-25 15:28",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "2ed54b33fb7e2fb6460c523171eb4cd56d066d3e8d720ada874b604d34328d56",
+      "content_hash_recomputed": "2ed54b33fb7e2fb6460c523171eb4cd56d066d3e8d720ada874b604d34328d56",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` hold 25% for higher levels sl to entry",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [
+          {
+            "event_type": "HOLD_REMAINDER",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "remaining_fraction": {
+                "value": null,
+                "provenance": "UNSUPPORTED"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "hold 25% for higher levels",
+            "note": "RULING: 'hold 25%' is NOT the allowlist phrase 'leave 25%' -> remaining_fraction NULL (non-allowlist/morphology). No 'take 75% off' invented."
+          },
+          {
+            "event_type": "MOVE_STOP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "stop_to": {
+                "value": "entry",
+                "provenance": "LITERAL_TEXT"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "sl to entry"
+          }
+        ],
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:350",
+      "message_id": "350",
+      "sent_at_utc": "2026-06-25 15:38",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "4f92b96ba7f83f79b191bcac49b0ba2579e1df35fefe5d28447b1d98c2a18a6f",
+      "content_hash_recomputed": "4f92b96ba7f83f79b191bcac49b0ba2579e1df35fefe5d28447b1d98c2a18a6f",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Gold breakdown  📎 Schermopname_2026-06-25_om_17.32.25.mov https://cdn.discordapp.com/attachments/1316499375203287161/1519728400628060262/Schermopname_2026-06-25_om_17.32.25.mov?ex=6a3e9cdd&is=6a3d4b5d&hm=8a83f099c1f0894911ddbef817b3fa9dd5939aa64f7710ad946583a738593fbc&",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [],
+        "notes": "RULING R5: '.mov Gold breakdown' screencast -> MEDIA_REFERENCE_ONLY. No events, no numbers. (NB: 'Schermopname' Dutch -> auto media regex misses it.)"
+      }
+    },
+    {
+      "message_key": "telegram:baseline:351",
+      "message_id": "351",
+      "sent_at_utc": "2026-06-25 15:55",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "23c7151d414159a9a42c65ff5e787a3f5cd747aba642c670e38a99b0f6218bec",
+      "content_hash_recomputed": "23c7151d414159a9a42c65ff5e787a3f5cd747aba642c670e38a99b0f6218bec",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` take more profit leave 10% open",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_BUY_2026-06-25",
+        "events": [
+          {
+            "event_type": "PARTIAL_CLOSE",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "remaining_fraction": {
+                "value": 0.1,
+                "provenance": "DETERMINISTIC_CONVERSION"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "take more profit leave 10% open",
+            "note": "RULING: 'take more profit' = direct call to act (real event). 'leave 10%' IS in the allowlist -> remaining_fraction 0.10 (DETERMINISTIC_CONVERSION). Leaves ~10% runner -> campaign OPEN."
+          }
+        ],
+        "notes": "Partial close leaving a 10% runner; campaign remains OPEN."
+      }
+    }
+  ],
+  "authored_campaigns": {
+    "authored_by": "Martyn (held-out lock 2026-06-29)",
+    "immutable": true,
+    "held_out_blind_test": true,
+    "note": "Second held-out fixture. Locked BEFORE any extractor run. LLM must reproduce, never alter, this — INCLUDING the locked uncertainty.",
+    "GOLD_BUY_2026-06-25": {
+      "asset": "XAUUSD",
+      "direction": "BUY",
+      "track": "PROVIDER",
+      "legs": {
+        "leg-1": {
+          "entry_low": "4006",
+          "entry_high": "4016",
+          "stop": "3970",
+          "tp1": "4022",
+          "tp2": "4027",
+          "tp3": "4040",
+          "size": null,
+          "size_quality": "NOT_STATED",
+          "status": "OPEN",
+          "outcome": "Ends OPEN (~10% runner). Partial TP (345), hold-25% NULL (349), partial close leaving 10% (351, remaining=0.10)."
+        }
+      },
+      "leg_count": 1,
+      "needs_review": [],
+      "closed_by": null,
+      "final_state": {
+        "campaign_status": "OPEN",
+        "remaining_fraction": 0.1,
+        "full_close": false,
+        "note": "Final explicit fraction is 'leave 10% open' (351) -> 0.10 (allowlisted). Intermediate 'hold 25%' (349) stayed NULL."
+      },
+      "rulings": {
+        "tp_ladder_optionA": "tp1-3 literal; TP4/TP5 schema-limitation (TP5 NULL)",
+        "msg345": "tp sl entry = PARTIAL_TP + MOVE_STOP",
+        "msg349_hold25": "non-allowlist -> remaining NULL",
+        "msg351_leave10": "allowlisted -> remaining 0.10 (DETERMINISTIC_CONVERSION)",
+        "media_350": "MEDIA_REFERENCE_ONLY, no events"
+      },
+      "known_limitations": [
+        "SCHEMA COVERAGE: published fields are tp1/tp2/tp3 only. Msg 344's TP4=4065 and TP5='open' are real in the text but UNREPRESENTABLE in the 3-wide schema. A missing TP4/TP5 in the scorecard is the SCHEMA, NOT an extractor miss. TP5='open' has no numeric target -> NULL regardless.",
+        "VALIDATOR MORPHOLOGY: allowlist is literal. 'hold 25%' != 'leave 25%' -> remaining NULL (349). 'leave 10%' DOES match -> 0.10 (351). These NULLs are the allowlist being literal, not the extractor failing.",
+        "AUTO media_status may mis-read msg 350 (.mov) as TEXT_ONLY ('Schermopname' is Dutch); truth marks it MEDIA_REFERENCE_ONLY."
+      ]
+    }
+  },
+  "authored_truth_hash": "22041d7aeb06bd373c21e23cab42eaf8d422b4913625da518bd3dd6d4c649bce"
+}

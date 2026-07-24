@@ -1,0 +1,22 @@
+{
+  "part": "Three",
+  "indicator_owner": "[kyle] v1 (ORB; indicator selected in ref_00-40; ORB is a v1 feature per FP-INDICATOR-001)",
+  "rules": {
+    "1_orb_construction": "Opening-range box per session: GREEN line = top, BLUE line = midline ('hidden liquidity'), bottom = downside. Acts as support/resistance.",
+    "2_first_15_min": "YES — the ORB = the first 15 minutes of a session ('15 minutes is full scalp'; transcript 'the first 15 minutes to open' [mis-transcribed '50 minutes']).",
+    "3_timezone": "Configurable, GMT-based ('depends on the time zone you are in'). Exact GMT+1 per FP-INDICATOR-001 [kyle] v1 dialog.",
+    "4_session_times": "Three ORBs: Asia, London, New York. Exact times NOT restated here; per FP-INDICATOR-001 v1: Asia 03:00-03:15, London 09:00-09:15, NY 15:30-15:45 (GMT+1).",
+    "5_wick_vs_close_break": "Emphasis on RETEST; 'lost the orb'=short (close-based); a wick that 'fails to go higher' = fakeout. Candle-close not strictly demanded for the ORB — retest is primary.",
+    "6_momentum": "Directional momentum implied ('started really bullish, went up'); NO numeric momentum rule.",
+    "7_retest": "CORE requirement — 'all breakouts retest'; 'wait for retest, take a long'; 'aim for the level'.",
+    "8_valid_vs_fakeout": "Inside the ORB = choppiness, DON'T trade; outside = trade. Fakeout = fail to hold / double-top then reverse. Blue midline = 'hidden liquidity' inside the ORB.",
+    "9_entry_timing": "On the RETEST of the ORB top/bottom after the break ('wait for the 15 minutes to open', then break+retest).",
+    "10_stop": "NOT numerically stated (attested 'tight stops').",
+    "11_target": "'Aim for the level' / next level; fast scalp targets.",
+    "12_role_of_components": "COMBINE: volume candles (direction), POC, VWAP, liquidity; 'break of structure' mentioned once. ORB is the primary structure, confirmed by the others.",
+    "13_decision_vs_discretion": "Indicator DRAWS the ORB and EMITS buy/sell signals; Farouk applies DISCRETION (session choice, retest, combine, 'I don't trade inside the orb').",
+    "14_signal_times": "Conflicting: here 'you can do the signal' to adjust time; in FP-INDICATOR-001 'signal times does nothing, I'm going to remove it'. NET: little/no value.",
+    "15_alerts_repaint_intrabar_close": "Emits buy/sell signals; 'lost the orb' close-based; repaint / alert timing NOT stated -> UNKNOWN."
+  },
+  "source_asset_id": "sa-7004096984f87411"
+}

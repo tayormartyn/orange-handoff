@@ -1,0 +1,165 @@
+{
+ "schema": "orange_candidate_dataset_v0_1",
+ "feature_rows": [
+  {
+   "dataset_schema_version": "orange_candidate_dataset_v0_1",
+   "dataset_manifest_version": "orange_candidate_dataset_v0_1",
+   "campaign_id": "XAU-F001-20260714",
+   "freeze_id": "7f9fb6c2cb019f4ac71573d370c3f12c6a08495fee9ccd6734748046dccd46c9",
+   "freeze_hash": "7f9fb6c2cb019f4ac71573d370c3f12c6a08495fee9ccd6734748046dccd46c9",
+   "outcome_id": "2107826688e54293ed9da9dab32ccb576e7ada76aa4602dbba43a9482a41cfd8",
+   "outcome_hash": "2107826688e54293ed9da9dab32ccb576e7ada76aa4602dbba43a9482a41cfd8",
+   "candidate_id": "XAU-F001-20260714/campaign",
+   "record_class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+   "source_tier": "TIER_2_ADVANCED_EDUCATION_METHOD",
+   "objective_lane": "A_FOLLOWER",
+   "router_version": "strategy_router_v0_1",
+   "feature_contract_versions": [
+    "FAROUK_HIERARCHICAL_STRATEGY_ROUTER_v0_1.json",
+    "source_tier_contract_v0_1.json",
+    "objective_lane_contract_v0_1.json",
+    "advanced_setup_family_contracts_v0_1.json",
+    "structural_trigger_priority_v0_1.json",
+    "valid_bos_contract_v0_1.json",
+    "execution_profiles_v0_1.json",
+    "OTE_FIB_ENTRY_CANDIDATE_v0_1.json",
+    "volume_profile_boundary_v0_1.json",
+    "authority_instrument_scope_matrix_v0_1.json"
+   ],
+   "outcome_contract_version": "outcome_contract_v0_1",
+   "source_event_hash": "UNKNOWN",
+   "instrument": "XAUUSD",
+   "session": "LONDON",
+   "direction": "LONG",
+   "setup_family_eligibility": [
+    "FVG_CONTINUATION_5M",
+    "ASIA_SESSION_FAKEOUT"
+   ],
+   "liquidity_narrative": "NARRATIVE_FROZEN",
+   "poi_roles": [
+    "TRUE_POI_CANDIDATE",
+    "POTENTIAL_INDUCEMENT",
+    "LIQUIDITY_TARGET",
+    "ENTRY_TRIGGER_LEVEL",
+    "INVALIDATED_LEVEL",
+    "UNKNOWN_ROLE"
+   ],
+   "inducement_flag": true,
+   "structural_trigger_state": "BREAK_OF_STRUCTURE",
+   "completed_candle_state": "CANDLE_STATES_FROZEN",
+   "valid_bos_state": "BOS_CANDIDATES_FROZEN",
+   "scob_state": "SCOB_CANDIDATES_FROZEN",
+   "ote_anchor_count": 11898,
+   "ote_documented_levels": [
+    "0.618",
+    "0.786"
+   ],
+   "execution_profile_alternatives": [
+    "D1_H1",
+    "H4_M15",
+    "H1_M5",
+    "M15_M1",
+    "PLAYBOOK_5M_3M_1M"
+   ],
+   "no_trade_state": [
+    "WAIT_FOR_CONFIRMATION"
+   ],
+   "candidate_availability_ts": 1784018286,
+   "market_data_cutoff_ts": 1784018286,
+   "decision_ts": 1784018286,
+   "causal_integrity": "PASS",
+   "data_integrity": "PASS",
+   "source_provenance": "UNVERIFIED",
+   "intrabar_ambiguous": false,
+   "eligible_for_prospective_evidence": false,
+   "eligible_for_training": false,
+   "eligible_for_validation": false,
+   "eligible_for_performance_attribution": false,
+   "exclusion_reasons": [
+    "record_class=SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+    "not prospective-eligible",
+    "source_provenance!=VERIFIED"
+   ]
+  },
+  {
+   "dataset_schema_version": "orange_candidate_dataset_v0_1",
+   "dataset_manifest_version": "orange_candidate_dataset_v0_1",
+   "campaign_id": "XAU-F002-20260714",
+   "freeze_id": "d27d3658500857d1268c6e694abee34f71c3aeb20d83e5c60a9e012e67fb732a",
+   "freeze_hash": "d27d3658500857d1268c6e694abee34f71c3aeb20d83e5c60a9e012e67fb732a",
+   "outcome_id": "8bd9d32d84538909282a88bf7d24b90e448c2267c693a4193112a4130789263c",
+   "outcome_hash": "8bd9d32d84538909282a88bf7d24b90e448c2267c693a4193112a4130789263c",
+   "candidate_id": "XAU-F002-20260714/campaign",
+   "record_class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+   "source_tier": "TIER_2_ADVANCED_EDUCATION_METHOD",
+   "objective_lane": "A_FOLLOWER",
+   "router_version": "strategy_router_v0_1",
+   "feature_contract_versions": [
+    "FAROUK_HIERARCHICAL_STRATEGY_ROUTER_v0_1.json",
+    "source_tier_contract_v0_1.json",
+    "objective_lane_contract_v0_1.json",
+    "advanced_setup_family_contracts_v0_1.json",
+    "structural_trigger_priority_v0_1.json",
+    "valid_bos_contract_v0_1.json",
+    "execution_profiles_v0_1.json",
+    "OTE_FIB_ENTRY_CANDIDATE_v0_1.json",
+    "volume_profile_boundary_v0_1.json",
+    "authority_instrument_scope_matrix_v0_1.json"
+   ],
+   "outcome_contract_version": "outcome_contract_v0_1",
+   "source_event_hash": "UNKNOWN",
+   "instrument": "XAUUSD",
+   "session": "NY_OPEN",
+   "direction": "SHORT",
+   "setup_family_eligibility": [
+    "FVG_CONTINUATION_5M",
+    "ASIA_SESSION_FAKEOUT"
+   ],
+   "liquidity_narrative": "NARRATIVE_FROZEN",
+   "poi_roles": [
+    "TRUE_POI_CANDIDATE",
+    "POTENTIAL_INDUCEMENT",
+    "LIQUIDITY_TARGET",
+    "ENTRY_TRIGGER_LEVEL",
+    "INVALIDATED_LEVEL",
+    "UNKNOWN_ROLE"
+   ],
+   "inducement_flag": true,
+   "structural_trigger_state": "BREAK_OF_STRUCTURE",
+   "completed_candle_state": "CANDLE_STATES_FROZEN",
+   "valid_bos_state": "BOS_CANDIDATES_FROZEN",
+   "scob_state": "SCOB_CANDIDATES_FROZEN",
+   "ote_anchor_count": 13018,
+   "ote_documented_levels": [
+    "0.618",
+    "0.786"
+   ],
+   "execution_profile_alternatives": [
+    "D1_H1",
+    "H4_M15",
+    "H1_M5",
+    "M15_M1",
+    "PLAYBOOK_5M_3M_1M"
+   ],
+   "no_trade_state": [
+    "WAIT_FOR_CONFIRMATION"
+   ],
+   "candidate_availability_ts": 1784035581,
+   "market_data_cutoff_ts": 1784035581,
+   "decision_ts": 1784035581,
+   "causal_integrity": "PASS",
+   "data_integrity": "PASS",
+   "source_provenance": "UNVERIFIED",
+   "intrabar_ambiguous": false,
+   "eligible_for_prospective_evidence": false,
+   "eligible_for_training": false,
+   "eligible_for_validation": false,
+   "eligible_for_performance_attribution": false,
+   "exclusion_reasons": [
+    "record_class=SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+    "not prospective-eligible",
+    "source_provenance!=VERIFIED"
+   ]
+  }
+ ]
+}

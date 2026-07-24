@@ -1,0 +1,33 @@
+{
+  "batch_id": "fable5_training_batch_001",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / SINGLE_SESSION",
+  "processed": [
+    {"item": "FP-EDU-004 OB Strong-vs-Weak (repo PDF 2pp)", "topics": ["strong/weak rubric", "mitigation depth", "displacement-as-FVG-artifact"], "confidence": "HIGH", "changes_orange": true},
+    {"item": "FP-EDU-003 Whaleroom Trading Guide (repo PDF 12pp)", "topics": ["BE-at-average", "tranche schedules 50/30/20 & 30/30/run", "layering cap <=3", "shared leg SL", "stop-beyond-structure", "enter-at-publish"], "confidence": "HIGH", "changes_orange": true, "excluded_by_policy": ["risk %", "leverage", "lot-by-balance", "compounding"]},
+    {"item": "FP-EDU-002 Playbook + Farouk Education (2) (repo text, grepped)", "topics": ["OTE stop outside zone", "stops outside range", "liquidity/stop-hunt narrative"], "confidence": "MEDIUM-HIGH", "changes_orange": "confirms F6"},
+    {"item": "FP-LIVE-VIDEO-EXPLAINER-003 (NEW) — Schermopname 2026-06-24 om 17.02.44.mov", "sha256": "e576af86dfbd41583e0927794311b563004dc5a452f1f21acfefbd27e4367b34", "bytes": 73642247, "links": ["XAU-J26-20260624"], "rights": "RIGHTS_PENDING_PRIVATE_REVIEW", "topics": ["stacked-confluence levels", "no-chase doctrine ('if it doesn't come to your level, skip')", "unmitigated preference"], "confidence": "MEDIUM-HIGH"},
+    {"item": "FP-LIVE-VIDEO-EXPLAINER-004 (NEW) — '10 min stream.mp4' (actually ~1h Jun-30/S1-era stream)", "sha256": "dadb6e541dda85b761ddf9a76f679b951602ace87d15fb0ee2875117b59b141c", "bytes": 187199456, "links": ["XAU-S1-20260630"], "rights": "RIGHTS_PENDING_PRIVATE_REVIEW", "topics": ["mitigated -> wider stop (stated 2x)", "stop below-low/above-high anchors", "mitigation vocabulary pervasive"], "confidence": "HIGH"},
+    {"item": "Schermopname 2026-07-05 indicator walkthrough — audio transcribed (screens already ingested as FP-INDICATOR-005 context)", "topics": ["Asia H/L framework", "OB extension semantics (zones project until mitigated)", "confluence stacking for win-rate"], "confidence": "MEDIUM-HIGH"}
+  ],
+  "skipped_duplicates": ["5 Downloads PDFs (byte-dup of repo)", "Live Jul-5 mp4", "indicator mov (repo copy)", "3 campaign movs = FP-CAMPAIGN-001/002/003", "GMT20251221 (FP-INDICATOR-001)", "GMT20251012 (FP-EDU-007)", "(1)/(2) duplicate copies"],
+  "later_review": ["Live with Farouk Friday 3 July 2026 (525MB; likely FP-EDU-001 true source; register-date discrepancy)", "3x Schermopname 2025-12-14 ([kyle] era)", "Trading Journal - Farouk - Whale Room.xlsx + trade-audit xlsx + WhaleRoom_TradeRecap_1.pdf (stop-width calibration data)", "Exochart/Delta-OI tutorials (out of scope per R-OI)"],
+  "lessons": {
+    "stop_width_by_level_type": {"finding": "structure-relative placement universal (4 sources); mitigated->wider stated 2x in v004", "class": "STRENGTHENS_EXISTING_FEATURE (F6) + provenance upgrade for mitigated_level_wider_invalidation (numeric mapping still NEEDS_FORWARD_EVIDENCE)"},
+    "mitigation_depth_zone_touch_count": {"finding": "first tap strongest; tapped-3x = spent (canonical diagram); v0.3 thresholds source-aligned", "class": "STRENGTHENS_EXISTING_FEATURE (F2)"},
+    "numeric_displacement": {"finding": "displacement testable by FVG artifact ('drops an FVG right after'), computable from OHLC — no pip threshold needed", "class": "NEW_PROMISING_FEATURE (displacement_fvg_artifact_test)"},
+    "strong_weak_levels": {"finding": "5-point STRONG-OB rubric (displacement+FVG, sweep-before, fresh, bias-aligned, BPR overlap)", "class": "STRENGTHENS_EXISTING_FEATURE (F3 rubric v0.1)"},
+    "be_sl_to_entry_nuance": {"finding": "layered positions: BE at +50p from the AVERAGE entry, one shared SL for all legs", "class": "NEW_PROMISING_FEATURE (lane-4/8D scratch-model refinement)"},
+    "tranche_schedules": {"finding": "Conservative 50/30/20; Advanced 30/30 + SL->entry(+50) + remainder runs", "class": "NEW_PROMISING_FEATURE (lane-4 parameter bracket)"},
+    "layered_zone_tranche_map": {"finding": "max 3 entries — 'never add a 4th entry to a loser'", "class": "NEW_PROMISING_FEATURE (layering cap flag)"},
+    "close_worst_hold_best": {"finding": "consistent with prior evidence; no new mechanics", "class": "ALREADY_IN_ORANGE"},
+    "fill_lag_cost": {"finding": "'Enter as soon as the signal is published' = official follower behaviour -> lane-3 canonical; no-chase doctrine (v003) bounds the lag", "class": "STRENGTHENS_EXISTING_FEATURE (R6)"},
+    "indicator_price_level_extraction": {"finding": "OB extension semantics: zones project forward until mitigated -> Lane-6 formation-time definition input", "class": "STRENGTHENS_EXISTING_FEATURE (Lane 6)"},
+    "confluence_order_ranking": {"finding": "OB+BPR overlap = 'strongest confluence' (EDU-004)", "class": "STRENGTHENS_EXISTING_FEATURE (F4)"},
+    "bos_choch_candle_close": {"finding": "no new evidence this batch", "class": "ALREADY_IN_ORANGE (ratified)"},
+    "doc_vs_practice_never_widen": {"finding": "EDU-003 'never move/remove/widen the stop' vs his taped adaptive widening", "class": "NEEDS_HUMAN_REVIEW"}
+  },
+  "v03_verdict": "SUPPORTED — F2 thresholds source-aligned; F3 gains rubric; F6 multi-source confirmed; graded-confluence posture matches; no contradictions, two refinement tensions",
+  "excluded_by_policy": "all risk-%, leverage, lot-size-by-balance, compounding content (EDU-003 pp.6-7,11-12) — noted in corpus, never enters Orange",
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none", "transcripts": "local ephemeral only"}
+}

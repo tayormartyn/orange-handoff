@@ -1,0 +1,1862 @@
+{
+ "method": "human-authored merge of duplicates and phrasing variants across the three miners BEFORE novelty gating (reviewer directive 2026-07-21)",
+ "raw_entry_counts": {
+  "miner1_july_live_sessions_a.json": 88,
+  "miner2_july_live_sessions_b.json": 103,
+  "miner3_older_and_short_recordings.json": 110
+ },
+ "merges": [
+  {
+   "canonical_rule_id": "FR-001",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 11
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 67
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 15
+    }
+   ],
+   "merge_reason": "Unmitigated levels (untested OBs, FVGs, BPRs, session highs/lows) act as magnets: price is expected to return "
+  },
+  {
+   "canonical_rule_id": "FR-002",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 19
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 83
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 19
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 92
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 93
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 39
+    }
+   ],
+   "merge_reason": "OB lifecycle: an OB is created by an impulsive displacement move that leaves an FVG; a fresh (never-tested) OB"
+  },
+  {
+   "canonical_rule_id": "FR-003",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 13
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 25
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 45
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 16
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 79
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 37
+    }
+   ],
+   "merge_reason": "FVG-claim cascade: once price candle-closes through the first opposing FVG on the 5/15-minute, expect the rema"
+  },
+  {
+   "canonical_rule_id": "FR-004",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 8
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 77
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 78
+    }
+   ],
+   "merge_reason": "BPR (balanced price range - overlapping opposing FVGs) is a mitigation-owed rejection zone traded on its first"
+  },
+  {
+   "canonical_rule_id": "FR-005",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 9
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 47
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 50
+    }
+   ],
+   "merge_reason": "Broken levels flip roles (broken resistance/OB becomes support and vice versa) and old levels - even months ol"
+  },
+  {
+   "canonical_rule_id": "FR-006",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 5
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 15
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 72
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 73
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 81
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 62
+    }
+   ],
+   "merge_reason": "Trade only at high-probability zones built from roughly 4-7 stacked confluences (structure break, ORB, gaps, l"
+  },
+  {
+   "canonical_rule_id": "FR-007",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 10
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 79
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 80
+    }
+   ],
+   "merge_reason": "Cluster doctrine: clusters are broad battle areas (vs institutional/precise OBs); 'which cluster made that hig"
+  },
+  {
+   "canonical_rule_id": "FR-008",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 14
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 17
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 34
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 62
+    }
+   ],
+   "merge_reason": "Sweep-then-reverse: after a liquidity sweep of a session high/low expect reversal (short a swept high, long th"
+  },
+  {
+   "canonical_rule_id": "FR-009",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 24
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 54
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 85
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 59
+    }
+   ],
+   "merge_reason": "Wick reading: clustered downside wicks = buyers (upside = sellers); 3-4 equal wicks are engineered liquidity t"
+  },
+  {
+   "canonical_rule_id": "FR-010",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 53
+    }
+   ],
+   "merge_reason": "Flat-top/flat-bottom candles (heavy-volume signature) are unmitigated levels gold must revisit; reversals are "
+  },
+  {
+   "canonical_rule_id": "FR-011",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 51
+    }
+   ],
+   "merge_reason": "Futures (CME/MGC) gaps act as magnets on gold: gaps get filled, and absence of remaining gaps above removes th"
+  },
+  {
+   "canonical_rule_id": "FR-012",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 43
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 44
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 45
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 46
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 47
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 48
+    }
+   ],
+   "merge_reason": "ORB doctrine: the opening range is the first 15 minutes of London (9:00-9:15) and New York (15:30-15:45 GMT+1)"
+  },
+  {
+   "canonical_rule_id": "FR-013",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 50
+    }
+   ],
+   "merge_reason": "Pivot-level system: after a break of structure, box the move from wick high to wick low; the box midpoint is a"
+  },
+  {
+   "canonical_rule_id": "FR-014",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 55
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 73
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 32
+    }
+   ],
+   "merge_reason": "Fake-move recognition: low/no-volume grinds ('staircase up, elevator down'), one-shot straight dumps without t"
+  },
+  {
+   "canonical_rule_id": "FR-015",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 71
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 72
+    }
+   ],
+   "merge_reason": "Low-TF reversal traps: a grind leaving FVGs that then prints CHoCH + first-FVG claim yields one large impulsiv"
+  },
+  {
+   "canonical_rule_id": "FR-016",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 69
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 92
+    }
+   ],
+   "merge_reason": "An inverted FVG (a claimed FVG) acts as resistance/support, especially when never retested."
+  },
+  {
+   "canonical_rule_id": "FR-017",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 49
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 75
+    }
+   ],
+   "merge_reason": "The market ranges ~90% of the time and the longer the range the bigger the eventual move; scalps are taken ins"
+  },
+  {
+   "canonical_rule_id": "FR-018",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 56
+    }
+   ],
+   "merge_reason": "A trendline/level tested many times will eventually break - count the touches and expect the break."
+  },
+  {
+   "canonical_rule_id": "FR-019",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 24
+    }
+   ],
+   "merge_reason": "News is used by the market to reach levels faster; the pre-marked levels, not the news direction, define the t"
+  },
+  {
+   "canonical_rule_id": "FR-020",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 83
+    }
+   ],
+   "merge_reason": "Round numbers (e.g. 4,300) are treated as psychological support where 'everybody will take a long'."
+  },
+  {
+   "canonical_rule_id": "FR-021",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 88
+    }
+   ],
+   "merge_reason": "Gold respects levels/gaps/flat candles better than crypto - the stated reason the system is applied primarily "
+  },
+  {
+   "canonical_rule_id": "FR-022",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 77
+    }
+   ],
+   "merge_reason": "Trend identification heuristic (attributed to mentor Carl): is price heading to the top-right or bottom-right "
+  },
+  {
+   "canonical_rule_id": "FR-023",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 63
+    }
+   ],
+   "merge_reason": "PO3 framing (accumulation, manipulation, expansion) endorsed as entry framing at high-timeframe OBs."
+  },
+  {
+   "canonical_rule_id": "FR-024",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 2
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 52
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 80
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 84
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 17
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 57
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 66
+    }
+   ],
+   "merge_reason": "Core A+ entry: a session high/low (especially Asia) broken with candle-close confirmation, then a retest of th"
+  },
+  {
+   "canonical_rule_id": "FR-025",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 4
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 53
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 3
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 13
+    }
+   ],
+   "merge_reason": "Break confirmation is a close-stack: 5-minute, 15-minute and 1-hour candle closes beyond the level (two-three "
+  },
+  {
+   "canonical_rule_id": "FR-026",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 7
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 64
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 66
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 36
+    }
+   ],
+   "merge_reason": "Confirmation ranking: change of character is the strongest confirmation (best on the 15-minute; low-TF after s"
+  },
+  {
+   "canonical_rule_id": "FR-027",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 11
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 12
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 84
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 54
+    }
+   ],
+   "merge_reason": "A break is valid only with a candle close beyond the level: a wick-only excursion is a sweep, and a BOS withou"
+  },
+  {
+   "canonical_rule_id": "FR-028",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 14
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 15
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 39
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 20
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 25
+    }
+   ],
+   "merge_reason": "OB-claim gating: no continuation/longs until price candle-closes above the overhead OB (daily/1h/zone) and ret"
+  },
+  {
+   "canonical_rule_id": "FR-029",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 46
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 56
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 82
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 91
+    }
+   ],
+   "merge_reason": "The pullback entry is the origin structure of the move - the OB at the break of structure (often with flat can"
+  },
+  {
+   "canonical_rule_id": "FR-030",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 18
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 48
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 5
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 22
+    }
+   ],
+   "merge_reason": "Entries are multi-point ladders (3/4/5 fills, e.g. five 0.2 lots of one total lot) across a zone built from ov"
+  },
+  {
+   "canonical_rule_id": "FR-031",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 41
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 42
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 91
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 40
+    }
+   ],
+   "merge_reason": "Reaction-first entries: at a target zone wait for the rejection/reaction (or BOS + retest) before entering; no"
+  },
+  {
+   "canonical_rule_id": "FR-032",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 80
+    }
+   ],
+   "merge_reason": "Triple confirmation for longs: opposing FVG claimed with a close + new bullish FVG and CHoCH created + candle "
+  },
+  {
+   "canonical_rule_id": "FR-033",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 16
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 65
+    }
+   ],
+   "merge_reason": "Market-maker presence check: fresh FVGs/OBs being created with closes in your direction plus more liquidity re"
+  },
+  {
+   "canonical_rule_id": "FR-034",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 65
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 28
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 35
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 33
+    }
+   ],
+   "merge_reason": "Internal-structure scalping: sub-5-minute internal breaks (1m break confirmed on 3/5m, retest of a small 1m OB"
+  },
+  {
+   "canonical_rule_id": "FR-035",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 52
+    }
+   ],
+   "merge_reason": "Gap-short setup: price reaches a gap, candle-closes below it, the retest fails to reclaim - short."
+  },
+  {
+   "canonical_rule_id": "FR-036",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 74
+    }
+   ],
+   "merge_reason": "Volume-comparison entry: when one breakout carries visibly more volume than a prior one, its origin zone is th"
+  },
+  {
+   "canonical_rule_id": "FR-037",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 64
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 65
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 66
+    }
+   ],
+   "merge_reason": "Fishel crypto scalp system: four synced timeframes (1h direction, entries on 1m, monitored 1m+5m); 50 EMA bias"
+  },
+  {
+   "canonical_rule_id": "FR-038",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 8
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 22
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 60
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 12
+    }
+   ],
+   "merge_reason": "High timeframe is king: HTF direction and confluence override low-TF signals; mapping is strictly top-down (we"
+  },
+  {
+   "canonical_rule_id": "FR-039",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 17
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 69
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 26
+    }
+   ],
+   "merge_reason": "Level strength scales with timeframe: daily > 12h > 4h > 1h > 15m > 5m OBs; the 3-day and 12h levels are espec"
+  },
+  {
+   "canonical_rule_id": "FR-040",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 9
+    }
+   ],
+   "merge_reason": "Working set: 4-5 charts (12h/daily/weekly/4h for bias) with execution on the low timeframe (1-minute, sometime"
+  },
+  {
+   "canonical_rule_id": "FR-041",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 27
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 1
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 2
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 59
+    }
+   ],
+   "merge_reason": "Monday/Asia avoidance: no Monday-Asia trades (weekend gap risk); he skips Asia roughly 9 times out of 10 (and "
+  },
+  {
+   "canonical_rule_id": "FR-042",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 28
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 4
+    }
+   ],
+   "merge_reason": "Friday discipline: at most one trade, sometimes none or very early; Monday and Friday are the riskiest days."
+  },
+  {
+   "canonical_rule_id": "FR-043",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 26
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 85
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 73
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 74
+    }
+   ],
+   "merge_reason": "Weekend/holiday regime: CME-closed weekend price action is not respected; positions are closed before the week"
+  },
+  {
+   "canonical_rule_id": "FR-044",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 75
+    }
+   ],
+   "merge_reason": "When London breaks Asia high, expect the US session to continue in the same direction."
+  },
+  {
+   "canonical_rule_id": "FR-045",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 76
+    }
+   ],
+   "merge_reason": "The US session first grabs liquidity from both sides before committing to one direction - don't be shaken out "
+  },
+  {
+   "canonical_rule_id": "FR-046",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 43
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 43
+    }
+   ],
+   "merge_reason": "Volume gates trading: session opens (London/US, first ~1-1.5h) provide the direction; no-volume periods and ma"
+  },
+  {
+   "canonical_rule_id": "FR-047",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 42
+    }
+   ],
+   "merge_reason": "Avoid pre-market (end of London into the US open): London profit-taking plus pre-US news make it difficult and"
+  },
+  {
+   "canonical_rule_id": "FR-048",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 49
+    }
+   ],
+   "merge_reason": "He does not (yet) trade the Asia ORB; ORB settings are active for London/US only."
+  },
+  {
+   "canonical_rule_id": "FR-049",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 24
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 36
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 82
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 8
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 89
+    }
+   ],
+   "merge_reason": "After TP1 (or roughly 50-60+ pips in profit), the stop moves to entry making the trade risk-free; members are "
+  },
+  {
+   "canonical_rule_id": "FR-050",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 9
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 71
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 28
+    }
+   ],
+   "merge_reason": "Wider stops when unmitigated levels/liquidity sit beyond the entry (an adverse sweep is expected first); share"
+  },
+  {
+   "canonical_rule_id": "FR-051",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 54
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 87
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 29
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 37
+    }
+   ],
+   "merge_reason": "Stops are structural ('easy invalidation'): a little beyond the tested wick/swing/FVG whose break invalidates "
+  },
+  {
+   "canonical_rule_id": "FR-052",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 81
+    }
+   ],
+   "merge_reason": "Crypto uses somewhat bigger stops due to volatility."
+  },
+  {
+   "canonical_rule_id": "FR-053",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 27
+    }
+   ],
+   "merge_reason": "Stated stop/target parameter instance: ~50-pip stop against 100-500-pip targets at stacked levels."
+  },
+  {
+   "canonical_rule_id": "FR-054",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 10
+    }
+   ],
+   "merge_reason": "Take-profit levels sit at unmitigated old OBs/FVGs - price bounces at levels never mitigated."
+  },
+  {
+   "canonical_rule_id": "FR-055",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 23
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 25
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 18
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 23
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 29
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 89
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 67
+    }
+   ],
+   "merge_reason": "Aggressive scaling out: partial profits early and often (fixed fractions; 50-90% off after impulsive moves; ba"
+  },
+  {
+   "canonical_rule_id": "FR-056",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 6
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 68
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 36
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 26
+    }
+   ],
+   "merge_reason": "Daily target frame: ~100-300 pips per day taken as sub-5m scalps (a small piece of the move), then done for th"
+  },
+  {
+   "canonical_rule_id": "FR-057",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 84
+    }
+   ],
+   "merge_reason": "Even a valid mitigation produces at least a 100-200 pip bounce ('dead cat') - enough for the scalp long."
+  },
+  {
+   "canonical_rule_id": "FR-058",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 21
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 7
+    }
+   ],
+   "merge_reason": "Return-to-entry protocol: when price comes back to the averaged entry after partial fills, close the worst ent"
+  },
+  {
+   "canonical_rule_id": "FR-059",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 35
+    }
+   ],
+   "merge_reason": "Hold a winner until the market makes another higher high (or exit into market close)."
+  },
+  {
+   "canonical_rule_id": "FR-060",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 20
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 77
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 48
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 69
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 6
+    }
+   ],
+   "merge_reason": "Duration policy: same-day closes; usually under an hour in a trade (personal scalps 5-10 minutes); no overnigh"
+  },
+  {
+   "canonical_rule_id": "FR-061",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 70
+    }
+   ],
+   "merge_reason": "Invalidation-cut: when price reclaims the 5m FVG + OB against the position, cut immediately (do not wait for t"
+  },
+  {
+   "canonical_rule_id": "FR-062",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 56
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 72
+    }
+   ],
+   "merge_reason": "After a stop-out: look for a recovery re-entry on the corrected read, but never force a setup - wait for the n"
+  },
+  {
+   "canonical_rule_id": "FR-063",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 41
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 78
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 61
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 40
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 102
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 30
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 46
+    }
+   ],
+   "merge_reason": "React-don't-predict doctrine: wait for the market to show its hand, play the probabilities with a checklist, t"
+  },
+  {
+   "canonical_rule_id": "FR-064",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 30
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 101
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 106
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 107
+    }
+   ],
+   "merge_reason": "Review/journaling discipline: journal every trade, review losses honestly, ~2h weekend chart review; keep one "
+  },
+  {
+   "canonical_rule_id": "FR-065",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 12
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 63
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 34
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 88
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 39
+    }
+   ],
+   "merge_reason": "Alarm-driven workflow: mark levels, set alarms (indicator 'Asia trap' etc. on the 5-minute), leave the chart; "
+  },
+  {
+   "canonical_rule_id": "FR-066",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 18
+    }
+   ],
+   "merge_reason": "If the entry level is lost, expect the next stacked zone below (session liquidity + FVG + BPR + fresh OB) and "
+  },
+  {
+   "canonical_rule_id": "FR-067",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 21
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 4
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 45
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 94
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 82
+    }
+   ],
+   "merge_reason": "Two-zones-only: at most one buy and one sell zone per day; between them do nothing - skip the day if price nev"
+  },
+  {
+   "canonical_rule_id": "FR-068",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 2
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 74
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 90
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 51
+    }
+   ],
+   "merge_reason": "Session-break state gates direction: Asia low lost with a close = shorts only; Asia high broken = no sells (ra"
+  },
+  {
+   "canonical_rule_id": "FR-069",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 40
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 41
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 47
+    }
+   ],
+   "merge_reason": "News filters: FOMC days take few trades; stacked-news days are 'search and destroy' whipsaws - rely on marked "
+  },
+  {
+   "canonical_rule_id": "FR-070",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 16
+    }
+   ],
+   "merge_reason": "'No room' filter: a break with resistance directly overhead has no reward - skip the continuation, prefer the "
+  },
+  {
+   "canonical_rule_id": "FR-071",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 31
+    }
+   ],
+   "merge_reason": "FVG-void filter: before selling a breakdown, check the prior up-move for downside FVGs - none means price goes"
+  },
+  {
+   "canonical_rule_id": "FR-072",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 33
+    }
+   ],
+   "merge_reason": "Both-sides-swept day: when Asia high AND low both break in the same day, read the second break as a sweep/conf"
+  },
+  {
+   "canonical_rule_id": "FR-073",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 13
+    }
+   ],
+   "merge_reason": "Do not trade inside high-timeframe FVGs - use the low-timeframe OBs within them for execution."
+  },
+  {
+   "canonical_rule_id": "FR-074",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 44
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 7
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 38
+    }
+   ],
+   "merge_reason": "Trend-side only: in an uptrend take retest longs only (never counter-shorts, never long the top); do not buy a"
+  },
+  {
+   "canonical_rule_id": "FR-075",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 86
+    }
+   ],
+   "merge_reason": "Do not buy directly under a big 1-hour rejection wick - the sellers are active there; the buy belongs at the s"
+  },
+  {
+   "canonical_rule_id": "FR-076",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 57
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 21
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 61
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 87
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 51
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 32
+    }
+   ],
+   "merge_reason": "Focus: one instrument (gold - the system's statistics are gold-built), at most two; BTC only for A+++ setups; "
+  },
+  {
+   "canonical_rule_id": "FR-077",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 62
+    }
+   ],
+   "merge_reason": "Crypto correlation: when BTC goes down everything in crypto goes down; altcoin trades are conditional on the B"
+  },
+  {
+   "canonical_rule_id": "FR-078",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 19
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 20
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 70
+    }
+   ],
+   "merge_reason": "Loss-first risk framing: decide the loss before entry and mentally spend it; equal risk per trade at 1:2-1:3 r"
+  },
+  {
+   "canonical_rule_id": "FR-079",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 34
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 75
+    }
+   ],
+   "merge_reason": "Sizing ladder: roughly a 10-25K account for one lot; below that 0.1/0.01 and build gradually (thresholds drift"
+  },
+  {
+   "canonical_rule_id": "FR-080",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 35
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 76
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 90
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 97
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 31
+    }
+   ],
+   "merge_reason": "Confluence-scaled risk: risk more on A+/high-probability zones (wallet and psychology permitting); few meaning"
+  },
+  {
+   "canonical_rule_id": "FR-081",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 70
+    }
+   ],
+   "merge_reason": "Month-end: keep risk low because the market 'does stupid stuff'."
+  },
+  {
+   "canonical_rule_id": "FR-082",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 71
+    }
+   ],
+   "merge_reason": "Performance is judged at month-end, not per trade: several stop-losses per month are acceptable if the month e"
+  },
+  {
+   "canonical_rule_id": "FR-083",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 67
+    }
+   ],
+   "merge_reason": "Daily percent discipline: ~1-3% per day; once hit, protect or stop trading; never round-trip a winner (BE at ~"
+  },
+  {
+   "canonical_rule_id": "FR-084",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 68
+    }
+   ],
+   "merge_reason": "His stated personal gold scalp parameters: 1-4 candles per trade, 0.03-0.2 lots, ~$200 per scalp, up to three "
+  },
+  {
+   "canonical_rule_id": "FR-085",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 22
+    }
+   ],
+   "merge_reason": "Risk less on altcoins (Solana) than on gold/BTC - it is still crypto."
+  },
+  {
+   "canonical_rule_id": "FR-086",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 0
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 1
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 86
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 32
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 33
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 96
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 109
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 95
+    }
+   ],
+   "merge_reason": "Playbook indicator usage doctrine (PRIOR ART FP-INDICATOR-005/006 - transcript evidence only, not a discovery)"
+  },
+  {
+   "canonical_rule_id": "FR-087",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 59
+    }
+   ],
+   "merge_reason": "VWAP: above = bullish, below = bearish (institutional fair price); losing daily+weekly+monthly VWAP means ever"
+  },
+  {
+   "canonical_rule_id": "FR-088",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 57
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 58
+    }
+   ],
+   "merge_reason": "Volume-profile rules: fixed-range VAH = sell, VAL = buy, POC = intermediate target/support; below the daily va"
+  },
+  {
+   "canonical_rule_id": "FR-089",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 60
+    }
+   ],
+   "merge_reason": "Session-box rules: lose the box level then fake-retest = short; hold the level and break out = long; volume ('"
+  },
+  {
+   "canonical_rule_id": "FR-090",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 61
+    }
+   ],
+   "merge_reason": "SFP (swing failure pattern): a failed sweep of a high/low signals reversal - always combined with other conflu"
+  },
+  {
+   "canonical_rule_id": "FR-091",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 63
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 27
+    }
+   ],
+   "merge_reason": "EMAs: he does not use them; choppy/sideways EMAs mean do nothing (he reads the same from the range), and an EM"
+  },
+  {
+   "canonical_rule_id": "FR-092",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 76
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 49
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 50
+    }
+   ],
+   "merge_reason": "Intermarket reads: DXY at support implies gold down; silver moves first and gold follows; oil is inversely rel"
+  },
+  {
+   "canonical_rule_id": "FR-093",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 78
+    }
+   ],
+   "merge_reason": "Bullish RSI divergence at an origin-level retest supports the long."
+  },
+  {
+   "canonical_rule_id": "FR-094",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 44
+    }
+   ],
+   "merge_reason": "Volume is read from candle bodies (thin candles = no volume) rather than a volume indicator."
+  },
+  {
+   "canonical_rule_id": "FR-095",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 83
+    }
+   ],
+   "merge_reason": "Invert-scale technique: flip the chart to apply long-side concepts symmetrically to shorts."
+  },
+  {
+   "canonical_rule_id": "FR-096",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 58
+    }
+   ],
+   "merge_reason": "Prescribed self-backtesting: replay the Asia-break strategy using the indicator's old-Asia-sessions display."
+  },
+  {
+   "canonical_rule_id": "FR-097",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 3
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 10
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 11
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 6
+    }
+   ],
+   "merge_reason": "Morning routine: mark HTF levels first (daily/weekly/4h/1h), then Asia high/low and the range; identify which "
+  },
+  {
+   "canonical_rule_id": "FR-098",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 23
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 79
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 81
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 99
+    }
+   ],
+   "merge_reason": "Two-scenario planning: define scenario long (break high, retest, long) and scenario short (lose low, retest, s"
+  },
+  {
+   "canonical_rule_id": "FR-099",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 0
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 30
+    }
+   ],
+   "merge_reason": "Weekly temporal patterns: Monday+Tuesday set the week's high/low range; after 3+ consecutive down days expect "
+  },
+  {
+   "canonical_rule_id": "FR-100",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 38
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 58
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 60
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 52
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 53
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 55
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 85
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 86
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 98
+    }
+   ],
+   "merge_reason": "Demonstrated weekly-plan instances (concrete level ladders; all price digits garble-prone and audio-critical) "
+  },
+  {
+   "canonical_rule_id": "FR-101",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 93
+    }
+   ],
+   "merge_reason": "Execution tooling: MetaTrader/VT market orders with manual fixed-fraction partial closes at TP zones (or autom"
+  },
+  {
+   "canonical_rule_id": "FR-102",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 94
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 96
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 99
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 97
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 98
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 95
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 108
+    }
+   ],
+   "merge_reason": "Exocharts footprint suite (Fishel education, crypto): chart/tick-size setup, saved templates, delta/CVD + dive"
+  },
+  {
+   "canonical_rule_id": "FR-103",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 3
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 5
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 29
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 0
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 1
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 14
+    }
+   ],
+   "merge_reason": "Gold session statistics (attributed to 22-year data; figures drift between tellings): Asia-high break ~78-80% "
+  },
+  {
+   "canonical_rule_id": "FR-104",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 31
+    }
+   ],
+   "merge_reason": "BTC session statistics (8-year data): 60-72% continuation variants."
+  },
+  {
+   "canonical_rule_id": "FR-105",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 42
+    },
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 55
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 37
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 100
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 101
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 102
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 103
+    }
+   ],
+   "merge_reason": "Win-rate and results claims: 90+% win rate; 22 wins/2 losses month; 2 losses in 20+; 'never a red week/month';"
+  },
+  {
+   "canonical_rule_id": "FR-106",
+   "merged_from": [
+    {
+     "file": "miner1_july_live_sessions_a.json",
+     "index": 87
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 38
+    },
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 68
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 105
+    }
+   ],
+   "merge_reason": "Per-trade pip/dollar outcome claims (1000-pip Monday, 400/630/190-200-pip trades, the 60-cent stop-out story, "
+  },
+  {
+   "canonical_rule_id": "FR-107",
+   "merged_from": [
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 100
+    },
+    {
+     "file": "miner3_older_and_short_recordings.json",
+     "index": 104
+    }
+   ],
+   "merge_reason": "Crypto growth claims (17K to ~20.2K in ~10 days; $500 doubled in 3 days; 5K wallet to 10-11K)."
+  },
+  {
+   "canonical_rule_id": "FR-108",
+   "merged_from": [
+    {
+     "file": "miner2_july_live_sessions_b.json",
+     "index": 64
+    }
+   ],
+   "merge_reason": "The gold 'algorithm' changes a little every month and then comes back, requiring periodic adjustment."
+  }
+ ]
+}

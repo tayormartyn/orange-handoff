@@ -1,0 +1,30 @@
+{
+ "canary_id": "parser_correlation_hotfix_canary_v0_1",
+ "provenance": "SYNTHETIC_CANARY / SANDBOX",
+ "morphology": "XAUUSD Sell Zone: 4059\u20134069 / Stop Loss: 4090 / high Risk: Low lot size",
+ "parse": {
+  "kind": "ENTRY",
+  "direction": "SHORT",
+  "zone_low": "4059",
+  "zone_high": "4069",
+  "sl": "4090",
+  "risk_flag": "HIGH_RISK_SOURCE_WORDING"
+ },
+ "parse_ok": true,
+ "wire_action": "PROPOSAL_EMITTED(XAU-F001-20260715)",
+ "campaigns": [
+  "XAU-F001-20260715"
+ ],
+ "exactly_one_test_campaign": true,
+ "not_f001_f002": true,
+ "test_freeze_producible": true,
+ "freeze_prospective_eligible": false,
+ "genuine_forward_ledger_untouched": true,
+ "genuine_freeze_ledger_untouched": true,
+ "genuine_ledgers_untouched": true,
+ "eligible_for_training": false,
+ "eligible_for_performance_attribution": false,
+ "SIMULATION_ONLY": true,
+ "review_only": true,
+ "observation_only": true
+}

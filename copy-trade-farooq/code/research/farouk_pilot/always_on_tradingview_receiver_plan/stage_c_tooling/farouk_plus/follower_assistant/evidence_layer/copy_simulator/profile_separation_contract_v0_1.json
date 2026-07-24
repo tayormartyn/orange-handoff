@@ -1,0 +1,16 @@
+{
+  "contract_id": "profile_separation_contract_v0_1",
+  "status": "RESEARCH_ONLY / SIMULATION_ONLY",
+  "profiles": {
+    "LANE_A_CONSTITUTION_V0_1": "authoritative documented follower (per-leg BE, cancel-unfilled, 25% vague take-some) — NEVER replaced/rewritten",
+    "WHALEROOM_COMPARATOR_RESEARCH_ONLY": "separate research profile (average BE +50, keep-working) — never rewrites Lane A",
+    "LANE_B_EXECUTION_ALTERNATIVES_RESEARCH_ONLY": "separate research profile (refined-entry alternatives) — never rewrites Lane A"
+  },
+  "isolation_rules": [
+    "each profile produces separate simulated states + ledgers",
+    "one profile never alters another",
+    "no winner is selected; no profile-selection weights are fitted",
+    "Lane A is authoritative and immutable across profiles"
+  ],
+  "review_only": true, "executable": false, "observation_only": true
+}

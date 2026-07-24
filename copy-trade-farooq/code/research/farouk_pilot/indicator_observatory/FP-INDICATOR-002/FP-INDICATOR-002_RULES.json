@@ -1,0 +1,22 @@
+{
+  "part": "One",
+  "indicator_owner": "[kyle] v2 (settings dialog title directly visible, ref_00-40)",
+  "rules": {
+    "1_session_range_construction": "[kyle] v2 'Market Sessions' draws a RANGE BOX spanning each session's window (session high/low). Full-session box (NOT the 15-min ORB of Part Three).",
+    "2_sessions_used": "London, New York, Tokyo/Asia (each a toggle + colour).",
+    "3_volume_candles": "'Yellow candles' = RELATIVE VOLUME candles: highlighted when volume is high relative to a rolling average; 'market maker is present, buyers/sellers strong'.",
+    "4_volume_basis": "DIRECTLY VISIBLE: Relative Volume — Volume Multiplier 2, Volume Length 20 (i.e. volume vs 20-bar average x2). Colour highlight, not a fixed absolute threshold.",
+    "5_vwap": "Multiframe VWAP (volume-weighted average price): Session / Daily / Weekly / Monthly bands.",
+    "6_vwap_role": "BIAS FILTER (above VWAP=bullish, below=bearish) + dynamic SUPPORT/RESISTANCE (holds->long on retest; loses->short). Sideways VWAP='weakened/no volume'. NOT stated as a standalone entry trigger/target/veto.",
+    "7_breakout_box": "Price HOLDS above the session-box level -> breakout -> long (for breakout traders).",
+    "8_breakdown_box": "Price LOSES the session-box level -> breakdown -> short; then 'retest, fake move short'.",
+    "9_wick_vs_close": "CANDLE CLOSE required ('candle close below, they didn't hold -> retest short'); a WICK that sweeps the level = fakeout ('they swept this high').",
+    "10_entry_stop_target_invalidation": "Entry = RETEST after the break/close ('wait for retrace, take long'); mid-box DOTTED line = scalp pivot inside the range; fakeout (sweep+close-back) = reverse. Stop/target NOT numerically stated.",
+    "11_direction": "VWAP position (above/below) + relative-volume candle pressure + session-box break direction.",
+    "12_discretionary_tips": "Change colours / timezone / volume inputs; add labels; 'if you understand it, works with NASDAQ, Gold, BTC'. Interpretation is discretionary.",
+    "13_component_ownership": "[kyle] v2 draws the session boxes, the volume candles, AND the VWAP (single indicator, dialog title visible).",
+    "14_visible_settings": "see FP-INDICATOR-002_SETTINGS.json",
+    "15_repaint_intrabar_close_alert": "Uses candle-close reasoning; repaint / intrabar / alert behaviour NOT stated -> UNKNOWN."
+  },
+  "source_asset_id": "sa-ee1b41d2b4661a2a"
+}

@@ -1,0 +1,381 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "FP-CAMPAIGN-001",
+  "symbol": "XAUUSD",
+  "direction": "SELL",
+  "setup_family": "UNKNOWN",
+  "market_event_start_utc": null,
+  "market_event_end_utc": null,
+  "source_posting_ts_utc": null,
+  "timestamp_uncertainty_seconds": null,
+  "session_context": "UNKNOWN - display timezone not shown; times cannot be placed in a trading session without evidence.",
+  "point_in_time_session_high": null,
+  "point_in_time_session_low": null,
+  "previous_completed_day_levels": {
+    "prev_high": null,
+    "prev_low": null,
+    "prev_close": null,
+    "note": "no market data downloaded"
+  },
+  "visible_indicator_states": [
+    {
+      "source": "discord_image",
+      "state": "NONE_VISIBLE - no chart/indicators in the Discord signal image"
+    },
+    {
+      "source": "video",
+      "state": "PENDING_LOCAL_TRANSCRIPTION - charts/indicators may appear in the .mov; frames not yet extracted"
+    }
+  ],
+  "explicit_farouk_statements": [
+    {
+      "ts_displayed": "02/07/2026 17:48",
+      "tz": "UNKNOWN",
+      "text": "XAUUSD SELL",
+      "asset": "sa-4011195b5c219a1c"
+    },
+    {
+      "ts_displayed": "02/07/2026 17:48",
+      "tz": "UNKNOWN",
+      "text": "Entry zone: 4116-4126",
+      "asset": "sa-4011195b5c219a1c"
+    },
+    {
+      "ts_displayed": "02/07/2026 17:48",
+      "tz": "UNKNOWN",
+      "text": "Stop Loss: 4140",
+      "asset": "sa-4011195b5c219a1c"
+    },
+    {
+      "ts_displayed": "02/07/2026 18:24",
+      "tz": "UNKNOWN",
+      "text": "Close the worst entry, hold the best entry, take TP1, and move your stop loss to breakeven",
+      "note": "right margin of the message appears truncated in the image; final word read as 'breakeven'",
+      "asset": "sa-4011195b5c219a1c"
+    },
+    {
+      "ts_displayed": "02/07/2026 18:24",
+      "tz": "UNKNOWN",
+      "text": "recovery mode in progress",
+      "asset": "sa-4011195b5c219a1c"
+    },
+    {
+      "ts_displayed": "02/07/2026 18:38",
+      "tz": "UNKNOWN",
+      "text": "100 pips 2 TP's or take 1 lot out",
+      "asset": "sa-4011195b5c219a1c"
+    }
+  ],
+  "observed_actions": [
+    {
+      "ts_displayed": "02/07/2026 18:24",
+      "type": "RESULT_CARD",
+      "label": "XAUUSD-VIP sell 2",
+      "price_from": "4119.44",
+      "price_to": "4111.85",
+      "value_shown": "1 518.00",
+      "value_colour": "blue",
+      "currency": "UNKNOWN",
+      "asset": "sa-4011195b5c219a1c"
+    },
+    {
+      "ts_displayed": "02/07/2026 18:38",
+      "type": "RESULT_CARD",
+      "label": "XAUUSD-VIP sell 1",
+      "price_from": "4119.44",
+      "price_to": "4109.33",
+      "value_shown": "1 011.00",
+      "value_colour": "blue",
+      "currency": "UNKNOWN",
+      "asset": "sa-4011195b5c219a1c"
+    }
+  ],
+  "entry_zone": {
+    "low": "4116",
+    "high": "4126",
+    "source": "displayed signal 17:48"
+  },
+  "structural_invalidation": "Stop Loss displayed 4140 (label 'Stop Loss'); recorded as the displayed protective/invalidation level, not independently verified.",
+  "targets": [
+    {
+      "label": "TP1",
+      "price": "UNKNOWN",
+      "note": "TP1 referenced in management text; no explicit numeric target displayed"
+    },
+    {
+      "label": "100 pips",
+      "price": "UNKNOWN",
+      "note": "referenced 18:38; gold pip convention UNKNOWN"
+    }
+  ],
+  "management_events": [
+    {
+      "ts_displayed": "02/07/2026 18:24",
+      "instruction": "Close the worst entry, hold the best entry, take TP1, move stop to breakeven",
+      "context": "recovery mode in progress",
+      "accompanying_result_card": "sell 2 4119.44->4111.85 value 1 518.00"
+    },
+    {
+      "ts_displayed": "02/07/2026 18:38",
+      "instruction": "100 pips 2 TPs or take 1 lot out",
+      "accompanying_result_card": "sell 1 4119.44->4109.33 value 1 011.00"
+    }
+  ],
+  "veto_cancellation_evidence": [],
+  "mfe_decimal_string": null,
+  "mae_decimal_string": null,
+  "explicit_facts": [
+    "Sender label displayed: SeaScalper-Farouk (with WR badge)",
+    "Instrument XAUUSD; direction SELL (directly stated)",
+    "Displayed date 02/07/2026 on all three messages",
+    "Displayed times 17:48, 18:24, 18:38 - NO timezone shown",
+    "Entry zone 4116-4126; Stop Loss 4140 (directly stated at 17:48)",
+    "Two result cards: 4119.44 -> 4111.85 (label 'sell 2', value 1 518.00) and 4119.44 -> 4109.33 (label 'sell 1', value 1 011.00); values blue, no currency symbol",
+    "Video sa-5069bb30641f7e5f: QuickTime .mov, 380.87s, has video+audio; transcript/frames PENDING_LOCAL_TRANSCRIPTION"
+  ],
+  "strong_inferences": [
+    "Both result cards show downward movement from 4119.44 (favourable for a SELL), so the displayed closes were in profit - consistent with a winning outcome",
+    "'recovery mode in progress' and 'close the worst entry' indicate the position(s) moved adverse before recovering, implying multiple entries with at least one underwater at some point",
+    "The video is a RETROSPECTIVE breakdown in TradingView Bar-Replay (view at ~20:54 Thu 02 Jul, after the 17:48 signal); the presented drawings/zones are shown after the move",
+    "The chart's red supply zone top (~4140) coincides with the Discord stop (4140), and the 3m panel 'OB retest 4123.51' sits inside the Discord entry zone 4116-4126 — strong price-level correspondence"
+  ],
+  "weak_inferences": [
+    "HYPOTHESIS: 'sell 1' / 'sell 2' MAY denote separate entries or tranches - NOT established (do not assume)",
+    "HYPOTHESIS: 4119.44 MAY be a single fill or an average entry - unconfirmed",
+    "HYPOTHESIS: the setup MAY relate to one educational family (ORB / session-liquidity / momentum-reversal) - indeterminable without the video transcript",
+    "HYPOTHESIS: the on-chart FVG/OB/CHoCH labels come from an SMC-style indicator the presenter uses — the exact indicator is not named in the sampled frames",
+    "HYPOTHESIS: 'Asia High' / 'Asia break HIGH' relate to an Asian-session liquidity concept — not confirmed as the trade trigger"
+  ],
+  "contradictions": [
+    "Signal shows an entry ZONE 4116-4126, but both result cards reference a single from-price 4119.44 (inside the zone); not a hard contradiction, but single price vs zone is unexplained",
+    "None new. Note: the video chart current-price by ~20:54 is ~4106-4108, below the Discord result-card closes (4111.85 / 4109.33) — consistent with continued decline after the displayed closes, not a contradiction"
+  ],
+  "unresolved_questions": [
+    "Timezone of the displayed timestamps (UNKNOWN)",
+    "What 'sell 1' and 'sell 2' represent",
+    "Currency of the profit figures 1 518.00 / 1 011.00 (blue, no symbol)",
+    "Pip convention behind '100 pips' for gold",
+    "Whether any chart drawings were visible BEFORE entry (retrospective vs live) - video PENDING",
+    "Actual entry fills and actual TP1 / target prices (not displayed)",
+    "Whether 4119.44 is an average or a specific entry",
+    "MFE / MAE and the true intrabar path (requires XAUUSD market data - not downloaded)",
+    "Whether H4 order block / M15 bearish FVG / H4 bearish FVG / Weekly CHOCH are shown elsewhere in the video (only 3m + 15m sampled; full-frame or transcript review needed)",
+    "The spoken methodology (PENDING_LOCAL_TRANSCRIPTION) — the audio may state the actual reasoning",
+    "The exact custom indicator producing the CHoCH/OB/Asia panel",
+    "Whether the chart's Pepperstone server time equals the Discord display timezone (still UNKNOWN)"
+  ],
+  "candidate_rules": [],
+  "confidence_by_field": {
+    "instrument": "HIGH",
+    "direction": "HIGH",
+    "entry_zone": "HIGH",
+    "stop_loss": "HIGH",
+    "displayed_date": "HIGH",
+    "displayed_times": "MEDIUM (shown but TZ unknown)",
+    "outcome": "MEDIUM-HIGH (visible profit cards, recovery nuance)",
+    "setup_family": "UNKNOWN",
+    "targets": "LOW",
+    "profit_currency": "UNKNOWN",
+    "session_context": "UNKNOWN",
+    "video_symbol": "HIGH",
+    "video_feed": "HIGH",
+    "video_date": "HIGH",
+    "video_timeframes": "HIGH(3m,15m)/UNKNOWN(H4,Weekly)",
+    "video_alignment": "STRONGLY_INFERRED",
+    "video_drawings_pre_existing_at_entry": "NOT_DETERMINABLE",
+    "spoken_methodology": "PENDING_LOCAL_TRANSCRIPTION"
+  },
+  "source_asset_ids": [
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f"
+  ],
+  "video_metadata": {
+    "source_asset_id": "sa-5069bb30641f7e5f",
+    "container": "QuickTime .mov (ftyp qt)",
+    "resolution": "4096x2106 (4K)",
+    "fps": 28.178,
+    "frame_count": 10761,
+    "duration_seconds": 381.9,
+    "video_codec": "H.264 (cv2 fourcc h264)",
+    "audio_present": true,
+    "audio_codec": "undetermined_locally (no ffprobe/ffmpeg); .mov soun track present",
+    "container_creation_time": "not usable (mvhd creation atom read as 0)",
+    "creation_metadata_caveat": "container creation time is NOT proof of the market-event time",
+    "platform_shown": "TradingView",
+    "feed_shown": "Pepperstone",
+    "replay_mode": "TradingView Bar-Replay active (replay controls visible at 05:00)",
+    "processing_tool": "opencv-python 4.13.0 (local, no ffmpeg, no cloud)",
+    "transcript_note": "No local audio-transcription tool installed (whisper/whisper.cpp/faster-whisper/vosk absent) and no ffmpeg/ffprobe to demux the audio track. Audio track present (~381.9s). Not installing or calling any cloud service without explicit approval. See derived/transcripts/FP-CAMPAIGN-001_transcript_status.json."
+  },
+  "video_transcript_status": "PENDING_LOCAL_TRANSCRIPTION",
+  "directly_visible_chart_observations": [
+    {
+      "item": "symbol",
+      "value": "Gold Spot / U.S. Dollar (XAUUSD)",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH",
+      "pre_existing_or_retrospective": "N/A"
+    },
+    {
+      "item": "chart_provider_feed",
+      "value": "Pepperstone",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "platform",
+      "value": "TradingView (with Bar-Replay controls)",
+      "frames_s": [
+        300
+      ],
+      "confidence": "HIGH",
+      "note": "replay controls 'Select bar / 10x 15m' visible -> retrospective replay"
+    },
+    {
+      "item": "timeframes_observed",
+      "value": "3-minute (0s,16s) and 15-minute (300s); presenter switches TF",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH",
+      "note": "H4 / Weekly / an explicit 'M15' label NOT observed in the sampled frames (a subset of 26 reference + 22 scene frames was reviewed, not all)"
+    },
+    {
+      "item": "displayed_date",
+      "value": "Thu 02 Jul '26 (axis); view extends into Fri 03 Jul '26",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "displayed_bid_ask",
+      "value": "4108.08/4108.21 (0s); 4108.29/4108.42 (16s); 4106.84/4106.98 (300s)",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "indicator_panel_labels",
+      "value": "custom panel: TF, CHoCH, Asia break, OB retest, Current OB, Fresh OB",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item": "panel_values_3m",
+      "value": "CHoCH 4114.72; Asia break HIGH; OB retest 4123.51; Current OB 4066.54; Fresh OB 4066.54",
+      "frames_s": [
+        0,
+        16
+      ],
+      "confidence": "HIGH",
+      "note": "matches the task's 'OB retest near 4123.51' and 'lower-timeframe CHoCH near 4114.72'"
+    },
+    {
+      "item": "panel_values_15m",
+      "value": "CHoCH x (none); Asia break HIGH; OB retest 4142.75; Current OB 4022.13; Fresh OB 4022.13",
+      "frames_s": [
+        300
+      ],
+      "confidence": "HIGH",
+      "note": "panel values are timeframe-dependent"
+    },
+    {
+      "item": "on_chart_smc_labels",
+      "value": "FVG, OB, CHoCH swing markers, and an 'Asia High' price line",
+      "frames_s": [
+        16,
+        300
+      ],
+      "confidence": "MEDIUM-HIGH",
+      "note": "small text but readable; SMC-style structure labels"
+    },
+    {
+      "item": "drawn_zones",
+      "value": "red/pink supply zone ~4128-4140 (top ~4140 aligns with the Discord stop); grey box; blue horizontal zones ~4085 and ~4119; orange vertical highlight over the ~18:00-20:00 drop; green box ~14:30-17:30; blue circle marker ~4096; black projected V-path lines",
+      "frames_s": [
+        0,
+        16,
+        300
+      ],
+      "confidence": "HIGH_existence_MEDIUM_meaning",
+      "pre_existing_or_retrospective": "RETROSPECTIVE presentation (bar-replay at ~20:54, after the 17:48 signal); whether any drawing pre-existed at entry is NOT determinable from the video"
+    },
+    {
+      "item": "highlighted_price_lines",
+      "value": "4130.89, 4117.34, 4113.75, 4102.08, 4099.02, 4098.08, 4093.14, 4090.66, 4089.71, 4080.12",
+      "frames_s": [
+        0
+      ],
+      "confidence": "HIGH"
+    }
+  ],
+  "explicit_spoken_statements": [
+    {
+      "status": "PENDING_LOCAL_TRANSCRIPTION",
+      "note": "audio present but not transcribed locally; no spoken-statement content recorded to avoid guessing"
+    }
+  ],
+  "video_alignment": {
+    "classification": "STRONGLY_INFERRED_SAME_CAMPAIGN",
+    "supporting": [
+      "Same instrument: XAUUSD (Gold Spot / U.S. Dollar)",
+      "Same date: Thu 02 Jul '26 == Discord displayed 02/07/2026",
+      "Same direction context: bearish (SELL) — orange-highlighted downside move",
+      "Entry zone 4116-4126 aligns with the chart consolidation ~4117-4126, and the panel 'OB retest 4123.51' sits inside that zone",
+      "Discord stop 4140 aligns with the top of the red supply zone ~4140",
+      "Discord result path 4119.44 -> 4111.85 -> 4109.33 aligns with the orange-highlighted drop from ~4119 to ~4108"
+    ],
+    "not_direct_because": [
+      "No shared explicit identifier (e.g., the Discord 'sell 1/sell 2' or a campaign id) is visibly proven in the video",
+      "Exact TIME alignment is NOT visibly proven: chart uses Pepperstone server time; Discord timezone is UNKNOWN; the recording is a retrospective replay at ~20:54"
+    ],
+    "time_alignment_claimed": false
+  },
+  "candidate_hypotheses": [
+    {
+      "hypothesis": "Asian-session high sweep/break contributes to bearish qualification",
+      "status": "UNTESTED",
+      "evidence_seen": "'Asia break HIGH' panel + 'Asia High' chart line visible, but causal role not shown"
+    },
+    {
+      "hypothesis": "higher-timeframe bearish OB/FVG provides trade location",
+      "status": "UNTESTED",
+      "evidence_seen": "OB/FVG labels + red supply zone visible; H4/Weekly TF not directly observed in sampled frames"
+    },
+    {
+      "hypothesis": "lower-timeframe bearish CHoCH provides entry confirmation",
+      "status": "UNTESTED",
+      "evidence_seen": "panel 'CHoCH 4114.72' on 3m; role as entry trigger not shown"
+    },
+    {
+      "hypothesis": "TP1 leads to partial closure and breakeven stop",
+      "status": "UNTESTED",
+      "evidence_seen": "from Discord text only ('take TP1 ... move stop to breakeven'); not shown in video"
+    },
+    {
+      "hypothesis": "'recovery mode' is a separate management protocol",
+      "status": "UNTESTED",
+      "evidence_seen": "from Discord text only; not shown/explained in the untranscribed video"
+    }
+  ]
+}

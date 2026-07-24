@@ -1,0 +1,14 @@
+{
+  "schema": "weekly_plan_capture_state_v1",
+  "purpose": "H-FPL-06 standing operator task (D-034): every trading week's pre-open Farouk plan must be captured BEFORE the week's price action. A week absent here after its Sunday 22:00Z open is permanently NOT_SCORABLE - brain_refresh raises a WARN.",
+  "weeks": {
+    "2026-W30": {
+      "captured": true,
+      "source_id": "fp-live_with_farouk_sunday_19_july_2026 (FP-LIVE-20260719 package)",
+      "captured_at_utc": "2026-07-20T12:12:43Z (analysis frozen; video recorded 2026-07-19 pre-open)",
+      "predates_first_campaign": "YES - video 19-Jul 16:56-18:34Z; first campaign F006 20-Jul 14:49Z",
+      "plan_regions_registered": "EVIDENCE_REPORT_LIVE_20260719.md section 6 (H-FPL-05 zones; H-FPL-06 uses same-side regions)"
+    }
+  },
+  "update_rule": "operator captures plan (video/message/screenshot) -> ingest to corpus (tier + instrument scope) -> add the week entry here with capture timestamp proving it predates the week's first campaign -> register plan regions before scoring any campaign that week."
+}

@@ -1,0 +1,2 @@
+ANONYMISED PILOT FIXTURE — not real proprietary evidence.
+Sample message body for adapter/ingest tests.

@@ -1,0 +1,101 @@
+{
+  "telegram:baseline:344": {
+    "candidates": [
+      {
+        "event_type": "ENTRY",
+        "proposed_fields": {
+          "asset": "XAUUSD",
+          "direction": "BUY",
+          "entry_low": "4006",
+          "entry_high": "4016",
+          "stop": "3970",
+          "tp1": "4022",
+          "tp2": "4027",
+          "tp3": "4040"
+        },
+        "evidence_quote": "XAUUSD BUY 4016-4006  SL 3970   Take Profit Targets:  TP1: 4022 TP2: 4027 TP3: 4040 TP4: 4065 TP5: open",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:345": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_TP",
+        "proposed_fields": {},
+        "evidence_quote": "tp sl entry",
+        "leg_ref": null,
+        "parent_ref": null
+      },
+      {
+        "event_type": "MOVE_STOP",
+        "proposed_fields": {},
+        "evidence_quote": "tp sl entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:346": {
+    "candidates": []
+  },
+  "telegram:baseline:347": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "300 pips 💙💙💙",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:348": {
+    "candidates": [
+      {
+        "event_type": "COMMENTARY",
+        "proposed_fields": {},
+        "evidence_quote": "show profit in `🪙・bragging-rights`",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:349": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_CLOSE",
+        "proposed_fields": {
+          "remaining_fraction": 0.25
+        },
+        "evidence_quote": "hold 25% for higher levels sl to entry",
+        "leg_ref": null,
+        "parent_ref": null
+      },
+      {
+        "event_type": "MOVE_STOP",
+        "proposed_fields": {},
+        "evidence_quote": "sl to entry",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  },
+  "telegram:baseline:350": {
+    "candidates": []
+  },
+  "telegram:baseline:351": {
+    "candidates": [
+      {
+        "event_type": "PARTIAL_TP",
+        "proposed_fields": {
+          "remaining_fraction": 0.10
+        },
+        "evidence_quote": "take more profit leave 10% open",
+        "leg_ref": null,
+        "parent_ref": null
+      }
+    ]
+  }
+}

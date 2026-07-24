@@ -1,0 +1,679 @@
+{
+  "doc_id": "orange_knowledge_register_docs_addendum",
+  "version": "v1.1",
+  "as_of": "2026-07-13T03:35Z",
+  "extends": "orange_knowledge_register_v1.json (extend-not-edit; same schema and disciplines)",
+  "source_assets_added": [
+    {
+      "id": "FP-EDU-002",
+      "file": "raw/documents/FP-EDU-002_Farouks_Playbook.pdf",
+      "sha256": "4cb77d9d6b13478ad529b83a0385fa17fafefbcf548ab7852f5fefab0d1613b7",
+      "pages": 22,
+      "extraction": "_pdf_text/FP-EDU-002_pagetext.txt (full text)",
+      "downloads_copy": "byte-identical duplicate - not re-registered"
+    },
+    {
+      "id": "FP-EDU-003",
+      "file": "raw/documents/FP-EDU-003_Whaleroom_Trading_Guide.pdf",
+      "sha256": "8b0a95608f41b5e4a2bf79a4876e720e13be9b6ad8db065860b7f9cd7b6d3b1d",
+      "pages": 12,
+      "extraction": "IMAGE-ONLY; all 12 pages visually reviewed 2026-07-13; stub _pdf_text/FP-EDU-003_pagetext.txt records emptiness",
+      "downloads_copy": "byte-identical duplicate"
+    },
+    {
+      "id": "FP-EDU-004",
+      "file": "raw/documents/FP-EDU-004_Whaleroom_OrderBlocks_Strong_vs_Weak.pdf",
+      "sha256": "c005bffefcc3a90e4dfd9a06739ad7cb645350e4b2a998b436cb72c59e90c745",
+      "pages": 2,
+      "extraction": "IMAGE-ONLY; both pages visually reviewed",
+      "downloads_copy": "byte-identical duplicate"
+    },
+    {
+      "id": "FP-EDU-CANDLE",
+      "file": "education_batches/pdf_batch_02/Whaleroom_Candlestick_Patterns.pdf",
+      "sha256": "37adae7ed0f41d56aafe2a8b96726d30f2d5356142bd3d4eecabf0a68d91314e",
+      "pages": 7,
+      "extraction": "_pdf_text/FP-EDU-CANDLE_pagetext.txt (full text)",
+      "downloads_copy": "byte-identical duplicate"
+    }
+  ],
+  "document_rules": [
+    {
+      "rule_id": "DR-201",
+      "doc": "FP-EDU-002",
+      "pages": [
+        3
+      ],
+      "statement": "FVG = 3-candle imbalance (c1 high < c3 low bullish, mirrored bearish); trade retrace-fill; SL beyond FVG; target next liquidity; FVG INVALID once filled; HTF FVG > LTF",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "thresholds": "none numeric beyond 3-candle geometry",
+      "status": "OBSERVED (doc) + SUPPORTS MR-001/MR-012 family",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-202",
+      "doc": "FP-EDU-002",
+      "pages": [
+        4,
+        16
+      ],
+      "statement": "FVG continuation: bottoming -> impulse leaves 5m FVG -> BODY close above confirms -> retrace-fill entry -> target next bearish OB; London 08:00 / NY 13:30 UTC; R:R 1:3",
+      "class": "FORMAL_RULE+WORKED_EXAMPLE",
+      "deterministic": "mostly (body-close testable)",
+      "status": "OBSERVED; capture-flag candidate (close-above-FVG)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-203",
+      "doc": "FP-EDU-002",
+      "pages": [
+        5,
+        17
+      ],
+      "statement": "BPR = overlap of opposing FVGs; entry at overlap; SL beyond swing; BPR + reversal candle = A+++",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "status": "OBSERVED + SUPPORTS MR-002",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-204",
+      "doc": "FP-EDU-002",
+      "pages": [
+        6,
+        18
+      ],
+      "statement": "OB = last opposing candle before impulse; liquidity: equal H/L, swing H/L, Asia H/L, PDH/PDL, round numbers; sweep = wick-through + close-back-inside -> reversal-candle entry; SL beyond OB body/sweep wick",
+      "class": "FORMAL_RULE+DEFINITION",
+      "deterministic": true,
+      "status": "OBSERVED + SUPPORTS MR-001/MR-004",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-205",
+      "doc": "FP-EDU-002",
+      "pages": [
+        9,
+        20
+      ],
+      "statement": "Asia fakeout trap: push to Asia high, wick through but NO BODY CLOSE above, then lower low = trap confirmed; short retracement; SL above failed high; works mirrored; London/NY opens",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "status": "OBSERVED; documented logic behind the Asia-trap alerts",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-206",
+      "doc": "FP-EDU-002",
+      "pages": [
+        10,
+        11,
+        21
+      ],
+      "statement": "MTF stack: 5m structure -> 3m MSS/BOS -> 1m closed trigger candle; grade by checklist count: 6/6=A+++ 5/6=A 4/6=watch <4 skip (p11); 8-box variant >=6/8=A+++ 5/8=half <5 skip (p21)",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "thresholds": "6/6, 5/6, 4/6 (p11); 6/8, 5/8 (p21) - INTERNALLY INCONSISTENT granularity, recorded not merged",
+      "status": "OBSERVED",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-207",
+      "doc": "FP-EDU-002",
+      "pages": [
+        12,
+        13
+      ],
+      "statement": "GRADE TABLE: C=lone pattern skip; B=FVG-only or pattern at S/R watch; A=FVG+pattern at FVG; A+=BPR+pattern+trend; A+++=BPR+OB+sweep+reversal+trend / Asia-fakeout+LL+engulfing / bottom+FVG+close-above+claim->OB",
+      "class": "FORMAL_RULE (document formula)",
+      "deterministic": "as checklist yes; component detection partly discretionary",
+      "status": "DOCUMENT_FORMULA_KNOWN / INDICATOR_EQUIVALENCE_UNKNOWN - replay-test candidate (correlate vs captured A+/A+++ alert events); never scored without validation+ratification",
+      "v03_input": "PROHIBITED"
+    },
+    {
+      "rule_id": "DR-208",
+      "doc": "FP-EDU-002",
+      "pages": [
+        8,
+        19
+      ],
+      "statement": "Engulfing: body fully covers prior body AND >=2x its size; entry next-candle open; SL beyond engulfing wick; after liquidity sweep = A+++",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "thresholds": "2x body",
+      "status": "OBSERVED",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-301",
+      "doc": "FP-EDU-003",
+      "pages": [
+        3,
+        5
+      ],
+      "statement": "BE at +50 pips (=$5; 1 pip = $0.10 on XAU per p5) - move SL to entry; worked example 4500->4505->SL 4500",
+      "class": "DEFINITION+WORKED_EXAMPLE",
+      "deterministic": true,
+      "status": "SUPPORTS MR-007 (the +50 BE arm, page-anchored)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-302",
+      "doc": "FP-EDU-003",
+      "pages": [
+        3
+      ],
+      "statement": "Layering (LP): add position in drawdown (example -150 pips); both BE at mid-level (4492.50 example)",
+      "class": "DEFINITION+WORKED_EXAMPLE",
+      "deterministic": true,
+      "status": "SUPPORTS MR-008",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-303",
+      "doc": "FP-EDU-003",
+      "pages": [
+        4
+      ],
+      "statement": "Signal anatomy (pair/direction/entry-zone/SL/TP1-2-3) + 'Enter as soon as the signal is published when you can'",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "status": "SUPPORTS MR-005 (lane-3 canonical, page-cited)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-304",
+      "doc": "FP-EDU-003",
+      "pages": [
+        8
+      ],
+      "statement": "Tranche schedules: Conservative 50/30/20; Advanced 30/30 + move SL to entry (+50) + leave remainder running",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "status": "SUPPORTS MR-008 / R6 source_exact_tranche_schedules (documented source)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-305",
+      "doc": "FP-EDU-003",
+      "pages": [
+        9
+      ],
+      "statement": "SL placement: find key S/R -> place beyond -> check risk -> adjust size -> NEVER move further away; never remove or widen",
+      "class": "FORMAL_RULE",
+      "deterministic": true,
+      "status": "SUPPORTS MR-006 + never-widen ratification (doc-side provenance)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-306",
+      "doc": "FP-EDU-003",
+      "pages": [
+        10
+      ],
+      "statement": "3-Point Entry: three layered entries, ONE shared stop, BE at +50 pips FROM AVERAGE, never add a 4th entry to a loser (example 4500/4490/4480 avg 4490 SL 4460)",
+      "class": "FORMAL_RULE+WORKED_EXAMPLE",
+      "deterministic": true,
+      "status": "SUPPORTS MR-008 / be_at_average_for_layered / layering_cap_max3 (documented source)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-501",
+      "doc": "FP-EDU-CANDLE",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "statement": "Pattern definitions: Doji open~close; Gravestone/Dragonfly; Hammer/Shooting Star wick >=2x body; Morning/Evening Star 3rd candle closes past midpoint of candle 1; Tweezers matching highs/lows",
+      "class": "DEFINITION",
+      "deterministic": true,
+      "thresholds": "2x wick-to-body; midpoint close",
+      "status": "OBSERVED (objects behind indicator TZ/ST/engulf marks)",
+      "v03_input": "NO"
+    },
+    {
+      "rule_id": "DR-502",
+      "doc": "FP-EDU-CANDLE",
+      "pages": [
+        7
+      ],
+      "statement": "Golden rules: patterns are confirmation not standalone; context (S/R) > pattern; HTF > LTF; wait for candle close; pattern in the middle of nowhere = noise",
+      "class": "FORMAL_RULE",
+      "deterministic": "posture",
+      "status": "SUPPORTS MR-016 confirmation posture",
+      "v03_input": "NO"
+    }
+  ],
+  "excluded_by_policy": [
+    "FP-EDU-002 pp13/15-21 lot/2%-risk checklist items (presence recorded)",
+    "FP-EDU-003 pp6-7 leverage/risk-% tables, p11 lot-size-by-balance table, p12 compounding +25%/week plan (PERFORMANCE_CLAIM with 'projection only' disclaimer)"
+  ],
+  "contradiction_register": [
+    {
+      "id": "CX-001",
+      "tension": "R:R >=1:2 / 1:3 doc rules (FP-EDU-002 pp13,15-19; FP-EDU-003 implicit) vs ratified no-2R assumption (practice: tranche-1 exits far below 2R)",
+      "status": "STANDING (R-RR-2R); doc pages now cited; R6 keeps actual-tranche accounting"
+    },
+    {
+      "id": "CX-002",
+      "tension": "FP-EDU-004 p1 'Aligned with bias: above the Trend EMA for longs' vs his spoken 'I never use EMAs' (Dec-2025 indicator video)",
+      "status": "NEW doc-vs-practice tension; bias-tool identity UNRESOLVED (no EMA length given); capture-only note"
+    },
+    {
+      "id": "CX-003",
+      "tension": "FP-EDU-002 internal: p11 six-question stack grading vs p21 eight-box variant",
+      "status": "recorded, not merged; treat grade thresholds as document-internal variants"
+    }
+  ],
+  "a_grade_status_change": "was: formula UNKNOWN. now: DOCUMENT_FORMULA_KNOWN (DR-207 table + DR-206 stack counts) / INDICATOR_EQUIVALENCE_UNKNOWN (Pine hidden; alert-condition implementation unverified). Replay-test backlog: correlate DR-207 tiers against captured A+/A+++ alert events (Gate-G/H + forward). Still PROHIBITED from any scoring without validation + ratification.",
+  "a_grade_hypothesis_test_2026_07_13": {
+    "results_file": "farouk_plus/agrade_hypothesis_test_results.json",
+    "sample": "TradingView_Alerts_Log_2026-07-06.csv: 111 alerts, 4 A+ setups, 21 A-dir events; Gate-G window (74 events) contains ZERO A+/A+++ (eligible-but-empty for the top tier); A+++ has NEVER fired anywhere",
+    "design": "frozen pre-computation; observable components via alert co-occurrence only (pattern=same-bar engulfing; BPR/sweep/CHoCH/trap <=5-bar lookback); FVG/OB/trend/freshness UNOBSERVABLE - never inferred",
+    "findings": {
+      "aplus_bpr_necessity": "4/4 A+ setups had BPR context (only fully-testable DR-207 necessary condition) - consistent, no contradiction",
+      "aplus_pattern": "2/4 same-bar engulfing; other 2 unobservable (non-engulfing patterns have no alert condition)",
+      "specificity": "5 engulfing+BPR bars -> only 2 A+ (observables NOT sufficient - consistent with doc requiring unobservable trend/FVG too)",
+      "aplus_plus_plus": "never fired even when all observable A+++ components co-occurred (unobservable gates or stricter threshold - indistinguishable)",
+      "A_tier": "12/21 A-dir events had same-bar engulfing; remainder unobservable"
+    },
+    "verdict_hypA_six_factor": "INSUFFICIENT_SAMPLE (n=4 A+; one fully-observable component; 0 contradictions; weak directional support via 4/4 BPR-necessity)",
+    "verdict_hypB_eight_box": "NOT_TESTABLE (only ~3 of 8 boxes observable from alert payloads by construction)",
+    "equivalence_status_after_test": "INDICATOR_EQUIVALENCE_UNKNOWN (unchanged - n=4 with unobservable components does not justify PARTIALLY_SUPPORTED; note: zero contradictions observed)",
+    "what_would_change_it": "forward captures pairing A+/A+++ alert events with bar-level chart state (panel values, FVG/OB/BPR inventory) - the Cycle-006+ capture spec already collects exactly this"
+  },
+  "replay_test_backlog_added": [
+    "A-grade hypothesis test (DR-207 vs captured A-alert events)",
+    "close-above-FVG confirmation flag (DR-202) as capture field candidate"
+  ],
+  "visual_findings_batch1_2026_07_13": {
+    "report": "farouk_plus/VISUAL_BATCH1_REPORT.md; frames under farouk_plus/derived/visual_batch1/",
+    "rules": [
+      {
+        "id": "VR-01",
+        "finding": "zones = boxes anchored on origin-candle BODY clusters with precise sub-lines (4244.100-4247.805 box; 4306.40 box)",
+        "class": "DIRECT_VISUAL_EVIDENCE / REPRODUCIBLE_BOUNDARY_RULE candidate",
+        "frames": [
+          "VE-Z2-VISUAL-02/t01310s.jpg",
+          "VE-Z2-VISUAL-01/t00425s.jpg"
+        ]
+      },
+      {
+        "id": "VR-02",
+        "finding": "HTF inventory = many single-price LINES (2W tab, ~11 stacked); actionable zones = boxes on 1h/12h",
+        "class": "DIRECT_VISUAL_EVIDENCE",
+        "frames": [
+          "VE-Z2-VISUAL-01/t00570s.jpg"
+        ]
+      },
+      {
+        "id": "VR-03",
+        "finding": "freehand magnet-path sketching (arcs to circled magnet at 4270-4280 then continuation)",
+        "class": "VISUAL_AND_SPOKEN_MATCH",
+        "frames": [
+          "VE-Z2-VISUAL-02/t01310s.jpg"
+        ]
+      },
+      {
+        "id": "VR-04",
+        "finding": "parallel channel active on gold 1h ('panel channel' garble resolved)",
+        "class": "DIRECT_VISUAL_EVIDENCE",
+        "frames": [
+          "VE-Z2-VISUAL-02/t02200s.jpg"
+        ]
+      },
+      {
+        "id": "VR-05",
+        "finding": "MULTI-FEED workspace: Eightcap 2W + FXCM 1h + OANDA 1h (Dec-21) + Pepperstone (Jul-5) + Bybit (SOL)",
+        "class": "DIRECT_VISUAL_EVIDENCE; strengthens FC-FEEDDIV",
+        "frames": [
+          "VE-Z2-VISUAL-01/t00570s.jpg",
+          "t00760s.jpg",
+          "VE-Z2-VISUAL-02/t01310s.jpg"
+        ]
+      },
+      {
+        "id": "VR-06",
+        "finding": "volume-profile histograms in manual toolkit (FXCM 1h tab)",
+        "class": "DIRECT_VISUAL_EVIDENCE",
+        "frames": [
+          "VE-Z2-VISUAL-01/t00760s.jpg"
+        ]
+      },
+      {
+        "id": "VR-07",
+        "finding": "Z2 gap-retest demo was on SPX 1m (cross-asset); thin box at gap origin",
+        "class": "provenance note",
+        "frames": [
+          "VE-Z2-VISUAL-01/t01165s.jpg"
+        ]
+      },
+      {
+        "id": "VR-08",
+        "finding": "ON-SCREEN session-stats table: BTC 8yr edges - Asia 64.2/60.5, London 66.8/63.0, US 71.9/70.4 (strongest), Asia alone 55.5, Asia+London agree 75.2, 'same session logic as Gold' - the concrete claimed basis behind session priors (BTC-derived, NOT 22yr; numbers still UNVERIFIED)",
+        "class": "CHART_VISUAL_EVIDENCE of claim content",
+        "frames": [
+          "VE-EDU001-VISUAL/t04772s.jpg"
+        ]
+      },
+      {
+        "id": "VR-09",
+        "finding": "first captured numeric PANEL states: gold TF60 CHoCH x / Asia break HIGH / OB retest 4148.19 / Current OB 4065.94 / Fresh OB 4065.94; SOL TF720 CHoCH 73.91 / OB retest 79.56 / Fresh OB 16.09 (multi-asset, TF-aware)",
+        "class": "DIRECT_VISUAL_EVIDENCE (8F extraction fields)",
+        "frames": [
+          "VE-EDU001-VISUAL/t04772s.jpg",
+          "t04832s.jpg"
+        ]
+      },
+      {
+        "id": "VR-10",
+        "finding": "'Daily OB' text-labeled band 4153-4195 + Asia High line 4195.52 + stacked colored mitigation boxes (level-class color taxonomy)",
+        "class": "DIRECT_VISUAL_EVIDENCE",
+        "frames": [
+          "VE-EDU001-VISUAL/t04832s.jpg"
+        ]
+      }
+    ],
+    "pm_audit": {
+      "PM-F002_visual_construction": "INSUFFICIENT_EVIDENCE at sampled stamps - video-001 01:19:32-01:21:02 shows SOLUSDT.P 12h (Weekly OB box ~73-77), NOT the gold 4430-4480 daily box",
+      "PM-F001_provenance_flag": "VISUAL_AND_SPOKEN_MISMATCH risk: the spoken '80-84' at 01:20 matches SOL price levels (77-84) on screen - the '80-84 -> 4180-4184' interpretation is now HUMAN_REVIEW; the 4150-4180 box component + video-005 corroboration (4160-4170) still stand; ZONES UNCHANGED/FROZEN",
+      "follow_up_pending_approval": "locate video-001's gold daily-outlook segment (candidate 00:14-00:19 +) and frame it to confirm/refute the 4150-4180 and 4430-4480 box drawings"
+    },
+    "contradiction_register_add": {
+      "id": "CX-004",
+      "tension": "video-001 seed audio ('80-84') vs on-screen SOL chart at those stamps - possible cross-asset conflation in PM-F001/PM-F002 seed interpretation",
+      "status": "HUMAN_REVIEW; pre-marks frozen; follow-up framed"
+    }
+  },
+  "pm_seed_reaudit_2026_07_13": {
+    "report": "farouk_plus/PM_SEED_REAUDIT_REPORT.md; frames farouk_plus/derived/visual_batch1/pmseed_reaudit/",
+    "cx004_expansion": "CONFIRMED at transcript level: video-001 01:19:06 'I don't do crypto at all, only BTC and gold, but let's do Solana here guys' -> the whole 01:19-01:21 weekly-OB/'80-84'/'stop loss to entry' passage is the SOLANA discussion (SOL 12h on screen, price 77.6, levels 81.30/83.95). The original seed session mis-attributed SOL audio to gold.",
+    "verdicts": {
+      "PM-F001_A_4150_4180_box": "SUPPORTED_BY_GOLD_VISUAL_EVIDENCE - but the strongest direct instance is the Jul-5 video 'Daily OB' labeled band 4153-4195 + Asia High 4195.52 (frame VE-EDU001-VISUAL/t04832s.jpg), not the video-001 sampled frames (video-001 dailies show the 41xx region as live price action without a distinct 4150-4180 box at sampled stamps -> INSUFFICIENT_EVIDENCE for the video-001-specific box claim). Provenance corrected to multi-video: Jul-5 band + Jul-12 spoken 4160-4170.",
+      "PM-F001_B_4180_4184_from_80_84": "INSTRUMENT_MISMATCH - the '80-84' audio is SOL (transcript + frames concur); as GOLD evidence the 4180-4184 extension's original basis is INVALID. Residual note: 4180-4184 coincidentally lies inside the Jul-5 Daily-OB band (4153-4195) - INFERRED only, not the original claim. Zone stays frozen.",
+      "PM-F001_C_4160_4170_video005": "CORROBORATED (gold context confirmed: video-005 00:27:32, 41xx price environment) - unchanged",
+      "PM-F002_4430_4480": "NO_DIRECT_EVIDENCE_LOCATED - video-001 gold dailies (t02010 00:33:30 Eightcap 1D; t03040 00:50:40 Pepperstone 1D) show supply boxes 4370-4430 (top edge ~4430), 4505-4530, 4580-4650 and a GREEN DEMAND box 3880-3930; NO 4430-4480 box exists on the sampled gold charts; the 'weekly OB' audio basis (01:19-01:21) is the SOL conflation. 4430 appears only as a box TOP edge (zone BELOW it, opposite orientation). PM-F002 provenance = HUMAN_REVIEW; zone stays FROZEN as a falsifiable forward hypothesis (a future 4430-4480 sell post would still match it)."
+    },
+    "gold_segments_confirmed": [
+      "00:33:14-00:35:08 daily accumulation talk (t02010: green demand 3880-3930 'buy into 3k this whole zone')",
+      "00:42-00:45 daily OB / '4000 strong level' / 3-day chart",
+      "00:47-00:53 weekly/3-day FVG-reject zone talk (t03040)",
+      "01:31:41+ daily OB higher (not framed - context spent)"
+    ],
+    "panel_values_captured": "video-001 1D gold panel: OB retest 4299.98-4302.29 / Current OB 4512.34-4515.25 / Fresh OB 1871.61-73 (two feeds, Eightcap vs Pepperstone, minor divergence in panel values - feed-dependence of panel outputs DIRECTLY VISIBLE -> FC-FEEDDIV)",
+    "pre_marks_frozen_confirmed": true
+  },
+  "level_construction_spec_note": "pipeline unchanged; UNKNOWN list amended: 'A-grade formula' -> 'A-grade indicator implementation (document formula now on file)'",
+  "review_only": true,
+  "executable": false,
+  "trade_ready": false,
+  "visual_findings_batch2_2026_07_13": {
+    "report": "farouk_plus/VISUAL_BATCH2_REPORT.md; frames farouk_plus/derived/visual_batch2/",
+    "rules": [
+      {
+        "id": "VR-11",
+        "finding": "OB box boundaries = origin-candle BODY extremes, wicks excluded (Jul-3 replay lesson: hand-drawn box 4089.47-4096.46 with 4080 wick outside; multi-TF OBs stacked and text-labeled e.g. 5-min-ob) - SECOND independent instance after VR-01",
+        "class": "DIRECT_AUDIO_AND_VISUAL / REPRODUCIBLE_RULE_CANDIDATE",
+        "frames": [
+          "VE-EDU001B-VISUAL/t00713s.jpg"
+        ]
+      },
+      {
+        "id": "VR-12",
+        "finding": "POC T-variants RESOLVED as multi-window POC levels ([kyle] v1: 1DT/2DT/3DT/5D/1W POC labels visible); computation still UNKNOWN; remain excluded from Lane-6 anchors",
+        "class": "DIRECT_VISUAL_EVIDENCE",
+        "frames": [
+          "VE-Z2-VISUAL-03/t04260s.jpg"
+        ]
+      },
+      {
+        "id": "VR-13",
+        "finding": "ORB = first 15-min session candle H/L/mid as indicator-generated green/blue/red line triplet (user timezone set); no-trade inside; breakout->retest entry; unretested breakout = magnet; session choice discretionary (Asia vs US orb)",
+        "class": "DIRECT_AUDIO_AND_VISUAL (gold) / spec candidate",
+        "frames": [
+          "VE-Z2-VISUAL-03/t03850s.jpg",
+          "VE-Z2-VISUAL-04/t07715s.jpg"
+        ]
+      }
+    ],
+    "orb_candidate_spec": {
+      "reproducible": "session-open first-15m candle; H/L/mid lines; no-trade-inside; breakout+retest; unretested-breakout magnet; Asia/London(09:00 GMT+1)/NY(15:30) opens",
+      "discretionary": "which session orb to mark; confluence weighting; right-breakout after repeated falses",
+      "cross_asset": "taught on gold in cited frames",
+      "missing": "verbal body-vs-wick rule; breakout-close TF; retest depth; validity horizon",
+      "v03_eligibility": "PROHIBITED (offline candidate only)"
+    },
+    "panel_version_note": "Dec-21 stack = [kyle] v1/v2 + POC + Smart Zones Strategy PRO (NOT the current Smart Money Suite); FC-PANELWATCH active; older panel displays not equatable to current/future panel"
+  },
+  "visual_findings_batch3_2026_07_13": {
+    "report": "farouk_plus/VISUAL_BATCH3_REPORT.md; frames farouk_plus/derived/visual_batch3/",
+    "rules": [
+      {
+        "id": "VR-14",
+        "finding": "stop mechanism: zone boxes BODY-anchored but STOP placed beyond the WICK, with extra allowance when mitigated (Jul-3 @00:28:34 gold 5m replay)",
+        "class": "DIRECT_AUDIO_AND_VISUAL / REPRODUCIBLE_RULE_CANDIDATE (structure only; width qualitative)",
+        "frames": [
+          "VE-EDU001B-STOPWIDTH-VISUAL/t01714s.jpg"
+        ]
+      },
+      {
+        "id": "VR-15",
+        "finding": "level selection: mechanical REJECTION of mitigated/spent candidates (4135 mitigated-15m; 4020 tested-broke-lost) + discretionary acceptance among fresh confluence zones (HTF BPR+OB; 4165 monthly-mids; 4250); full color-coded candidate stack + magnet-path sketch visible; VANTAGE feed + current Smart Money Suite stacked over kyle-era indicators; PM-F003 zone 4245.64-4253.49 VISIBLE as pre-marked band",
+        "class": "DIRECT_AUDIO_AND_VISUAL (gold)",
+        "frames": [
+          "VE-LEVEL-SELECTION-VISUAL-01/t01500s.jpg"
+        ]
+      },
+      {
+        "id": "VR-16",
+        "finding": "stop width scales with expected move size (biggest stop loss because the move is big, Jul-3 @01:31:06) - NEW qualitative driver for FC-STOPWIDTH",
+        "class": "SPOKEN_CLAIM",
+        "frames": [
+          "VE-EDU001B-STOPWIDTH-VISUAL/t05466s.jpg"
+        ]
+      }
+    ],
+    "stop_width_candidate_spec": {
+      "A_fresh": "stop beyond far structure; posted-median ~USD20",
+      "B_mitigated": "stop beyond the WICK + extra allowance (VR-14; explainer-001 00:18:24)",
+      "C_structure": "beyond wick/flat-candle/OB-box/never-mitigated-FVG/swept extreme; never inside body range",
+      "D_lanes": "posted follower stop fixed+never-widened (DR-305) SEPARATE from wider personal initial stop (explainer-001 00:16:01; 19-03 ~USD5 gap) - never merged",
+      "E_numeric": "medians ~20-21 (51 samples); spoken 30-40; STRONG 20-85; S2 graze 0.52; 19-03 gap ~5",
+      "F_missing": "exact width mapping; move-size scaling; mitigation allowance; volatility adj - NO fixed formula exists, none invented",
+      "v03_eligibility": "PROHIBITED (offline research spec)"
+    },
+    "pm_f003_provenance_upgrade": "PM-F003-SELL-4250-4260 zone DIRECTLY VISIBLE as marked band (4245.64-4253.49) on the Jul-12 Vantage 1h chart (frame VE-LEVEL-SELECTION-VISUAL-01/t01500s.jpg) - strong seed provenance (boundaries unchanged)",
+    "item3_disposition": "NO THIRD ITEM - the stop-to-entry/risk-free candidate (Jul-3 01:42-01:43) is BTCUSDT.P 1h Binance = CROSS_ASSET_DEMONSTRATION (frames stored, NOT gold evidence)"
+  },
+  "visual_findings_batch4_2026_07_13": {
+    "report": "farouk_plus/VISUAL_BATCH4_REPORT.md; frames farouk_plus/derived/visual_batch4/",
+    "rules": [
+      {
+        "id": "VR-17",
+        "finding": "CURRENT_PANEL_STATE Jul-12: Smart Money Suite panel = six fields (TF/CHoCH/Asia break/OB retest/Current OB/Fresh OB); NO internal-structure-break row -> announced change NOT yet implemented (ANNOUNCED_FUTURE_CHANGE pending; FC-PANELWATCH active); no grade rows on panel (grades via alerts only)",
+        "frames": [
+          "VE-CURRENT-PANEL-VISUAL-01/t04270s.jpg"
+        ]
+      },
+      {
+        "id": "VR-18",
+        "finding": "panel recomputes per-TF independently (1h: CHoCH x/OB retest 4084.57/Current OB 4065.86 vs 5m: CHoCH 4105.5/4107.50/4093.40) with red/green state colouring",
+        "frames": [
+          "VE-CURRENT-PANEL-VISUAL-01/t04270s.jpg",
+          "visual_batch3 VE-LEVEL-SELECTION-VISUAL-01/t01500s.jpg"
+        ]
+      },
+      {
+        "id": "VR-19",
+        "finding": "gold management recap in REPLAY: drawn entry ~4105, mitigated zone, ~190-200p run then BE-scratch spike visible; chart+speech agree; FOLLOWER lane; intra-bar ordering AMBIGUOUS_SEQUENCE; no widget/personal values",
+        "frames": [
+          "VE-GOLD-MANAGEMENT-VISUAL-01/t01345s.jpg"
+        ]
+      },
+      {
+        "id": "VR-20",
+        "finding": "VP/POC on gold 1h: VAH/POC/VAL constructed levels frame the range and supply the TARGET FLOOR (short to at least the POC); zones stay manually drawn; PARTLY_MECHANICAL_SELECTION",
+        "frames": [
+          "VE-LEVEL-SELECTION-VISUAL-02/t00380s.jpg"
+        ]
+      }
+    ],
+    "feature_candidate_add": {
+      "id": "FC-POCTARGET",
+      "desc": "at-least-the-POC target floor rule (capture-first; target selection evidence)",
+      "live_eligibility": "NOT ELIGIBLE",
+      "status": "OBSERVED"
+    }
+  },
+  "visual_findings_batch5": {
+    "batch": "VISUAL_BATCH_5_FINAL_RETROSPECTIVE",
+    "date_utc": "2026-07-13",
+    "items_completed": [
+      "VE-FEED-COMPARISON-VISUAL-01",
+      "VE-GOLD-NOTRADE-VISUAL-01"
+    ],
+    "item3_disposition": "NO ITEM 3 - HISTORICAL ALERT-TO-CHART STATE NOT AVAILABLE (alert payloads carry no chart state; Jul-6 phone frame shows price only; no forced reconstruction)",
+    "findings": [
+      {
+        "id": "VR-21",
+        "title": "Cross-feed divergence with reachability implication",
+        "classification": "CROSS_FEED_COMPARISON",
+        "evidence": [
+          {
+            "pair": "Eightcap vs Pepperstone gold 1D panel values (video-001 00:33:30 vs 00:50:40, ~17min apart)",
+            "divergence_usd": {
+              "ob_retest": 2.31,
+              "current_ob": 2.91,
+              "fresh_ob": 0.12
+            },
+            "class": "SAME_STRUCTURE_BOUNDARY_SHIFT"
+          },
+          {
+            "pair": "Same-instant XAUUSD tab-bar prices (video-005 00:25:00, Vantage + 3 tabs)",
+            "divergence_usd_max": 1.6,
+            "outlier": "4111.51 tab -> HUMAN_REVIEW (likely different instrument variant)",
+            "class": "SAME_STRUCTURE_SMALL_PRICE_SHIFT"
+          },
+          {
+            "pair": "FXCM vs OANDA gold 1h same session (Z2 00:06:20 vs 00:21:50)",
+            "divergence_usd": 0.53,
+            "manual_drawings": "identical across tabs",
+            "class": "SAME_STRUCTURE_SMALL_PRICE_SHIFT"
+          }
+        ],
+        "reachability_implication": "Documented panel-boundary feed divergence ($2-3) exceeds S2 ($0.52) and 27-03 ($0.97) stop-graze margins -> marginal stop-touch/entry-fill verdicts are feed-dependent; graze cases must stay feed-annotated",
+        "verdicts": {
+          "FC-FEEDDIV": "SUPPORTS_EXISTING_RULE",
+          "deterministic_match_graze_caveats": "QUALIFIES_EXISTING_RULE"
+        },
+        "tolerance_threshold_invented": false,
+        "sample_size": 3,
+        "note": "Feed divergence is NOT permission to disregard stops"
+      },
+      {
+        "id": "VR-22",
+        "title": "Gold no-trade / rejection / cancellation evidence set",
+        "classification": [
+          "MECHANICAL_VETO",
+          "DISCRETIONARY_VETO",
+          "SETUP_AVOIDED"
+        ],
+        "examples": [
+          {
+            "ts": "video-005 00:23:49",
+            "reason": "level already mitigated (15m)",
+            "class": "MECHANICAL_VETO"
+          },
+          {
+            "ts": "video-005 00:25:46-58",
+            "reason": "level spent (tested-broke-lost)",
+            "class": "MECHANICAL_VETO"
+          },
+          {
+            "ts": "Z2 01:10:50",
+            "reason": "price inside ORB -> do nothing",
+            "class": "MECHANICAL_VETO"
+          },
+          {
+            "ts": "video-001 00:20:08-18",
+            "reason": "mid-range + no body close beyond level",
+            "class": "MECHANICAL_PLUS_DISCRETIONARY"
+          },
+          {
+            "ts": "Jul-5 01:06:47",
+            "reason": "insufficient confluence / patience",
+            "class": "DISCRETIONARY_VETO"
+          },
+          {
+            "ts": "Jul-3 00:31:50",
+            "reason": "stop infeasible (too big)",
+            "class": "MECHANICAL_VETO"
+          }
+        ],
+        "hindsight_used": false,
+        "verdicts": {
+          "MR-001": "SUPPORTS_EXISTING_RULE",
+          "MR-013": "SUPPORTS_EXISTING_RULE",
+          "VR-15": "SUPPORTS_EXISTING_RULE",
+          "orb_candidate_spec": "SUPPORTS_EXISTING_RULE",
+          "stop_width_candidate_spec": "SUPPORTS_EXISTING_RULE"
+        }
+      }
+    ],
+    "no_trade_candidate_spec": {
+      "status": "OFFLINE_CANDIDATE_ONLY",
+      "v03_eligibility": "PROHIBITED",
+      "A_mechanical_vetoes": [
+        "level_mitigated_15m_plus",
+        "level_spent_tested_broke_lost_or_repeated_taps",
+        "price_inside_orb",
+        "no_body_close_beyond_level",
+        "no_structure_break",
+        "stop_infeasible_too_big",
+        "no_reentry_after_range",
+        "no_fvg_left_by_move"
+      ],
+      "B_discretionary_vetoes": [
+        "mid_range_positioning",
+        "insufficient_confluence",
+        "wait_for_market_patience",
+        "session_opportunity_passed",
+        "htf_bias_conflict_weighing"
+      ],
+      "C_missing_parameters": [
+        "mitigation_tf_precedence_rule",
+        "tap_count_threshold_per_tf",
+        "chase_distance_limit"
+      ],
+      "D_forward_test_evidence": "per-setup capture of considered-but-rejected zones with stated reason (capture-only extension of Cycle-006 contract)"
+    },
+    "feature_candidates_new": [
+      {
+        "id": "FC-NOTRADE",
+        "status": "CAPTURE_FIRST_OFFLINE_ONLY",
+        "v03_eligibility": "PROHIBITED",
+        "description": "no-trade veto stack per no_trade_candidate_spec; forward capture of rejected-zone events"
+      }
+    ],
+    "residual_gap_matrix": {
+      "a_grade_indicator_formula": "REQUIRES_FAROUK_DISCLOSURE",
+      "panel_repaint_behaviour": "REQUIRES_NEW_FORWARD_CAPTURE",
+      "zone_selection_discretion_acceptance_stage": "PROBABLY_NOT_IDENTIFIABLE",
+      "stop_width_mapping": "REQUIRES_NEW_FORWARD_CAPTURE + REQUIRES_1M_OHLC",
+      "feed_tolerance_policy": "REQUIRES_NEW_FORWARD_CAPTURE",
+      "orb_retest_depth": "REQUIRES_NEW_FORWARD_CAPTURE + REQUIRES_1M_OHLC",
+      "orb_validity_horizon": "REQUIRES_NEW_FORWARD_CAPTURE",
+      "internal_structure_break_panel_change": "REQUIRES_UPDATED_PANEL_RELEASE",
+      "farouk_personal_fills_and_stops": "REQUIRES_FAROUK_DISCLOSURE",
+      "alert_to_chart_feature_state": "REQUIRES_NEW_FORWARD_CAPTURE",
+      "feb_mar_recap_ab_rows": "SOLVABLE_FROM_EXISTING_ARCHIVE",
+      "may_six_trade_match": "SOLVABLE_FROM_EXISTING_ARCHIVE",
+      "recap_entry_times": "REQUIRES_ENTRY_TIME_EVIDENCE",
+      "conclusion": "Retrospective visual program at diminishing returns; remaining archive-solvable items are OHLC tasks + entry-time hunt, not visual"
+    }
+  }
+}

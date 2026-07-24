@@ -1,0 +1,12 @@
+{
+  "record_type": "market_update",
+  "id": "FP-MARKET-UPDATE-001",
+  "status": "PENDING_SUPPLY",
+  "asset": "BTC Telegram market-update video (NOT yet supplied)",
+  "handling": [
+    "cross-asset methodology evidence ONLY",
+    "do NOT count as a trade",
+    "do NOT mix outcomes into XAUUSD/Gold statistics",
+    "when supplied: ingest, extract pre-trade bias / levels / scenarios / veto conditions; separate general process from BTC-specific detail"
+  ]
+}

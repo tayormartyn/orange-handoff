@@ -1,0 +1,64 @@
+{
+  "schema_id": "multi_position_reconstruction_schema_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / APPEND_ONLY / SINGLE_SESSION_WRITES",
+  "purpose": "Leg-level reconstruction of multi-position campaign behaviour from posted evidence, so follower simulations become leg-resolved instead of assumption-bound. Analytic only.",
+  "explicitly_excluded_fields": [
+    "lot size / volume as a number (widget volumes are descriptive evidence text or hashed, never sizing inputs)",
+    "risk size", "account id", "broker route", "order ticket", "any execution instruction"
+  ],
+  "enforcement": "ai_review fail-closed validator + extended forbidden-token guard apply to every leg record (TRADE_READY/EXECUTE/ORDER/LOT_SIZE/BROKER_ROUTE/ACCOUNT_ID/RISK_SIZE/COPY_TRADE/NANO/LIVE/DEMO_EXECUTE unwritable as keys/labels)",
+  "leg_record_fields": {
+    "campaign_id": "string — groups setups that are re-entries of one idea (e.g. JUN15-BUY-CAMPAIGN)",
+    "setup_id": "string — XAU-J##/S#/F### ledger id",
+    "leg_id": "string — <setup_id>:L<seq>",
+    "leg_sequence_number": "int",
+    "leg_type": "INITIAL_ENTRY | ADDITIONAL_ENTRY | RE_ENTRY | PARTIAL_EXIT | CLOSE_WORST | HOLD_BEST | SL_TO_ENTRY | FINAL_CLOSE | RUNNER",
+    "source_message_id": "int",
+    "source_timestamp_utc": "string ISO-8601",
+    "direction": "LONG | SHORT",
+    "entry_zone_or_price_if_known": "string | null (verbatim from post/widget; null when never posted)",
+    "exit_or_management_event_if_known": "string | null",
+    "pips_claimed_if_any": "number | null",
+    "pips_deterministically_supported_if_any": "number | null (from the OHLC matcher only)",
+    "evidence_type": "TEXT | SCREENSHOT_WIDGET | OHLC_INFERRED | UNKNOWN",
+    "confidence": "HIGH | MEDIUM | LOW | UNCLEAR"
+  },
+  "campaign_classification_enum": ["SINGLE_POSITION_SIMPLE", "MULTI_POSITION_KNOWN", "MULTI_POSITION_INFERRED", "MULTI_POSITION_UNCLEAR"],
+  "june_july_classification": {
+    "MULTI_POSITION_KNOWN": ["J01","J04","J09","J10","J11","J13","J19","J20","J21","J23","J24","J25","J26","J28","J29","J30","S1","S3","S4"],
+    "MULTI_POSITION_INFERRED": ["J02","J05","J07","J12","J14","J15","J16","J17","J18","J22","J27"],
+    "SINGLE_POSITION_SIMPLE": ["S2","J06"],
+    "MULTI_POSITION_UNCLEAR": ["J03","J08"]
+  },
+  "audit_findings": {
+    "model_A": "single-entry/multi-exit abstraction — multiple entries, close-worst/hold-best leg ops, intra-setup re-entries NOT modelled",
+    "model_B": "single-entry (near-edge)/multi-exit abstraction — same gaps",
+    "widget_irony": "where widgets exist (J11, J24), HIS book ran one unchanged position while instructions described multi-leg follower choreography — lane-1 largely leg-insensitive; leg problem lives in follower lanes",
+    "high_sensitivity_cases": {"S3": "far edge 4083 verifiably filled 12:47Z; hold-best leg plausibly survived the retrace that scratched near-edge -> ~+300-500p on that leg (ESTIMATE, computable)"},
+    "low_sensitivity_cases": ["J25","J26","S1","J20 (far edges never traded)", "S2 (loss in all reconstructions)", "J24","J11 (single-lot widgets)", "J30 (single entry, tranche exits)"],
+    "moderate": {"J10": "explicitly 3-point layered with NO posted prices — loss robust, magnitude assumption-based"},
+    "materiality_estimate": "leg-resolved Model B ~ +10-16p/trade (from +1.4) — narrows the A/B band from below, does not close it; instruction timing (8C) remains the binding uncertainty"
+  },
+  "remains_assumption_based": [
+    "unposted layered entry prices (e.g. J10's three points)",
+    "which legs a follower holds at close-worst",
+    "per-leg BE placement (his stops provably differ from instructions)",
+    "leg fractions (volumes excluded by policy)",
+    "J26's second concurrent position"
+  ],
+  "forward_capture_requirements_cycle_002": [
+    "every entry message -> INITIAL_ENTRY/ADDITIONAL_ENTRY/RE_ENTRY leg event (message id + exact ts)",
+    "every partial-close instruction -> PARTIAL_EXIT event",
+    "every close-worst / hold-best instruction -> CLOSE_WORST / HOLD_BEST events with leg linkage where statable",
+    "every SL-to-entry instruction -> SL_TO_ENTRY event (feeds 8C scratch_trigger computation)",
+    "every final-close / result claim -> FINAL_CLOSE event with pips_claimed",
+    "widget screenshots -> SCREENSHOT_WIDGET evidence rows (prices verbatim, volumes as descriptive text/hash only)"
+  ],
+  "safety": {
+    "listener_pid_87988": "untouched",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "execution_surface": "none"
+  }
+}

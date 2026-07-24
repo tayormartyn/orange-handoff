@@ -1,0 +1,12 @@
+{
+ "schema": "campaign_status_v0_1",
+ "authority": "SINGLE authoritative machine-readable source for campaign capture-status and expectancy eligibility. BOTH brain_refresh.py and brain_build_v0_1.py read this; neither hardcodes campaign counts/ids. GOVERNED: (1) the genuine-prospective capture set MUST reconcile with the genuine freeze ledger (router_freeze_v0_1.jsonl) at render time - a mismatch fails loudly; (2) expectancy eligibility follows D-044/D-045/K governance - exclusion requires a NAMED DEFECT that corrupted computation; a model-unfavourable result is NEVER excluded.",
+ "campaigns": {
+  "XAU-F004-20260716": {"date": "2026-07-16", "class": "genuine_prospective", "expectancy_eligible": true, "outcome": "+15.18 pips/unit"},
+  "XAU-F005-20260717": {"date": "2026-07-17", "class": "genuine_prospective", "expectancy_eligible": true, "outcome": "NO_FILL (0.00; price below zone at post)"},
+  "XAU-F006-20260720": {"date": "2026-07-20", "class": "genuine_prospective", "expectancy_eligible": false, "exclusion_reason": "PARTIAL_INSTRUCTION_SILENT_LOSS named defect corrupted the outcome (D-028); adjudicated-closed", "outcome": "EXCLUDED (defect-corrupted)"},
+  "XAU-F007-20260721": {"date": "2026-07-21", "class": "genuine_prospective", "expectancy_eligible": true, "outcome": "+5.38 pips/unit (flagged MODEL_ARTEFACT_TERMINAL; kept per D-044)"}
+ },
+ "non_prospective_note": "F001/F002 = schema backfill (not prospective); F003 = authentic-not-prospective (no freeze).",
+ "governance_refs": ["D-028", "D-044", "D-045"]
+}

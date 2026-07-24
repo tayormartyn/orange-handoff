@@ -1,0 +1,41 @@
+{
+  "doc_id": "febmar_export_c_import_validation",
+  "as_of": "2026-07-12T14:40Z",
+  "mode": "EXPORT_C_IMPORT_AND_SAFE_MATCH_ATTEMPT_REVIEW_ONLY",
+  "live_priority_gate": {"listener_pid_23012": "running/untouched", "store_max_msg_id": 45649, "note": "45649 = known IRRELEVANT admin/relay request", "cycle_006_triggered": false},
+  "full_matching_run": false,
+  "files_received": {
+    "XAUUSD_1M_2026-03-11_to_2026-03-20.csv.csv": {
+      "bytes": 1401508, "rows": 20423, "cadence": "1m (verified)",
+      "actual_content_window_utc": "2026-06-21T22:01Z -> 2026-07-10T20:54Z",
+      "verdict": "EXPORT FAILED FOR MARCH - TradingView dumped its most recent ~20k 1m bars; 1m history does not reach March 2026 (explains why all four June 1m exports are byte-identical 1401508)",
+      "kept_as": "price_data/XAUUSD_1M_2026-06-21_to_2026-07-10_MISLABELED_EXPORT_C.csv (sha256 2E0D565D3D8E6453C813335BB427E553B1527446B26546CCBC0CC317B88B53AF) - bonus 1m coverage Jun-21..Jul-10 incl. the Jul-1 loss day"
+    },
+    "PEPPERSTONE_XAUUSD, 60.csv": {
+      "bytes": 141218, "rows": 1996, "cadence": "60m, hourly with weekend gaps",
+      "content_window_utc": "2026-03-10T16:00Z -> 2026-07-10T20:00Z",
+      "verdict": "covers the March window at 60m - below the 1m requirement; imported",
+      "kept_as": "price_data/XAUUSD_60M_2026-03-10_to_2026-07-10.csv (sha256 DD4F875F8981EEF6655590DEB4257CE767F908874D476F64DCB53DB6481DFF59)"
+    },
+    "format": "time(epoch s UTC),open,high,low,close,Bull Engulf,Bear Engulf,Volume,CRSI",
+    "excel_used": false
+  },
+  "why_matching_not_run": ["no 1m data exists for the window", "60m cannot sequence TP/SL inside $50-90 crash-hour ranges", "recap rows are date-only (no entry timestamps)", "outcome_matcher_v0_1 is a short-horizon excursion tool, not a recap bar-walker; forcing = guessing"],
+  "export_c_rows_in_window": 6,
+  "bounded_60m_checks": [
+    {"row": "12-03 LONG 5050-5035 claim MISSED", "finding": "all of Mar-12 above 5050; zone first traded 2026-03-13T14:00Z", "verdict": "MISSED_SUPPORTED_FOR_POSTING_DAY"},
+    {"row": "17-03 LONG 4992-4980 SL 4966 claim WIN+300p", "finding": "fill first-touch Mar-17 10:00; +$30 target (5022) traded Mar-17 12:00; SL 4966 first traded Mar-18 10:00 (after target)", "verdict": "WIN_SUPPORTED (bar-level sequence decisive)"},
+    {"row": "18-03 SHORT 4870 SL 4925 claim WIN+500p", "finding": "first Mar-18 bar spans 4870 AND 4925; -$50 target (4820) traded Mar-18 20:00; post-fill low 4502.69", "verdict": "AMBIGUOUS_SEQUENCE (target traded; fill/SL same bar; needs <=5m + entry time)"},
+    {"row": "19-03 LONG 4775 posted SL 4767 'SL hit at 4762' (GAP ROW)", "finding": "zone first traded Mar-19 06:00; SAME bar trades through 4767 AND 4762 (bar low 4747.84); later bars to 4477.38", "verdict": "SL_GAP_SUPPORTED - 4762 exit physically available (price traded through both prices; reachability independent of intra-bar order); LOSS directionally confirmed (~$300 collapse after zone traded); intra-bar fill->stop order = AMBIGUOUS_SEQUENCE at 60m"},
+    {"row": "19-03b SHORT 4619 SL 4708 claim +400p", "finding": "window-start bar spans entry+SL; -$40 target traded Mar-19 12:00; low 4477.38", "verdict": "AMBIGUOUS_SEQUENCE (target traded, +400p plausible)"},
+    {"row": "19-03c SHORT 4624 SL 4708 claim +350p", "finding": "same structure", "verdict": "AMBIGUOUS_SEQUENCE (target traded, +350p plausible)"}
+  ],
+  "score_at_60m": {"supported": 3, "ambiguous_sequence": 3, "refuted": 0, "note": "nothing contradicts the recap - consistent with the 0-contradicted history"},
+  "next_tasks": [
+    {"task": "Export C-5M (Martyn)", "spec": "XAUUSD (Pepperstone) 5m, 2026-03-10T00:00Z -> 2026-03-29T00:00Z, filename XAUUSD_5M_2026-03-10_to_2026-03-29.csv; if 5m depth also fails, export 15m fallback"},
+    {"task": "recap_bar_walk_matcher (separate approved session)", "spec": "zone-side-aware first-touch, TP/SL bar-walk, AMBIGUOUS_SEQUENCE on same-bar conflicts, date-only anchors with whole-day sensitivity; reusable for the May six-trade tick->1m run"},
+    {"task": "extend coarse 60m checks to D-window rows (already covered by the 60m file); February needs its own export (60m file starts Mar-10)"}
+  ],
+  "safety": {"live_scoring_run": false, "v03_labels": "unchanged", "v04_live": false, "execution_built": false, "permits_leases_orders": "none", "gates": "PAPER/PREVIEW/False/False", "tradingview_worker_r2": "untouched (exports made by Martyn)", "not_integration_ready": "unchanged"},
+  "next": "Cycle 006 / XAU-F001 at ~22:00Z reopen stays priority; offline: Export C-5M attempt, then recap bar-walk matcher; May six-trade local match remains shovel-ready"
+}

@@ -1,0 +1,25 @@
+{
+  "links": [
+    {
+      "source": "FP-EDU-035 Displacement",
+      "campaign": "C004 (H4 BOS + displacement confluence)",
+      "assessment": "dedicated displacement definition supports the campaign usage; still qualitative"
+    },
+    {
+      "source": "FP-EDU-031/032 NY models",
+      "campaign": "campaigns are XAUUSD session trades",
+      "assessment": "session-liquidity models align with the Asia/London/NY framing seen in campaigns"
+    },
+    {
+      "source": "FP-EDU-030 Liquidity",
+      "campaign": "C003 sweep / C004 liquidity grab",
+      "assessment": "liquidity-pool concept underpins the campaign sweeps"
+    }
+  ],
+  "campaigns_referenced": [
+    "FP-CAMPAIGN-001",
+    "FP-CAMPAIGN-002",
+    "FP-CAMPAIGN-003",
+    "FP-CAMPAIGN-004"
+  ]
+}

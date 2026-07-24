@@ -1,0 +1,80 @@
+{
+  "trader": "FAROUK",
+  "_help": {
+    "what": "FAROUK's own stated trading rules, plus how check_rules.py assesses each one against the paper log. EDIT the 'statement' text freely (plain English). The 'check' field tells the tool HOW to look for the rule in the logged data.",
+    "checks_available": {
+      "stop_present": "Compliant if the filled trade has a stop-loss price logged; breaking if not.",
+      "risk_pct_band": "Compliant if risk per trade is within params.min_pct..max_pct (percent). params: {min_pct, max_pct}.",
+      "notes_evidence": "Looks for params.keywords in the trade notes. params.shows='compliance' (a hit = evidence the rule WAS followed; no hit = undetermined) or 'breach' (a hit = evidence it was BROKEN; no hit = undetermined).",
+      "one_trade_per_day": "Proxy for 'one good trade is enough': a trade on a single-trade day is compliant; a trade on a day with several entries is a possible breach.",
+      "logs_misses_not_chase": "Evidence the trader logs MISSED entries (and uses LIMIT-order sources) rather than chasing. Reported as evidence; chasing itself isn't directly loggable.",
+      "not_detectable": "The log cannot show this rule. params.reason explains why. Always reported as 'can't determine from data'."
+    },
+    "honesty": "Where the data cannot show whether a rule was followed, the tool says 'can't determine from data' rather than guessing. Absence of evidence is NOT counted as a breach."
+  },
+  "rules": [
+    {
+      "id": "always_stop",
+      "statement": "Always use a stop loss",
+      "check": "stop_present"
+    },
+    {
+      "id": "consistent_size",
+      "statement": "Small / consistent size only (risk 0.5-1% per trade)",
+      "check": "risk_pct_band",
+      "params": { "min_pct": 0.5, "max_pct": 1.0 }
+    },
+    {
+      "id": "avoid_leverage",
+      "statement": "Avoid high leverage",
+      "check": "not_detectable",
+      "params": { "reason": "leverage isn't recorded in the paper log — only size/notional are, which is not the same thing" }
+    },
+    {
+      "id": "breakeven_move",
+      "statement": "Move stop loss to entry (breakeven) once 50-100 pips in profit",
+      "check": "notes_evidence",
+      "params": {
+        "shows": "compliance",
+        "keywords": ["sl to entry", "stop to entry", "to entry", "breakeven", "break even", "break-even", "moved sl", "moved stop", "be after"]
+      }
+    },
+    {
+      "id": "take_partials",
+      "statement": "Take partial profits as price moves",
+      "check": "notes_evidence",
+      "params": {
+        "shows": "compliance",
+        "keywords": ["scaled", "partial", "took 50", "took off", "took profit", "secured", "banked", "tp1", "tp2", "tp3", "all tp", "all tps"]
+      }
+    },
+    {
+      "id": "no_chase",
+      "statement": "If you miss the entry, do not chase (use limit orders)",
+      "check": "logs_misses_not_chase"
+    },
+    {
+      "id": "no_fomo",
+      "statement": "No FOMO trades",
+      "check": "notes_evidence",
+      "params": {
+        "shows": "breach",
+        "keywords": ["fomo", "chased", "chase", "late entry", "jumped in", "couldn't resist"]
+      }
+    },
+    {
+      "id": "one_good_trade",
+      "statement": "One good trade is enough — protect capital",
+      "check": "one_trade_per_day"
+    },
+    {
+      "id": "no_emotional_or_news",
+      "statement": "Don't trade when emotional / during high-impact news",
+      "check": "notes_evidence",
+      "params": {
+        "shows": "breach",
+        "keywords": ["news", "nfp", "cpi", "fomc", "high impact", "high-impact", "emotional", "revenge", "tilt", "angry", "frustrated"]
+      }
+    }
+  ]
+}

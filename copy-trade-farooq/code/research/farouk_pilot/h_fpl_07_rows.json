@@ -1,0 +1,123 @@
+[
+ {
+  "utc": "06:51:02Z",
+  "side": "SHORT",
+  "session": "ASIA",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 14.15,
+  "hrs_to_weekly_close": 86.2,
+  "3m_bar": "06:51",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "07:00:09Z",
+  "side": "SHORT",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 14.0,
+  "hrs_to_weekly_close": 86.0,
+  "3m_bar": "07:00",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "07:33:00Z",
+  "side": "LONG",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 13.45,
+  "hrs_to_weekly_close": 85.5,
+  "3m_bar": "07:33",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "07:45:04Z",
+  "side": "SHORT",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 13.25,
+  "hrs_to_weekly_close": 85.2,
+  "3m_bar": "07:45",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "08:09:01Z",
+  "side": "SHORT",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 12.85,
+  "hrs_to_weekly_close": 84.8,
+  "3m_bar": "08:09",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "09:09:02Z",
+  "side": "LONG",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 11.85,
+  "hrs_to_weekly_close": 83.8,
+  "3m_bar": "09:09",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "09:27:02Z",
+  "side": "SHORT",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 11.55,
+  "hrs_to_weekly_close": 83.5,
+  "3m_bar": "09:27",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "09:51:01Z",
+  "side": "SHORT",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 11.15,
+  "hrs_to_weekly_close": 83.2,
+  "3m_bar": "09:51",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "10:12:00Z",
+  "side": "LONG",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 10.8,
+  "hrs_to_weekly_close": 82.8,
+  "3m_bar": "10:12",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "11:42:01Z",
+  "side": "SHORT",
+  "session": "LONDON",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 9.3,
+  "hrs_to_weekly_close": 81.3,
+  "3m_bar": "11:42",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ },
+ {
+  "utc": "12:00:05Z",
+  "side": "SHORT",
+  "session": "NY",
+  "day": "Tuesday",
+  "hrs_to_daily_close_21Z": 9.0,
+  "hrs_to_weekly_close": 81.0,
+  "3m_bar": "12:00",
+  "stated_no_trade": "none in force (LONDON session, weekday, no news filter cited for this window)",
+  "resulting_post": "XAU-F007-20260721 LONG @08:26:42Z"
+ }
+]

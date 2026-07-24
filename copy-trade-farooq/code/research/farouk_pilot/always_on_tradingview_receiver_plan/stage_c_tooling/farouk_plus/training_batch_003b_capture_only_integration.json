@@ -1,0 +1,68 @@
+{
+  "doc_id": "training_batch_003b_capture_only_integration",
+  "as_of": "2026-07-12T11:40Z",
+  "mode": "BATCH_003B_CAPTURE_ONLY_MERGE_PLUS_MASTER_REISSUE_NO_LIVE_SCORER_CHANGE",
+  "live_priority_gate": {
+    "listener_pid_23012": "running/untouched (only python process)",
+    "store_max_msg_id": 45648,
+    "post_cursor_classification": {"45647": "NON_XAU", "45648": "IRRELEVANT"},
+    "new_xau_after_45646": false,
+    "cycle_004_triggered": false
+  },
+  "merged_capture_only": [
+    {"item": "stop_width_dataset_extension_feb_mar_2026", "merged": true,
+     "detail": "+19 posted-width samples (median ~$21, range 8-89; wide tail 55/84/89 counter-trend 'low lot' = claim-context only); stop_width_dataset_reference now cites 32 sprint + 6 May + spoken $30-40 anchor + 19 Feb-Mar recap samples",
+     "target": "stop_width_by_level_type v0.1 dataset"},
+    {"item": "posted_vs_actual_sl_gap_note", "merged": true,
+     "detail": "19-03 posted SL 4767 vs 'SL hit at 4762' (~$5) - first documented gap; new capture fields posted_sl_price/actual_stop_evidence/posted_vs_actual_sl_gap_usd (UNKNOWN unless stated, never inferred)",
+     "target": "Cycle-004 capture spec (8F feed notes) + R6 central caveat"},
+    {"item": "indicator_level_semantics_pack", "merged": true,
+     "detail": "boxes/VWAP/POC/VAH/VAL/SFP dots/liquidity-sweep marks/ORB top-mid-bottom/yellow candles semantics; new capture enum indicator_level_source_kind",
+     "target": "LANE6_PRE_MARK_BUILDER_SPEC inputs + FP_INDICATOR_001_ALERT_MAPPING docs"},
+    {"item": "limit_at_zone_doctrine_note", "merged": true,
+     "detail": "'limit orders are a cheat code' + day-ahead pre-marking = his own workflow; new capture fields entry_mechanic_evidence (LIMIT_AT_ZONE|POST_TIME_MARKET|UNKNOWN) + pre_planned_evidence",
+     "target": "R6 lanes 2/3 notes + Lane-6 spec"},
+    {"item": "claim_convention_recap_evidence", "merged": true,
+     "detail": "85%+ = W/(W+L) with MISSED+REMOVED excluded; +3000p no-entry 'win'; impossible-SL data error; paper-vs-real lane separation; new capture fields claim_convention_notes + claim_has_entry_sl",
+     "target": "R6 lane-5 claim discount + audit_convention_notes (002B)"}
+  ],
+  "new_capture_fields": {
+    "entry_mechanic_evidence": "LIMIT_AT_ZONE | POST_TIME_MARKET | UNKNOWN",
+    "pre_planned_evidence": "message ids/ts of day-ahead plan or pre-marked-zone statements",
+    "posted_sl_price": "as posted (gap baseline)",
+    "actual_stop_evidence": "verbatim later statement/tape of actual stop; UNKNOWN unless stated",
+    "posted_vs_actual_sl_gap_usd": "|posted - actual| when both exist; else UNKNOWN; never inferred",
+    "indicator_level_source_kind": "SESSION_RANGE_BOX | VWAP | POC | VAH | VAL | SFP_DOT | LIQUIDITY_SWEEP_MARK | ORB_TOP | ORB_MID | ORB_BOTTOM | YELLOW_CANDLE_CONTEXT | PANEL_PRICE | NON_INDICATOR | UNKNOWN",
+    "claim_convention_notes": "accounting conventions observed per claim (extends audit_convention_notes)",
+    "claim_has_entry_sl": "bool - claim row carries checkable entry+SL",
+    "sl_to_entry_scratch_behaviour": "NO new fields - covered by required 8C management_timing block; doctrine note: SL-to-entry at TP1 is his routine, scratch_mode=LITERAL evidence expected"
+  },
+  "constraints": "all fields capture-only: never scored by v0.3, never a gate, no sizing semantics; never-widen ratification stands in full (pre-freeze hypotheses only)",
+  "v04_backlog_offline_only": [
+    {"item": "displacement_fvg_artifact_test enrichment", "status": "BACKLOG; loss-backed (Jul-1 post-mortem); offline replay required before any use"},
+    {"item": "mitigated_level_exclusion", "status": "BACKLOG; RATIFICATION-GATED - offline replay AND human ratification required before any scoring use; queued, not blocking"},
+    {"item": "confirmation_tf_hierarchy grading", "status": "BACKLOG; +confidence-only per standing BOS candle-close ratification; offline"}
+  ],
+  "watchlist_unchanged": ["asia_high_break_session_prior (78-80% claim; verification + ratification before any consideration)"],
+  "holds_unchanged": ["conviction_size_linkage_notes (claim-context only; NO sizing fields)", "feb_mar_2026_ohlc_matching_option (recommended later; NOT run)"],
+  "cycle_004_readiness": "XAU-F001 at first real XAU post after ~2026-07-12T22:00Z reopen under full 8C+8D+8F+001B+002B spec PLUS the new fields; v0.3 + v0.2 parallel A/B unchanged; PM-F001/PM-F002 comparison; same-day 1m OHLC; 48h match",
+  "not_run_this_step": ["Cycle 004", "detector v0.4 replay", "OHLC matching (Feb-Mar or May)"],
+  "master_reissue": {
+    "written": ["ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT.md", "orange_master_source_of_truth_vnext.json"],
+    "as_of": "2026-07-12",
+    "prior_master_files": "preserved untouched (extend-not-edit); vNEXT = current read-first pair"
+  },
+  "safety": {
+    "listener_pid_23012": "running/untouched",
+    "old_pid_87988": "retired at power-down",
+    "gates": "PAPER/PREVIEW/False/False",
+    "not_integration_ready": "unchanged",
+    "execution_built": false,
+    "permits_leases_orders": "none",
+    "v03_live_labels": "unchanged",
+    "v04_used_live": false,
+    "sizing_or_order_fields_produced": false,
+    "tradingview_worker_r2_secrets": "untouched"
+  },
+  "next": "Cycle 004 / XAU-F001 at first real XAU post after tonight ~22:00Z reopen; then v0.4 offline replay (displacement + mitigated_level_exclusion + TF-hierarchy); optional Feb-Mar 2026 + May OHLC matching later"
+}

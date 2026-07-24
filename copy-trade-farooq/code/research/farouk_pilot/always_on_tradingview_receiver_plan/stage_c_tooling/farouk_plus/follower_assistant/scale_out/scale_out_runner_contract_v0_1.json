@@ -1,0 +1,41 @@
+{
+  "contract_id": "scale_out_runner_contract_v0_1",
+  "status": "RESEARCH_ONLY / does NOT modify Constitution v0.1",
+  "authentic_campaign": {
+    "campaign": "15 July SELL, common displayed entry 4062.47, AUTHENTIC_NOT_PROSPECTIVE_CAPTURE_GAP",
+    "eligible_for_training": false, "eligible_for_prospective_performance": false, "backdated": false,
+    "source_reported_scale_out_cards": [
+      {"label": "sell 1", "entry": 4062.47, "exit": 4054.34, "result": 813, "reconciles": "8.13*100*1=813"},
+      {"label": "sell 1", "entry": 4062.47, "exit": 4047.18, "result": 1529, "reconciles": "15.29*100*1=1529"},
+      {"label": "sell 0.5", "entry": 4062.47, "exit": 4030.77, "result": 1585, "reconciles": "31.70*100*0.5=1585"}
+    ],
+    "arithmetic": "price_movement * 100 * displayed_volume_label = displayed_result (source-level; not broker verification)",
+    "must_not_infer": ["total original position size", "broker account size", "orange profit", "broker-equivalent fill"]
+  },
+  "explicit_percentage_partial_close": {
+    "classification": "EXPLICIT_PERCENTAGE_PARTIAL_CLOSE",
+    "fields": ["close_percentage", "retain_percentage", "percentage_sum", "runner_requested", "raw_instruction", "quantity_base"],
+    "validation": "0<close<100 AND 0<retain<100 AND close+retain=100; else NEEDS_HUMAN_REVIEW (quarantine/fail-closed, never normalise)",
+    "quantity_base": "CURRENTLY_REMAINING_OPEN_FILLED_QUANTITY (Lane A) — never an absolute lot from result-card labels"
+  },
+  "runner_lifecycle": {
+    "state": "PARTIALS_BANKED_RUNNER_ACTIVE",
+    "semantics": ["campaign remains OPEN", ">=1 filled quantity closed", "residual filled quantity active",
+                  "final closure NOT observed", "BE/protective-stop attached to residual", "outcome PROVISIONAL"],
+    "must_not_close_on": ["a result card", "a large displayed profit", "'X pips if still holding'", "a 90% partial close"],
+    "closure_requires": "explicit FINAL_CLOSE / remaining-runner stop evidence / another constitutionally valid terminal event"
+  },
+  "break_even_protection": {
+    "unscoped_sl_to_entry": "PER_LEG_BREAK_EVEN_FOR_FILLED_LEGS (Constitution v0.1, frozen)",
+    "does_not": "cancel unfilled entries",
+    "cancel_unfilled_only_on": "a separate explicit risk-off / cancel instruction"
+  },
+  "result_card_rule": {
+    "same_instrument_direction_entry_later_exit_no_fresh_signal": "SAME_CAMPAIGN_SCALE_OUT_EVIDENCE",
+    "creates_new_campaign": false,
+    "preserve": ["displayed entry", "displayed exit", "displayed volume label", "displayed result", "source timestamp", "provenance"]
+  },
+  "profit_commentary": {"classification": "PROFIT_PROGRESS_COMMENTARY", "automatic_state_transition": "NONE",
+    "pip_convention": "UNVERIFIED", "preserve_claimed_pips": true, "is_implicit_close": false},
+  "review_only": true, "executable": false, "observation_only": true
+}

@@ -1,0 +1,70 @@
+{
+  "batch": "FP-EDU-008-015",
+  "note": "Maps each education concept to state-machine regions/families (FAROUK_STATE_MACHINE_SPEC_v0.1). These are CANDIDATE alignments for a future education delta, NOT applied.",
+  "mappings": [
+    {
+      "source": "FP-EDU-008 Mitigation",
+      "concept": "return to an inefficiency/OB/S-D zone to rebalance (fractal)",
+      "state_machine_touchpoint": "RETURN_TO_VALUE / ZONE_MITIGATED / G_ZONE_MITIGATED",
+      "effect": "supplies a definition for 'mitigation' (currently a bare guard)",
+      "confidence": "STRONGLY_SUPPORTED/PARTIAL"
+    },
+    {
+      "source": "FP-EDU-009 Strong/Weak High-Low",
+      "concept": "level QUALITY: strong (manipulated+BOS+RTO) vs weak (liquidity target / will break)",
+      "state_machine_touchpoint": "ob_fresh / level-quality attributes; SWEEP vs VALID; VALUE_REJECTION",
+      "effect": "candidate named quality criteria for highs/lows (ties to C004 quality hierarchy)",
+      "confidence": "STRONGLY_SUPPORTED"
+    },
+    {
+      "source": "FP-EDU-010 Major/Internal Structure",
+      "concept": "fractal major swings + internal sub-structure; BOS",
+      "state_machine_touchpoint": "STRUCTURE_FOUND (multi-TF fractality)",
+      "effect": "narrows the structure-detection basis (major vs internal)",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "source": "FP-EDU-010-SUPPL displacement/BOS",
+      "concept": "BOS = key swing broken; displacement = strong fast move w/ momentum (candle close)",
+      "state_machine_touchpoint": "BREAKOUT_CONFIRMED / displacement_strength (BLOCKED feature)",
+      "effect": "QUALITATIVE displacement definition (candle close + momentum) - partially narrows displacement_strength but no numeric threshold + AMBIGUOUS provenance",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "source": "FP-EDU-011 SCOB",
+      "concept": "single-candle order block; candle-close-above-inducement entry; POI",
+      "state_machine_touchpoint": "ZONE_REGISTERED (a POI/OB sub-type) + G_TRIGGER_CLOSED",
+      "effect": "candidate OB sub-type with a candle-close entry rule",
+      "confidence": "STRONGLY_SUPPORTED"
+    },
+    {
+      "source": "FP-EDU-012 Inefficiencies",
+      "concept": "Volume imbalance / FVG / Opening gap",
+      "state_machine_touchpoint": "fvg_created feature",
+      "effect": "enumerates FVG/inefficiency TYPES (narrows the object)",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "source": "FP-EDU-013 Trend Continuation",
+      "concept": "LTF BOS -> FVG -> fill/mitigate -> continue",
+      "state_machine_touchpoint": "candidate TREND_CONTINUATION_ENTRY family (analog of ORB_CONTINUATION)",
+      "effect": "candidate new setup family",
+      "confidence": "STRONGLY_SUPPORTED"
+    },
+    {
+      "source": "FP-EDU-014 High-Prob POI",
+      "concept": "break -> POI origin -> liquidity both sides -> return -> sweep into POI -> LTF confirm -> target opposing liquidity",
+      "state_machine_touchpoint": "candidate POI_SWEEP_ENTRY family (composes LIQUIDITY_EVENT SWEEP + STRUCTURAL_SETUP + QUALIFICATION)",
+      "effect": "candidate new setup family; a concrete sweep-into-POI chain",
+      "confidence": "STRONGLY_SUPPORTED"
+    },
+    {
+      "source": "FP-EDU-015 Inducement",
+      "concept": "inducement = liquidity grab/trap before major reversal/breakout; 3-Drive + OTE fib",
+      "state_machine_touchpoint": "VETOED / SWEEP_CANDIDATE (trap) + a candidate INDUCEMENT_FADE family",
+      "effect": "candidate veto+entry concept (fade the inducement)",
+      "confidence": "STRONGLY_SUPPORTED (intro only)"
+    }
+  ],
+  "vocabulary_note": "These posts use the classic ICT/SMC lexicon (BOS, OB, FVG, POI, inducement, displacement, mitigation, OTE, RTO, EQH, sweep) — the SAME family as Campaigns 001-004 and the docs, and DISTINCT from Vishal's EMA method (FP-EDU-007)."
+}

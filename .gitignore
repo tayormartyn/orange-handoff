@@ -1,0 +1,40 @@
+# Secrets — never commit
+.env
+.env.*
+*.session
+*token*.json
+!*audio_times.json
+*credential*
+!**/credentials.py
+id_rsa*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv*/
+venv/
+
+# Service logs (the curated sample logs below are kept)
+logs/*.log
+!copy-trade-farooq/logs/*.log
+
+# Large media
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.zip
+*.db
+
+# Cloudflare wrangler caches (account id / email)
+.wrangler/
+
+# Operator-local webhook secrets — never commit
+LOCAL_ONLY_*
+LOCAL_SECRET_*

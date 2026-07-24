@@ -1,0 +1,429 @@
+{
+  "fixture_date": "2026-06-18",
+  "fixture_hash": "32c9a205d846b8584fc194ceaf25c7e68762b3956aa9e559a4f8fb9e705ae2c2",
+  "message_count": 20,
+  "farouk_count": 20,
+  "non_farouk_count": 0,
+  "messages": [
+    {
+      "message_key": "telegram:baseline:270",
+      "message_id": "270",
+      "sent_at_utc": "2026-06-18 10:18",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "4df5f957c6eaa95b37b6d50264b581873efba4fa25500f43f1530bed5d608aea",
+      "content_hash_recomputed": "4df5f957c6eaa95b37b6d50264b581873efba4fa25500f43f1530bed5d608aea",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` XAUUSD SELL  4269- 4280  Sl 4300",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:271",
+      "message_id": "271",
+      "sent_at_utc": "2026-06-18 10:23",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "cda19fe1256d288c0efb58fd6fcdc0c62ff4ca4d8e1a289dd1c180f184fd525e",
+      "content_hash_recomputed": "cda19fe1256d288c0efb58fd6fcdc0c62ff4ca4d8e1a289dd1c180f184fd525e",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  Tp 1 sl entry `Whale`",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:272",
+      "message_id": "272",
+      "sent_at_utc": "2026-06-18 10:50",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_recomputed": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale`",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:273",
+      "message_id": "273",
+      "sent_at_utc": "2026-06-18 10:52",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "cc4c6623f3a60642c7ed3c0ed33724f642a315ae707f5596b2a511fe816e14b0",
+      "content_hash_recomputed": "cc4c6623f3a60642c7ed3c0ed33724f642a315ae707f5596b2a511fe816e14b0",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` just missed my sl if it hit yours wait for the next trade!",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:274",
+      "message_id": "274",
+      "sent_at_utc": "2026-06-18 10:53",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "7325de8e47e29b1d8c1f01f45b3e0b5762577aff482a48411cf815273f5e0092",
+      "content_hash_recomputed": "7325de8e47e29b1d8c1f01f45b3e0b5762577aff482a48411cf815273f5e0092",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 110 pisp to 2",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:275",
+      "message_id": "275",
+      "sent_at_utc": "2026-06-18 10:58",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "f3205dc4de9b2d60364d37c63315d27c0c7cb49781aff5f539897dead9977948",
+      "content_hash_recomputed": "f3205dc4de9b2d60364d37c63315d27c0c7cb49781aff5f539897dead9977948",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` tp 3",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:276",
+      "message_id": "276",
+      "sent_at_utc": "2026-06-18 11:02",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "10793688df43d5948014e9ae3bd42bc2b570b163c1fadb2a803d69861ea8f5da",
+      "content_hash_recomputed": "10793688df43d5948014e9ae3bd42bc2b570b163c1fadb2a803d69861ea8f5da",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 200 pips take another tp",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:277",
+      "message_id": "277",
+      "sent_at_utc": "2026-06-18 11:08",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "534d3ad86ce55e88c16ec327a0bf5233af9b0399e60ade808c09257d7809a5d7",
+      "content_hash_recomputed": "534d3ad86ce55e88c16ec327a0bf5233af9b0399e60ade808c09257d7809a5d7",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` hold last part footing profits",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:278",
+      "message_id": "278",
+      "sent_at_utc": "2026-06-18 11:12",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "2fead6a0671d53bcdce937e3d1ca61dbf20c7830d3b714f805b6fbba1a1644d2",
+      "content_hash_recomputed": "2fead6a0671d53bcdce937e3d1ca61dbf20c7830d3b714f805b6fbba1a1644d2",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` XAUUSD BUY 4241- 4231  Sl 4318   Don’t risk profit",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:279",
+      "message_id": "279",
+      "sent_at_utc": "2026-06-18 11:14",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "2997bad8d5f36a18fa52f603719266bcecd04676787054f13301a008159a1372",
+      "content_hash_recomputed": "2997bad8d5f36a18fa52f603719266bcecd04676787054f13301a008159a1372",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` tp 1",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:280",
+      "message_id": "280",
+      "sent_at_utc": "2026-06-18 11:15",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "117b87b5976d9012080eb88ec7a9bbcc5217a4ebb54e31b962c7f448ff5953b6",
+      "content_hash_recomputed": "117b87b5976d9012080eb88ec7a9bbcc5217a4ebb54e31b962c7f448ff5953b6",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` sl entry tp 1",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:281",
+      "message_id": "281",
+      "sent_at_utc": "2026-06-18 11:15",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "8c2c746e0e192a45344ee5f55b1fc90fd6cde2f9a479267392635c36d4c8f52f",
+      "content_hash_recomputed": "8c2c746e0e192a45344ee5f55b1fc90fd6cde2f9a479267392635c36d4c8f52f",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` milking",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:282",
+      "message_id": "282",
+      "sent_at_utc": "2026-06-18 11:16",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_recomputed": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale`",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:283",
+      "message_id": "283",
+      "sent_at_utc": "2026-06-18 11:17",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "c66f0226e9039e74caf526dbf95ec4a09bfbd2122112270763fd5d9a4ee8f73a",
+      "content_hash_recomputed": "c66f0226e9039e74caf526dbf95ec4a09bfbd2122112270763fd5d9a4ee8f73a",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Take more profit on everything please",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:284",
+      "message_id": "284",
+      "sent_at_utc": "2026-06-18 11:22",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "ec391ede68fae4fec2bf4e0569b529df83f731d33132ae79859602a20ef9945b",
+      "content_hash_recomputed": "ec391ede68fae4fec2bf4e0569b529df83f731d33132ae79859602a20ef9945b",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Every trade is risk-free at this point stop losses are at entry and profit has been secured.",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:285",
+      "message_id": "285",
+      "sent_at_utc": "2026-06-18 11:35",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "02b2062c16b97eb8efd6a51ec4bb0099a6f5d8fbd73b2b536a32018aa760e65d",
+      "content_hash_recomputed": "02b2062c16b97eb8efd6a51ec4bb0099a6f5d8fbd73b2b536a32018aa760e65d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Listen, guys. I have a 90%+ win rate on these setups. Open bigger position sizes. Aiming for $50–$90 per trade doesn’t really make sense in the long run. If that’s all we’re doing, it almost feels like working at McDonald’s, to be honest. I need to see you succeed. What’s the point of me showing you my profits if you guys don’t show me real profits back? You have the indicators just wait for confirmation, then press the buttons. I’m not asking you for money I’m just asking you to take the setups properly. If I don’t see proper execution, I’ll stop sharing trades. Stick to the plan and take it seriously.​​​​​!!!",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:286",
+      "message_id": "286",
+      "sent_at_utc": "2026-06-18 11:51",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "cb79cc1b373951b7f5f019f0d7e4374e0323e24dc35b8cc890058a4314a04ad5",
+      "content_hash_recomputed": "cb79cc1b373951b7f5f019f0d7e4374e0323e24dc35b8cc890058a4314a04ad5",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` sl entry hit on the BUY",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:287",
+      "message_id": "287",
+      "sent_at_utc": "2026-06-18 16:50",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "6296d6da223dc405658ce998e1c7a03e191a20f1a14468516fcf3da069927f64",
+      "content_hash_recomputed": "6296d6da223dc405658ce998e1c7a03e191a20f1a14468516fcf3da069927f64",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Trade breakdown: Buy and Sell.  📎 Schermopname_2026-06-18_om_18.46.05.mov https://cdn.discordapp.com/attachments/1316499375203287161/1517209961602744470/Schermopname_2026-06-18_om_18.46.05.mov?ex=6a357363&is=6a3421e3&hm=6b6251212b266cd55865652ca10fd56d67e049574b22d070da78f2a0e329c92b&",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:288",
+      "message_id": "288",
+      "sent_at_utc": "2026-06-18 22:06",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "c5318848810536e258d633cc32b9ac126ffe613d9995ddbba277506879564875",
+      "content_hash_recomputed": "c5318848810536e258d633cc32b9ac126ffe613d9995ddbba277506879564875",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "MEDIA_REFERENCE_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🐚・sea-scalper-farouk  `Whale` BTC Buy Zone & Sell Zone  I'm waiting for tomorrow. As soon as price reaches one of my zones and I get my confirmations, I'll drop a call.  As you can see on the chart, I'm currently favoring sells because BTC is bearish across most timeframes. However, I'll let the market come to my levels before making any decisions.  Let's see what tomorrow or Saturday brings. Patience first, execution second.",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:289",
+      "message_id": "289",
+      "sent_at_utc": "2026-06-18 22:13",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "f14c912c74e016a455668dde13eb112d4bba0c7b5dac89254ab4b3633031987a",
+      "content_hash_recomputed": "f14c912c74e016a455668dde13eb112d4bba0c7b5dac89254ab4b3633031987a",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` For Gold, I think 4,250–4,260 is a good sell zone.  We have the Asia low, a BPR, and weekly resistance lining up in that area, which makes it an interesting level to watch.  That said, we'll see what tomorrow brings. I'll wait for price to reach the zone and look for confirmation before making any decisions.",
+      "expected_truth": {
+        "manually_checked": false,
+        "events": null,
+        "notes": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "doc_id": "fable5_training_batch_004",
+  "as_of": "2026-07-12T12:50Z",
+  "mode": "BATCH_004_TARGETED_GAP_FILL_REVIEW_ONLY",
+  "live_priority_gate": {"listener_pid_23012": "running/untouched throughout", "checks_utc": ["11:56", "12:20", "12:33", "12:50"], "max_msg_id": 45648, "new_xau_after_45648": false, "cycle_006_triggered": false},
+  "processed": [
+    {"evidence_id": "FP-EDU-001 (existing; Fable review completed this batch)", "source": "raw/live_with_farouk_2026-07-05/_analysis/transcript.json", "content": "Live with Farouk Sunday Jul-5 2026, 2h08, 1664 segments; indicator update (London/US H/L, extended boxes, Asia-trap alerts), fresh/weak doctrine, FVG claim-chain, anticipatory BE at +50-60p, 50%-of-zone depth anchor, stop-feasibility veto", "confidence": "HIGH transcript / LOW spoken digits"},
+    {"evidence_id": "FP-B004-Z1", "source": "Downloads/GMT20251012-140632_Recording.m4a", "sha256_at": "derived/transcripts/batch_004/FP-B004-Z1/FP-B004-Z1_source_meta.json", "content": "Sunday Zoom Oct-12 2025, 45min, 595 seg: GUEST member EMA/stochastic/VWAP scalping session (crypto-focused, sizing/percent content)", "verdict": "REJECTED for XAU engine - off method family (EMA, like FP-EDU-007); registered for provenance only", "rights": "member-recorded WhaleRoom Zoom; private research only"},
+    {"evidence_id": "FP-B004-Z2", "source": "Downloads/GMT20251221-181518_Recording.m4a", "sha256_at": "derived/transcripts/batch_004/FP-B004-Z2/FP-B004-Z2_source_meta.json", "content": "Sunday Zoom Dec-21 2025, 2h45, 2202 seg: Farouk gold TA - weekly mitigation levels, adaptive stop-width reasoning, ORB session times (first 15m; London 09:00 GMT+1, NY 15:30), flat-candle + gap semantics, POC/VAH/VAL + multi-TF VWAP, five-point entry one-shared-SL", "rights": "same"},
+    {"evidence_id": "FP-B004-LOG1", "source": "Downloads/SeaScalper_TradeLog_1.pdf", "bytes": 5223, "content": "Official weekly trade log End-Feb..W1-Mar 2026: 20 rows multi-instrument; 'Limit Long/Limit Buy' entry labels; 92% = 12W/(12W+1L) with 5 BE + 1 Removed excluded; NO entry/SL prices (0 stop-width samples); 'Bot Trade Log coming soon' lane announced", "rights": "member-distributed WhaleRoom PDF; private research only"},
+    {"evidence_id": "EDU-035 + EDU-028 re-read", "source": "BATCH-02-SCREENSHOTS OCR + register", "content": "EDU-035 displacement post truncated, fuller rule deferred to a session NOT on disk; EDU-028 OTE stop-outside-zone already registered, 2R clause already discounted", "verdict": "no new content; gaps precisely confirmed"}
+  ],
+  "missing_files": [
+    "'15 min stream' companion to Jun-30 stream (only '10 min stream.mp4' exists = FP-LIVE-VIDEO-EXPLAINER-004)",
+    "distinct 'Friday indicator Q&A' recording (Jul-5 references 'Friday' = Live Jul-3, already processed as FP-EDU-001-B)",
+    "EDU-035 fuller displacement session (~Sept-2025) - not in either Zoom",
+    "FP-CAMPAIGN-004 raw video (known gap)",
+    "FP-EDU-005/006 (register-confirmed unused IDs, not real files)"
+  ],
+  "skipped": [
+    "GMT20251012/GMT20251221 '(1)' m4a duplicates + all four Zoom VIDEO variants (same recordings)",
+    "1_Welcome / 3_Exochart (+dup) / 4_Templates / 6_Delta_Bars_OI (Exochart/Delta/OI series - excluded by rule)",
+    "SeaScalper_TradeLog_1 (1).pdf (byte-identical dup)",
+    "FP-B004-Z1 lessons (guest EMA method family - rejected; sizing excluded)"
+  ],
+  "lessons": [
+    {"id": "B4-L1", "lesson": "FVG claim-chain: sequential claimed FVGs -> continuation to origin extreme; respected FVG = guard level (Jul-5 verbatim)", "class": "NEW_PROMISING_FEATURE", "maps_to": ["v0.4/v0.5 backlog fvg_claim_chain (capture-first)"]},
+    {"id": "B4-L2", "lesson": "impulsive move + FVG creation = strong OB (Jul-5 verbatim)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["displacement_fvg_artifact_test (v0.4 backlog)"]},
+    {"id": "B4-L3", "lesson": "mitigation depth: 'at least 50% of the zone' before adding/BE (digits LOW-confidence)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["8D mitigation-depth capture"]},
+    {"id": "B4-L4", "lesson": "weekly unmitigated 'mitigation levels' as magnets/targets (Z2)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["untested-level magnet", "Lane-6 targets"]},
+    {"id": "B4-L5", "lesson": "stop width sized to surrounding unmitigated levels / sweep risk ('bigger stop loss because a lot of levels to mitigate', Z2 verbatim x2)", "class": "NEW_PROMISING_FEATURE", "maps_to": ["stop_width_by_level_type v0.2 research input"]},
+    {"id": "B4-L6", "lesson": "stop-feasibility veto: level rejected when stop unplaceable ('this level is too big', Jul-5)", "class": "NEW_PROMISING_FEATURE", "maps_to": ["Lane-6 invalidation research: stop_feasibility_note"]},
+    {"id": "B4-L7", "lesson": "HTF>LTF strength hierarchy + freshness dominates age; 'indicator only gives strong OBs' (Jul-5)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["strong_ob_rubric_v0_1", "F3"]},
+    {"id": "B4-L8", "lesson": "flat candles 'need to get mitigated' (level class); gold gap-fill doctrine (Z2)", "class": "NEW_PROMISING_FEATURE", "maps_to": ["indicator_level_source_kind additions FLAT_CANDLE/GAP (capture-only)"]},
+    {"id": "B4-L9", "lesson": "Jul-5 indicator update: London H/L + US H/L levels, extended boxes, Asia-trap bull/bear alert usage on 5m; 'not a signal indicator'", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["Lane-6 builder", "FP_INDICATOR alert mapping", "indicator_level_source_kind additions LONDON_/US_H/L"]},
+    {"id": "B4-L10", "lesson": "ORB = first 15 minutes; London 09:00 GMT+1, NY 15:30; orb-breakout-never-retested = magnet (Z2)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["ORB semantics pack"]},
+    {"id": "B4-L11", "lesson": "session-break priors: Asia-high ~78-80% repeated with on-stream stats; London/US-high break continuation claim", "class": "WATCHLIST_FEATURE", "maps_to": ["asia_high_break_session_prior", "NEW london_us_session_break_priors"]},
+    {"id": "B4-L12", "lesson": "post-break confirmation: low-TF CHoCH 'especially 3 and 1 minutes' (Jul-5)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["confirmation stack capture note"]},
+    {"id": "B4-L13", "lesson": "documentary 'Limit Long/Limit Buy' entry labels in official log (LOG1)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["003B entry_mechanic_evidence / limit-at-zone doctrine"]},
+    {"id": "B4-L14", "lesson": "anticipatory follower BE: 'before I say put stop loss to entry, you need to do it already - the 50-60 pips' (Jul-5 verbatim)", "class": "NEW_PROMISING_FEATURE", "maps_to": ["8C scratch_mode += DOCTRINE_ANTICIPATED (capture-only)", "R6 lane-4 / Model B +50 BE arm confirmed as standing doctrine"]},
+    {"id": "B4-L15", "lesson": "five-point entry, one shared SL; 'now I just open one position one stop loss' (lane-1 evolution); 'free stop loss' via early partial (Z2; sizing digits excluded)", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["8D layering schema", "R6 lane-1 notes"]},
+    {"id": "B4-L16", "lesson": "claim-convention instance #3: 92% = W/(W+L), BE+Removed excluded (LOG1); rows carry no prices -> 0 width samples", "class": "STRENGTHENS_EXISTING_FEATURE", "maps_to": ["R6 lane-5 claim discount", "claim_convention_notes"]},
+    {"id": "B4-L17", "lesson": "'Bot Trade Log - first signal coming soon' lane announced (Feb/Mar 2026)", "class": "WATCHLIST_FEATURE", "maps_to": ["provenance/lane-separation watch; observation only"]},
+    {"id": "B4-L18", "lesson": "re-entry after BE-scratch ('a level that we need to re-enter', Jul-5); Monday-Asia avoidance", "class": "ALREADY_IN_ORANGE", "maps_to": ["R2/R2b", "R4b-adjacent"]}
+  ],
+  "verdicts": {
+    "detector_v0_3": "SUPPORTED; live labels unchanged",
+    "detector_v0_4_v0_5_backlog": "STRENGTHENED (displacement support; +fvg_claim_chain candidate); all offline; mitigated_level_exclusion ratification gate unchanged",
+    "lane_6": "STRENGTHENED",
+    "r6": "STRENGTHENED (anticipatory-BE doctrine, lane-5 conventions, limit evidence)",
+    "stop_width_research": "STRENGTHENED -> v0.2 inputs (causal driver); 0 new numeric samples",
+    "human_ratification": "none required now",
+    "ohlc_matching": "not run", "v0_4_live": false, "anything_promoted": false
+  },
+  "safety": {"listener_pid_23012": "running/untouched", "gates": "PAPER/PREVIEW/False/False", "not_integration_ready": "unchanged", "execution_built": false, "permits_leases_orders": "none", "sizing_fields_produced": false},
+  "next": "Cycle 006 / XAU-F001 at first real XAU post after ~22:00Z reopen; fold MERGE_NOW capture notes at next capture-spec touch; optional Feb-Mar + May OHLC matching; v0.4 forward re-replay after >=15 XAU-F records"
+}

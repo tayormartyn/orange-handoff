@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "FP-INDICATOR-001",
+  "title": "Long-form Farouk indicator and methodology teaching session",
+  "source_type": "EDUCATIONAL_VIDEO / INDICATOR_OBSERVATION",
+  "asset_class": "PRIVATE_LOCAL_RESEARCH",
+  "performance_status": "NOT_A_TRADE",
+  "gold_statistics_inclusion": "NO",
+  "session_recorded": "GMT20251221-181518 (2025-12-21 18:15:18 UTC start per filename)",
+  "duration": "02:45:25.76",
+  "primary_source_used": "GMT20251221-181518_Recording_2240x1260.mp4 (full MP4, verified) for video; GMT20251221-181518_Recording.m4a for local audio transcription",
+  "transcript_txt_note": "GMT20251221-181518_RecordingnewChat.txt is the Zoom CHAT log (audience messages), NOT a speech transcript -> used as supplementary evidence only; spoken teaching transcribed locally from the M4A.",
+  "rights_record_id": "RR-FP-IND-001",
+  "source_assets": {
+    "GMT20251221-181518_Recording_2240x1260.mp4": {
+      "asset_id": "sa-5635e60e29be4868",
+      "sha256": "5635e60e29be4868b02b4e4377a97e635a8d6fc0dbe004641160e77dec965917",
+      "kind": "video",
+      "status": "INGESTED"
+    },
+    "GMT20251221-181518_Recording.m4a": {
+      "asset_id": "sa-c5508175ec0d635b",
+      "sha256": "c5508175ec0d635b9b62acfbbf6262e2b751191640e76d1151855ad56e966a64",
+      "kind": "audio",
+      "status": "INGESTED"
+    },
+    "GMT20251221-181518_RecordingnewChat.txt": {
+      "asset_id": "sa-249ac9a39b2bb93c",
+      "sha256": "249ac9a39b2bb93cedc7b5bd7b1cb71af68e85f1cf5d52d4d8725c379691664d",
+      "kind": "document",
+      "status": "INGESTED"
+    }
+  },
+  "upload_parts_reference": "C:/Users/Marty/Downloads/Farouk_Upload_Parts/ (9 verified MP4 parts + UPLOAD_MANIFEST.txt; not needed since full MP4 verified)"
+}

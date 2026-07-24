@@ -1,0 +1,79 @@
+{
+  "record_id": "FP-INDICATOR-004",
+  "claim_count": 9,
+  "note": "SourceClaims; NOT promoted to rules. Promotional phrases ('high probability','beautiful') NOT treated as validated performance. Transcript base.en (phonetic: '[kyle]'->'Carl'/'calls'; VAH/VAL->'very high/very low'; SFP->'swing fell'; '15 min'->'50 min').",
+  "claims": [
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:00",
+      "quote_or_paraphrase": "'part three ... the orb ... Asia orb, London orb, New York orb ... change the time depends on timezone'",
+      "chart_evidence": "ORB boxes",
+      "confidence": "HIGH",
+      "classification_note": "explicit part-three identity"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:37",
+      "quote_or_paraphrase": "'go to the 15 minutes ... if you go to a high timeframe it's not going to work because this is the 15 minutes'",
+      "chart_evidence": "15-min ORB",
+      "confidence": "HIGH",
+      "classification_note": "first-15-min"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:18",
+      "quote_or_paraphrase": "'you have the breakouts, they never retested, they come back to retest, take a long ... all breakouts retest'",
+      "chart_evidence": "ORB retest",
+      "confidence": "HIGH",
+      "classification_note": "retest is core"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "01:46",
+      "quote_or_paraphrase": "'inside the orb, choppiness, don't do anything ... I personally don't do anything inside the orb'",
+      "chart_evidence": "ORB inside",
+      "confidence": "HIGH",
+      "classification_note": "inside=no-trade veto"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "02:08",
+      "quote_or_paraphrase": "'green line = top of the orb, blue level = midline = hidden liquidity, bottom = downside'",
+      "chart_evidence": "ORB lines",
+      "confidence": "HIGH (visible+spoken)",
+      "classification_note": "ORB object anatomy"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "06:44",
+      "quote_or_paraphrase": "'it gives you a cell signal ... buy signal' (indicator emits signals; Farouk still applies discretion)",
+      "chart_evidence": "buy/sell signal",
+      "confidence": "MEDIUM",
+      "classification_note": "decision vs discretion"
+    },
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "00:40",
+      "quote_or_paraphrase": "Indicator list with [kyle] v1 SELECTED (blue outline); others hidden; BTCUSDT 15m Bybit",
+      "chart_evidence": "ref_00-40.png",
+      "confidence": "HIGH",
+      "classification_note": "ORB owned by [kyle] v1"
+    },
+    {
+      "category": "WEAK_INFERENCE",
+      "timestamp": "01:12",
+      "quote_or_paraphrase": "'this is so beautiful ... really cool' = promotional, NOT a validated edge",
+      "chart_evidence": "-",
+      "confidence": "LOW",
+      "classification_note": "not a performance claim"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "-",
+      "quote_or_paraphrase": "Exact stop rule; repaint/alert/candle-close-vs-wick precision for the ORB",
+      "chart_evidence": "-",
+      "confidence": "-",
+      "classification_note": "deferred"
+    }
+  ]
+}

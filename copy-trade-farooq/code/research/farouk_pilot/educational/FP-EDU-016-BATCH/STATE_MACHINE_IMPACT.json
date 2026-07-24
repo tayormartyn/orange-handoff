@@ -1,0 +1,59 @@
+{
+  "batch": "FP-EDU-016",
+  "ref": "FAROUK_STATE_MACHINE_SPEC_v0.1 (NOT modified)",
+  "note": "Definitional refinements; core blockers persist. Delta NOT promoted.",
+  "impacts": [
+    {
+      "target": "ZONE_MITIGATED / RETURN_TO_VALUE",
+      "status": "NARROWED",
+      "reason": "FP-EDU-008 full definition: return to imbalance/OB/S&D zone -> rebalance -> target liquidity above prior highs. Still no numeric depth/touch threshold."
+    },
+    {
+      "target": "STRUCTURE_FOUND / BREAKOUT_CONFIRMED",
+      "status": "NARROWED",
+      "reason": "FP-EDU-016 BOS = break a significant high/low + wait for confirmation (quick reverse = liquidity grab/stop hunt); FP-EDU-010 bearish BOS = HL broken."
+    },
+    {
+      "target": "displacement_strength",
+      "status": "NARROWED (qualitative)",
+      "reason": "displacement = strong fast move breaking key levels w/ momentum (candle close). Still no numeric threshold."
+    },
+    {
+      "target": "level-quality (strong/weak)",
+      "status": "SUPPORTED (candidate)",
+      "reason": "FP-EDU-009 strong = BOS-origin; weak = liquidity target."
+    },
+    {
+      "target": "VALUE_LOCATION (POC/VAH/VAL)",
+      "status": "NARROWED (concept)",
+      "reason": "FP-EDU-026 defines POC/VAH/VAL usage + volume gaps; FP-EDU-018 'acceptance above 50% of cluster'. Calculation method still unknown -> value transitions remain BLOCKED to code."
+    },
+    {
+      "target": "F_CONFLUENCE_UNKNOWN",
+      "status": "PARTIALLY_NARROWED",
+      "reason": "FP-EDU-024 gives an IMPORTANCE ORDER (1. BOS ...) and 011 lists factors -> ordering/weighting hint, but NO minimum count -> still not resolvable to a guard."
+    },
+    {
+      "target": "new pattern families",
+      "status": "SUPPORTED (candidates)",
+      "reason": "3-Drive (025), Accumulation schematics/Wyckoff (019), Candlestick patterns (022), Consolidation-breakout (017) -> candidate families, none codeable yet."
+    },
+    {
+      "target": "oscillator inputs (RSI/MACD/money-flow)",
+      "status": "NOTED (out-of-scope)",
+      "reason": "FP-EDU-011/023 introduce oscillator divergence + Market Cipher B -> a different input class; not added."
+    },
+    {
+      "target": "F_TZ_UNKNOWN / F_REPAINT_UNKNOWN",
+      "status": "UNCHANGED",
+      "reason": "static Discord posts; no timezone/repaint evidence."
+    }
+  ],
+  "blocker_summary": {
+    "F_CONFLUENCE_UNKNOWN": "PARTIALLY_NARROWED (ordering, not count)",
+    "displacement": "qualitative only",
+    "value_area_calc": "STILL_BLOCKED",
+    "F_TZ_UNKNOWN": "UNCHANGED",
+    "F_REPAINT_UNKNOWN": "UNCHANGED"
+  }
+}

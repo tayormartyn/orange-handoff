@@ -1,0 +1,341 @@
+{
+ "banner": "NO BROKER ACTION | NO ORDER SUBMISSION | REVIEW-ONLY SHADOW PROPOSAL",
+ "card_type": "REVIEW_ONLY_SHADOW_PROPOSAL",
+ "campaign_id": "XAU-F001-20260714",
+ "direction": "LONG",
+ "zone": "4007-4019",
+ "posted_follower_stop": "3985 (posted follower stop; personal stop UNKNOWN; structural invalidation NOT STATED)",
+ "source_timestamp_utc": "2026-07-14T08:38:06+00:00",
+ "evidence_links": {
+  "message_ids": [
+   45711,
+   45714,
+   45715,
+   45717,
+   45718,
+   45719,
+   45720,
+   45723,
+   45724
+  ],
+  "frozen_evidence_sha256": "d19e9ad0b7a255854dcb0282db6ddccf1fab150aa2852fc144788729e067d67f",
+  "forward_ledger": "forward_validation_ledger_v0_2.jsonl",
+  "tracker_ledger": "market_tracker/tracker_ledger_v0_1.jsonl"
+ },
+ "constitution_sha256": "7bce618f29d1d44a48bef085d539b05a289393ebe33fe4d304632016777defde",
+ "acknowledgement_note": "REVIEW/ACKNOWLEDGED/REJECTED is an annotation with zero execution consequence",
+ "constitution_version": "0.1.0",
+ "theoretical_legs": [
+  {
+   "leg_id": "XAU-F001-20260714/near",
+   "price": "4019",
+   "kind": "LIMIT",
+   "state": "FILLED",
+   "fill_price": "4019",
+   "open_size": "0",
+   "be_price": "4019",
+   "tags": [
+    "AMBIGUOUS_FILL_BAND"
+   ]
+  },
+  {
+   "leg_id": "XAU-F001-20260714/mid",
+   "price": "4013.00",
+   "kind": "LIMIT",
+   "state": "CANCELLED",
+   "fill_price": null,
+   "open_size": "0",
+   "be_price": null,
+   "tags": []
+  },
+  {
+   "leg_id": "XAU-F001-20260714/far",
+   "price": "4007",
+   "kind": "LIMIT",
+   "state": "CANCELLED",
+   "fill_price": null,
+   "open_size": "0",
+   "be_price": null,
+   "tags": []
+  }
+ ],
+ "campaign_average_entry": "4019.0000",
+ "market_data": {
+  "provider": "PEPPERSTONE_TV_BAR_FEED",
+  "last_bar_ts": 1784768280,
+  "last_close": "4129.56",
+  "staleness_seconds": 60,
+  "bars_seen": 8817,
+  "stream_hash": "ac69c0b5a33b5d6a582548ad1cf7a7d16aea3ea3d6b16cbd387be8b3d861d68d",
+  "gaps": [
+   [
+    1784046540,
+    1784066460
+   ],
+   [
+    1784149080,
+    1784152860
+   ],
+   [
+    1784189040,
+    1784189280
+   ],
+   [
+    1784200560,
+    1784200680
+   ],
+   [
+    1784235480,
+    1784239260
+   ],
+   [
+    1784321280,
+    1784498460
+   ],
+   [
+    1784581080,
+    1784584860
+   ],
+   [
+    1784667480,
+    1784671260
+   ],
+   [
+    1784716200,
+    1784716320
+   ],
+   [
+    1784737080,
+    1784742300
+   ],
+   [
+    1784753880,
+    1784757660
+   ]
+  ],
+  "anomaly_count": 17,
+  "distance_to_near_edge_pips": "1105.60"
+ },
+ "current_theoretical_open_size": "0",
+ "strict_follower_lane": {
+  "lifecycle": "OUTCOME_FROZEN",
+  "path": [
+   "PROPOSAL_CREATED",
+   "WAITING_FOR_ZONE",
+   "ZONE_TOUCHED",
+   "LEG_1_FILLED",
+   "PARTIALLY_FILLED",
+   "RISK_ACTIVE",
+   "BE_INSTRUCTED",
+   "BE_TRIGGERED",
+   "PARTIAL_PROFIT_TAKEN",
+   "MANUALLY_CLOSED",
+   "OUTCOME_FROZEN"
+  ],
+  "state": "CLOSED",
+  "realized_pips_per_unit": "4.42",
+  "unrealized_pips_per_unit": null,
+  "mae_pips": "-53.60",
+  "mfe_pips": "55.20"
+ },
+ "policy_sensitivity_lane": {
+  "lifecycle": "OUTCOME_FROZEN",
+  "state": "CLOSED",
+  "realized_pips_per_unit": "4.42",
+  "unrealized_pips_per_unit": null,
+  "mae_pips": "-53.60",
+  "mfe_pips": "55.20",
+  "disclaimer": "POLICY_SENSITIVITY lane; NOT Farouk's actual result"
+ },
+ "management_instructions": [
+  {
+   "instruction_type": "CLOSE_WORST",
+   "message_id": 45714,
+   "timestamp_utc": "2026-07-14T09:10:46+00:00"
+  },
+  {
+   "instruction_type": "HOLD_BEST",
+   "message_id": 45714,
+   "timestamp_utc": "2026-07-14T09:10:46+00:00"
+  },
+  {
+   "instruction_type": "TP1_TAKE",
+   "message_id": 45714,
+   "timestamp_utc": "2026-07-14T09:10:46+00:00"
+  },
+  {
+   "instruction_type": "OTHER",
+   "message_id": 45715,
+   "timestamp_utc": "2026-07-14T09:12:32+00:00",
+   "verbatim": "90 pips on Lowes entry lets make profit before cpi",
+   "session_context": "pre-CPI"
+  },
+  {
+   "instruction_type": "SL_TO_ENTRY",
+   "message_id": 45717,
+   "timestamp_utc": "2026-07-14T10:48:55+00:00",
+   "scope": "lowest entry leg"
+  },
+  {
+   "instruction_type": "OTHER",
+   "message_id": 45719,
+   "timestamp_utc": "2026-07-14T11:21:11+00:00",
+   "verbatim": "I'm still in. If your SL entry got hit, I'll send another trade in a bit.",
+   "note": "conditional RE_ENTER announcement for stopped followers; no re-entry executed in this campaign"
+  },
+  {
+   "instruction_type": "TAKE_PCT_OFF",
+   "message_id": 45720,
+   "timestamp_utc": "2026-07-14T11:37:05+00:00",
+   "pct": null,
+   "note": "'130 pips take Some off' — 'take some off' NOT allowlisted morphology -> pct NULL"
+  },
+  {
+   "instruction_type": "FINAL_CLOSE",
+   "message_id": 45723,
+   "timestamp_utc": "2026-07-14T12:32:09+00:00"
+  }
+ ],
+ "unresolved_ambiguities": [
+  {
+   "bar_ts": 1784018340,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "event": "LEG_FILLED"
+  },
+  {
+   "bar_ts": 1784027220,
+   "class": "AMBIGUOUS_SEQUENCE",
+   "event": "BANK"
+  },
+  {
+   "bar_ts": 1784027220,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "event": "BANK"
+  },
+  {
+   "bar_ts": 1784022420,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784022420,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784024280,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784024280,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784291220,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "3985",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784303760,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784303760,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784305620,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784305620,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784523480,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784523480,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784560200,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784560200,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784594400,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784594400,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4019",
+   "note": "bar opened through a stop/BE level"
+  },
+  {
+   "bar_ts": 1784018340,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "note": "fill margin $0.31 within $3 feed-divergence band"
+  },
+  {
+   "bar_ts": 1784026080,
+   "class": "FEED_SENSITIVE_NEAR_MISS",
+   "note": "price within $3 of the BE level without touch (FEED_SENSITIVE_NEAR_MISS)"
+  },
+  {
+   "bar_ts": 1784027220,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "note": "BE scratch within $3 feed-divergence band (AMBIGUOUS_FILL_BAND)"
+  }
+ ],
+ "plus50_diagnostic": {
+  "reachable": true,
+  "first_bar_ts": 1784020260,
+  "status": "DIAGNOSTIC_ONLY_P09_DISABLED"
+ },
+ "last_state_transition": "OUTCOME_FROZEN",
+ "outcome_status": "FROZEN",
+ "detector_v0_2_label": "SHADOW_CANDIDATE_MEDIUM",
+ "detector_v0_3_label": "SHADOW_CANDIDATE_MEDIUM",
+ "pre_mark_comparisons": {
+  "PM-F001-SELL-4150-4184": "NOT_MATCHED",
+  "PM-F002-SUPPLY-4430-4480": "NOT_MATCHED",
+  "PM-F003-SELL-4250-4260": "NOT_MATCHED",
+  "PM-F004-DEMAND-3850-3863": "NOT_MATCHED"
+ },
+ "acknowledgement_state": "REVIEW",
+ "review_only": true,
+ "executable": false,
+ "trade_ready": false,
+ "observation_only": true
+}

@@ -1,0 +1,19 @@
+{
+  "contract_id": "valid_bos_contract_v0_1",
+  "status": "RESEARCH_ONLY / strongest causal contract supportable from valid-vs-invalid BOS material (p1/p4, p4 diagram image-only)",
+  "provenance": "Farouk Education (2).pdf p1 (priority) + p4 fake-BOS diagram (not transcribed) + MR-016 (BOS candle-close = confidence, not gate) + DR-201 (FVG)",
+  "valid_bos_predicate": {
+    "protected_structural_swing": "the swing that PRODUCED the prior opposite extreme (not an internal/irrelevant swing)",
+    "break_beyond_relevant_swing": "price trades beyond that protected swing",
+    "completed_close_beyond": "a completed candle closes beyond the level WHERE DOCUMENTED (MR-016: close adds confidence; wick-only = weaker)",
+    "displacement_strength": "ANNOTATION ONLY — displacement magnitude threshold UNKNOWN (DR-202/MR-012)",
+    "fvg_creation": "ANNOTATION — displacement that leaves an FVG marks a stronger break (MR-012 'no-FVG = weak break')",
+    "internal_swing_rejection": "internal/irrelevant swings are NOT valid BOS anchors"
+  },
+  "unknown_fields_preserved": ["swing lookback", "pivot sensitivity", "equal-high/low tolerance",
+                               "minimum displacement threshold", "exact MSS-vs-BOS boundary"],
+  "no_invented_defaults": "None of the UNKNOWN fields are given a numeric default and presented as a Farouk rule.",
+  "implementation": "strategy_router.valid_bos() records: protected-swing candidate, break flag, completed-close-beyond flag, FVG-created flag, displacement=UNKNOWN annotation, internal-swing rejection. Multiple candidates preserved when the protected swing is ambiguous.",
+  "has_executable_freeze_component": true, "note_freeze": "router freeze/annotate only; emits NO trade decision",
+  "review_only": true, "executable": false, "trade_ready": false, "observation_only": true
+}

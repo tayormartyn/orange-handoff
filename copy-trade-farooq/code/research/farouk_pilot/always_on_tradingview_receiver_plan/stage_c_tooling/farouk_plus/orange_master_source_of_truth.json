@@ -1,0 +1,79 @@
+{
+  "doc_id": "orange_master_source_of_truth",
+  "as_of": "2026-07-11T20:00Z",
+  "update_discipline": "extend/re-issue with new as-of date; SINGLE-SESSION writes to farouk_plus only",
+  "mission": "Farouk-plus XAU intelligence/shadow engine: learn the method, separate Farouk-private edge from follower-capturable edge, test Orange pre-marking vs late Telegram following. Review-only forever unless governance changes gates.",
+  "safety": {
+    "execution": "absent (broker/QST/cTrader/nano/copy)",
+    "permits_leases_orders": "none",
+    "gates": "PAPER / PREVIEW / False / False",
+    "not_integration_ready": "unchanged",
+    "labels": ["REJECT", "WATCH", "SHADOW_CANDIDATE_LOW", "SHADOW_CANDIDATE_MEDIUM", "HUMAN_REVIEW_REQUIRED", "PRE_MARK_*"],
+    "enforcement": "ai_review fail-closed validator + extended forbidden-token guard; stamp from validator only"
+  },
+  "live_infrastructure": {
+    "listener": {"pid": 87988, "started": "2026-07-10 21:54:45", "mode": "PREVIEW", "capture": "text+photo live; copied-session backfill proven; sha256 media store; append-only DBs"},
+    "forward_cursor": {"last_msg": 45646, "last_msg_utc": "2026-07-11T06:35:57Z", "last_cycle": "CYCLE_003", "cycles_001_003": "clean NO_NEW_XAU_SETUP (market closed)"},
+    "alert_lane": "Worker->R2 capture exists (read-only evidence); fires only when market open",
+    "feeds": {"his": "Vantage (XAUUSD-VIP)", "reference": "Pepperstone", "typical_divergence_usd": "0.5-2"}
+  },
+  "evidence_base": {
+    "matched_trades": 34, "sessions": 18, "wins": 21, "losses": 3, "partials": 10, "contradicted": 0,
+    "june": "100% adjudicated", "precision": "11x 1m-confirmed, 23x 5m-fallback",
+    "audit_lane": "FP-AUDIT-002: +0.27R..+0.35R per primary gold signal (claim-based, 22 May-27 Jun); row-level cross-validation of June ledger; +6 May trades recovered",
+    "expectancy_triangulation": {"literal_follower_model_b": "+1.4p/trade raw, +25.6 filtered", "managed_credit_model_a": "+132p/trade", "audit_r_lane": "~+0.3R", "decider": "8C instruction-timing capture"},
+    "central_caveat": "follower-capturable edge != Farouk private fills (earlier fills, wider discretionary stops, Vantage feed)"
+  },
+  "detector": {
+    "active": "v0.3 (with v0.2 parallel per record — forward A/B)",
+    "v03_replay": {"MEDIUM": "14 = 11W/0L/3P (zero-loss top tier)", "losses_placement": "all 6 at LOW or below", "winners_rejected": 0, "driver": "F2 zone_touch_count"},
+    "v04": "backlog only (layering-cap flag, displacement_fvg_artifact_test, rubric-count, audit-R scoring[needs ratification]); offline replay before any use"
+  },
+  "r6": {
+    "lanes": ["farouk_private_fill", "posted_zone_follower", "post_time_follower (canonical per guide)", "management_instruction_follower (expectancy lane)", "headline_claim (discounted)", "orange_pre_mark"],
+    "capture_addons": ["audit_r_midpoint/low/high (capture-only)", "fill_lag_cost", "be_at_average_for_layered", "tranche schedules 50/30/20 & 30/30+run"],
+    "ratified": ["no 2R assumption", "never-widen binds follower lanes", "claim discount (inflation_ratio>1.25 -> HR)"]
+  },
+  "lane6": {
+    "builder_spec": "v0.1 complete (16 inputs, minimum-evidence, $3/overlap match, frozen windows)",
+    "repaint_guard": "active; untested (no indicator-sourced pre-mark yet)",
+    "alert_mapping": "13 named conditions; A LONG/SHORT via payloads; panel prices = primary level source",
+    "active_candidates": [
+      {"id": "PM-F001-SELL-4150-4184", "label": "PRE_MARK_OBSERVED", "match": "PENDING", "expires": "2026-07-17"},
+      {"id": "PM-F002-SUPPLY-4430-4480", "label": "PRE_MARK_OBSERVED", "match": "PENDING", "expires": "2026-07-31"}],
+    "retro_lesson": "levels matched 2/3, 0 profitable fills — stop-width is the binding constraint"
+  },
+  "training_recovery": {
+    "corpus": "~200 artefacts recovered on disk, 33 FP-EDU records — no re-upload needed",
+    "rule_ledger_diff": "complete (23 Sonic rules; 6 merged as review features)",
+    "ratifications": ["BOS candle-close = +confidence only", "graded confluence stack", "no 2R", "never-widen (follower lanes)"],
+    "batches_complete": ["001", "001B", "002", "002B"],
+    "new_evidence_ids": ["FP-LIVE-VIDEO-EXPLAINER-001..004", "FP-AUDIT-001", "FP-AUDIT-002", "FP-JOURNAL-001"]
+  },
+  "feature_stack": ["R2/R2b (+contingency_pre_declared flag)", "R4b", "R6 six-lane", "zone_touch_count",
+    "STRONG/WEAK level_type_tag + strong_ob_rubric_v0_1", "confluence ranking (tiebreaker)",
+    "lane6_repaint_guard", "stop_outside_zone", "stop_width_by_level_type (32 widths median $20 + 6 May + $30-40 spoken anchor; STRONG $20-85)",
+    "fill_lag_cost", "indicator_price_level_extraction", "be_at_average_for_layered",
+    "source_exact_tranche_schedules", "layering_cap_max3", "displacement_fvg_artifact_test",
+    "bos_candle_close_confirmed", "capture-only: audit_r fields, stop-width anchors, 8C timing, 8D legs, 8F tags"],
+  "proven": ["Farouk record materially real in checked sample (0 contradicted; losses posted live, OHLC-accurate)",
+              "v0.3 > v0.2 in-sample (zero-loss top tier)", "old corpus not lost", "forward stack built and armed"],
+  "not_proven": ["v0.3 out-of-sample", "lane-6 pre-mark match rate", "true Orange fill lag",
+                  "broker/demo readiness", "whether Orange can match Farouk private execution"],
+  "demo_readiness_blockers": [">=15 forward XAU-F records", ">=5 forward sessions", "OHLC within 48h where possible",
+    "v0.2/v0.3 forward A/B results", "fill_lag_cost measured", "pre-mark match/miss evidence",
+    "100% human review", "no contradiction/unacceptable loss leakage", "governance sign-off for any gate change"],
+  "next_actions": [
+    "Cycle 004 at next market activity (gold reopens Sun ~22:00Z) -> XAU-F001",
+    "v0.2/v0.3 parallel labels; compare vs PM-F001/PM-F002",
+    "capture 8C timing + 8D legs + stop-width anchors + audit-R + level tags + fill-lag + indicator levels + feed notes",
+    "same-day 1m OHLC request; deterministic match within 48h",
+    "later: detector v0.4 offline replay; Training Batch 003 (2025-12-14 movs, recap PDF, May OHLC option)"
+  ],
+  "key_files": ["FAROUK_PLUS_RULESET_v0_1.*", "detector_v0_2/_v0_3_replay_results.json",
+    "R6_FOLLOWER_FILL_EXPECTANCY_MODEL_v0_1.* + follower_fill_expectancy_table_v0_1/v0_1b.json",
+    "LANE6_PRE_MARK_BUILDER_SPEC_v0_1.* + lane6_v0_2_update.*", "forward_cycle_002_schema_addendum.json + 001B/002B integrations",
+    "forward_validation_ledger_v0_2.jsonl", "pre_mark_candidates_v0_1.jsonl", "forward_cursor.json",
+    "HUMAN_RATIFICATION_RECORD_v0_1.*", "TRAINING_BATCH_001B_RATIFICATION_AND_MERGE_PLAN.*",
+    "research/farouk_pilot/MONITORING_RESUME_STATUS.md (append-only narrative)"]
+}

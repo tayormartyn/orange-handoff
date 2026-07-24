@@ -1,0 +1,58 @@
+{
+  "model_id": "R6_FOLLOWER_FILL_EXPECTANCY_MODEL_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / ANALYTIC_ONLY",
+  "purpose": "Evaluate what a follower could realistically capture from POSTED information (zones + management instructions), separately from Farouk's private fills and headline claims. Never an execution signal.",
+  "authority": "deterministic OHLC matching for all price facts; ai_review fail-closed validator + extended forbidden-token guard for all records",
+  "outcome_lanes": {
+    "1_farouk_fill_outcome": "from MT5 position widgets when screenshots exist (descriptive only)",
+    "2_posted_zone_follower_outcome": "limit fills inside the posted zone; achievable-fill capped at zone edges (primary lane when zone posted)",
+    "3_post_time_follower_outcome": "market fill at first bar close after the entry post (zone-less/running calls)",
+    "4_management_instruction_follower_outcome": "lane 2/3 fills + posted instructions applied literally at their timestamps (TP1 partial, sl-to-entry -> scratch modelling, close-worst/hold-best as dimensionless fraction transfers). EXPECTANCY IS COMPUTED ON THIS LANE.",
+    "5_headline_claim_outcome": "claimed pips; reference only; always discounted: claim_discounted_pips = min(claimed, lane2/3 achievable); inflation_ratio = claimed / realised_or_achievable"
+  },
+  "record_fields": [
+    "setup_id", "posted_time_utc", "posted_zone", "farouk_fill_if_known", "farouk_fill_source_sha256",
+    "zone_touch_time", "post_time_market_price",
+    "realistic_follower_fill_low", "realistic_follower_fill_high", "realistic_follower_fill_median",
+    "management_instruction_times", "sl_to_entry_effect",
+    "tp1_reachable_from_follower_fill", "tp2_reachable_from_follower_fill",
+    "max_follower_mfe_pips", "max_follower_mae_pips",
+    "headline_claim_discount", "follower_outcome_status", "divergence_vs_farouk_pips", "notes"
+  ],
+  "follower_outcome_status_enum": ["FOLLOWER_WIN", "FOLLOWER_SCRATCH", "FOLLOWER_LOSS", "FOLLOWER_PARTIAL", "UNCLEAR"],
+  "expectancy_definition": "per setup: follower_pips = sum(fraction_i * (exit_i - fill)) over the lane-4 simulation (sign inverted for SHORT); fractions are dimensionless shares of ONE abstract unit (no sizing of any kind); portfolio expectancy = mean/median follower_pips + scratch rate + divergence distribution; descriptive review metrics only",
+  "retrospective_cases": {
+    "J24": {"farouk": "SHORT 4132.02, +170.3p claimed (exact), MFE 267p",
+            "follower": "no entry post; post-time fill ~4128.4; literal 'sl to entry' (10:25:04Z) -> scratched ~0p at 10:34Z before the 267p move",
+            "follower_outcome_status": "FOLLOWER_SCRATCH", "divergence_vs_farouk_pips": "-170 to -267"},
+    "J30": {"farouk": "LONG 4027.37 (below posted zone 4035-4045); '240 pips' TRUE from his fill",
+            "follower": "posted-zone fills: max MFE 175p; TP1 4050 partials; runner scratched by sl-to-entry ~13:50-14:00Z; posted-SL 4010 holders stopped 14:11Z",
+            "follower_outcome_status": "FOLLOWER_PARTIAL", "divergence_vs_farouk_pips": "~ -65 to -225"},
+    "J11": {"farouk": "LONG 4056.64, realised 629p (exit widget 17:35:06Z)",
+            "follower": "no zone; post-time proxy ~ his fill; follower ~600-660p",
+            "follower_outcome_status": "FOLLOWER_WIN",
+            "headline_claim_discount": {"claimed": 800, "realised": 629, "inflation_ratio": 1.27},
+            "divergence_vs_farouk_pips": "~0 (divergence here is claim-vs-realised)"}
+  },
+  "classification": {
+    "R6_follower_fill_expectancy": "PROMISING_SCORING_FEATURE — ADOPTED as the expectancy engine",
+    "divergence_distribution_component": "NEEDS_FORWARD_EVIDENCE (3 quantified cases; widget availability depends on his posting)"
+  },
+  "forward_use": [
+    "never an execution signal",
+    "lanes 2-4 computed for every XAU-F record at outcome-matching time",
+    "claims discounted before entering claim_quality (inflation_ratio > 1.25 -> HUMAN_REVIEW)",
+    "large his-vs-follower divergence -> HUMAN_REVIEW",
+    "drives OHLC window requests exactly as the existing workflow"
+  ],
+  "forbidden_outputs": ["TRADE_READY", "EXECUTE", "ORDER", "LOT_SIZE", "BROKER_ROUTE", "ACCOUNT_ID",
+                         "RISK_SIZE", "COPY_TRADE", "NANO", "LIVE", "DEMO_EXECUTE"],
+  "enforcement": "ai_review.schema.validate_reviewer_output + extended guard (as in detector v0.2; stamp from validator only)",
+  "safety": {
+    "listener_pid_87988": "untouched",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "execution_surface": "none — analytic model only"
+  }
+}

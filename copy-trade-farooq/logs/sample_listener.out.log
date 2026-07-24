@@ -1,0 +1,25 @@
+================================================================
+   SIGNAL LISTENER (Telegram)   —   PREVIEW MODE
+================================================================
+   Watching channel(s) : -1001902136163
+   Listener mode    : PREVIEW
+   PREVIEW observational capture is active.
+   Allowlisted Telegram messages are stored as raw evidence in
+   prospective_evidence_v1.db. Only safe metadata is printed; message
+   content remains in the evidence database. Broker quotes are
+   unavailable and remain NULL / BROKER_NOT_CONNECTED. No trading-pipeline
+   handoff, sizing, scoring, broker connection or execution is enabled.
+   Supported Telegram IMAGE bytes ARE preserved (the ORIGINAL Telegram-
+   delivered bytes) into prospective_media_v1 — append-only, content-
+   addressed, atomic. No OCR or image interpretation occurs. Unsupported
+   media (video/audio/etc.) remains reference/status only. Execution disabled.
+================================================================
+
+Connecting to Telegram...
+If this is your first time, Telegram will send you a login code in the
+Telegram app itself. Type it in when asked. (If you use 2-step
+verification, you'll also be asked for that password.)
+
+
+  Connected. Listening for new messages... (press Ctrl+C to stop)
+

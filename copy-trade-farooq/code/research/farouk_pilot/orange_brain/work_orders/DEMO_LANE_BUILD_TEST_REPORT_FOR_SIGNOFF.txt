@@ -1,0 +1,99 @@
+TO CHATGPT (SECOND REVIEWER) - DEMO LANE BOUNDED BUILD + TEST REPORT (with COVERAGE MATRIX)
+
+Per FINAL_SECOND_REVIEWER_ADDENDUM_001, this build + test report is returned BEFORE any OAuth scope request, gate flip, or broker-connected proof run. Nothing beyond the authorised scope was done.
+
+You named ~42 proof tests across three rounds: correction 13 (14), F2 (4), F3 (6), and addendum items 1/2/3. The suite now has 62 passing tests. Below is a COVERAGE MATRIX mapping every named requirement to its implementing test with one of three states: COVERED, CONSOLIDATED (one test proves several named requirements - justified), or NOT YET IMPLEMENTED (none remain). After your review of the earlier 28, the genuinely-missing tests you listed were implemented, plus an explicit no-DOWNWARD-rounding test.
+
+Location: research/farouk_pilot/demo_lane/. Run: python research/farouk_pilot/demo_lane/tests_demo_lane.py -> 62/62 pass.
+
+=================================================================
+COVERAGE MATRIX
+=================================================================
+CORRECTION 13 (fourteen):
+  1  live endpoint refusal              COVERED  "live-endpoint refusal"
+  2  isLive=true refusal                COVERED  "isLive=true refusal"
+  3  wrong account-id refusal           COVERED  "wrong account-id refusal"
+  4  wrong OAuth scope refusal          COVERED  "wrong OAuth scope refusal"
+  5  unit-conversion mismatch           COVERED  "F1: unit-conversion mismatch halts"
+  6  approval-hash mismatch             CONSOLIDATED into "F3: modified approval rejected" (a changed plan breaks plan_hash; same code path)
+  7  expired approval                   CONSOLIDATED into "F3: expired approval rejected"
+  8  response-lost-after-placement      COVERED  "CORR7: lost response -> OUTCOME_UNKNOWN halt"
+  9  partial fill without stop          CONSOLIDATED into "F2: partial-fill close reduces without opening/reversing"
+  10 hard process death, broker stop surviving  COVERED  "CORR13#10: hard process death - broker stop survives"
+  11 restart reconcile-before-action    COVERED  "CORR13#11: restart reconcile-before-action" + "CORR13#11b: unknown order -> NOT_ARMED no-touch"
+  12 unknown broker order no-touch      COVERED  "ITEM1: unknown ORDER -> NOT_ARMED no-touch (distinct)" (distinct from the unknown-POSITION case "ITEM1: unknown POSITION -> no-touch halt (distinct)"; no longer consolidated)
+  13 stale pending-order cancellation   COVERED  "CORR13#13: stale broker-side Orange order cancelled" + "CORR13#13b: terminal campaign cancels pending entries"
+  14 demo-ledger exclusion from all strategy evidence  COVERED  "CORR11: ledger records carry all 5 eligibility flags" + "CORR11: expectancy reader ingests nothing"
+
+F2 (four):
+  1  partial fill without stop can be closed without opening/reversing  COVERED  "F2: partial-fill close reduces without opening/reversing"
+  2  kill containment closes only known Orange-owned quantity           COVERED  "F2: kill closes ONLY Orange-owned"
+  3  excessive close quantity is rejected                              COVERED  "F2: excessive close rejected"
+  4  unknown position remains no-touch                                 COVERED  "F2: unknown position no-touch halt"
+
+F3 (six):
+  1  executor cannot create approval                     COVERED  "F3: executor cannot create approval" + "F3: executor has no DEMO_APPROVED writer method"
+  2  approval-tool creates correctly bound approval      COVERED  "F3: approval-tool creates correctly bound approval"
+  3  modified approval rejected                          COVERED  "F3: modified approval rejected"
+  4  replayed approval rejected                          COVERED  "F3: replayed approval rejected"
+  5  expired approval rejected                           COVERED  "F3: expired approval rejected"
+  6  simultaneous consumption -> at most one consumer    COVERED  "F3: simultaneous consumption -> at most one consumer"
+
+ADDENDUM ITEM 1 (consumption receipt / ordering):
+  - executor-owned consumption separate from immutable approval  COVERED  "ADDENDUM1: approval byte-identical after consumption"
+  - first atomic consumption succeeds                            COVERED  "ADDENDUM1: first atomic consumption succeeds"
+  - simultaneous consumption single winner                       CONSOLIDATED into "F3: simultaneous consumption -> at most one consumer"
+  - failed receipt blocks the request (no order)                 COVERED  "ADDENDUM1: failed receipt blocks request (no order placed)"
+  - replay of consumed approval rejected                         CONSOLIDATED into "F3: replayed approval rejected"
+  - ordering validate->receipt->outbox->send                     COVERED  (proven jointly by the failed-receipt absence test + the OUTCOME_UNKNOWN test showing intent written before send)
+
+ADDENDUM ITEM 2 (resting-order GTD / expiry):
+  - resting order is GOOD_TILL_DATE                     COVERED  "ADDENDUM2: resting order is GOOD_TILL_DATE"
+  - GTD expiry bound to approval expiry                 COVERED  "ADDENDUM2: GTD expiry bound to approval expiry"
+  - missing expiry blocks placement                     COVERED  "ADDENDUM2: missing expiry blocks placement"
+  - altered expiry invalidates approval                 COVERED  "ADDENDUM2: altered expiry invalidates approval"
+  - expired order cannot be recreated                   COVERED  "ADDENDUM2: expired order cannot be recreated"
+  - stale broker-side Orange order cancelled/alarmed/halted  COVERED  "CORR13#13: stale broker-side Orange order cancelled"
+
+ADDENDUM ITEM 3 (silent-normalization / 7-field reconcile):
+  - silent ENTRY normalization detected                COVERED  "ADDENDUM3: silent normalization detected"
+  - broker STOP mismatch detected (distinct from price)  COVERED  "ADDENDUM3: broker STOP mismatch detected (distinct from price)"
+  - non-representable entry rejected                    COVERED  "ADDENDUM3: non-representable ENTRY rejected"
+  - non-representable stop rejected                     COVERED  "ADDENDUM3: non-representable STOP rejected"
+  - minimum stop-distance violation rejected            COVERED  "ADDENDUM3: min-stop-distance violation rejected"
+  - symbol / trading-session invalidity blocks placement  COVERED  "ADDENDUM3: trading-session invalidity blocks placement" + "ADDENDUM3: symbol untradeable blocks placement"
+
+GAP CLOSURES (final round):
+  account_id reconciliation (most safety-critical field)  COVERED  "GAP1: account_id mismatch detected + halt/NOT_ARMED" + "GAP1: no silent adoption" + "GAP1: no subsequent broker action" (account_id ADDED; type retained as 8th field)
+  success-path ordering (VALIDATE->RECEIPT->INTENT->CALL_BROKER)  COVERED  "GAP2: success-path executes in the correct order (exact trace)" (the 3 failure-boundary tests remain, not replaced)
+
+F1 (both directions - reviewer noted only upward was named):
+  - no UPWARD rounding                                  COVERED  "F1: sub-unit nominal halts (no upward rounding)"
+  - no DOWNWARD rounding                                COVERED  "F1: no DOWNWARD rounding (1.9 halts, not -> 1)"
+  - exact nominal converts                              COVERED  "F1: exact nominal converts"
+
+NOT YET IMPLEMENTED: none.
+
+=================================================================
+CONSOLIDATION JUSTIFICATIONS (one test, multiple named requirements)
+=================================================================
+- corr13#6 approval-hash mismatch == F3 modified-approval: both are "a plan change breaks plan_hash"; one code path, one test.
+- corr13#7 == F3 expired-approval: identical expiry check.
+- corr13#9 partial-fill-without-stop == F2#1: the close-only-reduces path IS the partial-fill containment.
+- (corr13#12 unknown-broker-order is now a DISTINCT test "ITEM1: unknown ORDER" - NO LONGER consolidated with the unknown-POSITION case, per GAP 3.)
+- addendum1 single-winner == F3#6; addendum1 replay == F3#4: identical atomic/nonce guards.
+
+=================================================================
+WHAT WAS BUILT / PROHIBITIONS (unchanged from the earlier report, summarised)
+=================================================================
+Modules: config (all 3 gates hard False; caps; eligibility flags; no credentials), gate (5-field guard + truth table), sizing (exact, no rounding either way), prices (representability + min-stop-distance), approval_tool (immutable, operator-only, O_EXCL), executor (cannot write DEMO_APPROVED; ordering validate->receipt->outbox->send; LIMIT+SL+GTD; 7-field reconcile; OUTCOME_UNKNOWN; restart-reconcile-first; stale/terminal cancel), mock_broker (in-memory, no network), reconcile (policy + close-only), README, tests (45/45).
+
+PROHIBITIONS ENFORCED BY ABSENCE (cannot be forgotten/bypassed/re-enabled):
+  - No order-capable connection: zero socket/requests/websocket/ssl/client imports; only MockBroker; the only "ctrader" strings are the *.ctraderapi.com endpoint literals used by the guard.
+  - No executor approval capability: no code path writes DEMO_APPROVED (write_approval raises).
+  - No credentials: zero secret/token/password assignments in the package (scan clean).
+ENFORCED BY CHECK (all with tests): account 5-field conjunction; gate can_arm; exact-volume halt (both directions); price representability + stop-distance; approval hash/expiry/nonce; atomic single-winner consumption; 7-field reconcile; close-only-reduces-owned; unknown-no-touch; session/symbol validity; stale/terminal cancel; ledger eligibility stamping.
+
+GATE + CREDENTIAL STATE (from source): EXECUTION_ENABLED=False; CTRADER_EXECUTION_ENABLED=False; DEMO_EXECUTION_ENABLED=False. Credentials anywhere: NONE. Real broker connection: NONE (MockBroker only).
+
+NOT DONE (remains prohibited pending your sign-off): no OAuth trading-scope grant, no gate flip, no broker connection, no demo or live order. Live execution remains prohibited absolutely.

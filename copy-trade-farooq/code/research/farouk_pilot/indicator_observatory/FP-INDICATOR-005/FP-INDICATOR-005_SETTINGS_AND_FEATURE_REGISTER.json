@@ -1,0 +1,116 @@
+{
+  "indicator": "Farouk's Playbook — Smart Money Suite",
+  "evidence": "settings dialog visible ref_01-00/02-30 (Inputs tab); chart objects + panel across the recording",
+  "IMPORTANT_default_caveat": "These are Farouk's CURRENT on-screen values. NO reset-to-default action was demonstrated -> NONE are proven factory defaults. Values are DIRECTLY_VISIBLE_CURRENT_CONFIG, not defaults.",
+  "settings_SHOWN": {
+    "DISPLAY_toggles": {
+      "Show FVGs": "ON",
+      "Show BPR zones": "ON",
+      "Show Order Blocks": "ON",
+      "Show Asia Session range": "ON",
+      "Show London High/Low": "ON (NEW; blue)",
+      "Show US High/Low": "OFF (NEW; yellow)",
+      "Show IFVG": "OFF (NEW; inverted FVG)",
+      "Show engulfing marks": "OFF"
+    },
+    "CHART_LABELS": {
+      "Chart label size": "Tiny",
+      "options": [
+        "Tiny",
+        "Small",
+        "Normal",
+        "Large",
+        "Huge"
+      ]
+    },
+    "BOXES": {
+      "Extend boxes fully to the right (live)": "OFF",
+      "Box extension (bars right)": 50
+    },
+    "PATTERNS_TZ_ST": {
+      "Tweezer marks (TZ)": "OFF",
+      "Star marks (ST)": "OFF",
+      "FVG break (close above bearish FVG)": "OFF",
+      "Only show TZ/ST at OB edge / Asia H-L": "ON",
+      "TZ/ST level tolerance (x ATR)": 0.15,
+      "Tweezer tolerance (x ATR)": 0.08,
+      "Star big body (x ATR)": 0.6,
+      "Star small body (x ATR)": 0.3
+    },
+    "OB_DISPLAY": {
+      "spoken": "'show all OBs or default; I like default (high-time)'",
+      "on_chart_TFs_shown": [
+        "OB D",
+        "OB 6H",
+        "OB 4H",
+        "OB 1H",
+        "OB 15m"
+      ],
+      "selecting_control": "NOT shown in a settings frame"
+    },
+    "PANEL_owned_by_this_indicator": {
+      "fields": [
+        "TF",
+        "CHoCH",
+        "Asia break",
+        "OB retest",
+        "Current OB",
+        "Fresh OB"
+      ],
+      "example_15m": {
+        "CHoCH": 4174.34,
+        "Current OB": 4022.13,
+        "Fresh OB": 4022.13
+      },
+      "example_12h": {
+        "Current OB": 2647.44,
+        "Fresh OB": 1672.85
+      }
+    }
+  },
+  "features_confirmed": [
+    "Asia Session range (Asia High/Low)",
+    "FVG (yellow)",
+    "BPR zones",
+    "Order Blocks (multi-TF: D/6H/4H/1H/15m)",
+    "London High/Low liquidity (blue)",
+    "US High/Low liquidity (yellow)",
+    "IFVG (inverted FVG)",
+    "engulfing marks",
+    "CHoCH",
+    "Tweezer/Star reversal marks",
+    "the CHoCH/Asia-break/OB-retest/Current-OB/Fresh-OB panel",
+    "'ongoing candle' marker (can be hidden)",
+    "extend-box-to-right",
+    "chart-label sizing"
+  ],
+  "NUMERICAL_VALUES_VERIFIED_visible": {
+    "Box extension": "50 bars",
+    "TZ/ST level tolerance": "0.15 x ATR",
+    "Tweezer tolerance": "0.08 x ATR",
+    "Star big body": "0.6 x ATR",
+    "Star small body": "0.3 x ATR"
+  },
+  "TASK_TARGETS_NOT_SHOWN_UNKNOWN": {
+    "note": "The following were requested for verification but were NOT exposed in this recording (the dialog only showed DISPLAY/CHART-LABELS/BOXES/PATTERNS; the detection-engine section was never scrolled to). Recorded as UNKNOWN, NOT assumed.",
+    "unknown": [
+      "CHoCH pivot length",
+      "FVG lookback",
+      "minimum FVG size in ATR",
+      "BPR overlap threshold",
+      "automatic FVG/BPR removal",
+      "maximum zones",
+      "ordinary OB impulse threshold",
+      "Strong OB impulse threshold",
+      "equal-high/low lookback",
+      "higher-timeframe OB selection control (D/6H/4H/1H/15m shown on chart, selecting input not shown)",
+      "Asia-session hours + timezone field",
+      "alert configuration / alert timing",
+      "explicit candle-close vs intrabar setting"
+    ]
+  },
+  "spoken_candle_close_notes": "Transcript: 'the wickedness closed', 'the ongoing candle is still the same', 'only when we want to go long/short, that's the last confirmation' -> qualitative; NO explicit alert/candle-close SETTING shown -> repaint/alert behaviour UNKNOWN.",
+  "source_asset_ids": [
+    "sa-e8a33802a013d74f"
+  ]
+}

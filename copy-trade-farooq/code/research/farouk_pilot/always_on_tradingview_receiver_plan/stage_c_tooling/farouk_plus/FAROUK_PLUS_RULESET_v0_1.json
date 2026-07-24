@@ -1,0 +1,106 @@
+{
+  "ruleset_id": "FAROUK_PLUS_RULESET_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY",
+  "authority": "deterministic OHLC matching (Days 2/4/5 matchers) for all outcomes; ai_review fail-closed validator for all machine outputs",
+  "not_trade_gates_notice": "Every rule is a review-only scoring predicate/feature for a shadow candidate detector. No rule is an execution gate. No output is or implies an executable action.",
+  "evidence_base": "winner_loss_comparison_v1.json — 33 matched trades (20 VERIFIED_WIN / 6 losses / 7 partials); loss sample n=6; all adoptions provisional pending >=15 forward-captured trades (Day-6 thresholds)",
+  "rules": [
+    {
+      "id": "R2_attempt_cap_le2",
+      "classification": "ADOPT_AS_SCORING_FEATURE",
+      "predicate": "attempt_number <= 2",
+      "attempt_number_definition": "1 + count of prior entry announcements for the same campaign (same/near-identical zone or explicit re-enter reference) on the same trading day",
+      "evidence": "breach removed verified SL loss J17 (attempt 5) + 2 scratches; cost = winner J29 (~150p) under the stricter cap",
+      "scoring_weight": {"breach": -2}
+    },
+    {
+      "id": "R2b_first_attempt_only",
+      "classification": "ADOPT_AS_SCORING_FEATURE",
+      "predicate": "attempt_number == 1 (re_entry_flag == false)",
+      "evidence": "removed all 3 re-entry losses (J08, J10, J17; ~450-700p avoided) at cost of 3 winners (J14, J19, J29; ~380p TP1-centric)",
+      "scoring_weight": {"first_attempt_flag_true": 1, "re_entry_flag_true": -1}
+    },
+    {
+      "id": "R4b_no_entries_after_1530Z",
+      "classification": "ADOPT_AS_SCORING_FEATURE",
+      "predicate": "entry_time_utc.time() < 15:30",
+      "evidence": "removed losses J03 + J17 and 1 scratch; cost = 1 small winner (J06, ~53p)",
+      "scoring_weight": {"before_1530z": 1, "after_1530z_flag_true": -1}
+    },
+    {
+      "id": "R6_claim_discount",
+      "classification": "ADOPT_AS_SCORING_FEATURE",
+      "predicate": "claim_discounted_pips = min(claimed_pips, achievable_pips); inflation_ratio = claimed_pips / max(achievable_pips, 1); expectancy computed ONLY on TP1/TP2 structure + scratch modelling",
+      "applies_to": "result review + expectancy math, NOT entry scoring",
+      "evidence": "documented inflation: J30 +33-56% (material), S1 +8% (mild), J11 fill-dependent",
+      "scoring_weight": {"inflation_ratio_gt_1.25": "claim_quality=DEGRADED -> HUMAN_REVIEW_REQUIRED"}
+    },
+    {
+      "id": "MAE_management_feature",
+      "classification": "WATCHLIST_FEATURE",
+      "predicate": "mae_pips_from_mid (deterministic matcher output)",
+      "note": "outcome-side diagnostic only; W median 70p vs L median 284p; NOT knowable at entry time — used for replay diagnostics, expectancy modelling, forward drift monitoring",
+      "scoring_weight": null
+    },
+    {
+      "id": "R1_first_touch",
+      "classification": "NEEDS_FORWARD_EVIDENCE",
+      "predicate": "REJECTED as retrospectively defined (zone untraded 4h prior): 0/20 winners qualify because zones are posted at/after price arrival",
+      "path_to_adoption": "forward pre-marked levels (TV alert lane) enable a genuine freshness test",
+      "scoring_weight": null
+    },
+    {
+      "id": "R3_disp50_deadline",
+      "classification": "REJECTED_AS_DEFINED",
+      "predicate": "50p-from-zone-mid within 60min — zero discrimination (20/20 W and 5/5 L pass; median 0 min)",
+      "possible_retest": "from fill levels with a follower-fill model, not zone mid",
+      "scoring_weight": null
+    },
+    {
+      "id": "R5_htf_veto",
+      "classification": "NEEDS_FORWARD_EVIDENCE",
+      "predicate": "counter-trend veto — 1-1 on this sample (S2 lost; Jun-26 counter-trend campaign WON at half size); a veto removes winner J29",
+      "note": "recorded as a flag with weight 0; Farouk's own control is size reduction, which is out of scope (no risk sizing) — flag only",
+      "scoring_weight": {"counter_trend_note_present": 0}
+    }
+  ],
+  "required_fields": [
+    "setup_id", "campaign_id", "attempt_number", "first_attempt_flag", "re_entry_flag",
+    "entry_time_utc", "after_1530z_flag", "claimed_pips", "achievable_pips",
+    "claim_discounted_pips", "TP1_reached", "MFE", "MAE", "outcome_status"
+  ],
+  "outcome_status_enum_source": "deterministic matcher ONLY: VERIFIED_WIN | VERIFIED_LOSS | PARTIAL | CONTRADICTED | AMBIGUOUS_INTRABAR | INSUFFICIENT_DATA",
+  "scoring_model": {
+    "baseline_candidate": {"definition": "parsed setup with direction + numeric zone + SL passing deterministic evidence validators", "label": "WATCH", "score": 0},
+    "risk_reduction_flags": {"first_attempt_flag": 1, "before_1530z": 1},
+    "tail_risk_flags": {"attempt_number_ge_3": -2, "re_entry_flag": -1, "after_1530z_flag": -1, "counter_trend_note_present": 0},
+    "claim_quality_flags": {"inflation_ratio_gt_1.25_in_poster_window": "claim_quality=DEGRADED (routes to human review; does not alter entry score)"},
+    "confidence_modifier": "sum of flag weights",
+    "label_mapping": {
+      "<=-2": "REJECT",
+      "-1..0": "WATCH",
+      "+1": "SHADOW_CANDIDATE_LOW",
+      ">=+2": "SHADOW_CANDIDATE_MEDIUM",
+      "override": "HUMAN_REVIEW_REQUIRED on any contradiction, ambiguity, missing required field, or DEGRADED claim quality"
+    },
+    "allowed_labels": ["REJECT", "WATCH", "SHADOW_CANDIDATE_LOW", "SHADOW_CANDIDATE_MEDIUM", "HUMAN_REVIEW_REQUIRED"],
+    "caps": [
+      "no label above SHADOW_CANDIDATE_MEDIUM exists in v0.1",
+      "nothing skips the existing human-review queue",
+      "labels expire when the entry window passes (no retro-labels presented as live)"
+    ]
+  },
+  "forbidden_outputs": [
+    "TRADE_READY", "EXECUTE", "EXECUTION", "ORDER", "LOT_SIZE", "LOT", "BROKER_ROUTE", "BROKER",
+    "ACCOUNT_ID", "ACCOUNT", "RISK_SIZE", "RISK", "QTY", "POSITION_SIZE", "PERMIT", "LEASE",
+    "CTRADER", "QST", "TRADE_NOW", "ROUTE"
+  ],
+  "enforcement": "ai_review.schema.validate_reviewer_output rejects any record whose keys match FORBIDDEN_KEY_SUBSTRINGS and stamps review_only=True, executable=False, trade_ready=False on acceptance; the stamp comes from the validator, never the producer",
+  "safety": {
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "listener_pid_87988": "untouched",
+    "execution_surface": "none"
+  }
+}

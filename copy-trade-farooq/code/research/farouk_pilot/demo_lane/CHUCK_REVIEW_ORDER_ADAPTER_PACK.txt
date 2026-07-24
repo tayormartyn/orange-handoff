@@ -1,0 +1,236 @@
+================================================================================
+CHUCK REVIEW EVIDENCE PACK - DEMO-LANE REAL ORDER ADAPTER (MOCK-ONLY)
+Date: 2026-07-22    Build: order_adapter (mock-first) + executor 6a protection
+================================================================================
+
+READ THIS FIRST
+---------------
+This is the REAL order adapter for the demo lane. It is MOCK-ONLY. It is returned
+for review BEFORE any live-adapter step, BEFORE any live connection, BEFORE any
+OAuth-trade scope, BEFORE any gate flip, and BEFORE any order is placed - exactly
+as the addendum required. Nothing in this build connects, requests trade scope,
+flips a gate, or places an order. The wire mapping (canonical spec -> cTrader
+ProtoOANewOrderReq / ProtoOAClosePositionReq protobuf -> Twisted send) is the
+SEPARATE, later step that comes back to you AFTER this review.
+
+Gates remain HARD FALSE (see section 7). The seven live Orange services were not
+touched (section 9). The live Orange ledgers were not touched (section 8).
+
+--------------------------------------------------------------------------------
+1. SOURCE-FILE MANIFEST (SHA-256)
+--------------------------------------------------------------------------------
+NEW adapter modules:
+  broker_request.py       c956c63664239ead98041859f2bd6fcab1562d7949172b9486440d9629767dd7
+  order_adapter.py        dbba5c59f510c511a15dc1cbad1d4fa57690a64ba0aa7317f91e7cba5c67a769
+  mock_order_channel.py   7f57a6b3c43faf9968a19b68a5c2615ec78f0305545ec84a2710a5865385e536
+  tests_order_adapter.py  e6f4eb8777924687899a9a5f9b874341d89010f2ba916ed64efe0195046acb77
+
+MODIFIED module (the 6a protection step + _alarm added; nothing else changed):
+  executor.py             aa9ac5341ba419a8819310fe9418c51c76148ad14ec0e2e9dffd4758587a8f60
+
+UNCHANGED supporting modules (already in your prior bounded-build pack):
+  config.py, gate.py, sizing.py, prices.py, approval_tool.py, mock_broker.py
+
+--------------------------------------------------------------------------------
+2. TEST COMMAND + COMPLETE RAW OUTPUT (every test named)
+--------------------------------------------------------------------------------
+$ python -m research.farouk_pilot.demo_lane.tests_order_adapter
+
+  ok  config gates all hard False
+  ok  place_campaign REFUSES (NOT_ARMED) with the real hard-False gate
+  ok  translate builds a LIMIT+GTD+stop spec
+  ok  LIMIT-only: non-LIMIT opening rejected
+  ok  missing protective stop rejected (no unprotected order built)
+  ok  gate defence: dispatch refused when policy disabled
+  ok  exact sizing 0.01 lot -> 100 protocol volume (ratified meta)
+  ok  happy: 3 legs placed
+  ok  happy: every leg volume == 100 (0.01 lot)
+  ok  happy: every leg stop attached
+  ok  happy: no alarm raised
+  ok  full-fill protected: leg acked, no alarm
+  ok  silent ENTRY normalization -> executor halt
+  ok  silent STOP normalization -> executor halt
+  ok  account-id mismatch (GAP1) -> halt + NOT_ARMED
+  ok  lost response -> OUTCOME_UNKNOWN halt
+  ok  session closed -> placement blocked
+  ok  symbol untradeable -> placement blocked
+  ok  [6a-1] stop rejected on a fill -> UNPROTECTED halt
+  ok  [6a-1] filled quantity CLOSED (no unprotected position remains)
+  ok  [6a-1] entry order CANCELLED
+  ok  [6a-1] alarm raised
+  ok  [6a-1] trace shows close+cancel
+  ok  [6a-1b] stop rejected on a pending order -> UNPROTECTED halt
+  ok  [6a-1b] pending entry CANCELLED (never fills unprotected)
+  ok  [6a-1b] no position ever opened
+  ok  [6a-1b] alarm raised
+  ok  [6a-2] partial fill w/o verified stop -> UNPROTECTED halt
+  ok  [6a-2] filled portion CLOSED
+  ok  [6a-2] remainder CANCELLED
+  ok  [6a-2] alarm raised
+  ok  close_reduce reduces an owned position
+  ok  close_reduce over-close refused
+  ok  close_reduce non-existent refused
+  ok  close_reduce non-owned -> no touch (PermissionError)
+  ok  no ctrader_open_api imported
+  ok  no twisted imported
+  ok  adapter does NOT duplicate the seven-field reconciliation (single source in executor)
+  ok  the seven-field reconciliation lives in the executor
+
+  39 passed, 0 failed
+
+REGRESSION (your prior bounded-build suite, unchanged executor behaviour):
+$ python -m research.farouk_pilot.demo_lane.tests_demo_lane
+  62/62 pass
+
+--------------------------------------------------------------------------------
+3. COVERAGE MATRIX  (COVERED / CONSOLIDATED(justified) / NOT-IMPLEMENTED)
+--------------------------------------------------------------------------------
+RATIFIED SPEC REQUIREMENTS
+  LIMIT-only opening ................. COVERED  (LIMIT-only test; translate rejects MARKET)
+  Protective stop at placement ....... COVERED  (missing-stop rejected; happy stop-attached)
+  GOOD_TILL_DATE expiry .............. COVERED  (translate builds GTD; happy reconcile inc. expiry_ts)
+  Exact 0.01-lot -> 100 sizing ....... COVERED  (sizing test, ratified meta lotSize 10000)
+  Seven-field reconciliation ......... COVERED  (entry-norm + stop-norm halts; single-source sec.6)
+  Account-id-first mismatch (GAP1) ... COVERED  (account-id mismatch -> halt + NOT_ARMED)
+  Lost response / OUTCOME_UNKNOWN .... COVERED  (lost-response test)
+  Close-only risk reduction .......... COVERED  (close_reduce: over-close/non-owned/non-existent refused)
+  6a stop-attachment failure ......... COVERED  ([6a-1], [6a-1b])  <-- see section 4
+  6a partial-fill w/o verified stop .. COVERED  ([6a-2])           <-- see section 4
+
+CHUCK'S PRIOR CORRECTIONS / ADDENDUM ITEMS
+  Corr 1  account guard (5-field) .... CONSOLIDATED  single-sourced in gate.account_guard_ok;
+                                       adapter proves NOT_ARMED refusal; full guard in tests_demo_lane
+  Corr 3 / F1  exact sizing no-round . COVERED       sizing test (0.01->100); SizingHalt path in tests_demo_lane
+  Corr 5  gate truth table ........... CONSOLIDATED  tests_demo_lane; adapter proves gates hard-False + NOT_ARMED
+  Corr 7  outbox / lost response ..... COVERED       lost-response -> OUTCOME_UNKNOWN
+  Corr 11 ledger eligibility ......... CONSOLIDATED  config.LEDGER_ELIGIBILITY on every write; tests_demo_lane
+  Corr 12 safety caps ................ CONSOLIDATED  SAFETY_CAPS (instrument/max_entry_orders) enforced in place_campaign
+  Corr 13 restart/stale/terminal ..... CONSOLIDATED  restart_reconcile_first + cancel_stale + cancel_campaign; tests_demo_lane
+  GAP 1   account_id checked first ... COVERED       account-id mismatch test (checked before field compare)
+  GAP 2   success-path ordering ...... CONSOLIDATED  exact trace asserted in tests_demo_lane; happy path exercises it
+  F2      LIMIT opening .............. COVERED       LIMIT-only test
+  F3      executor cannot approve .... CONSOLIDATED  no DEMO_APPROVED writer in executor; tests_demo_lane (unchanged)
+  Addendum 1  validate->receipt->
+              intent->send + 1-winner . CONSOLIDATED  ordering + single-winner receipt in tests_demo_lane; same path here
+  Addendum 2  GTD + stale cancel ..... COVERED/CONSOLIDATED  GTD in translate (COVERED); stale cancel in tests_demo_lane
+  Addendum 3  representability +
+              min-stop-dist + reconcile COVERED       reconcile via entry/stop-norm; prices.py checks in tests_demo_lane
+  6a  no unprotected position ........ COVERED       NEW - the two tests in section 4
+
+NOT-IMPLEMENTED (BY DESIGN - deferred to the live-channel step you review NEXT)
+  Wire mapping spec->protobuf->Twisted  NOT-IMPLEMENTED (deferred; not in this build)
+  Real broker credentials / token ..... NOT-IMPLEMENTED (out of scope; gated)
+  OAuth-trade scope ................... NOT-IMPLEMENTED (never requested; read-only preflight used SCOPE_VIEW)
+  Live connection / real order ........ NOT-IMPLEMENTED (gates hard False)
+
+NO GAPS: every requirement and prior item above is COVERED, CONSOLIDATED (with the
+single-source justification), or explicitly NOT-IMPLEMENTED by design.
+
+--------------------------------------------------------------------------------
+4. THE TWO 6a TESTS CALLED OUT EXPLICITLY  (the heart of the design)
+--------------------------------------------------------------------------------
+6a-1  STOP-ATTACHMENT FAILURE
+   Scenario: broker accepts the entry but REJECTS or OMITS the protective stop.
+   Proven: executor CLOSES any filled quantity (close-only) + CANCELS the entry +
+           raises alarm UNPROTECTED_POSITION_PREVENTED + HALTS.
+   Sub-cases:
+     [6a-1]  entry FILLED, stop rejected -> filled qty closed (positions == 0),
+             entry cancelled (orders == 0), alarm raised, trace shows
+             PROTECTIVE_CLOSE_FILLED + PROTECTIVE_CANCEL_ENTRY.
+     [6a-1b] entry PENDING, stop rejected -> pending entry cancelled (never fills
+             unprotected), no position ever opened, alarm raised.
+   Invariant proven: NO unprotected position ever remains.
+
+6a-2  PARTIAL FILL WITHOUT VERIFIED STOP
+   Scenario: order partially fills; the protective stop is not confirmed.
+   Proven: CANCEL remainder + CLOSE filled portion + alarm + HALT
+           (positions == 0, orders == 0, alarm raised).
+
+Mechanism location: executor.Executor._verify_protection_or_unwind (single-source
+orchestration), invoked per leg AFTER the account-id check and BEFORE the generic
+seven-field reconcile, because stop-omission is a specific, known-dangerous case
+that needs an ACTIVE unwind, not just a halt.
+
+--------------------------------------------------------------------------------
+5. IMPORT / NETWORK SCAN  (no ctrader_open_api, no socket, no twisted at import)
+--------------------------------------------------------------------------------
+Source scan (adapter modules) for network imports:
+  grep -nE "import (socket|ssl|twisted|urllib|requests)|from (...)|ctrader_open_api"
+    -> NONE
+
+Runtime scan (import the adapter, inspect sys.modules):
+  ctrader_open_api in sys.modules : False
+  twisted in sys.modules          : False
+  socket newly imported by adapter: False
+  ssl newly imported by adapter   : False
+
+--------------------------------------------------------------------------------
+6. SINGLE-SOURCED SEVEN-FIELD RECONCILIATION (not duplicated in the adapter)
+--------------------------------------------------------------------------------
+PRINCIPLE (recorded, brain D-097): a security-critical check must have EXACTLY ONE
+implementation - two copies drift apart and the divergence is SILENT.
+
+Proof - the seven-field tuple exists ONLY in the executor:
+  $ grep -rn 'seven = (' research/farouk_pilot/demo_lane/*.py
+  executor.py:152:  seven = ("symbol","side","type","volume","entry_price","stop_price","expiry_ts")
+  tests_order_adapter.py:204:  (assertion) "seven = (" in _ex_src
+
+order_adapter.py contains NO 'seven = (' tuple and NO 'SILENT_NORMALIZATION' - the
+word "reconciliation" appears there only in documentation stating the adapter does
+NOT reconcile (it only supplies the canonical ack). Tests assert both:
+  ok  adapter does NOT duplicate the seven-field reconciliation (single source in executor)
+  ok  the seven-field reconciliation lives in the executor
+
+--------------------------------------------------------------------------------
+7. GATE VALUES + CREDENTIAL SCAN
+--------------------------------------------------------------------------------
+$ python -c "from research.farouk_pilot.demo_lane import config as c; ..."
+  EXECUTION_ENABLED         = False
+  CTRADER_EXECUTION_ENABLED = False
+  DEMO_EXECUTION_ENABLED    = False
+
+Credential scan (adapter modules: broker_request/order_adapter/mock_order_channel):
+  grep -rniE "password|client_secret|accesstoken|access_token|api_key|bearer"
+    -> NONE   (no credentials in the adapter; the adapter reads its gate from an
+               injected policy, never global config, and holds no secret)
+
+--------------------------------------------------------------------------------
+8. LIVE ORANGE LEDGERS - BEFORE/AFTER (build touched nothing)
+--------------------------------------------------------------------------------
+Bracket: BEFORE = brain ledger anchor recorded at 2026-07-22T08:23Z (pre-adapter-
+build); AFTER = full SHA-256 taken now. Anchor = first-16 hex of the full SHA-256.
+
+  ledger                 BEFORE(anchor)     AFTER(full sha256)                  result
+  forward_validation     a9d76f0e7eabd491   a9d76f0e7eabd4913fb63ce4c458b3e4.. UNCHANGED
+  router_freeze (genuine) df2d3fc9312646d1  df2d3fc9312646d19d96173e62fa378c.. UNCHANGED
+  router_freeze_backfill  a0c0c7567f2e20a5  a0c0c7567f2e20a56bd74104e68c2ef5.. UNCHANGED
+  tracker_ledger          (live-capture-owned) 3fc7baf5cc13a88037d7585aabaccc23.. not adapter-written
+  guards                  213b4463bda22707   213b4463bda22707                   UNCHANGED
+  constitution            7bce618f29d1d44a   7bce618f29d1d44a                   UNCHANGED
+
+The adapter build wrote ONLY to demo_lane/ (new .py) and the brain register; all
+tests use tempfile dirs. No adapter code references any live ledger path. The
+forward/freeze/guards/constitution anchors are byte-identical before and after.
+
+--------------------------------------------------------------------------------
+9. SEVEN LIVE SERVICES UNTOUCHED
+--------------------------------------------------------------------------------
+No service start/stop/restart command was issued during the adapter build. The
+instance locks are intact with their original PIDs and mtimes, all PREDATING the
+adapter build:
+
+  tracker            PID 6404   mtime 2026-07-20T10:38:26
+  live_shadow        PID 32084  mtime 2026-07-20T10:38:31
+  outcome_companion  PID 31328  mtime 2026-07-20T10:38:30
+  evidence_watcher   PID 3348   mtime 2026-07-21T08:04:31
+  live_wire          PID 12660  mtime 2026-07-22T08:32:54
+  intake_observer    PID 29332  mtime 2026-07-22T08:38:45
+  listener (module_a_telegram): liveness monitor HEALTHY; Telegram head 46008
+                     (advanced by live capture, not by this build)
+
+7/7 services confirmed running and untouched.
+
+================================================================================
+END OF PACK - returned for review BEFORE any live-adapter step, OAuth-trade scope,
+gate flip, or order. Nothing was connected, flipped, or placed.
+================================================================================

@@ -1,0 +1,221 @@
+# FP-EDU-CANDLE page-level text extraction
+# source: C:\Users\Marty\signal-terminal\research\farouk_pilot\education_batches\pdf_batch_02\Whaleroom_Candlestick_Patterns.pdf
+# sha256: 37adae7ed0f41d56aafe2a8b96726d30f2d5356142bd3d4eecabf0a68d91314e
+# pages: 7
+
+===== PAGE 1/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 1
+ WHALEROOM
+ Candlestick Patterns
+  Educational Guide  Reversal Signals 
+ The 8 essential candlestick patterns every trader must know.
+ Spot reversals. Read the market. Trade with confidence.
+WHAT YOU'LL LEARN
+Japanese candlestick patterns are one of the oldest and most powerful tools in
+technical analysis. Each candle tells a story about who's in control of the market
+— buyers or sellers. When specific patterns form at key levels, they signal a
+high-probability shift in market direction.
+This guide covers 8 reversal patterns grouped into single-candle and
+multi-candle formations. Master these and you'll start seeing the market the way
+professional traders do.
+
+===== PAGE 2/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 2
+ Single-Candle Patterns
+DOJI
+ ■ REVERSAL
+ SIGNAL
+The Doji is one of the most important Japanese
+candlestick patterns. It forms when the market opens
+and closes at the same price — meaning total equality
+and indecision between buyers and sellers.
+When a Doji appears after a strong uptrend or
+downtrend, it signals that the previous momentum is
+exhausted. The market is pausing and a reversal is
+likely incoming.
+KEY POINTS
+ Open price ≈ Close price
+ Long wicks on both sides = battle between buyers and sellers
+ Strongest signal when it appears at support or resistance
+GRAVESTONE DOJI
+ ■ BEARISH
+REVERSAL
+The Gravestone Doji is the bearish version of the
+Dragonfly Doji. It forms when the open, low, and close
+are all at roughly the same price — but the market
+pushed significantly higher before getting rejected.
+The long upper tail shows that buyers tried to push
+price up but sellers slammed it back down. Strong
+signal of trend exhaustion at the top of an uptrend.
+KEY POINTS
+ Long upper wick — buyers rejected at the top
+ Tiny or no lower wick
+ Best signal: at resistance after an uptrend
+
+===== PAGE 3/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 3
+DRAGONFLY DOJI
+ ■ BULLISH
+REVERSAL
+The Dragonfly Doji is a bullish reversal pattern that
+forms when the open, high, and close are at roughly
+the same price, with a long lower wick.
+The long lower tail shows that sellers tried to push price
+down but buyers stepped in aggressively and
+pushed it back up. Classic sign that buyers are taking
+control.
+KEY POINTS
+ Long lower wick — sellers rejected at the bottom
+ Tiny or no upper wick
+ Best signal: at support after a downtrend
+HAMMER
+ ■ BULLISH
+REVERSAL
+The Hammer is created when the open, high, and close
+are roughly the same price, with a long lower shadow.
+It signals strong bullish rejection from buyers.
+Forms at the bottom of a downtrend. Sellers pushed
+the market lower after the open, but buyers stepped in
+hard and pushed price back up to close near the high.
+The market is signaling: the bottom is in.
+KEY POINTS
+ Small body at the top, long lower wick
+ Wick should be at least 2x the body size
+ Strongest at support levels after a downtrend
+
+===== PAGE 4/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 4
+SHOOTING STAR
+ ■ BEARISH
+REVERSAL
+The Shooting Star is the bearish version of the
+Hammer. It forms when open, low, and close are
+roughly the same price, with a long upper shadow.
+Buyers tried to push the market higher, but sellers
+rejected them aggressively and slammed price back
+down. Professional technicians say the shadow should
+be at least twice the length of the real body. Forms at
+the top of an uptrend.
+KEY POINTS
+ Small body at the bottom, long upper wick
+ Wick should be at least 2x the body size
+ Strongest at resistance levels after an uptrend
+ Multi-Candle Patterns
+MORNING STAR
+ ■ BULLISH
+REVERSAL
+The Morning Star is a powerful 3-candle bullish
+reversal pattern that forms at the bottom of a
+downtrend.
+1st candle: Big bearish — sellers still in control.
+2nd candle: Small body (often a Doji) — sellers losing
+momentum.
+3rd candle: Big bullish — closes above the midpoint of
+candle 1. Buyers have taken over.
+KEY POINTS
+ Best when 3rd candle closes deep into 1st candle's body
+ Works strongest near support levels
+ Signals a powerful trend reversal up
+
+===== PAGE 5/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 5
+EVENING STAR
+ ■ BEARISH
+REVERSAL
+The Evening Star is the mirror image of the Morning
+Star — a powerful 3-candle bearish reversal that
+forms at the top of an uptrend.
+1st candle: Big bullish — buyers still in control.
+2nd candle: Small body — buyers losing steam.
+3rd candle: Big bearish — closes below the midpoint
+of candle 1. Sellers have taken over.
+KEY POINTS
+ Best when 3rd candle closes deep into 1st candle's body
+ Works strongest near resistance levels
+ Signals a powerful trend reversal down
+TWEEZER TOPS
+ ■ BEARISH
+REVERSAL
+Tweezer Tops form at the top of an uptrend. Two
+candlesticks side by side with matching highs — a
+bullish candle followed by a bearish one.
+Buyers pushed price higher giving the impression the
+uptrend continues — but sellers ambushed them at
+the same exact high level and pushed price back down.
+Clear sign that buyers can't break that resistance.
+KEY POINTS
+ Two candles with matching highs (the 'tweezers')
+ 1st bullish, 2nd bearish
+ Strongest at resistance after an uptrend
+
+===== PAGE 6/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 6
+TWEEZER BOTTOMS
+ ■ BULLISH
+REVERSAL
+Tweezer Bottoms form at the bottom of a downtrend.
+Two candlesticks side by side with matching lows — a
+bearish candle followed by a bullish one.
+Sellers pushed price lower giving the impression the
+downtrend continues — but buyers ambushed them
+at the same exact low level and pushed price back up
+above the bearish candle's close. Clear sign that
+sellers can't break that support.
+KEY POINTS
+ Two candles with matching lows
+ 1st bearish, 2nd bullish
+ Strongest at support after a downtrend
+ Pattern Cheat Sheet
+PATTERN
+TYPE
+SIGNAL
+BEST AT
+Doji
+1 candle
+■ Indecision
+Any extreme
+Gravestone Doji
+1 candle
+■ Bearish reversal
+Resistance
+Dragonfly Doji
+1 candle
+■ Bullish reversal
+Support
+Hammer
+1 candle
+■ Bullish reversal
+Support
+Shooting Star
+1 candle
+■ Bearish reversal
+Resistance
+Morning Star
+3 candles
+■ Bullish reversal
+Support
+Evening Star
+3 candles
+■ Bearish reversal
+Resistance
+Tweezer Tops
+2 candles
+■ Bearish reversal
+Resistance
+Tweezer Bottoms
+2 candles
+■ Bullish reversal
+Support
+
+===== PAGE 7/7 =====
+WHALEROOM    Candlestick Patterns Guide    Page 7
+GOLDEN RULES FOR USING CANDLESTICK PATTERNS
+1. Patterns are signals, not guarantees — always confirm with other tools.
+2. Strongest at support and resistance levels — context matters more than the
+pattern itself.
+3. Higher timeframe patterns are more reliable than lower timeframes.
+4. Wait for the candle to close before acting — don't predict.
+5. Combine with volume and trend direction for the highest probability setups.
+6. A pattern in the middle of nowhere = noise. A pattern at a key level = signal.
+ Read the candles. Read the market. Hunt with the whales.
+ WHALEROOM

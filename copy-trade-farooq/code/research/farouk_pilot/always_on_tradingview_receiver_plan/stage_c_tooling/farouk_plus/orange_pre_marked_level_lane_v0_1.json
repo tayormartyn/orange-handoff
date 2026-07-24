@@ -1,0 +1,58 @@
+{
+  "lane_id": "ORANGE_PRE_MARKED_LEVEL_LANE_v0_1",
+  "expectancy_lane_number": 6,
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / RESEARCH_ONLY",
+  "question": "Could Orange, using Farouk-style evidence available BEFORE the Telegram post, have marked a realistic level producing a better hypothetical follower fill?",
+  "lanes_1_to_5": "UNCHANGED (see r6_follower_fill_expectancy_model_v0_1.json)",
+  "allowed_evidence_sources": [
+    "TradingView alert lane captures (CHoCH/Sweep/A) — read as evidence only",
+    "Asia high/low sweep context",
+    "CHoCH/BOS structure",
+    "BPR/FVG/OB constructions per his education material",
+    "session high/low liquidity",
+    "prior-day plan posts (e.g. msg 44877 pre-marked 4250-4260 sell zone)",
+    "Farouk-style level-construction rules (FAROUK_METHODOLOGY_FACTOR_MAP_v0_1, FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1, education corpus)"
+  ],
+  "anti_leakage_contract": {
+    "validity_rule": "every cited evidence item must satisfy evidence_timestamp < pre_mark_time_utc <= farouk_post_time_utc",
+    "forbidden_inputs": ["Farouk's later post", "post-result screenshots", "later TP/SL touches", "headline claims", "any OHLC after pre_mark_time_utc"],
+    "enforcement": "builder script freezes the evidence window FIRST (messages+alerts+bars strictly before pre_mark_time), constructs from the frozen window only, logs a frozen-window hash; any post-dated citation auto-invalidates the record (PRE_MARK_INSUFFICIENT_CONTEXT + leak flag)"
+  },
+  "record_fields": [
+    "setup_id", "pre_mark_time_utc", "pre_mark_source", "pre_mark_direction", "pre_mark_level_or_zone",
+    "farouk_post_time_utc", "time_before_post_seconds", "distance_from_farouk_posted_zone",
+    "distance_from_farouk_private_fill_if_known", "was_pre_mark_touched_before_post",
+    "was_pre_mark_touched_after_post", "hypothetical_pre_mark_mfe", "hypothetical_pre_mark_mae",
+    "would_r2_r4_r6_pass", "pre_mark_outcome_status", "confidence"
+  ],
+  "allowed_labels": ["PRE_MARK_OBSERVED", "PRE_MARK_MATCHED_FAROUK", "PRE_MARK_DID_NOT_MATCH",
+                      "PRE_MARK_INSUFFICIENT_CONTEXT", "PRE_MARK_EXPIRED"],
+  "forbidden_labels_and_keys": ["TRADE_READY", "EXECUTE", "ORDER", "COPY_TRADE", "NANO", "LIVE",
+                                  "DEMO_EXECUTE", "LOT_SIZE", "BROKER_ROUTE", "ACCOUNT_ID", "RISK_SIZE"],
+  "match_tolerance_usd": 3.0,
+  "retrospective_protocol": [
+    "freeze evidence window at farouk_post_time - epsilon",
+    "if no pre-post evidence for a Farouk-style level -> PRE_MARK_INSUFFICIENT_CONTEXT (expected for most June setups; TV alert lane started Jul-7)",
+    "else construct the level mechanically from a documented rule; compute touches + hypothetical MFE/MAE deterministically",
+    "compare vs posted zone and private fill (when widgets exist); label MATCHED (<= tolerance) or DID_NOT_MATCH",
+    "aggregate: match rate, fill improvement vs lanes 2/3, lane-6 vs lane-4 expectancy"
+  ],
+  "seed_case": {"evidence": "msg 44877 (2026-06-18 22:13Z chart): pre-marked 'good sell zone 4,250-4,260' (Asia low + BPR + weekly resistance)",
+                 "later_setup": "XAU-J21-20260618... note: 44877 was posted AFTER J21 (22:13Z vs J21 10:18Z same day) — usable as a seed for the NEXT session's levels only; illustrates his own habit of publishing pre-marked levels in advance",
+                 "status": "single observation; match-rate question is OPEN (n~1)"},
+  "forward_protocol": [
+    "before/at earliest alert context, Orange MAY write PRE_MARK_CANDIDATE records (review-only, validator-passed, label PRE_MARK_OBSERVED)",
+    "labels expire to PRE_MARK_EXPIRED at session end if no post arrives",
+    "on Farouk's post: compute comparison -> PRE_MARK_MATCHED_FAROUK / PRE_MARK_DID_NOT_MATCH",
+    "on OHLC arrival: deterministic hypothetical outcome matching alongside the XAU-F record",
+    "records route ONLY to the ledger and human review; no execution path exists for them to reach"
+  ],
+  "honest_value_statement": "Fill improvement is theoretically real (J24/J30-class divergences of -65 to -267p are pre-post decision gaps), but entirely conditional on the unknown match rate. A low match rate is equally valuable: it would prove the published method under-determines his levels, capping any follower system.",
+  "safety": {
+    "listener_pid_87988": "untouched",
+    "gates": "PAPER/PREVIEW/False/False unchanged",
+    "not_integration_ready": "unchanged",
+    "execution_surface": "none — hypothesis records only; no orders/limit orders/copy/nano/broker paths"
+  }
+}

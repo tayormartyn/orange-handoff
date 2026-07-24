@@ -1,0 +1,71 @@
+{
+  "record_id": "FP-INDICATOR-002",
+  "claim_count": 8,
+  "note": "SourceClaims; NOT promoted to rules. Promotional phrases ('high probability','beautiful') NOT treated as validated performance. Transcript base.en (phonetic: '[kyle]'->'Carl'/'calls'; VAH/VAL->'very high/very low'; SFP->'swing fell'; '15 min'->'50 min').",
+  "claims": [
+    {
+      "category": "DIRECTLY_VISIBLE_FACT",
+      "timestamp": "00:40",
+      "quote_or_paraphrase": "[kyle] v2 settings: Relative Volume (mult 2, length 20); Market Sessions London 08:00-13:00 / NY 17:00-21:00 / Tokyo 21:00-03:00 GMT; Multiframe VWAP",
+      "chart_evidence": "ref_00-40.png",
+      "confidence": "HIGH",
+      "classification_note": "exact visible settings"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:23",
+      "quote_or_paraphrase": "'volume, the length ... London range, New York range, Tokyo range ... adjust the time depends on your GMT'",
+      "chart_evidence": "session boxes",
+      "confidence": "HIGH",
+      "classification_note": "-"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:41",
+      "quote_or_paraphrase": "'yellow candles ... the market maker is present, he's pushing the price up ... wait for retrace and take a long'",
+      "chart_evidence": "yellow candles",
+      "confidence": "MEDIUM-HIGH",
+      "classification_note": "volume-candle meaning"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:38",
+      "quote_or_paraphrase": "'VWAP = volume weighted average price ... everything above is bullish, everything below is bearish'",
+      "chart_evidence": "VWAP band",
+      "confidence": "HIGH",
+      "classification_note": "VWAP as bias filter"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "00:58",
+      "quote_or_paraphrase": "'hold this level breakout, take a long; loses this level short; candle close below -> retest short'",
+      "chart_evidence": "session box",
+      "confidence": "HIGH",
+      "classification_note": "breakout/breakdown + candle-close"
+    },
+    {
+      "category": "EXPLICIT_SPOKEN_CLAIM",
+      "timestamp": "04:30",
+      "quote_or_paraphrase": "'the dotted line gives the mid of the box ... you can scalp up and down inside the box (15 min)'",
+      "chart_evidence": "mid-box dotted line",
+      "confidence": "MEDIUM",
+      "classification_note": "-"
+    },
+    {
+      "category": "WEAK_INFERENCE",
+      "timestamp": "whole",
+      "quote_or_paraphrase": "'high probability' style phrasing ('works really good') is promotional, NOT a validated win-rate",
+      "chart_evidence": "-",
+      "confidence": "LOW",
+      "classification_note": "do not treat as performance claim"
+    },
+    {
+      "category": "UNRESOLVED",
+      "timestamp": "-",
+      "quote_or_paraphrase": "Repaint/intrabar/alert behaviour of [kyle] v2 objects",
+      "chart_evidence": "-",
+      "confidence": "-",
+      "classification_note": "deferred to prospective plan"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "record_id": "FP-EDU-007",
+  "note": "Views preserved separately; only explicit agreements merged.",
+  "VISHAL": {
+    "role": "primary teacher of THIS strategy",
+    "indicator": "Craters Reality / TR-Main EMA system (EMAs 13/35/50/200/800 + stochastic + VWAP + Psy-Hi/Lo + Daily Open + AWR/AMR)",
+    "primary_instrument_demo": "SUIUSDT.P (Binance, crypto)",
+    "timeframes": "1m/5m/15m/1H",
+    "bias": "1H price vs 50 EMA",
+    "entry": "1m (EMA cross / stochastic)",
+    "target": "EMA confluence (200+50 EMA aligning), take 90% out",
+    "daily_goal": "1-3% a day"
+  },
+  "FAROUK": {
+    "role": "host; applies a PARALLEL method on gold",
+    "indicator": "his own system + VWAP (the [kyle]/SMC + VWAP stack seen in FP-INDICATOR-001-004)",
+    "primary_instrument": "XAUUSD (gold)",
+    "timeframes": "'also 1/5/15' + his HTF structure",
+    "management": "breakeven after 1% ('SL to entry'), stop when daily profit made",
+    "daily_goal": "1-3-5%, $200-500/day, 'done for the day'"
+  },
+  "EXPLICIT_AGREEMENTS": [
+    "multi-timeframe LOW-timeframe scalping (1/5/15)",
+    "1-3% a day target + quick scalps, not all-day screen time",
+    "breakeven after ~1% then let it run",
+    "compounding a small account (the shared 'Building Capital' spreadsheet, Crypto + Gold tabs)",
+    "the approach 'works on gold'"
+  ],
+  "KEY_DIFFERENCES": [
+    "INDICATOR STACK: Vishal = EMAs (Craters Reality/TR-Main); Farouk = VWAP + his SMC/[kyle] system — NOT the same tools",
+    "PRIMARY INSTRUMENT: Vishal demos crypto (SUI); Farouk trades gold",
+    "STRUCTURE LANGUAGE: Vishal = EMA position/cross + stochastic; Farouk (elsewhere) = BOS/nBOS/OB/FVG/SFP"
+  ],
+  "source_asset_ids": [
+    "sa-271518d77732835c",
+    "sa-b03f71eee08044e7"
+  ]
+}

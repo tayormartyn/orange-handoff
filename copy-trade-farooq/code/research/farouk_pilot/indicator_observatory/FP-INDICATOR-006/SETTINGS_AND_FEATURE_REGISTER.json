@@ -1,0 +1,53 @@
+{
+  "indicator": "Farouk's Playbook — Smart Money Suite",
+  "chart": "XAUUSD 5m Pepperstone (+ BTCUSDT.P, HYPEUSDT.P tabs; Daily replay used)",
+  "chart_timezone_this_session": "UTC+2 (user-local; NOT a canonical system TZ)",
+  "default_caveat": "A 'Defaults' dropdown is visible at the dialog bottom but was NEVER clicked -> NO reset-to-default demonstrated -> NONE of these are proven factory defaults. All are CURRENT_VISIBLE_CONFIG. Farouk says 'I did this in the input… you can change it on your own', confirming current config, not defaults.",
+  "NEWLY_VISIBLE_detection_settings": {
+    "CHoCH pivot length": 5,
+    "FVG lookback (bars)": 50,
+    "Min FVG size (x ATR)": 0.5,
+    "Min BPR overlap (x ATR)": 0.2,
+    "Auto-remove filled FVG/BPR": "ON",
+    "Max zones kept per type": 10,
+    "Show CHoCH": "ON"
+  },
+  "same_as_FP-INDICATOR-005": {
+    "DISPLAY: Show FVGs/BPR/Order Blocks/Asia Session range": "ON",
+    "Show London High/Low": "toggled (being demoed)",
+    "Show US High/Low / IFVG / engulfing marks": "OFF",
+    "Chart label size": "Tiny",
+    "Extend boxes fully to the right (live)": "OFF",
+    "Box extension (bars right)": 50,
+    "Tweezer/Star/FVG-break marks": "OFF",
+    "Only show TZ/ST at OB edge / Asia H-L": "ON",
+    "TZ/ST level tolerance (x ATR)": 0.15,
+    "Tweezer tolerance (x ATR)": 0.08,
+    "Star big body (x ATR)": 0.6,
+    "Star small body (x ATR)": 0.3
+  },
+  "still_NOT_shown": [
+    "normal OB impulse threshold",
+    "Strong OB impulse threshold",
+    "equal-high/low lookback",
+    "ORDER BLOCK / LIQUIDITY numeric thresholds (section header seen, values below cut-off)",
+    "Asia/London/US session HOURS as an indicator field",
+    "timezone field",
+    "HTF-OB selection control (D/6H/4H/1H/15m drawn on chart, selecting input not shown)",
+    "alert timing / message / repaint settings (not opened)"
+  ],
+  "features_reconfirmed": [
+    "Asia/London/US session liquidity",
+    "FVG/IFVG",
+    "BPR",
+    "multi-TF OB (fresh/current, D/1H/4H)",
+    "CHoCH",
+    "extend-box-to-right",
+    "chart-label sizing",
+    "the CHoCH/Asia-break/OB-retest/Current-OB/Fresh-OB panel",
+    "alarms on events (e.g. Asia-high break)"
+  ],
+  "source_asset_ids": [
+    "sa-4328a875cb55d147"
+  ]
+}

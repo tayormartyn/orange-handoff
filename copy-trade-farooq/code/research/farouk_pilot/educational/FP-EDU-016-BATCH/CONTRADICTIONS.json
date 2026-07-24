@@ -1,0 +1,25 @@
+{
+  "batch": "FP-EDU-016",
+  "items": [
+    {
+      "id": "MULTI-INDICATOR",
+      "type": "MULTIPLICITY (not a strict contradiction)",
+      "detail": "Across the Farouk corpus, MULTIPLE indicator systems are referenced: [kyle] v1/v2 (SMC panel), SpaceMan BTC indicator, Craters Reality/TR-Main (Vishal EMA), and Market Cipher B (RSI/money-flow, 3rd-party). No single canonical stack."
+    },
+    {
+      "id": "OSCILLATOR-vs-PURE-SMC",
+      "type": "TENSION",
+      "detail": "FP-EDU-011 and FP-EDU-023 use RSI/MACD/money-flow DIVERGENCE, i.e. oscillators — a different toolset than the pure price-action SMC framing (BOS/OB/FVG). Farouk teaches both."
+    },
+    {
+      "id": "CONFLUENCE-COUNT",
+      "type": "SPEC GAP",
+      "detail": "FP-EDU-024 gives an IMPORTANCE ORDER (1. BOS ...) and 011 lists confluences, but NO minimum count/weighting -> F_CONFLUENCE_UNKNOWN unresolved."
+    },
+    {
+      "id": "TIMESTAMP-vs-FOLDER",
+      "type": "PROVENANCE NOTE",
+      "detail": "Discord post dates span 03/2024?-04/2025 (e.g. 01/03/2025, 29/03/2025, 19/04/2025, and 2024 posts 07-10/2024); the folder was named '2025-03-part-01' but the set is broader. Filesystem times (2026-07-05) are capture times, not post times."
+    }
+  ]
+}

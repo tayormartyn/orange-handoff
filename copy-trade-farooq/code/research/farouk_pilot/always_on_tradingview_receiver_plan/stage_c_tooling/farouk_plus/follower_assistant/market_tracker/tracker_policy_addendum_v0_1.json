@@ -1,0 +1,33 @@
+{
+  "addendum_id": "tracker_policy_addendum_v0_1",
+  "version": "0.1.0",
+  "extends": "follower_constitution_v0_1 (RATIFIED, sha-pinned, NOT MODIFIED by this addendum)",
+  "mode": "REVIEW_ONLY / OBSERVATION_ONLY / NO_BROKER / NO_EXECUTION",
+  "new_instruction_semantics": {
+    "TP2_TAKE": {"class": "ORANGE_DESIGN_CHOICE", "rule": "bank 50% of current open at instruction-bar close (same shape as instruction-driven TP1)"},
+    "HOLD_RUNNER": {"class": "FAROUK_PUBLISHED_RULE(wording)/no-op", "rule": "annotation only; runner already holds by P13"},
+    "CANCEL_LIMITS": {"class": "FAROUK_PUBLISHED_RULE(wording)", "rule": "cancel unfilled legs only; filled legs unaffected"},
+    "REVISED_STOP": {"class": "FAROUK_PUBLISHED_RULE(posted revision)", "rule": "posted SL replaced FORWARD-ONLY from the instruction bar; earlier resolved bars never recomputed; missing level -> fail closed"},
+    "REVISED_ZONE": {"class": "UNKNOWN_FAIL_CLOSED", "rule": "entry-structure change mid-campaign -> PAUSED_NEEDS_HUMAN_REVIEW"},
+    "INVALIDATION": {"class": "FAROUK_PUBLISHED_RULE(wording)+fail-closed", "rule": "no fills -> cancel unfilled, NO_FILL; open position -> PAUSED_NEEDS_HUMAN_REVIEW"},
+    "RE_ENTER": {"class": "P15", "rule": "annotation on the current campaign; a re-entry is a NEW campaign created upstream"}
+  },
+  "plus50_decision": {
+    "question": "is '+50 pips take partial' an evidenced executable follower rule?",
+    "evidence": "STATED by Farouk as his default (Model-B basis, FOLLOWER_FILL_EXPECTANCY_REPORT_v0_1B.md: '50% at +50p (his universal stated rule)'), BUT his actual posted management frequently overrides it (34-setup corpus; F001 banked at ~+26p and ~+90p claims; F002 at ~+39p), and ratified constitution P09 already rules: RECORDED as context, NEVER auto-executed.",
+    "conclusion": "INDEPENDENTLY EVIDENCED AS A STATED RULE, NOT AS ACTUAL BEHAVIOUR -> remains NON-EXECUTING per ratified P09. Implemented ONLY as a disabled sensitivity DIAGNOSTIC (plus50_diagnostic field: first bar where +50p from running average entry was reachable). It moves no state, banks nothing, affects neither lane.",
+    "activation": "would require explicit Martyn ratification of a constitution revision (v0.2)"
+  },
+  "lifecycle_model": ["PROPOSAL_CREATED", "WAITING_FOR_ZONE", "ZONE_TOUCHED", "LEG_1_FILLED",
+                       "LEG_2_FILLED", "LEG_3_FILLED", "PARTIALLY_FILLED", "FULLY_FILLED",
+                       "RISK_ACTIVE", "BE_INSTRUCTED", "BE_TRIGGERED", "PARTIAL_PROFIT_TAKEN",
+                       "RUNNER_ACTIVE", "STOPPED", "SCRATCHED", "PARTIALS_BANKED_RUNNER_SCRATCHED",
+                       "TARGET_CLOSED", "MANUALLY_CLOSED",
+                       "EXPIRED", "NO_FILL", "HUMAN_REVIEW_REQUIRED", "OUTCOME_FROZEN"],
+  "same_bar_classifications": ["ENTRY_BEFORE_STOP_CONFIRMED", "STOP_BEFORE_ENTRY_CONFIRMED",
+                                "AMBIGUOUS_SEQUENCE", "FEED_SENSITIVE_TOUCH", "GAP_FILL_UNCERTAIN",
+                                "INTRABAR_ORDER_UNKNOWN"],
+  "mae_mfe_definition": "excursion vs RUNNING fill-weighted average entry, evaluated per completed bar from first fill to close/data-end; MAE = worst adverse, MFE = best favourable, pips (0.1 USD)",
+  "smart_entry_boundary": "ORANGE_SMART_ENTRY interface exists DISABLED; cannot alter STRICT_FOLLOWER, cannot write authoritative outcomes, separate ledger, no live activation",
+  "explicitly_not": ["not execution", "not broker/demo/cTrader/QST", "no order fields", "gates PAPER/PREVIEW/False/False unchanged", "NOT_INTEGRATION_READY unchanged"]
+}

@@ -1,0 +1,61 @@
+{
+  "new_sources": [
+    {
+      "source_id": "FP-EDU-034",
+      "title": "Open Interest",
+      "author": "SeaScalper-Farouk (WR)",
+      "discord_timestamp": "11/09/2025 21:27",
+      "source_type": "DISCORD_EDUCATION",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 145606.png"
+      ],
+      "hashes": [
+        "16f1f78899e1ebe4"
+      ],
+      "completeness": "table body captured",
+      "provenance_confidence": "HIGH (author+ts)",
+      "method_family": "THIRD_PARTY_INDICATOR/DATA (futures open interest); EXPLANATORY_MARKET_NARRATIVE",
+      "teaching_claims": [
+        "Open Interest = number of open contracts; combine with price direction"
+      ],
+      "operational_rules": [
+        "Price DOWN + OI UP = more shorts opened = bearish",
+        "Price UP + OI UP = more longs opened = bullish"
+      ],
+      "campaign_relevance": "none",
+      "state_machine_relevance": "an ADDITIONAL data input (OI); out of current SMC scope",
+      "contradictions": "none",
+      "unresolved_terminology": "-",
+      "missing_thresholds": "OI magnitude thresholds"
+    },
+    {
+      "source_id": "FP-EDU-035",
+      "title": "Displacement (dedicated post) — Displacement Trading Strategy",
+      "author": "SeaScalper-Farouk (WR)",
+      "discord_timestamp": "11/09/2025 22:01",
+      "source_type": "DISCORD_EDUCATION",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 145620.png"
+      ],
+      "hashes": [
+        "db527a8a943bda01"
+      ],
+      "completeness": "intro + strategy (continuation may be partial)",
+      "provenance_confidence": "HIGH (author+ts)",
+      "method_family": "STRUCTURAL_CONTEXT (displacement/imbalance)",
+      "teaching_claims": [
+        "Displacement = a strong, directional price move signalling a shift in market structure / start of a new trend; leaves an imbalance"
+      ],
+      "operational_rules": [
+        "displacement -> imbalance left behind (candidate FVG)"
+      ],
+      "campaign_relevance": "C004 (displacement in confluence)",
+      "state_machine_relevance": "gives a DEDICATED displacement definition (still qualitative)",
+      "contradictions": "none",
+      "unresolved_terminology": "-",
+      "missing_thresholds": "numeric displacement size still absent"
+    }
+  ],
+  "id_range": "FP-EDU-034..FP-EDU-035",
+  "highest_id_after_phase2": "FP-EDU-035"
+}

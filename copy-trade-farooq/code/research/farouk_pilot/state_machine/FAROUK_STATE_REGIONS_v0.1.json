@@ -1,0 +1,116 @@
+{
+  "rule_version": "v0.1",
+  "architecture": "HIERARCHICAL + ORTHOGONAL. Regions 1-4 run CONCURRENTLY as context/market regions (one active state each, updated by events). Regions 5-6 are PER-SETUP-INSTANCE lifecycles (many instances may coexist, each with immutable origin). Region 7 is REFERENCE-ONLY and lives OUTSIDE the Alpha detector. This avoids a single flat enum.",
+  "regions": {
+    "1_SESSION_CONTEXT": {
+      "kind": "concurrent_context",
+      "states": [
+        "OUTSIDE_SESSION",
+        "SESSION_RANGE_FORMING",
+        "SESSION_RANGE_LOCKED",
+        "SESSION_ACTIVE",
+        "SESSION_CLOSED"
+      ],
+      "initial": "OUTSIDE_SESSION",
+      "owner_evidence": "[kyle] v2 Market-Session boxes + [kyle] v1 ORB session windows"
+    },
+    "2_VALUE_LOCATION": {
+      "kind": "concurrent_context",
+      "states": [
+        "VALUE_UNKNOWN",
+        "ABOVE_VALUE",
+        "INSIDE_VALUE",
+        "BELOW_VALUE",
+        "AT_POC",
+        "AT_VAH",
+        "AT_VAL",
+        "VWAP_ALIGNED",
+        "VWAP_OPPOSED"
+      ],
+      "initial": "VALUE_UNKNOWN",
+      "owner_evidence": "[kyle] v1 POC/VAH/VAL + [kyle] v2 multi-timeframe VWAP",
+      "note": "VWAP_ALIGNED/VWAP_OPPOSED are a nested VWAP sub-axis; price-vs-value (ABOVE/INSIDE/BELOW/AT_*) is the primary axis."
+    },
+    "3_LIQUIDITY_EVENT": {
+      "kind": "concurrent_context",
+      "states": [
+        "NO_LIQUIDITY_EVENT",
+        "LIQUIDITY_APPROACH",
+        "SWEEP_CANDIDATE",
+        "SWEEP_CONFIRMED",
+        "SFP_CANDIDATE",
+        "SFP_CONFIRMED",
+        "SWEEP_INVALIDATED"
+      ],
+      "initial": "NO_LIQUIDITY_EVENT",
+      "owner_evidence": "[kyle] v1 SFP + liquidity sweeps"
+    },
+    "4_ORB_EVENT": {
+      "kind": "concurrent_context",
+      "states": [
+        "ORB_NOT_ACTIVE",
+        "ORB_FORMING",
+        "ORB_LOCKED",
+        "BREAKOUT_UNCONFIRMED",
+        "BREAKOUT_CONFIRMED",
+        "FAILED_BREAKOUT",
+        "ORB_EXPIRED"
+      ],
+      "initial": "ORB_NOT_ACTIVE",
+      "owner_evidence": "[kyle] v1 ORB (Asia/London/NY, 15-min)"
+    },
+    "5_STRUCTURAL_SETUP": {
+      "kind": "per_setup_instance",
+      "states": [
+        "SCANNING",
+        "STRUCTURE_FOUND",
+        "ZONE_REGISTERED",
+        "ARMED",
+        "PRICE_APPROACHING",
+        "RETRACE_DETECTED",
+        "ZONE_MITIGATED",
+        "STRUCTURE_INVALIDATED"
+      ],
+      "initial": "SCANNING",
+      "note": "each instance carries immutable origin evidence; instances do not share state."
+    },
+    "6_QUALIFICATION": {
+      "kind": "per_setup_instance",
+      "states": [
+        "NOT_ELIGIBLE",
+        "WAITING_FOR_TRIGGER",
+        "QUALIFIED_CANDIDATE",
+        "VETOED",
+        "EXPIRED",
+        "BIAS_CHANGED"
+      ],
+      "initial": "NOT_ELIGIBLE",
+      "terminal_alpha_state": "QUALIFIED_CANDIDATE",
+      "note": "QUALIFIED_CANDIDATE is the LAST state the Alpha detector may reach. It emits an observation only."
+    },
+    "7_CAMPAIGN_LIFECYCLE_REFERENCE_ONLY": {
+      "kind": "reference_only_OUTSIDE_detector",
+      "states": [
+        "REF_HANDOFF",
+        "REF_ENTRY",
+        "REF_MANAGED_TO_BREAKEVEN",
+        "REF_SCALED_OUT",
+        "REF_COMPLETED",
+        "REF_STOPPED"
+      ],
+      "initial": "REF_HANDOFF",
+      "HARD_CONSTRAINT": "NOT part of the Alpha detector. NO execution/broker/risk/size logic. Documentation of downstream lifecycle ONLY; never emits orders."
+    }
+  },
+  "state_counts": {
+    "1_SESSION_CONTEXT": 5,
+    "2_VALUE_LOCATION": 9,
+    "3_LIQUIDITY_EVENT": 7,
+    "4_ORB_EVENT": 7,
+    "5_STRUCTURAL_SETUP": 8,
+    "6_QUALIFICATION": 6,
+    "7_CAMPAIGN_LIFECYCLE_REFERENCE_ONLY": 6
+  },
+  "total_states_alpha": 42,
+  "total_states_incl_reference": 48
+}

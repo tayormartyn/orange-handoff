@@ -1,0 +1,43 @@
+{
+  "schema_id": "orange_candidate_dataset_v0_1",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE",
+  "row_grain": "one row per causally-frozen CAMPAIGN (justified: candidates are enumerated shadow, not yet the training unit; candidate sets retained as nested decision-time fields)",
+  "field_classes": ["IDENTITY", "PROVENANCE", "DECISION_TIME_FEATURE", "POST_DECISION_LABEL",
+                    "QUALITY_FLAG", "ELIGIBILITY_FLAG"],
+  "hard_rule": "no POST_DECISION_LABEL field may enter the model-feature export",
+  "fields": {
+    "dataset_schema_version": "IDENTITY", "dataset_manifest_version": "IDENTITY",
+    "campaign_id": "IDENTITY", "freeze_id": "IDENTITY", "freeze_hash": "PROVENANCE",
+    "outcome_id": "IDENTITY", "outcome_hash": "PROVENANCE", "candidate_id": "IDENTITY",
+    "record_class": "PROVENANCE", "source_tier": "PROVENANCE", "objective_lane": "PROVENANCE",
+    "router_version": "PROVENANCE", "feature_contract_versions": "PROVENANCE",
+    "outcome_contract_version": "PROVENANCE", "source_event_hash": "PROVENANCE",
+
+    "instrument": "DECISION_TIME_FEATURE", "session": "DECISION_TIME_FEATURE",
+    "direction": "DECISION_TIME_FEATURE", "setup_family_eligibility": "DECISION_TIME_FEATURE",
+    "liquidity_narrative": "DECISION_TIME_FEATURE", "poi_roles": "DECISION_TIME_FEATURE",
+    "inducement_flag": "DECISION_TIME_FEATURE", "structural_trigger_state": "DECISION_TIME_FEATURE",
+    "completed_candle_state": "DECISION_TIME_FEATURE", "valid_bos_state": "DECISION_TIME_FEATURE",
+    "scob_state": "DECISION_TIME_FEATURE", "ote_anchor_count": "DECISION_TIME_FEATURE",
+    "ote_documented_levels": "DECISION_TIME_FEATURE", "execution_profile_alternatives": "DECISION_TIME_FEATURE",
+    "no_trade_state": "DECISION_TIME_FEATURE", "candidate_availability_ts": "DECISION_TIME_FEATURE",
+    "market_data_cutoff_ts": "DECISION_TIME_FEATURE", "decision_ts": "DECISION_TIME_FEATURE",
+
+    "activation_result": "POST_DECISION_LABEL", "activation_time": "POST_DECISION_LABEL",
+    "stop_target_ordering": "POST_DECISION_LABEL", "mfe_pips": "POST_DECISION_LABEL",
+    "mae_pips": "POST_DECISION_LABEL", "mfe_price": "POST_DECISION_LABEL", "mae_price": "POST_DECISION_LABEL",
+    "stop_first": "POST_DECISION_LABEL", "target_first": "POST_DECISION_LABEL",
+    "invalidation_ts": "POST_DECISION_LABEL", "no_trade_result": "POST_DECISION_LABEL",
+    "lane_comparison": "POST_DECISION_LABEL", "outcome_status": "POST_DECISION_LABEL",
+
+    "causal_integrity": "QUALITY_FLAG", "data_integrity": "QUALITY_FLAG",
+    "source_provenance": "QUALITY_FLAG", "intrabar_ambiguous": "QUALITY_FLAG",
+
+    "eligible_for_prospective_evidence": "ELIGIBILITY_FLAG", "eligible_for_training": "ELIGIBILITY_FLAG",
+    "eligible_for_validation": "ELIGIBILITY_FLAG", "eligible_for_performance_attribution": "ELIGIBILITY_FLAG",
+    "exclusion_reasons": "ELIGIBILITY_FLAG"
+  },
+  "feature_export_includes_classes": ["IDENTITY", "PROVENANCE", "DECISION_TIME_FEATURE", "QUALITY_FLAG", "ELIGIBILITY_FLAG"],
+  "feature_export_excludes_classes": ["POST_DECISION_LABEL"],
+  "review_only": true, "executable": false, "observation_only": true
+}

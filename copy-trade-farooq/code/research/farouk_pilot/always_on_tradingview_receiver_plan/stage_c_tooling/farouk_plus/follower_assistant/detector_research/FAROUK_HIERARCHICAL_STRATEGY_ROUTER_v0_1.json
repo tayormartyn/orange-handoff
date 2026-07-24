@@ -1,0 +1,32 @@
+{
+  "spec_id": "FAROUK_HIERARCHICAL_STRATEGY_ROUTER_v0_1",
+  "authoritative_format": "JSON (this file) + companion Markdown; no PDF",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE / NO_EXECUTION_CONSEQUENCE",
+  "role": "an EVIDENCE + ANNOTATION layer that RECORDS, FREEZES and AUDITS Farouk's possible decision hierarchy. It represents; it does NOT authoritatively decide.",
+  "must_not": ["choose trades", "modify follower entries", "fit ranking weights", "activate Smart Entry",
+               "route orders", "select whichever route later wins", "optimise parameters",
+               "create live proposals", "mutate outcome ledgers", "emit execution instructions"],
+  "node_field_contract": ["status", "causal_timestamp", "source_bar_cutoff", "candidate_values",
+    "selected_value_if_genuinely_predetermined", "alternatives", "unknown_fields", "rule_ids",
+    "provenance", "confidence", "activity (ACTIVE|REPLAY_ONLY|INACTIVE)"],
+  "hierarchy": [
+    {"n": 1, "node": "SOURCE_TIER", "contract": "source_tier_contract_v0_1", "default": "TIER_2 for PDF rules", "activity": "ACTIVE"},
+    {"n": 2, "node": "OBJECTIVE_LANE", "contract": "objective_lane_contract_v0_1", "values": ["A_FOLLOWER", "B_ENHANCED_FOLLOWER", "C_INDEPENDENT"], "activity": "ACTIVE"},
+    {"n": 3, "node": "TRADING_HORIZON", "contract": "execution_profiles_v0_1", "primary_profile_default": "UNKNOWN", "activity": "REPLAY_ONLY"},
+    {"n": 4, "node": "HTF_CONTEXT", "values": "1H/4H/1D context", "default": "UNKNOWN (no native HTF export; do not synthesize from 1m)", "activity": "REPLAY_ONLY"},
+    {"n": 5, "node": "MARKET_REGIME", "classifier": "strategy_router.classify_regime", "states": ["TRENDING", "RANGING", "PO3_ACCUMULATION_CANDIDATE", "PO3_MANIPULATION_CANDIDATE", "PO3_DISTRIBUTION_CANDIDATE", "NY_REVERSAL_CANDIDATE", "NY_CONTINUATION_CANDIDATE", "SEARCH_AND_DESTROY_CANDIDATE", "UNKNOWN"], "activity": "REPLAY_ONLY"},
+    {"n": 6, "node": "SESSION_MODEL", "classifier": "strategy_router.classify_session", "no_trade_states": ["MONDAY_RANGE_NOT_FORMED", "ASIA_MAJOR_TREND_TRADE_NOT_SUPPORTED", "WAIT_FOR_CONFIRMATION", "RANGE_MIDPOINT_AVOID", "SESSION_MODEL_UNKNOWN"], "activity": "REPLAY_ONLY"},
+    {"n": 7, "node": "LIQUIDITY_NARRATIVE", "builder": "strategy_router.liquidity_narrative", "activity": "REPLAY_ONLY"},
+    {"n": 8, "node": "POI_FAMILY", "roles": ["TRUE_POI_CANDIDATE", "POTENTIAL_INDUCEMENT", "LIQUIDITY_TARGET", "ENTRY_TRIGGER_LEVEL", "INVALIDATED_LEVEL", "UNKNOWN_ROLE"], "builder": "strategy_router.assign_poi_roles", "activity": "REPLAY_ONLY"},
+    {"n": 9, "node": "STRUCTURAL_CONFIRMATION", "contract": "structural_trigger_priority_v0_1", "layer": ["BOS", "FVG_INVERSION", "LEVEL_RECLAIM", "SFP"], "activity": "REPLAY_ONLY"},
+    {"n": 10, "node": "EXECUTION_CANDLE_CONFIRMATION", "layer": ["ENGULFING", "HAMMER", "SHOOTING_STAR", "REJECTION_CANDLE"], "separate_from": "STRUCTURAL_CONFIRMATION", "activity": "REPLAY_ONLY"},
+    {"n": 11, "node": "ENTRY_MODEL", "candidates": ["FVG_retrace", "OTE (disabled shadow)", "OB/SCOB tap", "reactive-confirmation"], "selection": "UNKNOWN (enumerate, never choose)", "activity": "INACTIVE"},
+    {"n": 12, "node": "STOP_INVALIDATION", "note": "beyond structure/POI; posted-follower-stop is a Tier-1 fact, personal stop UNKNOWN (MR-010)", "activity": "REPLAY_ONLY"},
+    {"n": 13, "node": "TARGET_MODEL", "candidates": ["next liquidity", ">=2R (SCOB p19)", "opposite value edge (VP UNAVAILABLE)"], "activity": "REPLAY_ONLY"},
+    {"n": 14, "node": "REJECTION_NO_TRADE", "states": "per session/regime no-trade states + WAIT_FOR_CONFIRMATION", "activity": "REPLAY_ONLY"}
+  ],
+  "causality": {"rule": "bar_close_time <= decision_timestamp for every feature; a bar opened-but-not-closed is FORBIDDEN",
+    "recorded_per_feature": ["decision_timestamp", "latest_source_bar_open_time", "latest_source_bar_close_time", "causal_cutoff", "feature_version", "source_hashes"]},
+  "outputs_stamp": ["RESEARCH_ONLY", "NON_AUTHORITATIVE", "NO_EXECUTION_CONSEQUENCE"],
+  "review_only": true, "executable": false, "trade_ready": false, "observation_only": true
+}

@@ -1,0 +1,623 @@
+[
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\10 min stream.mp4",
+  "name": "10 min stream.mp4",
+  "ext": ".mp4",
+  "bytes": 187199456,
+  "modified": "2026-07-05 09:01:55",
+  "duration_s": 3026.8836281179138,
+  "sha256": "dadb6e541dda85b761ddf9a76f679b951602ace87d15fb0ee2875117b59b141c",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\1000143217.mp4",
+  "name": "1000143217.mp4",
+  "ext": ".mp4",
+  "bytes": 2752432,
+  "modified": "2026-06-22 19:05:05",
+  "duration_s": 10.006,
+  "sha256": "82b4e59e1747531827d38c59a59c3e6e95ee232c072682e9806d5b399aebb6e9",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\1_Welcome.mp4",
+  "name": "1_Welcome.mp4",
+  "ext": ".mp4",
+  "bytes": 280111808,
+  "modified": "2026-07-05 14:59:29",
+  "duration_s": 180.11733333333333,
+  "sha256": "320baa7400a3dda2765f4e52897d4c6f4114acca4995a59906c1bc189a986461",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\3_How_to_Setup_First_Chart_in_Exochart (1).mp4",
+  "name": "3_How_to_Setup_First_Chart_in_Exochart (1).mp4",
+  "ext": ".mp4",
+  "bytes": 430839503,
+  "modified": "2026-07-05 15:01:46",
+  "duration_s": 446.95466666666664,
+  "sha256": "d87d2c8eb1bbf6cf7aee91214bde0464e78caacdae35b58d2b0928d280f2a4cc",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "3_How_to_Setup_First_Chart_in_Exochart.mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\3_How_to_Setup_First_Chart_in_Exochart.mp4",
+  "name": "3_How_to_Setup_First_Chart_in_Exochart.mp4",
+  "ext": ".mp4",
+  "bytes": 430839503,
+  "modified": "2026-07-05 08:53:17",
+  "duration_s": 446.95466666666664,
+  "sha256": "d87d2c8eb1bbf6cf7aee91214bde0464e78caacdae35b58d2b0928d280f2a4cc",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "3_How_to_Setup_First_Chart_in_Exochart (1).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\4_How_To_Setup_Templates.mp4",
+  "name": "4_How_To_Setup_Templates.mp4",
+  "ext": ".mp4",
+  "bytes": 191795515,
+  "modified": "2026-07-05 15:00:22",
+  "duration_s": 212.90666666666667,
+  "sha256": "6c937e3039bd2dd9588efa6bbba0878d7062c473e378236168a082544ea07b3b",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\6_Delta_Bars_OI_Net_longs_and_Net_Shorts.mp4",
+  "name": "6_Delta_Bars_OI_Net_longs_and_Net_Shorts.mp4",
+  "ext": ".mp4",
+  "bytes": 355213287,
+  "modified": "2026-07-05 15:01:54",
+  "duration_s": 304.9386666666667,
+  "sha256": "b63f42f9a77b2bdd3a19d8bda024590697997bc80211ea8eef15512b08bc9991",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Cinematic_dark_atmospheric_sho (1).mp4",
+  "name": "Cinematic_dark_atmospheric_sho (1).mp4",
+  "ext": ".mp4",
+  "bytes": 3412809,
+  "modified": "2026-06-15 20:19:07",
+  "duration_s": 10.0,
+  "sha256": "95dae0129d4ba214f4a484751986b00ebc486cd9ece177044b5e15e2899d461d",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Cinematic_dark_atmospheric_sho.mp4",
+  "name": "Cinematic_dark_atmospheric_sho.mp4",
+  "ext": ".mp4",
+  "bytes": 3106053,
+  "modified": "2026-06-15 20:13:43",
+  "duration_s": 10.0,
+  "sha256": "86ec48e41fc48b06c7a7edfcd57c5c733944e4260521eca1c444d6365317469f",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Cinematic_dark_moody_atmosp.mp4",
+  "name": "Cinematic_dark_moody_atmosp.mp4",
+  "ext": ".mp4",
+  "bytes": 2286803,
+  "modified": "2026-06-19 09:31:48",
+  "duration_s": 10.0,
+  "sha256": "0536bd427e782ee5eb215a8934af00af467f09e2f1b2958a9637572a71163a6d",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Cinematic_satirical_short_film.mp4",
+  "name": "Cinematic_satirical_short_film.mp4",
+  "ext": ".mp4",
+  "bytes": 2203366,
+  "modified": "2026-06-22 22:38:42",
+  "duration_s": 10.006,
+  "sha256": "7d97719ac5d5cdb94bbb4b59c8b0a9c89b166dba0dcaf74f28bba4e01c00b9d8",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\ember drop 83 names.mp4",
+  "name": "ember drop 83 names.mp4",
+  "ext": ".mp4",
+  "bytes": 2623354,
+  "modified": "2026-06-06 08:11:38",
+  "duration_s": 10.0,
+  "sha256": "5fe30204f1063bb6b8989a73463341d5259ea73bd4eefcd2ac1a4201c0a70288",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Ember_Drop_001.mp4.mp4",
+  "name": "Ember_Drop_001.mp4.mp4",
+  "ext": ".mp4",
+  "bytes": 4251044,
+  "modified": "2026-06-05 15:17:14",
+  "duration_s": 10.0,
+  "sha256": "1a09d398043f1aa398326ebee8ffb8d45a63f66cdbbbcdb9ac9fd777948441e1",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\gemini_generated_video_7c4481cb.mp4",
+  "name": "gemini_generated_video_7c4481cb.mp4",
+  "ext": ".mp4",
+  "bytes": 2960390,
+  "modified": "2026-06-15 20:42:53",
+  "duration_s": 10.0,
+  "sha256": "6dd5ab9b58a4f6ccaa2c1910eddfcf38f08e49c26290d2ea952b17ebe70fa4bc",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\GMT20251012-140632_Recording_1920x1200 (1).mp4",
+  "name": "GMT20251012-140632_Recording_1920x1200 (1).mp4",
+  "ext": ".mp4",
+  "bytes": 177531810,
+  "modified": "2026-07-05 14:58:54",
+  "duration_s": 2712.352,
+  "sha256": "271518d77732835c9581e0a24b2ea26854096eeed9fd1f2a259530cdaa3f88a6",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "GMT20251012-140632_Recording_1920x1200.mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\GMT20251012-140632_Recording_1920x1200.mp4",
+  "name": "GMT20251012-140632_Recording_1920x1200.mp4",
+  "ext": ".mp4",
+  "bytes": 177531810,
+  "modified": "2026-07-05 08:49:56",
+  "duration_s": 2712.352,
+  "sha256": "271518d77732835c9581e0a24b2ea26854096eeed9fd1f2a259530cdaa3f88a6",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "GMT20251012-140632_Recording_1920x1200 (1).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\GMT20251221-181518_Recording_2240x1260 (1).mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260 (1).mp4",
+  "ext": ".mp4",
+  "bytes": 1141422223,
+  "modified": "2026-07-04 15:47:38",
+  "duration_s": 9925.76,
+  "sha256": "5635e60e29be4868b02b4e4377a97e635a8d6fc0dbe004641160e77dec965917",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "GMT20251221-181518_Recording_2240x1260.mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\GMT20251221-181518_Recording_2240x1260.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260.mp4",
+  "ext": ".mp4",
+  "bytes": 1141422223,
+  "modified": "2026-07-04 15:47:01",
+  "duration_s": 9925.76,
+  "sha256": "5635e60e29be4868b02b4e4377a97e635a8d6fc0dbe004641160e77dec965917",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "GMT20251221-181518_Recording_2240x1260 (1).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Live with Farouk, Friday, 10 July 2026.mp4",
+  "name": "Live with Farouk, Friday, 10 July 2026.mp4",
+  "ext": ".mp4",
+  "bytes": 386910020,
+  "modified": "2026-07-11 16:27:42",
+  "duration_s": 5708.649070294785,
+  "sha256": "f1200fed0ebc5832613bff5882cd976ef80fbe3bba5bd60e360a1d5f853ed892",
+  "ingested_as": "FP-LIVE-VIDEO-EXPLAINER-001",
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Live with Farouk, Friday, 3 July 2026.mp4",
+  "name": "Live with Farouk, Friday, 3 July 2026.mp4",
+  "ext": ".mp4",
+  "bytes": 525065339,
+  "modified": "2026-07-04 08:34:24",
+  "duration_s": 6615.016780045352,
+  "sha256": "944789f92a8092cc70977706787b14b52980dc3fa3787cb165fdee218683a7a2",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Live with Farouk, Sunday, 12 July 2026.mp4",
+  "name": "Live with Farouk, Sunday, 12 July 2026.mp4",
+  "ext": ".mp4",
+  "bytes": 299880028,
+  "modified": "2026-07-12 22:19:41",
+  "duration_s": 4512.937505668934,
+  "sha256": "942dc4af6f74504bd0ffeb80d37153943696c6dc51e42467e083707ede85cb5d",
+  "ingested_as": "FP-LIVE-VIDEO-EXPLAINER-005",
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Live with Farouk, Sunday, 5 July 2026.mp4",
+  "name": "Live with Farouk, Sunday, 5 July 2026.mp4",
+  "ext": ".mp4",
+  "bytes": 614053015,
+  "modified": "2026-07-05 20:23:05",
+  "duration_s": 7707.817505668934,
+  "sha256": "4328a875cb55d147a524a1b817209159ccdc734f972521b35718a8f4439e12d8",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (1).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (1).mp4",
+  "ext": ".mp4",
+  "bytes": 3575318,
+  "modified": "2026-05-29 14:45:18",
+  "duration_s": 10.0,
+  "sha256": "ddfda208d0bd494e03d78501b5c48001ffdbdb7941b7da25e5a6d32e4d50f510",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "PROJECT_EMBER_\u2014_CINEMATI (2).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (2).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (2).mp4",
+  "ext": ".mp4",
+  "bytes": 3575318,
+  "modified": "2026-05-29 14:45:56",
+  "duration_s": 10.0,
+  "sha256": "ddfda208d0bd494e03d78501b5c48001ffdbdb7941b7da25e5a6d32e4d50f510",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "PROJECT_EMBER_\u2014_CINEMATI (1).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (3).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (3).mp4",
+  "ext": ".mp4",
+  "bytes": 2852260,
+  "modified": "2026-05-29 14:53:27",
+  "duration_s": 10.0,
+  "sha256": "3296500fe5554163541c1df02191a975518c44ad4c36c2e69f1c57798737b7a6",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "PROJECT_EMBER_\u2014_CINEMATI (4).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (4).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (4).mp4",
+  "ext": ".mp4",
+  "bytes": 2852260,
+  "modified": "2026-05-29 14:54:19",
+  "duration_s": 10.0,
+  "sha256": "3296500fe5554163541c1df02191a975518c44ad4c36c2e69f1c57798737b7a6",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": [
+   "PROJECT_EMBER_\u2014_CINEMATI (3).mp4"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (5).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (5).mp4",
+  "ext": ".mp4",
+  "bytes": 2558718,
+  "modified": "2026-05-29 15:02:45",
+  "duration_s": 10.0,
+  "sha256": "e244030c3c034f47a7ea6435ff116001db1ad12202a4cd730d2cbc7255bde25a",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (6).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (6).mp4",
+  "ext": ".mp4",
+  "bytes": 2936950,
+  "modified": "2026-05-29 15:22:38",
+  "duration_s": 10.0,
+  "sha256": "baa06bc80a80e29bc29afdacf62d7e4051d59cf6567ec90bc744a90605f25842",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (7).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (7).mp4",
+  "ext": ".mp4",
+  "bytes": 2320512,
+  "modified": "2026-05-29 15:34:41",
+  "duration_s": 10.0,
+  "sha256": "4f5bdf3b6d8705b6e03f4509bc814fb2a5031049c7e6c075d92c935fe0a9e7fd",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI (8).mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI (8).mp4",
+  "ext": ".mp4",
+  "bytes": 3368967,
+  "modified": "2026-06-02 13:30:59",
+  "duration_s": 10.0,
+  "sha256": "95b2132cb1f99bd89b0030a12ad4a5bf75b14b878f8948d6e115709ad2c25150",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\PROJECT_EMBER_\u2014_CINEMATI.mp4",
+  "name": "PROJECT_EMBER_\u2014_CINEMATI.mp4",
+  "ext": ".mp4",
+  "bytes": 3305524,
+  "modified": "2026-05-29 14:28:56",
+  "duration_s": 10.0,
+  "sha256": "55e8d94c0396f24946d8996af3b192cc9a33ca8d3c9c324f1ee878c597705a24",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname 2026-06-24 om 17.02.44.mov",
+  "name": "Schermopname 2026-06-24 om 17.02.44.mov",
+  "ext": ".mov",
+  "bytes": 73642247,
+  "modified": "2026-07-05 09:39:44",
+  "duration_s": 117.95,
+  "sha256": "e576af86dfbd41583e0927794311b563004dc5a452f1f21acfefbd27e4367b34",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname 2026-06-29 om 16.37.24.mov",
+  "name": "Schermopname 2026-06-29 om 16.37.24.mov",
+  "ext": ".mov",
+  "bytes": 175837482,
+  "modified": "2026-07-04 13:56:08",
+  "duration_s": 218.824,
+  "sha256": "036eef476c3ce1b250758855a34c2782e1fe5ed6cc7bdbd50de617e49379c47f",
+  "ingested_as": "FP-B003-04",
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname 2026-07-01 om 20.16.35.mov",
+  "name": "Schermopname 2026-07-01 om 20.16.35.mov",
+  "ext": ".mov",
+  "bytes": 306945831,
+  "modified": "2026-07-04 12:21:37",
+  "duration_s": 509.05,
+  "sha256": "4c42c8642c35de2adb85ff657c173831095ad5f68ce7f0ccc703ea1ff7b14288",
+  "ingested_as": "FP-B003-05",
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname 2026-07-02 om 19.40.23.mov",
+  "name": "Schermopname 2026-07-02 om 19.40.23.mov",
+  "ext": ".mov",
+  "bytes": 262150910,
+  "modified": "2026-07-04 11:32:25",
+  "duration_s": 380.8666666666667,
+  "sha256": "5069bb30641f7e5f198cc68c2dcc06f78014fd751dd961b47d213e2b956f552a",
+  "ingested_as": "FP-B003-06",
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname 2026-07-05 om 12.53.09.mov",
+  "name": "Schermopname 2026-07-05 om 12.53.09.mov",
+  "ext": ".mov",
+  "bytes": 220960958,
+  "modified": "2026-07-05 15:40:41",
+  "duration_s": 331.9175,
+  "sha256": "e8a33802a013d74f4b01ac54a927b22ce481a444bc7f33df4df07683e5d99f8b",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname 2026-07-08 om 16.19.48.mov",
+  "name": "Schermopname 2026-07-08 om 16.19.48.mov",
+  "ext": ".mov",
+  "bytes": 200778955,
+  "modified": "2026-07-11 16:33:36",
+  "duration_s": 327.8666666666667,
+  "sha256": "f061b23cc55c04071cccba7ea674eb1187f42d2293213029ba460bccf93d4cf4",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_16.45.20 (1).mov",
+  "name": "Schermopname_2025-12-14_om_16.45.20 (1).mov",
+  "ext": ".mov",
+  "bytes": 407638327,
+  "modified": "2026-07-04 23:27:53",
+  "duration_s": 410.28333333333336,
+  "sha256": "ee1b41d2b4661a2a8ee64962201f0dcf7fae112df7e4c06a9a922f55483ed877",
+  "ingested_as": "FP-B003-01",
+  "duplicate_of_in_downloads": [
+   "Schermopname_2025-12-14_om_16.45.20 (2).mov",
+   "Schermopname_2025-12-14_om_16.45.20.mov"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_16.45.20 (2).mov",
+  "name": "Schermopname_2025-12-14_om_16.45.20 (2).mov",
+  "ext": ".mov",
+  "bytes": 407638327,
+  "modified": "2026-07-04 23:50:01",
+  "duration_s": 410.28333333333336,
+  "sha256": "ee1b41d2b4661a2a8ee64962201f0dcf7fae112df7e4c06a9a922f55483ed877",
+  "ingested_as": "FP-B003-01",
+  "duplicate_of_in_downloads": [
+   "Schermopname_2025-12-14_om_16.45.20 (1).mov",
+   "Schermopname_2025-12-14_om_16.45.20.mov"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_16.45.20.mov",
+  "name": "Schermopname_2025-12-14_om_16.45.20.mov",
+  "ext": ".mov",
+  "bytes": 407638327,
+  "modified": "2026-07-04 15:43:53",
+  "duration_s": 410.28333333333336,
+  "sha256": "ee1b41d2b4661a2a8ee64962201f0dcf7fae112df7e4c06a9a922f55483ed877",
+  "ingested_as": "FP-B003-01",
+  "duplicate_of_in_downloads": [
+   "Schermopname_2025-12-14_om_16.45.20 (1).mov",
+   "Schermopname_2025-12-14_om_16.45.20 (2).mov"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_17.03.11.mov",
+  "name": "Schermopname_2025-12-14_om_17.03.11.mov",
+  "ext": ".mov",
+  "bytes": 243242245,
+  "modified": "2026-07-04 15:44:10",
+  "duration_s": 343.8666666666667,
+  "sha256": "a41992a559e1930c5d3c0999d8eb6646f264df4ce3b54e80593b1efa2d1994f7",
+  "ingested_as": "FP-B003-02",
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_17.12.15 (1).mov",
+  "name": "Schermopname_2025-12-14_om_17.12.15 (1).mov",
+  "ext": ".mov",
+  "bytes": 349754888,
+  "modified": "2026-07-05 00:45:20",
+  "duration_s": 478.46666666666664,
+  "sha256": "7004096984f87411582b2168f1e12dac4c2b4806d9dd6811523eb2aa9e57657b",
+  "ingested_as": "FP-B003-03",
+  "duplicate_of_in_downloads": [
+   "Schermopname_2025-12-14_om_17.12.15 (2).mov",
+   "Schermopname_2025-12-14_om_17.12.15.mov"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_17.12.15 (2).mov",
+  "name": "Schermopname_2025-12-14_om_17.12.15 (2).mov",
+  "ext": ".mov",
+  "bytes": 349754888,
+  "modified": "2026-07-05 00:46:04",
+  "duration_s": 478.46666666666664,
+  "sha256": "7004096984f87411582b2168f1e12dac4c2b4806d9dd6811523eb2aa9e57657b",
+  "ingested_as": "FP-B003-03",
+  "duplicate_of_in_downloads": [
+   "Schermopname_2025-12-14_om_17.12.15 (1).mov",
+   "Schermopname_2025-12-14_om_17.12.15.mov"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Schermopname_2025-12-14_om_17.12.15.mov",
+  "name": "Schermopname_2025-12-14_om_17.12.15.mov",
+  "ext": ".mov",
+  "bytes": 349754888,
+  "modified": "2026-07-04 15:45:38",
+  "duration_s": 478.46666666666664,
+  "sha256": "7004096984f87411582b2168f1e12dac4c2b4806d9dd6811523eb2aa9e57657b",
+  "ingested_as": "FP-B003-03",
+  "duplicate_of_in_downloads": [
+   "Schermopname_2025-12-14_om_17.12.15 (1).mov",
+   "Schermopname_2025-12-14_om_17.12.15 (2).mov"
+  ]
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_01.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_01.mp4",
+  "ext": ".mp4",
+  "bytes": 155595265,
+  "modified": "2026-07-04 16:06:11",
+  "duration_s": 9918.6,
+  "sha256": "cbaf2160a8221bc4669cc963c0ecbe7572ca9d45f473139e309b677706132828",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_02.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_02.mp4",
+  "ext": ".mp4",
+  "bytes": 145848513,
+  "modified": "2026-07-04 16:06:14",
+  "duration_s": 1197.139,
+  "sha256": "5c882eeba18586e9bcf5b55ecd4c0140f5a37647086dbb438a6b94d00d684826",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_03.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_03.mp4",
+  "ext": ".mp4",
+  "bytes": 120430418,
+  "modified": "2026-07-04 16:06:19",
+  "duration_s": 1192.574,
+  "sha256": "6dc0b0b8aad7f51b9daabd41c680ecbf7eae0410148c8191a0d1a6f96bbf86ce",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_04.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_04.mp4",
+  "ext": ".mp4",
+  "bytes": 167048204,
+  "modified": "2026-07-04 16:06:25",
+  "duration_s": 1203.491,
+  "sha256": "c6da98840112f2e8c9f0191d1579dc7acb225913d1e542bd75effc7d8ddc760f",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_05.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_05.mp4",
+  "ext": ".mp4",
+  "bytes": 159604802,
+  "modified": "2026-07-04 16:06:30",
+  "duration_s": 1207.371,
+  "sha256": "204407623ad2be971f1e378147611b2c789dc8cf5c17c99ddcf724b0afaaa680",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_06.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_06.mp4",
+  "ext": ".mp4",
+  "bytes": 59242977,
+  "modified": "2026-07-04 16:06:35",
+  "duration_s": 1191.648,
+  "sha256": "8eb474b0d46032365aaf92b419865185c2cd92353423015bc1e2ba311a4af3c2",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_07.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_07.mp4",
+  "ext": ".mp4",
+  "bytes": 148720945,
+  "modified": "2026-07-04 16:06:40",
+  "duration_s": 1207.646,
+  "sha256": "e8dd3ca2b9e98a8737a7bf186e19981a8dad1de4a04a9d0929247989ba0b4493",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_08.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_08.mp4",
+  "ext": ".mp4",
+  "bytes": 152060650,
+  "modified": "2026-07-04 16:06:45",
+  "duration_s": 1200.219,
+  "sha256": "1808e3e5836e322de019cd9cd100250ee51d0ca5b55555ab3a0d83ba56f37c6d",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ },
+ {
+  "path": "C:\\Users\\Marty\\Downloads\\Farouk_Upload_Parts\\GMT20251221-181518_Recording_2240x1260\\GMT20251221-181518_Recording_2240x1260_PART_09.mp4",
+  "name": "GMT20251221-181518_Recording_2240x1260_PART_09.mp4",
+  "ext": ".mp4",
+  "bytes": 35183147,
+  "modified": "2026-07-04 16:06:47",
+  "duration_s": 315.24,
+  "sha256": "c6fc05f495f4d5bf696c970db69713e597ed87e0fdc9c68f0851d869a3247876",
+  "ingested_as": null,
+  "duplicate_of_in_downloads": null
+ }
+]

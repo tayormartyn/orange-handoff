@@ -1,0 +1,19 @@
+{
+  "record_id": "human_ratification_record_v0_1",
+  "date": "2026-07-11",
+  "ratifier": "Martyn (Recovery Item 1B instruction)",
+  "scope": "the three NEEDS_HUMAN_REVIEW items from farouk_plus_rule_merge_queue_v0_1.json",
+  "decisions": [
+    {"item": "bos_candle_close_contradiction", "sources": "FP-EDU-016 vs FP-EDU-021; video-002 live usage",
+     "decision": "RATIFIED: +confidence feature, NOT a hard gate",
+     "consequence": "unblocks R-BOS-CANDLECLOSE as bos_candle_close_confirmed (+confidence, LOW weight) in detector v0.3 / Lane-6; EDU-016 'required' reading retired for scoring"},
+    {"item": "all_boxes_vs_graded_confluence", "sources": "Playbook-internal contradiction #6",
+     "decision": "RATIFIED: graded confluence stack, NOT all-boxes hard veto",
+     "consequence": "detector's graded scoring posture is explicit policy; no all-or-nothing veto; labels capped at SHADOW_CANDIDATE_MEDIUM"},
+    {"item": "rr_2r_doc_vs_practice", "sources": "R-RR-2R vs 34-trade matched sample",
+     "decision": "RATIFIED: do NOT assume 2R",
+     "consequence": "R6 uses actual tranches, posted TP1/BE behaviour, follower-capturable pips only; R:R statistics computed from matched data, never assumed"}
+  ],
+  "binding_scope": "Orange review lane only; no effect on execution gates or governance policy; R-RISK-1PCT stays excluded from this lane",
+  "safety": {"gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none"}
+}

@@ -1,0 +1,198 @@
+{
+ "generated_at": "2026-07-20T13:05:00Z",
+ "authority_note": "DERIVED summary. Authority = forward_validation_ledger_v0_2.jsonl (63 lines), router_freeze_v0_1.jsonl (2 records), router_freeze_backfill_v0_1.jsonl (2 records), cards/, entry_refusals_v0_1.jsonl. Where this file and those disagree, those win.",
+ "source_hashes": {
+  "fwd_ledger": {
+   "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\forward_validation_ledger_v0_2.jsonl",
+   "sha16": "934c58f03fb5a06e"
+  },
+  "freeze": {
+   "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_v0_1.jsonl",
+   "sha16": "df2d3fc9312646d1"
+  },
+  "freeze_backfill": {
+   "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_backfill_v0_1.jsonl",
+   "sha16": "a0c0c7567f2e20a5"
+  },
+  "cards_f004": {
+   "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\cards\\XAU-F004-20260716.json",
+   "sha16": "b9e15a3434002060",
+   "volatile_excluded": "market_data"
+  },
+  "cards_f005": {
+   "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\cards\\XAU-F005-20260717.json",
+   "sha16": "729b68f64042e8b7",
+   "volatile_excluded": "market_data"
+  },
+  "refusals": {
+   "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\entry_refusals_v0_1.jsonl",
+   "sha16": "bd7553bb9a1b8836"
+  }
+ },
+ "campaigns": [
+  {
+   "id": "XAU-F001-20260714",
+   "direction": "LONG",
+   "zone": "4007-4019",
+   "sl": "3985",
+   "class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+   "eligible_prospective": false,
+   "freeze": {
+    "ledger": "router_freeze_backfill_v0_1.jsonl",
+    "class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE"
+   },
+   "lifecycle": "CLOSED",
+   "outcome": "FROZEN",
+   "lane_a_pips_per_unit": "+4.42 (BE-scratch)",
+   "anchors": "fwd ledger L17 (XAU_F_SETUP rev1, verified by content)",
+   "dataset_eligibility": "NON_ANALYTICAL_BACKFILL (quarantined from analytics)",
+   "unresolved": []
+  },
+  {
+   "id": "XAU-F002-20260714",
+   "direction": "SHORT",
+   "zone": "4084-4094",
+   "sl": "4144",
+   "class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE",
+   "eligible_prospective": false,
+   "freeze": {
+    "ledger": "router_freeze_backfill_v0_1.jsonl",
+    "class": "SCHEMA_BACKFILL_NOT_PROSPECTIVE"
+   },
+   "lifecycle": "CLOSED",
+   "outcome": "FROZEN",
+   "lane_a_pips_per_unit": "+9.95 (Lane B +16.21 realized)",
+   "anchors": "fwd ledger L18 (XAU_F_SETUP rev1, verified by content)",
+   "dataset_eligibility": "NON_ANALYTICAL_BACKFILL",
+   "unresolved": []
+  },
+  {
+   "id": "XAU-F003-20260716",
+   "direction": "SELL",
+   "zone": "4025-4035",
+   "sl": "4075",
+   "entry_msg": 45791,
+   "class": "AUTHENTIC_NOT_PROSPECTIVE_WATCHER_RACE",
+   "eligible_prospective": false,
+   "freeze": null,
+   "lifecycle": "CLOSED (adjudicated full-exit msg 45805 @ 2026-07-16T13:06:12Z, fwd L50-57 block)",
+   "outcome": "FROZEN",
+   "lane_a_pips_per_unit": "0.00 NO_FILL (late alert; legs never filled)",
+   "dataset_eligibility": "authentic capture; NOT prospective-eligible",
+   "unresolved": [
+    "must never gain a freeze or prospective status"
+   ]
+  },
+  {
+   "id": "XAU-F004-20260716",
+   "direction": "SELL",
+   "zone": "4003-4014",
+   "sl": "4027",
+   "entry_msg": 45807,
+   "class": "GENUINE_PROSPECTIVE",
+   "eligible_prospective": true,
+   "freeze": {
+    "ledger": "router_freeze_v0_1.jsonl",
+    "logical_hash": "6047bde5",
+    "record_class": "PROSPECTIVE"
+   },
+   "lifecycle": "CLOSED (mgmt 45808/45810/45813/45816 adjudicated; mid/far cancelled per ratified P14 Q3)",
+   "outcome": "FROZEN",
+   "lane_a_pips_per_unit": "+15.18",
+   "dataset_eligibility": "prospective-eligible",
+   "unresolved": [
+    "operator-awareness: Martyn's 'SL-to-entry should not cancel' expectation contradicts his own ratified Q3 (see K-033/R-004)"
+   ]
+  },
+  {
+   "id": "XAU-F005-20260717",
+   "direction": "SHORT",
+   "zone": "3998-4008",
+   "sl": "4043",
+   "entry_msg": 45878,
+   "class": "GENUINE_PROSPECTIVE",
+   "eligible_prospective": true,
+   "freeze": {
+    "ledger": "router_freeze_v0_1.jsonl",
+    "logical_hash": "f7557245",
+    "record_class": "PROSPECTIVE"
+   },
+   "lifecycle": "CLOSED (XAU_F_TERMINAL_LATE_RECOVERY_ADJUDICATION fwd L63; durable msg 45885 'close 100%' @ 12:44:27Z)",
+   "outcome": "FROZEN",
+   "lane_a_pips_per_unit": "0.00 NO_FILL (price below zone at post; P14 cancel pre-touch)",
+   "lane_b_research": "+94.17 pips/unit (research lane, never headline)",
+   "dataset_eligibility": "prospective-eligible",
+   "unresolved": [
+    "Farouk's own +305-pip fills were ACHIEVABLE_ONLY_FROM_UNOBSERVED_PRIVATE_FILL"
+   ]
+  },
+  {
+   "id": "XAU-F006-20260720",
+   "direction": "LONG",
+   "zone": "4000-4010",
+   "sl": "3992 (posted; personal stop unknown)",
+   "entry_msg": 45935,
+   "class": "GENUINE_PROSPECTIVE",
+   "eligible_prospective": true,
+   "freeze": {
+    "ledger": "router_freeze_v0_1.jsonl",
+    "logical_hash": "80fc8f0c",
+    "record_class": "PROSPECTIVE"
+   },
+   "lifecycle": "CLOSED (adjudicated; 45937 'tp 1 sl entry' sl-clause silently missed -> PARTIAL_INSTRUCTION_SILENT_LOSS defect corrupted the outcome, D-028)",
+   "outcome": "EXCLUDED_FROM_EXPECTANCY (defect-corrupted, D-044)",
+   "lane_a_pips_per_unit": "EXCLUDED (PARTIAL_INSTRUCTION_SILENT_LOSS)",
+   "dataset_eligibility": "prospective CAPTURE; EXCLUDED from expectancy (named defect)",
+   "unresolved": [
+    "parser fix for PARTIAL_INSTRUCTION_SILENT_LOSS pending"
+   ]
+  },
+  {
+   "id": "XAU-F007-20260721",
+   "direction": "LONG",
+   "zone": "4053-4063",
+   "sl": "4040 (posted follower stop; personal stop unknown)",
+   "entry_msg": 45973,
+   "class": "GENUINE_PROSPECTIVE",
+   "eligible_prospective": true,
+   "freeze": {
+    "ledger": "router_freeze_v0_1.jsonl",
+    "logical_hash": "f74697194cbbb359",
+    "record_class": "PROSPECTIVE"
+   },
+   "lifecycle": "CLOSED (OUTCOME_FROZEN; BE scratch ~09:29Z; near 4063 filled, mid/far cancelled)",
+   "outcome": "FROZEN",
+   "lane_a_pips_per_unit": "+5.38 (flagged MODEL_ARTEFACT_TERMINAL; kept per D-044)",
+   "dataset_eligibility": "prospective-eligible (expectancy row)",
+   "unresolved": [
+    "result-card screenshots missing (his actual fills); ENTRY-DETERMINED MANAGEMENT DIVERGENCE recorded (K-064)"
+   ]
+  }
+ ],
+ "genuine_prospective": {
+  "capture_count": 4,
+  "capture_ids": [
+   "XAU-F004-20260716",
+   "XAU-F005-20260717",
+   "XAU-F006-20260720",
+   "XAU-F007-20260721"
+  ],
+  "expectancy_count": 3,
+  "expectancy_ids": [
+   "XAU-F004-20260716",
+   "XAU-F005-20260717",
+   "XAU-F007-20260721"
+  ],
+  "excluded": {
+   "XAU-F006-20260720": "PARTIAL_INSTRUCTION_SILENT_LOSS named defect corrupted the outcome (D-028); adjudicated-closed"
+  },
+  "_source": "campaign_status_v0_1.json (D-080 single authority)"
+ },
+ "refusal_records": [
+  {
+   "message_id": 60008,
+   "campaign": "XAU-F008-20260716",
+   "note": "single record in entry_refusals_v0_1.jsonl with out-of-range synthetic ids — believed to be the 07-16 watcher-race fix verification canary; provenance to confirm (open question OQ-1); NOT a real campaign"
+  }
+ ]
+}

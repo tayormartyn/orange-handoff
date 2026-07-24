@@ -1,0 +1,37 @@
+{
+  "queue_id": "farouk_plus_rule_merge_queue_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "REVIEW_ONLY — nothing in this queue is or becomes an execution gate",
+  "MERGE_NOW_AS_REVIEW_FEATURE": [
+    {"feature": "contingency_pre_declared", "source": "R-MGMT-CONTINGENCY (C004/45097)", "target": "R2/R2b exemption flag (weight 0 -> +1 forward-testable): a re-entry pre-declared BEFORE the stop at a higher-quality zone is not an impulsive chain"},
+    {"feature": "zone_touch_count", "source": "R-MITIGATION + adjudication #4", "target": "mitigated_level_wider_invalidation + Lane-6 confidence: first mitigation tradable, repeated = spent; computable from OHLC"},
+    {"feature": "level_type_tag_extension_STRONG_WEAK", "source": "R-STRONGWEAK (EDU-009/004)", "target": "8F level_type_tag vocabulary + Lane-6 confidence (strong = manipulated+BOS+RTO; weak = liquidity target)"},
+    {"feature": "confluence_order_ranking", "source": "R-CONFLUENCE-ORDER (EDU-024)", "target": "Lane-6 pre-mark confidence ORDERING: BOS > FVG-inversion > Level-reclaim > SFP; explicitly NOT a minimum count"},
+    {"feature": "lane6_repaint_guard", "source": "R-ALERT-BARCLOSE", "target": "Lane-6 anti-leakage extension: indicator-sourced pre-marks use bar-close-confirmed values only (marker repaint UNRESOLVED)"},
+    {"feature": "stop_outside_zone_rule", "source": "R-STOP-OTE (EDU-028)", "target": "first structural input to stop_width_by_level_type v0.1 (recovery item 4)"}
+  ],
+  "KEEP_AS_WATCHLIST": [
+    {"feature": "choch_family_scope", "source": "R-CHOCH-NONUNIVERSAL", "note": "never require CHoCH universally; family-dependent"},
+    {"feature": "a_grade_capture", "source": "R-AGRADES", "note": "capture indicator A-grades in the alert lane forward; correlate before any use; formula invisible — do not invent"}
+  ],
+  "NEEDS_FORWARD_EVIDENCE": [
+    {"feature": "ote_fib_family", "source": "R-OTE-FIB", "note": "61.8/78.6 OTE zones — family unobserved in the 34-trade sample"},
+    {"feature": "scob_family", "source": "R-SCOB-CLOSE"},
+    {"feature": "volume_profile_va68", "source": "R-VA-68", "note": "profile window/period unknown"},
+    {"feature": "displacement_numeric", "source": "R-DISPLACEMENT", "note": "= our R3 rejection; numeric size still undefined (recovery item 4 target)"}
+  ],
+  "NEEDS_HUMAN_REVIEW": [
+    {"item": "BOS candle-close adjudication", "proposal": "score candle-close as +confidence (EDU-021 reading; video-002 live usage supports), never a gate", "blocks": "R-BOS-CANDLECLOSE"},
+    {"item": "all-boxes veto vs graded stack (Playbook-internal contradiction #6)", "note": "detector v0.2's graded scoring implicitly sides with graded; ratify or revisit"},
+    {"item": "RR-2R doc-vs-practice finding", "note": "docs teach >=2R; matched sample shows tranche-1 far below 2R; adopt as R6 honesty note (no 2R assumption in expectancy)"}
+  ],
+  "REJECT": [
+    {"rule": "R-INDUCE-DISPLACE-TRAP", "reason": "unverified external inference"},
+    {"rule": "R-OI", "reason": "excluded narrative (futures OI out of scope)"},
+    {"rule": "R-BFI", "reason": "excluded narrative"},
+    {"rule": "R-EMA-METHOD", "reason": "separate method family — out of the XAU SMC lane (kept as research note in the corpus, not in Orange)"},
+    {"rule": "R-RISK-1PCT", "reason": "risk policy = governance/execution layer; excluded from the review lane by the no-risk-sizing policy (POLICY_DIVERGENCE note preserved in the corpus)"}
+  ],
+  "enforcement_note": "all merged features flow through the ai_review fail-closed validator + extended guard exactly like existing features; labels capped at SHADOW_CANDIDATE_MEDIUM; nothing skips human review",
+  "safety": {"gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none"}
+}

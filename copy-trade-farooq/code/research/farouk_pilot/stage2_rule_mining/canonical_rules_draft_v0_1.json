@@ -1,0 +1,4302 @@
+[
+ {
+  "rule_id": "FR-001",
+  "statement": "Unmitigated levels (untested OBs, FVGs, BPRs, session highs/lows) act as magnets: price is expected to return to mitigate them; they are marked, kept on the chart, and used as entry/target references.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 11,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:16:20",
+     "00:59:16",
+     "00:57:44"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 67,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:03:40"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 15,
+    "source_file": "fp-2026_07_20_farouk_post_trade_breakdown_f006.txt",
+    "timestamps": [
+     "[00:24]-[00:37]",
+     "[02:24]-[02:47]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "'cell'/'week' are known mishears of sell/wick but the rule itself is not number-dependent.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Across the next 5 zone campaigns, entry zones and TP levels coincide (>=4/5) with levels bar data shows untouched since formation.",
+  "kill_condition": "Campaign zones repeatedly placed at levels bar data shows already traded through, while nearby untouched levels are ignored."
+ },
+ {
+  "rule_id": "FR-002",
+  "statement": "OB lifecycle: an OB is created by an impulsive displacement move that leaves an FVG; a fresh (never-tested) OB is strong, an OB retested a couple of times is weak, is expected to fail, and is not re-entered.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 19,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:33:47",
+     "00:41:52",
+     "00:41:57"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 83,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:41:15",
+     "00:41:57",
+     "00:16:06"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 19,
+    "source_file": "fp-schermopname_2026_06_29_om_16_37_24.txt",
+    "timestamps": [
+     "[00:02:49]-[00:02:59]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 92,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:16:06",
+     "00:43:54"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 93,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:41:40",
+     "00:41:50"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 39,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:01:16",
+     "01:01:37"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Price digit '4022' garbled elsewhere as 'this level here is 4022' — price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price (4378) digit-sensitive.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Campaign entry zones sit at first-touch (fresh) OBs in >=4 of the next 5 zone campaigns (bar-verifiable).",
+  "kill_condition": "Campaign entries repeatedly placed at OBs already tested 2+ times since formation.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-003",
+  "statement": "FVG-claim cascade: once price candle-closes through the first opposing FVG on the 5/15-minute, expect the remaining opposing FVGs to be claimed and price to run to the origin extreme ('the highest level that made the lowest level', or inverse).",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 13,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:21:14"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 25,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:07:32",
+     "01:08:31"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 45,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:08:04",
+     "00:08:27"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 16,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:36:36",
+     "00:37:40"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 79,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:29:41",
+     "00:29:52"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 37,
+    "source_file": "fp-schermopname_2026_07_15_om_17_19_26.txt",
+    "timestamps": [
+     "[00:03:23]-[00:03:28]",
+     "[00:04:03]-[00:04:12]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "'FPG' = FVG mishear. | 'FPG' = FVG mishear throughout; concept clear. | 'Barish FPG' = bearish FVG mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "In bar data around future campaigns, narrated first-FVG-claim events are followed by traversal to the identified origin level in the majority of instances.",
+  "kill_condition": "Repeated first-claim events where price reverses before the origin level without him flagging invalidation.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-004",
+  "statement": "BPR (balanced price range - overlapping opposing FVGs) is a mitigation-owed rejection zone traded on its first retest; claimed to 'always work on gold' on the 15-minute (5-minute version conditional on structure).",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 8,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:13:35",
+     "00:13:54",
+     "01:25:51"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 77,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:17:10",
+     "00:17:56",
+     "00:18:24"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 78,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:18:10",
+     "00:18:18"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'balanced branch range' is a mishear of 'balanced price range'. | 'FPG' = FVG mishear throughout. | Timeframe numbers (15m/5m) and the garbled conditional 'can behold if they lose structure' (likely 'can hold if they DON'T lose structure') are load-bearing.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Future campaign zones repeatedly coincide with bar-identifiable BPRs and first retests reject in the stated direction.",
+  "kill_condition": "Multiple first-retests of identified BPRs traverse without rejection during live campaigns.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-005",
+  "statement": "Broken levels flip roles (broken resistance/OB becomes support and vice versa) and old levels - even months old - remain valid references when extended right.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 9,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:14:55"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 47,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:11:29",
+     "01:28:22"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 50,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:16:36",
+     "00:19:01"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Future campaign zones/TPs repeatedly land on role-flipped or historical levels identifiable in bar data.",
+  "kill_condition": "Campaigns consistently ignore role-flipped levels that price then respects, or use them and price ignores them."
+ },
+ {
+  "rule_id": "FR-006",
+  "statement": "Trade only at high-probability zones built from roughly 4-7 stacked confluences (structure break, ORB, gaps, liquidity, POC, VWAP, FVG, OB, equal lows); stacked liquidity locates where price can reverse; weekly-resistance+multi-OB stacks are worth at least ~100 pips of rejection.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 5,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:25:52]-[01:26:10]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 15,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:23:06"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 72,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:07:01",
+     "00:15:19",
+     "00:11:10"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 73,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:15:22",
+     "00:15:33"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 81,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:55:15]-[00:55:25]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 62,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:41:13",
+     "00:41:47"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' = 15-minute mishear; 'stop plus'/'FPG'/'cell' mishears.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Published campaign zones consistently coincide with >=3 independently identifiable confluence features in frozen bar data.",
+  "kill_condition": "Campaigns repeatedly posted at levels where at most one such feature is identifiable.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-007",
+  "statement": "Cluster doctrine: clusters are broad battle areas (vs institutional/precise OBs); 'which cluster made that high/low?' locates the return zone; his personal structure break requires TWO clusters broken with 1-minute candle closes.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 10,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:24:02]-[00:25:09]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 79,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:53:13]-[00:53:51]",
+     "[02:09:04]-[02:09:26]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 80,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:52:58]-[00:53:13]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "His narrated level choices repeatedly reference the cluster that made the extreme, verifiable as prior consolidation areas in 1m bars.",
+  "kill_condition": "Narrated analyses repeatedly place return zones unrelated to any identifiable origin cluster."
+ },
+ {
+  "rule_id": "FR-008",
+  "statement": "Sweep-then-reverse: after a liquidity sweep of a session high/low expect reversal (short a swept high, long the retest after a swept low); a sweep is only confirmed by the subsequent break of structure + retest + continuation.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 14,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:21:57"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 17,
+    "source_file": "fp-2026_07_20_farouk_post_trade_breakdown_f006.txt",
+    "timestamps": [
+     "[04:45]-[05:55]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 34,
+    "source_file": "fp-schermopname_2026_07_05_om_12_53_09.txt",
+    "timestamps": [
+     "[00:01:42]-[00:01:53]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 62,
+    "source_file": "fp-schermopname_2025_12_14_om_17_03_11.txt",
+    "timestamps": [
+     "[00:04:09]-[00:04:28]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Price digits garbled ('10... 1009', 'stop loss 90, 3,990') — CRITICAL price-level ambiguity.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Future campaigns repeatedly enter after bar-verifiable sweeps of session extremes followed by his stated confirmation sequence (F007's own rationale already cites a low sweep).",
+  "kill_condition": "Campaigns repeatedly entered at swept levels with no confirmation sequence, or sweeps consistently continue rather than reverse in his narrated instances."
+ },
+ {
+  "rule_id": "FR-009",
+  "statement": "Wick reading: clustered downside wicks = buyers (upside = sellers); 3-4 equal wicks are engineered liquidity that price will run; a large opposing wick with the body closing near the extreme marks the strong side.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 24,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:05:37"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 54,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:08:52]-[01:09:01]",
+     "[00:05:56]-[00:06:04]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 85,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:45:07",
+     "00:45:22"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 59,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:37:42"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'weeks' = wicks mishear. | 'WIC/WICs' = wick(s) mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Narrated bias calls repeatedly match bar-verifiable wick clusters, and equal-wick zones get run within the session in cited instances.",
+  "kill_condition": "Cited wick-cluster reads repeatedly resolve opposite to the stated side.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-010",
+  "statement": "Flat-top/flat-bottom candles (heavy-volume signature) are unmitigated levels gold must revisit; reversals are wicks, flat candles get mitigated.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 53,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:35:28]-[01:36:17]",
+     "[01:35:19]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Bar data around future campaigns shows flat-extreme candles revisited before continuation in the majority of narrated cases.",
+  "kill_condition": "Repeated narrated flat-candle levels never revisited while price trends away."
+ },
+ {
+  "rule_id": "FR-011",
+  "statement": "Futures (CME/MGC) gaps act as magnets on gold: gaps get filled, and absence of remaining gaps above removes the reason to go up.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 51,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:15:12]-[00:17:42]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "His direction calls repeatedly cite gap state and price fills cited gaps within the narrated horizon.",
+  "kill_condition": "Cited unfilled gaps repeatedly ignored by price over his stated horizons."
+ },
+ {
+  "rule_id": "FR-012",
+  "statement": "ORB doctrine: the opening range is the first 15 minutes of London (9:00-9:15) and New York (15:30-15:45 GMT+1); do nothing inside it; the breakout-then-retest with confluence is the recurring (2-3x/week) setup; the midline is hidden liquidity and never-retested ORB levels get revisited; sometimes the right London action is waiting for the ORB retest.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 43,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:00:53]-[01:01:36]",
+     "[01:28:29]-[01:28:44]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 44,
+    "source_file": "fp-schermopname_2025_12_14_om_17_12_15_1.txt",
+    "timestamps": [
+     "[00:02:30]-[00:02:51]",
+     "[00:01:42]-[00:01:52]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 45,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:05:11]-[02:05:27]",
+     "[01:04:23]-[01:05:18]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 46,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:02:07]-[01:02:41]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 47,
+    "source_file": "fp-schermopname_2025_12_14_om_17_12_15_1.txt",
+    "timestamps": [
+     "[00:04:59]-[00:05:09]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 48,
+    "source_file": "fp-schermopname_2025_12_14_om_17_12_15_1.txt",
+    "timestamps": [
+     "[00:02:16]-[00:02:40]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "CRITICAL timeframe mishears throughout: '50 minutes' = 15 minutes (context 'nine o'clock until nine 15' and '1530 to 1545' confirms 15, but every instance must be audio-checked).",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Future campaigns/scalps cluster at ORB breakout-retest points computable from bars once the 15-minute window is audio-confirmed.",
+  "kill_condition": "Campaign timing shows no relationship to ORB windows across many instances, or the audio check shows a different window than 15 minutes."
+ },
+ {
+  "rule_id": "FR-013",
+  "statement": "Pivot-level system: after a break of structure, box the move from wick high to wick low; the box midpoint is a pivot owed a retest, and unmitigated pivots are targets/entry zones.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 50,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:10:28]-[02:11:13]",
+     "[02:18:31]-[02:18:38]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'weak/week high/low' = wick high/low mishear pervasive through the whole segment; construction depends on which extreme is a wick.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Narrated/posted levels repeatedly coincide with BOS-box midpoints computable from bars (wick semantics audio-confirmed).",
+  "kill_condition": "Computed pivots show no better-than-chance coincidence with his levels."
+ },
+ {
+  "rule_id": "FR-014",
+  "statement": "Fake-move recognition: low/no-volume grinds ('staircase up, elevator down'), one-shot straight dumps without the sideways-clear-cluster rhythm, and no-volume moves on the fixed-range profile are market-maker traps - stand aside.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 55,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:26:46]-[00:27:29]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 73,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:29:38"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 32,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:02:43]-[00:03:13]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "His no-trade calls repeatedly coincide with bar-verifiable low-body-volume grinds that subsequently reverse.",
+  "kill_condition": "Cited trap patterns repeatedly continue trend rather than reversing."
+ },
+ {
+  "rule_id": "FR-015",
+  "statement": "Low-TF reversal traps: a grind leaving FVGs that then prints CHoCH + first-FVG claim yields one large impulsive reversal candle ('hallelujah candle'); Asia-low break WITHOUT a lower low plus CHoCH and 5m-OB reclaim is a bear trap.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 71,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:26:06",
+     "01:26:40"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 72,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:27:22",
+     "01:27:40"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Narrated reversal calls repeatedly follow the stated CHoCH+first-claim sequence in bars.",
+  "kill_condition": "The stated sequence repeatedly fails to produce the impulsive reversal in his cited examples."
+ },
+ {
+  "rule_id": "FR-016",
+  "statement": "An inverted FVG (a claimed FVG) acts as resistance/support, especially when never retested.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 69,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:02:43"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 92,
+    "source_file": "fp-schermopname_2026_07_02_om_19_40_23.txt",
+    "timestamps": [
+     "[00:05:48]-[00:06:02]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'IFPG'/'IFEG' = IFVG mishears throughout both files. | 'ifgg' = IFVG (inverted FVG) mishear; price 4120 vs 4,120 context.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Future campaign zones/TPs repeatedly land at bar-identifiable IFVGs.",
+  "kill_condition": "Identified IFVGs repeatedly traversed without reaction at his cited levels."
+ },
+ {
+  "rule_id": "FR-017",
+  "statement": "The market ranges ~90% of the time and the longer the range the bigger the eventual move; scalps are taken inside ranges rather than waiting out every breakout.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 49,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:17:55",
+     "00:18:47"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 75,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:29:05]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "His trade cadence continues to show intra-range scalps between zone campaigns.",
+  "kill_condition": "He trades breakouts exclusively or abstains from all in-range activity while teaching the opposite."
+ },
+ {
+  "rule_id": "FR-018",
+  "statement": "A trendline/level tested many times will eventually break - count the touches and expect the break.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 56,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:27:51]-[00:28:03]",
+     "[02:27:20]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Narrated multi-touch levels break within his stated horizon in cited instances.",
+  "kill_condition": "Cited 5+-touch levels repeatedly hold indefinitely."
+ },
+ {
+  "rule_id": "FR-019",
+  "statement": "News is used by the market to reach levels faster; the pre-marked levels, not the news direction, define the trade.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 24,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:12:40",
+     "00:13:15"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "During news events his posted trades continue to anchor to pre-marked levels (zones posted before the news timestamp).",
+  "kill_condition": "Campaigns posted during news that chase the news direction without any pre-marked level."
+ },
+ {
+  "rule_id": "FR-020",
+  "statement": "Round numbers (e.g. 4,300) are treated as psychological support where 'everybody will take a long'.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 83,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:09:10]-[00:09:17]",
+     "[00:39:18]-[00:39:25]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Price digits garbled in second quote ('4,095' amid a 4,29x/4,300 discussion — likely 4,295); psychological-level values are price-critical.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-021",
+  "statement": "Gold respects levels/gaps/flat candles better than crypto - the stated reason the system is applied primarily to gold.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 88,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:54:31]-[00:54:38]",
+     "[00:46:28]-[00:46:40]",
+     "[02:26:12]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-022",
+  "statement": "Trend identification heuristic (attributed to mentor Carl): is price heading to the top-right or bottom-right of the screen.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 77,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:20:52]-[00:21:02]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-023",
+  "statement": "PO3 framing (accumulation, manipulation, expansion) endorsed as entry framing at high-timeframe OBs.",
+  "category": "setup",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 63,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:17:38",
+     "00:17:44"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "DEMONSTRATED",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-024",
+  "statement": "Core A+ entry: a session high/low (especially Asia) broken with candle-close confirmation, then a retest of the OB/FVG that made the break, then continuation entry (multi-point) toward the origin extreme / next liquidity - the setup family the group's statistics are quoted for.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 2,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:08:12",
+     "00:31:40",
+     "00:41:06",
+     "02:07:47"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 52,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:22:16",
+     "00:22:45",
+     "00:23:49"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 80,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:46:14"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 84,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:46:27"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 17,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:38:56",
+     "01:32:51",
+     "01:33:33"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 57,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:12:56",
+     "00:56:27"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 66,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:21:56",
+     "00:22:10",
+     "00:22:15"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clear. | 'kind of close' = 'candle close' mishear; 'five, 15 minutes' timeframe wording needs audio. | CRITICAL: '5-50-minute' = almost certainly 5-and-15-minute; pip counts also digit-sensitive.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Of the next 5 zone campaigns, >=4 are preceded by a same-direction session-level break with candle close, with the zone at the break's origin structure (bar-verifiable; F007's rationale already fits).",
+  "kill_condition": "Multiple campaigns whose zones have no preceding session-level break or sit unrelated to any break-origin structure."
+ },
+ {
+  "rule_id": "FR-025",
+  "statement": "Break confirmation is a close-stack: 5-minute, 15-minute and 1-hour candle closes beyond the level (two-three 5m closes suffice for scalps).",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 4,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:08:06",
+     "00:08:22"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 53,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:24:37",
+     "00:27:37"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 3,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:12:10",
+     "00:27:39"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 13,
+    "source_file": "fp-schermopname_2026_07_02_om_19_40_23.txt",
+    "timestamps": [
+     "[00:00:50]-[00:01:22]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'50 minute' is almost certainly a mishear of 15-minute (Friday transcript uses '15 minutes OB' alongside '50 minutes OB'); timeframe-dependent rule is CRITICAL. | '50 minutes' = 15-minute mishear; 'five, five 15 and one hour' garbled at 00:27:30 — timeframe-dependent, CRITICAL. | CRITICAL timeframe mishear: '50 minute' almost certainly = 15-minute; '5.15' likely = 5-and-15-minute. Any timeframe-dependent implementation depends on audio check. | Timeframe-dependent: '50 minute candle close' is almost certainly 15-minute (known mishear); also the garbled 'five minutes candle close above don't long' may be 'don't long yet [wait for more closes]' — sequence needs audio.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Campaign entries repeatedly follow bar-verifiable multi-timeframe closes beyond the referenced level before the post timestamp (timeframes audio-confirmed first).",
+  "kill_condition": "Entries repeatedly posted before any close beyond the level, or the audio check contradicts the 5/15/60 stack."
+ },
+ {
+  "rule_id": "FR-026",
+  "statement": "Confirmation ranking: change of character is the strongest confirmation (best on the 15-minute; low-TF after session breaks), then the engulfing candle (final check), then low-TF FVG creation with a candle close.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 7,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:11:30",
+     "00:37:02"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 64,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:58:25",
+     "00:58:35",
+     "00:58:46"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 66,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:08:53",
+     "01:09:12"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 36,
+    "source_file": "fp-schermopname_2026_07_05_om_12_53_09.txt",
+    "timestamps": [
+     "[00:02:14]-[00:02:28]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'three and one minutes' conflicts with the 5-minute emphasis elsewhere; possible mishear of 'three-and-one' vs '3m and 1m' vs '5m' — timeframe-dependent, CRITICAL. | 'FPGs' = FVGs mishear. | Clean '15 minutes' here corroborates that '50 minute' elsewhere is a 15-minute mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "His narrated entries repeatedly cite CHoCH first (F007's rationale cites 1/3m CHoCH), verifiable once CHoCH is deterministically defined.",
+  "kill_condition": "Narrated entries repeatedly proceed with no CHoCH while one was available, or rank engulfing above CHoCH in practice."
+ },
+ {
+  "rule_id": "FR-027",
+  "statement": "A break is valid only with a candle close beyond the level: a wick-only excursion is a sweep, and a BOS without a close is weak and expected to fail (applies from 5-minute to weekly).",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 11,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:18:50]-[01:19:25]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 12,
+    "source_file": "fp-schermopname_2026_07_15_om_17_19_26.txt",
+    "timestamps": [
+     "[00:02:34]-[00:03:17]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 84,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:23:01",
+     "00:23:08"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 54,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:34:37",
+     "00:34:44"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'candle glow' = mishear of 'candle close'. | Price digits spoken as 'four zero seventy four zero sixty' need audio confirmation.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "His continuation/reversal calls consistently condition on closes vs wicks in bar-verifiable instances.",
+  "kill_condition": "Narrated valid breaks repeatedly lack closes, or wick-only breaks are treated as continuation.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-028",
+  "statement": "OB-claim gating: no continuation/longs until price candle-closes above the overhead OB (daily/1h/zone) and retests it; until then expect ranging below it.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 14,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:55:15",
+     "00:55:45",
+     "00:52:19"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 15,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:36:36"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 39,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:17:52",
+     "00:18:24"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 20,
+    "source_file": "fp-schermopname_2026_06_29_om_16_37_24.txt",
+    "timestamps": [
+     "[00:02:16]-[00:02:39]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 25,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:44:34"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Long campaigns repeatedly posted only after bar-verifiable closes above cited overhead OBs.",
+  "kill_condition": "Long campaigns repeatedly posted directly below unbroken overhead OBs he has marked."
+ },
+ {
+  "rule_id": "FR-029",
+  "statement": "The pullback entry is the origin structure of the move - the OB at the break of structure (often with flat candle + gap), never a percentage retracement; best form: candle close above the daily FVG then pullback into the OB.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 46,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:09:59",
+     "00:10:14"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 56,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:36:49",
+     "00:37:02"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 82,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:19:15]-[01:19:49]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 91,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:23:24",
+     "00:23:34"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'look for loss' = mishear of 'look for longs' (direction-critical). | 'FPG' = FVG mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Campaign zones repeatedly reconstruct as BOS-origin OBs rather than fib levels (bar-verifiable).",
+  "kill_condition": "Zones repeatedly sit at percentage retracements with no identifiable origin structure.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-030",
+  "statement": "Entries are multi-point ladders (3/4/5 fills, e.g. five 0.2 lots of one total lot) across a zone built from overlapping 5m/15m/1h OBs, all sharing one stop; never add outside the range.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 18,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:30:58",
+     "00:34:33"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 48,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:11:40",
+     "00:12:53",
+     "00:11:14"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 5,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:21:42",
+     "01:08:18",
+     "01:09:29"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 22,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:42:54]-[01:43:56]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'50 minutes OB' and '15 minutes OB' both appear for the same object — confirms 50-minute = 15-minute mishear; timeframe-dependent, CRITICAL. | Lot-split arithmetic is garbled (four 0.2s called 'one low size'); exact increments need audio.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Future campaigns keep publishing zone ranges (not single prices) with multi-fill management instructions (already observed F006/F007).",
+  "kill_condition": "Campaigns revert to single-price entries with adds outside the published range."
+ },
+ {
+  "rule_id": "FR-031",
+  "statement": "Reaction-first entries: at a target zone wait for the rejection/reaction (or BOS + retest) before entering; no blind limit orders at reaction zones; with size, wait for the retest for better price.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 41,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:14:59",
+     "00:15:22"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 42,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:14:54",
+     "00:15:33"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 91,
+    "source_file": "fp-schermopname_2026_07_02_om_19_40_23.txt",
+    "timestamps": [
+     "[00:03:28]-[00:04:05]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 40,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:03:12"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Timeframe phrase 'five and 15 minutes' matches the known 5/15 mishear family; 'conference' = confluence.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "His entries continue to postdate zone-touch by a reaction interval rather than resting at the level (timestamp-verifiable).",
+  "kill_condition": "Entries repeatedly fill at first touch with limit-order language for reaction zones."
+ },
+ {
+  "rule_id": "FR-032",
+  "statement": "Triple confirmation for longs: opposing FVG claimed with a close + new bullish FVG and CHoCH created + candle close above Asia high.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 80,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:30:00",
+     "00:30:22",
+     "00:30:31"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED TIER_AMBIGUOUS",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Long campaigns repeatedly follow all three bar-verifiable conditions.",
+  "kill_condition": "Longs repeatedly posted with none of the three conditions present."
+ },
+ {
+  "rule_id": "FR-033",
+  "statement": "Market-maker presence check: fresh FVGs/OBs being created with closes in your direction plus more liquidity resting beyond on the HTF; sideways price creating no FVGs means the maker is absent.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 16,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:28:05"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 65,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:59:54",
+     "00:59:35",
+     "01:00:14"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'FEGs' = FVGs mishear. | 'FPGs' = FVGs mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Narrated go/no-go calls track bar-verifiable FVG-creation density.",
+  "kill_condition": "Cited no-FVG sideways phases repeatedly continue trending without reversal."
+ },
+ {
+  "rule_id": "FR-034",
+  "statement": "Internal-structure scalping: sub-5-minute internal breaks (1m break confirmed on 3/5m, retest of a small 1m OB) for scalps especially in Asia/inside ranges; external+internal broken together = high probability.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 65,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:11:55",
+     "01:13:03"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 28,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:16:10"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 35,
+    "source_file": "fp-schermopname_2026_07_05_om_12_53_09.txt",
+    "timestamps": [
+     "[00:03:24]-[00:03:53]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 33,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "02:03:47"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Timeframe numbers (1/3/5-minute) are load-bearing for a scalp rule and within the mishear-prone family. | '50 to the homo pips' garbled — probably '50 to a hundred pips'; 'scout'='scalp' mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "His Asia/range scalps reconstruct as internal-structure plays on 1m bars in cited instances.",
+  "kill_condition": "Internal-break scalps repeatedly cited but bar data shows entries unrelated to internal structure."
+ },
+ {
+  "rule_id": "FR-035",
+  "statement": "Gap-short setup: price reaches a gap, candle-closes below it, the retest fails to reclaim - short.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 52,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:18:28]-[00:18:56]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Narrated gap-shorts follow the close-below-then-failed-retest sequence in bars.",
+  "kill_condition": "Cited gap-shorts entered without closes or with reclaimed retests."
+ },
+ {
+  "rule_id": "FR-036",
+  "statement": "Volume-comparison entry: when one breakout carries visibly more volume than a prior one, its origin zone is the one to buy on retest, with a bigger stop for the bigger move.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 74,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:30:46",
+     "01:31:06"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Narrated zone choices repeatedly prefer the higher-volume breakout origin (candle-body verifiable).",
+  "kill_condition": "Zone choices show no relation to relative breakout volume in cited instances."
+ },
+ {
+  "rule_id": "FR-037",
+  "statement": "Fishel crypto scalp system: four synced timeframes (1h direction, entries on 1m, monitored 1m+5m); 50 EMA bias, 5/13 EMA continuation (lost = back to 50), 200/800 EMA S/R; entries need 2-3 timeframes claiming the 50 EMA + vector-candle volume + stochastic reset.",
+  "category": "entry",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 64,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:02:20]-[00:03:58]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 65,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:17:10]-[00:24:33]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 66,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:20:38]-[00:28:02]",
+     "[00:11:03]-[00:11:18]",
+     "[00:42:47]-[00:42:55]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-038",
+  "statement": "High timeframe is king: HTF direction and confluence override low-TF signals; mapping is strictly top-down (weekly/3-day/daily/12h/4h down to 5m/1m execution) and HTF confluence is mandatory, not optional.",
+  "category": "timeframe",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 8,
+    "source_file": "fp-schermopname_2026_07_08_om_16_19_48.txt",
+    "timestamps": [
+     "[00:04:30]-[00:04:50]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 22,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:45:42",
+     "00:45:58",
+     "00:46:09"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 60,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:00:05"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 12,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:47:11",
+     "00:51:17",
+     "00:53:21"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "'Confidence' = mishear of 'confluence'. | 'conferences' is a mishear of 'confluences' (clear from context).",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Campaign directions continue to align with HTF structure state at post time (bar-verifiable).",
+  "kill_condition": "Campaigns repeatedly posted against the daily/4h direction he simultaneously marks."
+ },
+ {
+  "rule_id": "FR-039",
+  "statement": "Level strength scales with timeframe: daily > 12h > 4h > 1h > 15m > 5m OBs; the 3-day and 12h levels are especially respected on gold.",
+  "category": "timeframe",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 17,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:29:11",
+     "01:26:23",
+     "00:55:47"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 69,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:04:55",
+     "00:36:28",
+     "00:42:03"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 26,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:44:34",
+     "00:45:04",
+     "00:45:36"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'FEGC' is a garbled FVG term; timeframe list (3-day, 12h) should be audio-confirmed.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "His zone selections repeatedly prefer the higher-TF structure when levels conflict.",
+  "kill_condition": "Zone selections repeatedly prefer low-TF levels over available HTF ones.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-040",
+  "statement": "Working set: 4-5 charts (12h/daily/weekly/4h for bias) with execution on the low timeframe (1-minute, sometimes 15-30 seconds).",
+  "category": "timeframe",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 9,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:36:18]-[00:36:41]",
+     "[01:54:42]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Screen-share/panel evidence continues to show the multi-chart layout with 1m execution.",
+  "kill_condition": "Evidence of single-chart or high-TF-only execution."
+ },
+ {
+  "rule_id": "FR-041",
+  "statement": "Monday/Asia avoidance: no Monday-Asia trades (weekend gap risk); he skips Asia roughly 9 times out of 10 (and when traded, only toward marked higher levels, and not when Asia falls in his nighttime); Monday entries come late (end of London or US).",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 27,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:22:08"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 1,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:02:03]",
+     "[01:32:05]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 2,
+    "source_file": "fp-2026_07_20_farouk_post_trade_breakdown_f006.txt",
+    "timestamps": [
+     "[02:54]-[03:07]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 59,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:59:48"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Garbled phrasing 'it's nine times, I don't trade nine times' — could be 'nine times out of ten I don't trade Asia'; frequency claim needs audio. | 'go cell' = 'go sell' mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Campaign post timestamps continue to avoid Monday Asia hours (F006/F007 both posted after 08:00Z).",
+  "kill_condition": "A cluster of campaigns posted during Monday Asia hours."
+ },
+ {
+  "rule_id": "FR-042",
+  "statement": "Friday discipline: at most one trade, sometimes none or very early; Monday and Friday are the riskiest days.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 28,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:22:30",
+     "02:07:32"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 4,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:16:51",
+     "00:20:32"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Fridays continue to show 0-1 campaigns, skewed early (supports H-FPL-07's Friday-close filter).",
+  "kill_condition": "Multiple multi-campaign Fridays with late entries."
+ },
+ {
+  "rule_id": "FR-043",
+  "statement": "Weekend/holiday regime: CME-closed weekend price action is not respected; positions are closed before the weekend (fees + gap risk); holiday/low-volume periods mean small choppy ranges - scalp only.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 26,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:54:29",
+     "01:11:36",
+     "01:01:53"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 85,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:52:59"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 73,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:00:41]-[02:00:50]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 74,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:10:34]-[00:10:52]",
+     "[01:33:28]-[01:33:41]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'see me' = CME mishear. | 'big week' = big wick mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "No campaign is left open into a weekend (terminal instructions or closes before Fri 21:00Z - matches F00x history).",
+  "kill_condition": "A campaign deliberately held through a weekend without stated exception."
+ },
+ {
+  "rule_id": "FR-044",
+  "statement": "When London breaks Asia high, expect the US session to continue in the same direction.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 75,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:21:49",
+     "00:21:54"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED TIER_AMBIGUOUS",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Bar-verifiable London-break days continue into US in the same direction in the majority of narrated instances.",
+  "kill_condition": "Cited London-break days repeatedly reverse in US without his flagging exceptions."
+ },
+ {
+  "rule_id": "FR-045",
+  "statement": "The US session first grabs liquidity from both sides before committing to one direction - don't be shaken out by the initial two-sided sweep.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 76,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:32:21",
+     "00:32:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED TIER_AMBIGUOUS",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "US opens around his campaigns repeatedly show two-sided sweeps before the directional move (bar-verifiable).",
+  "kill_condition": "US opens repeatedly one-directional from the bell in cited instances."
+ },
+ {
+  "rule_id": "FR-046",
+  "statement": "Volume gates trading: session opens (London/US, first ~1-1.5h) provide the direction; no-volume periods and market-about-to-close windows are no-trade.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 43,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:01:24",
+     "01:04:48"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 43,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:03:36",
+     "00:23:15",
+     "00:52:55",
+     "00:52:29"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Campaign timing continues to cluster inside session-open volume windows and avoid the last pre-close hour.",
+  "kill_condition": "Campaigns repeatedly posted in dead-volume or pre-close windows."
+ },
+ {
+  "rule_id": "FR-047",
+  "statement": "Avoid pre-market (end of London into the US open): London profit-taking plus pre-US news make it difficult and manipulated.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 42,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:29:10]-[01:29:30]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Campaign timestamps avoid the late-London-to-US-open band (checkable across future campaigns).",
+  "kill_condition": "Campaigns cluster in exactly that band."
+ },
+ {
+  "rule_id": "FR-048",
+  "statement": "He does not (yet) trade the Asia ORB; ORB settings are active for London/US only.",
+  "category": "session",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 49,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:32:46]-[01:33:00]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "PASSING",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-049",
+  "statement": "After TP1 (or roughly 50-60+ pips in profit), the stop moves to entry making the trade risk-free; members are expected to do it unprompted.",
+  "category": "stop",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 24,
+    "source_file": "fp-schermopname_2026_06_24_om_17_02_44.txt",
+    "timestamps": [
+     "[00:00:35]-[00:01:18]",
+     "fp-schermopname_2026_07_01 [00:07:39]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 36,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "02:00:12",
+     "02:00:28"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 82,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:42:58",
+     "01:38:07"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 8,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:16:51",
+     "01:06:17",
+     "00:29:43"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 89,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:07:31]-[00:08:00]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'stop plus two entry' = stop loss to entry mishear. | '50 minute candle close' = likely 15-minute (known mishear); target prices garbled ('1659 sorry, 6900, 61, 64').",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "Future campaigns continue to issue SL-to-entry after first partials (observed in F004/F006/F007).",
+  "kill_condition": "Campaigns repeatedly run to TP2+ with the stop left at origin and no BE instruction."
+ },
+ {
+  "rule_id": "FR-050",
+  "statement": "Wider stops when unmitigated levels/liquidity sit beyond the entry (an adverse sweep is expected first); shared/group trades use deliberately bigger stops beyond session extremes because followers are not at the chart.",
+  "category": "stop",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 9,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:15:50",
+     "00:18:24"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 71,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:08:01",
+     "00:09:44"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 28,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:01:10]-[00:01:16]",
+     "fp-gmt20251221 [01:06:19]-[01:06:40]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "'stop plus' = 'stop loss' mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Published stops repeatedly sit beyond identifiable unmitigated levels/session extremes rather than at fixed distances.",
+  "kill_condition": "Published stops repeatedly sit inside obvious unswept liquidity that then takes them out.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-051",
+  "statement": "Stops are structural ('easy invalidation'): a little beyond the tested wick/swing/FVG whose break invalidates the idea; a second return to the entry level means the idea is dead.",
+  "category": "stop",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 54,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:28:30",
+     "00:28:40"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 87,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:49:51",
+     "00:50:02"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 29,
+    "source_file": "fp-schermopname_2026_07_15_om_17_19_26.txt",
+    "timestamps": [
+     "[00:03:43]-[00:04:01]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 37,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:37:23",
+     "01:31:06"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'this week' = this wick mishear; 'stop plus' = stop loss. | 'Stop plus' = stop loss mishear; pip counts digit-sensitive; 'market of continuation' garbled. | Price digits spoken as 'two, four to 80, four to 90 ish' (likely 4280/4290) are garbled — CRITICAL; 'cell'=sell, 'FPG'=FVG.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Published stops reconstruct as structural invalidation points in bar data across future campaigns.",
+  "kill_condition": "Stops repeatedly placed at round distances with no structural referent.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-052",
+  "statement": "Crypto uses somewhat bigger stops due to volatility.",
+  "category": "stop",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 81,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:20:12"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": true,
+  "avr_reason": "'stopwatch' = stop loss mishear.",
+  "explicitness": "PASSING",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-053",
+  "statement": "Stated stop/target parameter instance: ~50-pip stop against 100-500-pip targets at stacked levels.",
+  "category": "stop",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 27,
+    "source_file": "fp-schermopname_2026_06_24_om_17_02_44.txt",
+    "timestamps": [
+     "[00:00:27]-[00:00:35]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Numeric R:R parameters (50 pips SL, 100-500 pip target) — number-dependent rule.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-054",
+  "statement": "Take-profit levels sit at unmitigated old OBs/FVGs - price bounces at levels never mitigated.",
+  "category": "target",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 10,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:15:33",
+     "00:15:55",
+     "00:50:16"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Published TP levels repeatedly coincide with bar-identifiable unmitigated structures (checkable per campaign).",
+  "kill_condition": "TPs repeatedly at arbitrary distances unrelated to any unmitigated level."
+ },
+ {
+  "rule_id": "FR-055",
+  "statement": "Aggressive scaling out: partial profits early and often (fixed fractions; 50-90% off after impulsive moves; bank ~every 50 pips; exit fast in ranges) because gold reverses fast - 'take profit is how I became profitable'.",
+  "category": "target",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 23,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:41:35]-[01:42:27]",
+     "fp-schermopname_2026_07_08 [00:02:03]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 25,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:49:56]-[01:50:17]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 18,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:12:04",
+     "01:12:41"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 23,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:08:51",
+     "01:08:51"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 29,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:16:42",
+     "01:17:42"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 89,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:33:04",
+     "00:47:02"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 67,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:09:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% — partial-size policy varies and needs audio anchoring. | 'go out and invest' garbled (likely 'get out and de-risk/fast'); '50, 160, 60, 70 pips' digit garble — CRITICAL.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Campaign management continues the TP1/partial/percent-off pattern (observed F004-F007).",
+  "kill_condition": "Campaigns switch to single-exit all-or-nothing management.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-056",
+  "statement": "Daily target frame: ~100-300 pips per day taken as sub-5m scalps (a small piece of the move), then done for the day; single-TP 200-300 when all session liquidity rests one side at an HTF OB.",
+  "category": "target",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 6,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:09:50"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 68,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:10:24",
+     "01:10:48"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 36,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:32:46",
+     "01:06:17"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 26,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:22:40]-[00:22:56]",
+     "[01:09:57]",
+     "[01:12:45]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Pip counts (200/250) and dollar equivalences are load-bearing numbers.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Published TP ladders continue to sum to roughly this order of magnitude per campaign.",
+  "kill_condition": "TP ladders repeatedly target multiples beyond this frame or he holds for full swings."
+ },
+ {
+  "rule_id": "FR-057",
+  "statement": "Even a valid mitigation produces at least a 100-200 pip bounce ('dead cat') - enough for the scalp long.",
+  "category": "target",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 84,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:39:56]-[00:40:13]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "PASSING",
+  "repetition_strength": 1,
+  "confirm_condition": "Bar data at future mitigated levels shows >=100-pip bounces in the majority of cited instances.",
+  "kill_condition": "Cited mitigations repeatedly bounce under 100 pips."
+ },
+ {
+  "rule_id": "FR-058",
+  "statement": "Return-to-entry protocol: when price comes back to the averaged entry after partial fills, close the worst entry (in profit/breakeven), hold the best, move stop to entry and take partials.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 21,
+    "source_file": "fp-schermopname_2026_06_29_om_16_37_24.txt",
+    "timestamps": [
+     "[00:00:53]-[00:01:09]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 7,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:23:00",
+     "00:23:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Transcript contradicts itself ('close the worst entry... hold your best' vs 'the worst entry you hold'); which leg is closed must be verified on audio.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Future campaigns repeat the close-worst/hold-best instruction family (observed F006 45938, F007 45973); WHICH leg is held must be audio-confirmed (one transcript self-contradicts).",
+  "kill_condition": "A campaign instruction resolves the ambiguity the other way (hold worst), or audio shows the doctrine differs from the wire's CLOSE_WORST/HOLD_BEST semantics."
+ },
+ {
+  "rule_id": "FR-059",
+  "statement": "Hold a winner until the market makes another higher high (or exit into market close).",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 35,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:13:51"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Runner-management instructions continue to reference the next higher high / market close.",
+  "kill_condition": "Runners repeatedly closed mid-structure with no reference to either."
+ },
+ {
+  "rule_id": "FR-060",
+  "statement": "Duration policy: same-day closes; usually under an hour in a trade (personal scalps 5-10 minutes); no overnight/swing holds on gold (BTC exception: 1-2 days when fully confirmed); range entries exist partly to avoid 6-7-hour sits.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 20,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:38:06",
+     "01:10:45"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 77,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:36:01"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 48,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:37:05",
+     "00:37:11"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 69,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:09:51]-[01:10:06]",
+     "fp-gmt20251012 [00:37:36]-[00:37:48]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 6,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:25:00",
+     "00:25:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "'cell' = sell mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "Campaign lifecycles continue to resolve same-day (F004-F007 all did).",
+  "kill_condition": "A gold campaign deliberately held overnight without stated exception."
+ },
+ {
+  "rule_id": "FR-061",
+  "statement": "Invalidation-cut: when price reclaims the 5m FVG + OB against the position, cut immediately (do not wait for the stop) and consider reversing toward the origin.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 70,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:05:10",
+     "01:05:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'the 50 minutes or the five minutes FPG' — 15-minute mishear plus self-correction; exact invalidating timeframe CRITICAL.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "A future losing campaign shows an early discretionary exit instruction at the reclaim point rather than a stop-out.",
+  "kill_condition": "Positions repeatedly held to full stop through obvious reclaims he has taught as invalidation."
+ },
+ {
+  "rule_id": "FR-062",
+  "statement": "After a stop-out: look for a recovery re-entry on the corrected read, but never force a setup - wait for the next valid one (both halves stated; reconciled as 'recover, don't force').",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 56,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:30:54",
+     "01:05:24"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 72,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:59:37]-[02:00:00]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Post-stop behaviour shows re-entries only at newly valid setups.",
+  "kill_condition": "Immediate revenge re-entries with no new setup, or a blanket no-re-entry policy stated."
+ },
+ {
+  "rule_id": "FR-063",
+  "statement": "React-don't-predict doctrine: wait for the market to show its hand, play the probabilities with a checklist, trade level-to-level, and execute the plan mechanically regardless of single outcomes.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 41,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:56:20"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 78,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:33:09",
+     "01:34:02"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 61,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:40:46",
+     "00:55:26"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 40,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:04:04",
+     "01:04:40"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 102,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:33:19",
+     "00:31:33"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 30,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:32:51",
+     "01:25:46",
+     "01:12:41"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 46,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:06:52",
+     "01:05:55"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'70% probability' here vs 78/80% elsewhere — figure inconsistent. | 'praying the probabilities' = playing.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "Campaigns continue to be reactive (posted after condition confirmation, per timestamps) rather than predictive limit placements.",
+  "kill_condition": "Campaigns shift to forecast-style pre-placed targets without condition language.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-064",
+  "statement": "Review/journaling discipline: journal every trade, review losses honestly, ~2h weekend chart review; keep one system for years adjusting only slightly; ~30 min/day learning cadence.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 30,
+    "source_file": "fp-schermopname_2026_07_08_om_16_19_48.txt",
+    "timestamps": [
+     "[00:01:33]-[00:01:43]",
+     "fp-schermopname_2026_07_01 [00:01:16]-[00:01:30]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 101,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:42:37",
+     "00:42:50"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 106,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:45:04]-[02:45:14]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 107,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:02:18]-[02:02:52]",
+     "[00:24:51]-[00:24:58]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Continued references to journal counts and weekend reviews in future sessions.",
+  "kill_condition": "",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-065",
+  "statement": "Alarm-driven workflow: mark levels, set alarms (indicator 'Asia trap' etc. on the 5-minute), leave the chart; on alarm check the closes, the origin OB and whether it is news time, then wait for the retest and act; set-and-forget multi-trade placement beats screen-sitting.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 12,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:24:15",
+     "00:24:27"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 63,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:53:53",
+     "00:54:39"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 34,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:34:08"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 88,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:49:37",
+     "00:49:48"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 39,
+    "source_file": "fp-schermopname_2026_07_15_om_17_19_26.txt",
+    "timestamps": [
+     "[00:04:18]-[00:04:22]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'Five and 50 minutes' = 5 and 15 minutes mishear — CRITICAL; news-time check is a stated filter. | 'perish' = mishear of 'bearish'.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "Future sessions continue to show alarm-triggered analysis rather than continuous watching.",
+  "kill_condition": "",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-066",
+  "statement": "If the entry level is lost, expect the next stacked zone below (session liquidity + FVG + BPR + fresh OB) and look for the re-entry there.",
+  "category": "management",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 18,
+    "source_file": "fp-2026_07_20_farouk_post_trade_breakdown_f006.txt",
+    "timestamps": [
+     "[06:09]-[06:25]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Failed zones are followed by re-entry campaigns at the next stacked zone (observed F006 pattern).",
+  "kill_condition": "Failed zones repeatedly abandoned with no lower-zone re-entry when one exists."
+ },
+ {
+  "rule_id": "FR-067",
+  "statement": "Two-zones-only: at most one buy and one sell zone per day; between them do nothing - skip the day if price never reaches a zone; a missed trade means waiting for the next zone, never chasing; no mid-range/midpoint trades however convincing the shape.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 21,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:51:36",
+     "00:40:49",
+     "02:07:52"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 4,
+    "source_file": "fp-schermopname_2026_06_24_om_17_02_44.txt",
+    "timestamps": [
+     "[00:01:43]-[00:01:54]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 45,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:05:03",
+     "01:05:43",
+     "01:06:42"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 94,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:30:37",
+     "00:05:21"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 82,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:32:05",
+     "00:48:15"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Campaign frequency stays at 0-2/day anchored to pre-stated zones (observed cadence to date).",
+  "kill_condition": "Multiple same-day campaigns at unplanned mid-range prices.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-068",
+  "statement": "Session-break state gates direction: Asia low lost with a close = shorts only; Asia high broken = no sells (rare high-confluence exceptions; longs preferred); Asia high NOT broken = the A+ long is off (small counter-scalps at most).",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 2,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:12:10",
+     "00:15:20",
+     "01:03:31"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 74,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:22:18",
+     "00:22:26"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 90,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:47:05",
+     "00:47:27"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 51,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:20:24",
+     "00:22:10"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'loans' is a mishear of 'longs'; harmless but quote is mishear-dependent. | CRITICAL: '50-minute candle close' = almost certainly 15-minute. | '50 minutes are all bullish' = 15-minute mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Campaign directions continue to match the session-break state at post time (bar-verifiable; F007 LONG followed an Asia-high context per his rationale).",
+  "kill_condition": "A campaign posted counter to its session-break state without stated exception.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-069",
+  "statement": "News filters: FOMC days take few trades; stacked-news days are 'search and destroy' whipsaws - rely on marked levels; no trading during major political speeches; less news-following = better trading.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 40,
+    "source_file": "fp-schermopname_2026_07_08_om_16_19_48.txt",
+    "timestamps": [
+     "[00:01:56]",
+     "[00:03:12]-[00:03:20]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 41,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:14:03]-[02:15:48]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 47,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:43:32",
+     "00:43:40"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "No-campaign gaps continue to coincide with major-news windows (calendar-checkable).",
+  "kill_condition": "Normal campaign cadence straight through FOMC-class events, repeatedly."
+ },
+ {
+  "rule_id": "FR-070",
+  "statement": "'No room' filter: a break with resistance directly overhead has no reward - skip the continuation, prefer the other side or wait.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 16,
+    "source_file": "fp-2026_07_20_farouk_post_trade_breakdown_f006.txt",
+    "timestamps": [
+     "[00:53]-[01:17]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Skipped-break narrations continue to cite overhead structure (F006 pre-entry commentary already did).",
+  "kill_condition": "Campaigns repeatedly launched into overhead structure he has marked."
+ },
+ {
+  "rule_id": "FR-071",
+  "statement": "FVG-void filter: before selling a breakdown, check the prior up-move for downside FVGs - none means price goes up first (stop-hunt) before continuing down.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 31,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:01:30]-[00:02:15]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Future sell decisions reference downside-FVG presence; bar data confirms the up-first path when absent, in narrated cases.",
+  "kill_condition": "Cited no-FVG breakdowns repeatedly continue straight down."
+ },
+ {
+  "rule_id": "FR-072",
+  "statement": "Both-sides-swept day: when Asia high AND low both break in the same day, read the second break as a sweep/confirmation, not continuation.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 33,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:03:13]-[00:03:27]",
+     "fp-schermopname_2026_07_15 [00:00:14]-[00:00:20]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Both-sides days in bar data resolve as reversals of the second break in the majority of narrated instances.",
+  "kill_condition": "Second breaks on both-sides days repeatedly continue trending."
+ },
+ {
+  "rule_id": "FR-073",
+  "statement": "Do not trade inside high-timeframe FVGs - use the low-timeframe OBs within them for execution.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 13,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:48:36"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Entry zones repeatedly reconstruct as low-TF OBs even when sitting inside HTF FVGs.",
+  "kill_condition": "Zones repeatedly span whole HTF FVGs with no low-TF structure."
+ },
+ {
+  "rule_id": "FR-074",
+  "statement": "Trend-side only: in an uptrend take retest longs only (never counter-shorts, never long the top); do not buy at range high - look for the sell there.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 44,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:07:14",
+     "00:07:24"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 7,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:21:14]-[01:22:19]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 38,
+    "source_file": "fp-schermopname_2026_07_15_om_17_19_26.txt",
+    "timestamps": [
+     "[00:04:22]-[00:04:37]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Campaign directions continue to align with the marked trend state; no counter-trend entries without stated exception.",
+  "kill_condition": "Repeated counter-trend campaigns against his own marked structure."
+ },
+ {
+  "rule_id": "FR-075",
+  "statement": "Do not buy directly under a big 1-hour rejection wick - the sellers are active there; the buy belongs at the stacked zone below.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 86,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:36:39",
+     "00:36:48"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED TIER_AMBIGUOUS",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'the accelerator' is a mishear (likely 'the sellers are') — meaning depends on it.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Buy zones continue to sit below (not at) large 1h rejection wicks in bar data.",
+  "kill_condition": "Buy zones repeatedly placed immediately under fresh 1h rejection wicks."
+ },
+ {
+  "rule_id": "FR-076",
+  "statement": "Focus: one instrument (gold - the system's statistics are gold-built), at most two; BTC only for A+++ setups; silver and oil are not traded.",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 57,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:30:06",
+     "01:38:47"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 21,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:19:26",
+     "01:30:58"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 61,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:57:35",
+     "00:53:14"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 87,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:23:45]-[02:24:04]",
+     "[02:35:16]-[02:35:24]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 51,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:52:28"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 32,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:13:14",
+     "01:10:15"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "The gold-trades channel remains ~100% XAUUSD campaigns (author-scope evidence already shows this); BTC posts stay rare/high-grade.",
+  "kill_condition": "Regular multi-instrument campaigns in the gold lane."
+ },
+ {
+  "rule_id": "FR-077",
+  "statement": "Crypto correlation: when BTC goes down everything in crypto goes down; altcoin trades are conditional on the BTC picture (gold does not behave this way).",
+  "category": "filter",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 62,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:07:24",
+     "00:07:04"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-078",
+  "statement": "Loss-first risk framing: decide the loss before entry and mentally spend it; equal risk per trade at 1:2-1:3 reward:risk; ~5 trades/week stays profitable even losing two; never all-in regardless of win rate.",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 19,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:11:34",
+     "01:12:04",
+     "00:25:30"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 20,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:11:34"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 70,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:52:55]-[01:53:52]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Stated risk framing recurs; published stop distances vs TP ladders continue to imply roughly 1:2-1:3.",
+  "kill_condition": "Published campaigns repeatedly imply sub-1:1 structures or all-in language."
+ },
+ {
+  "rule_id": "FR-079",
+  "statement": "Sizing ladder: roughly a 10-25K account for one lot; below that 0.1/0.01 and build gradually (thresholds drift between sessions; one negation garbled).",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 34,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "02:05:37",
+     "02:07:14"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 75,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:41:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'If you have a $1,000 account, do more than that' is almost certainly a mishear of 'do NO more than that' / 'don't do more than that' — inverted meaning, CRITICAL.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "The audio check confirms the thresholds and future sizing advice repeats them.",
+  "kill_condition": "Audio shows materially different thresholds, or later sessions contradict the ladder."
+ },
+ {
+  "rule_id": "FR-080",
+  "statement": "Confluence-scaled risk: risk more on A+/high-probability zones (wallet and psychology permitting); few meaningful trades beat many small ones; increase size only after a confirmed break of structure.",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 35,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "02:05:22"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 76,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:22:49"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 90,
+    "source_file": "fp-schermopname_2026_07_02_om_19_40_23.txt",
+    "timestamps": [
+     "[00:00:04]-[00:00:12]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 97,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:11:27",
+     "00:11:38"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 31,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:32:51",
+     "00:27:39"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "'Bigger size' remarks continue to attach to A+/BOS-confirmed campaigns (observed 2026-07-02 instance).",
+  "kill_condition": "Size-up remarks attach to low-confluence trades, repeatedly.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-081",
+  "statement": "Month-end: keep risk low because the market 'does stupid stuff'.",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 70,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:02:47",
+     "00:10:36"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED TIER_AMBIGUOUS",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Reduced-size/no-trade language recurs at month-ends.",
+  "kill_condition": "Month-end sessions repeatedly show size-up behaviour."
+ },
+ {
+  "rule_id": "FR-082",
+  "statement": "Performance is judged at month-end, not per trade: several stop-losses per month are acceptable if the month ends green.",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 71,
+    "source_file": "fp-schermopname_2026_07_02_om_19_40_23.txt",
+    "timestamps": [
+     "[00:05:15]-[00:05:31]",
+     "fp-schermopname_2026_07_08 [00:03:20]-[00:03:30]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "The framing recurs after future losses.",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-083",
+  "statement": "Daily percent discipline: ~1-3% per day; once hit, protect or stop trading; never round-trip a winner (BE at ~0.2% up on scalps).",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 67,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:15:34]-[00:16:00]",
+     "[00:44:13]-[00:44:20]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Done-for-the-day language continues to follow target-sized wins.",
+  "kill_condition": "Continued trading after stated daily targets, repeatedly."
+ },
+ {
+  "rule_id": "FR-084",
+  "statement": "His stated personal gold scalp parameters: 1-4 candles per trade, 0.03-0.2 lots, ~$200 per scalp, up to three times a day.",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 68,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:01:52]-[00:02:03]",
+     "[00:30:28]-[00:30:42]",
+     "[00:40:33]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Lot sizes vary across mentions (0.03/0.05/0.1/0.2) — sizing numbers need audio confirmation.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-085",
+  "statement": "Risk less on altcoins (Solana) than on gold/BTC - it is still crypto.",
+  "category": "risk",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 22,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:21:48",
+     "01:22:19"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": false,
+  "avr_reason": "'MPTC' garble (likely 'em, BTC').",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-086",
+  "statement": "Playbook indicator usage doctrine (PRIOR ART FP-INDICATOR-005/006 - transcript evidence only, not a discovery): a levels-not-signals tool (session H/L, FVG/BPR/OB/CHoCH/IFVG/engulfing, high-probability-OB filter, green/red panel checklist, 'old Asia sessions', 'all OBs', alert routes); the engulfing overlay is toggled on only at execution; keep the chart clean.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 0,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:03:42",
+     "00:58:53"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 1,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:04:14",
+     "01:11:18"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 86,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:17:02"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 32,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:11:40"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 33,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:13:15"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 96,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:45:51",
+     "00:46:00"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 109,
+    "source_file": "fp-schermopname_2026_07_05_om_12_53_09.txt",
+    "timestamps": [
+     "[00:00:13]-[00:05:20]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 95,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:39:45",
+     "00:40:10",
+     "00:40:34"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "Panel/feature references in future sessions stay consistent with the documented catalogue (FP-INDICATOR-005/006).",
+  "kill_condition": "Panel semantics change materially (indicator-version drift risk, already registered).",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-087",
+  "statement": "VWAP: above = bullish, below = bearish (institutional fair price); losing daily+weekly+monthly VWAP means every push up is a short; a flat/sideways VWAP means no volume - stand aside.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 59,
+    "source_file": "fp-schermopname_2025_12_14_om_16_45_20_1.txt",
+    "timestamps": [
+     "[00:02:48]-[00:04:16]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "VWAP-state references recur in gold session analyses and match bar-computable VWAP states.",
+  "kill_condition": "His bias calls repeatedly contradict the VWAP rules he teaches."
+ },
+ {
+  "rule_id": "FR-088",
+  "statement": "Volume-profile rules: fixed-range VAH = sell, VAL = buy, POC = intermediate target/support; below the daily value area = bearish (retest short) until reclaimed; claiming the weekly POC allows longs to the next weekly POC.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 57,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:04:14]-[00:04:21]",
+     "[00:08:41]-[00:08:47]",
+     "[00:06:23]-[00:06:29]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 58,
+    "source_file": "fp-schermopname_2025_12_14_om_17_03_11.txt",
+    "timestamps": [
+     "[00:00:56]-[00:01:34]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "VP-level references recur and match computable fixed-range profiles in cited instances.",
+  "kill_condition": "Cited VP levels repeatedly ignored by his own trade choices."
+ },
+ {
+  "rule_id": "FR-089",
+  "statement": "Session-box rules: lose the box level then fake-retest = short; hold the level and break out = long; volume ('yellow') candles mark market-maker pushes - wait for the retrace and go with them.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 60,
+    "source_file": "fp-schermopname_2025_12_14_om_16_45_20_1.txt",
+    "timestamps": [
+     "[00:00:30]-[00:02:18]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Box-level plays recur in future breakdowns consistent with the taught semantics.",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-090",
+  "statement": "SFP (swing failure pattern): a failed sweep of a high/low signals reversal - always combined with other confluence, never used alone.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 61,
+    "source_file": "fp-schermopname_2025_12_14_om_17_03_11.txt",
+    "timestamps": [
+     "[00:02:14]-[00:04:48]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "SFP citations continue to appear only alongside other confluences.",
+  "kill_condition": "SFP used as a standalone trigger, repeatedly."
+ },
+ {
+  "rule_id": "FR-091",
+  "statement": "EMAs: he does not use them; choppy/sideways EMAs mean do nothing (he reads the same from the range), and an EMA flattening at a high-probability level precedes a big move.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 63,
+    "source_file": "fp-schermopname_2025_12_14_om_17_03_11.txt",
+    "timestamps": [
+     "[00:05:03]-[00:05:29]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 27,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:53:21",
+     "00:53:51"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Continued absence of EMA-based reasoning in his gold analyses.",
+  "kill_condition": "EMA-driven entries start appearing in his gold method."
+ },
+ {
+  "rule_id": "FR-092",
+  "statement": "Intermarket reads: DXY at support implies gold down; silver moves first and gold follows; oil is inversely related; gold and BTC mimic each other - checked as context, not traded signals.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 76,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[02:40:11]-[02:40:17]",
+     "fp-schermopname_2026_07_14 [00:01:20]-[00:01:28]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 49,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:46:25",
+     "00:48:53"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 50,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:50:16"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "Intermarket citations continue as context (not entries) and the stated relationships hold in cited windows.",
+  "kill_condition": "He begins trading gold off intermarket signals alone, or the cited relationships repeatedly invert."
+ },
+ {
+  "rule_id": "FR-093",
+  "statement": "Bullish RSI divergence at an origin-level retest supports the long.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 78,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:46:00]-[00:46:28]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "DEMONSTRATED",
+  "repetition_strength": 1,
+  "confirm_condition": "Divergence citations recur at retest longs and are bar-verifiable.",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-094",
+  "statement": "Volume is read from candle bodies (thin candles = no volume) rather than a volume indicator.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 44,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:04:02",
+     "01:07:16"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Thin-candle language continues to stand in for volume analysis.",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-095",
+  "statement": "Invert-scale technique: flip the chart to apply long-side concepts symmetrically to shorts.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 83,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:21:00",
+     "00:21:57"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "general",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "The technique recurs in teaching sessions.",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-096",
+  "statement": "Prescribed self-backtesting: replay the Asia-break strategy using the indicator's old-Asia-sessions display.",
+  "category": "indicator",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 58,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:58:14",
+     "00:59:03",
+     "00:59:19"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Homework assignments recur; members report replay results in sessions.",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-097",
+  "statement": "Morning routine: mark HTF levels first (daily/weekly/4h/1h), then Asia high/low and the range; identify which level made the extremes plus unmitigated OBs; define the day's buy/sell zones; set alarms and wait for price to come to a zone.",
+  "category": "weekly_plan",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 3,
+    "source_file": "fp-schermopname_2026_06_24_om_17_02_44.txt",
+    "timestamps": [
+     "[00:01:33]-[00:01:43]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 10,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:28:09",
+     "00:28:41",
+     "00:29:11",
+     "00:29:43"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 11,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:18:18",
+     "00:36:01"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 6,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:15:04]-[01:15:44]",
+     "[02:21:50]-[02:22:07]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'50 minutes' timeframe mishear inside the routine description (likely 15 minutes).",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "Daily posts/streams continue to show pre-marked zones existing before entries (timestamp-verifiable; H-FPL-06 measures the plan-vs-campaign relation).",
+  "kill_condition": "Entries repeatedly precede any marked plan for the day."
+ },
+ {
+  "rule_id": "FR-098",
+  "statement": "Two-scenario planning: define scenario long (break high, retest, long) and scenario short (lose low, retest, sell) in advance - including a plan-B zone if the first never taps - and wait for one to confirm.",
+  "category": "weekly_plan",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 23,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:49:14",
+     "00:50:04",
+     "00:51:30"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 79,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:37:35",
+     "01:47:25"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 81,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:31:04",
+     "00:48:30",
+     "00:48:45"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 99,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:09:17",
+     "00:10:15"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'50 minutes kind of close' = 15-minute candle close mishear; 'cell' = sell. | 'sales zone' = sell zone mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "Weekly plans continue to state both scenarios (observed in the W30 Sunday plan).",
+  "kill_condition": "Plans collapse to single-scenario predictions without alternatives.",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-099",
+  "statement": "Weekly temporal patterns: Monday+Tuesday set the week's high/low range; after 3+ consecutive down days expect a bounce (~55%); Friday tends to mirror/reverse the week.",
+  "category": "weekly_plan",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 0,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:03:32]",
+     "[01:32:12]"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 30,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:17:05",
+     "01:17:17",
+     "01:17:30"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'Five, 55% chance' ambiguous (55%? 5 days?); percentage needs audio check.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 2,
+  "confirm_condition": "The stated patterns hold in bar data over coming weeks at better than chance (descriptive tally only, no fitting).",
+  "kill_condition": "The patterns fail over a meaningful sample of weeks."
+ },
+ {
+  "rule_id": "FR-100",
+  "statement": "Demonstrated weekly-plan instances (concrete level ladders; all price digits garble-prone and audio-critical) - retained as provenance for reconstructing plan regions, not as timeless rules.",
+  "category": "weekly_plan",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 38,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:26:46",
+     "01:27:36",
+     "01:28:21",
+     "01:31:38"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 58,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:34:06",
+     "00:35:30",
+     "00:34:43",
+     "00:34:53"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 60,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:38:05",
+     "00:38:46",
+     "00:39:05",
+     "00:39:15"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 52,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:03:48",
+     "00:33:17"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 53,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:14:15",
+     "01:14:42",
+     "01:14:48"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 55,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "00:34:20",
+     "00:34:24"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 85,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:22:15]-[00:22:40]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 86,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:05:09]-[00:05:47]"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 98,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:20:16",
+     "00:20:34",
+     "00:44:16"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "All price levels are spoken in garbled shorthand ('four to 40' = 4240 or 4440?) — the long zone quoted above the sell zone suggests digit corruption; CRITICAL. | Prices spoken as '130, 120' / 'On the 30 ish, on the 20' (likely 4120-4130) — garbled digits CRITICAL; 'buys is still longer' = 'bias is still long'. | 'the 177' is a garbled price digit (likely 4177 or 4277 — inconsistent with the 4230 zone) — CRITICAL. | Price digits (4370) and pip counts (300-400) plus 'below sorry above' direction correction are garble-prone; 'WIC' = wick. | All price digits (4140/4150/4250/4260/4070/3850/3860) are CRITICAL and garble-prone. | CRITICAL: '50 minute' = likely 15-minute; 'for for once for 170' = garbled price (likely 4170 or 4070). | Price digits badly garbled ('4,099, 4,000... 4,000 hundred' — likely 4,099/4,100); CRITICAL level values. | Price digits (3977/3978/3981) are load-bearing.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 6,
+  "confirm_condition": "",
+  "kill_condition": "",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-101",
+  "statement": "Execution tooling: MetaTrader/VT market orders with manual fixed-fraction partial closes at TP zones (or automation); phone alarms on levels replace screen-watching.",
+  "category": "tooling",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 93,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:41:17]-[01:46:34]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "Future execution descriptions stay consistent (broker/tooling stability).",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-102",
+  "statement": "Exocharts footprint suite (Fishel education, crypto): chart/tick-size setup, saved templates, delta/CVD + divergence dots, OI and net-positions full-data views, bid/ask footprint support heuristic, TradingView 4-chart synced layout with TR-main - used WITH your own TA, never standalone.",
+  "category": "tooling",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 94,
+    "source_file": "fp-3_how_to_setup_first_chart_in_exochart_1.txt",
+    "timestamps": [
+     "[00:01:12]-[00:07:15]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 96,
+    "source_file": "fp-4_how_to_setup_templates.txt",
+    "timestamps": [
+     "[00:00:20]-[00:02:21]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 99,
+    "source_file": "fp-1_welcome.txt",
+    "timestamps": [
+     "[00:00:36]-[00:02:20]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 97,
+    "source_file": "fp-6_delta_bars_oi_net_longs_and_net_shorts.txt",
+    "timestamps": [
+     "[00:00:33]-[00:01:58]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 98,
+    "source_file": "fp-6_delta_bars_oi_net_longs_and_net_shorts.txt",
+    "timestamps": [
+     "[00:02:25]-[00:04:59]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 95,
+    "source_file": "fp-3_how_to_setup_first_chart_in_exochart_1.txt",
+    "timestamps": [
+     "[00:03:40]-[00:04:10]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 108,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:07:04]-[00:10:02]",
+     "[00:03:58]-[00:09:39]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": true,
+  "avr_reason": "Volume numbers heavily garbled ('sixty twenty nine thirty sixty') — the threshold logic depends on them.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 5,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-103",
+  "statement": "Gold session statistics (attributed to 22-year data; figures drift between tellings): Asia-high break ~78-80% continuation (Asia-low ~80-85%); London-break variants 63-83%; all three session highs broken claimed '100%'.",
+  "category": "claim",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 3,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:07:18",
+     "00:26:11",
+     "00:32:23",
+     "02:07:57",
+     "01:15:05"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 5,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "00:09:09",
+     "01:11:10",
+     "01:15:50"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 29,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:15:05",
+     "01:15:34"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 0,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:14:48",
+     "00:15:20"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 1,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:02:27",
+     "01:02:59"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 14,
+    "source_file": "fp-schermopname_2026_07_02_om_19_40_23.txt",
+    "timestamps": [
+     "[00:02:53]-[00:03:24]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Percentages are inconsistent across mentions (78 vs 80 up; 80 vs 83 vs 85 down) — exact figures need audio check. | Stat percentages read from an off-screen document; digits are mishear-prone and conflict with other quoted figures (80/85%). | Statistical claim (100%, 22-year data) and exact session-combination wording must be checked; 'higher choice' is garbled ('higher chance'). | CRITICAL direction garble: transcript says Asia-high break gives '80% chance that they will go lower' which contradicts the surrounding logic (likely 'go higher'); percentages need audio check. | Percentages garbled ('78 90 percent sorry um 78 to 80') — exact statistic needs audio; also a CLAIM about external data, not verified.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 3,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-104",
+  "statement": "BTC session statistics (8-year data): 60-72% continuation variants.",
+  "category": "claim",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 31,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:18:12",
+     "01:18:39"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": true,
+  "avr_reason": "Rapid-fire percentages with garbles ('edge, uh, low', '70% gold, lower'); digits need audio check.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-105",
+  "statement": "Win-rate and results claims: 90+% win rate; 22 wins/2 losses month; 2 losses in 20+; 'never a red week/month'; 140K personal month; the gap/ORB algo backtests 'above 90%'.",
+  "category": "claim",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 42,
+    "source_file": "fp-live_with_farouk_sunday_5_july_2026.txt",
+    "timestamps": [
+     "01:13:44",
+     "01:54:33"
+    ]
+   },
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 55,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "00:30:11",
+     "01:07:52"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 37,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "01:04:40",
+     "00:27:09"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 100,
+    "source_file": "fp-10_min_stream.txt",
+    "timestamps": [
+     "00:02:43",
+     "00:15:46",
+     "00:09:55"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 101,
+    "source_file": "fp-schermopname_2026_07_08_om_16_19_48.txt",
+    "timestamps": [
+     "[00:03:30]-[00:03:56]",
+     "fp-schermopname_2026_07_02 [00:05:31]-[00:05:38]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 102,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[01:53:52]-[01:54:09]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 103,
+    "source_file": "fp-gmt20251221_181518_recording_1.txt",
+    "timestamps": [
+     "[00:54:38]-[00:55:07]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "'the car will fire me' garbled (likely 'Kyle will fire me'); monetary figure unverifiable from transcript. | 'two laws' = two losses mishear; '22 winning trades and also 22 trades' self-contradictory — counts need audio check. | Win-rate figure (90%) is a headline number. | All trade-count/pip/dollar figures are digit-sensitive outcome claims. | Win-rate percentages and 'never red' claim are outcome-critical numbers. | Win-rate figure ('90% or something... actually above 90%') — outcome-critical number from small backtest.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 6,
+  "confirm_condition": "",
+  "kill_condition": "",
+  "mixed_provenance_note": "includes fp-10_min_stream sources (tier-ambiguous) alongside unambiguous ones"
+ },
+ {
+  "rule_id": "FR-106",
+  "statement": "Per-trade pip/dollar outcome claims (1000-pip Monday, 400/630/190-200-pip trades, the 60-cent stop-out story, the missed 1600-pip move, member results).",
+  "category": "claim",
+  "sources": [
+   {
+    "file": "miner1_july_live_sessions_a.json",
+    "index": 87,
+    "source_file": "fp-live_with_farouk_friday_3_july_2026.txt",
+    "timestamps": [
+     "01:03:50"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 38,
+    "source_file": "fp-live_with_farouk_friday_10_july_2026.txt",
+    "timestamps": [
+     "00:16:51",
+     "00:25:00",
+     "00:26:00",
+     "00:26:35"
+    ]
+   },
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 68,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:00:14",
+     "01:00:20"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 105,
+    "source_file": "fp-schermopname_2026_07_01_om_20_16_35.txt",
+    "timestamps": [
+     "[00:00:46]-[00:00:51]",
+     "f006 [06:57]-[07:06]",
+     "fp-gmt20251221 [01:05:29]",
+     "2026_06_29 [00:00:23]-[00:00:36]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": true,
+  "avr_reason": "Pip counts spoken rapidly; digits mishear-prone. | All pip/dollar figures are garble-prone digits. | Cent/price figures garble-prone; 'whole top' likely 'whole drop'. | Pip counts are outcome-critical numbers; 'piper'=pips mishear.",
+  "explicitness": "TAUGHT",
+  "repetition_strength": 4,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-107",
+  "statement": "Crypto growth claims (17K to ~20.2K in ~10 days; $500 doubled in 3 days; 5K wallet to 10-11K).",
+  "category": "claim",
+  "sources": [
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 100,
+    "source_file": "fp-1_welcome.txt",
+    "timestamps": [
+     "[00:01:48]-[00:02:00]"
+    ]
+   },
+   {
+    "file": "miner3_older_and_short_recordings.json",
+    "index": 104,
+    "source_file": "fp-gmt20251012_140632_recording_1920x1200_1.txt",
+    "timestamps": [
+     "[00:31:37]-[00:31:53]",
+     "[00:33:12]-[00:33:28]",
+     "[00:38:58]-[00:39:12]",
+     "[00:44:40]-[00:44:47]"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "crypto",
+  "audio_verification_required": true,
+  "avr_reason": "Multiple garbled dollar figures ('20,000, uh, 20, uh, 2,200', '10, 9, 10K, or something, 11K').",
+  "explicitness": "PASSING",
+  "repetition_strength": 2,
+  "confirm_condition": "",
+  "kill_condition": ""
+ },
+ {
+  "rule_id": "FR-108",
+  "statement": "The gold 'algorithm' changes a little every month and then comes back, requiring periodic adjustment.",
+  "category": "claim",
+  "sources": [
+   {
+    "file": "miner2_july_live_sessions_b.json",
+    "index": 64,
+    "source_file": "fp-live_with_farouk_sunday_12_july_2026.txt",
+    "timestamps": [
+     "01:00:43"
+    ]
+   }
+  ],
+  "source_tier": "PERSONAL_LIVE_METHOD_UNCONFIRMED",
+  "instrument_scope": "XAUUSD",
+  "audio_verification_required": false,
+  "avr_reason": "",
+  "explicitness": "PASSING",
+  "repetition_strength": 1,
+  "confirm_condition": "",
+  "kill_condition": ""
+ }
+]

@@ -1,0 +1,69 @@
+{
+  "doc_id": "orange_indicator_knowledge_audit",
+  "as_of": "2026-07-12T13:05Z",
+  "mode": "INDICATOR_KNOWLEDGE_AUDIT_READ_ONLY",
+  "live_gate_note": {"listener_pid_23012": "running/untouched; captured msg 45649 live during the audit", "msg_45649": "12:47:23Z member request to mirror Discord news-feed into the Telegram relay - IRRELEVANT, non-triggering", "cursor": 45648, "cycle_006_triggered": false},
+  "lineage": {
+    "FP-INDICATOR-001_dec2025_kyle_poc_era": ["session range boxes top/mid/bottom", "VWAP session/D/W/M", "POC/VAH/VAL D/W", "SFP dots", "liquidity-sweep marks", "ORB top/mid/bottom", "yellow market-maker candles", "NO CHoCH/OB panel"],
+    "FP-INDICATOR-005_current": "Farouk's Playbook - Smart Money Suite (alert surface + panel; ~Jul-5 update added London/US H/L + extended boxes)",
+    "era_caveat": "VWAP/POC/VAH/VAL confirmed for the Dec era; presence in the CURRENT suite unconfirmed"
+  },
+  "confirmed_alert_conditions": {
+    "named_13": ["Any alert() function call", "Bullish BPR formed", "Bearish BPR formed", "Bullish Engulfing", "Bearish Engulfing", "Sweep low", "Sweep high", "Asia Trap Bearish", "Asia Trap Bullish", "A+++ setup", "A+ or better", "CHoCH up", "CHoCH down"],
+    "evidence": "hashed Create-alert screenshots (farouk_indicator_alert_conditions.png sha256 91679b89... + 9 siblings) + live Gate-G/H payload captures (CHoCH->Sweep->A sequences, A+ capture)",
+    "frequency_options": ["Once only", "Once per bar", "Once per bar close (available, USER-selected, not enforced)", "Once per minute"],
+    "payload_defaults": "named conditions pre-fill plain condition name; no JSON/placeholders visible; Any alert() runtime message = script-controlled (UNKNOWN)"
+  },
+  "confirmed_panel_fields": {
+    "panel": ["TF", "CHoCH <price>", "Asia break LOW/HIGH/X", "OB retest <price/X>", "Current OB <price>", "Fresh OB <price>"],
+    "numeric_examples": {"15m_CHoCH": 4174.34, "15m_current_fresh_OB": 4022.13},
+    "display_objects": ["FVG", "BPR", "OB multi-TF D/6H/4H/1H/15m", "Asia session range", "London H/L (blue)", "US H/L (yellow)", "IFVG toggle", "engulfing marks", "Tweezer/Star marks (ATR 0.15/0.08/0.6/0.3)", "box extension 50 bars / extend-right"],
+    "settings_caveat": "values are Farouk's on-screen config, NOT proven factory defaults",
+    "spoken_semantics": ["not a signal indicator - MM bounce levels", "only strong OBs", "ORB = first 15 min (London 09:00 GMT+1, NY 15:30)", "unretested orb / unmitigated level / unfilled gap = magnet", "flat candles = mitigation-required class"]
+  },
+  "lane6_fields_in_use": {
+    "inputs": ["alert_type (mapped enum)", "alert_timestamp_utc", "bar_close_confirmed (REQUIRED)", "indicator_price_level_if_visible (closed-bar panel)", "direction_hint", "structure/liquidity/OB-FVG-BPR context", "confluence ranking (tiebreak)", "repaint_guard_status"],
+    "high_usefulness": ["Sweep low/high", "CHoCH up/down (+panel price)", "BPR formed", "Asia Trap"],
+    "weight_zero_record_only": ["A+++ setup", "A+ or better"],
+    "excluded": ["Engulfing alone", "[kyle] POC T-variants (meaning UNKNOWN)", "SFP (attribution unconfirmed)", "anything intra-bar (F5)"]
+  },
+  "cycle_006_capture_fields": ["8F indicator_price_level_extraction + verbatim panel levels", "fill_lag_cost", "indicator_level_source_kind enum (003B + 004B additions LONDON_/US_H/L, FLAT_CANDLE, GAP)", "london/us_high_low_panel_evidence", "orb_timing_context", "magnet_logic_evidence", "bar_close_confirmed flags", "feed notes (Vantage vs Pepperstone)"],
+  "confirmed": ["13 named conditions + Any alert()", "panel fields + examples", "feature set + visible settings", "A-grade alerts exist; live A+ capture", "CHoCH/Sweep/A payload sequences", "Jul-5 update (London/US H/L, extended boxes, Asia-trap usage)", "Dec-era semantics pack (for that era)", "ORB definition + times (spoken)", "free distribution, no public source"],
+  "inferred": ["A LONG/SHORT via alert() payloads (dedicated named conditions UNCONFIRMED_BELOW_FOLD)", "closed-bar panel snapshot as leak-free anchor (untested live)", "001 vs 005 lineage split", "'only strong OBs' mechanism (his claim)", "London/US H/L behaviour beyond the toggle"],
+  "unknown": [
+    "exact internal A+/A+++ formula (Pine hidden) - NOT KNOWN",
+    "repaint/intrabar behaviour of markers + panel - NOT fully known (never demonstrated; F5 guard binding)",
+    "runtime alert() message content + freq argument",
+    "detection-engine params: CHoCH pivot length, FVG lookback/min size, BPR overlap threshold, zone removal/max, ordinary+STRONG OB impulse thresholds, equal-H/L lookback, HTF-OB selection input, Asia session hours/timezone, explicit candle-close setting",
+    "below-the-fold named conditions",
+    "[kyle] POC T-variants meaning",
+    "SFP attribution in current suite",
+    "webhook payload customisation",
+    "numeric displacement threshold (none exists - FVG-presence design stands)"
+  ],
+  "safety_classification": {
+    "capture_only_safe_now": "verbatim panel values, payload records, level-source kinds, magnet/ORB/London-US context, A-grades at weight 0 - all with bar_close_confirmed flags",
+    "lane6_pre_marking_safe_under_guards": "HIGH-class conditions + closed-bar panel anchors under F5 repaint guard + frozen-window hash + leakage checks + minimum-evidence rule; uncertain -> PRE_MARK_INSUFFICIENT_CONTEXT",
+    "v04_v05_backlog_offline_only": ["displacement FVG-presence test", "fvg_claim_chain", "TF-hierarchy grading", "any indicator-derived confluence input"],
+    "never_without_forward_proof": ["A-grade correlation (formula invisible)", "any repaint-dependent use", "session-break priors (Asia 78-80%, London/US)", "any scoring use of panel values", "unparameterised detection-engine outputs"]
+  },
+  "task_answers": {
+    "knows_exact_a_grade_formula": false,
+    "repaint_behaviour_fully_known": false,
+    "can_pre_mark_without_telegram": "PARTIALLY in principle (levels are the indicator's own outputs; alert lane delivers numeric anchors) but NOT YET PROVEN: 0 indicator-sourced pre-marks tested, A-grade layer invisible, detection-engine params unknown (cannot regenerate zones from raw OHLC), retro n~3 with 0 profitable fills; stop-width is the binding constraint; Telegram remains ground truth"
+  },
+  "missing_evidence": [
+    "live repaint demonstration (alert-lane captures across bar closes - first market-open session provides this)",
+    "more runtime alert() payload samples",
+    "dropdown scrolled below 'CHoCH down' (A LONG/SHORT named conditions?)",
+    "settings video reaching the detection-engine section",
+    "A-grade formula (source access or forward correlation only)",
+    "Asia session hours/timezone input value",
+    "current-suite status of SFP + POC/VAH/VAL",
+    "EDU-035 fuller displacement session (~Sept-2025)",
+    "indicator changelog Dec-era -> Jul-5",
+    "his alert Message customisation status"
+  ],
+  "safety": {"alerts_touched": false, "worker_deployed": false, "execution_built": false, "permits_leases_orders": "none", "gates": "PAPER/PREVIEW/False/False", "v03_labels": "unchanged", "v04_live": false, "not_integration_ready": "unchanged"},
+  "next": "Cycle 006 / XAU-F001 at first real XAU post after ~22:00Z reopen - also the first live test of the F5 repaint guard and the first free evidence for missing items 1-2"
+}

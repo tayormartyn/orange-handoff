@@ -1,0 +1,48 @@
+{
+  "diff_id": "sonic_v03_rule_ledger_diff",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / REVIEW_ONLY / SINGLE_SESSION",
+  "sources": ["synthesis_v0.3/FAROUK_METHODOLOGY_RULE_LEDGER_v0.3.jsonl (23 rules)", "synthesis_v0.3/CONTRADICTION_ADJUDICATION_v0.1.md (8 items)"],
+  "compared_against": ["FAROUK_PLUS_RULESET_v0_1", "detector v0.2", "R6 six-lane model", "Lane 6 v0_1", "Cycle-002 schema (8C/8D/8F)"],
+  "rules": {
+    "R-MGMT-TP1-BE": {"class": "ALREADY_IN_ORANGE", "where": "Model B lane-4 +50p BE arm; 8C scratch capture; independently re-validated by FP-EDU-003"},
+    "R-MGMT-PARTIAL": {"class": "ALREADY_IN_ORANGE", "where": "lane-4 tranche playbook; 8D leg events"},
+    "R-MGMT-CONTINGENCY": {"class": "PARTIALLY_IN_ORANGE + MISSING_HIGH_VALUE_REFINEMENT", "where": "R2b penalises ALL re-entries; Sonic distinguished pre-declared contingency (C004/45097) from impulsive chains (J17)", "merge": "contingency_pre_declared flag"},
+    "R-RISK-1PCT": {"class": "OBSOLETE_OR_REJECTED (for the review lane)", "note": "risk policy = governance/execution layer; excluded by no-risk-sizing policy; POLICY_DIVERGENCE note preserved"},
+    "R-BOS-CANDLECLOSE": {"class": "MISSING_HIGH_VALUE + CONTRADICTS (EDU-016 vs 021)", "proposal": "score candle-close as +confidence (EDU-021 reading; video-002 live usage supports), never a gate", "queue": "NEEDS_HUMAN_REVIEW"},
+    "R-CHOCH-NONUNIVERSAL": {"class": "PARTIALLY_IN_ORANGE", "where": "ruleset never requires CHoCH; family-scope note added for Lane 6", "queue": "KEEP_AS_WATCHLIST"},
+    "R-OTE-FIB": {"class": "MISSING_LOW_VALUE", "note": "OTE family unobserved in the 34-trade sample", "queue": "NEEDS_FORWARD_EVIDENCE"},
+    "R-STOP-OTE": {"class": "MISSING_HIGH_VALUE", "merge": "first structural input to stop_width_by_level_type v0.1", "queue": "MERGE_NOW_AS_REVIEW_FEATURE"},
+    "R-RR-2R": {"class": "CONTRADICTS (doc vs observed practice — NEW finding by this diff)", "evidence": "34-trade sample: tranche-1 exits ~50p vs $20-100 stops = far below 2R; only runners occasionally reach 2R+", "queue": "NEEDS_HUMAN_REVIEW (R6 honesty note)"},
+    "R-NY-1330": {"class": "ALREADY_IN_ORANGE", "where": "R4b/session policy; NY-open winner cluster confirms"},
+    "R-VA-68": {"class": "MISSING_LOW_VALUE", "note": "volume-profile window unknown; family unused", "queue": "NEEDS_FORWARD_EVIDENCE"},
+    "R-CONFLUENCE-ORDER": {"class": "MISSING_HIGH_VALUE", "merge": "Lane-6 pre-mark confidence ORDERING (BOS > FVG-inversion > Level-reclaim > SFP); NOT a count threshold", "queue": "MERGE_NOW_AS_REVIEW_FEATURE"},
+    "R-DISPLACEMENT": {"class": "PARTIALLY_IN_ORANGE (as a rejection)", "note": "no numeric size = matches our R3 rejected-as-defined", "queue": "NEEDS_FORWARD_EVIDENCE (recovery item 4)"},
+    "R-MITIGATION": {"class": "MISSING_HIGH_VALUE (via adjudication #4 nuance)", "merge": "zone_touch_count: first mitigation tradable, repeated = spent; forward-computable from OHLC", "queue": "MERGE_NOW_AS_REVIEW_FEATURE"},
+    "R-STRONGWEAK": {"class": "MISSING_HIGH_VALUE", "merge": "add STRONG/WEAK to 8F level_type_tag vocabulary; Lane-6 confidence input", "queue": "MERGE_NOW_AS_REVIEW_FEATURE"},
+    "R-SCOB-CLOSE": {"class": "MISSING_LOW_VALUE", "note": "SCOB family unobserved", "queue": "NEEDS_FORWARD_EVIDENCE"},
+    "R-INDUCE-DISPLACE-TRAP": {"class": "OBSOLETE_OR_REJECTED", "note": "unverified external inference"},
+    "R-ALERT-BARCLOSE": {"class": "PARTIALLY_IN_ORANGE + MISSING_HIGH_VALUE_CAVEAT", "merge": "Lane-6 repaint guard: pre-marks from indicator levels must use bar-close-confirmed values only (anti-leakage extension)", "queue": "MERGE_NOW_AS_REVIEW_FEATURE"},
+    "R-INDICATOR-PANEL": {"class": "ALREADY_IN_ORANGE", "where": "8F indicator_price_level_extraction lineage (FP-INDICATOR-005 owns the panel)"},
+    "R-EMA-METHOD": {"class": "OBSOLETE_OR_REJECTED (out of XAU-SMC lane)", "note": "separate method family; research note only"},
+    "R-OI": {"class": "OBSOLETE_OR_REJECTED", "note": "excluded narrative"},
+    "R-BFI": {"class": "OBSOLETE_OR_REJECTED", "note": "excluded narrative"},
+    "R-AGRADES": {"class": "PARTIALLY_IN_ORANGE", "note": "grade formula invisible; capture grades in the alert lane forward and correlate", "queue": "KEEP_AS_WATCHLIST"}
+  },
+  "tally": {"ALREADY_IN_ORANGE": 4, "PARTIALLY_IN_ORANGE": 4, "MISSING_HIGH_VALUE": 5, "MISSING_LOW_VALUE": 3, "CONTRADICTS": 2, "OBSOLETE_OR_REJECTED": 5, "total_rules": 23},
+  "contradictions": {
+    "bos_candle_close": "EDU-016 vs EDU-021 (inherited TRUE_CONTRADICTION); Fable-5 proposal: +confidence feature, never a gate (video-002 live usage supports EDU-021 reading); NEEDS_HUMAN_REVIEW",
+    "all_boxes_vs_graded": "Playbook-internal TRUE_CONTRADICTION; detector v0.2's graded scoring implicitly sides with graded; documented, undecided; NEEDS_HUMAN_REVIEW",
+    "rr_2r_doc_vs_practice": "NEW: docs teach >=2R, matched sample shows tranche-1 far below 2R; R6 honesty note; NEEDS_HUMAN_REVIEW",
+    "confirmed_blocks": ["displacement numeric (= R3 rejection)", "CHoCH family-scope (= our stance)", "VA-68 window unknown"]
+  },
+  "impact": {
+    "R2_R2b": "improved — contingency_pre_declared exemption flag",
+    "R4b": "unchanged — independently confirmed by R-NY-1330",
+    "R6": "honesty note (no 2R assumption); no formula change",
+    "lane6": "strengthened 4x — confluence ordering, STRONG/WEAK tags, zone_touch_count, repaint guard",
+    "stop_width_by_level_type": "gains R-STOP-OTE as first structural input",
+    "fill_lag_cost_and_indicator_extraction": "unchanged; lineage confirmed"
+  },
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none; nothing merged into execution; R-RISK-1PCT not carried into the review lane"}
+}

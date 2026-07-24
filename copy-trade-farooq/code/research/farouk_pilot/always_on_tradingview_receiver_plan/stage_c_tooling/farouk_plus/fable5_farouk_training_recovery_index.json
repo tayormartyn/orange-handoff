@@ -1,0 +1,62 @@
+{
+  "index_id": "fable5_farouk_training_recovery_index",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / INVENTORY_ONLY / SINGLE_SESSION",
+  "headline": "Sonic/Claude-4.8 corpus survives on disk — no re-upload needed; main un-merged inheritance = synthesis_v0.3 rule ledger not yet diffed against FAROUK_PLUS_RULESET_v0_1",
+  "counts": {
+    "fp_edu_records_registered": 33,
+    "fp_edu_ids": "001-004, 007-035 (005/006 never registered)",
+    "raw_videos_local": 7,
+    "raw_video_list": [
+      "raw/videos/FP-CAMPAIGN-001_trade_breakdown.mov (262MB, RAW_VIDEO_EXISTS)",
+      "raw/videos/FP-CAMPAIGN-002_trade_breakdown.mov (307MB, RAW_VIDEO_EXISTS)",
+      "raw/videos/FP-CAMPAIGN-003_trade_breakdown.mov (176MB, RAW_VIDEO_EXISTS)",
+      "raw/live_with_farouk_2026-07-05/Live with Farouk, Sunday, 5 July 2026.mp4 (614MB, TRANSCRIPT_EXISTS)",
+      "raw/farouk_playbook_indicator_update/Schermopname 2026-07-05 om 12.53.09.mov (221MB, screenshots ingested, audio not)",
+      "Downloads: Live with Farouk, Friday, 10 July 2026.mp4 (FULLY_INGESTED by Fable 5 today)",
+      "Downloads: Schermopname 2026-07-08 om 16.19.48.mov (FULLY_INGESTED by Fable 5 today)"
+    ],
+    "persisted_transcripts": ["FP-EDU-007_transcript.json (94KB)", "live_with_farouk_2026-07-05/_analysis/transcript.json (276KB)", "OCR TRANSCRIPTIONS.md batches", "PDF text extractions (FP-EDU-002 playbook text, farouk_edu2.txt)"],
+    "method_summary_files_approx": 45,
+    "education_screenshots_approx": 110,
+    "pdfs": 8
+  },
+  "classification": {
+    "FULLY_INGESTED_METHOD_RULES_EXTRACTED": ["FP-EDU-002", "FP-EDU-003", "FP-EDU-004", "FP-EDU-008..035 (Discord batch)", "FP-CAMPAIGN-001..004 dossiers", "FP-INDICATOR-001 inventory+claims"],
+    "TRANSCRIPT_EXISTS_NEEDS_FABLE5_REVIEW": ["FP-EDU-001 / Live Jul-5 (276KB transcript, never Fable-reviewed)", "FP-EDU-007 (EMA family, low priority)"],
+    "RAW_VIDEO_EXISTS_NO_TRANSCRIPT": ["FP-CAMPAIGN-001/002/003 breakdown audio", "indicator-update Jul-5 audio"],
+    "FULLY_INGESTED_BY_FABLE5": ["FP-LIVE-VIDEO-EXPLAINER-001", "FP-LIVE-VIDEO-EXPLAINER-002"],
+    "MISSING_OR_SESSION_ONLY": ["FP-EDU-005/006 ids (never registered)", "FP-CAMPAIGN-004 raw video", "EDU-033 NY leg (PDF cut)", "numeric displacement size (EDU-035 deferred)", "unwritten session reasoning (unknowable; file corpus unusually complete)"]
+  },
+  "topic_matrix": {
+    "asia_high_low": {"evidence": true, "rule": true, "in_orange": "8F recipe + Lane 6", "needs_fable5": false},
+    "london_us_lows": {"evidence": true, "rule": "partial (EDU-033 NY leg cut)", "in_orange": "8F", "needs_fable5": "minor"},
+    "liquidity_sweep": {"evidence": true, "rule": true, "in_orange": "detector context", "needs_fable5": false},
+    "ob_fvg_bpr": {"evidence": true, "rule": true, "in_orange": "Lane-6 sources", "needs_fable5": false},
+    "mitigation": {"evidence": "EDU-008 (no numeric depth)", "rule": "partial", "in_orange": "8F level-type tag", "needs_fable5": "JOIN EDU-008 with video stop-width lesson"},
+    "strong_weak_highs_lows": {"evidence": "EDU-009/004", "rule": "attribute extracted", "in_orange": false, "needs_fable5": "candidate feature"},
+    "bos_choch": {"evidence": "EDU-010/016/021 + state machine", "rule": "yes BUT EDU-016 vs EDU-021 candle-close CONTRADICTION unresolved", "in_orange": "context", "needs_fable5": "adjudicate contradiction"},
+    "displacement_retest": {"evidence": "EDU-035 (numeric deferred)", "rule": false, "in_orange": "R3 rejected-as-defined", "needs_fable5": "weak topic"},
+    "htf_bias": {"evidence": "EDU-024 + htf_bias_resolver", "rule": "partial", "in_orange": "R5 zero-weight flag", "needs_fable5": "forward"},
+    "session_timing": {"evidence": "EDU-031/032/033 + session policy", "rule": "NY 13:30-15:00 UTC (matches NY-open winners)", "in_orange": "R4b", "needs_fable5": false},
+    "invalidation_stop_width": {"evidence": "EDU-028 OTE + videos", "rule": "partial (stop outside OTE, >=2R)", "in_orange": "8F PROMISING", "needs_fable5": "synthesize EDU-028 + video lessons"},
+    "mitigated_level_wider_stop": {"evidence": "video-only", "rule": false, "in_orange": "8F NEEDS_FORWARD", "needs_fable5": "forward"},
+    "reentry_logic": {"evidence": "video doctrine + June empirics", "rule": true, "in_orange": "R2/R2b", "needs_fable5": false},
+    "layered_entries": {"evidence": "EDU-003 '3-pt entry/BE+50/partials' + video tutorial", "rule": true, "in_orange": "8D schema; independently validates Model B +50 BE parameter", "needs_fable5": false},
+    "close_worst_hold_best": {"evidence": true, "rule": true, "in_orange": "8D", "needs_fable5": false},
+    "sl_to_entry": {"evidence": "EDU-003 BE+50", "rule": true, "in_orange": "Model B + 8C timing", "needs_fable5": false},
+    "multi_position_management": {"evidence": true, "rule": true, "in_orange": "8D audit + schema", "needs_fable5": false},
+    "indicator_price_levels": {"evidence": "FP-INDICATOR-001 + alert-conditions png + panel frames", "rule": "inventory", "in_orange": "8F extraction feature", "needs_fable5": "Lane-6 build input"}
+  },
+  "already_inside_orange": ["FAROUK_PLUS_RULESET_v0_1 (R2/R2b/R4b/R6 + caution/reason)", "detector v0.2", "R6 six-lane expectancy + fill_lag backlog", "Lane 6 + invalidation track", "Cycle-002 schema (8C+8D+8F)", "Step-8F integration"],
+  "not_yet_merged_inheritance": ["synthesis_v0.3 RULE_LEDGER + STATE_MACHINE_CANDIDATE + CONTRADICTION_ADJUDICATION vs FAROUK_PLUS_RULESET_v0_1"],
+  "top5_next": [
+    "1. Diff synthesis_v0.3 rule ledger + contradiction adjudication vs FAROUK_PLUS_RULESET_v0_1 (merge/retire each rule; adjudicate EDU-016 vs 021)",
+    "2. FP-INDICATOR-001 claims + farouk_indicator_alert_conditions.png -> exact alert conditions for the Lane-6 pre-mark builder",
+    "3. FP-EDU-003 Trading Guide Fable re-read -> refine lane-4 playbook parameters (risk-% excluded by policy)",
+    "4. EDU-028 OTE + EDU-035 displacement + video lessons -> stop_width_by_level_type v0.1",
+    "5. FP-EDU-001 / Live Jul-5 transcript review -> mine stop-width, mitigation depth, displacement numerics"
+  ],
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged",
+              "not_integration_ready": "unchanged", "execution_surface": "none", "reprocessing": "none; inventory only"}
+}

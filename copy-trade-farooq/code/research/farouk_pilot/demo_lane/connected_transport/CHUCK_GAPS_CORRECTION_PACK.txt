@@ -1,0 +1,106 @@
+================================================================================
+CHUCK GAPS-CORRECTION PACK — connected_transport
+(follow-up to CONNECTED_TRANSPORT_OFFLINE_VERIFICATION = PASS_WITH_GAPS)
+Date: 2026-07-24. OFFLINE ONLY. No connection, no OAuth, no gate flip, no order.
+================================================================================
+
+AMBIGUOUS_SEND_SAFETY      = PASS
+ALWAYS_ON_IO_LOOP          = PASS
+ASYNC_EVENT_CAPTURE        = PASS
+AUTOMATIC_HEARTBEAT        = PASS
+SINGLE_SEND_RECEIVE_OWNER  = PASS
+BROKER_IDENTITY_STATUS     = CORRECTLY_DEFERRED_TO_PREFLIGHT
+TESTS                      = 142/142  (98 transport [repeat-run stable, both interpreters]
+                                       + 27 proto-codec + 17 tls-channel; all egress-guarded)
+EXTERNAL_CONNECTIONS       = ZERO
+EXECUTOR_NETWORK_CAPABILITY = ZERO   (clean-interp + socket booby-trap re-run green)
+GATES                      = ALL_FALSE
+LEDGER_IMPACT              = NONE    (fwd/freeze/follower hashes moved again during this build —
+                                      attributed: live_wire_deterministic_v0_1 appending
+                                      XAU-F008-20260724 rev 2→3, msg_ids 46096-46098; authorized
+                                      live-stack writers. guards/constitution/backfill IDENTICAL.
+                                      No test touches any ledger path.)
+LIVE_SERVICE_IMPACT        = NONE    (listener/wire/watcher/observer PIDs alive; single listener)
+Overall: CONNECTED_TRANSPORT_OFFLINE_VERIFICATION_PASS
+
+--------------------------------------------------------------------------------
+1. AMBIGUOUS SEND CLASSIFICATION (correction 1) — transport.py
+--------------------------------------------------------------------------------
+The forget-and-SEND_FAILED-on-any-exception behaviour is REMOVED for every connector.
+A. DEFINITELY_NOT_SENT — allowed ONLY provably before the first transmit attempt:
+     state/gate refusal (raises before a correlation exists), encoding/framing failure,
+     connector not connected before send starts (checked caller-side AND sender-side).
+     ONLY this path releases (forgets) the correlation; a deliberate re-issue then succeeds.
+B. OUTCOME_UNKNOWN — ANY error raised once connector.send begins (sendall proves nothing):
+     correlation RETAINED + marked OUTCOME_UNKNOWN; NO automatic retry; READY invalidated;
+     transport disconnects; after reconnect the full sequence re-runs and the transport is
+     RECONCILE_ONLY until reconciliation completes; only then may anything be deliberately
+     re-issued (new-session correlation; the ambiguous one stays OUTCOME_UNKNOWN forever).
+Tests (suite section 7): encode-failure -> DEFINITELY_NOT_SENT + release + re-issue OK;
+not-connected-before-send -> DEFINITELY_NOT_SENT + release; raise with zero/unknown bytes ->
+OUTCOME_UNKNOWN; PREFIX-transmitted-then-raise -> OUTCOME_UNKNOWN; COMPLETE-frame-then-raise
+(broker provably received; response lost) -> OUTCOME_UNKNOWN; no correlation forgotten on any
+ambiguous path (checked after reconnect too); action refused from DISCONNECTED; reconnect ->
+auth -> reconcile PRECEDES any new open (broker-seen ordering asserted).
+
+--------------------------------------------------------------------------------
+2. ONE ALWAYS-ON I/O OWNER (correction 2) — transport.py
+--------------------------------------------------------------------------------
+One transport-owned reader thread is the ONLY caller of connector.recv: continuously reads
+while connected, deframes everything (combined + fragmented preserved — same Deframer), routes
+matched responses by clientMsgId to waiting callers (futures), consumes async fills/events even
+when no request is awaiting (fail-closed for unknown ones). One sender thread drains the ONE
+outbound queue (fresh per session — stale frames can never be resent) and emits heartbeats
+AUTOMATICALLY when idle >= HEARTBEAT_INTERVAL_S (10s). Request callers submit to the queue and
+wait on a response future; they never call recv. Disconnect deterministically stops both loops
+(generation counter), wakes every pending caller as OUTCOME_UNKNOWN (correlations retained),
+and invalidates READY; reconnect re-runs the full auth + reconcile sequence before any action.
+Tests (suite sections 10, 11, 16): ack now + fill later with NO second request -> consumed;
+async STOP_MOVED while idle -> consumed; heartbeat emitted automatically (no manual call;
+interval <= 10s asserted); two requests answered in REVERSE order -> each routed to its own
+caller by clientMsgId; response + async event in the SAME frame batch -> both processed;
+exactly ONE reader thread and ONE sender thread touch the socket (thread-identity instrumented;
+never the caller); disconnect wakes a blocked caller promptly as OUTCOME_UNKNOWN (measured well
+under the response timeout; nothing left PENDING); reconnect -> READY and actions resume only
+after reconciliation.
+
+--------------------------------------------------------------------------------
+3. BROKER-IDENTITY CLAIM CORRECTION (correction 3) — transport_config.py
+--------------------------------------------------------------------------------
+Recorded in code (transport_config.BROKER_IDENTITY_CLAIMS) and asserted by test:
+  DEMO_ENDPOINT               = OFFLINE_PROVEN
+  ALLOWLISTED_ACCOUNT_ID      = OFFLINE_GUARD_PROVEN
+  IS_LIVE_FALSE               = OFFLINE_GUARD_PROVEN
+  SCOPE_TRADE                 = OFFLINE_GUARD_PROVEN
+  PEPPERSTONE_ACCOUNT_BINDING = PENDING_READ_ONLY_PREFLIGHT
+broker_environment in the account guard is a LOCAL CONFIG EXPECTATION compared with itself —
+documented in the guard docstring as NOT broker attestation. The read-only preflight must create
+an immutable sanitised binding with exactly these fields (PREFLIGHT_BINDING_REQUIRED_FIELDS):
+account_id_sha256, account_id_last4, is_live (== False), broker_identity (confirmed Pepperstone
+demo), endpoint (fixed demo), preflight_source, preflight_timestamp_utc, binding_sha256.
+validate_preflight_binding() is the fail-closed validator the future connected composition must
+pass that record through; tests prove: absent -> fail; incomplete -> fail; isLive true -> fail;
+non-demo endpoint -> fail; non-Pepperstone identity -> fail; a complete sanitised FAKE record
+passes SHAPE validation only. No OAuth scope was requested; fake credentials only.
+
+--------------------------------------------------------------------------------
+4. FILES TOUCHED (this correction build)
+--------------------------------------------------------------------------------
+  transport.py .................... send classification + single I/O owner (reader/sender threads,
+                                    one outbound queue, futures, auto-heartbeat, disconnect wake)
+  transport_config.py ............. READER_POLL_S/SENDER_POLL_S; BROKER_IDENTITY_CLAIMS;
+                                    PREFLIGHT_BINDING_REQUIRED_FIELDS; validate_preflight_binding()
+  fake_wire.py .................... FakeConnector: thread-safe inbox + inject() (async-event seam);
+                                    LoopbackConnector.connected property
+  tls_channel.py .................. connected property (pre-transmit check support)
+  tests_connected_transport.py .... sections 7/10/11 corrected to the new semantics; NEW sections
+                                    16 (I/O owner) + 17 (identity claims) -> 98 checks
+  README.md ....................... safety-posture bullets corrected accordingly
+Executor, mapper, gate, config, sizing, approval, seal, preflight: UNTOUCHED (regressions green:
+demo_lane 62/62, order_adapter 45/45, seal_approval 10/10, protobuf_mapper 23/23).
+
+================================================================================
+NOT DONE (prohibited): no real cTrader connection, no OAuth grant, no gate flip, no order.
+The real read-only preflight binding + DPAPI provider + live wiring remain later,
+separately-reviewed steps. STOP.
+================================================================================

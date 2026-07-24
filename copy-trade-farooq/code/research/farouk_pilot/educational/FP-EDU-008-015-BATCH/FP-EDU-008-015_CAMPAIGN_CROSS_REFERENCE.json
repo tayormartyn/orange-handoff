@@ -1,0 +1,49 @@
+{
+  "batch": "FP-EDU-008-015",
+  "note": "Education posts CONTEXTUALISE the campaign observations; NOT universal rules from one example. Frozen campaign files NOT modified.",
+  "cross_references": [
+    {
+      "education": "FP-EDU-010 Major/Internal + 010-SUPPL BOS",
+      "campaign_link": "C004 'H4 BOS + H1 nBOS' and the general BOS/structure basis of C001-004",
+      "assessment": "the written BOS/structure curriculum matches the campaign structure language; nBOS not explicitly defined in these posts (010 covers BOS, not 'nBOS')"
+    },
+    {
+      "education": "FP-EDU-011 SCOB (single-candle OB)",
+      "campaign_link": "C001/C003/C004 order-block retest entries; C004 '3m OB + 5m OB'",
+      "assessment": "provides an OB-validity definition (candle close above inducement) consistent with the campaigns' OB retests"
+    },
+    {
+      "education": "FP-EDU-008 Mitigation",
+      "campaign_link": "C001/C003 OB retest = mitigation; C003 'already mitigated, don't enter'",
+      "assessment": "defines the 'mitigation' the campaigns act on (return to the OB/imbalance)"
+    },
+    {
+      "education": "FP-EDU-009 Strong/Weak High-Low",
+      "campaign_link": "C004 quality hierarchy (preferred unmitigated H1 OB > entry zone)",
+      "assessment": "the strong-vs-weak distinction underpins C004's preferred-zone quality ranking"
+    },
+    {
+      "education": "FP-EDU-012 Inefficiencies (FVG)",
+      "campaign_link": "C003 Daily FVG target; C004 'dumped to the FVG'",
+      "assessment": "FVG/inefficiency types match the campaigns' FVG usage"
+    },
+    {
+      "education": "FP-EDU-013/014 entry models",
+      "campaign_link": "C004 break -> retest -> target; C001/003 OB-retest entries",
+      "assessment": "the LTF-BOS+FVG (013) and sweep-into-POI+LTF-confirmation (014) chains match the campaign entry mechanics"
+    },
+    {
+      "education": "FP-EDU-015 Inducement",
+      "campaign_link": "C003 Asia-low sweep (liquidity grab before reversal); C004 sweep context",
+      "assessment": "inducement/liquidity-grab-before-reversal matches the sweep-then-reverse observed in campaigns"
+    }
+  ],
+  "CHoCH_note": "These posts are BOS-centric (010/010-SUPPL); CHoCH is NOT a headline concept here — consistent with C003/C004 qualifying with CHoCH absent on the entry TF.",
+  "F_CONFLUENCE_UNKNOWN": "NOT resolved — 011 ('more confluences align = stronger') + 014 checklist + 009 quality give qualitative confluence factors but NO minimum COUNT.",
+  "campaigns_referenced": [
+    "FP-CAMPAIGN-001",
+    "FP-CAMPAIGN-002",
+    "FP-CAMPAIGN-003",
+    "FP-CAMPAIGN-004"
+  ]
+}

@@ -1,0 +1,71 @@
+[00:00:00] part two of the indicator. So I'm gonna this part two indicator is more about the POC. So for
+[00:00:08] example here everybody knows already like when you do you use the fixed range volume profile,
+[00:00:13] you take a range like this you can see the POC sitting here very high very low. Okay, so what we
+[00:00:20] creates here is actually just on it you will see everything. You will see the POC very high very low.
+[00:00:28] this is too much lines, it's too much noise. Okay, if you let's say remove all the noise here,
+[00:00:37] the weekly, the two weeks, the monthly, everything, you just leave the daily, very high, very low,
+[00:00:45] it will print the POC here, you can see here we have the daily, very high, at last steps,
+[00:00:53] and it's coming down this is today the whole day is bearish and we lost the very high and the very
+[00:00:59] low so everything below that is bearish okay and now you know okay the price is bearish so
+[00:01:06] retest is short if we claim this we're gonna go up okay so this is the poc indicator so you can
+[00:01:12] just use it like you can try for example the weekly let's just remove the very high let's do
+[00:01:21] to the weekly, it's kind of print.
+[00:01:27] Okay, you can see here we have the weekly POC,
+[00:01:29] we have also weekly POC here.
+[00:01:31] So if we crank the weekly POC,
+[00:01:34] you can long it until the next weekly POC, okay?
+[00:01:37] And in between we have more POCs,
+[00:01:39] five day, three day, very high, very low.
+[00:01:42] So you can just scale.
+[00:01:44] So you can actually go heavy,
+[00:01:47] like we do on gold and make your 200, $300
+[00:01:51] and just log out.
+[00:01:53] You don't have to hold it too long.
+[00:01:54] You don't have to hold it the whole night like a lot of people did before.
+[00:01:58] So that's actually cool.
+[00:01:59] Okay, I'm going to talk first because the video is almost over.
+[00:02:03] So again, I'm going to do a theory of, well, let's say five videos.
+[00:02:06] Okay, one of the next, next thing that we did on the indicator is the SFP swing fail pattern.
+[00:02:14] So for example, if you own it, the green and red, let me just remove this.
+[00:02:27] You can see here, okay, this is actually no candle close.
+[00:02:30] So for example here, if this is the high, they fail to go higher, that's a sweep, and
+[00:02:36] then they go down.
+[00:02:38] So again, if they sweep, it will print a dot, it will print a dot line, look at here.
+[00:02:45] It will tell you actually that we're going to come down.
+[00:02:49] And if you combine it with the next video with the candles, it will actually tell you
+[00:02:53] that the cell pressure is high.
+[00:02:56] And here again, this is a weekend range, so we can look at this.
+[00:02:59] example here look at the sweep you can actually say okay sweep retest long this
+[00:03:05] is a sweep as soon as they sweep here you can take a long and here the sweep
+[00:03:09] filled and here's another sweep it give you another long for scalps it's really
+[00:03:14] good this is a 30 minutes guys so it's really good the sweep swing
+[00:03:19] fell pattern here it's a swing fell pattern sweep short and it failed to come
+[00:03:24] below this level and it pushed the price higher okay you must combine with a lot
+[00:03:29] of stuff. So as soon as you use it you understand it. So let's go to higher time frame. Let's
+[00:03:35] see higher time frame you can actually see it as well. You can see here for example there's
+[00:03:40] the high they failed to go higher. So if you use my my thing like the candle, this is the
+[00:03:46] candle closed below here from this box candle close you can actually come down. This is
+[00:03:52] how much I'm sure it's easy to identify. Okay, but I'm going to talk about this more in the zoom.
+[00:03:57] Okay, the next one is the liquidity sweep.
+[00:04:03] When they sweep liquidity, you can actually see, okay, when the market makers sweep in
+[00:04:08] liquidity.
+[00:04:09] So, for example, here you have liquidity, a lot of liquidity sitting here.
+[00:04:11] I did some eight bars and you can see, okay, they swept liquidity.
+[00:04:17] And now from this level, you must think, okay, I'm going to short.
+[00:04:21] I need to short, okay.
+[00:04:24] And here as well, they swept liquidity.
+[00:04:26] Now I'm waiting for retest to take along.
+[00:04:28] They need a swipe liquidity, they fail to go higher, short.
+[00:04:32] So it gives you like when they sweep liquidity, you need to combine this indicator with more
+[00:04:36] stuff, not one thing, like sweep liquidity, SFP, POCs and maybe view up.
+[00:04:45] So if it works for you, if you don't want to use this one, it's also possible, just
+[00:04:51] off it like this.
+[00:04:54] one of the things that I don't use but Carl said you need to put it because a
+[00:04:59] lot of people use the EMA is the EMA's that you want to use or the SMA. Okay you
+[00:05:05] just have to click it here. So for example here you have the 20, 21, 34, 50, 55, I
+[00:05:11] never use the EMA so but if you use the EMA's you can actually see okay it's
+[00:05:15] holding the EMA's you can take along. Here is the EMA's is choppy don't do anything
+[00:05:20] If it goes sideways like this and here it allows all the EMA's that you're using, you can take a short.
+[00:05:28] So if EMA's is your thing, you can use it.
+[00:05:33] I'm actually gonna make a new video, next video about this.
+[00:05:37] Thank you guys. See you in the next one.

@@ -1,0 +1,27 @@
+{
+  "queue_id": "fable5_training_batch_001_merge_queue",
+  "generated_on": "2026-07-11",
+  "mode": "REVIEW_ONLY — nothing merges into live forward scoring automatically",
+  "MERGE_NOW_REVIEW_FEATURE": [
+    {"feature": "be_at_average_for_layered", "source": "FP-EDU-003 §8", "target": "lane-4 scratch model + 8D leg schema: BE reference = AVERAGE of filled legs (one shared SL)"},
+    {"feature": "tranche_schedules_source_exact", "source": "FP-EDU-003 §6", "target": "lane-4 parameters: bracket expectancy with Conservative 50/30/20 and Advanced 30/30+run instead of the assumed 50/25/25"},
+    {"feature": "layering_cap_max3", "source": "FP-EDU-003 §8 rule 05 ('never add a 4th entry to a loser')", "target": "8D leg schema flag + detector context (complements R2b)"},
+    {"feature": "displacement_fvg_artifact_test", "source": "FP-EDU-004", "target": "detector v0.4 candidate + Lane-6 STRONG-rubric point 1: displacement verified by FVG-presence after the impulse (OHLC-computable); unblocks R-DISPLACEMENT"},
+    {"feature": "strong_ob_rubric_v0_1", "source": "FP-EDU-004 (5 points: displacement+FVG, sweep-before, fresh, bias-aligned, BPR-overlap)", "target": "F3 level_quality_tag rubric (evidence-citable per point); Lane-6 confidence"}
+  ],
+  "MERGE_AFTER_FORWARD_EVIDENCE": [
+    {"feature": "mitigated_level_wider_invalidation_numeric", "source": "v004 stream (stated 2x) + video-001/002", "note": "provenance upgraded to repeated teaching; the level-type->width MAPPING still needs forward samples"},
+    {"feature": "f2_thresholds_confirmation", "source": "EDU-004 tapped-3x canon", "note": "v0.3 thresholds source-aligned; forward data decides the weight upgrade"}
+  ],
+  "HUMAN_RATIFICATION_REQUIRED": [
+    {"item": "never_widen_doc_vs_practice", "sources": "FP-EDU-003 §7 ('never move/remove/widen') vs taped adaptive widening (video-002, v004)", "proposal": "treat 'never widen' as the FOLLOWER rule (binding for lane-4 simulation) and adaptive width as his private discretion (lane-1) — mirrors the fill/stop divergence framework"}
+  ],
+  "HOLD_AS_REFERENCE": [
+    {"item": "risk/leverage/lot/compounding content (EDU-003 pp.6-7,11-12)", "note": "excluded by policy; POLICY_DIVERGENCE notes preserved in corpus"},
+    {"item": "liquidity/stop-hunt narrative (Education-2)", "note": "explanatory narrative (R-BFI class)"},
+    {"item": "v005 indicator walkthrough audio", "note": "context for Lane-6 formation-time definition; screens already ingested"}
+  ],
+  "REJECT_DUPLICATE": ["5 Downloads PDFs", "Live Jul-5 mp4 copy", "indicator mov copy", "3 campaign movs", "GMT20251221/GMT20251012 sets", "(1)/(2) file copies"],
+  "enforcement": "ai_review fail-closed validator + extended guard on all resulting records; labels capped; no automatic promotion",
+  "safety": {"gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged", "execution_surface": "none"}
+}

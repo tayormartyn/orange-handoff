@@ -1,0 +1,23 @@
+{
+  "contract_id": "execution_profiles_v0_1",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE",
+  "profiles": {
+    "D1_CONTEXT_H1_EXECUTION": {"context_tf": "1D", "execution_tf": "1H", "data_note": "D1 native export required; 1m cannot synthesize D1 context"},
+    "H4_CONTEXT_M15_EXECUTION": {"context_tf": "4H", "execution_tf": "15m"},
+    "H1_CONTEXT_M5_EXECUTION": {"context_tf": "1H", "execution_tf": "5m"},
+    "M15_CONTEXT_M1_EXECUTION": {"context_tf": "15m", "execution_tf": "1m"},
+    "PLAYBOOK_5M_3M_1M_STACK": {"context_tf": "5m", "mid_tf": "3m", "execution_tf": "1m", "provenance": "DR-206 shared trigger stack"}
+  },
+  "rules": [
+    "a setup-family contract may NOMINATE a profile ONLY from documented source evidence",
+    "the router may NOT run every profile and report the most profitable one",
+    "where multiple profiles are plausible: preserve EACH alternative, set primary_profile=UNKNOWN, never choose retrospectively"
+  ],
+  "data_availability": {
+    "1m_PEPPERSTONE": "available (canonical CSV + live tracker)",
+    "3m_5m_15m": "DERIVED from 1m (completed-only) — no new webhook",
+    "1H_4H_1D": "UNKNOWN unless native export provided; do NOT synthesize HTF context from 4 days of 1m"
+  },
+  "primary_profile_default": "UNKNOWN",
+  "review_only": true, "executable": false, "observation_only": true
+}

@@ -1,0 +1,26 @@
+{
+  "policy_id": "training_eligibility_policy_v0_1",
+  "status": "RESEARCH_ONLY / NON_AUTHORITATIVE",
+  "record_classes": ["GENUINE_PROSPECTIVE", "SCHEMA_BACKFILL_NOT_PROSPECTIVE", "SYNTHETIC_INTEGRATION_TEST",
+                     "TECHNICAL_FIXTURE_NOT_EDGE_EVIDENCE", "UNTOUCHED_WINDOW_RESEARCH",
+                     "ACTIVATION_STRADDLE", "HISTORICAL_REPLAY"],
+  "training_eligibility_conjunction": {
+    "description": "ALL must hold for a row to be eligible_for_training",
+    "conditions": {
+      "record_class": "GENUINE_PROSPECTIVE",
+      "eligible_for_prospective_evidence": true,
+      "outcome_status": "COMPLETE",
+      "causal_integrity": "PASS",
+      "data_integrity": "PASS",
+      "source_provenance": "VERIFIED"
+    }
+  },
+  "always_ineligible_for_training": {
+    "F001_F002": "record_class=SCHEMA_BACKFILL_NOT_PROSPECTIVE, eligible_for_training=false (permanent)",
+    "SYNTHETIC_INTEGRATION_TEST": "false", "TECHNICAL_FIXTURE_NOT_EDGE_EVIDENCE": "false",
+    "UNTOUCHED_WINDOW_RESEARCH": "false", "ACTIVATION_STRADDLE": "false", "HISTORICAL_REPLAY": "false"
+  },
+  "permitted_uses_for_ineligible": "testing, calibration research, or schema validation ONLY, per explicit provenance",
+  "no_model_fitting_this_stage": true,
+  "review_only": true, "executable": false, "observation_only": true
+}

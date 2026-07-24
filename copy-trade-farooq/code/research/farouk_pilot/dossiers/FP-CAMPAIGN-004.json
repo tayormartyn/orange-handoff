@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "FP-CAMPAIGN-004",
+  "symbol": "XAUUSD",
+  "direction": "SELL",
+  "setup_family": "MULTI_TF_OB_CONFLUENCE_SHORT",
+  "session_context": "24 June 2026 (video chart: Wed 24 Jun '26, ~17:03). Feed Pepperstone. Asia break = LOW (panel). Timezone on chart NOT clearly labelled in captured frames (prior Pepperstone campaigns showed UTC+2) — recorded as UNRESOLVED.",
+  "net_campaign_outcome": "PARTIALLY_OBSERVED — TP1 secured + 50% scaled + runner (0.5) risk-free; NO final runner closure shown. runner_outcome=UNKNOWN; contingency_activation=NOT_OBSERVED; 3930-3900 target result=UNKNOWN.",
+  "prior_market_context": {
+    "classification": "PRIOR_MARKET_CONTEXT",
+    "relationship_to_campaign_004": "UNRESOLVED",
+    "date": "2026-06-23T17:09",
+    "verbatim": "If we get a 15m-1H candle close above 4150, that claims the bearish FVG on the H4, and we should see a move toward the 4190-4200 area. So don't sell at 4155. Let's see us close. (Holding 0.5 sl to entry on the sell)",
+    "note": "NOT merged causally. This is a prior-day, largely upside-scenario message; the 24 Jun video/thread does not directly connect it to the 24 Jun short. Stored for context only."
+  },
+  "explicit_discord_statements": [
+    {
+      "ts": "2026-06-24T15:32",
+      "text": "XAUUSD SELL 4030-4045 SL 4130 HIGH RISK LOW LOT"
+    },
+    {
+      "ts": "2026-06-24T15:39",
+      "text": "100 pips tp 1 move sl to entry"
+    },
+    {
+      "ts": "2026-06-24T15:39",
+      "text": "first entry is my own I forget to press enter second is Whaleroom",
+      "role": "entry-separation clarification"
+    },
+    {
+      "ts": "2026-06-24T15:39",
+      "text": "120 pisp",
+      "note": "'pisp' preserved verbatim (=pips)"
+    },
+    {
+      "ts": "2026-06-24T15:39",
+      "text": "Reasons for the sell: we have an H4 BOS, an H1 nBOS, a 3-minute order block, and a 5-minute order block that created the low. That's a lot of confluence for a short setup.",
+      "note": "'nBOS' preserved EXACTLY — not reinterpreted"
+    },
+    {
+      "ts": "2026-06-24T15:39",
+      "text": "The reason I used a bigger stop loss is because my preferred sell zone is actually around 4070-4075. That's an unmitigated H1 order block that started the entire move down. So if we get stopped out at entry, there's another high-probability sell level above where I'll be looking to re-enter."
+    },
+    {
+      "ts": "2026-06-24T15:47",
+      "text": "200 pisp take tp 4"
+    },
+    {
+      "ts": "2026-06-24T15:47",
+      "text": "If I get stopped out at the initial entry, I'll look to re-enter around the 4070-4080 zone. That's the unmitigated H1 order block, which is a strong area of interest. If the first entry holds and doesn't get stopped, then I'm targeting a move down towards 3930-3900."
+    },
+    {
+      "ts": "2026-06-24T15:47",
+      "text": "im taking 50% off now (sl to entry)"
+    },
+    {
+      "ts": "2026-06-24T16:06",
+      "text": "GOLD BREAKDOWN",
+      "note": "associated video Schermopname 2026-06-24 om 17.02.44.mov"
+    }
+  ],
+  "math_observations": {
+    "result_cards_snapshots": [
+      "Farouk_personal: sell 1  4038.19 -> 4019.55  value 1864.00",
+      "Whaleroom: sell 1  4029.76 -> 4019.55  value 1021.00",
+      "Farouk_personal: sell 1  4038.19 -> 4015.34  value 2285.00",
+      "Whaleroom: sell 1  4029.76 -> 4015.34  value 1442.00",
+      "Whaleroom: sell 1  4029.76 -> 4010.43  value 1933.00 (15:47 '200 pisp take tp 4')",
+      "Whaleroom: sell 1  4029.76 -> 4008.22  value 2154.00 (at '50% off, sl to entry')",
+      "Whaleroom_runner: sell 0.5  4029.76 -> 4005.41  value 1217.50 (15:58, remaining 0.5)"
+    ],
+    "pip_convention": "0.10 XAUUSD price = 1 pip (Whale Room Gold convention)",
+    "value_formula": "price_movement x 100 x displayed_lot_size = card value — VERIFIED",
+    "worked_examples": [
+      "4029.76->4019.55 = 10.21 = 102.1 pips; x100x1 = 1021.00 ✓",
+      "4038.19->4019.55 = 18.64 = 186.4 pips; x100x1 = 1864.00 ✓ (Farouk personal)",
+      "4029.76->4010.43 = 19.33 = 193.3 pips; x100x1 = 1933.00 ✓",
+      "4029.76->4008.22 = 21.54 = 215.4 pips; x100x1 = 2154.00 ✓",
+      "4029.76->4005.41 = 24.35 = 243.5 pips; x100x0.5 = 1217.50 ✓ (AFTER 50% reduction -> lot 0.5)"
+    ],
+    "snapshot_not_closure": "The cards are RUNNING-P/L SNAPSHOTS of ONE Whale Room position (shared entry 4029.76, value scaling with excursion; lot drops 1.0->0.5 at the 50% reduction) plus a SEPARATE Farouk personal position (4038.19). They are NOT distinct realised profits.",
+    "prohibition": "Do NOT sum the card values as separate realised profit. Currency NOT shown -> UNKNOWN."
+  },
+  "setup_structures": {
+    "A_WHALEROOM_PRIMARY_SETUP": {
+      "signal_zone": "4030-4045",
+      "shared_SL": "4130",
+      "official_entry": "4029.76",
+      "risk_note": "HIGH RISK LOW LOT (Discord)",
+      "management_sequence": [
+        "signal 15:32",
+        "TP1 at 100 pips + move SL to entry (15:39)",
+        "200 pips 'take tp 4' (15:47)",
+        "50% off + SL to entry (15:47/15:58)",
+        "runner 0.5 remaining (15:58), risk-free"
+      ],
+      "partial_reduction": "1.0 -> 0.5",
+      "runner_status": "ACTIVE / risk-free; final closure NOT shown -> UNKNOWN"
+    },
+    "B_FAROUK_PERSONAL_ENTRY": {
+      "entry": "4038.19",
+      "separation": "EXPLICITLY separate from the Whale Room official entry ('first entry is my own I forget to press enter, second is Whaleroom')",
+      "note": "performance NOT merged with the official Whale Room entry; different fill (~9 pts higher)."
+    },
+    "C_CONTINGENCY_SETUP": {
+      "zone": "4070-4080",
+      "preferred_core": "4070-4075",
+      "type": "unmitigated H1 order block; origin of the entire move down",
+      "condition": "conditional on the PRIMARY setup stopping at entry",
+      "identity": "SEPARATE setup identity",
+      "status": "ARMED_CONTINGENCY",
+      "activation": "NOT_OBSERVED — video: 'maybe we'll give another sell later today' (pre-planned, drawn scenario); NOT executed as a re-entry.",
+      "downside_target_if_primary_holds": "3930-3900 (drawn scenario down-arrow ~3960)"
+    }
+  },
+  "confluence_analysis": {
+    "classification": "EXPLICIT_CAMPAIGN_CONFLUENCE_EXAMPLE",
+    "stack": [
+      "H4 BOS",
+      "H1 nBOS (preserved exactly)",
+      "3-minute OB",
+      "5-minute OB that created the low"
+    ],
+    "spoken_corroboration": "video: 'we have OB on the 5 and the 3 minutes ... double confidence that this level will fail'; 'break of structure ... candle close below this low and under one hour as well'",
+    "do_not_generalise": "This is ONE example. Do NOT convert into a universal four-item threshold.",
+    "narrows_F_CONFLUENCE_UNKNOWN": "PARTIALLY — supplies a concrete worked confluence instance (multi-TF structure BOS/nBOS + stacked OBs) but n=1; the state-machine blocker F_CONFLUENCE_UNKNOWN is NOT resolved."
+  },
+  "directly_visible_chart_observations": [
+    {
+      "item": "symbol/feed",
+      "value": "Gold Spot/USD (XAUUSD), Pepperstone",
+      "frame": "ref_00-20/00-30",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "3m_panel",
+      "value": "TF=3, CHoCH=X, Asia break=LOW, OB retest=4036.56, Current OB=4036.56, Fresh OB=X",
+      "frame": "ref_00-20/00-30",
+      "confidence": "HIGH (verified)"
+    },
+    {
+      "item": "4H_panel",
+      "value": "TF=240, CHoCH=4121.58, Asia break=LOW, OB retest=Current OB=Fresh OB=4359.93",
+      "frame": "ref_00-10",
+      "confidence": "HIGH (verified)"
+    },
+    {
+      "item": "5m_panel",
+      "value": "user-stated: TF=5, CHoCH=X, Asia break=LOW, OB retest=X, Current OB=4096.61, Fresh OB=4379.08",
+      "frame": "NOT independently located in captured frames (captures showed 3m + 4H)",
+      "confidence": "UNRESOLVED (user-stated; Fresh OB 4379.08 consistent with FP-INDICATOR-001's 5m panel)"
+    },
+    {
+      "item": "Asia levels",
+      "value": "Asia High ~4102, Asia Low ~4048 (4H labels)",
+      "frame": "ref_00-10",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "scenario_drawing",
+      "value": "projected rally to the ~4073-4076 H1 OB (grey supply/blue lines), then dump down to ~3960 toward the 3930-3900 target (orange projection box + down-arrow)",
+      "frame": "ref_00-20/00-30",
+      "confidence": "HIGH"
+    },
+    {
+      "item": "zones",
+      "value": "green OBs ~3982-3995 & ~3995-4005 (created the low); pink FVGs ~4090-4110 & ~4050-4065; teal Asia band ~3925-3935",
+      "frame": "ref_00-20/00-30",
+      "confidence": "MEDIUM-HIGH"
+    }
+  ],
+  "explicit_spoken_statements": [
+    {
+      "ts": "00:00",
+      "text": "we lost [the low/HLLO], we have a change of character or actually a break of structure here and for [H4]. a candle close below this low and under one hour [H1] as well"
+    },
+    {
+      "ts": "00:12",
+      "text": "the five minutes we have this OB that started to make that lower low ... another three minute OB ... double confidence that this level will fail"
+    },
+    {
+      "ts": "00:28",
+      "text": "a level that you can take your 100, 200, 500 pips at least. And 50 pips, stop plus to entry"
+    },
+    {
+      "ts": "00:34",
+      "text": "it dumped to this F[V]G here. TP1 is secured. We actually took more than TP1"
+    },
+    {
+      "ts": "01:03",
+      "text": "if you go to the one hour, that's the OB that started to push lower ... unmitigated. So maybe we'll give another cell [sell] later today"
+    },
+    {
+      "ts": "01:14",
+      "text": "for now, the trade is risk-free. Take some profit again and hopefully gonna dump to this last E[P] and secure more profit"
+    },
+    {
+      "ts": "01:28",
+      "text": "wait for a high probability level with stacked levels ... stick to your plan ... see the OB, see the Asia high and Asia low ... if it doesn't come to your level don't take a trade, skip the day"
+    }
+  ],
+  "targets": [
+    {
+      "label": "TP1",
+      "value": "100 pips (secured)"
+    },
+    {
+      "label": "further",
+      "value": "3930-3900 (if primary holds; UNKNOWN)"
+    }
+  ],
+  "structural_invalidation": "shared SL 4130 (wide, to accommodate the preferred 4070-4075 H1 OB re-entry); later runner risk-free (SL at entry)",
+  "explicit_facts": [
+    "24 Jun 2026 XAUUSD SELL, signal zone 4030-4045, shared SL 4130, HIGH RISK LOW LOT",
+    "Two positions: Whale Room official 4029.76 + Farouk personal 4038.19 (explicitly separate)",
+    "Management: TP1 100 pips -> SL to entry; 50% off -> lot 1.0->0.5; runner risk-free",
+    "Confluence: H4 BOS + H1 nBOS + 3m OB + 5m OB (that created the low)",
+    "Contingency: 4070-4080 (pref 4070-4075) unmitigated H1 OB, ARMED, NOT activated",
+    "Video sa-e576af86dfbd4158: .mov 4096x2120, 28.8fps, 117.97s, has audio; local transcript (20 segs)"
+  ],
+  "strong_inferences": [
+    "CHoCH was ABSENT (X) on the 3-min entry TF yet the short setup was valid and worked -> CHoCH is NOT universally required; qualification came from BOS + multi-TF OB confluence.",
+    "The preferred 4070-4075 H1 OB establishes a QUALITY HIERARCHY: the unmitigated H1 OB (origin of the move) ranks above the entry zone; the wide SL exists to let price reach that higher-quality level.",
+    "The contingency is PRE-PLANNED (stated in advance + drawn scenario), NOT post-stop recovery behaviour.",
+    "The result cards are running-P/L snapshots (shared entry, scaling value, lot 1.0->0.5), not separate closures."
+  ],
+  "weak_inferences": [
+    "The 5m panel (Current OB 4096.61 / Fresh OB 4379.08) is plausibly correct (Fresh OB 4379.08 matches FP-INDICATOR-001) but not independently re-verified in this video's captured frames.",
+    "Timezone likely UTC+2 (prior Pepperstone campaigns) but not labelled here."
+  ],
+  "contradictions": [
+    "3m CHoCH=X vs 4H CHoCH=4121.58 — the CHoCH panel value is TF-dependent (not a contradiction per se, but shows CHoCH is not a single cross-TF state)."
+  ],
+  "unresolved_questions": [
+    "Runner (0.5) final closure & the 3930-3900 target result (UNKNOWN — not shown)",
+    "Whether the contingency 4070-4080 re-entry ever activated (NOT_OBSERVED)",
+    "Exact meaning of 'nBOS' (preserved verbatim; likely 'nested BOS' but NOT reinterpreted)",
+    "Chart timezone (unlabelled)",
+    "5m panel independent verification",
+    "Relationship of the 23 Jun prior context to this campaign (UNRESOLVED)",
+    "Currency of the card values (not shown)"
+  ],
+  "candidate_hypotheses": [
+    {
+      "id": "H-004-CHOCH",
+      "status": "SUPPORTED_ONE_CASE",
+      "text": "CHoCH is setup-family dependent, not a universal requirement (this BOS/OB-confluence short qualified with CHoCH=X)."
+    },
+    {
+      "id": "H-004-QUALITY",
+      "status": "UNTESTED",
+      "text": "An unmitigated H1 OB that originated the move is a higher-quality level than a lower-TF entry zone (quality hierarchy)."
+    },
+    {
+      "id": "H-004-CONTINGENCY",
+      "status": "SUPPORTED_ONE_CASE",
+      "text": "A pre-declared contingency at a higher-quality level is part of the plan, distinct from recovery-after-stop."
+    }
+  ],
+  "video_alignment": {
+    "classification": "DIRECT_SAME_CAMPAIGN",
+    "supporting": [
+      "same date 24 Jun 2026; XAUUSD; the 'GOLD BREAKDOWN' video reviews THIS short (BOS/nBOS/OB confluence, 4070-4080 H1 OB, 3930-3900 target)"
+    ],
+    "time_alignment_claimed": false
+  },
+  "source_asset_ids": [
+    "sa-e576af86dfbd4158"
+  ]
+}

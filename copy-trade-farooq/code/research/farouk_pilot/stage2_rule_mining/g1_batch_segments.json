@@ -1,0 +1,1010 @@
+[
+ {
+  "label": "FR-002_fp-live_with_farouk_sund_2027",
+  "rule_id": "FR-002",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 2024,
+  "end_s": 2057,
+  "question": "Price digit '4022' garbled elsewhere as 'this level here is 4022' \u2014 price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price"
+ },
+ {
+  "label": "FR-002_fp-10_min_stream_2475",
+  "rule_id": "FR-002",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2472,
+  "end_s": 2505,
+  "question": "Price digit '4022' garbled elsewhere as 'this level here is 4022' \u2014 price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price"
+ },
+ {
+  "label": "FR-002_fp-schermopname_2026_06__169",
+  "rule_id": "FR-002",
+  "stored_path": "store\\03\\036eef476c3ce1b2__Schermopname 2026-06-29 om 16.37.24.mov",
+  "start_s": 166,
+  "end_s": 199,
+  "question": "Price digit '4022' garbled elsewhere as 'this level here is 4022' \u2014 price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price"
+ },
+ {
+  "label": "FR-002_fp-10_min_stream_966",
+  "rule_id": "FR-002",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 963,
+  "end_s": 996,
+  "question": "Price digit '4022' garbled elsewhere as 'this level here is 4022' \u2014 price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price"
+ },
+ {
+  "label": "FR-002_fp-10_min_stream_2500",
+  "rule_id": "FR-002",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2497,
+  "end_s": 2530,
+  "question": "Price digit '4022' garbled elsewhere as 'this level here is 4022' \u2014 price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price"
+ },
+ {
+  "label": "FR-002_fp-live_with_farouk_sund_3676",
+  "rule_id": "FR-002",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 3673,
+  "end_s": 3706,
+  "question": "Price digit '4022' garbled elsewhere as 'this level here is 4022' \u2014 price level needs audio check. | 'new scandal' = mishear of 'news candle'; date and OB price"
+ },
+ {
+  "label": "FR-004_fp-live_with_farouk_sund_815",
+  "rule_id": "FR-004",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 812,
+  "end_s": 845,
+  "question": "'balanced branch range' is a mishear of 'balanced price range'. | 'FPG' = FVG mishear throughout. | Timeframe numbers (15m/5m) and the garbled conditional 'can "
+ },
+ {
+  "label": "FR-004_fp-10_min_stream_1030",
+  "rule_id": "FR-004",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1027,
+  "end_s": 1060,
+  "question": "'balanced branch range' is a mishear of 'balanced price range'. | 'FPG' = FVG mishear throughout. | Timeframe numbers (15m/5m) and the garbled conditional 'can "
+ },
+ {
+  "label": "FR-004_fp-10_min_stream_1090",
+  "rule_id": "FR-004",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1087,
+  "end_s": 1120,
+  "question": "'balanced branch range' is a mishear of 'balanced price range'. | 'FPG' = FVG mishear throughout. | Timeframe numbers (15m/5m) and the garbled conditional 'can "
+ },
+ {
+  "label": "FR-006_fp-gmt20251221_181518_re_5152",
+  "rule_id": "FR-006",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 5149,
+  "end_s": 5182,
+  "question": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' ="
+ },
+ {
+  "label": "FR-006_fp-live_with_farouk_sund_1386",
+  "rule_id": "FR-006",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 1383,
+  "end_s": 1416,
+  "question": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' ="
+ },
+ {
+  "label": "FR-006_fp-10_min_stream_421",
+  "rule_id": "FR-006",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 418,
+  "end_s": 451,
+  "question": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' ="
+ },
+ {
+  "label": "FR-006_fp-10_min_stream_922",
+  "rule_id": "FR-006",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 919,
+  "end_s": 952,
+  "question": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' ="
+ },
+ {
+  "label": "FR-006_fp-gmt20251221_181518_re_3315",
+  "rule_id": "FR-006",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 3312,
+  "end_s": 3345,
+  "question": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' ="
+ },
+ {
+  "label": "FR-006_fp-live_with_farouk_frid_2473",
+  "rule_id": "FR-006",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 2470,
+  "end_s": 2503,
+  "question": "'the hydrogen says' is garbled (likely 'the higher chances'); 'conferences' throughout = 'confluences'. | 'PPR' = BPR, 'FPG' = FVG mishears. | '50 minutes OB' ="
+ },
+ {
+  "label": "FR-008_fp-live_with_farouk_sund_1317",
+  "rule_id": "FR-008",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 1314,
+  "end_s": 1347,
+  "question": "Price digits garbled ('10... 1009', 'stop loss 90, 3,990') \u2014 CRITICAL price-level ambiguity."
+ },
+ {
+  "label": "FR-008_fp-2026_07_20_farouk_pos_285",
+  "rule_id": "FR-008",
+  "stored_path": "store\\de\\de34a426ab0ce768__2026-07-20_farouk_post_trade_breakdown_F006.mp4.mov",
+  "start_s": 282,
+  "end_s": 315,
+  "question": "Price digits garbled ('10... 1009', 'stop loss 90, 3,990') \u2014 CRITICAL price-level ambiguity."
+ },
+ {
+  "label": "FR-008_fp-schermopname_2026_07__102",
+  "rule_id": "FR-008",
+  "stored_path": "store\\e8\\e8a33802a013d74f__Schermopname 2026-07-05 om 12.53.09.mov",
+  "start_s": 99,
+  "end_s": 132,
+  "question": "Price digits garbled ('10... 1009', 'stop loss 90, 3,990') \u2014 CRITICAL price-level ambiguity."
+ },
+ {
+  "label": "FR-008_fp-schermopname_2025_12__249",
+  "rule_id": "FR-008",
+  "stored_path": "store\\a4\\a41992a559e1930c__Schermopname_2025-12-14_om_17.03.11.mov",
+  "start_s": 246,
+  "end_s": 279,
+  "question": "Price digits garbled ('10... 1009', 'stop loss 90, 3,990') \u2014 CRITICAL price-level ambiguity."
+ },
+ {
+  "label": "FR-009_fp-live_with_farouk_sund_3937",
+  "rule_id": "FR-009",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 3934,
+  "end_s": 3967,
+  "question": "'weeks' = wicks mishear. | 'WIC/WICs' = wick(s) mishear."
+ },
+ {
+  "label": "FR-009_fp-gmt20251221_181518_re_4132",
+  "rule_id": "FR-009",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 4129,
+  "end_s": 4162,
+  "question": "'weeks' = wicks mishear. | 'WIC/WICs' = wick(s) mishear."
+ },
+ {
+  "label": "FR-009_fp-10_min_stream_2707",
+  "rule_id": "FR-009",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2704,
+  "end_s": 2737,
+  "question": "'weeks' = wicks mishear. | 'WIC/WICs' = wick(s) mishear."
+ },
+ {
+  "label": "FR-009_fp-live_with_farouk_frid_2262",
+  "rule_id": "FR-009",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 2259,
+  "end_s": 2292,
+  "question": "'weeks' = wicks mishear. | 'WIC/WICs' = wick(s) mishear."
+ },
+ {
+  "label": "FR-013_fp-gmt20251221_181518_re_7828",
+  "rule_id": "FR-013",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 7825,
+  "end_s": 7858,
+  "question": "'weak/week high/low' = wick high/low mishear pervasive through the whole segment; construction depends on which extreme is a wick."
+ },
+ {
+  "label": "FR-016_fp-live_with_farouk_frid_3763",
+  "rule_id": "FR-016",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 3760,
+  "end_s": 3793,
+  "question": "'IFPG'/'IFEG' = IFVG mishears throughout both files. | 'ifgg' = IFVG (inverted FVG) mishear; price 4120 vs 4,120 context."
+ },
+ {
+  "label": "FR-016_fp-schermopname_2026_07__348",
+  "rule_id": "FR-016",
+  "stored_path": "store\\50\\5069bb30641f7e5f__Schermopname 2026-07-02 om 19.40.23.mov",
+  "start_s": 345,
+  "end_s": 378,
+  "question": "'IFPG'/'IFEG' = IFVG mishears throughout both files. | 'ifgg' = IFVG (inverted FVG) mishear; price 4120 vs 4,120 context."
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_sund_492",
+  "rule_id": "FR-024",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 489,
+  "end_s": 522,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_frid_1336",
+  "rule_id": "FR-024",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 1333,
+  "end_s": 1366,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_frid_6374",
+  "rule_id": "FR-024",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 6371,
+  "end_s": 6404,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_frid_2787",
+  "rule_id": "FR-024",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 2784,
+  "end_s": 2817,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_frid_2336",
+  "rule_id": "FR-024",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 2333,
+  "end_s": 2366,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_sund_776",
+  "rule_id": "FR-024",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 773,
+  "end_s": 806,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-024_fp-live_with_farouk_sund_1316",
+  "rule_id": "FR-024",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 1313,
+  "end_s": 1346,
+  "question": "78% vs 80% quoted interchangeably; source document shown on screen not verifiable from transcript. | 'FEG'/'FPG' = FVG mishears; setup components otherwise clea"
+ },
+ {
+  "label": "FR-027_fp-gmt20251221_181518_re_4730",
+  "rule_id": "FR-027",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 4727,
+  "end_s": 4760,
+  "question": "'candle glow' = mishear of 'candle close'. | Price digits spoken as 'four zero seventy four zero sixty' need audio confirmation."
+ },
+ {
+  "label": "FR-027_fp-schermopname_2026_07__154",
+  "rule_id": "FR-027",
+  "stored_path": "store\\98\\982e851711d3699b__Schermopname 2026-07-15 om 17.19.26.mov",
+  "start_s": 151,
+  "end_s": 184,
+  "question": "'candle glow' = mishear of 'candle close'. | Price digits spoken as 'four zero seventy four zero sixty' need audio confirmation."
+ },
+ {
+  "label": "FR-027_fp-10_min_stream_1381",
+  "rule_id": "FR-027",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1378,
+  "end_s": 1411,
+  "question": "'candle glow' = mishear of 'candle close'. | Price digits spoken as 'four zero seventy four zero sixty' need audio confirmation."
+ },
+ {
+  "label": "FR-027_fp-live_with_farouk_sund_2077",
+  "rule_id": "FR-027",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 2074,
+  "end_s": 2107,
+  "question": "'candle glow' = mishear of 'candle close'. | Price digits spoken as 'four zero seventy four zero sixty' need audio confirmation."
+ },
+ {
+  "label": "FR-029_fp-live_with_farouk_frid_599",
+  "rule_id": "FR-029",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 596,
+  "end_s": 629,
+  "question": "'look for loss' = mishear of 'look for longs' (direction-critical). | 'FPG' = FVG mishear."
+ },
+ {
+  "label": "FR-029_fp-live_with_farouk_sund_2209",
+  "rule_id": "FR-029",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 2206,
+  "end_s": 2239,
+  "question": "'look for loss' = mishear of 'look for longs' (direction-critical). | 'FPG' = FVG mishear."
+ },
+ {
+  "label": "FR-029_fp-gmt20251221_181518_re_4755",
+  "rule_id": "FR-029",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 4752,
+  "end_s": 4785,
+  "question": "'look for loss' = mishear of 'look for longs' (direction-critical). | 'FPG' = FVG mishear."
+ },
+ {
+  "label": "FR-029_fp-10_min_stream_1404",
+  "rule_id": "FR-029",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1401,
+  "end_s": 1434,
+  "question": "'look for loss' = mishear of 'look for longs' (direction-critical). | 'FPG' = FVG mishear."
+ },
+ {
+  "label": "FR-030_fp-live_with_farouk_sund_1858",
+  "rule_id": "FR-030",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 1855,
+  "end_s": 1888,
+  "question": "'50 minutes OB' and '15 minutes OB' both appear for the same object \u2014 confirms 50-minute = 15-minute mishear; timeframe-dependent, CRITICAL. | Lot-split arithme"
+ },
+ {
+  "label": "FR-030_fp-live_with_farouk_frid_700",
+  "rule_id": "FR-030",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 697,
+  "end_s": 730,
+  "question": "'50 minutes OB' and '15 minutes OB' both appear for the same object \u2014 confirms 50-minute = 15-minute mishear; timeframe-dependent, CRITICAL. | Lot-split arithme"
+ },
+ {
+  "label": "FR-030_fp-live_with_farouk_frid_1302",
+  "rule_id": "FR-030",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 1299,
+  "end_s": 1332,
+  "question": "'50 minutes OB' and '15 minutes OB' both appear for the same object \u2014 confirms 50-minute = 15-minute mishear; timeframe-dependent, CRITICAL. | Lot-split arithme"
+ },
+ {
+  "label": "FR-030_fp-gmt20251221_181518_re_6174",
+  "rule_id": "FR-030",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 6171,
+  "end_s": 6204,
+  "question": "'50 minutes OB' and '15 minutes OB' both appear for the same object \u2014 confirms 50-minute = 15-minute mishear; timeframe-dependent, CRITICAL. | Lot-split arithme"
+ },
+ {
+  "label": "FR-031_fp-live_with_farouk_sund_899",
+  "rule_id": "FR-031",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 896,
+  "end_s": 929,
+  "question": "Timeframe phrase 'five and 15 minutes' matches the known 5/15 mishear family; 'conference' = confluence."
+ },
+ {
+  "label": "FR-031_fp-schermopname_2026_07__208",
+  "rule_id": "FR-031",
+  "stored_path": "store\\50\\5069bb30641f7e5f__Schermopname 2026-07-02 om 19.40.23.mov",
+  "start_s": 205,
+  "end_s": 238,
+  "question": "Timeframe phrase 'five and 15 minutes' matches the known 5/15 mishear family; 'conference' = confluence."
+ },
+ {
+  "label": "FR-031_fp-live_with_farouk_sund_3792",
+  "rule_id": "FR-031",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 3789,
+  "end_s": 3822,
+  "question": "Timeframe phrase 'five and 15 minutes' matches the known 5/15 mishear family; 'conference' = confluence."
+ },
+ {
+  "label": "FR-033_fp-live_with_farouk_sund_1685",
+  "rule_id": "FR-033",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 1682,
+  "end_s": 1715,
+  "question": "'FEGs' = FVGs mishear. | 'FPGs' = FVGs mishear."
+ },
+ {
+  "label": "FR-033_fp-live_with_farouk_frid_3594",
+  "rule_id": "FR-033",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 3591,
+  "end_s": 3624,
+  "question": "'FEGs' = FVGs mishear. | 'FPGs' = FVGs mishear."
+ },
+ {
+  "label": "FR-034_fp-live_with_farouk_sund_4315",
+  "rule_id": "FR-034",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 4312,
+  "end_s": 4345,
+  "question": "Timeframe numbers (1/3/5-minute) are load-bearing for a scalp rule and within the mishear-prone family. | '50 to the homo pips' garbled \u2014 probably '50 to a hund"
+ },
+ {
+  "label": "FR-034_fp-live_with_farouk_frid_4570",
+  "rule_id": "FR-034",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 4567,
+  "end_s": 4600,
+  "question": "Timeframe numbers (1/3/5-minute) are load-bearing for a scalp rule and within the mishear-prone family. | '50 to the homo pips' garbled \u2014 probably '50 to a hund"
+ },
+ {
+  "label": "FR-034_fp-schermopname_2026_07__204",
+  "rule_id": "FR-034",
+  "stored_path": "store\\e8\\e8a33802a013d74f__Schermopname 2026-07-05 om 12.53.09.mov",
+  "start_s": 201,
+  "end_s": 234,
+  "question": "Timeframe numbers (1/3/5-minute) are load-bearing for a scalp rule and within the mishear-prone family. | '50 to the homo pips' garbled \u2014 probably '50 to a hund"
+ },
+ {
+  "label": "FR-034_fp-live_with_farouk_sund_7427",
+  "rule_id": "FR-034",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 7424,
+  "end_s": 7457,
+  "question": "Timeframe numbers (1/3/5-minute) are load-bearing for a scalp rule and within the mishear-prone family. | '50 to the homo pips' garbled \u2014 probably '50 to a hund"
+ },
+ {
+  "label": "FR-039_fp-live_with_farouk_sund_1751",
+  "rule_id": "FR-039",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 1748,
+  "end_s": 1781,
+  "question": "'FEGC' is a garbled FVG term; timeframe list (3-day, 12h) should be audio-confirmed."
+ },
+ {
+  "label": "FR-039_fp-10_min_stream_295",
+  "rule_id": "FR-039",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 292,
+  "end_s": 325,
+  "question": "'FEGC' is a garbled FVG term; timeframe list (3-day, 12h) should be audio-confirmed."
+ },
+ {
+  "label": "FR-039_fp-live_with_farouk_frid_2674",
+  "rule_id": "FR-039",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 2671,
+  "end_s": 2704,
+  "question": "'FEGC' is a garbled FVG term; timeframe list (3-day, 12h) should be audio-confirmed."
+ },
+ {
+  "label": "FR-041_fp-live_with_farouk_sund_4928",
+  "rule_id": "FR-041",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 4925,
+  "end_s": 4958,
+  "question": "Garbled phrasing 'it's nine times, I don't trade nine times' \u2014 could be 'nine times out of ten I don't trade Asia'; frequency claim needs audio. | 'go cell' = '"
+ },
+ {
+  "label": "FR-041_fp-gmt20251221_181518_re_123",
+  "rule_id": "FR-041",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 120,
+  "end_s": 153,
+  "question": "Garbled phrasing 'it's nine times, I don't trade nine times' \u2014 could be 'nine times out of ten I don't trade Asia'; frequency claim needs audio. | 'go cell' = '"
+ },
+ {
+  "label": "FR-041_fp-2026_07_20_farouk_pos_174",
+  "rule_id": "FR-041",
+  "stored_path": "store\\de\\de34a426ab0ce768__2026-07-20_farouk_post_trade_breakdown_F006.mp4.mov",
+  "start_s": 171,
+  "end_s": 204,
+  "question": "Garbled phrasing 'it's nine times, I don't trade nine times' \u2014 could be 'nine times out of ten I don't trade Asia'; frequency claim needs audio. | 'go cell' = '"
+ },
+ {
+  "label": "FR-041_fp-live_with_farouk_sund_3588",
+  "rule_id": "FR-041",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 3585,
+  "end_s": 3618,
+  "question": "Garbled phrasing 'it's nine times, I don't trade nine times' \u2014 could be 'nine times out of ten I don't trade Asia'; frequency claim needs audio. | 'go cell' = '"
+ },
+ {
+  "label": "FR-043_fp-live_with_farouk_sund_3269",
+  "rule_id": "FR-043",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 3266,
+  "end_s": 3299,
+  "question": "'see me' = CME mishear. | 'big week' = big wick mishear."
+ },
+ {
+  "label": "FR-043_fp-live_with_farouk_frid_3179",
+  "rule_id": "FR-043",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 3176,
+  "end_s": 3209,
+  "question": "'see me' = CME mishear. | 'big week' = big wick mishear."
+ },
+ {
+  "label": "FR-043_fp-gmt20251221_181518_re_7241",
+  "rule_id": "FR-043",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 7238,
+  "end_s": 7271,
+  "question": "'see me' = CME mishear. | 'big week' = big wick mishear."
+ },
+ {
+  "label": "FR-043_fp-gmt20251221_181518_re_634",
+  "rule_id": "FR-043",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 631,
+  "end_s": 664,
+  "question": "'see me' = CME mishear. | 'big week' = big wick mishear."
+ },
+ {
+  "label": "FR-049_fp-schermopname_2026_06__35",
+  "rule_id": "FR-049",
+  "stored_path": "store\\e5\\e576af86dfbd4158__Schermopname 2026-06-24 om 17.02.44.mov",
+  "start_s": 32,
+  "end_s": 65,
+  "question": "'stop plus two entry' = stop loss to entry mishear. | '50 minute candle close' = likely 15-minute (known mishear); target prices garbled ('1659 sorry, 6900, 61,"
+ },
+ {
+  "label": "FR-049_fp-live_with_farouk_sund_7212",
+  "rule_id": "FR-049",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 7209,
+  "end_s": 7242,
+  "question": "'stop plus two entry' = stop loss to entry mishear. | '50 minute candle close' = likely 15-minute (known mishear); target prices garbled ('1659 sorry, 6900, 61,"
+ },
+ {
+  "label": "FR-049_fp-live_with_farouk_frid_6178",
+  "rule_id": "FR-049",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 6175,
+  "end_s": 6208,
+  "question": "'stop plus two entry' = stop loss to entry mishear. | '50 minute candle close' = likely 15-minute (known mishear); target prices garbled ('1659 sorry, 6900, 61,"
+ },
+ {
+  "label": "FR-049_fp-live_with_farouk_frid_1011",
+  "rule_id": "FR-049",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 1008,
+  "end_s": 1041,
+  "question": "'stop plus two entry' = stop loss to entry mishear. | '50 minute candle close' = likely 15-minute (known mishear); target prices garbled ('1659 sorry, 6900, 61,"
+ },
+ {
+  "label": "FR-049_fp-schermopname_2026_07__451",
+  "rule_id": "FR-049",
+  "stored_path": "store\\4c\\4c42c8642c35de2a__Schermopname 2026-07-01 om 20.16.35.mov",
+  "start_s": 448,
+  "end_s": 481,
+  "question": "'stop plus two entry' = stop loss to entry mishear. | '50 minute candle close' = likely 15-minute (known mishear); target prices garbled ('1659 sorry, 6900, 61,"
+ },
+ {
+  "label": "FR-051_fp-live_with_farouk_frid_1710",
+  "rule_id": "FR-051",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 1707,
+  "end_s": 1740,
+  "question": "'this week' = this wick mishear; 'stop plus' = stop loss. | 'Stop plus' = stop loss mishear; pip counts digit-sensitive; 'market of continuation' garbled. | Pri"
+ },
+ {
+  "label": "FR-051_fp-10_min_stream_2991",
+  "rule_id": "FR-051",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2988,
+  "end_s": 3021,
+  "question": "'this week' = this wick mishear; 'stop plus' = stop loss. | 'Stop plus' = stop loss mishear; pip counts digit-sensitive; 'market of continuation' garbled. | Pri"
+ },
+ {
+  "label": "FR-051_fp-schermopname_2026_07__223",
+  "rule_id": "FR-051",
+  "stored_path": "store\\98\\982e851711d3699b__Schermopname 2026-07-15 om 17.19.26.mov",
+  "start_s": 220,
+  "end_s": 253,
+  "question": "'this week' = this wick mishear; 'stop plus' = stop loss. | 'Stop plus' = stop loss mishear; pip counts digit-sensitive; 'market of continuation' garbled. | Pri"
+ },
+ {
+  "label": "FR-051_fp-live_with_farouk_sund_2243",
+  "rule_id": "FR-051",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 2240,
+  "end_s": 2273,
+  "question": "'this week' = this wick mishear; 'stop plus' = stop loss. | 'Stop plus' = stop loss mishear; pip counts digit-sensitive; 'market of continuation' garbled. | Pri"
+ },
+ {
+  "label": "FR-055_fp-gmt20251221_181518_re_6095",
+  "rule_id": "FR-055",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 6092,
+  "end_s": 6125,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-055_fp-gmt20251221_181518_re_6596",
+  "rule_id": "FR-055",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 6593,
+  "end_s": 6626,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-055_fp-live_with_farouk_frid_4324",
+  "rule_id": "FR-055",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 4321,
+  "end_s": 4354,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-055_fp-live_with_farouk_frid_4131",
+  "rule_id": "FR-055",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 4128,
+  "end_s": 4161,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-055_fp-live_with_farouk_frid_4602",
+  "rule_id": "FR-055",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 4599,
+  "end_s": 4632,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-055_fp-10_min_stream_1984",
+  "rule_id": "FR-055",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1981,
+  "end_s": 2014,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-055_fp-live_with_farouk_frid_4170",
+  "rule_id": "FR-055",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 4167,
+  "end_s": 4200,
+  "question": "Pip figure (50) is load-bearing and could be misheard (15/50). | Percentages/pips (90%, 400) digit-sensitive; Friday version says 50% \u2014 partial-size policy vari"
+ },
+ {
+  "label": "FR-056_fp-live_with_farouk_sund_590",
+  "rule_id": "FR-056",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 587,
+  "end_s": 620,
+  "question": "Pip counts (200/250) and dollar equivalences are load-bearing numbers."
+ },
+ {
+  "label": "FR-056_fp-live_with_farouk_frid_4224",
+  "rule_id": "FR-056",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 4221,
+  "end_s": 4254,
+  "question": "Pip counts (200/250) and dollar equivalences are load-bearing numbers."
+ },
+ {
+  "label": "FR-056_fp-live_with_farouk_frid_1966",
+  "rule_id": "FR-056",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 1963,
+  "end_s": 1996,
+  "question": "Pip counts (200/250) and dollar equivalences are load-bearing numbers."
+ },
+ {
+  "label": "FR-056_fp-gmt20251221_181518_re_1360",
+  "rule_id": "FR-056",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 1357,
+  "end_s": 1390,
+  "question": "Pip counts (200/250) and dollar equivalences are load-bearing numbers."
+ },
+ {
+  "label": "FR-058_fp-schermopname_2026_06__53",
+  "rule_id": "FR-058",
+  "stored_path": "store\\03\\036eef476c3ce1b2__Schermopname 2026-06-29 om 16.37.24.mov",
+  "start_s": 50,
+  "end_s": 83,
+  "question": "Transcript contradicts itself ('close the worst entry... hold your best' vs 'the worst entry you hold'); which leg is closed must be verified on audio."
+ },
+ {
+  "label": "FR-058_fp-live_with_farouk_frid_1380",
+  "rule_id": "FR-058",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 1377,
+  "end_s": 1410,
+  "question": "Transcript contradicts itself ('close the worst entry... hold your best' vs 'the worst entry you hold'); which leg is closed must be verified on audio."
+ },
+ {
+  "label": "FR-061_fp-live_with_farouk_frid_3910",
+  "rule_id": "FR-061",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 3907,
+  "end_s": 3940,
+  "question": "'the 50 minutes or the five minutes FPG' \u2014 15-minute mishear plus self-correction; exact invalidating timeframe CRITICAL."
+ },
+ {
+  "label": "FR-063_fp-live_with_farouk_sund_3380",
+  "rule_id": "FR-063",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 3377,
+  "end_s": 3410,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-063_fp-live_with_farouk_frid_5589",
+  "rule_id": "FR-063",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 5586,
+  "end_s": 5619,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-063_fp-live_with_farouk_frid_2446",
+  "rule_id": "FR-063",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 2443,
+  "end_s": 2476,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-063_fp-live_with_farouk_frid_3844",
+  "rule_id": "FR-063",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 3841,
+  "end_s": 3874,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-063_fp-10_min_stream_1999",
+  "rule_id": "FR-063",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1996,
+  "end_s": 2029,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-063_fp-live_with_farouk_frid_5571",
+  "rule_id": "FR-063",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 5568,
+  "end_s": 5601,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-063_fp-live_with_farouk_sund_4012",
+  "rule_id": "FR-063",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 4009,
+  "end_s": 4042,
+  "question": "'70% probability' here vs 78/80% elsewhere \u2014 figure inconsistent. | 'praying the probabilities' = playing."
+ },
+ {
+  "label": "FR-068_fp-live_with_farouk_frid_730",
+  "rule_id": "FR-068",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 727,
+  "end_s": 760,
+  "question": "'loans' is a mishear of 'longs'; harmless but quote is mishear-dependent. | CRITICAL: '50-minute candle close' = almost certainly 15-minute. | '50 minutes are a"
+ },
+ {
+  "label": "FR-068_fp-10_min_stream_1338",
+  "rule_id": "FR-068",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1335,
+  "end_s": 1368,
+  "question": "'loans' is a mishear of 'longs'; harmless but quote is mishear-dependent. | CRITICAL: '50-minute candle close' = almost certainly 15-minute. | '50 minutes are a"
+ },
+ {
+  "label": "FR-068_fp-10_min_stream_2825",
+  "rule_id": "FR-068",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2822,
+  "end_s": 2855,
+  "question": "'loans' is a mishear of 'longs'; harmless but quote is mishear-dependent. | CRITICAL: '50-minute candle close' = almost certainly 15-minute. | '50 minutes are a"
+ },
+ {
+  "label": "FR-068_fp-live_with_farouk_frid_1224",
+  "rule_id": "FR-068",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 1221,
+  "end_s": 1254,
+  "question": "'loans' is a mishear of 'longs'; harmless but quote is mishear-dependent. | CRITICAL: '50-minute candle close' = almost certainly 15-minute. | '50 minutes are a"
+ },
+ {
+  "label": "FR-075_fp-10_min_stream_2199",
+  "rule_id": "FR-075",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2196,
+  "end_s": 2229,
+  "question": "'the accelerator' is a mishear (likely 'the sellers are') \u2014 meaning depends on it."
+ },
+ {
+  "label": "FR-076_fp-live_with_farouk_frid_1806",
+  "rule_id": "FR-076",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 1803,
+  "end_s": 1836,
+  "question": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm."
+ },
+ {
+  "label": "FR-076_fp-live_with_farouk_frid_1166",
+  "rule_id": "FR-076",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 1163,
+  "end_s": 1196,
+  "question": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm."
+ },
+ {
+  "label": "FR-076_fp-live_with_farouk_sund_3455",
+  "rule_id": "FR-076",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 3452,
+  "end_s": 3485,
+  "question": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm."
+ },
+ {
+  "label": "FR-076_fp-gmt20251221_181518_re_8625",
+  "rule_id": "FR-076",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 8622,
+  "end_s": 8655,
+  "question": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm."
+ },
+ {
+  "label": "FR-076_fp-live_with_farouk_sund_3148",
+  "rule_id": "FR-076",
+  "stored_path": "store\\94\\942dc4af6f74504b__Live with Farouk, Sunday, 12 July 2026.mp4",
+  "start_s": 3145,
+  "end_s": 3178,
+  "question": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm."
+ },
+ {
+  "label": "FR-076_fp-live_with_farouk_sund_4394",
+  "rule_id": "FR-076",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 4391,
+  "end_s": 4424,
+  "question": "Garbled negation: 'I don't trade BTC and gold' clearly means 'I don't trade [anything] but BTC and gold'; needs audio to confirm."
+ },
+ {
+  "label": "FR-079_fp-live_with_farouk_sund_7537",
+  "rule_id": "FR-079",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 7534,
+  "end_s": 7567,
+  "question": "'If you have a $1,000 account, do more than that' is almost certainly a mishear of 'do NO more than that' / 'don't do more than that' \u2014 inverted meaning, CRITIC"
+ },
+ {
+  "label": "FR-079_fp-live_with_farouk_frid_6090",
+  "rule_id": "FR-079",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 6087,
+  "end_s": 6120,
+  "question": "'If you have a $1,000 account, do more than that' is almost certainly a mishear of 'do NO more than that' / 'don't do more than that' \u2014 inverted meaning, CRITIC"
+ },
+ {
+  "label": "FR-086_fp-live_with_farouk_sund_222",
+  "rule_id": "FR-086",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 219,
+  "end_s": 252,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-live_with_farouk_sund_254",
+  "rule_id": "FR-086",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 251,
+  "end_s": 284,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-live_with_farouk_frid_4622",
+  "rule_id": "FR-086",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 4619,
+  "end_s": 4652,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-live_with_farouk_frid_700",
+  "rule_id": "FR-086",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 697,
+  "end_s": 730,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-live_with_farouk_frid_795",
+  "rule_id": "FR-086",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 792,
+  "end_s": 825,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-10_min_stream_2751",
+  "rule_id": "FR-086",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2748,
+  "end_s": 2781,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-schermopname_2026_07__13",
+  "rule_id": "FR-086",
+  "stored_path": "store\\e8\\e8a33802a013d74f__Schermopname 2026-07-05 om 12.53.09.mov",
+  "start_s": 10,
+  "end_s": 43,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-086_fp-10_min_stream_2385",
+  "rule_id": "FR-086",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 2382,
+  "end_s": 2415,
+  "question": "'take a trip' garbled (likely 'take a trade'). | Panel price readouts (3981, 453) are digit-sensitive."
+ },
+ {
+  "label": "FR-097_fp-schermopname_2026_06__93",
+  "rule_id": "FR-097",
+  "stored_path": "store\\e5\\e576af86dfbd4158__Schermopname 2026-06-24 om 17.02.44.mov",
+  "start_s": 90,
+  "end_s": 123,
+  "question": "'50 minutes' timeframe mishear inside the routine description (likely 15 minutes)."
+ },
+ {
+  "label": "FR-097_fp-live_with_farouk_frid_1689",
+  "rule_id": "FR-097",
+  "stored_path": "store\\f1\\f1200fed0ebc5832__Live with Farouk, Friday, 10 July 2026.mp4",
+  "start_s": 1686,
+  "end_s": 1719,
+  "question": "'50 minutes' timeframe mishear inside the routine description (likely 15 minutes)."
+ },
+ {
+  "label": "FR-097_fp-live_with_farouk_sund_1098",
+  "rule_id": "FR-097",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 1095,
+  "end_s": 1128,
+  "question": "'50 minutes' timeframe mishear inside the routine description (likely 15 minutes)."
+ },
+ {
+  "label": "FR-097_fp-gmt20251221_181518_re_4504",
+  "rule_id": "FR-097",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 4501,
+  "end_s": 4534,
+  "question": "'50 minutes' timeframe mishear inside the routine description (likely 15 minutes)."
+ },
+ {
+  "label": "FR-098_fp-live_with_farouk_sund_2954",
+  "rule_id": "FR-098",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 2951,
+  "end_s": 2984,
+  "question": "'50 minutes kind of close' = 15-minute candle close mishear; 'cell' = sell. | 'sales zone' = sell zone mishear."
+ },
+ {
+  "label": "FR-098_fp-live_with_farouk_frid_5855",
+  "rule_id": "FR-098",
+  "stored_path": "store\\94\\944789f92a8092cc__Live with Farouk, Friday, 3 July 2026.mp4",
+  "start_s": 5852,
+  "end_s": 5885,
+  "question": "'50 minutes kind of close' = 15-minute candle close mishear; 'cell' = sell. | 'sales zone' = sell zone mishear."
+ },
+ {
+  "label": "FR-098_fp-10_min_stream_1864",
+  "rule_id": "FR-098",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 1861,
+  "end_s": 1894,
+  "question": "'50 minutes kind of close' = 15-minute candle close mishear; 'cell' = sell. | 'sales zone' = sell zone mishear."
+ },
+ {
+  "label": "FR-098_fp-10_min_stream_557",
+  "rule_id": "FR-098",
+  "stored_path": "store\\da\\dadb6e541dda85b7__10 min stream.mp4",
+  "start_s": 554,
+  "end_s": 587,
+  "question": "'50 minutes kind of close' = 15-minute candle close mishear; 'cell' = sell. | 'sales zone' = sell zone mishear."
+ },
+ {
+  "label": "FR-099_fp-gmt20251221_181518_re_212",
+  "rule_id": "FR-099",
+  "stored_path": "store\\c5\\c5508175ec0d635b__GMT20251221-181518_Recording (1).m4a",
+  "start_s": 209,
+  "end_s": 242,
+  "question": "'Five, 55% chance' ambiguous (55%? 5 days?); percentage needs audio check."
+ },
+ {
+  "label": "FR-099_fp-live_with_farouk_sund_4625",
+  "rule_id": "FR-099",
+  "stored_path": "store\\43\\4328a875cb55d147__Live with Farouk, Sunday, 5 July 2026.mp4",
+  "start_s": 4622,
+  "end_s": 4655,
+  "question": "'Five, 55% chance' ambiguous (55%? 5 days?); percentage needs audio check."
+ }
+]

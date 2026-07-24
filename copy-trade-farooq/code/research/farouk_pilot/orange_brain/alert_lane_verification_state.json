@@ -1,0 +1,16 @@
+{
+  "schema": "alert_lane_verification_state_v1",
+  "last_verified_utc": "2026-07-20T15:10:00Z",
+  "method": "authorised temp token-gated R2 list branch (D-013), reverted byte-exact",
+  "last_confirmed_per_route": {
+    "SWEEP_LOW": "2026-07-20T14:18Z",
+    "SWEEP_HIGH": "2026-07-20T11:36Z",
+    "CHOCH_UP": "2026-07-20T11:33Z",
+    "CHOCH_DOWN": "never-fired-since-armed (07-14 status)",
+    "A_PLUS": "2026-07-17T20:30Z (FIRED_AND_CAPTURED x2)",
+    "A_TRIPLE_PLUS": "never fired anywhere",
+    "BAR_FEED_1M": "continuous"
+  },
+  "proper_fix_work_order": "Worker predictable-key marker alerts/last_any.json (overwrite-idempotent, logging-only) - REQUIRES APPROVAL: changes Worker baseline sha 483ad090; until then weekly manual audit per D-013 method",
+  "update_rule": "append-only spirit: update ONLY after a genuine R2 verification run; never hand-edit to silence the monitor"
+}

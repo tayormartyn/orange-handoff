@@ -1,0 +1,224 @@
+{
+ "banner": "NO BROKER ACTION | NO ORDER SUBMISSION | REVIEW-ONLY SHADOW PROPOSAL",
+ "card_type": "REVIEW_ONLY_SHADOW_PROPOSAL",
+ "campaign_id": "XAU-F006-20260720",
+ "direction": "LONG",
+ "zone": "4000-4010",
+ "posted_follower_stop": "3992 (posted follower stop; personal stop UNKNOWN; structural invalidation NOT STATED)",
+ "source_timestamp_utc": "2026-07-20T14:49:17+00:00",
+ "evidence_links": {
+  "message_ids": [
+   45935,
+   45937,
+   45938
+  ],
+  "frozen_evidence_sha256": "0aff94e6f939a8a91d1ece1686d83c131f1b105b6a7c073623ec211142ac38cf",
+  "forward_ledger": "forward_validation_ledger_v0_2.jsonl",
+  "tracker_ledger": "market_tracker/tracker_ledger_v0_1.jsonl"
+ },
+ "constitution_sha256": "7bce618f29d1d44a48bef085d539b05a289393ebe33fe4d304632016777defde",
+ "acknowledgement_note": "REVIEW/ACKNOWLEDGED/REJECTED is an annotation with zero execution consequence",
+ "constitution_version": "0.1.0",
+ "theoretical_legs": [
+  {
+   "leg_id": "XAU-F006-20260720/near",
+   "price": "4010",
+   "kind": "LIMIT",
+   "state": "FILLED",
+   "fill_price": "4010",
+   "open_size": "0",
+   "be_price": null,
+   "tags": [
+    "AMBIGUOUS_FILL_BAND"
+   ]
+  },
+  {
+   "leg_id": "XAU-F006-20260720/mid",
+   "price": "4005.00",
+   "kind": "LIMIT",
+   "state": "FILLED",
+   "fill_price": "4005.00",
+   "open_size": "0",
+   "be_price": null,
+   "tags": [
+    "AMBIGUOUS_FILL_BAND"
+   ]
+  },
+  {
+   "leg_id": "XAU-F006-20260720/far",
+   "price": "4000",
+   "kind": "LIMIT",
+   "state": "CANCELLED",
+   "fill_price": null,
+   "open_size": "0",
+   "be_price": null,
+   "tags": []
+  }
+ ],
+ "campaign_average_entry": "4007.5000",
+ "market_data": {
+  "provider": "PEPPERSTONE_TV_BAR_FEED",
+  "last_bar_ts": 1784768100,
+  "last_close": "4128.41",
+  "staleness_seconds": 99,
+  "bars_seen": 3214,
+  "stream_hash": "026f3fc54b54e77b83304f5437c4ce031e09a69f951e86682edc9004bbd8036e",
+  "gaps": [
+   [
+    1784046540,
+    1784066460
+   ],
+   [
+    1784149080,
+    1784152860
+   ],
+   [
+    1784189040,
+    1784189280
+   ],
+   [
+    1784200560,
+    1784200680
+   ],
+   [
+    1784235480,
+    1784239260
+   ],
+   [
+    1784321280,
+    1784498460
+   ],
+   [
+    1784581080,
+    1784584860
+   ],
+   [
+    1784667480,
+    1784671260
+   ],
+   [
+    1784716200,
+    1784716320
+   ],
+   [
+    1784737080,
+    1784742300
+   ],
+   [
+    1784753880,
+    1784757660
+   ]
+  ],
+  "anomaly_count": 17,
+  "distance_to_near_edge_pips": "1184.10"
+ },
+ "current_theoretical_open_size": "0",
+ "strict_follower_lane": {
+  "lifecycle": "OUTCOME_FROZEN",
+  "path": [
+   "PROPOSAL_CREATED",
+   "WAITING_FOR_ZONE",
+   "ZONE_TOUCHED",
+   "LEG_1_FILLED",
+   "LEG_2_FILLED",
+   "PARTIALLY_FILLED",
+   "RISK_ACTIVE",
+   "PARTIAL_PROFIT_TAKEN",
+   "MANUALLY_CLOSED",
+   "OUTCOME_FROZEN"
+  ],
+  "state": "CLOSED",
+  "realized_pips_per_unit": "32.92",
+  "unrealized_pips_per_unit": null,
+  "mae_pips": "-62.00",
+  "mfe_pips": "121.50"
+ },
+ "policy_sensitivity_lane": {
+  "lifecycle": "OUTCOME_FROZEN",
+  "state": "CLOSED",
+  "realized_pips_per_unit": "32.92",
+  "unrealized_pips_per_unit": null,
+  "mae_pips": "-62.00",
+  "mfe_pips": "121.50",
+  "disclaimer": "POLICY_SENSITIVITY lane; NOT Farouk's actual result"
+ },
+ "management_instructions": [
+  {
+   "instruction_type": "TP1_TAKE",
+   "message_id": 45937,
+   "timestamp_utc": "2026-07-20T15:10:57+00:00"
+  },
+  {
+   "instruction_type": "CLOSE_WORST",
+   "message_id": 45938,
+   "timestamp_utc": "2026-07-20T15:11:52+00:00"
+  },
+  {
+   "instruction_type": "HOLD_BEST",
+   "message_id": 45938,
+   "timestamp_utc": "2026-07-20T15:11:52+00:00"
+  },
+  {
+   "instruction_type": "EXPLICIT_FULL_EXIT",
+   "message_id": null,
+   "adjudicated": true,
+   "adjudication_id": "adjudication_20260720_f006_false_open_v0_1",
+   "basis": "BE_STOP_SCRATCH_ADJUDICATED from independent bar evidence (no Telegram message exists; Farouk disclosed only on video)",
+   "timestamp_utc": "2026-07-20T16:41:00+00:00"
+  }
+ ],
+ "unresolved_ambiguities": [
+  {
+   "bar_ts": 1784559120,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "event": "LEG_FILLED"
+  },
+  {
+   "bar_ts": 1784559600,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "event": "LEG_FILLED"
+  },
+  {
+   "bar_ts": 1784569320,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4010",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784575380,
+   "class": "GAP_FILL_UNCERTAIN",
+   "level": "4010",
+   "note": "bar opened through the leg price"
+  },
+  {
+   "bar_ts": 1784559120,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "note": "fill margin $0.82 within $3 feed-divergence band"
+  },
+  {
+   "bar_ts": 1784559600,
+   "class": "FEED_SENSITIVE_TOUCH",
+   "note": "fill margin $0.61 within $3 feed-divergence band"
+  }
+ ],
+ "plus50_diagnostic": {
+  "reachable": true,
+  "first_bar_ts": 1784560080,
+  "status": "DIAGNOSTIC_ONLY_P09_DISABLED"
+ },
+ "last_state_transition": "OUTCOME_FROZEN",
+ "outcome_status": "FROZEN",
+ "detector_v0_2_label": "SHADOW_CANDIDATE_MEDIUM",
+ "detector_v0_3_label": "SHADOW_CANDIDATE_MEDIUM",
+ "pre_mark_comparisons": {
+  "PM-F001-SELL-4150-4184": "EXPIRED",
+  "PM-F002-SUPPLY-4430-4480": "NOT_MATCHED",
+  "PM-F003-SELL-4250-4260": "EXPIRED",
+  "PM-F004-DEMAND-3850-3863": "NOT_MATCHED"
+ },
+ "acknowledgement_state": "REVIEW",
+ "review_only": true,
+ "executable": false,
+ "trade_ready": false,
+ "observation_only": true
+}

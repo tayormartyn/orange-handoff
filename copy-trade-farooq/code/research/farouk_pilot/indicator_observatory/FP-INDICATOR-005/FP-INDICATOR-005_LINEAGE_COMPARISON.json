@@ -1,0 +1,21 @@
+{
+  "indicator": "Farouk's Playbook — Smart Money Suite (FP-INDICATOR-005)",
+  "distinct_from": {
+    "[kyle] v1/v2": "BOTH present on the same chart but HIDDEN (eye-off). This is a SEPARATE, DISTINCT indicator — not a [kyle] rename.",
+    "SpaceMan": "different indicator (SpaceMan referenced only in an STX worked example); not this.",
+    "Market Cipher B": "3rd-party RSI/money-flow (FP-EDU-023); unrelated.",
+    "Craters-Reality / EMA method": "Vishal's EMA system (FP-EDU-007); unrelated.",
+    "Education curriculum": "the discretionary FP-EDU posts are teaching, not this indicator."
+  },
+  "other_indicators_on_the_chart_hidden": [
+    "[kyle] v2",
+    "[kyle] v1",
+    "BGS Liquidity Inefficiency Indicator",
+    "SeaScalper — Bias Levels v2"
+  ],
+  "PANEL_ATTRIBUTION_RESOLUTION": "The CHoCH / Asia break / OB retest / Current OB / Fresh OB PANEL (seen in FP-INDICATOR-001 and Campaigns 001-004, where it was recorded as 'UNKNOWN / kyle-family') is produced by THIS indicator — 'Farouk's Playbook — Smart Money Suite'. The panel appears here on the same chart where this indicator is the selected/active one and [kyle] are hidden. -> Prior 'kyle-family panel' attribution should be UPDATED to 'Farouk's Playbook — Smart Money Suite' (strongly supported; not proof).",
+  "shared_objects_with_kyle": "Asia High/Low, OB retest/Current OB/Fresh OB, CHoCH — overlapping SMC vocabulary; the object VALUES here come from THIS indicator.",
+  "source_asset_ids": [
+    "sa-e8a33802a013d74f"
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "batch": "education_batches/batch_01",
+  "output_id_range": "FP-EDU-016..FP-EDU-027 (new) + provenance upgrades to FP-EDU-008..015",
+  "total_images": 77,
+  "author_identity": "SeaScalper-Farouk (WR / Whale Room), @Whale mentions",
+  "note": "Transcription is OCR-derived (RapidOCR) and spot-verified visually on FP-EDU-008 (Mitigation) and FP-EDU-015 (Inducement); OCR fidelity was verbatim on both. Filesystem timestamps (2026-07-05) are NOT the Discord post times; Discord timestamps are read from the images. Do NOT treat generic filenames as identity.",
+  "posts": [
+    {
+      "source_id": "FP-EDU-016",
+      "visible_title": "Break of Structure (BOS) - Understanding Market Shifts",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 105557.png"
+      ],
+      "image_hashes": [
+        "2f78cc5c8948de5d"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED (own title; was 010-SUPPLEMENTAL-CANDIDATE -> now a distinct titled post)",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-017",
+      "visible_title": "Ranging Consolidation (what happens after a long consolidation)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "21/07/2024 19:41 & 22:03",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 130053.png",
+        "Screenshot 2026-07-05 130113.png",
+        "Screenshot 2026-07-05 130225.png"
+      ],
+      "image_hashes": [
+        "3ce98f497bd64332",
+        "15617e91017d80d9",
+        "5ed05a7fa569ff06"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-018",
+      "visible_title": "Quiz: cluster / parallel channel / deviation / acceptance",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "18/08/2024 10:04-10:24 (+31/08/2024 21:10)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 124442.png",
+        "Screenshot 2026-07-05 130259.png",
+        "Screenshot 2026-07-05 130402.png",
+        "Screenshot 2026-07-05 130501.png",
+        "Screenshot 2026-07-05 130536.png",
+        "Screenshot 2026-07-05 130549.png"
+      ],
+      "image_hashes": [
+        "d940d2f38ccb4534",
+        "61bb4b77eb3ad824",
+        "041f2ed4daff10dc",
+        "0a03c4d8e9d6a420",
+        "070018983ec8d11a",
+        "9f6c76fe1dd49e1b"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED (multi-part quiz)",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-019",
+      "visible_title": "Schematics of Accumulation (Wyckoff / Cup&Handle / Head&Shoulders)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 130631.png"
+      ],
+      "image_hashes": [
+        "ca75b7ce2e5543ae"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED (diagram-heavy)",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-020",
+      "visible_title": "Quiz: 'If you see this, are we going up or down?'",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "01/09/2024 14:26",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 130703.png"
+      ],
+      "image_hashes": [
+        "5f972c54fe2504b6"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-021",
+      "visible_title": "Long/Short Checklist (before entering, esp. lower timeframes)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured; + weekend checklist announcement)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 130725.png",
+        "Screenshot 2026-07-05 132005.png"
+      ],
+      "image_hashes": [
+        "c9716c91671c48fe",
+        "b213c39dc565133b"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-022",
+      "visible_title": "Candlestick Patterns (doji, engulfing, hammer)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "12/09/2024 18:36",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 131333.png"
+      ],
+      "image_hashes": [
+        "1298bb2a5c1bf6b6"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-023",
+      "visible_title": "Market Cipher Indicator B (shared by @dvrdwn; RSI, money flow)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "29/09/2024 14:09",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 131502.png"
+      ],
+      "image_hashes": [
+        "3410f3a88ce2f91d"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED (3rd-party indicator, NOT [kyle]/SpaceMan/Craters)",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-024",
+      "visible_title": "Confluence importance ranking ('in order of importance: 1. Break of Structure...')",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "15/10/2024 11:36",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 131651.png"
+      ],
+      "image_hashes": [
+        "77a47908c886266f"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-025",
+      "visible_title": "The 3-Drive Pattern (reversal; + Impulsive Move/Building Liquidity)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 131721.png",
+        "Screenshot 2026-07-05 131744.png"
+      ],
+      "image_hashes": [
+        "fc8b5cfdaca5e59c",
+        "1a215a0497b4da49"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-026",
+      "visible_title": "Understanding the Volume Profile (POC / VAH / VAL)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 132022.png",
+        "Screenshot 2026-07-05 132042.png",
+        "Screenshot 2026-07-05 132056.png"
+      ],
+      "image_hashes": [
+        "275af2eed163b391",
+        "f2c8ffe7e4220069",
+        "7c3723704c0c8674"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-027",
+      "visible_title": "BTC structure worked example ('Let's see what BTC gives us... V-shaped buyback')",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 131838.png"
+      ],
+      "image_hashes": [
+        "7733093f86d5f817"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED (worked example, educational section)",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": true
+    },
+    {
+      "source_id": "FP-EDU-008",
+      "visible_title": "What is Mitigation in Trading?",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "19/04/2025 22:13",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 102715.png"
+      ],
+      "image_hashes": [
+        "0a6c6186ee0a6763"
+      ],
+      "completeness_status": "CONFIRMED (author+ts+title+body visible)",
+      "provenance_confidence": "HIGH (author+ts visible)",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-009",
+      "visible_title": "STRONG HIGH/STRONG LOW vs WEAK HIGH/WEAK LOW",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured in these frames)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 103339.png",
+        "Screenshot 2026-07-05 103409.png",
+        "Screenshot 2026-07-05 103503.png"
+      ],
+      "image_hashes": [
+        "e94265024dc92ece",
+        "d4737db9761e5a89",
+        "e41583e51d307d3f"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED (full body; ts not in frame)",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-010",
+      "visible_title": "Major Structure vs. Internal Structure",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "29/03/2025 23:20",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 103618.png",
+        "Screenshot 2026-07-05 103750.png",
+        "Screenshot 2026-07-05 103833.png",
+        "Screenshot 2026-07-05 103911.png",
+        "Screenshot 2026-07-05 113418.png"
+      ],
+      "image_hashes": [
+        "885aaabb9d9285e0",
+        "4d6ea0d43292f80e",
+        "00a9a37a59be4041",
+        "7a5135e5a91ca373",
+        "c54de3c6c01bdd5a"
+      ],
+      "completeness_status": "CONFIRMED",
+      "provenance_confidence": "HIGH (author+ts visible)",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-011",
+      "visible_title": "What's SCB/SCOB? (Single Candle Order Block)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 105313.png",
+        "Screenshot 2026-07-05 105347.png"
+      ],
+      "image_hashes": [
+        "ce8f8b73b8dbc6f8",
+        "a1586c5a98b2855c"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-012",
+      "visible_title": "Types of Price Inefficiencies (Volume Imbalance / FVG / Opening gap)",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 105932.png",
+        "Screenshot 2026-07-05 113614.png"
+      ],
+      "image_hashes": [
+        "80fc2108a452ec7a",
+        "f83126f0a9182982"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-013",
+      "visible_title": "Trend Continuation Entry Model",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "01/03/2025 21:13",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 110015.png"
+      ],
+      "image_hashes": [
+        "546bcae8e286d6a1"
+      ],
+      "completeness_status": "CONFIRMED",
+      "provenance_confidence": "HIGH (author+ts visible)",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-014",
+      "visible_title": "High Probability Point of Interest (POI) Entry Model",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 110200.png"
+      ],
+      "image_hashes": [
+        "8f79fab757a0f6ab"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": false
+    },
+    {
+      "source_id": "FP-EDU-015",
+      "visible_title": "Inducement Model",
+      "visible_author": "SeaScalper-Farouk (WR)",
+      "discord_datetime": "(ts not captured; full 5-step body)",
+      "source_type": "DISCORD_EDUCATION_SCREENSHOT",
+      "screenshot_sequence": [
+        "Screenshot 2026-07-05 110426.png",
+        "Screenshot 2026-07-05 110528.png"
+      ],
+      "image_hashes": [
+        "9342608a61077387",
+        "fb624aa9ee088a8f"
+      ],
+      "completeness_status": "STRONGLY_SUPPORTED",
+      "provenance_confidence": "MEDIUM-HIGH",
+      "is_new_id": false
+    }
+  ],
+  "references_not_new": {
+    "REF-CAMPAIGN-004": [
+      "Screenshot 2026-07-05 091356.png",
+      "Screenshot 2026-07-05 093627.png",
+      "Screenshot 2026-07-05 093659.png",
+      "Screenshot 2026-07-05 093804.png",
+      "Screenshot 2026-07-05 093852.png"
+    ],
+    "REF-INDICATOR-002 (Part One Overview post)": [
+      "Screenshot 2026-07-05 100609.png"
+    ],
+    "REF-repair worked examples (STX/LINK/cluster)": [
+      "Screenshot 2026-07-05 122107.png",
+      "Screenshot 2026-07-05 123854.png",
+      "Screenshot 2026-07-05 124054.png",
+      "Screenshot 2026-07-05 125850.png",
+      "Screenshot 2026-07-05 130034.png",
+      "Screenshot 2026-07-05 124541.png",
+      "Screenshot 2026-07-05 124745.png",
+      "Screenshot 2026-07-05 125153.png",
+      "Screenshot 2026-07-05 125537.png"
+    ],
+    "UNASSIGNED-BTC example": [
+      "Screenshot 2026-07-05 115434.png"
+    ],
+    "UNRESOLVED": [
+      "Screenshot 2026-07-05 102756.png",
+      "Screenshot 2026-07-05 102913.png",
+      "Screenshot 2026-07-05 103023.png",
+      "Screenshot 2026-07-05 105438.png",
+      "Screenshot 2026-07-05 105634.png",
+      "Screenshot 2026-07-05 105712.png",
+      "Screenshot 2026-07-05 110105.png",
+      "Screenshot 2026-07-05 112706.png",
+      "Screenshot 2026-07-05 112743.png",
+      "Screenshot 2026-07-05 113029.png",
+      "Screenshot 2026-07-05 113341.png",
+      "Screenshot 2026-07-05 113450.png",
+      "Screenshot 2026-07-05 113500.png",
+      "Screenshot 2026-07-05 113530.png",
+      "Screenshot 2026-07-05 113701.png",
+      "Screenshot 2026-07-05 113743.png",
+      "Screenshot 2026-07-05 113817.png",
+      "Screenshot 2026-07-05 115445.png",
+      "Screenshot 2026-07-05 122209.png",
+      "Screenshot 2026-07-05 125249.png",
+      "Screenshot 2026-07-05 125715.png"
+    ]
+  }
+}

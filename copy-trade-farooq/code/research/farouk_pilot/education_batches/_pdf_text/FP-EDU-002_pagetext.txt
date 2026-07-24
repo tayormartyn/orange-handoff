@@ -1,0 +1,707 @@
+# FP-EDU-002 page-level text extraction
+# source: C:\Users\Marty\signal-terminal\research\farouk_pilot\raw\documents\FP-EDU-002_Farouks_Playbook.pdf
+# sha256: 4cb77d9d6b13478ad529b83a0385fa17fafefbcf548ab7852f5fefab0d1613b7
+# pages: 22
+
+===== PAGE 1/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 1
+ FAROUK'S
+ PLAYBOOK
+ ■ Smart Money & Candlesticks ■
+ Smart Money &
+Candlestick Mastery
+ My personal trading playbook.
+How I read the market like the institutions do.
+ ■
+ 
+SMART
+MONEY
+ ■
+ 
+CANDLE
+PATTERNS
+ ■
+ 
+PRECISION
+ ENTRIES
+ ■
+ 
+HUNT
+LIQUIDITY
+
+===== PAGE 2/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 2
+ FAROUK'S PLAYBOOK
+ ■ Smart Money & Candlesticks ■
+ TABLE OF CONTENTS
+ ◆
+ 01
+Fair Value Gaps (FVG)
+Spot price imbalances left by institutions and use them as high-probability entry
+zones.
+ 02
+Balanced Price Range (BPR)
+The most powerful FVG setup — where opposing imbalances overlap. A+ setups.
+ 03
+Order Blocks & Liquidity
+Find where smart money places their orders and how to hunt liquidity pools.
+ 04
+Reversal Patterns & Engulfing
+Hammer, Stars, Doji, Tweezers + Engulfing — confirmation candles at key levels.
+ 05
+Asia Session Setup
+The classic London/NY trap — when Asia high fails and price makes a lower low.
+ 06
+Multi-Timeframe Check (1m / 3m / 5m)
+Top-down alignment: 5m structure, 3m shift, 1m trigger. Stack them all for A+++.
+ 07
+My Confluence System
+How I stack Smart Money + Candlesticks for the highest probability setups.
+
+===== PAGE 3/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 3
+01
+Fair Value Gaps
+An FVG is a price imbalance — a gap in price action created when
+institutions move the market aggressively in one direction. Price
+often returns to fill these gaps, giving us high-probability entry zones.
+■ BULLISH FVG
+Forms when candle 1's high is lower than
+candle 3's low — with a big bullish candle 2 in
+between. The gap is the area of imbalance
+that price will likely return to fill.
+TRADE IT: Wait for price to retrace into the FVG.
+Enter long with SL below the FVG. Target = next
+liquidity level.
+■ BEARISH FVG
+Forms when candle 1's low is higher than
+candle 3's high — with a big bearish candle 2
+in between. Price will likely return to fill this
+gap before continuing down.
+TRADE IT: Wait for price to retrace UP into the
+FVG. Enter short with SL above the FVG. Target =
+next liquidity level below.
+■ FVG RULES
+1. Higher timeframe FVGs are more reliable (4H, Daily > 5M, 15M)
+2. Best when aligned with overall market structure
+3. Once filled, the FVG is invalid — don't trade it again
+4. Look for confirmation candle (hammer, engulfing) at the FVG
+
+===== PAGE 4/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 4
+FVG Continuation Setup
+The classic 5-minute bottom reversal play
+When price is bottoming out and starts pushing up, watch for an FVG to form on the 5min. If a
+candle closes ABOVE the FVG, the setup is confirmed. Price will likely retrace to claim/fill the
+FVG, then continue UP toward the next bearish Order Block. This is one of the cleanest
+XAUUSD setups during London/NY session.
+■ THE PLAY — STEP BY STEP   ● green = FVG  ● aqua = bearish OB
+1. Price is in a downtrend and starts bottoming (hammer / morning star / rejection wicks).
+2. Price impulses UP, leaving a clean bullish FVG behind on the 5min.
+3. KEY MOMENT: wait for a candle to CLOSE above the FVG — body close, not just a
+wick.
+4. Price pulls back to the FVG to claim/fill it (your entry zone).
+5. Bullish reaction at the FVG → enter LONG.
+6. Target: the next bearish Order Block above.
+■ TRADE EXECUTION  Best on 5min XAUUSD — London open (08:00 UTC) & NY open
+(13:30 UTC)
+Entry: at the FVG fill with bullish confirmation candle    SL: below the FVG bottom
+TP1: midpoint between FVG and OB    TP2: at the bearish OB    R:R: 1:3 or better
+
+===== PAGE 5/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 5
+02
+Balanced Price Range
+The BPR is the most powerful FVG setup — formed when a bullish
+FVG and a bearish FVG OVERLAP at the same price level. The
+overlap creates a high-precision reaction zone where price almost
+always responds.
+HOW TO SPOT A BPR (3 STEPS)
+1. Mark all FVGs on your chart — both bullish and bearish
+2. Find an overlap — where a bullish FVG sits at the same price as a bearish
+FVG
+3. That overlap zone = your BPR. Wait for price to return there.
+■ BPR TRADE SETUP
+BULLISH BPR: Enter LONG at the BPR. SL below the swing low. TP = next
+liquidity above.
+BEARISH BPR: Enter SHORT at the BPR. SL above the swing high. TP = next
+liquidity below.
+BONUS: If the BPR aligns with a candlestick reversal pattern (Hammer,
+Shooting Star, etc.) — that's an A+++ setup.
+
+===== PAGE 6/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 6
+03
+Order Blocks & Liquidity
+Order Blocks are the last opposing candle before a strong impulsive
+move — where institutions placed their orders. Liquidity is where
+stops are clustered. Smart money hunts these zones.
+■ ORDER BLOCK
+The LAST bearish candle before a strong
+bullish move (bullish OB) — or the LAST
+bullish candle before a strong bearish move
+(bearish OB). When price returns to this
+zone, it acts as strong support/resistance.
+TRADE IT: Enter when price returns to the OB.
+SL beyond the OB body. Target = previous
+high/low.
+■ LIQUIDITY SWEEP
+Price spikes below equal lows (or above
+equal highs) to grab stops, then reverses
+sharply. Smart money does this to fuel the
+real move. Look for a wick that breaks the
+level then closes back inside.
+TRADE IT: After the sweep, wait for a reversal
+candle (Hammer/Shooting Star). Enter in the
+direction of the reversal.
+■ WHERE TO FIND LIQUIDITY
+ Below equal lows (sellside liquidity)
+ Above equal highs (buyside liquidity)
+ Below recent swing lows
+ Above recent swing highs
+ Asian session high & low
+ Previous day's high & low (PDH/PDL)
+ Round numbers (4500, 4550, 4600)
+
+===== PAGE 7/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 7
+04
+Reversal Patterns &
+Engulfing
+Candlestick patterns are your CONFIRMATION. When a pattern
+forms at a key Smart Money level (FVG, BPR, Order Block) — that's
+your trigger to enter.
+ ■ BULLISH — BUY AT
+ SUPPORT
+ ■ BEARISH — SELL AT
+ RESISTANCE
+HAMMER
+Long lower wick, small body at
+top — buyers reject lows.
+SHOOTING STAR
+Long upper wick, small body at
+bottom — sellers reject highs.
+DRAGONFLY DOJI
+Open = High = Close, long lower
+wick.
+GRAVESTONE DOJI
+Open = Low = Close, long upper
+wick.
+MORNING STAR
+3 candles: bearish → small →
+bullish.
+EVENING STAR
+3 candles: bullish → small →
+bearish.
+TWEEZER BOTTOMS
+2 matching lows: red then green.
+TWEEZER TOPS
+2 matching highs: green then red.
+
+===== PAGE 8/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 8
+The Engulfing Candle
+The Engulfing is one of the strongest reversal patterns. It happens when a candle's body
+completely covers (engulfs) the previous candle's body — showing a powerful momentum shift.
+■ BULLISH ENGULFING
+A small bearish candle followed by a
+large green candle that fully engulfs the
+body of the previous one. Buyers took
+complete control.
+BEST AT: Support, FVG, or BPR at the
+bottom of a downtrend.
+■ BEARISH ENGULFING
+A small bullish candle followed by a large
+red candle that fully engulfs the body of
+the previous one. Sellers took complete
+control.
+BEST AT: Resistance, FVG, or BPR at
+the top of an uptrend.
+HOW IT LOOKS ON A CHART
+■ ENGULFING TRADE RULES
+1. The engulfing body must be 2x larger than the previous candle
+2. Best when it engulfs at an FVG, BPR, or Order Block
+3. Entry: open of next candle      SL: beyond the engulfing wick
+4. If engulfing happens after a liquidity sweep = A+++ confluence
+
+===== PAGE 9/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 9
+05
+Asia Session Setup
+One of the cleanest setups: the Asia session creates a range, then
+London or NY tries to break the Asia high — but FAILS to close
+above it. After that failure, if price makes a lower low → bearish trap
+confirmed. Time to short.
+■ THE SETUP — STEP BY STEP
+1. Mark the Asia session high & low (gold dashed = high, red dashed = low) —
+the range usually forms during the Asian trading hours.
+2. London opens — price often pushes UP toward the Asia high.
+3. Watch carefully: does any candle CLOSE above the Asia high? If the wick
+pokes through but the body closes back below → FAKEOUT.
+4. Price reverses. The first lower low below the Asia low = confirmation. The
+trap is sprung.
+5. Short on retracement. SL above the failed high. TP = next major liquidity zone
+below.
+■ WHY THIS WORKS
+Asia traders place buy stops above the Asia high — they expect a breakout. Smart
+money pushes price up to grab those stops (liquidity), but the real intention is DOWN.
+The failure to close above + lower low confirms the institutional move. This works in
+reverse too (Asia low fakeout → bullish trap). Best on XAUUSD during London open
+(08:00 UTC) or NY open (13:30 UTC).
+
+===== PAGE 10/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 10
+06
+Multi-Timeframe Check
+(1m / 3m / 5m)
+Before pulling the trigger, run a quick top-down check. The 5min tells
+you the structure, the 3min tells you the shift, and the 1min gives
+you the entry trigger. When all three align — A+++.
+5MIN — STRUCTURE
+This is your map. Look for:
+ Overall trend direction
+ Key FVG / BPR / OB zones
+ Where price is in the bigger picture
+3MIN — SHIFT (MSS / BOS)
+This shows you the change. Look for:
+ Market Structure Shift (MSS) — first higher
+high after lows
+ Break of Structure (BOS) confirmation
+ Pullback into a smaller FVG
+1MIN — TRIGGER
+This is your entry. Look for:
+ Engulfing / Hammer at the level
+ Strong volume rejection candle
+ Enter on the close of the trigger candle
+
+===== PAGE 11/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 11
+The Top-Down Check
+Run this check in order — always 5min first, then 3min, then 1min. Never skip levels. If one
+fails, the trade is invalid.
+TF
+QUESTION
+PASS IF
+5m
+Is the bigger structure clear?
+Trend identified + FVG/OB
+marked
+5m
+Is price at a key level?
+At FVG, BPR, OB, or session
+level
+3m
+Did we get a structure shift?
+MSS or BOS in the new direction
+3m
+Is there a smaller FVG to enter on?
+FVG forms after the MSS
+1m
+Trigger candle on the entry level?
+Engulfing / hammer / strong
+rejection
+1m
+Is candle CLOSED (not still forming)?
+Wait for close — never enter live
+■ THE STACK RULE
+6/6 PASS → A+++ setup, take full lot
+5/6 PASS → A setup, take half lot
+4/6 PASS → Watch, don't enter yet
+<4/6 PASS → Skip the trade entirely
+Discipline is checking ALL three timeframes BEFORE clicking buy/sell — not
+after you're already in.
+
+===== PAGE 12/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 12
+07
+My Confluence System
+Single signals are guesses. Stacked signals are setups. The more
+confluence I have, the higher the probability. This is how I trade.
+RATING
+SETUP
+ACTION
+C
+Just a candlestick pattern in the middle of
+nowhere
+Skip it
+B
+FVG only OR candlestick pattern at S/R
+Watch & wait
+A
+FVG + candlestick pattern at the FVG
+Take it (small lot)
+A+
+BPR + candlestick pattern + trend alignment
+Take it (full lot)
+A+++
+BPR + Order Block + liquidity sweep + reversal
+candle + trend
+The dream setup
+A+++
+Asia high fakeout + lower low + engulfing candle
+Trap confirmed
+A+++
+Bottom + FVG + close above + claim → bearish
+OB
+5min reversal
+■ WHAT THESE LOOK LIKE
+ C
+Hammer in the middle of
+nowhere. No FVG, no level, no
+context. Just a pattern floating in
+the chart. Skip.
+ A
+Bearish FVG + Shooting Star at
+the FVG. Price retraces UP into the
+gap, shooting star confirms
+rejection. Take the short (small
+lot).
+
+===== PAGE 13/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 13
+A+++
+Liquidity sweep + bullish move +
+BPR retest + Hammer. Stops
+grabbed below, price reverses
+sharply, pulls back to BPR, hammer
+prints confirmation. The dream
+setup.
+■ PRE-TRADE CHECKLIST
+Before pulling the trigger, check ALL of these:
+■ Higher timeframe trend identified
+■ Smart Money zone present (FVG / BPR / OB)
+■ Candlestick confirmation on the close
+■ Clear SL placement (below swing low / above swing high)
+■ Risk:Reward at least 1:2
+■ Lot size = max 2% account risk
+■ Not trading tired, angry, or after a loss
+
+===== PAGE 14/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 14
+ STRATEGY CHECKLISTS
+ Print & Use
+ ◆
+ One checklist for every setup.
+Tick every box before you click buy/sell.
+ If even one fails — no trade.
+01
+FVG Entry
+02
+FVG Continuation (5min)
+03
+BPR Setup
+04
+Order Block + Liquidity Sweep
+05
+Engulfing at Key Level
+06
+Asia Session Fakeout
+07
+Multi-Timeframe Stack (1m/3m/5m)
+
+===== PAGE 15/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 15
+ 01
+CHECKLIST
+FVG Entry
+Bullish or Bearish Fair Value Gap
+■
+STRUCTURE
+Higher timeframe trend identified (4H / 1H)
+■
+ZONE
+Clean 3-candle FVG visible on chart
+■
+ALIGNMENT
+FVG aligned with the overall trend direction
+■
+RETRACE
+Price has retraced INTO the FVG (not just touched)
+■
+CONFIRMATION
+Reversal candle prints at the FVG (hammer /
+engulfing / pin bar)
+■
+CANDLE CLOSE
+Confirmation candle has fully CLOSED — not still
+forming
+■
+STOP LOSS
+SL placed beyond the FVG (with buffer for spread)
+■
+RISK:REWARD
+R:R minimum 1:2 to next liquidity level
+■
+LOT SIZE
+Position sized for max 2% account risk
+■
+MINDSET
+Not tired, not angry, not chasing a loss
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 16/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 16
+ 02
+CHECKLIST
+FVG Continuation
+5min bottom reversal play
+■
+CONTEXT
+Price was in a downtrend and started bottoming
+■
+BOTTOM SIGN
+Hammer / morning star / multiple rejection wicks at
+the low
+■
+IMPULSE
+Strong bullish candle pushing UP, creating a bullish
+FVG
+■
+CLOSE ABOVE
+A candle has CLOSED ABOVE the FVG (body, not
+wick)
+■
+PULLBACK
+Price is pulling back to claim/fill the FVG
+■
+REACTION
+Bullish reaction prints inside the FVG zone
+■
+OB TARGET
+Next bearish Order Block above is identified as TP
+■
+STOP LOSS
+SL below the FVG bottom / swing low
+■
+SESSION
+London open (08:00 UTC) or NY open (13:30 UTC)
+■
+R:R
+R:R 1:3 or better to the bearish OB
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 17/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 17
+ 03
+CHECKLIST
+BPR Setup
+Balanced Price Range (overlap zone)
+■
+FVG #1
+Bullish FVG marked on the chart
+■
+FVG #2
+Bearish FVG marked on the chart
+■
+OVERLAP
+Both FVGs overlap at the same price band = BPR
+zone
+■
+DIRECTION
+BPR aligns with higher timeframe trend
+■
+PRICE AT BPR
+Price has returned to and tapped the BPR zone
+■
+CONFIRMATION
+Reversal candle at the BPR (hammer / shooting star /
+engulfing)
+■
+CANDLE CLOSE
+Confirmation candle closed — not still forming
+■
+STOP LOSS
+SL beyond the BPR (above swing high / below swing
+low)
+■
+TARGET
+Next liquidity level identified for TP
+■
+RISK
+Lot size = max 2% account risk
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 18/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 18
+ 04
+CHECKLIST
+OB + Liquidity Sweep
+Smart money entry zone
+■
+OB IDENTIFIED
+Last opposing candle before strong impulsive move
+marked
+■
+LIQUIDITY
+Equal highs / lows / PDH / PDL visible nearby
+■
+SWEEP
+Price wicked beyond liquidity then closed back inside
+■
+RETURN TO OB
+Price retracing back into the Order Block zone
+■
+REACTION
+Bullish/bearish reaction candle at the OB
+■
+CANDLE CLOSE
+Reaction candle has CLOSED
+■
+STOP LOSS
+SL beyond the OB body / beyond the sweep wick
+■
+TARGET
+Previous high/low identified as TP
+■
+R:R
+R:R minimum 1:2
+■
+RISK
+Lot size = max 2% account risk
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 19/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 19
+ 05
+CHECKLIST
+Engulfing at Key Level
+Powerful reversal trigger
+■
+KEY LEVEL
+Price at FVG / BPR / OB / S-R / session level
+■
+PREVIOUS
+Small candle in the opposite direction (the one that
+gets engulfed)
+■
+ENGULF
+Next candle's body FULLY covers the previous body
+■
+SIZE
+Engulfing body at least 2x the previous candle's body
+■
+CLOSE
+Engulfing candle has CLOSED — not still forming
+■
+DIRECTION
+Engulfing direction matches the higher timeframe
+trend
+■
+BONUS
+Engulfing prints after a liquidity sweep = A+++
+■
+ENTRY
+Plan to enter on open of next candle
+■
+STOP LOSS
+SL beyond the engulfing candle's wick
+■
+R:R
+R:R minimum 1:2
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 20/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 20
+ 06
+CHECKLIST
+Asia Session Fakeout
+London/NY trap setup
+■
+ASIA RANGE
+Asia session high & low marked clearly
+■
+LIQUIDITY
+Buy stops above Asia high (or sell stops below Asia
+low)
+■
+PUSH
+London / NY pushes price toward Asia high (or low)
+■
+WICK
+Price wick pokes ABOVE Asia high — but body
+closes BACK INSIDE
+■
+NO CLOSE
+Confirmed: no candle closes above (or below) the
+level
+■
+REVERSAL
+Price starts moving in opposite direction
+■
+LOWER LOW
+Price breaks BELOW Asia low (or higher high above
+Asia high)
+■
+ENTRY
+Enter on retracement against the new trend direction
+■
+STOP LOSS
+SL above the failed high (or below the failed low)
+■
+SESSION
+Setup during London (08:00 UTC) or NY (13:30 UTC)
+open
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 21/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 21
+ 07
+CHECKLIST
+Multi-Timeframe Stack
+1m + 3m + 5m alignment
+■
+5M STRUCTURE
+Higher timeframe trend direction identified
+■
+5M LEVEL
+Price at a key 5min level (FVG / BPR / OB)
+■
+3M SHIFT
+Market Structure Shift (MSS) confirmed on 3min
+■
+3M BOS
+Break of Structure in the new direction
+■
+3M FVG
+Smaller FVG formed on 3min after the shift
+■
+1M PULLBACK
+Price pulling back to the 1m entry zone
+■
+1M TRIGGER
+Engulfing / hammer / strong rejection on 1min
+■
+1M CLOSE
+Trigger candle has CLOSED (never enter live)
+■
+STACK COUNT
+At least 6/8 boxes ticked = A+++    5/8 = half lot   
+<5 = skip
+■
+EXECUTION
+SL and TP planned BEFORE clicking buy/sell
+ ■ THE RULE: All boxes must be checked. If even ONE is missing — skip the trade.
+
+===== PAGE 22/22 =====
+FAROUK'S PLAYBOOK    Smart Money & Candlestick Mastery    Page 22
+ THE LAST PLAY
+ Wait for the Market
+to Show His Hand First
+ ◆
+ Every setup in this playbook works only when you wait.
+ 
+Don't predict where the market will go. Let it show you first.
+ 
+Wait for the FVG to form. Wait for the candle to CLOSE. Wait for the
+ structure to shift. Wait for the trigger.
+ 
+The market reveals its hand through price action — engulfing candles,
+ liquidity sweeps, fakeouts, BOS. Your job is not to guess, but to
+ recognize what's already happening.
+■ THE 3 RULES OF PATIENCE
+1. No setup? No trade. Sitting in cash is a position.
+2. Candle not closed? Don't enter. Wicks lie. Closes don't.
+3. Doubting it? Skip it. There's always a next setup.
+ "The best trade is often the one you don't take."
+ FAROUK'S PLAYBOOK
+ ■ Discipline > Talent  Patience > Prediction  Process > Profit ■

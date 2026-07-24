@@ -1,0 +1,22 @@
+{
+  "schema_version": "tv-webhook-0.1",
+  "source": "TradingView",
+  "lane": "LOGGING_ONLY",
+  "test": true,
+  "alert_name": "LIVE001_PATHONLY_LOCAL_TEST",
+  "symbol": "XAUUSD",
+  "exchange": "PEPPERSTONE",
+  "timeframe": "3",
+  "chart_interval": "3",
+  "event_text": "PATH_ONLY local compatibility test — no X-TV-Token header sent",
+  "event_type": "CHOCH_UP",
+  "direction": "bullish",
+  "grade": "NA",
+  "safety_assertions": {
+    "contains_broker_instruction": false,
+    "contains_api_keys_or_secrets": false,
+    "is_execution_request": false,
+    "lane": "LOGGING_ONLY"
+  },
+  "_note": "Distinct payload for the Stage 1B PATH_ONLY local test (different from manual_post_valid.json so it logs as a fresh ACCEPTED, not a DUPLICATE). No credentials, no broker instruction."
+}

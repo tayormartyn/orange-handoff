@@ -1,0 +1,131 @@
+{
+ "generated_at": "2026-07-20T13:05:00Z",
+ "open_code_defects": [
+  {
+   "name": "LIVE_EDIT_COMPLETION_CREATES_NO_CAMPAIGN",
+   "class": "SILENT_HOLE",
+   "since": "2026-07-22",
+   "note": "an edit that COMPLETES a previously-quarantined message into a valid parseable signal is recorded as an append-only revision and alarmed (orphan edit) but NEVER runs the CREATED campaign-creation path -> no campaign, no T=0 freeze. Missed F008 (46011 CREATED 'XAUUSD SELL 4161-4171SL 4185' quarantined 'wire review: missing stop'; EDITED +12s to clean '4161-4171 SL 4187' but candidate_events=0). Same silent-hole class as the parser miss and listener death. Fix APPROVED D-106 (full stage-prove-deploy, look-ahead guard first, deploy in a clean window after F008 closes). F008 stays a NON-PROSPECTIVE capture gap; NO backdated freeze; prospective count stays 4."
+  }
+ ],
+ "statement": "KNOWN_OPEN_DEFECTS = 1: LIVE_EDIT_COMPLETION_CREATES_NO_CAMPAIGN (silent-hole class; an edit that completes a valid signal produces no campaign/freeze; missed F008; fix approved D-106 plan-first, look-ahead-guard-first, deploy in a clean window; F008 NOT backdated, prospective count stays 4).",
+ "resolved_with_evidence": [
+  {
+   "name": "quantity_base guard latent landmine",
+   "resolved": "2026-07-17",
+   "evidence": "guards.py sha 213b4463bda22707 live; tests_quantity_base_guard 36 checks",
+   "do_not_reopen_without": "new GuardViolation evidence"
+  },
+  {
+   "name": "watcher race (F003 PRE loss)",
+   "resolved": "2026-07-16",
+   "evidence": "durable pending_entries + refusals; tests_watcher_race 34 checks"
+  },
+  {
+   "name": "close-100% morphology gap (F005)",
+   "resolved": "2026-07-17",
+   "evidence": "CLOSE_PERCENTAGE_v0_1 + late-recovery adjudication fwd L63"
+  },
+  {
+   "name": "F004 leg-cancellation interpretation",
+   "resolved": "2026-07-17",
+   "evidence": "ratified Q3 P14 verified; R-004 records the rejected expectation"
+  },
+  {
+   "name": "PARTIAL_INSTRUCTION_SILENT_LOSS",
+   "resolved": "2026-07-21",
+   "evidence": "v2.1 DEPLOYED (D-036, interpreter sha 7602755342a6748a): compound 'tp N sl entry' typed (X1), HOLD-leg family typed (X2), PER-CLAUSE COMPLETENESS makes any residual un-typed clause fail the WHOLE message closed (X3) - silent partials structurally impossible; proven 44/44 fixtures + v2.0->v2.1 byte-identity changes EXACTLY the two defect messages [45937, 45940] + battery 357 checks + full-replay ENTRY->non-ENTRY 0. F006 outcome remains OUTCOME_AFFECTED_BY_DEFECT/statistically excluded (the fix is forward-only, history not rewritten).",
+   "do_not_reopen_without": "a live message producing a partial instruction set without NEEDS_HUMAN_REVIEW"
+  }
+ ],
+ "open_risks_and_limitations": [
+  {
+   "name": "indicator version drift",
+   "class": "RISK",
+   "since": "2026-07-20",
+   "note": "suite actively developed on member feedback; record indicator-era with alert captures"
+  },
+  {
+   "name": "documentary video links uncaptured",
+   "class": "LIMITATION",
+   "since": "2026-07-16",
+   "note": "Discord CDN videos not captured (image-only policy)"
+  },
+  {
+   "name": "capture blind spot: unposted personal trades",
+   "class": "LIMITATION",
+   "since": "2026-07-20",
+   "note": "K-018; expectancy comparisons must disclose"
+  },
+  {
+   "name": "repaint NOT fully verified / A-grade formula invisible",
+   "class": "LIMITATION",
+   "since": "2026-07-12",
+   "note": "F5 repaint guard binding"
+  },
+  {
+   "name": "pending operator review queue (6 msgs)",
+   "class": "OPERATOR_ACTION",
+   "since": "2026-07-20",
+   "note": "45784, 45896, 45901, 45916, 45922, 45924"
+  },
+  {
+   "name": "unplanned host reboots kill capture",
+   "class": "ENVIRONMENT_ESCALATED_DEMO_PREREQUISITE",
+   "since": "2026-07-19",
+   "note": "OQ-7; ESCALATED 2026-07-21 (D-037): becomes a HARD prerequisite once demo orders can exist - a reboot mid-campaign with resting demo orders = unmanaged position until restart. Quantified by fill_lag_cost v0.1: 21% of all ingested bars arrived as >600s post-outage catch-up batches. SEVERITY SPLIT (operator-ratified, D-038 round): RETROSPECTIVE severity DOWNGRADED - R2 capture is CLOUD-SIDE, so host death delays ingestion but never loses bars (proven: 0 dup / 0 out-of-order / every decisive F004-F006 bar outside every gap; Lane A outcomes and hypothesis scoring unaffected). LIVE-DETECTION severity UNTOUCHED - fills/stops seen ~94s late steady-state and unboundedly late during outages; this is the half that gates the demo lane (spec 6a/7). Telegram listener capture is host-side and NOT covered by the R2 argument - a reboot still loses unposted-window Telegram capture until restart. Operator action pending (Windows active-hours / reboot policy)."
+  },
+  {
+   "name": "PROXIMITY_WINDOW_NOT_EVENT_RATE_JUSTIFIED",
+   "class": "NAMED_ITEM_DEMO_PREREQUISITE",
+   "since": "2026-07-21",
+   "note": "The 18h PROXIMITY_HOURS campaign-association window (live_wire.py:104) was NEVER justified against Farouk's observed inter-campaign spacing - K-052 failure class. F006->F007 arrived 17.6h apart (INSIDE the window), already breaching the hard constraint. RATIFIED (D-057) as a demo-lane prerequisite ALONGSIDE the terminal-marker canonical shape: the marker reduces the nominal-open SET, the re-justification addresses the WIDTH - neither alone sufficient. RE-JUSTIFICATION CONSTRAINT: a proximity window must be NARROWER than the source's MINIMUM observed inter-campaign interval or ambiguity is guaranteed by construction; derive from the FULL observed spacing distribution across all campaigns, not the single closest pair (17.6h is an upper bound already breached, not the target). RE-DERIVED 2026-07-21 (D-064) from the FULL observed spacing distribution (7 campaigns): min inter-campaign interval = 2.2h (F003->F004; also 4.8h F001->F002); max management-tail (last instruction - entry) = 3.9h (F001). DECISIVE FINDING: management-tail (3.9h) EXCEEDS the min inter-campaign interval (2.2h), so a single time-proximity window CANNOT both catch all legitimate same-session management (needs >=3.9h) AND avoid two-campaign overlap (needs <2.2h) - window-narrowing ALONE is mathematically insufficient, proven from data. THEREFORE the TERMINAL-MARKER (D-063, built+proven) is the NECESSARY structural fix: it removes CLOSED campaigns from the open set so the window only ever disambiguates genuinely-CONCURRENT opens. RECOMMENDED post-marker window = ~6h (covers the 3.9h max tail + headroom; management is same-session per the drift-canary justification), with P02 fail-closed pause as the safe backstop for residual concurrency (never mis-assigns). 18h CONFIRMED UNFIT AND SUPERSEDED. ~6h RATIFIED IN PRINCIPLE (D-065), value frozen with derivation cited (3.9h observed max tail + headroom). SEQUENCE: deploy the 18->~6 change AFTER the terminal-marker is live (the marker changes the population the window operates on) - NOT bundled with it, its own before/after + no-op proof. K-052 REVIEW TRIGGER registered: re-derive once campaign count materially exceeds 7, since both the 2.2h min interval and 3.9h max tail are single-observation extremes at n=7. Impossibility proof = K-055."
+  },
+  {
+   "name": "LANE_A_ENTRY_MODEL_ADVERSE_DIVERGENCE",
+   "class": "HIGHEST_SEVERITY_STRUCTURAL_FINDING",
+   "since": "2026-07-21",
+   "escalated": "2026-07-21 MECHANISM PROVEN (operator source screenshot ~09:54Z + independent bar verification): F007 instruction 'sl entry on lowest entry' RESOLVED DIFFERENTLY in each model - Lane A's only filled leg was near@4063 so its BE went to 4063; his lowest actual fill was 4059.71 so his BE sits there (screenshot: BUY 1 +943 USD open, SL line 4059.71, price 4069.15). BARS: first touch <=4063 at 09:29Z (low 4062.54, Lane A P10 scratch fired); post-instruction window LOW 4061.07 at 09:42Z - NEVER reached 4059.71 (1.36pt clearance); price 4068.68 by 09:55Z with his runner still open. SAME INSTRUCTION, DIFFERENT RESOLVED STOP, MATERIALLY DIFFERENT OUTCOME: the three-leg EDGE-PLACEMENT model produced a PREMATURE TERMINAL and forfeited a runner the source still holds in profit. THE single most consequential structural finding in the project: a disciplined follower on Lane A's entry model may SYSTEMATICALLY lose runners the source keeps. Direct evidence for the Lane B entry-policy candidate (entries placed where he actually fills - mid-zone - would have resolved 'lowest entry' to 4059.71-class levels and survived).",
+   "note": "WATCH, DO NOT CONCLUDE (operator, n=2): Lane A's modelled entry has been WORSE than Farouk's actual fills for two consecutive campaigns. F006: his 4 fills 4013.02/4009.64/4007.68/4005.72 (avg ~4009.0) vs Lane A 3-leg avg 4007.50 at fill-time - but fills sat OUTSIDE modelled legs (4013.02 above zone top). F007: his 2 fills 4060.55/4059.71 (avg ~4060.13) vs Lane A near-leg-only 4063.00 on a LONG = ~2.9 points ADVERSE. If the three-leg model systematically enters worse than he does, follower expectancy sits systematically below his published results - directly material to the project's core question. STANDING MEASUREMENT: from F008 onward record per campaign (his fills where published, fill count, Lane A filled legs, avg-entry delta signed adverse/favorable). Extends K-018; NO model change without governance. DATA DEPENDENCY (operator, D-041): his fills appear ONLY on result-card IMAGES which Orange never reads (OQ-10) - every fill recorded so far came from operator screenshots; the watch item SILENTLY UNDER-RECORDS if any campaign's cards go uncaptured. Mitigations: standing capture task result_card_capture_state.json + (0!) terminal-without-capture alarm in brain_refresh; OQ-10 re-ranked with OCR proposal due when queue clears.",
+   "measured_rows": [
+    {
+     "campaign": "XAU-F006-20260720",
+     "his_avg": 4009.0,
+     "lane_a_avg": 4007.5,
+     "note": "fills outside modelled legs; direction LONG; delta favorable on avg but model missed the above-zone fill"
+    },
+    {
+     "campaign": "XAU-F007-20260721",
+     "his_avg": 4060.13,
+     "lane_a_avg": 4063.0,
+     "delta_adverse_points": 2.87,
+     "direction": "LONG"
+    }
+   ]
+  },
+  {
+   "name": "ALERT_LANE_WINDOW_NOT_ENUMERABLE",
+   "class": "OBSERVABILITY_LIMITATION",
+   "since": "2026-07-21",
+   "note": "alerts/last_any.json holds only the LATEST fire (overwrite-idempotent by design, D-020); any time-window of fires can only be enumerated retrospectively via a privileged listing (the D-013 temp token-gated Worker list branch, operator-authorised per use). Consequence: between marker reads, intermediate fires are invisible to Orange - live precede-a-post questions (LIVE013/H-FPL-07) can only be answered after the window closes. CANDIDATE FUTURE FIX (registered, NOT authorised): append-only alert INDEX at a predictable key (e.g. alerts/index/YYYY-MM-DD.jsonl, one line per fire) - a Worker change under the dual-sha discipline, REQUIRES OPERATOR APPROVAL; not now."
+  },
+  {
+   "name": "WIRE_NOMINAL_OPEN_OUTCOME_TERMINALS",
+   "class": "ACCEPTED_RISK_WITH_REGISTERED_FUTURE_FIX",
+   "since": "2026-07-20",
+   "note": "F002/F004 sit nominally OPEN in load_campaign_state (terminals were tracker/outcome-based, not instruction-token-based); only the 18h proximity window prevents mis-correlation - a MITIGATION not a fix, same latent class as the F003->F004 jam; fails if two genuine campaigns land close together or management arrives outside the window. DECISION MADE 2026-07-21 (D-036): option (3) ACCEPTED by operator with both conditions met - (a) fail-closed under ambiguity VERIFIED FROM CODE (P02: pause every candidate + FAIL_CLOSED_REVIEW, never mis-assigns), (b) terminal-marker canonical shape registered as future item (work_orders/FUTURE_ITEM_TERMINAL_MARKER_CANONICAL_SHAPE.md) with trigger 'before any increase in demo-lane autonomy beyond per-campaign human approval'. Residual risk stands accepted: two genuine campaigns inside 18h -> loud pause noise, no mis-assignment. REASSESSED 2026-07-21 (operator correction, D-042): the D-035 rationale that 'v2.1-era campaigns terminate via instruction tokens or adjudications, so the class stops growing' is WRONG - F007 terminated via OUTCOME-based P10 BE scratch with no token (third member: F002, F004, F007), and BE scratches/outcome terminals are the COMMON case, so the class grows with most campaigns. Revised residual risk: NOT static-rare but structural-frequent - F006->F007 arrived 17.6h apart (INSIDE the 18h window); had F006 not been adjudicated closed, every F007 management message would have triggered P02 pause + FAIL_CLOSED_REVIEW. With a growing nominal-open set, consecutive-day campaigns make pause-noise the EXPECTED behavior, not the edge case: still never mis-assigns (safety holds), but every such campaign demands manual review of every management action = alarm fatigue + Lane A capture degradation, the exact monitor-trust failure mode the operator has flagged. RECOMMENDATION (D-042): PULL the terminal-marker canonical shape FORWARD from 'before autonomy increase' to 'BEFORE THE DEMO LANE' - added to the demo-lane spec prerequisite list pending operator ratification."
+  },
+  {
+   "name": "LIVE_EDIT_EVENTS_NOT_CAPTURED",
+   "class": "NAMED_DEFECT_DEMO_PREREQUISITE",
+   "since": "2026-07-20",
+   "note": "Gate-1 listener wires NewMessage/CREATED only (documented); Telegram EDITS are not captured in the live lane (old archive DID hold edit versions). PROVEN LIVE on F006: msg 45938 'close worst hold best entry' was edited on Telegram at 16:11 (operator screenshot shows post-edit text 'close worst entry hold best entry'); Orange holds ONLY the 16:10 original, single CREATED rev1, edited_at empty; interpreter acted on the original with no re-evaluation. THIS instance benign (both versions parse to CLOSE_WORST+HOLD_BEST). FORWARD REQUIREMENT (operator): an edit to a message that already drove a state transition must RAISE AN ALARM - never silently apply, never silently ignore. Fix = wire EditedMessage capture as append-only revisions + edit-after-transition alarm; demo-lane prerequisite. FIX BUILT AND PROVEN 2026-07-21 (D-038): capture module + wire rowseq edit-sweep (wire half DEPLOYED a7dbb890); REMAINS OPEN pending the LISTENER RESTART - WINDOW SET BY OPERATOR (D-038 round): tonight's 21:00-22:00Z metals close, 2026-07-21; NEVER during an active session (a lost signal is unrecoverable; the edit defect is bounded - wire half deployed and inert until edits arrive). Closing evidence required: the restarted listener demonstrably captures a REAL edit."
+  },
+  {
+   "name": "ALERT_LANE_SILENCE_UNMONITORED",
+   "class": "NAMED_DEFECT_MONITORING",
+   "since": "2026-07-20",
+   "note": "Intake observer watches Telegram only; NOTHING monitors alert-lane/R2 delivery (proven via D-013 manual audit). PRIORITISED per operator review (D-014, re-slotted by authoritative order D-015): fix = STEP 4, immediately before the demo copy-trade lane (step 5) (same silent-failure class that cost 15-07 parser miss, watcher race, full-exit jam). BUILT: alert_lane_monitor.py in ORANGE_STATUS (D-019) + Worker alerts/last_any.json marker deployed under dual-sha discipline (D-020, baseline 2045cdb140604750) - silence is now loud within local observability. Residual (operator-accepted 2026-07-21, D-037): monitoring is PULL-BASED - it evaluates when ORANGE_STATUS runs, not on arrival; a check, not an alarm. Acceptable while every campaign requires human approval; REVISIT BEFORE ANY AUTONOMY INCREASE (same trigger family as the terminal-marker future item)."
+  }
+ ]
+}

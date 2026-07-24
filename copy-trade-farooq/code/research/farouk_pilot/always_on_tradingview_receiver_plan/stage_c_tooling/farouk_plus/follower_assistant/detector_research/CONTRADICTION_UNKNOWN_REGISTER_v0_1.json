@@ -1,0 +1,48 @@
+{
+  "register_id": "CONTRADICTION_UNKNOWN_REGISTER_v0_1",
+  "status": "RESEARCH_ONLY / OFFLINE / NOT_AUTHORITATIVE",
+  "decision_3_take_some_representations": {
+    "TAKE_50_EXPLICIT": "0.50",
+    "CONSERVATIVE_DOCUMENTED_PLAN": "50/30/20",
+    "ADVANCED_DOCUMENTED_PLAN": "30/30/runner",
+    "TAKE_SOME_UNSCOPED_constitution_v0_1": "0.25 (design default, NOT globally applied)",
+    "TAKE_SOME_UNSCOPED_documentary_meaning": "UNKNOWN",
+    "rule": "do NOT globally replace 0.25; do NOT pick the most profitable representation"
+  },
+  "decision_5_grade_separation": {
+    "confluence_ladder_C_B_A_Aplus_Aplusplusplus": "DOCUMENT_FORMULA_KNOWN",
+    "six_factor": "DOCUMENT_FORMULA_KNOWN",
+    "eight_factor": "DOCUMENT_FORMULA_KNOWN",
+    "setup_family_boxes": "DOCUMENT_FORMULA_KNOWN (per family)",
+    "tradingview_indicator_grade": "INDICATOR_EQUIVALENCE_UNKNOWN",
+    "cross_system_relationship": "GRADE_VERSION_RELATIONSHIP_UNKNOWN",
+    "rule": "kept separate; NOT merged into a single score"
+  },
+  "decision_6_preserved_unknowns": [
+    "trend EMA period", "displacement threshold for 'impulse'", "swing/MSS pivot definition",
+    "mitigation boundary", "mitigation-age threshold", "BPR overlap tolerance",
+    "candidate-ranking weights", "exact indicator equivalence", "tie-breaking among passing levels"
+  ],
+  "open_contradictions": [
+    {"id": "C1", "topic": "posted pip claim vs follower result",
+     "statement": "Farouk posted ~130 pips (F001) / 'take 50% off' at 140 pips (F002); strict follower realized only 4.42 / 9.95 p/u",
+     "resolution": "UNEXPLAINED by any documented follower policy (only 1 leg filled; B==A). His private fills/sizing UNKNOWN. NOT claimed explained.",
+     "status": "OPEN_UNKNOWN"},
+    {"id": "C2", "topic": "700-pip magnitude",
+     "statement": "the ~700-pip figure equals F002 policy-lane UNREALIZED runner MFE (718.43), not a realized policy result",
+     "status": "RESOLVED_AS_UNREALIZED (not a follower outcome)"},
+    {"id": "C3", "topic": "mode",
+     "statement": "published-follower vs reactive-playbook",
+     "resolution": "both campaigns HYBRID_MODE_SUPPORTED; do NOT assert limits-only or trap",
+     "status": "OPEN_UNKNOWN"},
+    {"id": "C4", "topic": "FVG detector selectivity",
+     "statement": "documented FVG_CONTINUATION sequence alone yields 82 matches on 5 days of 1m -> not selective",
+     "resolution": "the missing displacement threshold (UNKNOWN) is the actual selectivity gate; detector honestly over-fires without it",
+     "status": "OPEN_UNKNOWN"},
+    {"id": "C5", "topic": "bearish FVG mirror",
+     "statement": "DR-202 documents bullish FVG continuation only",
+     "resolution": "bearish mirror NOT emitted; kept UNKNOWN unless documentary evidence supports it",
+     "status": "OPEN_UNKNOWN"}
+  ],
+  "review_only": true, "executable": false, "observation_only": true
+}

@@ -1,0 +1,116 @@
+{
+  "comparison_id": "FP-COMP-001-002-003",
+  "note": "Frozen; pre/at-entry evidence only; both video analyses are RETROSPECTIVE; C002 spoken claims UNVERIFIED; no market data. THREE campaigns -> NO final strategy declared.",
+  "campaigns": {
+    "FP-CAMPAIGN-001": "XAUUSD SELL — WIN (02/07)",
+    "FP-CAMPAIGN-002": "XAUUSD SELL — net UNKNOWN (LEG A TP1+BE, LEG B STOPPED) (01/07)",
+    "FP-CAMPAIGN-003": "XAUUSD BUY — WIN (partials+BE runner) (29/06)"
+  },
+  "dimensions": [
+    {
+      "dimension": "session high/low break direction",
+      "c001": "Asia break HIGH context (sell)",
+      "c002": "Asia LOW break involved (sell; Gemini-UNVERIFIED)",
+      "c003": "Asia break LOW (panel-verified); bought the sweep rebound",
+      "availability": "RETROSPECTIVE/panel",
+      "note": "no single consistent direction; C003 explicitly bought an Asia-LOW sweep"
+    },
+    {
+      "dimension": "OB retest location vs entry",
+      "c001": "OB retest 4123.51 INSIDE entry zone 4116-4126",
+      "c002": "OB retest 4053.58 NOT at 3970-3980 entry",
+      "c003": "OB/Current OB ~4009 near the DEEPER 4027.37 entry (layer)",
+      "availability": "panel/RETROSPECTIVE",
+      "candidate": "WINNERS (C001,C003) had an OB retest coincident with (a layer of) the entry; the LOSER (C002) did not"
+    },
+    {
+      "dimension": "FVG relationship",
+      "c001": "FVG labels present; not the stated driver",
+      "c002": "Gemini(UNVERIFIED): downside FVG ABSENT on the dump",
+      "c003": "Daily FVG explicitly the upside target; OB+FVG the setup",
+      "availability": "mixed",
+      "candidate": "C003 win used OB+FVG confluence explicitly; C002's FVG-absence claim is unverified"
+    },
+    {
+      "dimension": "CHoCH state",
+      "c001": "panel CHoCH 4114.72 (near entry)",
+      "c002": "panel CHoCH 4037.41",
+      "c003": "panel CHoCH x (none) — the winning BUY did not rely on a panel CHoCH",
+      "availability": "panel",
+      "note": "CHoCH not a consistent requirement across winners"
+    },
+    {
+      "dimension": "higher-timeframe location",
+      "c001": "entered near HTF supply (~4140) that held",
+      "c002": "entered FAR below HTF bearish zones (~4090-4145)",
+      "c003": "OB rebound targeting the Daily FVG (~4065); entered AT an OB",
+      "availability": "RETROSPECTIVE",
+      "candidate": "WINNERS entered AT/near a structural HTF level; the LOSER entered far from it"
+    },
+    {
+      "dimension": "entry distance from structural zone",
+      "c001": "tight (entry inside OB/zone; stop ~14-24 pts)",
+      "c002": "wide month-start stop; entry far from HTF",
+      "c003": "initial 4045.99 in-zone; deeper 4027.37 at the OB",
+      "availability": "at-entry (levels)",
+      "note": "C003's deeper entry hugged the OB"
+    },
+    {
+      "dimension": "continuation vs reversal",
+      "c001": "reversal SELL at HTF supply (win)",
+      "c002": "continuation-DOWN attempt that failed (loss)",
+      "c003": "reversal/rebound BUY from OB after an Asia-low sweep (win)",
+      "availability": "interpretive/RETROSPECTIVE",
+      "candidate": "both WINS were reversals AT a level after a sweep; the LOSS was a continuation attempt away from a level"
+    },
+    {
+      "dimension": "initial vs recovery/add-on entries",
+      "c001": "sell 1 / sell 2 result cards (structure unclear)",
+      "c002": "LEG B = RE-ENTRY after LEG A stopped (recovery)",
+      "c003": "LAYERED/averaging entry (initial in-zone + deeper best); 'close worst, hold best'",
+      "availability": "mixed",
+      "note": "multi-entry present in all; C002=recovery-after-stop vs C003=planned layering — different contexts"
+    },
+    {
+      "dimension": "TP1 and breakeven management",
+      "c001": "TP1 + move stop to breakeven",
+      "c002": "LEG A TP1 + move sl to entry",
+      "c003": "TP1 + move SL to entry (delayed by phone overheating)",
+      "availability": "at-event",
+      "candidate": "TP1-then-breakeven is CONSISTENT across all three"
+    },
+    {
+      "dimension": "partial exit sequence",
+      "c001": "'close worst / hold best' + take TP",
+      "c002": "LEG B stopped before partials",
+      "c003": "clear partial sequence buy 1 -> 0.5 -> 0.25 (50% then 75% out), runner at BE",
+      "availability": "at-event",
+      "note": "C003 shows the fullest partial-scaling sequence"
+    }
+  ],
+  "candidate_winner_vs_loser_PRELIMINARY": [
+    "CANDIDATE: winners (C001, C003) had an OB retest coincident with (a layer of) the entry and entered AT a structural HTF level; the loser (C002) had neither.",
+    "CANDIDATE: both wins were reversals AT a level after a liquidity sweep; the loss was a continuation attempt away from a level.",
+    "TP1-then-breakeven is consistent across all three (not a discriminator).",
+    "Multi-entry appears in all; the DIFFERENCE is context (C002 recovery-after-stop vs C003 planned layering) — not multi-entry itself."
+  ],
+  "no_final_strategy_declared": true,
+  "remaining_unknowns": [
+    "Timezones (all)",
+    "Actual fills/prices",
+    "4027.37 provenance (C003)",
+    "C002 spoken claims (unverified)",
+    "No market data for any campaign"
+  ],
+  "source_asset_ids": [
+    "sa-4011195b5c219a1c",
+    "sa-5069bb30641f7e5f",
+    "sa-7a0e7d69d704192b",
+    "sa-8a4754bf56b58cc9",
+    "sa-4c42c8642c35de2a",
+    "sa-de1197b472306864",
+    "sa-19c3595caaa28406",
+    "sa-bc200fb932058fc3",
+    "sa-036eef476c3ce1b2"
+  ]
+}

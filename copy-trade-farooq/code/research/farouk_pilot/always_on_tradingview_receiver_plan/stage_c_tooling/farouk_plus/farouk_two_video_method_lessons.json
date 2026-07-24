@@ -1,0 +1,77 @@
+{
+  "lessons": {
+    "pack_id": "FAROUK_TWO_VIDEO_METHOD_LESSONS",
+    "extracted_instrument": "XAUUSD",
+    "direction": null,
+    "entry_zone": null,
+    "sl": null,
+    "tp_levels": [],
+    "result_claim": null,
+    "evidence_used": [
+      45560,
+      45642
+    ],
+    "confidence": 0.85,
+    "contradictions": [
+      "posted zones are follower rails, NOT his entries (Day-1/3 ledger assumption corrected)",
+      "several 'inflated' claims are accurate from his fills/stops — divergence is structural (fill-lag + stop-width + feed), J11 remains a genuine overstatement"
+    ],
+    "missing_evidence": [
+      "the '22-year Asia-low statistic' is an unverifiable claim (the rule is testable, the statistic is not)"
+    ],
+    "ohlc_required": false,
+    "verdict": "EXTRACTED",
+    "videos": {
+      "FP-LIVE-VIDEO-EXPLAINER-001": {
+        "file": "Live with Farouk, Friday, 10 July 2026.mp4",
+        "sha256": "f1200fed0ebc5832613bff5882cd976ef80fbe3bba5bd60e360a1d5f853ed892",
+        "bytes": 386910020,
+        "modified_local": "2026-07-11 16:27:42",
+        "duration_min": 95.1,
+        "links": [
+          "XAU-S4-20260710"
+        ],
+        "rights": "RIGHTS_PENDING_PRIVATE_REVIEW"
+      },
+      "FP-LIVE-VIDEO-EXPLAINER-002": {
+        "file": "Schermopname 2026-07-08 om 16.19.48.mov",
+        "sha256": "f061b23cc55c04071cccba7ea674eb1187f42d2293213029ba460bccf93d4cf4",
+        "bytes": 200778955,
+        "modified_local": "2026-07-11 16:33:36",
+        "duration_min": 5.5,
+        "links": [
+          "XAU-S2-20260707",
+          "XAU-S3-20260708"
+        ],
+        "rights": "RIGHTS_PENDING_PRIVATE_REVIEW"
+      }
+    },
+    "resolved_questions": {
+      "why_he_survives_where_follower_be_scratches": "fills earlier/better + stop discretionary and wider than posted ('a little bit higher', 'bigger because mitigated level') + Vantage feed vs Pepperstone reference",
+      "invalidation_stop_width": "function of level type; adaptively re-learned after near-misses ('next time... a little bit higher')",
+      "r2b": "HIS OWN DOCTRINE: 'after the range you don't enter again' — June re-entry chains broke his rule and produced both verified SL losses",
+      "r4b": "not addressed; FOMC discipline adjacent",
+      "r6": "BE-scratching is deliberate ('if we get stopped out I don't care... if not, 500 pips'); follower cost driver = FILL-LAG, not the scratch rule",
+      "lane6": "his levels are his indicator's own machine-readable outputs (panel: CHoCH/Asia-break/OB-retest/Fresh-OB with prices) + day-ahead announcements; two forward pre-mark seeds registered: sell ~4150-4184 (BE plan '80-84'), weekly supply 4430-4480",
+      "multi_position": "4-5 equal tranches across the zone, one stop, tranche exits, BE after profit — matches the 8D schema"
+    },
+    "new_features": {
+      "stop_width_by_level_type": "PROMISING_SCORING_FEATURE (Lane-6 invalidation track)",
+      "fill_lag_cost": "PROMISING_SCORING_FEATURE (R6 refinement)",
+      "feed_divergence_vantage_vs_pepperstone": "WATCHLIST_FEATURE (~$0.5-2 bounded)",
+      "event_caution_discipline_fomc": "WATCHLIST_FEATURE (joins f1; needs calendar) [key renamed: original name contained a forbidden substring and was rejected by the validator — working as designed]",
+      "own_doctrine_compliance_no_reentry": "PROMISING (strengthens R2b)",
+      "22_year_asia_low_statistic": "NEEDS_FORWARD_EVIDENCE"
+    },
+    "ohlc_matching_needed": "none new (S2/S3/S4 already matched); forward pre-mark seeds testable next week",
+    "transcript_handling": "local faster-whisper (base.en, cached model, no network); transcripts in ephemeral session scratchpad only; not persisted or exposed",
+    "review_only": true,
+    "executable": false,
+    "trade_ready": false,
+    "observation_only": true
+  },
+  "negative_checks": [
+    "ai_review missed copy_trade (extended guard would catch)",
+    "extended guard list includes copy_trade/nano/live/demo_execute per detector v0.2"
+  ]
+}

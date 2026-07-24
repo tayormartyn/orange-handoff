@@ -1,0 +1,71 @@
+================================================================================
+CHUCK TWO-GAPS CORRECTION PACK — connected_transport
+(follow-up to CONNECTED_TRANSPORT_OFFLINE_VERIFICATION = PASS_WITH_TWO_BOUNDED_GAPS)
+Date: 2026-07-24. OFFLINE ONLY. No connection, no OAuth, no gate flip, no order.
+================================================================================
+
+STRICT_SINGLE_SENDER_OWNER   = PASS
+RESPONSE_TIMEOUT_FAIL_CLOSED = PASS
+TIMEOUT_RESPONSE_RACE        = PASS
+TESTS                        = 152/152  (108 transport [repeat-run stable, both interpreters]
+                                         + 27 proto-codec + 17 tls-channel; all egress-guarded)
+EXTERNAL_CONNECTIONS         = ZERO
+EXECUTOR_NETWORK_CAPABILITY  = ZERO    (clean-interp + socket booby-trap re-run green)
+GATES                        = ALL_FALSE (EXECUTION / CTRADER / DEMO all False, single source)
+Overall: CONNECTED_TRANSPORT_OFFLINE_VERIFICATION_PASS
+
+--------------------------------------------------------------------------------
+1. STRICT SINGLE OUTBOUND OWNER (correction 1) — transport.py
+--------------------------------------------------------------------------------
+The public/manual heartbeat path that called _write() directly is REMOVED.
+  * maybe_heartbeat() (public) and _enqueue_heartbeat() (internal seam) now BUILD a frame and
+    SUBMIT it to the one outbound queue — they never write.
+  * Automatic idle heartbeats remain sender-owned and are themselves ENQUEUED, so every outbound
+    operation (auth, actions, heartbeats — automatic and manual) passes through the single queue.
+  * Structural enforcement: the sender thread records its identity at loop start and _write()
+    fail-closes (StateError) when invoked from any other thread — a caller thread cannot write to
+    the socket even by reaching into the internals.
+  * A queued heartbeat to a dead socket is dropped (never sent); a heartbeat send failure alarms
+    and disconnects (fail-closed).
+Tests (suite sections 14, 16d): manual heartbeat seam -> SENDER-thread output, caller only
+submitted; exactly ONE thread identity calls connector.send across auth + actions + heartbeats
+(thread-identity instrumented; never the caller); every outbound funnels through the queue
+(write-counter proof); direct _write from a caller thread -> refused.
+
+--------------------------------------------------------------------------------
+2. RESPONSE-TIMEOUT FAIL-CLOSED (correction 2) — transport.py
+--------------------------------------------------------------------------------
+A response timeout can no longer leave the transport READY. Atomic resolution on timeout:
+  * the caller atomically TAKES the pending slot; if the reader/sender already resolved it, that
+    resolution is CONSUMED exactly once (a boundary response completes normally, READY retained);
+  * otherwise the timeout owns the outcome: correlation marked OUTCOME_UNKNOWN and retained
+    PERMANENTLY (never forgotten, never auto-resent); READY invalidated; the current I/O session
+    stopped (disconnect); no further action sends possible; reconnect must complete FULL
+    authentication + reconciliation before actions resume.
+  * reconnect() now treats a bring_up that does not reach READY (e.g. reconcile timed out) as a
+    FAILED attempt — it can no longer report success from a half-up session.
+Tests (suite section 18): timed-out open -> DISCONNECTED (never READY) + OUTCOME_UNKNOWN_TIMEOUT
+alarm + correlation retained; a DIFFERENT action refused after the timeout; reconnect ->
+reconciliation strictly precedes the next action (broker-seen ordering); the timed-out
+correlation still OUTCOME_UNKNOWN after reconnect (no forget, no auto-resend); TIMEOUT-BOUNDARY
+RACE: a delayed-response connector sweeps delays across the timeout (0.02s..0.30s vs 0.15s) —
+every iteration resolves EXACTLY once (RESPONSE consumed + READY, or OUTCOME_UNKNOWN +
+fail-closed; never both, never neither) and both sides of the boundary were exercised.
+
+--------------------------------------------------------------------------------
+3. FILES TOUCHED (this correction build)
+--------------------------------------------------------------------------------
+  transport.py .................... _write sender-only guard; heartbeats via the outbound queue
+                                    (manual + automatic); atomic fail-closed timeout resolution
+                                    (_finish_resolved); reconnect requires READY
+  tests_connected_transport.py .... sections 14/16d strengthened; NEW section 18 -> 108 checks
+  tests_tls_channel.py ............ manual heartbeat updated to the queued seam
+  README.md ....................... response-timeout bullet corrected (fail-closed)
+Executor, mapper, gate, config, state machine, codec, TLS policy: UNTOUCHED.
+Regressions green: demo_lane 62/62, order_adapter 45/45, seal_approval 10/10, mapper 23/23.
+Live services untouched (listener/wire/watcher/observer PIDs alive; single listener).
+
+================================================================================
+NOT DONE (prohibited): no real cTrader connection, no OAuth grant, no gate flip, no order.
+STOP.
+================================================================================

@@ -1,0 +1,21 @@
+{
+  "contract_id": "outcome_companion_process_contract_v0_1",
+  "status": "BUILT_NOT_STARTED",
+  "purpose": "Specify (do NOT start) an independent outcome-companion process that would later observe immutable genuine freeze records + market evidence, wait for valid campaign completion, append outcome records, and generate dataset updates.",
+  "would_do": [
+    "observe immutable GENUINE_PROSPECTIVE router freeze records (router_freeze_v0_1.jsonl)",
+    "observe existing campaign/market evidence (tracker/forward ledgers, read-only)",
+    "wait for valid campaign completion (firewall CLOSED + outcome available)",
+    "append outcome records to router_outcomes_v0_1.jsonl (append-only, idempotent)",
+    "regenerate versioned dataset exports + manifests"
+  ],
+  "must_not": [
+    "modify the evidence watcher", "modify router freezes", "place orders", "calculate account sizing",
+    "access credentials", "control risk gates", "start automatically during this task"
+  ],
+  "isolation": "own process, own lock/cursor, append-only outputs; separate from the evidence watcher (36208) and the listener/wire/tracker",
+  "idempotency": "outcome_idempotency_key = sha256(campaign_id | freeze_hash | observation_cutoff | outcome_contract_version); restart-safe (derives from durable ledgers)",
+  "activation_requirement": "requires a SEPARATE review + explicit authorization; NOT launched here",
+  "intended_command_when_authorised": "python -u outcome_companion.py --watch   (module NOT created/started in this task)",
+  "review_only": true, "executable": false, "observation_only": true
+}

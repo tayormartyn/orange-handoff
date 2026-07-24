@@ -1,0 +1,139 @@
+================================================================================
+CHUCK COMPLETION PACK — connected_transport THREE BOUNDED COMPLETION ITEMS
+(follow-up to CONNECTED_TRANSPORT_OFFLINE_VERIFICATION = PASS_WITH_THREE_BOUNDED_COMPLETION_ITEMS)
+Date: 2026-07-24. OFFLINE ONLY — loopback/fake. No connection, no OAuth, no gate
+flip, no order. All 'broker' interaction is in-memory or 127.0.0.1.
+================================================================================
+
+REAL_PROTOCODEC        = PASS
+TLS_LOOPBACK           = PASS
+AUTH_SEQUENCE          = PASS
+ACCOUNT_LIST_GUARD     = PASS
+OUTBOUND_SEND_QUEUE    = PASS
+HEARTBEAT_INTERVAL     = PASS
+LOOPBACK_TESTS         = 115/115   (71 transport [also 71/71 re-run under .venv-ctrader]
+                                    + 27 proto-codec + 17 tls-channel; all egress-guarded)
+EXTERNAL_CONNECTIONS   = ZERO
+EXECUTOR_IMPORTS_TRANSPORT = ZERO
+EXECUTOR_NETWORK_CAPABILITY = ZERO
+OAUTH_REQUESTS         = ZERO
+GATES                  = ALL_FALSE
+LEDGER_IMPACT          = NONE      (see section 5 — live services appended F008 records
+                                    today; authorized live-stack writers, not this build)
+LIVE_SERVICE_IMPACT    = NONE
+Overall: CONNECTED_TRANSPORT_OFFLINE_VERIFICATION_PASS
+
+--------------------------------------------------------------------------------
+1. ITEM 1 — REAL CTRADER PROTOCODEC (proto_codec.py; tests_proto_codec.py, 27 checks)
+--------------------------------------------------------------------------------
+Outbound: Envelope -> generated cTrader class -> ProtoMessage(payloadType, payload,
+clientMsgId) -> serialized protobuf; framing.frame adds the 4-byte big-endian prefix.
+Inbound: framed bytes -> ProtoMessage -> concrete response/event -> Envelope -> the
+EXISTING state machine. Order + close payloads built by the ACCEPTED offline mapper
+(protobuf_mapper.build_new_order_req / build_close_position_req) — NOT duplicated.
+No sizing/approval/reconciliation/campaign logic in the codec.
+Covered with REAL generated classes: app-auth, account-list
+(ProtoOAGetAccountListByAccessTokenReq/Res), account-auth, heartbeat, reconcile,
+LIMIT-open, cancel-pending, close-reduce, allowed stop-mod, ack (ORDER_ACCEPTED),
+rejection (OrderErrorEvent + ErrorRes), fill/execution event, fragmented frames,
+combined frames, payloadType-vs-payload mismatch -> FramingError, malformed
+ProtoMessage -> FramingError, unknown payloadType -> UNKNOWN_PAYLOAD (not
+KNOWN_INBOUND -> transport fail-closes), clientMsgId preserved end-to-end +
+correlation intact. Full lifecycle to READY over the fake wire with the REAL codec.
+Fix applied this build: proto2 REQUIRED fields (accessToken on account-list res;
+ctidTraderAccountId on events; nested ProtoOAOrder/ProtoOAPosition required groups)
+now set on every encode path — the suite previously could not serialize.
+NO socket to cTrader (egress guard installed first line of the suite).
+
+--------------------------------------------------------------------------------
+2. ITEM 2 — TLS CHANNEL, LOOPBACK ONLY (tls_channel.py; tests_tls_channel.py, 17 checks)
+--------------------------------------------------------------------------------
+Production policy (asserted structurally + behaviourally):
+  * fixed host demo.ctraderapi.com, fixed port 5035 (single source; no LIVE constant)
+  * certificate validation REQUIRED (CERT_REQUIRED), hostname validation REQUIRED,
+    always against demo.ctraderapi.com; TLS >= 1.2
+  * NO insecure mode: no parameter anywhere can relax validation
+  * NO caller/CLI/env override: production connector takes no host/port/flag args;
+    source contains no os.environ/sys.argv/getenv read
+  * TLSProductionConnector.connect() refuses (gates False) BEFORE any socket exists
+Loopback tests (all on 127.0.0.1, throwaway local CA minted in-memory):
+  * valid local CA-signed cert (SAN=demo.ctraderapi.com) -> handshake OK -> full auth
+    sequence to READY with the REAL ProtoCodec; negotiated TLS 1.2+; heartbeat over TLS
+  * untrusted (self-signed) cert -> SSLCertVerificationError
+  * hostname mismatch (SAN=wrong-host.invalid) -> SSLCertVerificationError
+  * expired cert -> SSLCertVerificationError (harness supports expiry)
+  * plaintext/non-TLS endpoint -> handshake refused (SSLError)
+  * DNS recorder over the egress guard: every getaddrinfo host in the suite was
+    loopback; demo.ctraderapi.com remains unresolvable (EgressRefused)
+
+--------------------------------------------------------------------------------
+3. ITEM 3 — AUTH + ACCOUNT GUARD (state.py + transport.py; in the 71-check suite)
+--------------------------------------------------------------------------------
+EXACT sequence enforced by the state machine (each transition checks its predecessor):
+CONNECTED -> APPLICATION_AUTHENTICATED -> ACCOUNT_LIST_RECEIVED -> ACCOUNT_VALIDATED
+-> ACCOUNT_AUTHENTICATED -> RECONCILE_ONLY -> READY.
+ProtoOAGetAccountListByAccessTokenReq added; ProtoOAAccountAuthReq is sendable ONLY
+from ACCOUNT_VALIDATED (state table), and the account-list response must first prove:
+exactly one account, the allowlisted ID, isLive == false, expected Pepperstone demo
+environment, expected scope SCOPE_TRADE (five-field conjunction = the SINGLE SOURCE
+demo_lane.gate.account_guard_ok; FAKE credentials + FAKE responses only, no real
+OAuth scope requested anywhere).
+Rejections each proven: missing / additional / live / wrong-scope / wrong-ID /
+wrong-broker -> sanitised ACCOUNT_GUARD_REJECT alarm + NotArmed, NO account-auth,
+NO reconcile request, NO trading request, not READY. (Wrong-broker is structurally
+uninjectable via the response — broker_environment comes from the single-source
+config — proven at the gate AND by an end-to-end wrong-context simulation.)
+Disconnect invalidates account-validation (flag + state reset); the full sequence is
+required again after reconnect (reconnect() re-runs bring_up; reconcile-before-action).
+
+--------------------------------------------------------------------------------
+4. ITEM 4 — RETAINED INVARIANTS (all re-proven AFTER the build)
+--------------------------------------------------------------------------------
+executor imports transport ......... ZERO (AST import-closure test, re-run green)
+executor imports mapper ............ ZERO (same)
+executor network capability ........ ZERO (clean interpreter + socket/ssl/twisted/
+                                     ctrader_open_api/transport booby-trap:
+                                     demo_lane.executor imports NETWORK-FREE;
+                                     transport/mapper NOT in sys.modules)
+fixed demo endpoint ................ demo.ctraderapi.com:5035 only; no override
+deterministic correlation .......... re-proven (dup/in-flight refused; no blind resend)
+OUTCOME_UNKNOWN after ambiguous send re-proven (lost-ack -> OUTCOME_UNKNOWN, 1 send)
+reconcile-first after reconnect .... re-proven (RECONCILE_ONLY window)
+unknown order/position no-touch .... re-proven (+ known-owned mismatch containment)
+gates .............................. EXECUTION/CTRADER/DEMO all False (single source)
+ONE send queue ..................... every outbound (auth/heartbeat/action) funnels
+                                     through _write under one lock (counted in test)
+heartbeat .......................... HEARTBEAT_INTERVAL_S = 10 (sent when idle >= 10s
+                                     while connected; staleness timeout 30s)
+regressions ........................ tests_demo_lane 62/62, tests_order_adapter 45/45,
+                                     tests_seal_approval 10/10, tests_protobuf_mapper
+                                     23/23 (.venv-ctrader) — all green after the build
+
+--------------------------------------------------------------------------------
+5. LEDGER ATTRIBUTION NOTE (why three authority hashes moved — NOT this build)
+--------------------------------------------------------------------------------
+fwd_ledger / freeze_genuine / follower_ledger hashes differ from the pre-build
+snapshot because the RUNNING LIVE SERVICES appended prospective records for a new
+campaign XAU-F008-20260724 this morning (source=live_wire_deterministic_v0_1,
+message_ids 46096/46097, ~08:34Z; router freeze record class PROSPECTIVE). These are
+the authorized live-stack writers doing their job. Nothing in this build or its test
+suites reads or writes any ledger path (all tests are in-memory / 127.0.0.1).
+guards + constitution + freeze_backfill hashes IDENTICAL. Brain registers are now
+stale w.r.t. F008 and need a routine brain_refresh (separate, not part of this order).
+
+--------------------------------------------------------------------------------
+6. FILES TOUCHED (this completion build)
+--------------------------------------------------------------------------------
+  proto_codec.py .................. required-field encode fixes (proto2 REQUIRED)
+  tls_channel.py .................. NEW (item 2)
+  tests_tls_channel.py ............ NEW (item 2, 17 checks)
+  tests_connected_transport.py .... guard-matrix additions (wrong-broker; no-reconcile/
+                                    no-trading-request after reject) -> 71 checks
+  README.md ....................... status trailer updated (codec + TLS now built)
+No other file modified. Executor, mapper, gate, config, sizing, approval untouched.
+
+================================================================================
+NOT DONE (prohibited): no real cTrader connection, no OAuth grant, no gate flip,
+no order. DPAPI credential provider + live-channel wiring remain later,
+separately-reviewed steps. STOP.
+================================================================================

@@ -1,0 +1,295 @@
+{
+  "report": {
+    "model": "claude-opus-4-8 (recorded)",
+    "candidates_proposed": 26,
+    "validator_verdicts": {
+      "ACCEPTED": 17,
+      "NEEDS_REVIEW": 9
+    },
+    "gold_legs_reduced": {
+      "PROVIDER-leg-1": {
+        "leg_id": "PROVIDER-leg-1",
+        "track": "PROVIDER",
+        "direction": "SELL",
+        "entry": "4078",
+        "stop": "4120",
+        "parent_leg_id": null,
+        "status": "OPEN",
+        "remaining_fraction": 1.0,
+        "partial_tp_count": 0,
+        "flags": [],
+        "opened_seq": 0,
+        "closed_seq": null,
+        "opened_by_hash": "3062ce9280d41cf233c170719a396f48e6b8aa339ff7fe3450cfbcf5a89ca5b4",
+        "closed_by_hash": null,
+        "realized_r": null
+      },
+      "PROVIDER-leg-2": {
+        "leg_id": "PROVIDER-leg-2",
+        "track": "PROVIDER",
+        "direction": null,
+        "entry": null,
+        "stop": null,
+        "parent_leg_id": null,
+        "status": "OPEN",
+        "remaining_fraction": 1.0,
+        "partial_tp_count": 0,
+        "flags": [],
+        "opened_seq": 2,
+        "closed_seq": null,
+        "opened_by_hash": "e0b0137959fb277667baf4b4621fc5f3e511e8d90cffd6b16ea2cb0c3be1cca4",
+        "closed_by_hash": null,
+        "realized_r": null
+      },
+      "PROVIDER-leg-3": {
+        "leg_id": "PROVIDER-leg-3",
+        "track": "PROVIDER",
+        "direction": "SELL",
+        "entry": "4084",
+        "stop": "4120",
+        "parent_leg_id": null,
+        "status": "OPEN",
+        "remaining_fraction": 1.0,
+        "partial_tp_count": 0,
+        "flags": [],
+        "opened_seq": 4,
+        "closed_seq": null,
+        "opened_by_hash": "f69e022cc8ac2dfaff5e317a48900873bf3c2fcbc634fb953f5f7ea58da41413",
+        "closed_by_hash": null,
+        "realized_r": null
+      }
+    },
+    "event_diff_totals": {
+      "matched": 15,
+      "missed_truth_only": 2,
+      "extra_extractor_only": 2
+    },
+    "field_notes": [
+      "msg352 size after validation: value=None (truth=NULL/QUALITATIVE_ONLY) -> MATCH"
+    ],
+    "rejected_candidates": [],
+    "btc_routed_separately": 3
+  },
+  "per_message_diff": [
+    {
+      "mid": 352,
+      "truth": [
+        "ENTRY"
+      ],
+      "extractor": [
+        "ENTRY"
+      ],
+      "matched": [
+        "ENTRY"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 353,
+      "truth": [
+        "MOVE_STOP"
+      ],
+      "extractor": [
+        "MOVE_STOP"
+      ],
+      "matched": [
+        "MOVE_STOP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 355,
+      "truth": [
+        "RE_ENTER"
+      ],
+      "extractor": [
+        "RE_ENTER"
+      ],
+      "matched": [
+        "RE_ENTER"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 357,
+      "truth": [
+        "PARTIAL_TP"
+      ],
+      "extractor": [
+        "PARTIAL_TP"
+      ],
+      "matched": [
+        "PARTIAL_TP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 358,
+      "truth": [
+        "MOVE_STOP"
+      ],
+      "extractor": [
+        "MOVE_STOP"
+      ],
+      "matched": [
+        "MOVE_STOP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 360,
+      "truth": [
+        "RE_ENTER",
+        "STOP_HIT"
+      ],
+      "extractor": [
+        "RE_ENTER",
+        "STOP_HIT"
+      ],
+      "matched": [
+        "RE_ENTER",
+        "STOP_HIT"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 361,
+      "truth": [
+        "PARTIAL_CLOSE"
+      ],
+      "extractor": [
+        "CLOSE"
+      ],
+      "matched": [],
+      "missed": [
+        "PARTIAL_CLOSE"
+      ],
+      "extra": [
+        "CLOSE"
+      ]
+    },
+    {
+      "mid": 362,
+      "truth": [
+        "CONDITIONAL",
+        "MOVE_STOP"
+      ],
+      "extractor": [
+        "CONDITIONAL",
+        "MOVE_STOP"
+      ],
+      "matched": [
+        "CONDITIONAL",
+        "MOVE_STOP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 365,
+      "truth": [
+        "PARTIAL_TP"
+      ],
+      "extractor": [
+        "PARTIAL_TP"
+      ],
+      "matched": [
+        "PARTIAL_TP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 366,
+      "truth": [
+        "PARTIAL_CLOSE"
+      ],
+      "extractor": [
+        "CLOSE"
+      ],
+      "matched": [],
+      "missed": [
+        "PARTIAL_CLOSE"
+      ],
+      "extra": [
+        "CLOSE"
+      ]
+    },
+    {
+      "mid": 368,
+      "truth": [
+        "CONDITIONAL"
+      ],
+      "extractor": [
+        "CONDITIONAL"
+      ],
+      "matched": [
+        "CONDITIONAL"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 369,
+      "truth": [
+        "PARTIAL_TP"
+      ],
+      "extractor": [
+        "PARTIAL_TP"
+      ],
+      "matched": [
+        "PARTIAL_TP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 374,
+      "truth": [
+        "CLOSE"
+      ],
+      "extractor": [
+        "CLOSE"
+      ],
+      "matched": [
+        "CLOSE"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 375,
+      "truth": [
+        "MOVE_STOP"
+      ],
+      "extractor": [
+        "MOVE_STOP"
+      ],
+      "matched": [
+        "MOVE_STOP"
+      ],
+      "missed": [],
+      "extra": []
+    },
+    {
+      "mid": 376,
+      "truth": [
+        "ENTRY"
+      ],
+      "extractor": [
+        "ENTRY"
+      ],
+      "matched": [
+        "ENTRY"
+      ],
+      "missed": [],
+      "extra": []
+    }
+  ]
+}

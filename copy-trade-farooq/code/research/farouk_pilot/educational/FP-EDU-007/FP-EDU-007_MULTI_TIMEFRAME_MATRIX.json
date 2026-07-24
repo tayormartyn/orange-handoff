@@ -1,0 +1,77 @@
+{
+  "record_id": "FP-EDU-007",
+  "method": "EMA-based multi-timeframe scalping (Vishal's 'Craters Reality / TR-Main'), with Farouk applying a VWAP/own-system parallel on gold. NOT the [kyle] SMC panel.",
+  "note": "Do NOT assume the standard 15m=bias / 5m=setup / 1m=trigger mapping — the TAUGHT mapping is 1H=direction, 15m->5m context, 1m=entry.",
+  "timeframes": {
+    "1m": {
+      "context_role": "execution/monitoring",
+      "setup_role": "final entry area (EMA/stochastic)",
+      "trigger_role": "ENTRY (Vishal: 'I usually take trades on the one minute')",
+      "invalidation_role": "structure/EMA-based (with SL)",
+      "target_role": "quick scalp; watch 200+50 EMA target",
+      "evidence_source": "EXPLICIT_SPOKEN (Vishal 03:44)",
+      "confidence": "HIGH",
+      "XAUUSD_applicability": "supported (stated to work on gold)"
+    },
+    "3m": {
+      "context_role": "NOT USED in this method",
+      "setup_role": "-",
+      "trigger_role": "-",
+      "invalidation_role": "-",
+      "target_role": "-",
+      "evidence_source": "Vishal uses 1/5/15/1H — NO 3m (contrast: Farouk's [kyle] method used 3m in C004)",
+      "confidence": "HIGH (absence)",
+      "XAUUSD_applicability": "n/a"
+    },
+    "5m": {
+      "context_role": "context (monitored WITH 1m after entry)",
+      "setup_role": "setup context / EMA confluence",
+      "trigger_role": "secondary (watched with 1m)",
+      "invalidation_role": "-",
+      "target_role": "-",
+      "evidence_source": "EXPLICIT_SPOKEN (Vishal 03:53 'monitor 1m and 5m together')",
+      "confidence": "HIGH",
+      "XAUUSD_applicability": "supported"
+    },
+    "15m": {
+      "context_role": "intermediate confluence (bridge to 1H)",
+      "setup_role": "part of the top-down read",
+      "trigger_role": "-",
+      "invalidation_role": "-",
+      "target_role": "-",
+      "evidence_source": "EXPLICIT_SPOKEN (Vishal 03:21-03:37)",
+      "confidence": "MEDIUM-HIGH",
+      "XAUUSD_applicability": "supported"
+    },
+    "1H": {
+      "context_role": "DIRECTION / DAILY BIAS (price vs 50 EMA)",
+      "setup_role": "-",
+      "trigger_role": "-",
+      "invalidation_role": "-",
+      "target_role": "day-direction filter",
+      "evidence_source": "EXPLICIT_SPOKEN (Vishal 02:43-03:02 'one hour to see the direction for a day; below 50 EMA = bearish')",
+      "confidence": "HIGH",
+      "XAUUSD_applicability": "supported"
+    },
+    "4H": {
+      "context_role": "NOT USED (max HTF here is 1H)",
+      "setup_role": "-",
+      "trigger_role": "-",
+      "invalidation_role": "-",
+      "target_role": "-",
+      "evidence_source": "absent — Vishal's top is 1H (contrast C004 used H4 BOS)",
+      "confidence": "HIGH (absence)",
+      "XAUUSD_applicability": "n/a"
+    }
+  },
+  "sequence": "1H (direction) -> 15m -> 5m -> 1m (entry); after entry monitor 1m + 5m together. A top-down read is described; strictness NOT explicitly stated.",
+  "indicator_stack": {
+    "name": "Craters Reality / TR-Main (phonetic)",
+    "components": "EMA ribbon (EMAs ~13/35/50/200/800), stochastic, VWAP, Psy-Hi/Psy-Lo, Daily Open, AWR/AMR (avg weekly/monthly range)",
+    "is_kyle_or_smartzones": "NO — a DIFFERENT indicator; not [kyle] v1/v2 or Smart Zones Strategy PRO"
+  },
+  "source_asset_ids": [
+    "sa-271518d77732835c",
+    "sa-b03f71eee08044e7"
+  ]
+}

@@ -1,0 +1,2588 @@
+{
+ "classified": {
+  "45285": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45286": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45287": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "stop-related wording with no recognized instruction pattern"
+  },
+  "45288": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45289": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45290": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45291": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45292": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45293": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45294": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45295": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45296": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45297": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45298": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45299": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45300": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45301": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45302": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45303": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45304": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45305": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45306": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45307": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45308": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45309": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45327": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45328": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45329": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45330": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45331": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "entry parses now but no wire campaign record (needs review)"
+  },
+  "45332": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45333": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45334": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45335": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45336": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45337": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45338": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45339": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45340": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45341": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45342": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45343": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45344": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45345": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45346": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45347": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45348": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45349": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45350": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45354": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45355": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45356": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45357": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45358": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45359": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45360": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45361": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45362": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45363": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45364": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45365": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45366": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45367": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45368": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45369": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45370": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45371": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45372": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45373": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45374": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45375": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45376": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45377": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45378": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45379": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45380": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45381": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45382": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45383": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45384": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45385": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45386": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45387": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45388": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45389": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45390": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45391": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45392": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45393": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45394": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45395": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45396": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45397": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45398": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45399": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45400": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45406": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45407": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45408": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45409": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45410": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45411": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45412": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45413": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45414": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45415": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45416": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45417": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45418": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45419": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45420": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45421": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45422": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45423": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45424": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45425": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45426": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45427": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45428": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45429": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45430": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45431": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45432": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45433": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45434": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45435": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45436": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45493": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45494": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45495": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45496": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45497": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45498": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45499": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "entry parses now but no wire campaign record (needs review)"
+  },
+  "45500": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45501": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45502": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45503": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45504": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45505": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45506": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45507": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45508": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45509": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45510": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45511": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45512": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45513": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45514": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45515": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45516": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45517": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45518": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45519": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45520": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45521": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45522": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45523": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45524": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45525": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45526": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45527": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45528": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45529": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45530": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45531": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45532": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45533": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45534": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45535": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45536": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45537": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45538": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45539": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45540": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45541": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45542": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45543": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45544": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45545": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45546": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45547": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45548": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45549": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45550": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45551": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45552": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "entry parses now but no wire campaign record (needs review)"
+  },
+  "45553": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45554": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45555": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45556": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45557": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45558": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45559": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45560": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45561": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45562": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45563": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45564": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45565": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45566": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45567": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45568": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45569": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45570": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45571": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45572": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45573": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45574": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45575": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45576": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45577": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45578": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45579": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45580": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45581": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45582": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45583": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45584": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45585": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45586": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45587": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45588": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45589": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45590": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45591": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45592": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45593": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45594": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45595": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45596": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45597": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45598": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45599": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45600": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45609": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45610": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45611": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45612": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45613": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45614": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45615": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45616": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45617": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45618": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45619": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45620": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45621": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45622": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45623": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45624": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45625": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "entry parses now but no wire campaign record (needs review)"
+  },
+  "45626": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45627": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45628": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45629": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45630": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45631": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45632": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45633": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45634": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45635": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45636": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45637": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45638": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45639": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45640": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45641": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45642": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45643": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45644": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45645": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45646": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45647": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45648": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45649": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45650": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45651": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45652": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45653": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45654": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45655": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45656": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45657": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45658": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45659": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45660": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45661": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45662": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45663": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45664": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45665": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45666": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45667": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45668": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45669": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45670": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45671": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45672": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45673": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45674": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45675": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45676": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45677": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45678": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45679": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45680": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45681": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45682": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45683": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45684": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45685": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45686": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45687": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45688": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45689": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45690": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45691": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45692": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45693": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45694": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45695": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45696": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45697": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45698": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45699": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45700": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45701": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45702": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45703": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45704": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45705": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45706": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45707": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45708": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45709": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45710": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45711": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45712": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45713": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45714": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45715": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45716": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45717": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45718": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45719": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45720": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45721": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45722": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45723": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45724": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45725": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45726": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45727": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45728": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45729": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45730": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45731": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45732": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45733": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45734": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45735": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45736": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45737": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45738": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45739": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45740": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45741": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45742": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45743": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45744": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45745": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45746": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45747": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45748": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45749": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45750": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45751": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45752": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45753": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45754": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45755": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: missing stop"
+  },
+  "45756": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "correlation invalidated by XAU_F_CORRELATION_CORRECTION (belongs to uncaptured campaign)"
+  },
+  "45757": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45758": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45759": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "correlation invalidated by XAU_F_CORRELATION_CORRECTION (belongs to uncaptured campaign)"
+  },
+  "45760": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45761": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "missing stop"
+  },
+  "45763": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45764": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45765": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45767": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45768": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45769": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45770": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45771": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45772": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45773": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45774": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45775": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45776": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45777": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45778": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45779": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45780": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45781": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45782": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45783": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45784": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45785": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45786": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45787": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45788": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45789": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45790": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45791": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45792": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45793": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45794": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: stop-related wording with no recognized instruction pattern"
+  },
+  "45795": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45796": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45797": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45798": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45799": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45800": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45801": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45802": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: missing stop"
+  },
+  "45803": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45804": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45805": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45806": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45807": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45808": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45809": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45810": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45811": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45812": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45813": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45814": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45815": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45816": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45817": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45818": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45819": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45820": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45821": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45822": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45823": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45824": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45825": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45826": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45827": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45828": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45829": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45830": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45831": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45832": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45833": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45834": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45835": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45836": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45837": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45838": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45839": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45840": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45841": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45842": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45843": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45844": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45845": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45846": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45847": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45848": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45849": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45850": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45851": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45852": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45853": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45854": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45855": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45856": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45857": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45858": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45859": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45860": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45861": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45862": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45863": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45864": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45865": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45866": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45867": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45868": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45869": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45870": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45871": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45872": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45873": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45874": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45875": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45876": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45877": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45878": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45879": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45880": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: stop-related wording with no recognized instruction pattern"
+  },
+  "45881": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45882": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45883": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45884": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45885": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45886": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45887": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45888": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45889": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45890": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45891": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45892": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45893": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45894": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45895": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45896": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45897": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45898": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45899": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45900": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45901": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45902": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45903": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45904": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45905": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45906": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45907": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45909": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45910": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45911": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45912": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45913": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45915": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45916": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45917": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45918": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45919": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45920": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45921": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45922": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45923": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45924": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45925": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45926": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45927": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45928": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45929": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45930": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45931": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45932": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45933": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45934": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45935": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45936": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45937": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45938": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45939": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45940": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "45941": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45942": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45943": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45944": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45945": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45946": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45947": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45948": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45949": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45950": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45951": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45952": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45953": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45954": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45955": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45956": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45957": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45958": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45959": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45960": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45961": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45962": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45963": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45964": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45965": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45966": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45967": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45968": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45969": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45970": {
+   "c": "PARSED_NEW_CAMPAIGN",
+   "r": "wire created campaign"
+  },
+  "45971": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45972": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45973": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "45974": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45975": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45976": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45977": {
+   "c": "PARSED_MANAGEMENT_INSTRUCTION",
+   "r": "correlated to campaign"
+  },
+  "45978": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45979": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45980": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45981": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45982": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45983": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45984": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45985": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45986": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45987": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45988": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45989": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45990": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45991": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "45992": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45993": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "45994": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45995": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "trade-like but not farouk-gold header"
+  },
+  "45996": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46004": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46005": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46006": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46007": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46008": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46009": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46010": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46011": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: missing stop"
+  },
+  "46012": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46013": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46014": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "46015": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46016": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "per-clause completeness: un-typed close clause(s) alongside typed instructions (v2.1 hard fail-closed)"
+  },
+  "46017": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "46018": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "46019": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "46020": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: management instruction with no open campaign"
+  },
+  "46021": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "plausible trade-related but unparsed"
+  },
+  "46022": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "46023": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "wire review: management instruction with no open campaign"
+  },
+  "46024": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46025": {
+   "c": "IRRELEVANT",
+   "r": "not farouk-gold, not trade-related"
+  },
+  "46026": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  },
+  "46096": {
+   "c": "QUARANTINED_UNPARSED_SIGNAL_CANDIDATE",
+   "r": "entry parses now but no wire campaign record (needs review)"
+  },
+  "46097": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "46098": {
+   "c": "ORPHAN_MANAGEMENT_MESSAGE",
+   "r": "management with no wire correlation"
+  },
+  "46099": {
+   "c": "PARSED_COMMENTARY",
+   "r": "farouk-gold commentary, no action"
+  }
+ }
+}

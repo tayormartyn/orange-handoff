@@ -1,0 +1,236 @@
+{
+ "meta": {
+  "matcher": "recap_bar_walk_matcher_v0_1",
+  "generated_on": "2026-07-12",
+  "mode": "OFFLINE / REVIEW_ONLY / 15M_FALLBACK_PRECISION",
+  "bars_file": "XAUUSD_15M_2026-03-09_to_2026-07-10.csv",
+  "bars": 8057,
+  "first_bar_utc": "2026-03-09 20:15",
+  "last_bar_utc": "2026-07-10 20:45",
+  "cadence_gaps_sample_s": [
+   900,
+   4500
+  ],
+  "excluded": "27-03-err (SL 5075 impossible - documented data error, never matched)",
+  "rules": "zone-side-aware first touch; same-bar conflicts = AMBIGUOUS_SEQUENCE; intra-bar order never guessed; 15m verdicts never upgrade the 1m ledger tier",
+  "candidate_only": true,
+  "executable": false,
+  "trade_ready": false
+ },
+ "results": [
+  {
+   "id": "12-03",
+   "claim": "MISSED",
+   "direction": "LONG",
+   "zone": [
+    5035.0,
+    5050.0
+   ],
+   "posted_sl": 5010.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "zone_traded_on_anchor_date": null,
+   "zone_first_traded_after_date": "2026-03-13 14:45",
+   "verdict": "MISSED_CLAIM_SUPPORTED_AT_15M (zone untraded on anchor date)"
+  },
+  {
+   "id": "17-03",
+   "claim": "WIN +300p all TPs",
+   "direction": "LONG",
+   "zone": [
+    4980.0,
+    4992.0
+   ],
+   "posted_sl": 4966.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "fill_bar": "2026-03-17 10:30",
+   "sl_first_bar": "2026-03-18 10:30",
+   "claim_target_price": 5022.0,
+   "target_first_bar": "2026-03-17 12:30",
+   "max_favorable_excursion_usd_48h": 39.58,
+   "verdict": "WIN_CLAIM_SUPPORTED_AT_15M (target strictly before any SL touch)"
+  },
+  {
+   "id": "18-03",
+   "claim": "WIN +500p",
+   "direction": "SHORT",
+   "zone": [
+    4870.0,
+    4870.0
+   ],
+   "posted_sl": 4925.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "entry_side_flag": "AMBIGUOUS_ENTRY (day opened at/through the entry boundary; approach side unproven)",
+   "fill_bar": "2026-03-18 00:00",
+   "sl_first_bar": "2026-03-18 00:00",
+   "claim_target_price": 4820.0,
+   "target_first_bar": "2026-03-18 20:15",
+   "max_favorable_excursion_usd_48h": 367.31,
+   "verdict": "AMBIGUOUS_SEQUENCE_AT_15M (fill and SL share one bar; target later)"
+  },
+  {
+   "id": "19-03",
+   "claim": "LOSS ('SL hit at 4762')",
+   "direction": "LONG",
+   "zone": [
+    4775.0,
+    4775.0
+   ],
+   "posted_sl": 4767.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "fill_bar": "2026-03-19 06:45",
+   "sl_first_bar": "2026-03-19 06:45",
+   "max_favorable_excursion_usd_48h": 13.57,
+   "first_bar_through_posted_sl_4767.0": "2026-03-19 06:45",
+   "same_bar_as_fill_posted_sl": true,
+   "first_bar_through_claimed_exit_4762.0": "2026-03-19 06:45",
+   "same_bar_as_fill_claimed_exit": true,
+   "verdict": "LOSS_CONSISTENT_AT_15M; fill->stop ordering AMBIGUOUS_SEQUENCE (same 15m bar)"
+  },
+  {
+   "id": "19-03b",
+   "claim": "WIN +400p",
+   "direction": "SHORT",
+   "zone": [
+    4619.0,
+    4619.0
+   ],
+   "posted_sl": 4708.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "entry_side_flag": "AMBIGUOUS_ENTRY (day opened at/through the entry boundary; approach side unproven)",
+   "fill_bar": "2026-03-19 00:00",
+   "sl_first_bar": "2026-03-19 00:00",
+   "claim_target_price": 4579.0,
+   "target_first_bar": "2026-03-19 12:30",
+   "max_favorable_excursion_usd_48h": 299.47,
+   "verdict": "AMBIGUOUS_SEQUENCE_AT_15M (fill and SL share one bar; target later)"
+  },
+  {
+   "id": "19-03c",
+   "claim": "WIN +350p",
+   "direction": "SHORT",
+   "zone": [
+    4624.0,
+    4624.0
+   ],
+   "posted_sl": 4708.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "entry_side_flag": "AMBIGUOUS_ENTRY (day opened at/through the entry boundary; approach side unproven)",
+   "fill_bar": "2026-03-19 00:00",
+   "sl_first_bar": "2026-03-19 00:00",
+   "claim_target_price": 4589.0,
+   "target_first_bar": "2026-03-19 12:30",
+   "max_favorable_excursion_usd_48h": 304.47,
+   "verdict": "AMBIGUOUS_SEQUENCE_AT_15M (fill and SL share one bar; target later)"
+  },
+  {
+   "id": "20-03",
+   "claim": "WIN +90p SL-to-entry at TP1",
+   "direction": "LONG",
+   "zone": [
+    4610.0,
+    4619.0
+   ],
+   "posted_sl": 4585.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "fill_bar": "2026-03-20 13:45",
+   "sl_first_bar": "2026-03-20 14:15",
+   "claim_target_price": 4628.0,
+   "target_first_bar": "2026-03-20 13:45",
+   "max_favorable_excursion_usd_48h": 46.44,
+   "verdict": "WIN_CLAIM_SUPPORTED_AT_15M (target strictly before any SL touch); fill+target same bar (order immaterial: both favourable)"
+  },
+  {
+   "id": "20-03b",
+   "claim": "LOSS",
+   "direction": "LONG",
+   "zone": [
+    4583.0,
+    4583.0
+   ],
+   "posted_sl": 4560.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "fill_bar": "2026-03-20 14:15",
+   "sl_first_bar": "2026-03-20 14:15",
+   "max_favorable_excursion_usd_48h": 30.62,
+   "verdict": "LOSS_CONSISTENT_AT_15M; fill->stop ordering AMBIGUOUS_SEQUENCE (same 15m bar)"
+  },
+  {
+   "id": "25-03",
+   "claim": "WIN TP1 (level unstated)",
+   "direction": "LONG",
+   "zone": [
+    4548.0,
+    4554.0
+   ],
+   "posted_sl": 4530.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "entry_side_flag": "AMBIGUOUS_ENTRY (day opened at/through the entry boundary; approach side unproven)",
+   "fill_bar": "2026-03-25 00:00",
+   "sl_first_bar": "2026-03-25 09:45",
+   "max_favorable_excursion_usd_48h": 48.42,
+   "verdict": "CLAIM_LEVEL_UNSTATED -> descriptive facts only (no TP price/pips to test)"
+  },
+  {
+   "id": "27-03",
+   "claim": "WIN +170p",
+   "direction": "SHORT",
+   "zone": [
+    4433.0,
+    4433.0
+   ],
+   "posted_sl": 4472.0,
+   "candidate_only": true,
+   "executable": false,
+   "trade_ready": false,
+   "review_only": true,
+   "precision": "15m fallback",
+   "fill_bar": "2026-03-27 02:00",
+   "sl_first_bar": "2026-03-27 05:30",
+   "claim_target_price": 4416.0,
+   "target_first_bar": "2026-03-27 10:30",
+   "max_favorable_excursion_usd_48h": 28.8,
+   "verdict": "SL_BEFORE_TARGET_AT_15M (claim INCONSISTENT at this precision) -> REFINED: AMBIGUOUS_ANCHOR_AND_FEED_EDGE_CASE (see post_walk_refinement)",
+   "post_walk_refinement": {
+    "sl_touch_detail": "the 06:00 bar high was 4472.97 vs posted SL 4472 - a USD 0.97 graze, INSIDE the documented USD 0.5-2 Vantage-vs-Pepperstone feed divergence (S2-graze precedent): on his feed the stop may never have traded",
+    "anchor_dependence": "from the FIRST zone touch (02:00) SL traded before target; from any entry after ~06:00 the +170p target (4416, traded 10:30) was reached with no further SL touch - both scenarios fit a date-only anchor",
+    "verdict_refined": "AMBIGUOUS_ANCHOR_AND_FEED_EDGE_CASE_AT_15M - NOT contradicted; HUMAN_REVIEW; needs entry-time evidence (and ideally 1m) to resolve"
+   }
+  }
+ ]
+}

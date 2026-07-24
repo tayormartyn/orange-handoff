@@ -1,0 +1,57 @@
+{
+  "comparison_id": "FP-EDU-007-vs-STATE-MACHINE-v0.1",
+  "state_machine_ref": "FAROUK_STATE_MACHINE_SPEC_v0.1",
+  "note": "EDU-007 is an EMA-based method; the SM v0.1 was built from the [kyle] SMC method. Impacts are mostly method-specific and do NOT resolve SMC blockers. A future EMA-scalp family may be warranted.",
+  "impacts": [
+    {
+      "transition": "STRUCTURE_FOUND",
+      "status": "UNCHANGED",
+      "reason": "SM STRUCTURE_FOUND is SMC-object-based (OB/BOS). EDU-007 uses EMA structure -> would need a SEPARATE EMA structure definition; SMC path unaffected."
+    },
+    {
+      "transition": "BIAS_CHANGED",
+      "status": "NARROWED",
+      "reason": "EDU-007 gives a concrete, testable bias definition for an EMA family: 1H price vs 50 EMA. Method-specific (does not set the SMC bias)."
+    },
+    {
+      "transition": "ZONE_REGISTERED",
+      "status": "UNCHANGED",
+      "reason": "EMA-confluence 'areas' are a different zone type; SMC zone registration unaffected."
+    },
+    {
+      "transition": "ARMED",
+      "status": "SUPPORTED",
+      "reason": "General principle reinforced: align lower-TF entry with HTF direction before arming (1H direction gate). Method-specific implementation."
+    },
+    {
+      "transition": "WAITING_FOR_TRIGGER",
+      "status": "UNCHANGED",
+      "reason": "Trigger here = 1m EMA cross/stochastic (EMA family). SMC trigger definition unaffected; introduces a candidate EMA trigger."
+    },
+    {
+      "transition": "QUALIFIED_CANDIDATE",
+      "status": "STILL_BLOCKED",
+      "reason": "No minimum confluence COUNT stated -> F_CONFLUENCE_UNKNOWN NOT narrowed for SMC or EMA families."
+    },
+    {
+      "transition": "VETOED",
+      "status": "SUPPORTED",
+      "reason": "'wait for specific setups, not every 50 EMA cross' reinforces a non-setup/chop veto (general principle)."
+    },
+    {
+      "transition": "INVALIDATED",
+      "status": "UNCHANGED",
+      "reason": "Stop-based invalidation + breakeven-at-1%; no new SMC invalidation rule."
+    }
+  ],
+  "blocker_summary": {
+    "F_CONFLUENCE_UNKNOWN": "STILL_BLOCKED",
+    "F_TZ_UNKNOWN": "STILL_BLOCKED (chart TZ here is UTC+4 — a FOURTH timezone; widens the ambiguity)",
+    "F_REPAINT_UNKNOWN": "STILL_BLOCKED"
+  },
+  "new_consideration": "EDU-007 suggests an EMA-based scalp family distinct from the SMC families — if pursued, it needs its own STRUCTURE_FOUND/trigger/target definitions (EMA cross, 50-EMA bias, 200+50-EMA target).",
+  "source_asset_ids": [
+    "sa-271518d77732835c",
+    "sa-b03f71eee08044e7"
+  ]
+}

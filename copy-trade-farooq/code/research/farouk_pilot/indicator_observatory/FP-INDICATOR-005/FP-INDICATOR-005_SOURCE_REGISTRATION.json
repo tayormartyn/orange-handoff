@@ -1,0 +1,32 @@
+{
+  "record_id": "FP-INDICATOR-005",
+  "title": "Farouk's Playbook — Smart Money Suite (indicator update demo)",
+  "next_id_rationale": "existing FP-INDICATOR-001..004; next available = 005 (no renumbering).",
+  "source_type": "INDICATOR_UPDATE_SCREEN_RECORDING",
+  "recorded": "2026-07-05 (Sunday)",
+  "file": {
+    "path": "raw/farouk_playbook_indicator_update/Schermopname 2026-07-05 om 12.53.09.mov",
+    "sha256": "e8a33802a013d74f4b01ac54a927b22ce481a444bc7f33df4df07683e5d99f8b",
+    "asset_id": "sa-e8a33802a013d74f",
+    "bytes": 220960958,
+    "duration": "00:05:31.92",
+    "resolution": "4096x2184",
+    "fps": 39.99,
+    "video_codec": "h264 (Main, avc1)",
+    "audio_codec": "aac LC 48kHz mono 129 kb/s"
+  },
+  "announcement_note": "Task referenced an 'indicator-update announcement' + the recording; ONLY the .mov was present in the folder (no separate announcement file). The announcement content appears verbally at the video start ('I did update … let's check it out').",
+  "rights_record_id": "RR-FP-IND-005",
+  "platform": "TradingView",
+  "symbols": "XAUUSD (Gold Spot/USD), Pepperstone, 15m + 12h",
+  "keep_separate_from": [
+    "[kyle] v1/v2",
+    "SpaceMan",
+    "Market Cipher B",
+    "Craters-Reality / EMA method",
+    "the discretionary Education curriculum"
+  ],
+  "source_asset_ids": [
+    "sa-e8a33802a013d74f"
+  ]
+}

@@ -1,0 +1,3 @@
+[2026-07-24T11:21:20Z] live wire WATCH started pid=22196 interval=30s | NO BROKER ACTION | NO ORDER SUBMISSION | REVIEW-ONLY SHADOW PROPOSAL
+[2026-07-24T11:21:20Z] HOTFIX v0.1 LOADED | interpreter_sha=7602755342a6748a live_wire_sha=a8cc4706cef62c75 | PROXIMITY_HOURS=18 | parser-morphology + no-F001/F002-fallback active
+[2026-07-24T11:21:20Z] listener is a separate process and is NEVER touched by this wire

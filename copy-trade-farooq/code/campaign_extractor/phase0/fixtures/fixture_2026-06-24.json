@@ -1,0 +1,638 @@
+{
+  "fixture_date": "2026-06-24",
+  "fixture_hash": "56361704c66a8e8063e3d19328f6638e79226ca12ae31aa3ac67740d272d37e4",
+  "message_count": 17,
+  "farouk_count": 17,
+  "non_farouk_count": 0,
+  "messages": [
+    {
+      "message_key": "telegram:baseline:327",
+      "message_id": "327",
+      "sent_at_utc": "2026-06-24 14:32",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "5a1751396e757488f71dc1895f38fc902b48bde58aa818b064097c9f7f2eebc3",
+      "content_hash_recomputed": "5a1751396e757488f71dc1895f38fc902b48bde58aa818b064097c9f7f2eebc3",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` XAUUSD SELL 4030-4045  SL 4130  HIGH RISK  LOW LOT",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "NEW_CAMPAIGN",
+            "track": "PROVIDER",
+            "leg_ref": null,
+            "parent_ref": null,
+            "fields": {},
+            "association_status": "CONFIRMED",
+            "evidence_quote": "XAUUSD SELL 4030-4045"
+          },
+          {
+            "event_type": "OPEN_LEG",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "asset": {
+                "value": "XAUUSD",
+                "provenance": "LITERAL_TEXT"
+              },
+              "direction": {
+                "value": "SELL",
+                "provenance": "LITERAL_TEXT"
+              },
+              "entry_low": {
+                "value": "4030",
+                "provenance": "LITERAL_TEXT"
+              },
+              "entry_high": {
+                "value": "4045",
+                "provenance": "LITERAL_TEXT"
+              },
+              "stop": {
+                "value": "4130",
+                "provenance": "LITERAL_TEXT"
+              },
+              "size": {
+                "value": null,
+                "provenance": "UNSUPPORTED",
+                "size_quality": "QUALITATIVE_ONLY"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "XAUUSD SELL 4030-4045  SL 4130",
+            "note": "'HIGH RISK LOW LOT' -> size NULL (qualitative)."
+          }
+        ],
+        "notes": "Campaign open: gold SELL leg-1."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:328",
+      "message_id": "328",
+      "sent_at_utc": "2026-06-24 14:39",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "d9a31252706fbb40cbaffe3ad8ac58026f7943ffadb9fa54b9a38dc5648a2514",
+      "content_hash_recomputed": "d9a31252706fbb40cbaffe3ad8ac58026f7943ffadb9fa54b9a38dc5648a2514",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 100 pips tp 1 move sl to entry",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "PARTIAL_TP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "pips": {
+                "value": "100",
+                "provenance": "LITERAL_TEXT"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "tp 1",
+            "note": "'tp 1' partial, NON-terminal. '100 pips' = magnitude, NOT R."
+          },
+          {
+            "event_type": "MOVE_STOP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "stop_to": {
+                "value": "entry",
+                "provenance": "LITERAL_TEXT"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "move sl to entry"
+          }
+        ],
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:329",
+      "message_id": "329",
+      "sent_at_utc": "2026-06-24 14:40",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "0ad98ffc843d2c3f4398c241d2234a9c2c52714280e6c90d4b117d7058199512",
+      "content_hash_recomputed": "0ad98ffc843d2c3f4398c241d2234a9c2c52714280e6c90d4b117d7058199512",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "EMPTY body -> image-only -> MEDIA_MISSING. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:330",
+      "message_id": "330",
+      "sent_at_utc": "2026-06-24 14:41",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "f436e6c71b6ccf15dfb28fd2acba09d5c11650b311384cf7f0dab454a7e201da",
+      "content_hash_recomputed": "f436e6c71b6ccf15dfb28fd2acba09d5c11650b311384cf7f0dab454a7e201da",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` fist entry is my own I forget to press enter second is Whaleroom",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "COMMENTARY — execution clarification. RULING R3: 'second is Whaleroom' is NOT a determinable leg -> NEEDS_REVIEW, NO second leg invented. Only leg-1 (the posted signal) exists."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:331",
+      "message_id": "331",
+      "sent_at_utc": "2026-06-24 14:42",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "489767774d0662ad27d93622af5e496f48e52cf8c03dd3faadf3488701a30833",
+      "content_hash_recomputed": "489767774d0662ad27d93622af5e496f48e52cf8c03dd3faadf3488701a30833",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 120 pisp",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "COMMENTARY — '120 pisp' magnitude. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:332",
+      "message_id": "332",
+      "sent_at_utc": "2026-06-24 14:43",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_recomputed": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale`",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "EMPTY body -> image-only -> MEDIA_MISSING. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:333",
+      "message_id": "333",
+      "sent_at_utc": "2026-06-24 14:46",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "8749e549f5372b9fc679bb34dc88f392f3874e821bda4718246cf416f3677f6e",
+      "content_hash_recomputed": "8749e549f5372b9fc679bb34dc88f392f3874e821bda4718246cf416f3677f6e",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Reasons for the sell: we have an H4 BOS, an H1 nBOS, a 3-minute order block, and a 5-minute order block that created the low. That's a lot of confluence for a short setup.  The reason I used a bigger stop loss is because my preferred sell zone is actually around 4070–4075. That's an unmitigated H1 order block that started the entire move down. So if we get stopped out at entry, there's another high-probability sell level above where I'll be looking to re-enter.",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "COMMENTARY — sell rationale (H4 BOS, H1 nBOS, 3m/5m OB). No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:334",
+      "message_id": "334",
+      "sent_at_utc": "2026-06-24 14:47",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "a8416b13493510b788ed907fb3726ca0388f32a7713ea2f46612f7409404afdb",
+      "content_hash_recomputed": "a8416b13493510b788ed907fb3726ca0388f32a7713ea2f46612f7409404afdb",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 200 pisp take tp 4",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "PARTIAL_TP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "pips": {
+                "value": "200",
+                "provenance": "LITERAL_TEXT"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "take tp 4",
+            "note": "partial TP, NON-terminal. '200 pips' magnitude, NOT R."
+          }
+        ],
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:335",
+      "message_id": "335",
+      "sent_at_utc": "2026-06-24 14:50",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "c54153c3dadd4055cd52d6511cbf5c2e868fb72a9a910d2fc481b7f03b4f4697",
+      "content_hash_recomputed": "c54153c3dadd4055cd52d6511cbf5c2e868fb72a9a910d2fc481b7f03b4f4697",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` Re-entry plan: if I get stopped out at the initial entry, I’ll look to re-enter around the 4070–4080 zone. That’s the unmitigated 1H order block, which is a strong area of interest.  If the first entry holds and doesn’t get stopped, then I’m targeting a move down towards 3930–3900.",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "CONDITIONAL",
+            "track": "PROVIDER",
+            "leg_ref": null,
+            "parent_ref": null,
+            "fields": {},
+            "association_status": "CONFIRMED",
+            "evidence_quote": "if I get stopped out at the initial entry, I’ll look to re-enter around the 4070–4080 zone",
+            "note": "RULING: conditional re-entry PLAN -> creates NO leg. The 4070-4080 zone is a FUTURE/conditional level and is NOT extracted as an entry."
+          }
+        ],
+        "notes": "Conditional re-entry plan only."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:336",
+      "message_id": "336",
+      "sent_at_utc": "2026-06-24 14:53",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "cc83e8f7981196a97c4ab9b00b6f216c5fcd2028aec368cc5f5710991bf57617",
+      "content_hash_recomputed": "cc83e8f7981196a97c4ab9b00b6f216c5fcd2028aec368cc5f5710991bf57617",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` im taking 50% off now (sl to entry)",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "PARTIAL_CLOSE",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "remaining_fraction": {
+                "value": null,
+                "provenance": "UNSUPPORTED"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "im taking 50% off now",
+            "note": "RULING R1: 'taking 50% off' does NOT literally match allowlist phrase 'take 50% off' -> remaining_fraction NULL (morphology, fail-closed). Action is real; exact fraction unknown."
+          },
+          {
+            "event_type": "MOVE_STOP",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "stop_to": {
+                "value": "entry",
+                "provenance": "LITERAL_TEXT"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "(sl to entry)"
+          }
+        ],
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:337",
+      "message_id": "337",
+      "sent_at_utc": "2026-06-24 14:59",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_recomputed": "bdcd8d481ce8fded2cb4d2de39d58bb64f94754b60d0058a2bfc113756232a9d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale`",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "EMPTY body -> image-only -> MEDIA_MISSING. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:338",
+      "message_id": "338",
+      "sent_at_utc": "2026-06-24 15:06",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "76a3e69e2c40bf1e5d6d85ff5c5b6a5620b53aa7e87ea1d372930fefaeaa46d4",
+      "content_hash_recomputed": "76a3e69e2c40bf1e5d6d85ff5c5b6a5620b53aa7e87ea1d372930fefaeaa46d4",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` GOLD BREAKDOWN  📎 Schermopname_2026-06-24_om_17.02.44.mov https://cdn.discordapp.com/attachments/1316499375203287161/1519357986148188330/Schermopname_2026-06-24_om_17.02.44.mov?ex=6a3d43e4&is=6a3bf264&hm=b48ad91c7d6b26eb5ebcf71bd7c9bfda9f5f410d9c2c7161dcefc11e89c562d9&",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "RULING R5: '.mov GOLD BREAKDOWN' screencast -> MEDIA_REFERENCE_ONLY. No events, no numbers. (NB: auto media_status mis-read this as TEXT_ONLY because 'Schermopname' is Dutch — English media regex missed it.)"
+      }
+    },
+    {
+      "message_key": "telegram:baseline:339",
+      "message_id": "339",
+      "sent_at_utc": "2026-06-24 15:13",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "e4669cb4d5a60cd08b0de307ce5f656f92fd3af612eedf745b9a019b2c95b41a",
+      "content_hash_recomputed": "e4669cb4d5a60cd08b0de307ce5f656f92fd3af612eedf745b9a019b2c95b41a",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` It makes me so happy to see the `🪙・bragging-rights` is full of joy, and people taking big sizes. Super proud of you guys!  300 pips take another 25% off",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "PARTIAL_CLOSE",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "remaining_fraction": {
+                "value": null,
+                "provenance": "UNSUPPORTED"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "take another 25% off",
+            "note": "RULING R2: '25% off' is NOT in the conversion allowlist -> remaining_fraction NULL. '300 pips' magnitude, not R."
+          },
+          {
+            "event_type": "COMMENTARY",
+            "track": "PROVIDER",
+            "leg_ref": null,
+            "parent_ref": null,
+            "fields": {},
+            "association_status": "CONFIRMED",
+            "evidence_quote": "Super proud of you guys!"
+          }
+        ],
+        "notes": "Partial close + bragging-rights commentary in one message."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:340",
+      "message_id": "340",
+      "sent_at_utc": "2026-06-24 15:21",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "5fc1f008cf59a59d1d2318667af963bd90b5a3f063710bdd40b7db3bdf14488a",
+      "content_hash_recomputed": "5fc1f008cf59a59d1d2318667af963bd90b5a3f063710bdd40b7db3bdf14488a",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` LETS GO!!! `zahir_mahomed` `mr.white1601` `find_my_freedom` WHALES!!!!!!",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [],
+        "notes": "COMMENTARY — celebration / @mentions. No event."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:341",
+      "message_id": "341",
+      "sent_at_utc": "2026-06-24 17:25",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "4c527b269bc0785264bfefd44054d3ac86308dff8fa1b44881e7dc937974066d",
+      "content_hash_recomputed": "4c527b269bc0785264bfefd44054d3ac86308dff8fa1b44881e7dc937974066d",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🐚・sea-scalper-farouk  `Whale` BTC has lost monthly support.  Waiting for a retest before entry will share the BTC trade before the weekend.",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": null,
+        "events": [],
+        "notes": "RULING R4: BTC 'waiting for a retest before entry' = NO actual entry -> COMMENTARY, separate asset, NO leg, NO campaign."
+      }
+    },
+    {
+      "message_key": "telegram:baseline:342",
+      "message_id": "342",
+      "sent_at_utc": "2026-06-24 17:33",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "f2887007e33e76767ce6155becdc677bd651d943023991e80b8507910916bfc5",
+      "content_hash_recomputed": "f2887007e33e76767ce6155becdc677bd651d943023991e80b8507910916bfc5",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` take more off!!!",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "PARTIAL_CLOSE",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "remaining_fraction": {
+                "value": null,
+                "provenance": "UNSUPPORTED"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "take more off!!!",
+            "note": "Direct call to act -> REAL event. No quantity stated -> remaining_fraction NULL (never invented)."
+          }
+        ],
+        "notes": null
+      }
+    },
+    {
+      "message_key": "telegram:baseline:343",
+      "message_id": "343",
+      "sent_at_utc": "2026-06-24 18:04",
+      "edited_at_utc": "",
+      "version_number": 1,
+      "content_hash_stored": "c6eb0e8e2214baac7a3077a907d4a97c383e705d1b1a767802ac2d3fca814b3b",
+      "content_hash_recomputed": "c6eb0e8e2214baac7a3077a907d4a97c383e705d1b1a767802ac2d3fca814b3b",
+      "content_hash_ok": true,
+      "sender_handle": "seascalperfarouk",
+      "sender_voice": "Farouk",
+      "is_farouk": true,
+      "role": "CAMPAIGN_SOURCE",
+      "media_status": "TEXT_ONLY",
+      "raw_text": "seascalperfarouk Posted in 🪙・gold-trades  `Whale` 650 pips taking 90% off",
+      "expected_truth": {
+        "manually_checked": true,
+        "checked_by": "Martyn (held-out lock 2026-06-29)",
+        "campaign": "GOLD_SELL_2026-06-24",
+        "events": [
+          {
+            "event_type": "PARTIAL_CLOSE",
+            "track": "PROVIDER",
+            "leg_ref": "leg-1",
+            "parent_ref": null,
+            "fields": {
+              "remaining_fraction": {
+                "value": null,
+                "provenance": "UNSUPPORTED"
+              }
+            },
+            "association_status": "CONFIRMED",
+            "evidence_quote": "taking 90% off",
+            "note": "RULING R1: 'taking 90% off' does NOT literally match 'take 90% off' -> remaining_fraction NULL (morphology). '650 pips' magnitude, not R. Leaves ~10% runner -> campaign still OPEN (no full CLOSE)."
+          }
+        ],
+        "notes": "Near-full partial close; campaign remains OPEN with a runner."
+      }
+    }
+  ],
+  "authored_campaigns": {
+    "authored_by": "Martyn (held-out lock 2026-06-29)",
+    "immutable": true,
+    "held_out_blind_test": true,
+    "note": "Held-out fixture. Locked BEFORE any extractor run. The LLM extractor must reproduce, never alter, this — INCLUDING the locked uncertainty.",
+    "GOLD_SELL_2026-06-24": {
+      "asset": "XAUUSD",
+      "direction": "SELL",
+      "track": "PROVIDER",
+      "legs": {
+        "leg-1": {
+          "entry_low": "4030",
+          "entry_high": "4045",
+          "stop": "4130",
+          "size": null,
+          "size_quality": "QUALITATIVE_ONLY",
+          "status": "OPEN",
+          "outcome": "Ends OPEN (~10% runner). Partial TPs (tp1, tp4) + partial closes (50%/25%/'more'/90%), ALL remaining_fraction NULL."
+        }
+      },
+      "leg_count": 1,
+      "needs_review": [
+        "second/Whaleroom entry existence (msg 330) — NO leg invented (R3)"
+      ],
+      "closed_by": null,
+      "final_state": {
+        "campaign_status": "OPEN",
+        "remaining_fraction": null,
+        "full_close": false
+      },
+      "rulings": {
+        "R1_taking_morphology": "PARTIAL_CLOSE, remaining_fraction NULL (allowlist literal)",
+        "R2_25pct": "not allowlisted -> NULL",
+        "R3_second_entry": "one leg only; second = NEEDS_REVIEW",
+        "R4_btc": "COMMENTARY, no leg, no campaign",
+        "R5_mov": "MEDIA_REFERENCE_ONLY, no events"
+      },
+      "known_limitations": [
+        "VALIDATOR MORPHOLOGY: allowlist matches literal 'take 50% off' / 'take 90% off' only; 'TAKING 50%/90% off' does NOT match -> remaining_fraction NULL. These NULLs are the allowlist being literal, NOT the extractor failing. Read the blind-test number accordingly.",
+        "AUTO media_status mis-classified msg 338 (.mov) as TEXT_ONLY because 'Schermopname' is Dutch; truth marks it MEDIA_REFERENCE_ONLY."
+      ]
+    },
+    "BTC": {
+      "present": false,
+      "note": "R4 — no BTC entry occurred (waiting for retest); no BTC campaign exists on this date."
+    }
+  },
+  "authored_truth_hash": "a230ce7a704b2d301a00451f91c472a30a77f042dbabd9e47c1888ae3bcba4a2"
+}

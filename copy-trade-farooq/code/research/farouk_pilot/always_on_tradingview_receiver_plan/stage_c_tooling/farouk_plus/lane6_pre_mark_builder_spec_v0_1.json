@@ -1,0 +1,44 @@
+{
+  "spec_id": "lane6_pre_mark_builder_spec_v0_1",
+  "generated_on": "2026-07-11",
+  "mode": "REVIEW_ONLY / OBSERVATION_ONLY / SINGLE_SESSION",
+  "purpose": "create review-only PRE_MARK_CANDIDATE records from already-captured indicator/alert context; no execution path exists",
+  "reads": "alert-lane archive (already stored by the existing Worker/R2 pipeline) + captured panel evidence — NEVER creates/modifies TradingView alerts",
+  "inputs": ["alert_id", "alert_type", "alert_timestamp_utc", "bar_close_confirmed", "instrument", "timeframe",
+              "direction_hint", "structure_context", "liquidity_context", "ob_fvg_bpr_context",
+              "indicator_price_level_if_visible", "level_type_tag", "zone_touch_count",
+              "confluence_ranking", "stop_outside_zone_candidate", "repaint_guard_status"],
+  "creation_minimum_evidence": [
+    ">=1 HIGH-usefulness alert event (Sweep/CHoCH/BPR formed/Asia Trap) bar-close-confirmed",
+    "a numeric level: panel value from a CLOSED bar, or zone constructible from the alerted structure",
+    "direction hint consistent across cited events",
+    "invalidation hypothesis (structure-relative, level-type width formula FROZEN before the window)"
+  ],
+  "insufficient": "anything less -> PRE_MARK_INSUFFICIENT_CONTEXT (recorded, not scored)",
+  "confidence_scoring": {
+    "base": "OBSERVED",
+    "plus": ["+1 per additional independent HIGH-class confluence (ranking = tiebreaker only)", "+1 STRONG level_type_tag (evidence-cited)"],
+    "minus": ["-1 zone_touch_count >= 3 (spent)"],
+    "a_grades": "recorded at weight 0 (formula invisible; R-AGRADES)",
+    "cap": "pre-marks never feed detector labels directly; no shadow-candidate tier of their own"
+  },
+  "expiry": "end of creation session (or explicit stated horizon for day-ahead levels) -> PRE_MARK_EXPIRED",
+  "comparison_on_post": "zone overlap OR mid-distance <= $3 -> PRE_MARK_MATCHED_FAROUK / PRE_MARK_DID_NOT_MATCH; record time_before_post_seconds + fill-lag implication",
+  "outcome_matching": "deterministic matcher on OHLC arrival (48h SLA); level_correct and invalidation_survived graded INDEPENDENTLY",
+  "anti_leakage": ["evidence_ts < pre_mark_time <= post_time", "frozen-window hash", "post-dated citations auto-invalidate",
+                    "F5 repaint guard: bar-close-confirmed indicator values only; intra-bar/repaintable -> LEAK_DETECTED_INVALIDATED",
+                    "uncertain alerts -> PRE_MARK_INSUFFICIENT_CONTEXT"],
+  "allowed_labels": ["PRE_MARK_OBSERVED", "PRE_MARK_MATCHED_FAROUK", "PRE_MARK_DID_NOT_MATCH", "PRE_MARK_INSUFFICIENT_CONTEXT", "PRE_MARK_EXPIRED"],
+  "forbidden": ["TRADE_READY", "EXECUTE", "ORDER", "LOT_SIZE", "BROKER_ROUTE", "ACCOUNT_ID", "RISK_SIZE", "COPY_TRADE", "NANO", "LIVE", "DEMO_EXECUTE"],
+  "cycle_002_integration": [
+    "alert context before a gold post -> PRE_MARK_CANDIDATE (validator-passed) -> forward ledger + HR visibility",
+    "on Farouk's post -> XAU-F001 (8C timing + 8D legs + 8F captures) -> pre-mark comparison",
+    "detector v0.3 AND v0.2 labels computed in parallel per record (forward A/B preserved)",
+    "fill_lag_cost measured; indicator levels recorded verbatim where visible",
+    "OHLC within 48h -> deterministic outcomes for setup + pre-marks"
+  ],
+  "first_candidates": ["sell ~4150-4184 ('80-84 BE' plan, video 001 seed)", "weekly supply 4430-4480 (video 001 seed)"],
+  "safety": {"tradingview_alerts": "read-only archive; never touched", "listener_pid_87988": "untouched",
+              "gates": "PAPER/PREVIEW/False/False unchanged", "not_integration_ready": "unchanged",
+              "execution_surface": "none"}
+}

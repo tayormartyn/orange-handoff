@@ -1,0 +1,434 @@
+{
+ "FR-001": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-002": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-003": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-004": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-019 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-005": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-006": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-007": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-026 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_v0_1.jsonl). Prior art \u2014 must not be reported as ne"
+ },
+ "FR-008": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-012 (research\\farouk_pilot\\live_observations\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001_REPORT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-009": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-010": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-011": {
+  "verdict": "UNKNOWN",
+  "reason": "Restates registered claim K-046 (status UNKNOWN). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-012": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-013": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-014": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-030 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\forward_validation_ledger_v0_2.jsonl). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-015": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-016": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-017": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-018": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-026 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_v0_1.jsonl). Prior art \u2014 must not be reported as ne"
+ },
+ "FR-019": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-038 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-020": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-021": {
+  "verdict": "UNKNOWN",
+  "reason": "Restates registered claim K-046 (status UNKNOWN). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-022": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-023": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-024": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-025": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-026 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_v0_1.jsonl). Prior art \u2014 must not be reported as ne"
+ },
+ "FR-026": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-042 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\derived\\live_video_20260719\\CORRECTION_001_INDICATOR_PRIOR_ART.md). Prior art \u2014 must not be reporte"
+ },
+ "FR-027": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-028": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-015 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-029": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-030": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-019 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-031": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-032": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-001: CORRECTION_001_INDICATOR_PRIOR_ART.md (prior art P1-P7)"
+ },
+ "FR-033": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-042 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\derived\\live_video_20260719\\CORRECTION_001_INDICATOR_PRIOR_ART.md). Prior art \u2014 must not be reporte"
+ },
+ "FR-034": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-035": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-036": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-037": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-038": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-002 (config.py). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-039": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-040": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-002 (config.py). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-041": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-042": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-043": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-044": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-045": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-026 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\evidence_layer\\router_freeze_v0_1.jsonl). Prior art \u2014 must not be reported as ne"
+ },
+ "FR-046": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-047": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-048": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-049": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-034 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\market_tracker\\tracker_policy_addendum_v0_1.json). Prior art \u2014 must not be repor"
+ },
+ "FR-050": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-051": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-001: CORRECTION_001_INDICATOR_PRIOR_ART.md (prior art P1-P7)"
+ },
+ "FR-052": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-053": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-035 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\follower_constitution_v0_1.json). Prior art \u2014 must not be reported as new/first/"
+ },
+ "FR-054": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-055": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-034 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\market_tracker\\tracker_policy_addendum_v0_1.json). Prior art \u2014 must not be repor"
+ },
+ "FR-056": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-057": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-035 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\follower_constitution_v0_1.json). Prior art \u2014 must not be reported as new/first/"
+ },
+ "FR-058": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-034 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\market_tracker\\tracker_policy_addendum_v0_1.json). Prior art \u2014 must not be repor"
+ },
+ "FR-059": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-060": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-035 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\follower_constitution_v0_1.json). Prior art \u2014 must not be reported as new/first/"
+ },
+ "FR-061": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-062": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-063": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-064": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-034 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\market_tracker\\tracker_policy_addendum_v0_1.json). Prior art \u2014 must not be repor"
+ },
+ "FR-065": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-066": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-067": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-018 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-068": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-012 (research\\farouk_pilot\\live_observations\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001_REPORT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-069": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-070": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-071": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-072": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-011 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\FP_INDICATOR_001_ALERT_MAPPING_REPORT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-073": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-002 (config.py). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-074": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-075": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-019 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-076": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-047 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-077": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-047 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-078": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-018 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-079": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-080": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-081": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-082": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-083": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-084": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-085": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-047 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\ORANGE_MASTER_SOURCE_OF_TRUTH_vNEXT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-086": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-001: CORRECTION_001_INDICATOR_PRIOR_ART.md (prior art P1-P7)"
+ },
+ "FR-087": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-088": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-030 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\forward_validation_ledger_v0_2.jsonl). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-089": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-012 (research\\farouk_pilot\\live_observations\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001\\FP-LIVE-OBSERVATION-001_REPORT.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-090": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-091": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ },
+ "FR-092": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-093": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-094": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-095": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-096": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-002: LIMITED_INCREMENTAL_VALUE (CORRECTION_001)"
+ },
+ "FR-097": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-098": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-014 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\FAROUK_ORDER_BLOCK_PROXY_POLICY_v0_1.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-099": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-100": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-017 (status GENUINELY_NEW). Provenance recorded (prospectively_proven=True). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-101": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-030 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\forward_validation_ledger_v0_2.jsonl). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-102": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-103": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-043 (research\\farouk_pilot\\indicator_observatory\\FP-INDICATOR-006\\FINDINGS.md). Prior art \u2014 must not be reported as new/first/discovery."
+ },
+ "FR-104": {
+  "verdict": "SUPERSEDES_PRIOR_INTERPRETATION",
+  "reason": "Matches superseded record R-005: CORRECTION_001: ladder+cadence ALREADY_KNOWN (audit section 7, FP-IND-006, P09); overlapping-OB = corroboration."
+ },
+ "FR-105": {
+  "verdict": "GENUINELY_NEW",
+  "reason": "Restates registered claim K-018 (status GENUINELY_NEW). Not a fresh discovery \u2014 cite the claim."
+ },
+ "FR-106": {
+  "verdict": "ALREADY_KNOWN",
+  "reason": "Matches K-035 (research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\follower_constitution_v0_1.json). Prior art \u2014 must not be reported as new/first/"
+ },
+ "FR-107": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "Weak partial match only (gray zone) \u2014 insufficient register evidence either way. Human review required before any novelty wording."
+ },
+ "FR-108": {
+  "verdict": "NOT_EVIDENCED",
+  "reason": "No register match. Either genuinely novel or the registers are incomplete \u2014 REQUIRES human review + explicit prior-art file search (indicator audit, observatory, live observations) before publication."
+ }
+}

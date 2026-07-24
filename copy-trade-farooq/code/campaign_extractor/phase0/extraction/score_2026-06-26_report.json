@@ -1,0 +1,186 @@
+{
+  "date": "2026-06-26",
+  "candidates_file": "candidates_june26_v2.json",
+  "model": "claude-opus-4-8 (recorded)",
+  "candidates": 26,
+  "verdicts": {
+    "ACCEPTED": 17,
+    "NEEDS_REVIEW": 9
+  },
+  "event_diff": {
+    "matched": 15,
+    "missed_truth_only": 2,
+    "extra_ext_only": 2
+  },
+  "btc_or_other_asset_events_excluded_from_gold": 3,
+  "gold_legs": {
+    "leg-1": {
+      "leg_id": "leg-1",
+      "track": "PROVIDER",
+      "direction": "SELL",
+      "entry": "4078",
+      "stop": "4120",
+      "parent_leg_id": null,
+      "status": "OPEN",
+      "remaining_fraction": 1.0,
+      "partial_tp_count": 0,
+      "flags": [],
+      "opened_seq": 0,
+      "closed_seq": null,
+      "opened_by_hash": "bcc57235fb680d7bc3461b47d6f3008d46171341ef2b19af794249058e22afa8",
+      "closed_by_hash": null,
+      "realized_r": null
+    },
+    "leg-2": {
+      "leg_id": "leg-2",
+      "track": "PROVIDER",
+      "direction": null,
+      "entry": null,
+      "stop": null,
+      "parent_leg_id": null,
+      "status": "OPEN",
+      "remaining_fraction": 1.0,
+      "partial_tp_count": 0,
+      "flags": [],
+      "opened_seq": 3,
+      "closed_seq": null,
+      "opened_by_hash": "f8e14004104344a4a827b8eddcd4e00533713722aae9c259f768d3dcc84a2160",
+      "closed_by_hash": null,
+      "realized_r": null
+    },
+    "leg-3": {
+      "leg_id": "leg-3",
+      "track": "PROVIDER",
+      "direction": "SELL",
+      "entry": "4084",
+      "stop": "4120",
+      "parent_leg_id": null,
+      "status": "OPEN",
+      "remaining_fraction": 1.0,
+      "partial_tp_count": 0,
+      "flags": [],
+      "opened_seq": 5,
+      "closed_seq": null,
+      "opened_by_hash": "c6fbbb509211c7b66788883c38c1ab55088eec606807a675d8c1f81edff04eda",
+      "closed_by_hash": null,
+      "realized_r": null
+    }
+  },
+  "leg_resolution": {
+    "resolved": [
+      {
+        "msg": "telegram:baseline:353",
+        "event": "MOVE_STOP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      }
+    ],
+    "stayed_needs_review": [
+      {
+        "msg": "telegram:baseline:357",
+        "event": "PARTIAL_TP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "2 open legs, no disambiguating price"
+      },
+      {
+        "msg": "telegram:baseline:358",
+        "event": "MOVE_STOP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "2 open legs, no disambiguating price"
+      },
+      {
+        "msg": "telegram:baseline:360",
+        "event": "STOP_HIT",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "same message opens a leg; its prices belong to the new leg"
+      },
+      {
+        "msg": "telegram:baseline:361",
+        "event": "CLOSE",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "ranking/sub-fill/multi-target language"
+      },
+      {
+        "msg": "telegram:baseline:362",
+        "event": "MOVE_STOP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "3 open legs, no disambiguating price"
+      },
+      {
+        "msg": "telegram:baseline:365",
+        "event": "PARTIAL_TP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "3 open legs, no disambiguating price"
+      },
+      {
+        "msg": "telegram:baseline:366",
+        "event": "CLOSE",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "ranking/sub-fill/multi-target language"
+      },
+      {
+        "msg": "telegram:baseline:369",
+        "event": "PARTIAL_TP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "3 open legs, no disambiguating price"
+      },
+      {
+        "msg": "telegram:baseline:374",
+        "event": "CLOSE",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "3 open legs, no disambiguating price"
+      },
+      {
+        "msg": "telegram:baseline:375",
+        "event": "MOVE_STOP",
+        "outcome": "NEEDS_REVIEW",
+        "reason": "3 open legs, no disambiguating price"
+      }
+    ],
+    "association_check": [
+      {
+        "mid": 353,
+        "event": "MOVE_STOP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      }
+    ],
+    "wrong_associations": []
+  },
+  "rejected": [],
+  "divergences": [
+    {
+      "mid": 361,
+      "truth": [
+        "PARTIAL_CLOSE"
+      ],
+      "ext": [
+        "CLOSE"
+      ],
+      "missed": [
+        "PARTIAL_CLOSE"
+      ],
+      "extra": [
+        "CLOSE"
+      ]
+    },
+    {
+      "mid": 366,
+      "truth": [
+        "PARTIAL_CLOSE"
+      ],
+      "ext": [
+        "CLOSE"
+      ],
+      "missed": [
+        "PARTIAL_CLOSE"
+      ],
+      "extra": [
+        "CLOSE"
+      ]
+    }
+  ]
+}

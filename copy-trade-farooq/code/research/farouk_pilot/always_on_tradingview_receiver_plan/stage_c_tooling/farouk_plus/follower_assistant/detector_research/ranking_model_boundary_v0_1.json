@@ -1,0 +1,20 @@
+{
+  "contract_id": "ranking_model_boundary_v0_1",
+  "status": "INTERFACE_ONLY / NO MODEL FIT IN THIS TASK",
+  "prohibitions_this_task": ["fit a predictive ranking model", "black-box model", "autonomous parameter search", "F001/F002 optimisation"],
+  "prepared_interfaces_future_only": {
+    "lexicographic_documentary_rules": "ordered documentary predicates (e.g. structural-trigger priority) decide ties deterministically; no weights",
+    "pairwise_logistic_ranking": "interpretable pairwise preference; coefficients inspectable; only after minimum forward sample",
+    "shallow_decision_tree": "depth-limited, human-readable splits on documented features",
+    "monotonic_scorecard": "monotone points per documented confluence; no learned interactions"
+  },
+  "recommendations": {
+    "minimum_forward_sample": ">=15 forward prospective campaigns (aligns MIN_FORWARD_CAMPAIGNS_FOR_FIT) AND >=5 distinct sessions before ANY fit",
+    "hold_out_design": "chronological split; earliest campaigns train-only, latest held out; NO shuffling",
+    "pre_registration": "freeze feature set, candidate model class, and success metric BEFORE seeing outcomes",
+    "promotion_criteria": "pre-registered metric beat on the held-out chronological set + DETECTOR_V0_4_PROMOTION_GATE + human ratification",
+    "abandonment_criteria": "fails pre-registered metric, or requires >depth/regularisation budget, or leaks future data -> abandon, log, do not retune on the same data"
+  },
+  "f001_f002_excluded_from_fit": true,
+  "review_only": true, "executable": false, "observation_only": true
+}

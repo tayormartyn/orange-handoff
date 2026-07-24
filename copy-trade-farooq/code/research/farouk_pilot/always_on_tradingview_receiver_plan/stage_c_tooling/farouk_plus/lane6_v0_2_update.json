@@ -1,0 +1,29 @@
+{
+  "lane6_version": "v0_2",
+  "generated_on": "2026-07-11",
+  "mode": "OBSERVATION_ONLY / RESEARCH_ONLY / SINGLE_SESSION",
+  "extends": "orange_pre_marked_level_lane_v0_1.json (unchanged) + orange_v03_rule_merge_plan.json",
+  "new_confidence_inputs": {
+    "zone_touch_count": "LOW: first mitigation (touch_count==1 at entry) supports confidence; >=3 pre-entry episodes = spent level, reduces confidence; forward runs use TRUE zone-formation times (retrospective proxy documented in detector v0.3 replay)",
+    "level_quality_tag_STRONG_WEAK": "LOW: STRONG (manipulated+BOS+RTO, evidence-cited) raises pre-mark confidence and maps to wider invalidation hypotheses; WEAK = liquidity target, NOT an entry pre-mark",
+    "confluence_ranking": "LOW tiebreaker: BOS > FVG-inversion > Level-reclaim > SFP (ratified graded stack; never additive, never overrides core flags)",
+    "bos_candle_close_confirmed": "LOW +confidence when the triggering break has a confirmed candle close (ratification #1)"
+  },
+  "new_validity_rule": {
+    "lane6_repaint_guard": "HARD RULE: indicator-sourced pre-mark values must be bar-close-confirmed (alert-lane payloads at close or panel values from a closed bar); intra-bar/repaintable values -> leakage_check_status=LEAK_DETECTED_INVALIDATED. Status this replay: 0 indicator-sourced pre-marks exist yet - trivially clean; active from Cycle 002."
+  },
+  "invalidation_research_track": {
+    "stop_outside_zone": "MEDIUM (research): invalidation hypotheses are structure-relative (just outside the zone / beyond the swept extreme), width parameterised by level type; width formula FROZEN per level type before each forward window",
+    "first_calibration_stat": {"source": "detector v0.3 replay F6", "n": 32,
+      "posted_sl_width_beyond_far_edge_usd": {"median": 20.0, "min": 10.0, "max": 85.0},
+      "strong_tagged_widths": [20.0, 25.0, 25.0, 37.0, 42.0, 85.0],
+      "untagged": {"min": 10.0, "median": 19.0, "max": 36.0},
+      "reading": "STRONG/high-caution levels carry wider posted stops — first quantitative support for stop_width_by_level_type"}
+  },
+  "anti_leakage_contract": "unchanged from v0_1 (evidence_ts < pre_mark_time <= post_time; frozen-window hash; post-dated citations auto-invalidate) + repaint guard added",
+  "pre_mark_seeds_active": ["sell ~4150-4184 ('80-84 BE' plan, video 001)", "weekly supply 4430-4480 (video 001)"],
+  "allowed_labels_unchanged": ["PRE_MARK_OBSERVED", "PRE_MARK_MATCHED_FAROUK", "PRE_MARK_DID_NOT_MATCH", "PRE_MARK_INSUFFICIENT_CONTEXT", "PRE_MARK_EXPIRED"],
+  "forbidden_unchanged": ["TRADE_READY", "EXECUTE", "ORDER", "LOT_SIZE", "BROKER_ROUTE", "ACCOUNT_ID", "RISK_SIZE", "COPY_TRADE", "NANO", "LIVE", "DEMO_EXECUTE"],
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged",
+              "not_integration_ready": "unchanged", "execution_surface": "none"}
+}

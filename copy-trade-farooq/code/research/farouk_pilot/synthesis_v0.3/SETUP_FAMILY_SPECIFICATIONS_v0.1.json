@@ -1,0 +1,229 @@
+{
+  "families": {
+    "TREND_CONTINUATION": {
+      "context_requirements": "major structure trending; internal aligned",
+      "location_requirements": "FVG / OB in the trend direction",
+      "required_primitive_events": [
+        "LTF BOS",
+        "FVG left behind",
+        "mitigation (fill)"
+      ],
+      "optional_confirmations": [
+        "candlestick confirmation",
+        "volume"
+      ],
+      "entry_trigger": "retrace into the FVG/OB then continue",
+      "invalidation": "close beyond the OB / against structure",
+      "stop_reference": "beyond the OB / swing",
+      "target_reference": "next liquidity / structure",
+      "expiry": "UNKNOWN",
+      "campaign_support": "C001/C003/C004 (OB-retest wins)",
+      "unsupported_assumptions": "numeric FVG size; partial-vs-full fill",
+      "implementation_status": "PROMOTABLE_WITH_FAMILY_SCOPE (blocked by FVG-size/fill thresholds)"
+    },
+    "POI_SWEEP_REVERSAL": {
+      "context_requirements": "HTF POI in play",
+      "location_requirements": "POI = OB / FVG / imbalance origin",
+      "required_primitive_events": [
+        "strong move breaks pattern",
+        "imbalance",
+        "liquidity both sides",
+        "sweep INTO the POI"
+      ],
+      "optional_confirmations": [
+        "LTF confirmation candle"
+      ],
+      "entry_trigger": "sweep into POI + LTF confirmation",
+      "invalidation": "POI fails / closes through",
+      "stop_reference": "beyond the POI",
+      "target_reference": "opposing liquidity",
+      "expiry": "UNKNOWN",
+      "campaign_support": "C003 (Asia-low sweep -> reversal, win)",
+      "unsupported_assumptions": "exact POI selection; sweep depth",
+      "implementation_status": "PROMOTABLE_WITH_FAMILY_SCOPE"
+    },
+    "INDUCEMENT_REVERSAL": {
+      "context_requirements": "before a major reversal/breakout",
+      "location_requirements": "equal highs/lows (inducement) / trap zone",
+      "required_primitive_events": [
+        "fake breakout",
+        "stop hunt",
+        "liquidity grab",
+        "displacement"
+      ],
+      "optional_confirmations": [
+        "candlestick confirmation"
+      ],
+      "entry_trigger": "post-sweep reversal + confirmation",
+      "invalidation": "reclaim / continuation through",
+      "stop_reference": "beyond the swept extreme",
+      "target_reference": "intended-direction liquidity",
+      "expiry": "UNKNOWN",
+      "campaign_support": "C003 sweep-then-reverse (partial)",
+      "unsupported_assumptions": "'trap' is qualitative; displacement-absence link UNVERIFIED (C002)",
+      "implementation_status": "RESEARCH_ONLY / family-scope"
+    },
+    "SCOB_REVERSAL": {
+      "context_requirements": "SMC context",
+      "location_requirements": "single-candle order block (SCOB)",
+      "required_primitive_events": [
+        "candle close above the inducement zone -> POI"
+      ],
+      "optional_confirmations": [
+        "BOS",
+        "RSI/MACD divergence",
+        "volume",
+        "previous session levels"
+      ],
+      "entry_trigger": "OB retest + candle-close confirmation",
+      "invalidation": "OB body closed through",
+      "stop_reference": "beyond the OB body",
+      "target_reference": "'>=2R or next liquidity zone' (PDF p19)",
+      "expiry": "UNKNOWN",
+      "campaign_support": "C001/C003/C004 OB retests",
+      "unsupported_assumptions": "which confluences are mandatory (no count)",
+      "implementation_status": "PROMOTABLE_WITH_FAMILY_SCOPE"
+    },
+    "STRONG_OB_REVERSAL": {
+      "context_requirements": "trend / HTF bias",
+      "location_requirements": "strong OB (sweep+displacement+FVG, fresh, aligned)",
+      "required_primitive_events": [
+        "liquidity sweep first",
+        "strong displacement",
+        "FVG left behind"
+      ],
+      "optional_confirmations": [
+        "BPR overlap (bonus)",
+        "Trend-EMA alignment"
+      ],
+      "entry_trigger": "strong-OB retest (first tap)",
+      "invalidation": "mitigated / against trend",
+      "stop_reference": "beyond OB",
+      "target_reference": "prior swing / opposing liquidity",
+      "expiry": "UNKNOWN",
+      "campaign_support": "C004 quality hierarchy (preferred H1 OB)",
+      "unsupported_assumptions": "numeric displacement + BPR-overlap thresholds UNKNOWN",
+      "implementation_status": "BLOCKED_BY_THRESHOLD"
+    },
+    "THREE_DRIVE_REVERSAL": {
+      "context_requirements": "reversal after 3 pushes",
+      "location_requirements": "3 drives into a Fib zone (~61.8%)",
+      "required_primitive_events": [
+        "three symmetric drives",
+        "Fib ~61.8% corrections"
+      ],
+      "optional_confirmations": [
+        "candlestick confirmation"
+      ],
+      "entry_trigger": "3rd-drive completion + reversal",
+      "invalidation": "4th drive extends",
+      "stop_reference": "beyond the 3rd drive extreme",
+      "target_reference": "prior structure",
+      "expiry": "UNKNOWN",
+      "campaign_support": "none (education only)",
+      "unsupported_assumptions": "exact Fib/symmetry tolerances",
+      "implementation_status": "RESEARCH_ONLY"
+    },
+    "RANGE_DEVIATION": {
+      "context_requirements": "range / consolidation",
+      "location_requirements": "cluster / parallel channel; 50% of cluster",
+      "required_primitive_events": [
+        "deviation (false push)",
+        "no acceptance above 50% of cluster",
+        "lose 50% of parallel channel"
+      ],
+      "optional_confirmations": [
+        "shooting-star / stalling"
+      ],
+      "entry_trigger": "deviation + reclaim/rejection at 50%",
+      "invalidation": "acceptance holds beyond 50%",
+      "stop_reference": "beyond the deviation wick",
+      "target_reference": "opposing channel edge / old cluster",
+      "expiry": "UNKNOWN",
+      "campaign_support": "FP-EDU-018 quiz (confirmed answer)",
+      "unsupported_assumptions": "'acceptance/50%' qualitative; channel bounds",
+      "implementation_status": "RESEARCH_ONLY"
+    },
+    "POWER_OF_THREE_AMD": {
+      "context_requirements": "range near HTF liquidity",
+      "location_requirements": "accumulation range",
+      "required_primitive_events": [
+        "Accumulation (tight range)",
+        "Manipulation (fake breakout sweep)",
+        "Distribution (real move)"
+      ],
+      "optional_confirmations": [
+        "session timing"
+      ],
+      "entry_trigger": "post-manipulation distribution move",
+      "invalidation": "no distribution follow-through",
+      "stop_reference": "beyond the manipulation extreme",
+      "target_reference": "opposing liquidity",
+      "expiry": "UNKNOWN",
+      "campaign_support": "none (PDF-only, no Discord provenance)",
+      "unsupported_assumptions": "phase boundaries undefined",
+      "implementation_status": "RESEARCH_ONLY"
+    },
+    "NY_REVERSAL": {
+      "context_requirements": "London session set a directional move",
+      "location_requirements": "session highs/lows + liquidity",
+      "required_primitive_events": [
+        "London directional move",
+        "NY-open flip (13:30 UTC)",
+        "liquidity sweep"
+      ],
+      "optional_confirmations": [
+        "break structure / reclaim key level"
+      ],
+      "entry_trigger": "NY open (13:30-15:00 UTC) + confirmation of the flip",
+      "invalidation": "London direction simply continues (=NY_CONTINUATION)",
+      "stop_reference": "beyond the swept session extreme",
+      "target_reference": "clean levels / imbalances / liquidity",
+      "expiry": "end of NY window",
+      "campaign_support": "campaigns are XAUUSD session trades (indirect)",
+      "unsupported_assumptions": "exact 'trap' criteria",
+      "implementation_status": "PROMOTABLE_WITH_FAMILY_SCOPE (session times known)"
+    },
+    "NY_CONTINUATION": {
+      "context_requirements": "London trend intact",
+      "location_requirements": "trend structure",
+      "required_primitive_events": [
+        "price continues London direction",
+        "NY-open strong move"
+      ],
+      "optional_confirmations": [
+        "retest before continuation"
+      ],
+      "entry_trigger": "retest + NY-open confirmation",
+      "invalidation": "reversal at NY open (=NY_REVERSAL)",
+      "stop_reference": "beyond the retest swing",
+      "target_reference": "previous highs/lows / liquidity",
+      "expiry": "end of NY window",
+      "campaign_support": "indirect",
+      "unsupported_assumptions": "how to distinguish reversal vs continuation a priori",
+      "implementation_status": "PROMOTABLE_WITH_FAMILY_SCOPE"
+    },
+    "SEARCH_AND_DESTROY": {
+      "context_requirements": "multi-session (Asia/London/NY)",
+      "location_requirements": "Asian range extremes; session liquidity",
+      "required_primitive_events": [
+        "Asia range builds liquidity",
+        "London sweeps the Asian range",
+        "NY delivers the real move"
+      ],
+      "optional_confirmations": [
+        "confirmation per session"
+      ],
+      "entry_trigger": "session-sequenced sweep then move",
+      "invalidation": "no sweep / no follow-through",
+      "stop_reference": "beyond the swept session extreme",
+      "target_reference": "opposing session liquidity",
+      "expiry": "daily",
+      "campaign_support": "indirect",
+      "unsupported_assumptions": "NY leg partially captured (PDF)",
+      "implementation_status": "RESEARCH_ONLY"
+    }
+  },
+  "note": "Design-stage specifications. campaign_support is directional/observational, NOT statistical. implementation_status per the promotion test.",
+  "count": 11
+}

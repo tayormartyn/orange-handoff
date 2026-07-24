@@ -1,0 +1,45 @@
+{
+  "phase": 1,
+  "pdf_directory": "education_batches/pdf_batch_02",
+  "pdfs": [
+    {
+      "file": "Farouk Education (2).pdf",
+      "sha256": "2f32b42ba2b47b907c62cb1eab12040acd095a0918ec86d1ace96695dd174344",
+      "pages": 22,
+      "page_dims": "612x792 (US Letter)",
+      "text_chars": 23032,
+      "kind": "COMPILED_DERIVATIVE_EVIDENCE",
+      "note": "compiled Education doc; NO Discord author/timestamp headers (page numbers only)"
+    },
+    {
+      "file": "Whaleroom_Candlestick_Patterns.pdf",
+      "sha256": "37adae7ed0f41d56aafe2a8b96726d30f2d5356142bd3d4eecabf0a68d91314e",
+      "pages": 7,
+      "text_chars": 6841,
+      "kind": "COMPILED_DERIVATIVE_EVIDENCE",
+      "note": "SUPPLEMENTAL to FP-EDU-022 (candlestick patterns); a Whaleroom doc"
+    },
+    {
+      "file": "Farouks_Playbook (3).pdf",
+      "sha256": "4cb77d9d6b13478a...",
+      "pages": 22,
+      "kind": "EXACT_DUP",
+      "maps_to": "FP-EDU-002 (already registered)"
+    },
+    {
+      "file": "Whaleroom_Trading_Guide (5).pdf",
+      "sha256": "8b0a95608f41b5e4...",
+      "pages": 12,
+      "kind": "EXACT_DUP",
+      "maps_to": "FP-EDU-003"
+    },
+    {
+      "file": "Whaleroom_OrderBlocks_Strong_vs_Weak.pdf",
+      "sha256": "c005bffefcc3a90e...",
+      "pages": 2,
+      "kind": "EXACT_DUP",
+      "maps_to": "FP-EDU-004"
+    }
+  ],
+  "originals_preserved_unmodified": true
+}

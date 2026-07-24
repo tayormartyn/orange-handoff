@@ -1,0 +1,2141 @@
+====================================================================================================
+CHUCK TRANSPORT COMPLETION REVIEW PACK — connected_transport completion items (2026-07-24)
+One file, no truncation: completion pack + full source of the three completion components + full new/changed test files.
+====================================================================================================
+
+====================================================================================================
+SECTION 1 — COMPLETION PACK (as returned)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: CHUCK_COMPLETION_PACK.txt
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\CHUCK_COMPLETION_PACK.txt
+>>> BYTES: 9669  LINES: 139
+----------------------------------------------------------------------------------------------------
+================================================================================
+CHUCK COMPLETION PACK — connected_transport THREE BOUNDED COMPLETION ITEMS
+(follow-up to CONNECTED_TRANSPORT_OFFLINE_VERIFICATION = PASS_WITH_THREE_BOUNDED_COMPLETION_ITEMS)
+Date: 2026-07-24. OFFLINE ONLY — loopback/fake. No connection, no OAuth, no gate
+flip, no order. All 'broker' interaction is in-memory or 127.0.0.1.
+================================================================================
+
+REAL_PROTOCODEC        = PASS
+TLS_LOOPBACK           = PASS
+AUTH_SEQUENCE          = PASS
+ACCOUNT_LIST_GUARD     = PASS
+OUTBOUND_SEND_QUEUE    = PASS
+HEARTBEAT_INTERVAL     = PASS
+LOOPBACK_TESTS         = 115/115   (71 transport [also 71/71 re-run under .venv-ctrader]
+                                    + 27 proto-codec + 17 tls-channel; all egress-guarded)
+EXTERNAL_CONNECTIONS   = ZERO
+EXECUTOR_IMPORTS_TRANSPORT = ZERO
+EXECUTOR_NETWORK_CAPABILITY = ZERO
+OAUTH_REQUESTS         = ZERO
+GATES                  = ALL_FALSE
+LEDGER_IMPACT          = NONE      (see section 5 — live services appended F008 records
+                                    today; authorized live-stack writers, not this build)
+LIVE_SERVICE_IMPACT    = NONE
+Overall: CONNECTED_TRANSPORT_OFFLINE_VERIFICATION_PASS
+
+--------------------------------------------------------------------------------
+1. ITEM 1 — REAL CTRADER PROTOCODEC (proto_codec.py; tests_proto_codec.py, 27 checks)
+--------------------------------------------------------------------------------
+Outbound: Envelope -> generated cTrader class -> ProtoMessage(payloadType, payload,
+clientMsgId) -> serialized protobuf; framing.frame adds the 4-byte big-endian prefix.
+Inbound: framed bytes -> ProtoMessage -> concrete response/event -> Envelope -> the
+EXISTING state machine. Order + close payloads built by the ACCEPTED offline mapper
+(protobuf_mapper.build_new_order_req / build_close_position_req) — NOT duplicated.
+No sizing/approval/reconciliation/campaign logic in the codec.
+Covered with REAL generated classes: app-auth, account-list
+(ProtoOAGetAccountListByAccessTokenReq/Res), account-auth, heartbeat, reconcile,
+LIMIT-open, cancel-pending, close-reduce, allowed stop-mod, ack (ORDER_ACCEPTED),
+rejection (OrderErrorEvent + ErrorRes), fill/execution event, fragmented frames,
+combined frames, payloadType-vs-payload mismatch -> FramingError, malformed
+ProtoMessage -> FramingError, unknown payloadType -> UNKNOWN_PAYLOAD (not
+KNOWN_INBOUND -> transport fail-closes), clientMsgId preserved end-to-end +
+correlation intact. Full lifecycle to READY over the fake wire with the REAL codec.
+Fix applied this build: proto2 REQUIRED fields (accessToken on account-list res;
+ctidTraderAccountId on events; nested ProtoOAOrder/ProtoOAPosition required groups)
+now set on every encode path — the suite previously could not serialize.
+NO socket to cTrader (egress guard installed first line of the suite).
+
+--------------------------------------------------------------------------------
+2. ITEM 2 — TLS CHANNEL, LOOPBACK ONLY (tls_channel.py; tests_tls_channel.py, 17 checks)
+--------------------------------------------------------------------------------
+Production policy (asserted structurally + behaviourally):
+  * fixed host demo.ctraderapi.com, fixed port 5035 (single source; no LIVE constant)
+  * certificate validation REQUIRED (CERT_REQUIRED), hostname validation REQUIRED,
+    always against demo.ctraderapi.com; TLS >= 1.2
+  * NO insecure mode: no parameter anywhere can relax validation
+  * NO caller/CLI/env override: production connector takes no host/port/flag args;
+    source contains no os.environ/sys.argv/getenv read
+  * TLSProductionConnector.connect() refuses (gates False) BEFORE any socket exists
+Loopback tests (all on 127.0.0.1, throwaway local CA minted in-memory):
+  * valid local CA-signed cert (SAN=demo.ctraderapi.com) -> handshake OK -> full auth
+    sequence to READY with the REAL ProtoCodec; negotiated TLS 1.2+; heartbeat over TLS
+  * untrusted (self-signed) cert -> SSLCertVerificationError
+  * hostname mismatch (SAN=wrong-host.invalid) -> SSLCertVerificationError
+  * expired cert -> SSLCertVerificationError (harness supports expiry)
+  * plaintext/non-TLS endpoint -> handshake refused (SSLError)
+  * DNS recorder over the egress guard: every getaddrinfo host in the suite was
+    loopback; demo.ctraderapi.com remains unresolvable (EgressRefused)
+
+--------------------------------------------------------------------------------
+3. ITEM 3 — AUTH + ACCOUNT GUARD (state.py + transport.py; in the 71-check suite)
+--------------------------------------------------------------------------------
+EXACT sequence enforced by the state machine (each transition checks its predecessor):
+CONNECTED -> APPLICATION_AUTHENTICATED -> ACCOUNT_LIST_RECEIVED -> ACCOUNT_VALIDATED
+-> ACCOUNT_AUTHENTICATED -> RECONCILE_ONLY -> READY.
+ProtoOAGetAccountListByAccessTokenReq added; ProtoOAAccountAuthReq is sendable ONLY
+from ACCOUNT_VALIDATED (state table), and the account-list response must first prove:
+exactly one account, the allowlisted ID, isLive == false, expected Pepperstone demo
+environment, expected scope SCOPE_TRADE (five-field conjunction = the SINGLE SOURCE
+demo_lane.gate.account_guard_ok; FAKE credentials + FAKE responses only, no real
+OAuth scope requested anywhere).
+Rejections each proven: missing / additional / live / wrong-scope / wrong-ID /
+wrong-broker -> sanitised ACCOUNT_GUARD_REJECT alarm + NotArmed, NO account-auth,
+NO reconcile request, NO trading request, not READY. (Wrong-broker is structurally
+uninjectable via the response — broker_environment comes from the single-source
+config — proven at the gate AND by an end-to-end wrong-context simulation.)
+Disconnect invalidates account-validation (flag + state reset); the full sequence is
+required again after reconnect (reconnect() re-runs bring_up; reconcile-before-action).
+
+--------------------------------------------------------------------------------
+4. ITEM 4 — RETAINED INVARIANTS (all re-proven AFTER the build)
+--------------------------------------------------------------------------------
+executor imports transport ......... ZERO (AST import-closure test, re-run green)
+executor imports mapper ............ ZERO (same)
+executor network capability ........ ZERO (clean interpreter + socket/ssl/twisted/
+                                     ctrader_open_api/transport booby-trap:
+                                     demo_lane.executor imports NETWORK-FREE;
+                                     transport/mapper NOT in sys.modules)
+fixed demo endpoint ................ demo.ctraderapi.com:5035 only; no override
+deterministic correlation .......... re-proven (dup/in-flight refused; no blind resend)
+OUTCOME_UNKNOWN after ambiguous send re-proven (lost-ack -> OUTCOME_UNKNOWN, 1 send)
+reconcile-first after reconnect .... re-proven (RECONCILE_ONLY window)
+unknown order/position no-touch .... re-proven (+ known-owned mismatch containment)
+gates .............................. EXECUTION/CTRADER/DEMO all False (single source)
+ONE send queue ..................... every outbound (auth/heartbeat/action) funnels
+                                     through _write under one lock (counted in test)
+heartbeat .......................... HEARTBEAT_INTERVAL_S = 10 (sent when idle >= 10s
+                                     while connected; staleness timeout 30s)
+regressions ........................ tests_demo_lane 62/62, tests_order_adapter 45/45,
+                                     tests_seal_approval 10/10, tests_protobuf_mapper
+                                     23/23 (.venv-ctrader) — all green after the build
+
+--------------------------------------------------------------------------------
+5. LEDGER ATTRIBUTION NOTE (why three authority hashes moved — NOT this build)
+--------------------------------------------------------------------------------
+fwd_ledger / freeze_genuine / follower_ledger hashes differ from the pre-build
+snapshot because the RUNNING LIVE SERVICES appended prospective records for a new
+campaign XAU-F008-20260724 this morning (source=live_wire_deterministic_v0_1,
+message_ids 46096/46097, ~08:34Z; router freeze record class PROSPECTIVE). These are
+the authorized live-stack writers doing their job. Nothing in this build or its test
+suites reads or writes any ledger path (all tests are in-memory / 127.0.0.1).
+guards + constitution + freeze_backfill hashes IDENTICAL. Brain registers are now
+stale w.r.t. F008 and need a routine brain_refresh (separate, not part of this order).
+
+--------------------------------------------------------------------------------
+6. FILES TOUCHED (this completion build)
+--------------------------------------------------------------------------------
+  proto_codec.py .................. required-field encode fixes (proto2 REQUIRED)
+  tls_channel.py .................. NEW (item 2)
+  tests_tls_channel.py ............ NEW (item 2, 17 checks)
+  tests_connected_transport.py .... guard-matrix additions (wrong-broker; no-reconcile/
+                                    no-trading-request after reject) -> 71 checks
+  README.md ....................... status trailer updated (codec + TLS now built)
+No other file modified. Executor, mapper, gate, config, sizing, approval untouched.
+
+================================================================================
+NOT DONE (prohibited): no real cTrader connection, no OAuth grant, no gate flip,
+no order. DPAPI credential provider + live-channel wiring remain later,
+separately-reviewed steps. STOP.
+================================================================================
+
+====================================================================================================
+SECTION 2 — SOURCE: THE THREE COMPLETION COMPONENTS
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: proto_codec.py  (Item 1 — real cTrader ProtoCodec)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\proto_codec.py
+>>> BYTES: 17356  LINES: 289
+----------------------------------------------------------------------------------------------------
+"""REAL cTrader ProtoCodec (completion item 1). Maps the transport's symbolic Envelope families to
+concrete generated cTrader message classes and back, through the ProtoMessage envelope:
+
+  encode:  Envelope -> concrete request/response message -> ProtoMessage(payloadType, payload,
+           clientMsgId) -> serialized bytes   (framing.frame adds the 4-byte length prefix)
+  decode:  serialized bytes -> ProtoMessage -> concrete message -> Envelope(msg_type, clientMsgId,
+           payload dict) -> the EXISTING state machine
+
+Order/close payloads are built by the ACCEPTED offline mapper (protobuf_mapper) — NOT re-implemented
+here. No sizing/approval/reconciliation/campaign logic. The generated classes load via the mapper's
+stub-bootstrap (no Twisted client, no socket). Fail-closed: malformed ProtoMessage -> FramingError;
+payloadType/payload mismatch -> FramingError; unmapped payloadType -> an UNKNOWN_PAYLOAD envelope
+that is NOT in KNOWN_INBOUND (the transport then fail-closes).
+"""
+from . import framing
+from .framing import Envelope, FramingError, MsgType
+from .. import protobuf_mapper
+
+_PB = None
+
+
+def _load():
+    global _PB
+    if _PB is not None:
+        return _PB
+    protobuf_mapper._load_pb2()                       # installs ctrader_open_api stubs (no Twisted)
+    from ctrader_open_api.messages.OpenApiCommonMessages_pb2 import ProtoMessage, ProtoHeartbeatEvent
+    from ctrader_open_api.messages.OpenApiCommonModelMessages_pb2 import ProtoPayloadType
+    from ctrader_open_api.messages.OpenApiMessages_pb2 import (
+        ProtoOAApplicationAuthReq, ProtoOAApplicationAuthRes,
+        ProtoOAGetAccountListByAccessTokenReq, ProtoOAGetAccountListByAccessTokenRes,
+        ProtoOAAccountAuthReq, ProtoOAAccountAuthRes, ProtoOAReconcileReq, ProtoOAReconcileRes,
+        ProtoOACancelOrderReq, ProtoOAAmendOrderReq, ProtoOAExecutionEvent, ProtoOAOrderErrorEvent,
+        ProtoOAErrorRes)
+    from ctrader_open_api.messages.OpenApiModelMessages_pb2 import (
+        ProtoOAPayloadType as PT, ProtoOAExecutionType as ET, ProtoOAClientPermissionScope as SC,
+        ProtoOACtidTraderAccount, ProtoOATradeSide, ProtoOAOrderType, ProtoOAOrderStatus,
+        ProtoOAPositionStatus)
+    from google.protobuf.message import DecodeError
+    _PB = dict(
+        ProtoMessage=ProtoMessage, Heartbeat=ProtoHeartbeatEvent, HB_PT=ProtoPayloadType.HEARTBEAT_EVENT,
+        AppAuthReq=ProtoOAApplicationAuthReq, AppAuthRes=ProtoOAApplicationAuthRes,
+        AcctListReq=ProtoOAGetAccountListByAccessTokenReq, AcctListRes=ProtoOAGetAccountListByAccessTokenRes,
+        AcctAuthReq=ProtoOAAccountAuthReq, AcctAuthRes=ProtoOAAccountAuthRes,
+        ReconReq=ProtoOAReconcileReq, ReconRes=ProtoOAReconcileRes,
+        CancelReq=ProtoOACancelOrderReq, AmendReq=ProtoOAAmendOrderReq,
+        ExecEvent=ProtoOAExecutionEvent, OrderErr=ProtoOAOrderErrorEvent, ErrorRes=ProtoOAErrorRes,
+        CtidAcct=ProtoOACtidTraderAccount, TradeSide=ProtoOATradeSide, PT=PT, ET=ET, SC=SC,
+        OrderType=ProtoOAOrderType, OrderStatus=ProtoOAOrderStatus, PosStatus=ProtoOAPositionStatus,
+        DecodeError=DecodeError)
+    return _PB
+
+
+class ProtoCodec:
+    """The REAL codec (IS_FAKE = False). Interchangeable with FakeCodec: encode(Envelope)->bytes,
+    decode(bytes)->Envelope."""
+    IS_FAKE = False
+
+    # ---------- encode ----------
+    def encode(self, env: Envelope) -> bytes:
+        pb = _load()
+        inner, pt = self._build_inner(env, pb)
+        if hasattr(inner, "payloadType"):
+            inner.payloadType = pt            # force onto the wire so decode can verify pt vs payload
+        msg = pb["ProtoMessage"]()
+        msg.payloadType = pt
+        msg.payload = inner.SerializeToString()
+        if env.client_msg_id is not None:
+            msg.clientMsgId = str(env.client_msg_id)
+        return msg.SerializeToString()
+
+    def _build_inner(self, env, pb):
+        p = env.payload or {}
+        mt = env.msg_type
+        PT, ET, SC = pb["PT"], pb["ET"], pb["SC"]
+        if mt == MsgType.APP_AUTH_REQ:
+            m = pb["AppAuthReq"](clientId=p.get("client_id", ""), clientSecret=p.get("client_secret", ""))
+            return m, PT.PROTO_OA_APPLICATION_AUTH_REQ
+        if mt == MsgType.APP_AUTH_RES:
+            return pb["AppAuthRes"](), PT.PROTO_OA_APPLICATION_AUTH_RES
+        if mt == MsgType.ACCOUNT_LIST_REQ:
+            return pb["AcctListReq"](accessToken=p.get("access_token", "")), PT.PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_REQ
+        if mt == MsgType.ACCOUNT_LIST_RES:
+            m = pb["AcctListRes"]()
+            m.accessToken = p.get("access_token", "")     # proto2 REQUIRED on the generated class
+            m.permissionScope = SC.Value(p.get("permissionScope", "SCOPE_VIEW"))
+            for a in p.get("accounts", []):
+                m.ctidTraderAccount.add(ctidTraderAccountId=int(a["ctidTraderAccountId"]),
+                                        isLive=bool(a.get("isLive", False)))
+            return m, PT.PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES
+        if mt == MsgType.ACCOUNT_AUTH_REQ:
+            return (pb["AcctAuthReq"](ctidTraderAccountId=int(p.get("ctid", 0)),
+                                      accessToken=p.get("access_token", "")),
+                    PT.PROTO_OA_ACCOUNT_AUTH_REQ)
+        if mt == MsgType.ACCOUNT_AUTH_RES:
+            return pb["AcctAuthRes"](ctidTraderAccountId=int(p.get("ctid", 0))), PT.PROTO_OA_ACCOUNT_AUTH_RES
+        if mt == MsgType.HEARTBEAT:
+            return pb["Heartbeat"](), pb["HB_PT"]
+        if mt == MsgType.RECONCILE_REQ:
+            return pb["ReconReq"](ctidTraderAccountId=int(p.get("ctid", 0))), PT.PROTO_OA_RECONCILE_REQ
+        if mt == MsgType.RECONCILE_RES:
+            m = pb["ReconRes"](ctidTraderAccountId=int(p.get("ctid", 0)))
+            for oid, o in (p.get("orders") or {}).items():
+                self._fill_order(m.order.add(), {**o, "order_id": o.get("order_id", oid)}, pb)
+            for pid, pos in (p.get("positions") or {}).items():
+                self._fill_position(m.position.add(),
+                                    {**pos, "position_id": pos.get("position_id", pid)}, pb)
+            return m, PT.PROTO_OA_RECONCILE_RES
+        if mt == MsgType.OPEN_LIMIT_REQ:
+            m = protobuf_mapper.build_new_order_req(
+                ctid_trader_account_id=int(p["account_id"]), symbol_id=int(p["symbol_id"]),
+                side=p["trade_side"], volume=int(p["volume"]), limit_price=p["limit_price"],
+                stop_loss=p["stop_loss"], expiration_timestamp=int(p["expiration_timestamp"]),
+                correlation=p.get("correlation", p), client_order_id=p.get("client_order_id"))
+            return m, PT.PROTO_OA_NEW_ORDER_REQ
+        if mt == MsgType.CANCEL_PENDING_REQ:
+            return (pb["CancelReq"](ctidTraderAccountId=int(p.get("account_id", 0)),
+                                    orderId=int(p["order_id"])), PT.PROTO_OA_CANCEL_ORDER_REQ)
+        if mt == MsgType.CLOSE_REDUCE_REQ:
+            m = protobuf_mapper.build_close_position_req(
+                ctid_trader_account_id=int(p.get("account_id", 0)), position_id=int(p["position_id"]),
+                volume=int(p["volume"]), owner_verified=True)
+            return m, PT.PROTO_OA_CLOSE_POSITION_REQ
+        if mt == MsgType.AMEND_STOP_REQ:
+            m = pb["AmendReq"](ctidTraderAccountId=int(p.get("account_id", 0)),
+                               orderId=int(p["order_id"]))
+            m.stopLoss = p["stop_loss"]
+            return m, PT.PROTO_OA_AMEND_ORDER_REQ
+        if mt == MsgType.ORDER_ACK:
+            m = pb["ExecEvent"](ctidTraderAccountId=int(p.get("account_id", 0)),
+                                executionType=ET.ORDER_ACCEPTED)
+            self._fill_order(m.order, p, pb)
+            if p.get("client_order_id"):
+                m.order.clientOrderId = str(p["client_order_id"])
+            if p.get("stop_loss") is not None:
+                m.order.stopLoss = p["stop_loss"]
+            return m, PT.PROTO_OA_EXECUTION_EVENT
+        if mt == MsgType.ORDER_FILL:
+            m = pb["ExecEvent"](ctidTraderAccountId=int(p.get("account_id", 0)),
+                                executionType=ET.ORDER_FILLED)
+            self._fill_order(m.order, p, pb, status="ORDER_STATUS_FILLED")
+            m.order.executedVolume = int(p.get("filled_volume", 0))
+            if p.get("position_id") is not None:
+                self._fill_position(m.position, p, pb)
+            return m, PT.PROTO_OA_EXECUTION_EVENT
+        if mt == MsgType.EXECUTION_EVENT:
+            sub = p.get("subtype", "SWAP")
+            m = pb["ExecEvent"](ctidTraderAccountId=int(p.get("account_id", 0)),
+                                executionType=ET.Value(sub) if sub in ET.keys() else ET.SWAP)
+            return m, PT.PROTO_OA_EXECUTION_EVENT
+        if mt == MsgType.ORDER_REJECT:
+            m = pb["OrderErr"](ctidTraderAccountId=int(p.get("account_id", 0)),
+                               errorCode=str(p.get("errorCode", "REJECTED")),
+                               orderId=int(p.get("order_id", 0)), description=str(p.get("why", "")))
+            return m, PT.PROTO_OA_ORDER_ERROR_EVENT
+        if mt == MsgType.ERROR_RES:
+            return (pb["ErrorRes"](errorCode=str(p.get("errorCode", "ERROR")),
+                                   description=str(p.get("why", ""))), PT.PROTO_OA_ERROR_RES)
+        raise FramingError(f"ProtoCodec cannot encode unknown family {mt!r}")
+
+    # ProtoOAOrder / ProtoOAPosition are proto2 messages with REQUIRED nested fields (orderId,
+    # tradeData{symbolId,volume,tradeSide}, orderType/orderStatus resp. positionStatus, swap);
+    # every required member must be present before SerializeToString will accept the message.
+    @staticmethod
+    def _fill_order(o, p, pb, *, status="ORDER_STATUS_ACCEPTED"):
+        o.orderId = int(p.get("order_id", 0) or 0)
+        o.orderType = pb["OrderType"].LIMIT
+        o.orderStatus = pb["OrderStatus"].Value(status)
+        o.tradeData.symbolId = int(p.get("symbol_id", 0) or 0)
+        o.tradeData.volume = int(p.get("volume", 0) or 0)
+        o.tradeData.tradeSide = pb["TradeSide"].Value(p.get("trade_side") or "BUY")
+        return o
+
+    @staticmethod
+    def _fill_position(pos, p, pb):
+        pos.positionId = int(p.get("position_id", 0) or 0)
+        pos.positionStatus = pb["PosStatus"].POSITION_STATUS_OPEN
+        pos.swap = int(p.get("swap", 0) or 0)
+        pos.tradeData.symbolId = int(p.get("symbol_id", 0) or 0)
+        pos.tradeData.volume = int(p.get("volume", p.get("filled_volume", 0)) or 0)
+        pos.tradeData.tradeSide = pb["TradeSide"].Value(p.get("trade_side") or "BUY")
+        return pos
+
+    # ---------- decode ----------
+    def decode(self, data: bytes) -> Envelope:
+        pb = _load()
+        wrap = pb["ProtoMessage"]()
+        try:
+            wrap.ParseFromString(data)
+        except pb["DecodeError"] as e:
+            raise FramingError(f"malformed ProtoMessage: {e}")
+        cmid = wrap.clientMsgId or None
+        pt = wrap.payloadType
+        msg_type, cls, extractor = self._decoder_for(pt, pb)
+        if cls is None:
+            # unmapped payloadType -> fail-closed (NOT a KNOWN_INBOUND family)
+            return Envelope(f"UNKNOWN_PAYLOAD_{pt}", cmid, {"payloadType": pt})
+        inner = cls()
+        try:
+            inner.ParseFromString(wrap.payload)
+        except pb["DecodeError"] as e:
+            raise FramingError(f"malformed inner payload for payloadType {pt}: {e}")
+        inner_pt = getattr(inner, "payloadType", None)
+        if inner_pt not in (None, 0) and inner_pt != pt:
+            raise FramingError(f"payloadType mismatch: envelope={pt} inner={inner_pt}")
+        if extractor is None:                    # execution-event family -> refine by executionType
+            rt, payload = self._refine_exec(inner, pb)
+            return Envelope(rt, cmid, payload)
+        return Envelope(msg_type, cmid, extractor(inner, pb))
+
+    def _decoder_for(self, pt, pb):
+        PT = pb["PT"]
+        table = {
+            PT.PROTO_OA_APPLICATION_AUTH_REQ: (MsgType.APP_AUTH_REQ, pb["AppAuthReq"],
+                                               lambda m, _: {}),
+            PT.PROTO_OA_APPLICATION_AUTH_RES: (MsgType.APP_AUTH_RES, pb["AppAuthRes"],
+                                               lambda m, _: {"ok": True}),
+            PT.PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_REQ: (MsgType.ACCOUNT_LIST_REQ, pb["AcctListReq"],
+                                                           lambda m, _: {"access_token": m.accessToken}),
+            PT.PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES: (MsgType.ACCOUNT_LIST_RES, pb["AcctListRes"],
+                                                           self._x_acct_list),
+            PT.PROTO_OA_ACCOUNT_AUTH_REQ: (MsgType.ACCOUNT_AUTH_REQ, pb["AcctAuthReq"],
+                                           lambda m, _: {"ctid": m.ctidTraderAccountId,
+                                                         "access_token": m.accessToken}),
+            PT.PROTO_OA_ACCOUNT_AUTH_RES: (MsgType.ACCOUNT_AUTH_RES, pb["AcctAuthRes"],
+                                           lambda m, _: {"ok": True}),
+            pb["HB_PT"]: (MsgType.HEARTBEAT, pb["Heartbeat"], lambda m, _: {}),
+            PT.PROTO_OA_RECONCILE_REQ: (MsgType.RECONCILE_REQ, pb["ReconReq"],
+                                        lambda m, _: {"ctid": m.ctidTraderAccountId}),
+            PT.PROTO_OA_RECONCILE_RES: (MsgType.RECONCILE_RES, pb["ReconRes"], self._x_recon),
+            PT.PROTO_OA_NEW_ORDER_REQ: (MsgType.OPEN_LIMIT_REQ, protobuf_mapper._load_pb2()["NewOrder"],
+                                        self._x_new_order),
+            PT.PROTO_OA_CANCEL_ORDER_REQ: (MsgType.CANCEL_PENDING_REQ, pb["CancelReq"],
+                                           lambda m, _: {"account_id": m.ctidTraderAccountId,
+                                                         "order_id": m.orderId}),
+            PT.PROTO_OA_CLOSE_POSITION_REQ: (MsgType.CLOSE_REDUCE_REQ,
+                                             protobuf_mapper._load_pb2()["Close"],
+                                             lambda m, _: {"account_id": m.ctidTraderAccountId,
+                                                           "position_id": m.positionId, "volume": m.volume}),
+            PT.PROTO_OA_AMEND_ORDER_REQ: (MsgType.AMEND_STOP_REQ, pb["AmendReq"],
+                                          lambda m, _: {"account_id": m.ctidTraderAccountId,
+                                                        "order_id": m.orderId, "stop_loss": m.stopLoss}),
+            PT.PROTO_OA_EXECUTION_EVENT: (None, pb["ExecEvent"], None),   # resolved by executionType
+            PT.PROTO_OA_ORDER_ERROR_EVENT: (MsgType.ORDER_REJECT, pb["OrderErr"],
+                                            lambda m, _: {"why": m.description, "order_id": m.orderId,
+                                                          "errorCode": m.errorCode}),
+            PT.PROTO_OA_ERROR_RES: (MsgType.ERROR_RES, pb["ErrorRes"],
+                                    lambda m, _: {"why": m.description, "errorCode": m.errorCode}),
+        }
+        entry = table.get(pt)
+        if entry is None:
+            return (None, None, None)
+        if pt == PT.PROTO_OA_EXECUTION_EVENT:
+            return (MsgType.EXECUTION_EVENT, pb["ExecEvent"], None)      # msg_type refined post-parse
+        return entry
+
+    # execution events carry the real outcome in executionType; refine there
+    def _refine_exec(self, inner, pb):
+        ET = pb["ET"]
+        et = inner.executionType
+        if et == ET.ORDER_ACCEPTED:
+            return MsgType.ORDER_ACK, {"order_id": inner.order.orderId,
+                                       "client_order_id": inner.order.clientOrderId,
+                                       "stop_loss": inner.order.stopLoss,
+                                       "stop_accepted": inner.order.stopLoss > 0, "status": "ACCEPTED"}
+        if et in (ET.ORDER_FILLED, ET.ORDER_PARTIAL_FILL):
+            return MsgType.ORDER_FILL, {"order_id": inner.order.orderId,
+                                        "filled_volume": inner.order.executedVolume,
+                                        "position_id": inner.position.positionId}
+        if et == ET.ORDER_REJECTED:
+            return MsgType.ORDER_REJECT, {"why": "execution ORDER_REJECTED",
+                                          "order_id": inner.order.orderId}
+        return MsgType.EXECUTION_EVENT, {"subtype": ET.Name(et)}
+
+    # decode override for execution events (needs post-parse refinement)
+    def _x_acct_list(self, m, pb):
+        return {"permissionScope": pb["SC"].Name(m.permissionScope),
+                "accounts": [{"ctidTraderAccountId": a.ctidTraderAccountId, "isLive": a.isLive}
+                             for a in m.ctidTraderAccount]}
+
+    def _x_recon(self, m, _pb):
+        return {"orders": {str(o.orderId): {"order_id": o.orderId} for o in m.order},
+                "positions": {str(p.positionId): {"position_id": p.positionId} for p in m.position}}
+
+    def _x_new_order(self, m, pb):
+        return {"account_id": m.ctidTraderAccountId, "symbol_id": m.symbolId,
+                "trade_side": pb["TradeSide"].Name(m.tradeSide), "volume": m.volume,
+                "limit_price": m.limitPrice, "stop_loss": m.stopLoss,
+                "expiration_timestamp": m.expirationTimestamp, "client_order_id": m.clientOrderId}
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: tls_channel.py  (Item 2 — TLS channel, loopback-tested)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\tls_channel.py
+>>> BYTES: 5081  LINES: 114
+----------------------------------------------------------------------------------------------------
+"""TLS channel for the connected transport (completion item 2 — LOOPBACK-TESTED ONLY).
+
+PRODUCTION POLICY (fixed; nothing here is overridable by caller, CLI or environment):
+  * the ONLY dialable endpoint is the fixed demo endpoint demo.ctraderapi.com:5035 — re-checked
+    through egress_guard.assert_endpoint_allowed with the authoritative gates (all False, so the
+    production connector refuses before any socket exists);
+  * certificate validation is REQUIRED (ssl.CERT_REQUIRED against the system trust store);
+  * hostname validation is REQUIRED and always against TLS_SERVER_HOSTNAME (= the fixed demo host);
+  * there is NO insecure mode: no function or parameter in this module can set check_hostname False,
+    relax verify_mode, change the validated hostname, or name a different endpoint.
+
+TEST SEAM: TLSLoopbackConnector (IS_MOCK) dials 127.0.0.1 ONLY (the address is hard-coded; only the
+ephemeral port is a parameter) and may add a TEST CA to the trust store so a local server cert can
+verify — but hostname validation still runs against demo.ctraderapi.com and cannot be relaxed, so
+the loopback tests prove the SAME validation path production would use. No real connection is made
+anywhere: gates are False and the test egress guard blocks every non-loopback socket and DNS call.
+"""
+import socket
+import ssl
+
+from . import egress_guard
+from . import transport_config as tc
+
+# the ONE identity certificates are ever validated against (== the fixed demo host)
+TLS_SERVER_HOSTNAME = tc.DEMO_HOST
+TLS_MIN_VERSION = ssl.TLSVersion.TLSv1_2
+CONNECT_TIMEOUT_S = 10
+
+
+def build_client_context(test_extra_ca_pem=None):
+    """The ONLY client TLS context this package can produce. check_hostname and CERT_REQUIRED are
+    unconditional — no parameter exists to disable them. `test_extra_ca_pem` may ADD a trust anchor
+    (loopback tests with a local CA); it can never relax validation or change the hostname policy."""
+    ctx = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH)
+    ctx.check_hostname = True
+    ctx.verify_mode = ssl.CERT_REQUIRED
+    ctx.minimum_version = TLS_MIN_VERSION
+    if test_extra_ca_pem is not None:
+        ctx.load_verify_locations(cadata=test_extra_ca_pem)
+    return ctx
+
+
+class _FramedTLSSocket:
+    """Shared send/recv mechanics over an established TLS socket (timeout -> None, like the other
+    connectors, so the transport's OUTCOME_UNKNOWN path is preserved)."""
+    def __init__(self):
+        self._sock = None
+
+    def send(self, frame_bytes):
+        if self._sock is None:
+            raise ConnectionError("TLS channel not connected")
+        self._sock.sendall(frame_bytes)
+
+    def recv(self, timeout=None):
+        if self._sock is None:
+            raise ConnectionError("TLS channel not connected")
+        if timeout is not None:
+            self._sock.settimeout(timeout)
+        try:
+            data = self._sock.recv(4096)
+            return data or None
+        except (socket.timeout, ssl.SSLWantReadError):
+            return None
+
+    def close(self):
+        if self._sock is not None:
+            try:
+                self._sock.close()
+            finally:
+                self._sock = None
+
+
+class TLSProductionConnector(_FramedTLSSocket):
+    """The production TLS connector. FIXED endpoint (takes no host/port); full certificate +
+    hostname validation against the fixed demo identity. connect() first runs the egress allow-rule
+    with the authoritative gates — all False, so it refuses before any socket is created."""
+    IS_MOCK = False
+
+    def __init__(self):
+        super().__init__()
+        self.host, self.port = tc.DEMO_HOST, tc.DEMO_PORT
+
+    def connect(self):
+        egress_guard.assert_endpoint_allowed(self.host, self.port, gates_armed=tc.production_armed())
+        ctx = build_client_context()
+        raw = socket.create_connection((self.host, self.port), timeout=CONNECT_TIMEOUT_S)
+        try:
+            self._sock = ctx.wrap_socket(raw, server_hostname=TLS_SERVER_HOSTNAME)
+        except BaseException:
+            raw.close()
+            raise
+
+
+class TLSLoopbackConnector(_FramedTLSSocket):
+    """TEST-ONLY TLS connector: dials 127.0.0.1 (hard-coded — only the ephemeral port varies) and
+    validates the server certificate against demo.ctraderapi.com exactly as production would. The
+    optional test CA is ADDITIVE trust only; validation itself is not relaxable."""
+    IS_MOCK = True
+    LOOPBACK_HOST = "127.0.0.1"
+
+    def __init__(self, port, test_extra_ca_pem=None):
+        super().__init__()
+        self.host, self.port = self.LOOPBACK_HOST, int(port)
+        self._ca_pem = test_extra_ca_pem
+
+    def connect(self):
+        ctx = build_client_context(test_extra_ca_pem=self._ca_pem)
+        raw = socket.create_connection((self.host, self.port), timeout=CONNECT_TIMEOUT_S)
+        try:
+            # hostname validation ALWAYS against the fixed demo identity — never the dialed IP
+            self._sock = ctx.wrap_socket(raw, server_hostname=TLS_SERVER_HOSTNAME)
+        except BaseException:
+            raw.close()
+            raise
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: state.py        (Item 3 — auth state machine + correlation)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\state.py
+>>> BYTES: 8729  LINES: 195
+----------------------------------------------------------------------------------------------------
+"""Auth/connection state machine + deterministic correlation registry.
+
+STATE ORDERING (enforced): an order-family request may be sent ONLY from READY, which is reached
+strictly via CONNECTED -> APP_AUTHED -> ACCOUNT_AUTHED -> (RECONCILE) -> READY. After a reconnect
+the machine returns to CONNECTED and MUST re-auth and RECONCILE before any action send is allowed
+(RECONCILE_ONLY window). This is the single place 'are we allowed to act yet?' is decided.
+
+CORRELATION (deterministic, no blind resend): every request key maps to a stable client_msg_id.
+A key that is already in flight (or already resolved) is REFUSED — the transport never re-sends a
+request blindly. A response matches by client_msg_id. A timed-out request is marked OUTCOME_UNKNOWN
+and is NEVER auto-resent.
+"""
+import hashlib
+import json
+
+from . import framing
+
+
+class AuthState:
+    # the EXACT sequence (D-110 / Chuck completion item 3):
+    #   CONNECTED -> APPLICATION_AUTHENTICATED -> ACCOUNT_LIST_RECEIVED -> ACCOUNT_VALIDATED
+    #             -> ACCOUNT_AUTHENTICATED -> RECONCILE_ONLY -> READY
+    DISCONNECTED = "DISCONNECTED"
+    CONNECTED = "CONNECTED"                         # socket/TLS up, not app-authed
+    APPLICATION_AUTHENTICATED = "APPLICATION_AUTHENTICATED"
+    ACCOUNT_LIST_RECEIVED = "ACCOUNT_LIST_RECEIVED"   # account list back, NOT yet validated
+    ACCOUNT_VALIDATED = "ACCOUNT_VALIDATED"           # allowlist guard passed -> account-auth permitted
+    ACCOUNT_AUTHENTICATED = "ACCOUNT_AUTHENTICATED"   # account-authed; must still reconcile
+    RECONCILE_ONLY = "RECONCILE_ONLY"                 # reconcile in flight; NO action send yet
+    READY = "READY"                                   # authed + validated + reconciled -> actions
+    CLOSED = "CLOSED"
+
+
+class StateError(Exception):
+    """An operation was attempted from a state that forbids it (fail-closed)."""
+
+
+# the state from which each outbound family is permitted. NOTE: ACCOUNT_AUTH_REQ is permitted ONLY
+# from ACCOUNT_VALIDATED — the account-list allowlist guard MUST pass before account-auth is sent.
+_SENDABLE_ANYTIME = {AuthState.CONNECTED, AuthState.APPLICATION_AUTHENTICATED,
+                     AuthState.ACCOUNT_LIST_RECEIVED, AuthState.ACCOUNT_VALIDATED,
+                     AuthState.ACCOUNT_AUTHENTICATED, AuthState.RECONCILE_ONLY, AuthState.READY}
+_ALLOWED_FROM = {
+    framing.MsgType.APP_AUTH_REQ: {AuthState.CONNECTED},
+    framing.MsgType.ACCOUNT_LIST_REQ: {AuthState.APPLICATION_AUTHENTICATED},
+    framing.MsgType.ACCOUNT_AUTH_REQ: {AuthState.ACCOUNT_VALIDATED},      # ONLY after validation
+    framing.MsgType.HEARTBEAT: set(_SENDABLE_ANYTIME),
+    framing.MsgType.RECONCILE_REQ: {AuthState.ACCOUNT_AUTHENTICATED, AuthState.RECONCILE_ONLY,
+                                    AuthState.READY},
+    # every action family requires READY (authed AND validated AND reconciled)
+    framing.MsgType.OPEN_LIMIT_REQ: {AuthState.READY},
+    framing.MsgType.CANCEL_PENDING_REQ: {AuthState.READY},
+    framing.MsgType.CLOSE_REDUCE_REQ: {AuthState.READY},
+    framing.MsgType.AMEND_STOP_REQ: {AuthState.READY},
+}
+
+
+class ConnectionState:
+    def __init__(self):
+        self.state = AuthState.DISCONNECTED
+        self.reconciled = False
+        self.account_validated = False
+
+    def can_send(self, msg_type):
+        return self.state in _ALLOWED_FROM.get(msg_type, set())
+
+    def assert_can_send(self, msg_type):
+        if msg_type not in framing.PERMITTED_OUTBOUND:
+            raise StateError(f"{msg_type} is not a permitted outbound family (no raw/generic send)")
+        if not self.can_send(msg_type):
+            raise StateError(f"send of {msg_type} refused in state {self.state} "
+                             f"(validated={self.account_validated}, reconciled={self.reconciled})")
+        return True
+
+    # ---- transitions (ONLY these paths exist; each checks its predecessor) ----
+    def on_connected(self):
+        self.state = AuthState.CONNECTED
+        self.reconciled = False
+        self.account_validated = False              # a fresh socket is never pre-validated
+
+    def on_app_authed(self):
+        if self.state != AuthState.CONNECTED:
+            raise StateError(f"APP_AUTH_RES out of order in {self.state}")
+        self.state = AuthState.APPLICATION_AUTHENTICATED
+
+    def on_account_list(self):
+        if self.state != AuthState.APPLICATION_AUTHENTICATED:
+            raise StateError(f"ACCOUNT_LIST_RES out of order in {self.state}")
+        self.state = AuthState.ACCOUNT_LIST_RECEIVED
+
+    def on_account_validated(self):
+        if self.state != AuthState.ACCOUNT_LIST_RECEIVED:
+            raise StateError(f"account validation invalid in {self.state}")
+        self.account_validated = True
+        self.state = AuthState.ACCOUNT_VALIDATED
+
+    def on_account_authed(self):
+        if self.state != AuthState.ACCOUNT_VALIDATED:
+            raise StateError(f"ACCOUNT_AUTH_RES before ACCOUNT_VALIDATED (was {self.state})")
+        self.state = AuthState.ACCOUNT_AUTHENTICATED
+        self.reconciled = False                     # must reconcile before acting
+
+    def on_reconcile_start(self):
+        if self.state != AuthState.ACCOUNT_AUTHENTICATED:
+            raise StateError(f"reconcile start invalid in {self.state}")
+        self.state = AuthState.RECONCILE_ONLY
+
+    def on_reconciled(self):
+        if self.state not in (AuthState.RECONCILE_ONLY, AuthState.READY):
+            raise StateError(f"reconcile completion invalid in {self.state}")
+        self.reconciled = True
+        self.state = AuthState.READY
+
+    def on_disconnected(self):
+        # a disconnect INVALIDATES account-validation; the full sequence is required again
+        self.state = AuthState.DISCONNECTED
+        self.reconciled = False
+        self.account_validated = False
+
+    def on_closed(self):
+        self.state = AuthState.CLOSED
+        self.reconciled = False
+        self.account_validated = False
+
+
+# --------------------------------------------------------------------------------------------------
+class Correlation:
+    PENDING = "PENDING"
+    RESOLVED = "RESOLVED"
+    OUTCOME_UNKNOWN = "OUTCOME_UNKNOWN"
+
+
+class CorrelationRegistry:
+    """Deterministic client_msg_id per request key; in-flight/resolved keys are never re-sent."""
+    def __init__(self):
+        self._by_key = {}          # key_hash -> {cmid, status, result}
+        self._by_cmid = {}         # cmid -> key_hash
+
+    @staticmethod
+    def _key_hash(key):
+        return hashlib.sha256(json.dumps(key, sort_keys=True, default=str).encode()).hexdigest()
+
+    @staticmethod
+    def client_msg_id(key):
+        return "ORG-" + CorrelationRegistry._key_hash(key)[:20]
+
+    def register(self, key):
+        """Reserve a correlation for a NEW request. Refuses if the key is already in flight or
+        already resolved (no blind resend / duplicate-send prevention)."""
+        kh = self._key_hash(key)
+        existing = self._by_key.get(kh)
+        if existing is not None:
+            raise StateError(f"duplicate send refused: correlation already {existing['status']} "
+                             f"(cmid={existing['cmid']})")
+        cmid = "ORG-" + kh[:20]
+        self._by_key[kh] = {"cmid": cmid, "status": Correlation.PENDING, "result": None}
+        self._by_cmid[cmid] = kh
+        return cmid
+
+    def resolve(self, cmid, result):
+        kh = self._by_cmid.get(cmid)
+        if kh is None:
+            return None                              # unknown correlation (caller decides handling)
+        rec = self._by_key[kh]
+        rec["status"] = Correlation.RESOLVED
+        rec["result"] = result
+        return rec
+
+    def mark_unknown(self, cmid):
+        kh = self._by_cmid.get(cmid)
+        if kh is None:
+            return None
+        rec = self._by_key[kh]
+        rec["status"] = Correlation.OUTCOME_UNKNOWN
+        return rec
+
+    def forget(self, cmid):
+        """Release a correlation whose request DEFINITIVELY never left the machine (loss-BEFORE-send).
+        Only valid while PENDING — a resolved/unknown correlation is never forgotten. This is NOT a
+        resend; it lets a caller deliberately re-issue a request the broker provably never saw."""
+        kh = self._by_cmid.get(cmid)
+        if kh is None:
+            return None
+        if self._by_key[kh]["status"] != Correlation.PENDING:
+            raise StateError("refusing to forget a non-pending correlation")
+        del self._by_key[kh]
+        del self._by_cmid[cmid]
+        return cmid
+
+    def status(self, cmid):
+        kh = self._by_cmid.get(cmid)
+        return self._by_key[kh]["status"] if kh else None
+
+    def pending_cmids(self):
+        return [r["cmid"] for r in self._by_key.values() if r["status"] == Correlation.PENDING]
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: transport.py    (Item 3 — auth sequence + account-list guard; full file)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\transport.py
+>>> BYTES: 21819  LINES: 413
+----------------------------------------------------------------------------------------------------
+"""ConnectedTransport — the connected cTrader-DEMO transport (OFFLINE build).
+
+It SENDS approved requests and RETURNS broker facts. It does NOT reinterpret them: no sizing, no
+price validation, no approval, no gate authority of its own, no reconciliation equality check, no
+campaign interpretation — those single sources live in demo_lane (executor/sizing/prices/approval/
+reconcile/gate) and in the follower interpreter. This layer owns ONLY wire mechanics.
+
+Guarantees enforced here:
+  * production composition is NOT_ARMED while the authoritative gates are False; test-enable binds
+    to a fake/loopback connector only. No CLI/env/caller override of destination or arming.
+  * ONLY the permitted request families are emittable (no generic console, no raw send).
+  * deterministic correlation; duplicate/in-flight keys refused (no blind resend).
+  * loss BEFORE send -> clean SEND_FAILED (definitively not delivered); loss AFTER send / timeout ->
+    OUTCOME_UNKNOWN with NO auto-resend.
+  * on (re)connect: auth THEN reconcile before any action is permitted (RECONCILE_ONLY window).
+  * unknown order/position -> no-touch; known-owned-but-mismatch -> ratified containment (no
+    destructive action); unknown inbound event -> fail-closed. Every alarm/log is sanitised.
+"""
+import threading
+import time
+
+from . import credentials as cred
+from . import egress_guard
+from . import framing
+from . import state as st
+from . import transport_config as tc
+from .framing import MsgType
+
+# transport MAY import the approved mapper (executor may NOT import either transport or mapper).
+from .. import protobuf_mapper
+# gate + account allowlist are the SINGLE SOURCE (demo_lane) — reused, never redefined here.
+from .. import config as demo_config
+from .. import gate as demo_gate
+
+
+class NotArmed(Exception):
+    """The transport refused to connect/auth/act because gates are False (or a test policy was
+    pointed at a non-mock connector)."""
+
+
+class TransportPolicy:
+    """Mirrors demo_lane.order_adapter.DispatchPolicy: constructed only via the two factories below,
+    never with a caller-supplied armed flag on the production path."""
+    def __init__(self, armed, requires_mock):
+        self.armed = bool(armed)
+        self.requires_mock = bool(requires_mock)
+
+
+def production_policy():
+    """AUTHORITATIVE gates ONLY (single source). All three hard False -> armed False -> NOT_ARMED."""
+    return TransportPolicy(armed=tc.production_armed(), requires_mock=False)
+
+
+def test_only_policy():
+    """Test seam: armed, but BOUND to a fake/loopback (IS_MOCK) connector — it can never drive a
+    real socket to a real endpoint."""
+    return TransportPolicy(armed=True, requires_mock=True)
+
+
+class Result:
+    OK = "OK"
+    REJECTED = "REJECTED"
+    SEND_FAILED = "SEND_FAILED"
+    OUTCOME_UNKNOWN = "OUTCOME_UNKNOWN"
+    NO_TOUCH = "NO_TOUCH"
+    CONTAINED = "CONTAINED"
+
+
+class ConnectedTransport:
+    def __init__(self, *, connector, codec, credential_provider, policy=None, clock=None):
+        self.connector = connector
+        self.codec = codec
+        self.credentials = credential_provider
+        self.policy = policy or production_policy()
+        self.now = clock or time.monotonic
+        self.cstate = st.ConnectionState()
+        self.corr = st.CorrelationRegistry()
+        self.deframer = framing.Deframer()
+        self.alarms = []
+        self.last_inbound_t = 0.0
+        self.last_outbound_t = 0.0
+        self._session_seq = 0
+        self._hb_seq = 0
+        self._known_orders = {}
+        self._known_positions = {}
+        # ONE serialised outbound send queue: every byte that leaves goes through _write under this
+        # lock, so no two outbound writes can interleave on the wire.
+        self._send_lock = threading.Lock()
+        self._writes = 0
+
+    # ---- arming ---------------------------------------------------------------------------------
+    def _assert_armed(self):
+        if not self.policy.armed:
+            raise NotArmed("NOT_ARMED — authoritative gates False; transport will not connect/auth/send")
+        if self.policy.requires_mock and not getattr(self.connector, "IS_MOCK", False):
+            raise NotArmed("test-only policy cannot drive a non-mock/non-loopback connector")
+
+    def _alarm(self, kind, detail):
+        self.alarms.append({"kind": kind, "detail": cred.sanitise(detail)})
+
+    def _write(self, frame):
+        """The SINGLE serialised outbound path. Every send (auth, heartbeat, action) funnels here so
+        outbound writes never interleave. Increments the counter only on a successful send."""
+        with self._send_lock:
+            self.connector.send(frame)
+            self._writes += 1
+
+    # ---- lifecycle ------------------------------------------------------------------------------
+    def open(self):
+        self._assert_armed()
+        self.connector.connect()
+        self._session_seq += 1
+        self.deframer = framing.Deframer()
+        self.cstate.on_connected()
+        self.last_inbound_t = self.last_outbound_t = self.now()
+
+    def authenticate(self):
+        """CONNECTED -> APPLICATION_AUTHENTICATED -> ACCOUNT_LIST_RECEIVED -> ACCOUNT_VALIDATED
+        -> ACCOUNT_AUTHENTICATED. ProtoOAAccountAuthReq is NOT sent until the account-list response
+        passes the single-source allowlist guard."""
+        self._assert_armed()
+        cid, _secret = self.credentials.app_credentials()
+        r1 = self._request(MsgType.APP_AUTH_REQ, {"client_id": cid, "client_secret": _secret},
+                           key=("app_auth", self._session_seq))
+        if r1["status"] != Result.OK:
+            self._alarm("APP_AUTH_FAILED", {"result": r1["status"]})
+            raise NotArmed(f"application auth did not complete ({r1['status']})")
+        self.cstate.on_app_authed()
+
+        # account LIST (ProtoOAGetAccountListByAccessTokenReq) BEFORE any account auth
+        r2 = self._request(MsgType.ACCOUNT_LIST_REQ,
+                           {"access_token": self.credentials.account_access_token()},
+                           key=("account_list", self._session_seq))
+        if r2["status"] != Result.OK:
+            self._alarm("ACCOUNT_LIST_FAILED", {"result": r2["status"]})
+            raise NotArmed(f"account list did not complete ({r2['status']})")
+        self.cstate.on_account_list()
+
+        # ACCOUNT GUARD — must prove exactly one allowlisted, demo, correct-scope, correct-ID account
+        self._validate_account_list(r2["payload"].get("accounts", []),
+                                    r2["payload"].get("permissionScope"))
+        self.cstate.on_account_validated()
+
+        # ONLY NOW send ProtoOAAccountAuthReq
+        r3 = self._request(MsgType.ACCOUNT_AUTH_REQ,
+                           {"access_token": self.credentials.account_access_token(),
+                            "ctid": self.credentials.ctid_trader_account_id()},
+                           key=("account_auth", self._session_seq))
+        if r3["status"] != Result.OK:
+            self._alarm("ACCOUNT_AUTH_FAILED", {"result": r3["status"]})
+            raise NotArmed(f"account auth did not complete ({r3['status']})")
+        self.cstate.on_account_authed()
+
+    def _validate_account_list(self, accounts, scope):
+        """The account allowlist guard. Rejects (sanitised alarm + NotArmed, so NO account-auth, NO
+        reconcile, NO trading request) on: missing / additional / live / wrong-ID / wrong-scope /
+        wrong-broker. The five-field conjunction itself is the SINGLE SOURCE demo_lane.gate."""
+        if len(accounts) != 1:
+            self._alarm("ACCOUNT_GUARD_REJECT",
+                        {"why": "account list must contain EXACTLY the one allowlisted account",
+                         "count": len(accounts)})
+            raise NotArmed(f"account allowlist: expected exactly 1 account, saw {len(accounts)}")
+        a = accounts[0]
+        # endpoint + broker_environment come from the FIXED connection context (demo endpoint);
+        # isLive + id from the account; scope from the response. Fed to the single-source guard.
+        acc = {"endpoint": tc.DEMO_HOST, "isLive": a.get("isLive"),
+               "ctidTraderAccountId": a.get("ctidTraderAccountId"),
+               "broker_environment": demo_config.EXPECTED_BROKER_ENVIRONMENT,
+               "permissionScope": scope}
+        if a.get("ctidTraderAccountId") != demo_config.ALLOWED_CTID_TRADER_ACCOUNT_ID:
+            self._alarm("ACCOUNT_GUARD_REJECT",
+                        {"why": "account id not the allowlisted id",
+                         "seen_id": a.get("ctidTraderAccountId")})
+            raise NotArmed("account allowlist: wrong account id")
+        if not demo_gate.account_guard_ok(acc):
+            self._alarm("ACCOUNT_GUARD_REJECT",
+                        {"why": "five-field account guard failed (isLive/scope/id/endpoint/broker)",
+                         "isLive": a.get("isLive"), "scope": scope})
+            raise NotArmed("account allowlist: guard rejected (live/wrong-scope/wrong-broker)")
+
+    def reconcile(self):
+        """RECONCILE-first: ACCOUNT_AUTHENTICATED -> RECONCILE_ONLY -> READY. Fetch Orange-owned
+        pending orders + positions and record them. Actions are refused until READY."""
+        self.cstate.on_reconcile_start()                     # enter the RECONCILE_ONLY window
+        r = self._request(MsgType.RECONCILE_REQ,
+                          {"ctid": self.credentials.ctid_trader_account_id()},
+                          key=("reconcile", self._session_seq))
+        if r["status"] != Result.OK:
+            self._alarm("RECONCILE_FAILED", {"result": r["status"]})
+            return r
+        self._known_orders = dict(r["payload"].get("orders", {}))
+        self._known_positions = dict(r["payload"].get("positions", {}))
+        self.cstate.on_reconciled()
+        return r
+
+    def bring_up(self):
+        """Full, ordered start: connect -> auth -> reconcile -> READY."""
+        self.open()
+        self.authenticate()
+        self.reconcile()
+        return self.cstate.state
+
+    def close(self):
+        try:
+            self.connector.close()
+        finally:
+            self.cstate.on_closed()
+
+    # ---- reconnect (bounded backoff; reconcile-before-action enforced by re-running bring_up) ----
+    def on_disconnect(self):
+        self.cstate.on_disconnected()
+        self._alarm("DISCONNECTED", {"session": self._session_seq})
+
+    def reconnect(self, sleep=None):
+        sleep = sleep or (lambda s: None)                    # injected; tests pass a no-op
+        self.on_disconnect()
+        for attempt in range(tc.RECONNECT_MAX_ATTEMPTS):
+            sleep(tc.backoff_for(attempt))
+            try:
+                self.connector.close()
+            except Exception:                                # noqa: BLE001
+                pass
+            try:
+                self.bring_up()
+                return True
+            except (NotArmed, st.StateError, ConnectionError, OSError) as e:
+                self._alarm("RECONNECT_ATTEMPT_FAILED", {"attempt": attempt, "why": str(e)})
+        self._alarm("RECONNECT_EXHAUSTED", {"attempts": tc.RECONNECT_MAX_ATTEMPTS})
+        return False
+
+    # ---- heartbeat ------------------------------------------------------------------------------
+    def maybe_heartbeat(self):
+        if not self.cstate.can_send(MsgType.HEARTBEAT):
+            return False
+        if (self.now() - self.last_outbound_t) < tc.HEARTBEAT_INTERVAL_S:
+            return False
+        self._send_heartbeat()
+        return True
+
+    def _send_heartbeat(self):
+        self.cstate.assert_can_send(MsgType.HEARTBEAT)
+        env = framing.Envelope(MsgType.HEARTBEAT, f"HB-{self._hb_seq}", {})
+        self._hb_seq += 1
+        self._write(framing.frame(self.codec.encode(env)))   # same single send queue
+        self.last_outbound_t = self.now()
+
+    def is_stale(self):
+        """No inbound traffic for HEARTBEAT_TIMEOUT_S -> the link is stale and must be dropped."""
+        return (self.now() - self.last_inbound_t) >= tc.HEARTBEAT_TIMEOUT_S
+
+    # ---- request/response core ------------------------------------------------------------------
+    def _request(self, msg_type, payload, key):
+        self.cstate.assert_can_send(msg_type)                # ordering / raw-send guard
+        if msg_type in framing.ACTION_OUTBOUND:
+            self._assert_armed()                             # defence-in-depth on every action
+        cmid = self.corr.register(key)                       # duplicate/in-flight -> StateError
+        env = framing.Envelope(msg_type, cmid, payload)
+        wire = framing.frame(self.codec.encode(env))
+        try:
+            self._write(wire)                                # single serialised send queue
+            self.last_outbound_t = self.now()
+        except (ConnectionError, OSError) as e:              # loss BEFORE send -> definitively not out
+            self.corr.forget(cmid)                           # release: broker provably never saw it
+            self._alarm("SEND_FAILED", {"msg_type": msg_type, "why": str(e)})
+            return {"status": Result.SEND_FAILED, "client_msg_id": cmid, "delivered": False}
+        resp = self._await(cmid)
+        if resp is None:                                     # loss AFTER send / timeout -> ambiguous
+            self.corr.mark_unknown(cmid)
+            self._alarm("OUTCOME_UNKNOWN", {"msg_type": msg_type, "client_msg_id": cmid})
+            return {"status": Result.OUTCOME_UNKNOWN, "client_msg_id": cmid}
+        self.corr.resolve(cmid, resp.payload)
+        status = Result.REJECTED if resp.msg_type in (MsgType.ORDER_REJECT, MsgType.ERROR_RES) else Result.OK
+        return {"status": status, "msg_type": resp.msg_type, "payload": resp.payload,
+                "client_msg_id": cmid}
+
+    def _await(self, cmid):
+        """Read frames until the matching response arrives or the connector times out (None).
+        The WHOLE batch from each read is drained — heartbeats skipped, events handled fail-closed —
+        even after the match is found, so a trailing event combined in the same chunk is never
+        silently dropped."""
+        while True:
+            chunk = self.connector.recv(tc.RESPONSE_TIMEOUT_S)
+            if chunk is None:
+                return None                                  # response timeout -> caller: OUTCOME_UNKNOWN
+            self.last_inbound_t = self.now()
+            matched = None
+            for payload in self.deframer.feed(chunk):
+                env = self.codec.decode(payload)
+                if env.msg_type not in framing.KNOWN_INBOUND:
+                    self._handle_unknown(env); continue
+                if env.msg_type == MsgType.HEARTBEAT:
+                    continue
+                if env.msg_type == MsgType.EXECUTION_EVENT:
+                    self._handle_event(env); continue
+                if env.client_msg_id == cmid and matched is None:
+                    matched = env; continue                  # keep draining the batch before returning
+                self._handle_event(env)                      # response for another cmid: record
+            if matched is not None:
+                return matched
+
+    # ---- event handling -------------------------------------------------------------------------
+    _KNOWN_EVENT_SUBTYPES = frozenset({"FILL", "PARTIAL_FILL", "STOP_MOVED", "ORDER_CANCELLED"})
+
+    def _handle_event(self, env):
+        sub = (env.payload or {}).get("subtype")
+        if env.msg_type == MsgType.EXECUTION_EVENT and sub not in self._KNOWN_EVENT_SUBTYPES:
+            return self._handle_unknown(env)
+        self._alarm("EVENT", {"msg_type": env.msg_type, "subtype": sub})
+
+    def _handle_unknown(self, env):
+        """Fail-closed: an unrecognised inbound message/event NEVER mutates state or touches a
+        position. It is recorded (sanitised) for human review only."""
+        self._alarm("UNKNOWN_INBOUND_FAIL_CLOSED",
+                    {"msg_type": getattr(env, "msg_type", None), "payload": getattr(env, "payload", None)})
+        return None
+
+    # ---- reconciled snapshot (read accessors; no equality check here — that lives in the executor) -
+    def known_orders(self):
+        return dict(self._known_orders)
+
+    def known_positions(self):
+        return dict(self._known_positions)
+
+    # ---- permitted ACTION families (approved requests in; broker facts out) ---------------------
+    def send_open(self, spec):
+        """Approved LIMIT opening. `spec` is a demo_lane.broker_request.BrokerOrderRequest already
+        built + approved upstream. Returns broker facts (or None on OUTCOME_UNKNOWN/SEND_FAILED, so
+        the adapter maps it to the executor's OUTCOME_UNKNOWN)."""
+        correlation = {"side": spec.trade_side, "symbol": spec.symbol_id,
+                       "limit": spec.limit_price, "stop": spec.stop_loss,
+                       "expiry": spec.expiration_timestamp, "session": self._session_seq}
+        client_order_id = protobuf_mapper.deterministic_client_order_id(correlation)
+        payload = {"account_id": spec.ctid_trader_account_id, "symbol_id": spec.symbol_id,
+                   "trade_side": spec.trade_side, "volume": spec.volume,
+                   "limit_price": spec.limit_price, "stop_loss": spec.stop_loss,
+                   "expiration_timestamp": spec.expiration_timestamp, "client_order_id": client_order_id}
+        r = self._request(MsgType.OPEN_LIMIT_REQ, payload, key=("open", client_order_id))
+        if r["status"] in (Result.OUTCOME_UNKNOWN, Result.SEND_FAILED):
+            return None
+        if r["status"] == Result.REJECTED:
+            return {"status": "REJECTED", "order_id": None, "stop_accepted": False,
+                    "filled_volume": 0, "why": r["payload"].get("why")}
+        return dict(r["payload"])                             # broker facts, verbatim
+
+    def cancel_pending(self, order_id):
+        if order_id not in self._known_orders:
+            self._alarm("NO_TOUCH_UNKNOWN_ORDER", {"order_id": order_id})
+            return {"status": Result.NO_TOUCH, "order_id": order_id, "why": "unknown/unowned order"}
+        r = self._request(MsgType.CANCEL_PENDING_REQ,
+                          {"order_id": order_id, "account_id": self.credentials.ctid_trader_account_id()},
+                          key=("cancel", order_id, self._session_seq))
+        return r
+
+    def close_reduce(self, position_id, volume, owner="ORANGE"):
+        pos = self._known_positions.get(position_id)
+        if pos is None:
+            self._alarm("NO_TOUCH_UNKNOWN_POSITION", {"position_id": position_id})
+            return {"status": Result.NO_TOUCH, "position_id": position_id, "why": "unknown position"}
+        if pos.get("owner") != owner:
+            # known to us but ownership does not match -> ratified containment, NO destructive action
+            self._alarm("CONTAINMENT_OWNERSHIP_MISMATCH",
+                        {"position_id": position_id, "expected_owner": owner, "seen": pos.get("owner")})
+            return {"status": Result.CONTAINED, "position_id": position_id,
+                    "why": "known-owned mismatch — contained, no touch"}
+        if not isinstance(volume, int) or volume <= 0 or volume > pos.get("volume", 0):
+            self._alarm("CLOSE_REFUSED_QTY", {"position_id": position_id, "volume": volume})
+            return {"status": Result.NO_TOUCH, "position_id": position_id,
+                    "why": "reduce-only quantity invalid"}
+        return self._request(MsgType.CLOSE_REDUCE_REQ,
+                             {"position_id": position_id, "volume": volume,
+                              "account_id": self.credentials.ctid_trader_account_id()},
+                             key=("close", position_id, volume, self._session_seq))
+
+    def amend_stop(self, order_id, stop_loss):
+        if order_id not in self._known_orders:
+            self._alarm("NO_TOUCH_UNKNOWN_ORDER", {"order_id": order_id})
+            return {"status": Result.NO_TOUCH, "order_id": order_id, "why": "unknown/unowned order"}
+        return self._request(MsgType.AMEND_STOP_REQ,
+                             {"order_id": order_id, "stop_loss": stop_loss,
+                              "account_id": self.credentials.ctid_trader_account_id()},
+                             key=("amend", order_id, stop_loss, self._session_seq))
+
+
+# ---- production composition (refuses while gates False; no real credential provider in this build) -
+class ProductionConnector:
+    """The ONLY production connector. Fixed demo endpoint; takes NO host/port. connect() runs the
+    egress allow-rule, which raises NOT_ARMED while gates are False, so no socket is ever opened."""
+    IS_MOCK = False
+
+    def __init__(self):
+        self.host, self.port = tc.DEMO_HOST, tc.DEMO_PORT
+
+    def connect(self):
+        egress_guard.assert_endpoint_allowed(self.host, self.port, gates_armed=tc.production_armed())
+        raise NotArmed("production path unreachable in this build (gates False; no real transport)")
+
+    def send(self, frame_bytes):                             # pragma: no cover - never reached
+        raise NotArmed("not connected")
+
+    def recv(self, timeout=None):                            # pragma: no cover
+        raise NotArmed("not connected")
+
+    def close(self):
+        pass
+
+
+def build_production_transport():
+    """Assemble the production transport. It is NOT_ARMED (gates hard False) and carries NO real
+    credential provider (the DPAPI-backed provider is a later, separately-reviewed step). Any attempt
+    to bring it up raises NotArmed — prohibited-by-absence, proven by test."""
+    return ConnectedTransport(connector=ProductionConnector(), codec=framing.FakeCodec(),
+                              credential_provider=cred.FakeCredentialProvider(),
+                              policy=production_policy())
+
+====================================================================================================
+SECTION 3 — NEW/CHANGED TEST FILES
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: tests_proto_codec.py           (Item 1, 27 checks)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\tests_proto_codec.py
+>>> BYTES: 9019  LINES: 152
+----------------------------------------------------------------------------------------------------
+"""Item-1 tests: the REAL ProtoCodec against the GENERATED cTrader message classes. Runs under
+.venv-ctrader (real protobuf). NO socket to cTrader — pure in-memory encode/decode + a fake-wire
+lifecycle. Covers every family + framing + fail-closed (mismatch/malformed/unknown) + clientMsgId.
+
+Run:  .venv-ctrader/Scripts/python.exe -m demo_lane.connected_transport.tests_proto_codec
+"""
+import io
+import os
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+FAROUK_PILOT = os.path.dirname(os.path.dirname(HERE))
+if FAROUK_PILOT not in sys.path:
+    sys.path.insert(0, FAROUK_PILOT)
+
+from demo_lane.connected_transport import (                     # noqa: E402
+    egress_guard, fake_wire, framing, proto_codec, state as st, transport as T)
+from demo_lane.connected_transport.framing import Envelope, MsgType, FramingError   # noqa: E402
+from demo_lane.connected_transport import credentials as cred   # noqa: E402
+
+egress_guard.install_test_egress_guard()                        # no socket may leave, even here
+PASS = 0
+
+
+def ok(cond, name):
+    global PASS
+    assert cond, f"FAIL: {name}"
+    PASS += 1
+
+
+C = proto_codec.ProtoCodec()
+ok(C.IS_FAKE is False, "ProtoCodec is the REAL codec (IS_FAKE False)")
+
+
+def rt(env):
+    """encode via real protobuf -> decode via real protobuf."""
+    return C.decode(C.encode(env))
+
+
+# ---- per-family roundtrip through real ProtoMessage + generated classes -----------------------
+d = rt(Envelope(MsgType.APP_AUTH_REQ, "m1", {"client_id": "cid", "client_secret": "sec"}))
+ok(d.msg_type == MsgType.APP_AUTH_REQ and d.client_msg_id == "m1", "APP_AUTH_REQ roundtrip + cmid")
+ok(rt(Envelope(MsgType.APP_AUTH_RES, "m", {})).msg_type == MsgType.APP_AUTH_RES, "APP_AUTH_RES roundtrip")
+
+d = rt(Envelope(MsgType.ACCOUNT_LIST_REQ, "m", {"access_token": "tok"}))
+ok(d.msg_type == MsgType.ACCOUNT_LIST_REQ, "ACCOUNT_LIST_REQ (GetAccountListByAccessToken) roundtrip")
+d = rt(Envelope(MsgType.ACCOUNT_LIST_RES, "m",
+                {"accounts": [{"ctidTraderAccountId": 1_000_001, "isLive": False}],
+                 "permissionScope": "SCOPE_TRADE"}))
+ok(d.msg_type == MsgType.ACCOUNT_LIST_RES and d.payload["accounts"][0]["ctidTraderAccountId"] == 1_000_001
+   and d.payload["accounts"][0]["isLive"] is False and d.payload["permissionScope"] == "SCOPE_TRADE",
+   "ACCOUNT_LIST_RES roundtrip (account id + isLive + scope preserved)")
+
+d = rt(Envelope(MsgType.ACCOUNT_AUTH_REQ, "m", {"ctid": 1_000_001, "access_token": "tok"}))
+ok(d.msg_type == MsgType.ACCOUNT_AUTH_REQ and d.payload["ctid"] == 1_000_001, "ACCOUNT_AUTH_REQ roundtrip")
+ok(rt(Envelope(MsgType.ACCOUNT_AUTH_RES, "m", {})).msg_type == MsgType.ACCOUNT_AUTH_RES, "ACCOUNT_AUTH_RES roundtrip")
+ok(rt(Envelope(MsgType.HEARTBEAT, "m", {})).msg_type == MsgType.HEARTBEAT, "HEARTBEAT roundtrip")
+
+d = rt(Envelope(MsgType.RECONCILE_REQ, "m", {"ctid": 1_000_001}))
+ok(d.msg_type == MsgType.RECONCILE_REQ and d.payload["ctid"] == 1_000_001, "RECONCILE_REQ roundtrip")
+d = rt(Envelope(MsgType.RECONCILE_RES, "m",
+                {"ctid": 1_000_001, "orders": {"5": {"order_id": 5}}, "positions": {"9": {"position_id": 9}}}))
+ok(d.msg_type == MsgType.RECONCILE_RES and "5" in d.payload["orders"] and "9" in d.payload["positions"],
+   "RECONCILE_RES roundtrip (orders + positions)")
+
+d = rt(Envelope(MsgType.OPEN_LIMIT_REQ, "mo",
+                {"account_id": 1_000_001, "symbol_id": 42, "trade_side": "SELL", "volume": 100,
+                 "limit_price": 4161.0, "stop_loss": 4187.0, "expiration_timestamp": 99_999_999,
+                 "client_order_id": "ORG-xyz"}))
+ok(d.msg_type == MsgType.OPEN_LIMIT_REQ and d.payload["trade_side"] == "SELL"
+   and d.payload["volume"] == 100 and d.payload["stop_loss"] == 4187.0,
+   "LIMIT-open roundtrip via the ACCEPTED mapper (side/volume/stop preserved)")
+
+d = rt(Envelope(MsgType.CANCEL_PENDING_REQ, "m", {"account_id": 1_000_001, "order_id": 12345}))
+ok(d.msg_type == MsgType.CANCEL_PENDING_REQ and d.payload["order_id"] == 12345, "cancel-pending roundtrip")
+d = rt(Envelope(MsgType.CLOSE_REDUCE_REQ, "m",
+                {"account_id": 1_000_001, "position_id": 777, "volume": 50}))
+ok(d.msg_type == MsgType.CLOSE_REDUCE_REQ and d.payload["position_id"] == 777 and d.payload["volume"] == 50,
+   "close-reduce roundtrip via the ACCEPTED mapper")
+d = rt(Envelope(MsgType.AMEND_STOP_REQ, "m", {"account_id": 1_000_001, "order_id": 888, "stop_loss": 4190.0}))
+ok(d.msg_type == MsgType.AMEND_STOP_REQ and d.payload["stop_loss"] == 4190.0, "allowed stop-mod roundtrip")
+
+d = rt(Envelope(MsgType.ORDER_ACK, "ma", {"order_id": 111, "client_order_id": "ORG-c", "stop_loss": 4187.0}))
+ok(d.msg_type == MsgType.ORDER_ACK and d.payload["order_id"] == 111 and d.payload["stop_accepted"] is True,
+   "ORDER_ACK (ExecutionEvent ORDER_ACCEPTED) roundtrip")
+d = rt(Envelope(MsgType.ORDER_FILL, "mf", {"order_id": 111, "filled_volume": 100, "position_id": 222}))
+ok(d.msg_type == MsgType.ORDER_FILL and d.payload["filled_volume"] == 100 and d.payload["position_id"] == 222,
+   "ORDER_FILL (ExecutionEvent ORDER_FILLED) roundtrip")
+d = rt(Envelope(MsgType.ORDER_REJECT, "mr", {"why": "no funds", "order_id": 111}))
+ok(d.msg_type == MsgType.ORDER_REJECT and "no funds" in d.payload["why"], "ORDER_REJECT (OrderErrorEvent) roundtrip")
+d = rt(Envelope(MsgType.ERROR_RES, "me", {"why": "maintenance", "errorCode": "E1"}))
+ok(d.msg_type == MsgType.ERROR_RES and "maintenance" in d.payload["why"], "ERROR_RES roundtrip")
+# a non-order execution event -> EXECUTION_EVENT with a subtype (transport treats unknown subtype fail-closed)
+d = rt(Envelope(MsgType.EXECUTION_EVENT, "mx", {"subtype": "SWAP"}))
+ok(d.msg_type == MsgType.EXECUTION_EVENT and d.payload["subtype"] == "SWAP", "generic ExecutionEvent roundtrip")
+
+# ---- framing over real protobuf bytes: fragmented + combined ----------------------------------
+b1 = framing.frame(C.encode(Envelope(MsgType.HEARTBEAT, "h", {})))
+b2 = framing.frame(C.encode(Envelope(MsgType.APP_AUTH_RES, "a", {})))
+ok([C.decode(p).msg_type for p in framing.Deframer().feed(b1 + b2)] == [MsgType.HEARTBEAT, MsgType.APP_AUTH_RES],
+   "combined framing over real protobuf -> both messages")
+dfr = framing.Deframer(); collected = []
+for byte in b1:
+    collected += dfr.feed(bytes([byte]))
+ok(len(collected) == 1 and C.decode(collected[0]).msg_type == MsgType.HEARTBEAT,
+   "fragmented framing over real protobuf -> reassembled")
+
+# ---- clientMsgId preservation + correlation ---------------------------------------------------
+cmid = st.CorrelationRegistry.client_msg_id(("open", "ORG-xyz"))
+ok(C.decode(C.encode(Envelope(MsgType.OPEN_LIMIT_REQ, cmid,
+   {"account_id": 1_000_001, "symbol_id": 42, "trade_side": "BUY", "volume": 100, "limit_price": 1.0,
+    "stop_loss": 0.5, "expiration_timestamp": 1, "client_order_id": "c"}))).client_msg_id == cmid,
+   "clientMsgId preserved end-to-end (correlation intact)")
+
+# ---- fail-closed: malformed / payloadType mismatch / unknown payload --------------------------
+try:
+    C.decode(b"\x08\x80\x80")                              # truncated varint -> not a ProtoMessage
+    ok(False, "malformed must fail closed")
+except FramingError:
+    ok(True, "malformed ProtoMessage -> FramingError (fail-closed)")
+
+pb = proto_codec._load()
+bad_inner = pb["ErrorRes"](errorCode="X", description="Y"); bad_inner.payloadType = pb["PT"].PROTO_OA_ERROR_RES
+wrap = pb["ProtoMessage"](payloadType=pb["PT"].PROTO_OA_APPLICATION_AUTH_RES)  # envelope says AUTH_RES
+wrap.payload = bad_inner.SerializeToString()                                   # payload is ERROR_RES
+try:
+    C.decode(wrap.SerializeToString())
+    ok(False, "payloadType mismatch must fail closed")
+except FramingError:
+    ok(True, "payloadType mismatch (envelope vs payload) -> FramingError (fail-closed)")
+
+unk = pb["ProtoMessage"](payloadType=9999, clientMsgId="u")
+env_unknown = C.decode(unk.SerializeToString())
+ok(env_unknown.msg_type.startswith("UNKNOWN_PAYLOAD") and env_unknown.msg_type not in framing.KNOWN_INBOUND,
+   "unmapped payloadType -> UNKNOWN_PAYLOAD envelope (not KNOWN_INBOUND -> transport fail-closes)")
+
+# ---- lifecycle over the REAL codec + fake wire (no socket to cTrader) --------------------------
+broker = fake_wire.FakeBroker()
+conn = fake_wire.FakeConnector(broker, codec=C)              # connector uses the SAME real codec
+t = T.ConnectedTransport(connector=conn, codec=C,
+                         credential_provider=cred.FakeCredentialProvider(ctid=1_000_001),
+                         policy=T.test_only_policy())
+ok(t.bring_up() == st.AuthState.READY,
+   "REAL codec drives the full state machine to READY (app-auth->list->validate->acct-auth->reconcile)")
+ok(MsgType.ACCOUNT_LIST_REQ in broker.seen and MsgType.ACCOUNT_AUTH_REQ in broker.seen,
+   "account-list AND account-auth exchanged as real ProtoMessages over the fake wire")
+
+egress_guard.uninstall_test_egress_guard()
+
+if __name__ == "__main__":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    print(f"PASS {PASS} proto-codec checks")
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: tests_tls_channel.py           (Item 2, 17 checks)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\tests_tls_channel.py
+>>> BYTES: 13147  LINES: 273
+----------------------------------------------------------------------------------------------------
+"""Item-2 tests: the TLS channel, LOOPBACK ONLY. Every handshake in this file happens on
+127.0.0.1 against a throwaway local CA minted in-memory by `cryptography`. The process-wide egress
+guard is installed FIRST, and a DNS recorder proves no non-loopback name was ever even queried.
+No real connection, no OAuth, no external DNS. Production policy (fixed demo.ctraderapi.com:5035,
+required cert + hostname validation, no insecure mode, no override) is asserted structurally.
+
+Run:  .venv-ctrader/Scripts/python.exe -m demo_lane.connected_transport.tests_tls_channel
+"""
+import datetime
+import inspect
+import io
+import os
+import socket
+import ssl
+import sys
+import tempfile
+import threading
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+FAROUK_PILOT = os.path.dirname(os.path.dirname(HERE))
+if FAROUK_PILOT not in sys.path:
+    sys.path.insert(0, FAROUK_PILOT)
+
+from demo_lane.connected_transport import egress_guard          # noqa: E402
+egress_guard.install_test_egress_guard()                        # FIRST: nothing leaves the machine
+
+# DNS recorder ON TOP of the guard: every host ever passed to getaddrinfo is recorded, so we can
+# prove at the end that no non-loopback lookup was even attempted during the TLS tests.
+_DNS_SEEN = []
+_GUARDED_GAI = socket.getaddrinfo
+
+
+def _recording_gai(host, *a, **kw):
+    _DNS_SEEN.append(host)
+    return _GUARDED_GAI(host, *a, **kw)
+
+
+socket.getaddrinfo = _recording_gai
+
+from demo_lane.connected_transport import (                     # noqa: E402
+    credentials as cred, fake_wire, framing, proto_codec, state as st,
+    tls_channel as tls, transport as T, transport_config as tc)
+
+PASS = 0
+
+
+def ok(cond, name):
+    global PASS
+    assert cond, f"FAIL: {name}"
+    PASS += 1
+
+
+# ================================================================================================
+# LOCAL THROWAWAY PKI (cryptography) — a CA + leaf certs with chosen SAN / validity
+# ================================================================================================
+from cryptography import x509                                   # noqa: E402
+from cryptography.hazmat.primitives import hashes, serialization  # noqa: E402
+from cryptography.hazmat.primitives.asymmetric import rsa       # noqa: E402
+from cryptography.x509.oid import NameOID                       # noqa: E402
+
+_NOW = datetime.datetime.now(datetime.timezone.utc)
+
+
+def _key():
+    return rsa.generate_private_key(public_exponent=65537, key_size=2048)
+
+
+def _name(cn):
+    return x509.Name([x509.NameAttribute(NameOID.COMMON_NAME, cn)])
+
+
+_KU_CA = x509.KeyUsage(digital_signature=False, content_commitment=False, key_encipherment=False,
+                       data_encipherment=False, key_agreement=False, key_cert_sign=True,
+                       crl_sign=True, encipher_only=False, decipher_only=False)
+_KU_LEAF = x509.KeyUsage(digital_signature=True, content_commitment=False, key_encipherment=True,
+                         data_encipherment=False, key_agreement=False, key_cert_sign=False,
+                         crl_sign=False, encipher_only=False, decipher_only=False)
+
+
+def make_ca():
+    """A throwaway CA carrying the SKI/AKI/keyUsage extensions Python 3.13+'s STRICT verification
+    requires."""
+    key = _key()
+    ski = x509.SubjectKeyIdentifier.from_public_key(key.public_key())
+    cert = (x509.CertificateBuilder()
+            .subject_name(_name("ORANGE-TEST-CA")).issuer_name(_name("ORANGE-TEST-CA"))
+            .public_key(key.public_key()).serial_number(x509.random_serial_number())
+            .not_valid_before(_NOW - datetime.timedelta(days=1))
+            .not_valid_after(_NOW + datetime.timedelta(days=1))
+            .add_extension(x509.BasicConstraints(ca=True, path_length=None), critical=True)
+            .add_extension(_KU_CA, critical=True)
+            .add_extension(ski, critical=False)
+            .sign(key, hashes.SHA256()))
+    return key, cert
+
+
+def issue_leaf(ca_key, ca_cert, san_dns, *, expired=False, self_signed=False):
+    key = _key()
+    nvb = _NOW - datetime.timedelta(days=2 if expired else 1)
+    nva = _NOW + (datetime.timedelta(days=-1) if expired else datetime.timedelta(days=1))
+    signer_key = key if self_signed else ca_key
+    issuer = _name(san_dns) if self_signed else ca_cert.subject
+    aki_source = key.public_key() if self_signed else ca_key.public_key()
+    cert = (x509.CertificateBuilder()
+            .subject_name(_name(san_dns)).issuer_name(issuer)
+            .public_key(key.public_key()).serial_number(x509.random_serial_number())
+            .not_valid_before(nvb).not_valid_after(nva)
+            .add_extension(x509.SubjectAlternativeName([x509.DNSName(san_dns)]), critical=False)
+            .add_extension(x509.BasicConstraints(ca=False, path_length=None), critical=True)
+            .add_extension(_KU_LEAF, critical=True)
+            .add_extension(x509.ExtendedKeyUsage([x509.oid.ExtendedKeyUsageOID.SERVER_AUTH]),
+                           critical=False)
+            .add_extension(x509.SubjectKeyIdentifier.from_public_key(key.public_key()),
+                           critical=False)
+            .add_extension(x509.AuthorityKeyIdentifier.from_issuer_public_key(aki_source),
+                           critical=False)
+            .sign(signer_key, hashes.SHA256()))
+    return key, cert
+
+
+def server_context(key, cert):
+    """A server-side context from an in-memory key+cert (written to temp files for load_cert_chain)."""
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+    with tempfile.NamedTemporaryFile("wb", suffix=".pem", delete=False) as f:
+        f.write(cert.public_bytes(serialization.Encoding.PEM))
+        f.write(key.private_bytes(serialization.Encoding.PEM,
+                                  serialization.PrivateFormat.TraditionalOpenSSL,
+                                  serialization.NoEncryption()))
+        path = f.name
+    try:
+        ctx.load_cert_chain(path)
+    finally:
+        os.unlink(path)
+    return ctx
+
+
+def ca_pem(ca_cert):
+    return ca_cert.public_bytes(serialization.Encoding.PEM).decode("ascii")
+
+
+CA_KEY, CA_CERT = make_ca()
+
+# ================================================================================================
+# 1. PRODUCTION POLICY — fixed endpoint, required validation, no insecure mode, no override
+# ================================================================================================
+ctx = tls.build_client_context()
+ok(ctx.check_hostname is True and ctx.verify_mode == ssl.CERT_REQUIRED,
+   "client context: certificate AND hostname validation REQUIRED")
+ok(ctx.minimum_version >= ssl.TLSVersion.TLSv1_2, "client context: minimum TLS 1.2")
+ok(tls.TLS_SERVER_HOSTNAME == "demo.ctraderapi.com" == tc.DEMO_HOST and tc.DEMO_PORT == 5035,
+   "fixed identity + endpoint: demo.ctraderapi.com:5035 (single source)")
+ok(list(inspect.signature(tls.build_client_context).parameters) == ["test_extra_ca_pem"],
+   "no insecure mode: the only context parameter ADDS trust; none can relax validation")
+ok(list(inspect.signature(tls.TLSProductionConnector.__init__).parameters) == ["self"],
+   "no override: production connector takes NO host/port/flag arguments")
+_src = open(tls.__file__.replace(".pyc", ".py"), encoding="utf-8").read()
+ok("os.environ" not in _src and "sys.argv" not in _src and "getenv" not in _src
+   and "LIVE_HOST" not in _src,
+   "no CLI/env override and no live endpoint nameable in tls_channel source")
+try:
+    tls.TLSProductionConnector().connect()
+    ok(False, "production TLS connect must refuse while gates False")
+except egress_guard.EgressRefused:
+    ok(True, "production TLS connector refuses (gates False) BEFORE any socket exists")
+ok(tls.TLSLoopbackConnector.LOOPBACK_HOST == "127.0.0.1"
+   and tls.TLSLoopbackConnector(1).host == "127.0.0.1",
+   "loopback connector: destination hard-coded to 127.0.0.1 (only the port varies)")
+
+# ================================================================================================
+# 2. VALID LOCAL CERT (CA-signed, SAN = demo.ctraderapi.com) -> full lifecycle over TLS + real codec
+# ================================================================================================
+CODEC = proto_codec.ProtoCodec()
+good_key, good_cert = issue_leaf(CA_KEY, CA_CERT, "demo.ctraderapi.com")
+broker = fake_wire.FakeBroker(fill_on_open=True)
+srv = fake_wire.LoopbackServer(broker, ssl_context=server_context(good_key, good_cert), codec=CODEC)
+try:
+    conn = tls.TLSLoopbackConnector(srv.port, test_extra_ca_pem=ca_pem(CA_CERT))
+    t = T.ConnectedTransport(connector=conn, codec=CODEC,
+                             credential_provider=cred.FakeCredentialProvider(ctid=1_000_001),
+                             policy=T.test_only_policy())
+    ok(t.bring_up() == st.AuthState.READY,
+       "valid local cert: TLS handshake + hostname check pass -> full auth sequence -> READY")
+    ok(conn._sock is not None and conn._sock.version() in ("TLSv1.2", "TLSv1.3"),
+       "the loopback session is really TLS (negotiated TLS 1.2+)")
+    t._send_heartbeat()
+    deadline = __import__("time").monotonic() + 2.0        # server thread handles asynchronously
+    while framing.MsgType.HEARTBEAT not in broker.seen and __import__("time").monotonic() < deadline:
+        __import__("time").sleep(0.02)
+    ok(framing.MsgType.HEARTBEAT in broker.seen,
+       "heartbeat travels the TLS channel as a real ProtoMessage")
+    t.close()
+finally:
+    srv.stop()
+
+
+def _expect_handshake_failure(label, key, cert_, *, trust_ca=True, expect=ssl.SSLError):
+    s = fake_wire.LoopbackServer(fake_wire.FakeBroker(),
+                                 ssl_context=server_context(key, cert_), codec=CODEC)
+    try:
+        c = tls.TLSLoopbackConnector(s.port, test_extra_ca_pem=ca_pem(CA_CERT) if trust_ca else None)
+        try:
+            c.connect()
+            c.close()
+            ok(False, f"{label}: handshake must FAIL")
+        except expect:
+            ok(True, label)
+    finally:
+        s.stop()
+
+
+# ================================================================================================
+# 3-5. UNTRUSTED / HOSTNAME MISMATCH / EXPIRED -> certificate verification fails
+# ================================================================================================
+uk, uc = issue_leaf(None, None, "demo.ctraderapi.com", self_signed=True)
+_expect_handshake_failure("untrusted (self-signed) cert -> verification FAILS",
+                          uk, uc, expect=ssl.SSLCertVerificationError)
+mk, mc = issue_leaf(CA_KEY, CA_CERT, "wrong-host.invalid")
+_expect_handshake_failure("hostname mismatch (SAN != demo.ctraderapi.com) -> verification FAILS",
+                          mk, mc, expect=ssl.SSLCertVerificationError)
+ek, ec = issue_leaf(CA_KEY, CA_CERT, "demo.ctraderapi.com", expired=True)
+_expect_handshake_failure("expired cert -> verification FAILS (harness supports expiry)",
+                          ek, ec, expect=ssl.SSLCertVerificationError)
+
+# ================================================================================================
+# 6. PLAINTEXT / NON-TLS SERVER -> the TLS client refuses
+# ================================================================================================
+_plain = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+_plain.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+_plain.bind(("127.0.0.1", 0)); _plain.listen(1)
+_plain_port = _plain.getsockname()[1]
+
+
+def _plain_serve():
+    try:
+        conn2, _ = _plain.accept()
+        conn2.sendall(b"HELLO I AM NOT TLS\r\n")               # plaintext where ServerHello belongs
+        conn2.settimeout(5.0)
+        try:
+            conn2.recv(4096)                                   # hold the socket open so the client
+        except OSError:                                        # parses the non-TLS bytes (Windows
+            pass                                               # would otherwise abort the connection)
+        conn2.close()
+    except OSError:
+        pass
+
+
+threading.Thread(target=_plain_serve, daemon=True).start()
+try:
+    c = tls.TLSLoopbackConnector(_plain_port, test_extra_ca_pem=ca_pem(CA_CERT))
+    c.connect()
+    ok(False, "plaintext server must be refused")
+except ssl.SSLError:
+    ok(True, "plaintext / non-TLS endpoint -> handshake refused (SSLError)")
+finally:
+    _plain.close()
+
+# ================================================================================================
+# 7. ZERO EXTERNAL DNS / SOCKET — recorder + guard
+# ================================================================================================
+ok(_DNS_SEEN and all(egress_guard.is_loopback(h) for h in _DNS_SEEN),
+   f"every name resolution in this suite was loopback ({len(_DNS_SEEN)} lookups recorded)")
+try:
+    socket.getaddrinfo("demo.ctraderapi.com", 5035)
+    ok(False, "external DNS must be blocked")
+except egress_guard.EgressRefused:
+    ok(True, "external DNS (demo.ctraderapi.com) is blocked for the whole suite")
+
+socket.getaddrinfo = _GUARDED_GAI
+egress_guard.uninstall_test_egress_guard()
+
+if __name__ == "__main__":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    print(f"PASS {PASS} tls-channel checks")
+
+----------------------------------------------------------------------------------------------------
+>>> FILE: tests_connected_transport.py   (Items 3+4: auth-sequence, account-list guard, retention; 71 checks)
+>>> PATH: C:\Users\Marty\signal-terminal\research\farouk_pilot\demo_lane\connected_transport\tests_connected_transport.py
+>>> BYTES: 24840  LINES: 498
+----------------------------------------------------------------------------------------------------
+"""OFFLINE test suite for connected_transport. The FIRST thing it does is install the process-wide
+external-egress guard, so NOTHING in this suite can reach a non-loopback host (DNS included). All
+'broker' interaction is the in-memory FakeBroker or a real 127.0.0.1 loopback server. No OAuth, no
+real credential, no real endpoint, no order to any real venue.
+
+Run:  python -m demo_lane.connected_transport.tests_connected_transport
+"""
+import ast
+import io
+import os
+import socket
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+DEMO_LANE = os.path.dirname(HERE)
+FAROUK_PILOT = os.path.dirname(DEMO_LANE)
+if FAROUK_PILOT not in sys.path:
+    sys.path.insert(0, FAROUK_PILOT)
+
+from demo_lane.connected_transport import egress_guard          # noqa: E402
+# ---- install the egress booby-trap BEFORE anything else can touch a socket ----
+egress_guard.install_test_egress_guard()
+
+from demo_lane.connected_transport import (                     # noqa: E402
+    credentials as cred, fake_wire, framing, state as st, transport as T, transport_config as tc)
+from demo_lane.connected_transport.framing import Envelope, MsgType   # noqa: E402
+from demo_lane.broker_request import BrokerOrderRequest         # noqa: E402
+
+PASS = 0
+
+
+def ok(cond, name):
+    global PASS
+    assert cond, f"FAIL: {name}"
+    PASS += 1
+
+
+class FakeClock:
+    def __init__(self, t=1000.0):
+        self.t = float(t)
+
+    def __call__(self):
+        return self.t
+
+    def advance(self, dt):
+        self.t += dt
+
+
+class StaticRecvConnector:
+    """Returns pre-baked byte chunks from recv (for controlled framing/await tests)."""
+    IS_MOCK = True
+
+    def __init__(self, chunks):
+        self._chunks = list(chunks)
+        self.host, self.port = "in-memory", 0
+
+    def connect(self):
+        pass
+
+    def send(self, b):
+        pass
+
+    def recv(self, timeout=None):
+        return self._chunks.pop(0) if self._chunks else None
+
+    def close(self):
+        pass
+
+
+CODEC = framing.FakeCodec()
+FAKE_CREDS = cred.FakeCredentialProvider(ctid=1_000_001)
+SPEC = BrokerOrderRequest(ctid_trader_account_id=1_000_001, symbol_id=42, trade_side="SELL",
+                          volume=100, limit_price=4161.0, stop_loss=4187.0,
+                          expiration_timestamp=99_999_999)
+
+
+def fresh(**broker_kw):
+    """A test-armed transport wired to a FakeConnector+FakeBroker."""
+    broker = fake_wire.FakeBroker(**broker_kw)
+    conn = fake_wire.FakeConnector(broker)
+    t = T.ConnectedTransport(connector=conn, codec=CODEC, credential_provider=FAKE_CREDS,
+                             policy=T.test_only_policy(), clock=FakeClock())
+    return t, conn, broker
+
+
+# ================================================================================================
+# 1. FRAMING — roundtrip, combined, fragmented, oversized (fail-closed)
+# ================================================================================================
+p1 = b"hello"; p2 = b"world!!"
+ok(framing.Deframer().feed(framing.frame(p1)) == [p1], "frame/deframe single roundtrip")
+ok(framing.Deframer().feed(framing.frame(p1) + framing.frame(p2)) == [p1, p2],
+   "combined: two frames in one read -> two payloads")
+df = framing.Deframer(); got = []
+for byte in framing.frame(p1):
+    got += df.feed(bytes([byte]))
+ok(got == [p1], "fragmented: byte-by-byte feed yields the whole frame once complete")
+try:
+    framing.Deframer().feed(b"\xff\xff\xff\xff" + b"x")     # declares ~4GiB
+    ok(False, "oversized length must fail closed")
+except framing.FramingError:
+    ok(True, "oversized declared frame length -> FramingError (fail-closed)")
+
+# ================================================================================================
+# 2. EXTERNAL-EGRESS GUARD — non-loopback connect + DNS refused; fixed-destination allow-rule
+# ================================================================================================
+try:
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM); s.settimeout(0.2)
+    s.connect(("8.8.8.8", 53)); s.close()
+    ok(False, "non-loopback connect must be blocked")
+except egress_guard.EgressRefused:
+    ok(True, "ZERO EGRESS: connect to a public IP is blocked by the guard")
+try:
+    socket.getaddrinfo("demo.ctraderapi.com", 5035)
+    ok(False, "resolving the demo host must be blocked")
+except egress_guard.EgressRefused:
+    ok(True, "ZERO EGRESS: DNS resolution of demo.ctraderapi.com is blocked")
+try:
+    egress_guard.assert_endpoint_allowed("evil.example.com", 5035, gates_armed=True)
+    ok(False, "non-demo endpoint must be refused")
+except egress_guard.EgressRefused:
+    ok(True, "fixed destination: only demo.ctraderapi.com:5035 is dialable (no override)")
+try:
+    egress_guard.assert_endpoint_allowed(tc.DEMO_HOST, tc.DEMO_PORT, gates_armed=False)
+    ok(False, "even the demo endpoint must be refused while gates False")
+except egress_guard.EgressRefused:
+    ok(True, "fixed destination + gates False -> refused (NOT_ARMED)")
+
+# ================================================================================================
+# 3. CREDENTIALS — provider redaction / sanitised logging
+# ================================================================================================
+ok("FAKE_CLIENT_SECRET" not in repr(FAKE_CREDS) and "REDACTED" in repr(FAKE_CREDS),
+   "credential provider repr never renders the secret")
+san = cred.sanitise({"client_secret": "SEKRET", "access_token": "TOK", "order_id": "O1"})
+ok("SEKRET" not in str(san) and "TOK" not in str(san) and san["order_id"] == "O1",
+   "sanitise() redacts secret-like keys, preserves the rest")
+ok("plain" not in cred.redact_secret("plain"), "redact_secret never returns plaintext")
+
+# ================================================================================================
+# 4. GATES / ARMING — production NOT_ARMED; test policy binds to mock only
+# ================================================================================================
+ok(tc.gates_all_false() and tc.production_armed() is False,
+   "authoritative gates all False; production_armed() False")
+prod = T.build_production_transport()
+try:
+    prod.open()
+    ok(False, "production open must refuse while gates False")
+except T.NotArmed:
+    ok(True, "send-refused-gates-false: production transport open() -> NotArmed")
+try:
+    T.ProductionConnector().connect()
+    ok(False, "production connector must refuse")
+except (T.NotArmed, egress_guard.EgressRefused):
+    ok(True, "ProductionConnector.connect() -> refused (fixed endpoint, gates False)")
+
+
+class _NonMock:
+    def connect(self): pass
+    def send(self, b): pass
+    def recv(self, t=None): return None
+    def close(self): pass
+
+
+try:
+    tt = T.ConnectedTransport(connector=_NonMock(), codec=CODEC, credential_provider=FAKE_CREDS,
+                              policy=T.test_only_policy())
+    tt.open()
+    ok(False, "test policy must refuse a non-mock connector")
+except T.NotArmed:
+    ok(True, "test-enable binds to fake/loopback only (non-mock connector -> NotArmed)")
+
+# ================================================================================================
+# 5. LIFECYCLE + AUTH-STATE ORDERING + RECONCILE-ONLY
+# ================================================================================================
+t, conn, broker = fresh(owned_orders={"O9": {"order_id": "O9"}},
+                        owned_positions={"P9": {"volume": 100, "owner": "ORANGE"}})
+ok(t.bring_up() == st.AuthState.READY, "bring_up: connect->auth->reconcile->READY")
+ok(t.known_orders() == {"O9": {"order_id": "O9"}} and "P9" in t.known_positions(),
+   "reconcile populated the owned order/position snapshot")
+
+# auth ordering: account-auth before app-auth is rejected by the state machine
+cs = st.ConnectionState(); cs.on_connected()
+try:
+    cs.on_account_authed(); ok(False, "account auth before app auth must fail")
+except st.StateError:
+    ok(True, "auth-state ordering: ACCOUNT_AUTHED before APP_AUTHED -> StateError")
+
+# send-refused-before-auth: connected only, action refused
+t2, _, _ = fresh()
+t2.open()
+try:
+    t2.send_open(SPEC); ok(False, "action before auth must be refused")
+except st.StateError:
+    ok(True, "send-refused-before-auth: send_open in CONNECTED -> StateError")
+
+# reconcile-only: authed but not reconciled -> action refused; after reconcile -> allowed
+t3, _, _ = fresh()
+t3.open(); t3.authenticate()
+ok(t3.cstate.state == st.AuthState.ACCOUNT_AUTHENTICATED and not t3.cstate.reconciled,
+   "after auth, state is ACCOUNT_AUTHENTICATED and NOT reconciled (RECONCILE_ONLY window)")
+try:
+    t3.send_open(SPEC); ok(False, "action before reconcile must be refused")
+except st.StateError:
+    ok(True, "reconcile-only: send_open before reconcile -> StateError")
+t3.reconcile()
+ok(t3.cstate.state == st.AuthState.READY, "after reconcile -> READY (actions now permitted)")
+
+# ================================================================================================
+# 6. ACTIONS — open happy / rejection / correlation / duplicate-send
+# ================================================================================================
+t4, c4, b4 = fresh(fill_on_open=True)
+t4.bring_up()
+facts = t4.send_open(SPEC)
+ok(facts and facts.get("order_id") and facts.get("stop_accepted") is True,
+   "send_open happy -> broker facts returned (order_id + stop attached)")
+ok(MsgType.OPEN_LIMIT_REQ in b4.seen, "the OPEN request reached the broker")
+
+t5, _, _ = fresh(reject_open=True); t5.bring_up()
+rej = t5.send_open(SPEC)
+ok(rej and rej.get("status") == "REJECTED", "broker rejection surfaced as REJECTED (facts returned)")
+
+k1 = ("open", "X"); k2 = ("open", "Y")
+ok(st.CorrelationRegistry.client_msg_id(k1) == st.CorrelationRegistry.client_msg_id(k1)
+   and st.CorrelationRegistry.client_msg_id(k1) != st.CorrelationRegistry.client_msg_id(k2),
+   "correlation: deterministic + distinct per key")
+
+t6, _, _ = fresh(fill_on_open=True); t6.bring_up(); t6.send_open(SPEC)
+try:
+    t6.send_open(SPEC); ok(False, "identical in-session resend must be refused")
+except st.StateError:
+    ok(True, "duplicate-send prevention: identical open (same correlation) -> refused (no blind resend)")
+
+# raw/generic send is impossible: _request refuses a non-permitted family
+t6b, _, _ = fresh(); t6b.bring_up()
+try:
+    t6b._request("GENERIC_RAW_SEND", {}, key=("raw", 1)); ok(False, "raw send must be refused")
+except st.StateError:
+    ok(True, "no generic console/raw send: a non-permitted family is refused")
+
+# ================================================================================================
+# 7. LOSS — before send (clean SEND_FAILED, retry allowed) / after send (OUTCOME_UNKNOWN, no resend)
+# ================================================================================================
+t7, c7, b7 = fresh(fill_on_open=True); t7.bring_up()
+c7.lose_send = True
+before7 = c7.sent_frames
+r = t7.send_open(SPEC)
+ok(r is None and any(a["kind"] == "SEND_FAILED" for a in t7.alarms),
+   "loss-before-send: definitive non-delivery -> None + SEND_FAILED alarm")
+ok(c7.sent_frames == before7, "loss-before-send: no NEW bytes counted as sent")
+c7.lose_send = False
+r2 = t7.send_open(SPEC)                                   # same key allowed again (was forgotten)
+ok(r2 and r2.get("order_id"), "loss-before-send: correlation released -> deliberate re-issue succeeds")
+
+t8, c8, b8 = fresh(fill_on_open=True, ); t8.bring_up()
+c8.lose_after_send = True
+before = c8.sent_frames
+r3 = t8.send_open(SPEC)
+ok(r3 is None and any(a["kind"] == "OUTCOME_UNKNOWN" for a in t8.alarms),
+   "loss-after-send: lost ack -> None + OUTCOME_UNKNOWN alarm")
+ok(c8.sent_frames == before + 1, "loss-after-send: exactly ONE send, NO auto-resend")
+cmid = st.CorrelationRegistry.client_msg_id(
+    ("open", __import__("demo_lane.protobuf_mapper", fromlist=["x"]).deterministic_client_order_id(
+        {"side": SPEC.trade_side, "symbol": SPEC.symbol_id, "limit": SPEC.limit_price,
+         "stop": SPEC.stop_loss, "expiry": SPEC.expiration_timestamp, "session": t8._session_seq})))
+ok(t8.corr.status(cmid) == st.Correlation.OUTCOME_UNKNOWN,
+   "loss-after-send: correlation recorded OUTCOME_UNKNOWN (not resolved)")
+try:
+    t8.send_open(SPEC); ok(False, "resend of an OUTCOME_UNKNOWN request must be refused")
+except st.StateError:
+    ok(True, "OUTCOME_UNKNOWN request is not silently re-sent (duplicate refused)")
+
+# ================================================================================================
+# 8. NO-TOUCH / CONTAINMENT
+# ================================================================================================
+t9, _, _ = fresh(); t9.bring_up()
+ok(t9.cancel_pending("O_UNKNOWN")["status"] == T.Result.NO_TOUCH,
+   "unknown order -> NO_TOUCH (no send)")
+ok(t9.close_reduce("P_UNKNOWN", 50)["status"] == T.Result.NO_TOUCH,
+   "unknown position -> NO_TOUCH")
+t10, _, _ = fresh(owned_positions={"PX": {"volume": 100, "owner": "SOMEONE_ELSE"}}); t10.bring_up()
+ok(t10.close_reduce("PX", 50)["status"] == T.Result.CONTAINED,
+   "known-owned MISMATCH -> ratified containment (no destructive action)")
+t11, _, b11 = fresh(owned_positions={"PY": {"volume": 100, "owner": "ORANGE"}}); t11.bring_up()
+ok(t11.close_reduce("PY", 50)["status"] == T.Result.OK and MsgType.CLOSE_REDUCE_REQ in b11.seen,
+   "owned position -> risk-reducing close sent")
+
+# ================================================================================================
+# 9. RECONNECT -> RECONCILE-before-action
+# ================================================================================================
+t12, c12, b12 = fresh(); t12.bring_up()
+t12.on_disconnect()
+ok(t12.cstate.state == st.AuthState.DISCONNECTED, "disconnect -> DISCONNECTED")
+try:
+    t12.send_open(SPEC); ok(False, "action while disconnected must be refused")
+except st.StateError:
+    ok(True, "reconnect: no action while disconnected")
+did = t12.reconnect(sleep=lambda s: None)
+ok(did and t12.cstate.state == st.AuthState.READY,
+   "reconnect: bounded backoff -> re-auth -> RECONCILE -> READY (reconcile before any action)")
+
+# ================================================================================================
+# 10. HEARTBEAT — send when idle / in-stream skip / staleness timeout
+# ================================================================================================
+clk = FakeClock()
+t13, c13, b13 = fresh(); t13.now = clk; t13.bring_up()
+t13.last_outbound_t = clk.t
+clk.advance(tc.HEARTBEAT_INTERVAL_S + 1)
+ok(t13.maybe_heartbeat() and MsgType.HEARTBEAT in b13.seen,
+   "heartbeat: sent when the link is idle past the interval")
+# in-stream heartbeat is skipped, the matching response is still found
+hb = framing.frame(CODEC.encode(Envelope(MsgType.HEARTBEAT, "HB-x", {})))
+ack = framing.frame(CODEC.encode(Envelope(MsgType.ORDER_ACK, "ORG-target", {"order_id": "OZ"})))
+t14 = T.ConnectedTransport(connector=StaticRecvConnector([hb + ack]), codec=CODEC,
+                           credential_provider=FAKE_CREDS, policy=T.test_only_policy())
+env = t14._await("ORG-target")
+ok(env is not None and env.msg_type == MsgType.ORDER_ACK,
+   "heartbeat recv: an inbound heartbeat in the stream is skipped; the real response still matches")
+clk2 = FakeClock(); t15, _, _ = fresh(); t15.now = clk2; t15.bring_up()
+t15.last_inbound_t = clk2.t; clk2.advance(tc.HEARTBEAT_TIMEOUT_S + 1)
+ok(t15.is_stale(), "heartbeat timeout: no inbound past the timeout -> link reported stale")
+
+# ================================================================================================
+# 11. UNKNOWN INBOUND EVENT -> fail-closed (no state change / no touch)
+# ================================================================================================
+t16, _, _ = fresh(fill_on_open=True, unknown_event=True); t16.bring_up()
+pos_before = t16.known_positions()
+t16.send_open(SPEC)
+ok(any(a["kind"] == "UNKNOWN_INBOUND_FAIL_CLOSED" for a in t16.alarms),
+   "unknown execution event -> fail-closed alarm")
+ok(t16.known_positions() == pos_before,
+   "unknown event mutated NO state / touched NO position")
+
+# alarms never contain a raw secret
+t16._alarm("PROBE", {"access_token": "TOPSECRET"})
+ok(all("TOPSECRET" not in str(a) for a in t16.alarms), "sanitised logging: no raw secret in any alarm")
+
+# ================================================================================================
+# 12. REAL 127.0.0.1 LOOPBACK — framing over an actual socket (egress guard permits loopback only)
+# ================================================================================================
+srv = fake_wire.LoopbackServer(fake_wire.FakeBroker(fill_on_open=True))
+try:
+    lconn = fake_wire.LoopbackConnector(srv.host, srv.port)
+    tl = T.ConnectedTransport(connector=lconn, codec=CODEC, credential_provider=FAKE_CREDS,
+                              policy=T.test_only_policy())
+    ok(tl.bring_up() == st.AuthState.READY, "loopback: full lifecycle to READY over a real socket")
+    lf = tl.send_open(SPEC)
+    ok(lf and lf.get("order_id"), "loopback: send_open over 127.0.0.1 returns broker facts")
+    tl.close()
+finally:
+    srv.stop()
+
+# ================================================================================================
+# 13. ISOLATION — executor import-closure has ZERO edge to transport/mapper/socket/twisted
+# ================================================================================================
+def _local_imports(modname):
+    path = os.path.join(DEMO_LANE, modname + ".py")
+    if not os.path.isfile(path):
+        return set()
+    tree = ast.parse(open(path, encoding="utf-8").read())
+    names = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ImportFrom):
+            if node.level and node.module is None:
+                for al in node.names:
+                    names.add(al.name)                        # from . import a, b
+            elif node.module:
+                names.add(node.module.split(".")[0])
+        elif isinstance(node, ast.Import):
+            for al in node.names:
+                names.add(al.name.split(".")[0])
+    return names
+
+
+seen_mod, all_names, work = set(), set(), ["executor"]
+LOCAL = {f[:-3] for f in os.listdir(DEMO_LANE) if f.endswith(".py")}
+while work:
+    m = work.pop()
+    if m in seen_mod:
+        continue
+    seen_mod.add(m)
+    for n in _local_imports(m):
+        all_names.add(n)
+        if n in LOCAL and n not in seen_mod:
+            work.append(n)
+ok("connected_transport" not in all_names and "connected_transport" not in seen_mod,
+   "isolation: executor import-closure has NO edge to connected_transport")
+ok("protobuf_mapper" not in all_names,
+   "isolation: executor import-closure never reaches protobuf_mapper")
+ok("socket" not in all_names and "twisted" not in all_names and "ctrader_open_api" not in all_names,
+   "isolation: executor import-closure imports no socket/twisted/ctrader_open_api")
+# and the intended edge DOES exist: the transport imports the approved mapper
+ok(getattr(T, "protobuf_mapper", None) is not None,
+   "transport MAY import the approved mapper (edge present, by design)")
+
+# ================================================================================================
+# 14. AUTH + ACCOUNT GUARD — exact state sequence + allowlist rejections + single send queue
+# ================================================================================================
+seq = st.ConnectionState()
+order = []
+seq.on_connected(); order.append(seq.state)
+seq.on_app_authed(); order.append(seq.state)
+seq.on_account_list(); order.append(seq.state)
+seq.on_account_validated(); order.append(seq.state)
+seq.on_account_authed(); order.append(seq.state)
+seq.on_reconcile_start(); order.append(seq.state)
+seq.on_reconciled(); order.append(seq.state)
+ok(order == [st.AuthState.CONNECTED, st.AuthState.APPLICATION_AUTHENTICATED,
+             st.AuthState.ACCOUNT_LIST_RECEIVED, st.AuthState.ACCOUNT_VALIDATED,
+             st.AuthState.ACCOUNT_AUTHENTICATED, st.AuthState.RECONCILE_ONLY, st.AuthState.READY],
+   "exact sequence: CONNECTED->APP_AUTH'D->ACCT_LIST->ACCT_VALIDATED->ACCT_AUTH'D->RECONCILE_ONLY->READY")
+
+# account-auth is NOT permitted before validation, only after
+g = st.ConnectionState(); g.on_connected(); g.on_app_authed(); g.on_account_list()
+ok(not g.can_send(framing.MsgType.ACCOUNT_AUTH_REQ), "account-auth REFUSED before ACCOUNT_VALIDATED")
+g.on_account_validated()
+ok(g.can_send(framing.MsgType.ACCOUNT_AUTH_REQ), "account-auth permitted ONLY after ACCOUNT_VALIDATED")
+
+# the account LIST request is actually sent, and BEFORE account-auth
+tL, cL, bL = fresh(); tL.bring_up()
+ok(MsgType.ACCOUNT_LIST_REQ in bL.seen
+   and bL.seen.index(MsgType.ACCOUNT_LIST_REQ) < bL.seen.index(MsgType.ACCOUNT_AUTH_REQ),
+   "account-list (GetAccountListByAccessToken) sent, and before account-auth")
+
+# allowlist REJECTIONS: each -> sanitised alarm + NotArmed + NO account-auth + NO reconcile +
+# NO trading request + not READY
+_ACTION_MSGS = {MsgType.OPEN_LIMIT_REQ, MsgType.CANCEL_PENDING_REQ, MsgType.CLOSE_REDUCE_REQ,
+                MsgType.AMEND_STOP_REQ}
+
+def _guard_rejects(label, **bkw):
+    tr, cr, br = fresh(**bkw)
+    tr.open()
+    try:
+        tr.authenticate(); ok(False, f"{label}: must reject")
+    except T.NotArmed:
+        ok(any(a["kind"] == "ACCOUNT_GUARD_REJECT" for a in tr.alarms)
+           and MsgType.ACCOUNT_AUTH_REQ not in br.seen
+           and MsgType.RECONCILE_REQ not in br.seen
+           and not (_ACTION_MSGS & set(br.seen))
+           and tr.cstate.state != st.AuthState.READY,
+           f"account guard: {label} -> alarm + NOT_ARMED; no account-auth, no reconcile, "
+           f"no trading request, not READY")
+
+_guard_rejects("missing (0 accounts)", account_list=[])
+_guard_rejects("additional (2 accounts)",
+               account_list=[{"ctidTraderAccountId": 1_000_001, "isLive": False},
+                             {"ctidTraderAccountId": 1_000_002, "isLive": False}])
+_guard_rejects("live account", account_list=[{"ctidTraderAccountId": 1_000_001, "isLive": True}])
+_guard_rejects("wrong id", account_list=[{"ctidTraderAccountId": 9_999_999, "isLive": False}])
+_guard_rejects("wrong scope (SCOPE_VIEW)", account_scope="SCOPE_VIEW")
+
+# WRONG BROKER — the transport composes broker_environment from the SINGLE-SOURCE config constant,
+# so a broker response cannot inject it. Prove (a) the single-source five-field conjunction rejects
+# a non-Pepperstone environment, and (b) a connection context reporting a wrong environment is
+# rejected end-to-end by the transport's guard path.
+from demo_lane import gate as demo_gate, config as demo_config      # noqa: E402
+_acc_good = {"endpoint": demo_config.DEMO_ENDPOINT, "isLive": False,
+             "ctidTraderAccountId": demo_config.ALLOWED_CTID_TRADER_ACCOUNT_ID,
+             "broker_environment": demo_config.EXPECTED_BROKER_ENVIRONMENT,
+             "permissionScope": demo_config.REQUIRED_SCOPE}
+ok(demo_gate.account_guard_ok(_acc_good) is True, "single-source guard passes the allowlisted account")
+ok(demo_gate.account_guard_ok({**_acc_good, "broker_environment": "OTHERBROKER_DEMO"}) is False,
+   "wrong broker environment -> single-source five-field guard REJECTS")
+
+_wrong_env = __import__("types").SimpleNamespace(
+    EXPECTED_BROKER_ENVIRONMENT="OTHERBROKER_DEMO",
+    ALLOWED_CTID_TRADER_ACCOUNT_ID=demo_config.ALLOWED_CTID_TRADER_ACCOUNT_ID)
+_saved_cfg = T.demo_config
+T.demo_config = _wrong_env                      # simulate a NON-Pepperstone connection context
+try:
+    twb, _, bwb = fresh()
+    twb.open()
+    try:
+        twb.authenticate(); ok(False, "wrong broker environment: must reject")
+    except T.NotArmed:
+        ok(any(a["kind"] == "ACCOUNT_GUARD_REJECT" for a in twb.alarms)
+           and MsgType.ACCOUNT_AUTH_REQ not in bwb.seen and MsgType.RECONCILE_REQ not in bwb.seen,
+           "account guard: wrong-broker context -> alarm + NOT_ARMED, no account-auth, no reconcile")
+finally:
+    T.demo_config = _saved_cfg
+
+# disconnect INVALIDATES account-validation
+td, _, _ = fresh(); td.bring_up()
+ok(td.cstate.account_validated, "validated flag set at READY")
+td.on_disconnect()
+ok(not td.cstate.account_validated and td.cstate.state == st.AuthState.DISCONNECTED,
+   "disconnect invalidates account-validation (full sequence required again)")
+
+# ONE serialised send queue: every outbound funnels through _write
+tw, _, _ = fresh(); tw.bring_up()
+ok(tw._writes == 4, "single send queue: bring_up funnelled exactly 4 writes (app,list,acct-auth,reconcile)")
+tw._send_heartbeat()
+ok(tw._writes == 5, "single send queue: heartbeat funnels through the SAME _write path")
+ok(tc.HEARTBEAT_INTERVAL_S <= 10, "heartbeat interval is at most 10s")
+
+egress_guard.uninstall_test_egress_guard()
+
+if __name__ == "__main__":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    print(f"PASS {PASS} connected-transport checks")
+
+====================================================================================================
+END OF REVIEW PACK
+====================================================================================================

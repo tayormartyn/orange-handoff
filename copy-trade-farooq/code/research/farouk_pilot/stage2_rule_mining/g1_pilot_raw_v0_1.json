@@ -1,0 +1,65 @@
+[
+ {
+  "label": "ORB-definition-1",
+  "window_s": [
+   3648,
+   3700
+  ],
+  "question": "ORB window: '50 minutes' vs 15 minutes (context: London 9:00-9:15)",
+  "medium_en": "And if you have the opening range breakout settings on the Calv1 indicator and what is the, if you are in Holland, it's the time zone GMT plus one. What is the opening range that you use for London and New York? The first 50 minutes. Yeah. And that's from 9 o'clock or? Yeah. So London opens 9 o'clock until 9.15. So I'm looking at the first 50 minutes of the breakout. Yeah. Okay. And New York is a half past three. Yeah. Yes. 15.30. Also the first 50 minutes. Yeah. Always like the first 50 minutes of the 50 minutes scandal. So the 50 minutes scandal, if you do this."
+ },
+ {
+  "label": "ORB-definition-2",
+  "window_s": [
+   5300,
+   5330
+  ],
+  "question": "'works really good on the 50 minutes' vs 15",
+  "medium_en": "I just do the opening. Okay, it's easy guys. Like, okay, it depends on which time zone you are. Like for me, people in Holland, like 15.30, that's the US Open. I do the first 15 minutes. Okay, the first 15 minutes break up. Why 15 minutes? Because the first 15 minutes, it already gives you, decides which direction it will go. A lot of people do 30 minutes, but for me it works really good on the 15 minutes. I noticed this on my level. So the first 15 minutes, it's definitely."
+ },
+ {
+  "label": "close-stack-sun",
+  "window_s": [
+   478,
+   510
+  ],
+  "question": "'50 minute candle close' in the 5m/15m/1h stack",
+  "medium_en": "all right so here london high asia high so we looked at asia high we had uh five five minute candle close 50 minute kind of close and an hour kind of close so um if you just break asia high there is uh still a 80 chance it will go higher um i'm gonna share the data as well so uh actually um yeah and i did also something with btc so we had a 50 minute candle close five minutes and an hourly candle close above asia high"
+ },
+ {
+  "label": "close-stack-fri",
+  "window_s": [
+   1470,
+   1500
+  ],
+  "question": "'50 minutes candle close' three-confirmation list",
+  "medium_en": "Yesterday, Asia high, Asia low. What do you see here? Five minutes candle close, 15 minutes candle close, an hourly candle close above Asia high. We are looking for five minutes. You have three confirmations that the market will go up from this zone. Okay. Will and mine took the trade from this level here."
+ },
+ {
+  "label": "choch-timeframe",
+  "window_s": [
+   685,
+   710
+  ],
+  "question": "CHoCH 'under three and one minutes' - which timeframes?",
+  "medium_en": "For the confirmation, so this one I always keep it off before I take a trade then I want to see like okay confirmation for to go up So the best confirmation for me guys is after we break Asia high and Asia low is the change of character under low time frame Especially under three and one minutes. All right, and you can see this here Easy chalk and then you do you give yes, we had a change of character under five minutes inside of this range So there's a high chance"
+ },
+ {
+  "label": "range-mgmt-pips",
+  "window_s": [
+   4165,
+   4185
+  ],
+  "question": "'50, 160, 60, 70 pips' digit garble",
+  "medium_en": "130, 100 pips or whatever, the downside and now the market is just a small range. So you need to understand when we are in a range market, you need to go out and in fast. 50, 160, 60, 70 pips immediately stop plus the entry, take even full profit. Kevin, this is actually..."
+ },
+ {
+  "label": "sizing-negation",
+  "window_s": [
+   7530,
+   7560
+  ],
+  "question": "'$1,000 account, do more than that' - is it 'do NO more'?",
+  "medium_en": "because it doesn't make sense if you make $50 on a trade that you already put so much effort in it alright but also you need to have the wallet for it so for example if you have let's say a 10k let's say to 15k to 20k account you can risk one lot size or more and if you have a little bit less just to 0.1 until you come to that level if you have a thousand dollar account do more than that alright guys thank you very much see you guys"
+ }
+]

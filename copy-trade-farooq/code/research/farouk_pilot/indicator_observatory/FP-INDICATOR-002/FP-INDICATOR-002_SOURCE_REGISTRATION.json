@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "FP-INDICATOR-002",
+  "title": "Part One — Session Range, Volume Candles, VWAP and Breakout/Breakdown Boxes",
+  "source_type": "EDUCATIONAL_VIDEO / INDICATOR_COMPANION",
+  "performance_status": "NOT_A_TRADE",
+  "gold_statistics_inclusion": "NO",
+  "rights_class": "PRIVATE_LOCAL_RESEARCH",
+  "rights_record_id": "RR-FP-IND-SERIES",
+  "source_asset": {
+    "asset_id": "sa-ee1b41d2b4661a2a",
+    "sha256": "ee1b41d2b4661a2a8ee64962201f0dcf7fae112df7e4c06a9a922f55483ed877",
+    "original_filename": "Schermopname_2025-12-14_om_16.45.20.mov",
+    "byte_size": 407638327
+  },
+  "canonical_mapping": {
+    "attested_time": "16.45.20",
+    "spoken_identity_check": "no explicit \"part one\"; opens \"let me explain the indicator first ... series of three/four/five videos\" -> unambiguously the intro/first",
+    "conflict": "NONE — spoken intro confirms attested mapping"
+  },
+  "duplicates_skipped": [
+    "(1).mov",
+    "(2).mov"
+  ]
+}

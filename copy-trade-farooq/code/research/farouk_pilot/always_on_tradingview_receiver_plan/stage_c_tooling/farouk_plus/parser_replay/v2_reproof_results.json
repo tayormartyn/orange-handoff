@@ -1,0 +1,1424 @@
+{
+ "byte_identity_fails": [],
+ "transitions": {
+  "NOT_FAROUK_GOLD->NOT_FAROUK_GOLD": 39371,
+  "MANAGEMENT->MANAGEMENT": 440,
+  "OTHER->OTHER": 1252,
+  "NEEDS_HUMAN_REVIEW->MANAGEMENT": 58,
+  "NEEDS_HUMAN_REVIEW->ENTRY": 60,
+  "MANAGEMENT->NEEDS_HUMAN_REVIEW": 50,
+  "NEEDS_HUMAN_REVIEW->NEEDS_HUMAN_REVIEW": 213,
+  "ENTRY->ENTRY": 27,
+  "MANAGEMENT->ENTRY": 112,
+  "OTHER->NEEDS_HUMAN_REVIEW": 4,
+  "EMPTY->EMPTY": 2324,
+  "OTHER->MANAGEMENT": 85
+ },
+ "entry_degrade": [],
+ "mgmt_to_entry": [
+  [
+   234,
+   "seascalperfarouk Posted in 🪙・gold-trades  `Whale` SL to entry was hit again. BUY  Last re-"
+  ],
+  [
+   33672,
+   "`Whale` short gold sl 3790"
+  ],
+  [
+   34101,
+   "`Whale` gold long"
+  ],
+  [
+   34391,
+   "`Whale` High risk"
+  ],
+  [
+   34453,
+   "`Whale` short gold sl 4025"
+  ],
+  [
+   34789,
+   "`Whale` risk less gold long sl 4188 small size please"
+  ],
+  [
+   34836,
+   "`Whale` gold long sl 4209"
+  ],
+  [
+   34897,
+   "`Whale` gold long sl 4320 smal size it’s Friday"
+  ],
+  [
+   34961,
+   "`Whale` Monday small size long gold sl 4240"
+  ],
+  [
+   35035,
+   "`Whale` short gold sl 4160"
+  ],
+  [
+   35075,
+   "`Whale` short gold sl 4120 lot 0.1"
+  ],
+  [
+   35086,
+   "`Whale` long gold SL: 4098"
+  ],
+  [
+   35293,
+   "`Whale` Gold short stop loss at 4037, take profit targets at 4020, 4017, 4015, 4010, and 4005"
+  ],
+  [
+   35347,
+   "`Whale` long gold sl 3855"
+  ],
+  [
+   35394,
+   "`Whale` short gold sl 4030 small size please"
+  ],
+  [
+   35479,
+   "`Whale` short gold sl 4040 small size it’s Monday"
+  ],
+  [
+   35589,
+   "`Whale` long gold sl 3939 risky trade"
+  ],
+  [
+   35661,
+   "`Whale` short gold sl 4016"
+  ],
+  [
+   35831,
+   "`Whale` Short gold, SL at 4119. Risky trade it’s Monday."
+  ],
+  [
+   35935,
+   "`Whale` gold long sl 4110 small size"
+  ],
+  [
+   35983,
+   "`Whale` gold long sl 4180"
+  ],
+  [
+   36011,
+   "`Whale` short gold sl 4200 small size"
+  ],
+  [
+   36024,
+   "`Whale` long gold sl 4150"
+  ],
+  [
+   36150,
+   "`Whale` gold long sl 4062"
+  ],
+  [
+   36185,
+   "`Whale` gold short sl 4035"
+  ],
+  [
+   36244,
+   "`Whale`"
+  ],
+  [
+   36342,
+   "`Whale` Long gold. SL: 4057. Use low lot size. TP: around 4120. (high risk trade)"
+  ],
+  [
+   36461,
+   "`Whale`GOLD Long – First TP: 30 pips sl 4046"
+  ],
+  [
+   36524,
+   "`Whale` GOLD Long – First TP: 30 pips sl 4107"
+  ],
+  [
+   36590,
+   "`Whale` GOLD Long – First TP: 30 pips sl 4150"
+  ],
+  [
+   36623,
+   "`Whale` GOLD Long – First TP: 30 pips sl 4137"
+  ],
+  [
+   36750,
+   "`Whale` GOLD Long First TP: 30 pips sl 4218"
+  ],
+  [
+   36815,
+   "`Whale` long gold"
+  ],
+  [
+   36937,
+   "`Whale` gold long sl 4184"
+  ],
+  [
+   37069,
+   "`Whale` Short gold SL 4232"
+  ],
+  [
+   37100,
+   "`Whale` gold long sl 4175"
+  ],
+  [
+   37534,
+   "`Whale` long gold sl 4390 (risky trade) small size"
+  ],
+  [
+   37556,
+   "`Whale` Gold long SL 4460"
+  ],
+  [
+   37577,
+   "`Whale` gold long sl 4463"
+  ],
+  [
+   37609,
+   "`Whale` Long gold sl 4495 (risky trade)"
+  ],
+  [
+   37709,
+   "`Whale` Gold short first TP: +30 pips"
+  ],
+  [
+   37751,
+   "`Whale` Gold long sl 4370 high risk"
+  ],
+  [
+   37814,
+   "`Whale` Gold long"
+  ],
+  [
+   37864,
+   "`Whale` risky trade gold long sl 4440"
+  ],
+  [
+   37901,
+   "`Whale` gold long sl 4440 (risky trade)"
+  ],
+  [
+   37913,
+   "`Whale` Gold short high risk play"
+  ],
+  [
+   37934,
+   "`Whale` Trade: Long Gold"
+  ],
+  [
+   38089,
+   "`Whale` Long gold"
+  ],
+  [
+   38144,
+   "`Whale` Short gold"
+  ],
+  [
+   38152,
+   "`Whale` gold long sl 4585"
+  ],
+  [
+   38166,
+   "`Whale` risky trade long gold sl 4595"
+  ],
+  [
+   38209,
+   "`Whale` high risk trade long gold sl SL 4590"
+  ],
+  [
+   38232,
+   "`Whale` This one is risky Gold short."
+  ],
+  [
+   38351,
+   "`Whale` Gold long, SL at 4648. Small size it’s Monday"
+  ],
+  [
+   38438,
+   "`Whale` long gold sl 4840"
+  ],
+  [
+   38462,
+   "`Whale` risky trade short gold"
+  ],
+  [
+   38546,
+   "`Whale` short gold SL at 4895"
+  ],
+  [
+   38593,
+   "`Whale` long gold sl 4910"
+  ],
+  [
+   38776,
+   "`Whale` long gold SL 5065 risky trade Target is 5117."
+  ],
+  [
+   38826,
+   "`Whale` GOLD long sl 5062 (risky trade)"
+  ],
+  [
+   39002,
+   "`Whale` gold long sl 5049"
+  ],
+  [
+   39120,
+   "`Whale` short gold sl 4815 (small lot size"
+  ],
+  [
+   39142,
+   "`Whale` Again, low lot size trade. Gold short SL 4790"
+  ],
+  [
+   39185,
+   "`Whale` long gold sl 4895"
+  ],
+  [
+   39313,
+   "`Whale` long gold SL 4797 (risky trade)"
+  ],
+  [
+   39358,
+   "`Whale` gold long sl 4820"
+  ],
+  [
+   39430,
+   "`Whale` long gold sl 4987 (high risk trade low size lot)"
+  ],
+  [
+   39472,
+   "`Whale` gold long sl 5013"
+  ],
+  [
+   39537,
+   "`Whale` gold short sl 5094 (smal size bigger stop loss)"
+  ],
+  [
+   39593,
+   "`Whale` gold long sl 5044"
+  ],
+  [
+   39654,
+   "`Whale` gold short SL 4997 (small size)"
+  ],
+  [
+   39756,
+   "`Whale` long gold sl 4990"
+  ],
+  [
+   39772,
+   "`Whale` gold long sl 4953"
+  ],
+  [
+   39891,
+   "`Whale` long gold sl 4895"
+  ],
+  [
+   39892,
+   "`Whale` Direction : long"
+  ],
+  [
+   39914,
+   "`Whale` short gold sl 5017"
+  ],
+  [
+   39944,
+   "`Whale` gold long sl 4975"
+  ],
+  [
+   40122,
+   "`Whale` gold long sl 5168"
+  ],
+  [
+   40288,
+   "`Whale` Long gold sl 5345 tp 5450, small lot size, wider stop loss"
+  ],
+  [
+   40389,
+   "`Whale` gold long sl 5160"
+  ],
+  [
+   40435,
+   "`Whale` low lot long gold sl 5130"
+  ],
+  [
+   40460,
+   "`Whale` gold long sl 5090 high risk trade"
+  ],
+  [
+   40464,
+   "`Whale` Gold long sl 5052"
+  ],
+  [
+   40535,
+   "`Whale` gold long sl 5144"
+  ],
+  [
+   40608,
+   "`Whale` 🤖 BOT TRADE GOLD SELL 📉"
+  ],
+  [
+   40704,
+   "`Whale` gold long sl 4962"
+  ],
+  [
+   40739,
+   "`Whale` BUY gold"
+  ],
+  [
+   40795,
+   "`Whale` Gold LONG Final Setup (Low Lot) (risky setup)"
+  ],
+  [
+   40810,
+   "`Whale` gold long sl 4998"
+  ],
+  [
+   40837,
+   "`Whale` GOLD SHORT (Low Lot)"
+  ],
+  [
+   41127,
+   "`Whale` gold long sl 4515 tp 4600"
+  ],
+  [
+   41343,
+   "`Whale` Gold long sl 4528"
+  ],
+  [
+   41594,
+   "`Whale` GOLD long sl 4780"
+  ],
+  [
+   41997,
+   "`Whale` Gold long"
+  ],
+  [
+   42089,
+   "`Whale` XAUUSD SELL 4702"
+  ],
+  [
+   42456,
+   "`Whale` XAUUSD SELL 4568"
+  ],
+  [
+   42511,
+   "`Whale` XAUUSD SELL 4557"
+  ],
+  [
+   42552,
+   "`Whale` XAUUSD BUY 4552"
+  ],
+  [
+   42573,
+   "`Whale` XAUUSD BUY 4564"
+  ],
+  [
+   42829,
+   "`Whale`"
+  ],
+  [
+   42835,
+   "`Whale` XAUUSD SELL 4695"
+  ],
+  [
+   42839,
+   "`Whale` XAUUSD SELL 4727"
+  ],
+  [
+   42841,
+   "`Whale` XAUUSD SELL 4728"
+  ],
+  [
+   42855,
+   "`Whale` XAUUSD SELL 4721"
+  ],
+  [
+   42885,
+   "`Whale`"
+  ],
+  [
+   42911,
+   "`Whale` XAUUSD SELL 4671"
+  ],
+  [
+   42954,
+   "`Whale` XAUUSD SELL 4690"
+  ],
+  [
+   42968,
+   "`Whale` XAUUSD SELL 4700"
+  ],
+  [
+   43000,
+   "`Whale` XAUUSD SELL 4703"
+  ],
+  [
+   43012,
+   "`Whale` XAUUSD SELL 4694"
+  ],
+  [
+   43083,
+   "`Whale` XAUUSD SELL 4553"
+  ],
+  [
+   43395,
+   "`Whale` XAUUSD SELL 4511"
+  ]
+ ],
+ "signals_entry": 104,
+ "signals_total": 240,
+ "signals_not_entry": [
+  [
+   "ba5abaa0-efe0-5b54-ba9a-95752a8bc5e2",
+   "2026-05-27",
+   "NEEDS_HUMAN_REVIEW",
+   "3 zone ranges found (need exactly 1)",
+   ""
+  ],
+  [
+   "abc1dcc1-75b8-5a61-aa88-526d280c1baf",
+   "2026-06-18",
+   "NEEDS_HUMAN_REVIEW",
+   "LONG stop not below zone",
+   ""
+  ],
+  [
+   "7eb17241-3c00-5e61-b45c-0ade312adffb",
+   "2025-09-04",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Long gold sl 3515 0.06 lot size"
+  ],
+  [
+   "c32ac03a-a771-5781-9512-51d165afe9e9",
+   "2025-09-04",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Gold/XAU "
+  ],
+  [
+   "aa522ba6-7a11-5e47-b57c-aae02e46acf3",
+   "2025-09-05",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` long gold stoploss 3533 Lot size 0.07"
+  ],
+  [
+   "fae282af-9c52-5771-87f8-5bec8b1fb98c",
+   "2025-09-05",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Long Gold lot size 0.07"
+  ],
+  [
+   "cd9ef59d-9df4-5e0e-aedb-31061facd4ce",
+   "2025-09-08",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Long gold stoploss 3560 Lot size 0.1"
+  ],
+  [
+   "b14d3d0c-c303-5cae-b3bd-6d390284dac7",
+   "2025-09-08",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Reason for the long: not sharing my chart, I’m sharing `cryptomarc` char"
+  ],
+  [
+   "4287f2b5-cf66-59ab-a2c8-65449f8c8567",
+   "2025-09-11",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Gold long lot size 0.1 "
+  ],
+  [
+   "72c16f34-4b7b-5653-ac9a-6fea545cc1a8",
+   "2025-09-12",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` "
+  ],
+  [
+   "eb36c476-8be6-5060-bb63-db8ef0127d52",
+   "2025-09-18",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Small long on gold, 0.05 lot stop loss at 3620 small size please need to"
+  ],
+  [
+   "2ccdea19-206a-5074-a874-9e8cc2ec2f68",
+   "2025-09-18",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Reason for the long: we are testing the break of the range, swept liquid"
+  ],
+  [
+   "3a5609f0-759c-5493-889d-4be7dbb505b0",
+   "2025-09-19",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Looking to long EUR/USD at this level. It’s a 2-week POC level, breakout"
+  ],
+  [
+   "29895582-c3a2-530f-98aa-fcf336df7a07",
+   "2025-09-24",
+   "OTHER",
+   "",
+   "`Whale` I like to go long on gold around 30–40 for a scalp. If we get it"
+  ],
+  [
+   "c0813476-22eb-5c09-b874-86a9c11b6b7e",
+   "2025-09-29",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Still in the ETH trade got lucky, it never stopped me out. Quick questio"
+  ],
+  [
+   "8101fa7c-5809-539f-acb4-65fb062608fa",
+   "2025-10-16",
+   "OTHER",
+   "",
+   "`Whale` The Gold trade breakdown is exactly the same as yesterday, the day befor"
+  ],
+  [
+   "d02018d8-f265-50c2-8143-1fcaf8b0acd7",
+   "2025-10-29",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Trade Breakdown: We had a strong push up from yesterday’s CME open and d"
+  ],
+  [
+   "a0aa4946-ee20-5b76-8b4c-ee669c9df684",
+   "2025-11-04",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Here’s a short trade breakdown video. In this one, I explain the shorts "
+  ],
+  [
+   "c5d21936-f6df-5a9a-b474-bf896e30a4a2",
+   "2025-11-05",
+   "OTHER",
+   "",
+   "`Whale` Gold trade breakdown "
+  ],
+  [
+   "a543e016-9b48-5b0d-84db-115cff06351d",
+   "2025-11-07",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Small long position, only 0.1 lot stop loss at 3970."
+  ],
+  [
+   "cb6aa267-806d-5d6c-a5f6-8051394c149d",
+   "2025-11-12",
+   "OTHER",
+   "",
+   "`Whale` Gold trade breakdown: today’s trade was a little choppy, but we managed "
+  ],
+  [
+   "f51721ff-354b-58b4-bf8f-00e27f7bdcc5",
+   "2025-11-19",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` I’m still holding 0.01. My take-profit is set higher if we get there. If"
+  ],
+  [
+   "663a4038-2349-5df1-8d74-12c690e72612",
+   "2025-11-21",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` short gold 4061 sl"
+  ],
+  [
+   "73a5c875-47f7-5484-996a-0f7452009ded",
+   "2025-11-26",
+   "OTHER",
+   "",
+   "`Whale` If we go higher, leave some for the higher levels there’s a possibility "
+  ],
+  [
+   "e3698339-e34d-55d4-ae81-d6185fa57c36",
+   "2025-11-27",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Risky trade small size long. Stop-loss at 4132"
+  ],
+  [
+   "3434b462-6e5f-543a-9395-e6fd1a688e6c",
+   "2025-11-27",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` The range is still the same: 4130–4180. You can long with the same stop-"
+  ],
+  [
+   "3a9de55d-cbcf-5266-bce8-9992492019aa",
+   "2025-12-01",
+   "OTHER",
+   "",
+   "`Whale` If we get a dump, 4225–4235 is a great zone to go long. But remember: if"
+  ],
+  [
+   "e57ffd00-4221-543f-a309-934dcc29572f",
+   "2025-12-02",
+   "OTHER",
+   "",
+   "`Whale` If you took the long, you should TP now. I’m seeing sellers between the "
+  ],
+  [
+   "4097a45d-584a-5dab-b714-fd84c8fe355f",
+   "2025-12-09",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` I made some good profit today on the scalp. I’m going long now, risking "
+  ],
+  [
+   "13155219-7808-54e8-8bd5-d16b77d450d8",
+   "2025-12-10",
+   "OTHER",
+   "",
+   "`Whale` Today the focus is on the Fed and the Bank of Canada. The Fed is expecte"
+  ],
+  [
+   "c141c64f-ef32-5b67-971b-ff843b479892",
+   "2025-12-10",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` FOMC day.<a:RedAlert:1223564671097770004> Today is not a day for long sw"
+  ],
+  [
+   "fcae14e8-4ac9-5fc8-b517-218b5e5d1552",
+   "2025-12-10",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` This is the setup I’ll be looking for during the Asia or London session "
+  ],
+  [
+   "9c4b4cde-1105-56a2-bde6-eef10cd97eb7",
+   "2025-12-12",
+   "MANAGEMENT",
+   "",
+   "`Whale` Okay, the trend is up and strong, no pullback yet, but I’ll take a risky"
+  ],
+  [
+   "0b6ad3a0-7538-5e0e-bcb8-c44b256bdb12",
+   "2025-12-17",
+   "OTHER",
+   "",
+   "`Whale` Nice long trade guys! "
+  ],
+  [
+   "24f9a672-0a1b-5206-b984-53dabeb5c085",
+   "2025-12-19",
+   "OTHER",
+   "",
+   "`Whale` "
+  ],
+  [
+   "97938b36-9f08-536d-a116-74224951612a",
+   "2025-12-23",
+   "NEEDS_HUMAN_REVIEW",
+   "per-clause completeness: un-typed stop clause(s) alongside typed instructions (v2.1 hard fail-closed)",
+   "`Whale` Yesterday I cut the trade early after TP1. At that moment, my plan was t"
+  ],
+  [
+   "367d3993-ed45-58d9-a5e6-2982fb5ced52",
+   "2025-12-26",
+   "OTHER",
+   "",
+   "`Whale` I think we’re on a great streak right now 7 winning trades in a row, and"
+  ],
+  [
+   "f06a9d7a-c653-50b2-ad1a-1f7d939f0ce7",
+   "2025-12-27",
+   "OTHER",
+   "",
+   "`Whale` Hey whales! The past couple of months have been strong clean execution, "
+  ],
+  [
+   "868a7c63-0468-5ef0-8f11-41553c1f0719",
+   "2025-12-29",
+   "OTHER",
+   "",
+   "`Whale` Long gold SL4360"
+  ],
+  [
+   "40c7890b-47b9-5721-859f-e772eba7cacc",
+   "2025-12-31",
+   "OTHER",
+   "",
+   "`Whale` Story time. "
+  ],
+  [
+   "551ad287-e5d8-5954-9d10-279e98c35719",
+   "2026-01-05",
+   "OTHER",
+   "",
+   "`Whale` 🌐 Markets are back for 2026, and all eyes are on Venezuela. Political ch"
+  ],
+  [
+   "8bcda963-1e0c-5347-b25d-b5413a6ced6a",
+   "2026-01-09",
+   "OTHER",
+   "",
+   "`Whale` Markets are focused on today’s US jobs report and a possible Supreme Cou"
+  ],
+  [
+   "3c304b0f-584f-5679-9ca3-7ca4b62da6d5",
+   "2026-01-09",
+   "OTHER",
+   "",
+   "`Whale` For trade 2, I’m looking for a long at yesterday’s ORB breakout area, ar"
+  ],
+  [
+   "3e3c4607-2fb1-5333-ad4f-daa606f26edf",
+   "2026-01-13",
+   "MANAGEMENT",
+   "",
+   "`Whale` Taking a hit risk play Gold HIGH RISK"
+  ],
+  [
+   "4c28718b-26f6-5c5b-9e34-9f1750245ed8",
+   "2026-01-15",
+   "OTHER",
+   "",
+   "`Whale` If you trade 1 lot, you should be up around $2k by now, both long and sh"
+  ],
+  [
+   "ce1d3274-01ea-504a-a8ee-403c0a4e2c1a",
+   "2026-01-15",
+   "OTHER",
+   "",
+   "`Whale` Out of the short just the long now. I’m using 5 point entry"
+  ],
+  [
+   "575e9664-9aca-513e-a311-2db8adbd8a69",
+   "2026-01-15",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` entry on the second long was 4610 the fist long we have sl entry."
+  ],
+  [
+   "77edd6d3-26c1-5758-8636-29926eec14fc",
+   "2026-01-15",
+   "OTHER",
+   "",
+   "`Whale` I’m eyeballing 4640–4650, so a retrace and then long again. But I’ll wai"
+  ],
+  [
+   "e7a4defb-72c6-5d64-a454-3a7bef85c4c0",
+   "2026-01-15",
+   "MANAGEMENT",
+   "",
+   "`Whale` Trading Tip: On the 1-minute timeframe, when price prints 3–4 stacked cl"
+  ],
+  [
+   "b7523cd4-94ee-593b-867a-69ff4ce18650",
+   "2026-01-16",
+   "OTHER",
+   "",
+   "`Whale` 🌐 US data has come in stronger, pushing rates and the dollar slightly hi"
+  ],
+  [
+   "16ec6a21-94dd-5aa8-93df-3bd24175a219",
+   "2026-01-16",
+   "MANAGEMENT",
+   "",
+   "`Whale` trade 2 "
+  ],
+  [
+   "6f71d769-ac56-5fc3-b380-6b921440b6d0",
+   "2026-01-19",
+   "OTHER",
+   "",
+   "`Whale` GoldUpdate <:gold:1247393505744130120> "
+  ],
+  [
+   "727d8917-872f-5446-a207-b8df686281b7",
+   "2026-01-20",
+   "OTHER",
+   "",
+   "`Whale` For a long, I’m watching the 4690–4711 zone. Let’s see how this develops"
+  ],
+  [
+   "17d02f64-2614-5b53-a5c2-ace5fe327681",
+   "2026-01-20",
+   "OTHER",
+   "",
+   "`Whale` Patience paid off today. I waited the whole day to take a trade, because"
+  ],
+  [
+   "1bc3aaf3-28b4-58d9-86d2-28de38eadf7c",
+   "2026-01-20",
+   "NEEDS_HUMAN_REVIEW",
+   "ambiguous direction ['BUY', 'SELL']",
+   "`Whale` I’m currently looking for a buy around 4741–4737, or a sell near 4789, d"
+  ],
+  [
+   "6b644424-a50c-5d12-8f21-17643dbe3f95",
+   "2026-01-21",
+   "OTHER",
+   "",
+   "`Whale` Watch the Sunday Zoom we also talked about this during yesterday’s stage"
+  ],
+  [
+   "4da74542-5ad0-5594-af75-88387c1e36fc",
+   "2026-01-21",
+   "OTHER",
+   "",
+   "`Whale` Don’t long gold yet it looks bearish on the 1-minute and 90-minute timef"
+  ],
+  [
+   "ccb057e2-5707-5819-9461-8a9a6b5dd005",
+   "2026-01-21",
+   "OTHER",
+   "",
+   "`Whale` I’m setting up 2 or 3 strategies in Farouk Educationals for both long an"
+  ],
+  [
+   "01993290-f27d-5178-b8e9-3e42b4759948",
+   "2026-01-22",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Okay guys, let’s take a short Please use a small size because Trump is a"
+  ],
+  [
+   "c2a9e002-401e-5fce-b749-d8dd1d7eba80",
+   "2026-01-22",
+   "OTHER",
+   "",
+   "`Whale` Okay guys, this is a short zone. At the same time, a bull flag is formin"
+  ],
+  [
+   "8e17973f-6d4c-50f7-b34b-62dd69bc27ab",
+   "2026-01-22",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` if you want to gamble short with a stop loss at 4845 im waiting"
+  ],
+  [
+   "6f09986b-3139-5e37-9ee2-4677d711b176",
+   "2026-01-23",
+   "OTHER",
+   "",
+   "`Whale` There’s a lot of confluence at that level. First, we move toward 67–75, "
+  ],
+  [
+   "6923dab7-aacc-5c27-b1ef-a628eb129857",
+   "2026-01-23",
+   "NEEDS_HUMAN_REVIEW",
+   "per-clause completeness: un-typed stop clause(s) alongside typed instructions (v2.1 hard fail-closed)",
+   "`Whale` the ALGO bot give me a short stop-loss at 5000 Tp 4965"
+  ],
+  [
+   "34e392b9-f782-564f-9516-e35d3d6ae820",
+   "2026-01-27",
+   "OTHER",
+   "",
+   "`Whale` "
+  ],
+  [
+   "8f584396-f708-5f36-a230-a2c766e70024",
+   "2026-01-30",
+   "OTHER",
+   "",
+   "`Whale` Guys, waiting for Strategy 1: cluster break, break candle close, retest,"
+  ],
+  [
+   "87878732-4144-5327-9ffb-0c04faa4126b",
+   "2026-02-02",
+   "OTHER",
+   "",
+   "`Whale` So sell zone is 4715 → 4680."
+  ],
+  [
+   "e242f7a1-fbf9-54c8-9ae0-422bf5e15012",
+   "2026-02-04",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` gold long 5015 sl"
+  ],
+  [
+   "d0d9821b-7eb8-58d1-ba0f-9d1e8a5d04c4",
+   "2026-02-05",
+   "OTHER",
+   "",
+   "`Whale` Gold is in a very tight range, holding around 4800. I’m waiting to short"
+  ],
+  [
+   "10333b72-d4d6-5880-98cb-67fac87127ba",
+   "2026-02-05",
+   "OTHER",
+   "",
+   "`Whale` We’re at the monthly VWAP. I’m waiting for a 15-min break of structure i"
+  ],
+  [
+   "543e02d4-d046-5631-a695-cdeaf7982557",
+   "2026-02-08",
+   "OTHER",
+   "",
+   "`Whale` Happy Sunday guys! "
+  ],
+  [
+   "1c6f7347-d216-5ec3-a32f-6c9c7ff5eee8",
+   "2026-02-09",
+   "OTHER",
+   "",
+   "`Whale` The dollar is starting the European session on the back foot as risk app"
+  ],
+  [
+   "a42a19c2-8924-51e1-a28b-a10c3342240b",
+   "2026-02-09",
+   "OTHER",
+   "",
+   "`Whale` Good morning whales This is the 1-minute chart. We have a 1H break of st"
+  ],
+  [
+   "1ce79c60-8f82-5143-867a-0e006197ad25",
+   "2026-02-11",
+   "OTHER",
+   "",
+   "`Whale` "
+  ],
+  [
+   "21c93016-325f-5262-aeb9-6e38ed775e37",
+   "2026-02-11",
+   "OTHER",
+   "",
+   "`Whale` Good morning, Asia session was ranging slightly to the upside, but volum"
+  ],
+  [
+   "c690758a-f590-5d03-9436-df4136f629bb",
+   "2026-02-11",
+   "OTHER",
+   "",
+   "`Whale` Sorry guys, today the price action really didn’t allow for multiple clea"
+  ],
+  [
+   "076c4ee6-3943-5c2e-a023-be8e19147986",
+   "2026-02-12",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` High-risk trade: Short gold "
+  ],
+  [
+   "8c16a2a5-3994-58db-a6a1-428a431c6289",
+   "2026-02-13",
+   "OTHER",
+   "",
+   "`Whale` 🇺🇸 U.S. CPI comes in at 2.4% 📊 Below the 2.5% expectations."
+  ],
+  [
+   "84fbc831-befa-5940-ad78-16752738d84e",
+   "2026-02-17",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Ok guys, I’m waiting at this level. Two possibilities: either we drop no"
+  ],
+  [
+   "74c849a5-fbd2-5031-adbd-3b974628aaad",
+   "2026-02-17",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Gold SELL LIMIT "
+  ],
+  [
+   "f9e1a265-14f4-5632-8021-21ab0209bad4",
+   "2026-02-17",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` If price can’t hold 4,920.00 and moves back up to retest the 4,932–4,935"
+  ],
+  [
+   "b4a63815-df82-5183-8b4c-9807e5c6dea1",
+   "2026-02-18",
+   "NEEDS_HUMAN_REVIEW",
+   "per-clause completeness: un-typed stop clause(s) alongside typed instructions (v2.1 hard fail-closed)",
+   "`Whale` So, volume is not in our favor it’s dying. We’re almost at TP2. Normally"
+  ],
+  [
+   "d0e62d04-c53f-59f2-8e7b-fabc40bb49f7",
+   "2026-02-18",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Gold Buy Limit "
+  ],
+  [
+   "6810f29a-fde0-5aa0-8974-53a358d843d9",
+   "2026-02-19",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` long gold limit "
+  ],
+  [
+   "5fd74bca-d850-5df1-a834-5b586c922dc0",
+   "2026-02-20",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Gold long Limit 5008 -5002 "
+  ],
+  [
+   "b1318a38-f7cf-58ae-af53-def606c3e4ca",
+   "2026-02-20",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Gold LONG limit: 4997–4990 Stop loss: 4975"
+  ],
+  [
+   "ce3152c5-6aa1-526b-8307-ddade1aec23e",
+   "2026-02-20",
+   "OTHER",
+   "",
+   "`Whale` You can also try a long around 5017–5010 that’s the VAL. "
+  ],
+  [
+   "c0183701-74aa-5202-8021-bbd61fbbb402",
+   "2026-02-20",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` It will range between 5000 and 5050. "
+  ],
+  [
+   "d743bc19-ff4f-55a3-bf93-7c84abc241f3",
+   "2026-02-26",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Limit Long Gold "
+  ],
+  [
+   "5650791f-e25b-5444-b0fe-a676e25a3d42",
+   "2026-03-02",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Buy Limit gold 5351-5340 SL: 5330"
+  ],
+  [
+   "84b414a8-0dcb-5366-8263-8250351f7723",
+   "2026-03-02",
+   "OTHER",
+   "",
+   "`Whale` Gold can either drop to fill the gap or move up. If we drop, I have a na"
+  ],
+  [
+   "37fc8e9e-9cf2-5e11-86c5-eb2747d12e9b",
+   "2026-03-03",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` Waiting for the manipulation phase on Gold. If we drop into the 5250–524"
+  ],
+  [
+   "a9f3acef-f545-5547-a489-8f1718934a59",
+   "2026-03-03",
+   "OTHER",
+   "",
+   "`Whale` Big drop on gold that’s good for us. Now we can use Strategy 1: cluster "
+  ],
+  [
+   "e8e5c97b-579a-532f-9a04-d3c963488b6d",
+   "2026-03-04",
+   "OTHER",
+   "",
+   "`Whale` Good morning guys, gold has a 2-break cluster strategy setting up. We’re"
+  ],
+  [
+   "9a4b00d0-a5e1-5c11-9ff6-0b5dc628464c",
+   "2026-03-04",
+   "OTHER",
+   "",
+   "`Whale` TP4 almost hit just take it. That’s the strategy: cluster, cluster, brea"
+  ],
+  [
+   "6c507af4-edf1-57ab-9387-056e02cc1ac7",
+   "2026-03-04",
+   "OTHER",
+   "",
+   "`Whale` The next bounce zone is around 5160–5170, where we have a naked POC. If "
+  ],
+  [
+   "e103c6bd-efdf-5871-8cc7-94cd95d1e19d",
+   "2026-03-10",
+   "OTHER",
+   "",
+   "`Whale` \"GM GM guys! Eyes on gold right now watching a retest of the 5,160–5,170"
+  ],
+  [
+   "00be0d0d-9335-5cf7-b48d-82cc17d802b7",
+   "2026-03-10",
+   "OTHER",
+   "",
+   "`Whale` Watching the 5,175 – 5,165 zone on gold for a long entry considering eit"
+  ],
+  [
+   "96f9d70d-f4c3-5987-baa1-be4d7a96b8e1",
+   "2026-03-11",
+   "MANAGEMENT",
+   "",
+   "`Whale` 🚨 First trade Bot Trade —GOLD "
+  ],
+  [
+   "1e840a4a-18d1-5a7e-a703-317516540b1c",
+   "2026-03-11",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` Waiting for my zone to entry. For now we are holding VAH and POC I want "
+  ],
+  [
+   "38eb9850-f479-5e6b-8841-1ddcf5f2de62",
+   "2026-03-11",
+   "OTHER",
+   "",
+   "`Whale` GOLD + CPI NEWS "
+  ],
+  [
+   "11a9dece-270f-5074-b963-154cab1fdfae",
+   "2026-03-11",
+   "OTHER",
+   "",
+   "`Whale` Wrap-up for today ranging market, pure scalp conditions with no real mom"
+  ],
+  [
+   "3674a3c7-d802-575a-891b-d8f8963b06b9",
+   "2026-03-12",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` 📈 GOLD — BUY LIMIT "
+  ],
+  [
+   "a015aa75-52d5-573d-9ae5-1d052b8201f9",
+   "2026-03-13",
+   "OTHER",
+   "",
+   "`Whale` gold short 5108 entry 5093"
+  ],
+  [
+   "6f5c2c13-ee96-557b-8eec-4cf79207aa59",
+   "2026-03-13",
+   "OTHER",
+   "",
+   "`Whale` The bot is signaling a volume increase coming! I used Strategy 1 it’s su"
+  ],
+  [
+   "6131f4e7-a689-560a-b5be-0b64b73ca8ef",
+   "2026-03-16",
+   "OTHER",
+   "",
+   "`Whale` We have a STRAT1 (Strategy 1 on the 1m) Buy zone is at the gap and equil"
+  ],
+  [
+   "c348bb6d-639c-5509-b6c0-e39304d315a4",
+   "2026-03-17",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` GOLD Limit Buy (Range Entry) "
+  ],
+  [
+   "46a08b20-91c4-51d5-897d-10bab4f2b091",
+   "2026-03-17",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` Looking for a sell opportunity around the 5025- 5040 zone."
+  ],
+  [
+   "334cb738-5f7a-54f0-ae6c-7f05738eb7c3",
+   "2026-03-18",
+   "OTHER",
+   "",
+   "`Whale` Looking at this trade it’s a breakout setup, let’s see if it plays out. "
+  ],
+  [
+   "e4e363d6-1802-519b-9231-61e2c0587e25",
+   "2026-03-19",
+   "MANAGEMENT",
+   "",
+   "`Whale` bot trade 🟢 GOLD long"
+  ],
+  [
+   "d5eea07e-0fd5-5e92-8b6c-2f522a29eb0b",
+   "2026-03-19",
+   "OTHER",
+   "",
+   "`Whale` Low lot GOLD SELL SL4708 (farouk entry 4619)"
+  ],
+  [
+   "fc4cc34a-ccc5-55d5-8d71-72528e3626f4",
+   "2026-03-20",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` GOLD BUY limit "
+  ],
+  [
+   "9a77db7a-e4b1-5ab5-a8d4-dd6318739fb2",
+   "2026-03-20",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` GOLD BUY LIMIT "
+  ],
+  [
+   "594c089c-66d1-5819-86ec-b3071a34267f",
+   "2026-03-25",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` 🟢 Buy Limit gold "
+  ],
+  [
+   "7ea1a4ef-59a3-582d-9c94-3ba73b378f86",
+   "2026-03-26",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` If the SL entry gets hit, we'll sell again at 4430-4440."
+  ],
+  [
+   "f68a2e2e-2b7c-5f04-80a7-cf70b3c9e5ee",
+   "2026-03-26",
+   "NEEDS_HUMAN_REVIEW",
+   "2 zone ranges found (need exactly 1)",
+   "`Whale` Gold SELL SL 4430 "
+  ],
+  [
+   "4f3c384c-1b38-56bf-95ba-38a95cef74c5",
+   "2026-03-26",
+   "NEEDS_HUMAN_REVIEW",
+   "3 zone ranges found (need exactly 1)",
+   "`Whale` GOLD SELL SL 4446 tp 4394-4390- 4385-4370-4330 -4320"
+  ],
+  [
+   "b1ac0858-da8d-5d15-963d-eead46f21c5e",
+   "2026-03-27",
+   "NEEDS_HUMAN_REVIEW",
+   "3 zone ranges found (need exactly 1)",
+   "`Whale` GOLS SELL 4424 SL 4462 "
+  ],
+  [
+   "502e43ca-d8aa-5591-9e2e-84256b15f3e1",
+   "2026-03-31",
+   "OTHER",
+   "",
+   "`Whale` Price is currently trading inside a supply zone, which makes this a 50/5"
+  ],
+  [
+   "726a7e91-9720-540d-a573-428e7a48e61b",
+   "2026-03-31",
+   "NEEDS_HUMAN_REVIEW",
+   "stop-related wording with no recognized instruction pattern",
+   "`Whale` Quick update on the long, guys "
+  ],
+  [
+   "3f897148-6a83-5661-9473-31e5baca7b3e",
+   "2026-04-10",
+   "NEEDS_HUMAN_REVIEW",
+   "per-clause completeness: un-typed stop clause(s) alongside typed instructions (v2.1 hard fail-closed)",
+   "`Whale` "
+  ],
+  [
+   "af871609-94c9-5a2b-8e96-b8fa701684cb",
+   "2026-04-23",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` 🔴 Sell Limit Gold (XAU/USD) @ 4717–4724 SL: 4742"
+  ],
+  [
+   "0418e1d1-3c38-55fd-b68c-5742a41c4ac2",
+   "2026-04-29",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` If we get stopped at entry, we’ll sell higher around the 4550–4555 level"
+  ],
+  [
+   "13fc2c3f-e706-5253-b0a3-64aea36b4e59",
+   "2026-05-01",
+   "OTHER",
+   "",
+   "`Whale` 🐋 MARKET CHECK "
+  ],
+  [
+   "0d64490d-2e43-5edc-a1e7-88884b188449",
+   "2026-05-04",
+   "OTHER",
+   "",
+   "`Whale` 📈 4H TREND CHECK "
+  ],
+  [
+   "4f35f08b-894c-517b-9521-3294363acd57",
+   "2026-05-05",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` Possible sell in Asia around 4598–4610, strong resistance there. We’ll s"
+  ],
+  [
+   "a35e84f0-db36-5f2f-a2cc-a4e02ab964a4",
+   "2026-05-07",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` XAUUSD SELL 4713 "
+  ],
+  [
+   "76a5acdd-aaaf-52b4-85ef-7e68e8531ea3",
+   "2026-05-08",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` Good morning guys, today is NFP day, so the market is waiting for that. "
+  ],
+  [
+   "2b768efb-c4a9-5d8a-93ee-1a0cbf3b9536",
+   "2026-05-08",
+   "NOT_FAROUK_GOLD",
+   "",
+   "`Whale` XAUUSD sell 4732 "
+  ],
+  [
+   "a4149f00-e0d1-5239-b78b-2293064a0f33",
+   "2026-05-09",
+   "OTHER",
+   "",
+   "`Whale` 💰 WEEKLY — BIG MONEY "
+  ],
+  [
+   "4794c7da-2a25-515c-b4c2-98714e9795bf",
+   "2026-05-11",
+   "OTHER",
+   "",
+   "`Whale` If we don’t get a 1H candle close above the Asia session high, only look"
+  ],
+  [
+   "3ffbd93e-31f9-527e-9d6e-e60348a88869",
+   "2026-05-13",
+   "OTHER",
+   "",
+   "`Whale` I want to enter another sell on Gold, but I feel like it’s doing the sam"
+  ],
+  [
+   "41d1a6ea-e74a-5695-b031-994a5d146928",
+   "2026-05-14",
+   "OTHER",
+   "",
+   "`Whale` I want to enter another sell, but the US session opens in 10 minutes. Wa"
+  ],
+  [
+   "8e3ad47f-ac2e-5000-aca2-1a243ee68aa0",
+   "2026-05-14",
+   "OTHER",
+   "",
+   "`Whale` Take more profit if you still holding! "
+  ],
+  [
+   "0aca4136-d842-5835-838e-26e05e9be2ad",
+   "2026-05-15",
+   "NEEDS_HUMAN_REVIEW",
+   "missing stop",
+   "`Whale` This is the H4 support and resistance for Gold. "
+  ],
+  [
+   "5d88c5ec-5683-5fdf-92d1-b60cea1d7ce4",
+   "2026-05-19",
+   "OTHER",
+   "",
+   "`Whale` XAUUSD SELL ENTRY 4508 "
+  ],
+  [
+   "d1736767-23a9-5b69-82f9-b234122e0b83",
+   "2026-05-20",
+   "OTHER",
+   "",
+   "`Whale` Listen guys, we had 14 wins in a row with massive profit 📈🔥 Be proud of "
+  ]
+ ]
+}

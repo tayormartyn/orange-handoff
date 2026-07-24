@@ -1,0 +1,46 @@
+{
+  "doc_id": "fable5_training_batch_003_recovery_status",
+  "as_of": "2026-07-12T00:40+02:00",
+  "session": "fresh Fable 5 recovery session (prior Batch-003 session hit 100% context)",
+  "batch_003_status": "PAUSED_TRANSCRIPTION_JOB_DEAD_ZERO_OUTPUTS",
+  "live_priority_check": {
+    "new_xau_messages_after_45646": false,
+    "evidence": "live store campaign_extractor/prospective/data/prospective_evidence_v1.db last write 2026-07-11T06:35:57Z == cursor msg 45646 timestamp; live DB deliberately NOT queried (file metadata only); market closed since Friday, reopens Sunday ~22:00Z",
+    "alert_lane": "cannot fire while market closed; no new local artefacts; not consulted live",
+    "cycle_004_triggered": false
+  },
+  "listener": {"pid": 87988, "running": true, "started": "2026-07-10 21:54:45", "touched": false, "only_python_process": true},
+  "prior_transcription_job": {
+    "running": false,
+    "outputs_found": 0,
+    "cause": "JOB_TERMINATED_WITH_SESSION_NO_OUTPUT",
+    "detail": "background job was a child of the context-full session and died with it before any transcript/progress/log was written; swept farouk_pilot tree and all Claude temp session dirs for files after 2026-07-12T00:04 local — none (only this session's transient 0-byte task files); exact failing sub-step unknowable, not guessed"
+  },
+  "transcript_inventory": [
+    {"item": "2025-12-14 video A", "source": "C:/Users/Marty/Downloads/Schermopname_2025-12-14_om_16.45.20.mov", "bytes": 407638327, "status": "MISSING"},
+    {"item": "2025-12-14 video B", "source": "C:/Users/Marty/Downloads/Schermopname_2025-12-14_om_17.03.11.mov", "bytes": 243242245, "status": "MISSING"},
+    {"item": "2025-12-14 video C", "source": "C:/Users/Marty/Downloads/Schermopname_2025-12-14_om_17.12.15.mov", "bytes": 349754888, "status": "MISSING"},
+    {"item": "Jun-29 FP-CAMPAIGN gold breakdown", "source": "C:/Users/Marty/Downloads/Schermopname 2026-06-29 om 16.37.24.mov", "bytes": 175837482, "status": "MISSING"},
+    {"item": "Jul-1 FP-CAMPAIGN gold breakdown", "source": "C:/Users/Marty/Downloads/Schermopname 2026-07-01 om 20.16.35.mov", "bytes": 306945831, "status": "MISSING"},
+    {"item": "Jul-2 FP-CAMPAIGN gold breakdown", "source": "C:/Users/Marty/Downloads/Schermopname 2026-07-02 om 19.40.23.mov", "bytes": 262150910, "status": "MISSING"}
+  ],
+  "dedup": {
+    "duplicate_downloads": ["Schermopname_2025-12-14_om_16.45.20 (1)/(2).mov identical 407638327 B", "Schermopname_2025-12-14_om_17.12.15 (1)/(2).mov identical 349754888 B"],
+    "rule": "transcribe only the 3 canonical un-suffixed 2025-12-14 files (6 jobs total, never 7)",
+    "overlap_with_existing_transcripts": "none — FP-EDU-001, FP-CAMPAIGN-003/004, FP-INDICATOR-001..006, Live Jul-3/Jul-5 are different source assets (checked filename/size/duration/source_asset_id)"
+  },
+  "whaleroom_traderecap_1_pdf": {"path": "C:/Users/Marty/Downloads/WhaleRoom_TradeRecap_1.pdf", "bytes": 7209, "processed": false, "evidence_id": null, "note": "prior session began reading it; no durable artefact produced; still on Batch-003 worklist (HOLD per Batch-002 merge queue)"},
+  "not_done_by_rule": ["extraction", "evidence registration", "lesson classification", "merge-queue changes", "orange master update", "batch report", "May OHLC matching"],
+  "unchanged": {
+    "detector_v0_3_labels": true, "detector_v0_4_backlog_only": true, "lane6": true, "r6": true,
+    "gates": "MODE=PAPER / LISTENER_MODE=PREVIEW / EXECUTION_ENABLED=False / CTRADER_EXECUTION_ENABLED=False (verified in config.py + ctrader_config.py + .env this session)",
+    "not_integration_ready": "unchanged",
+    "execution_built": false, "permits_leases_orders": "none", "tradingview_worker_secrets": "untouched"
+  },
+  "transcription_tool_of_record": "faster-whisper base.en cpu/int8 local (proven on FP-CAMPAIGN-003/004)",
+  "next_steps": [
+    "relaunch six-file local transcription as a detached process that survives session end, with per-file _run.log/_progress.txt under research/farouk_pilot/derived/transcripts/<ID>/",
+    "on completion: Batch 003 extraction (transcripts + WhaleRoom_TradeRecap_1.pdf) -> FABLE5_TRAINING_BATCH_003_REPORT.md + fable5_training_batch_003.json + merge queue",
+    "priority override: first XAU post after Sunday ~22:00Z reopen -> Cycle 004 / XAU-F001 before Batch 003"
+  ]
+}

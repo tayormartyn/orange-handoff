@@ -1,0 +1,27 @@
+{
+  "candidate_id": "OTE_FIB_ENTRY_CANDIDATE_v0_1",
+  "status": "DISABLED / SHADOW_RESEARCH_ONLY / NOT_A_SCORING_INPUT",
+  "provenance": "Farouk Education (2).pdf p3 'Look for the 61.8% or 78.6% levels to find the OTE zone' + 'stop just outside the OTE zone' (AER-002, FP-EDU-028)",
+  "documented_levels": ["0.618", "0.786"],
+  "other_levels_UNVERIFIED": {
+    "levels": ["0.65", "0.705", "0.75", "0.79"],
+    "provenance": "PROVENANCE_UNVERIFIED — NONE of these appear in Farouk Education (2).pdf or the corpus (audited). Represented SEPARATELY; not attributed to this document.",
+    "class": "PROVENANCE_UNVERIFIED"
+  },
+  "anchor_contract_v0_1": {
+    "eligible_swing_anchor_pair": "a causal (impulse_start_swing, impulse_end_swing) pair where both swings closed strictly before decision_timestamp",
+    "enumerate": "EVERY eligible causal anchor pair (not just the one nearest Farouk's zone)",
+    "compute": "every fib candidate (0.618, 0.786 documented; 0.65/0.705/0.75/0.79 unverified-shadow) for every anchor pair",
+    "freeze": "all candidates frozen with the anchor pair, direction, and level",
+    "selection_logic": "UNKNOWN — anchor + level selection preserved UNKNOWN unless prospectively validated"
+  },
+  "prohibitions": [
+    "may NOT choose the Fib anchor nearest Farouk's zone",
+    "may NOT choose the level producing the best historical fill",
+    "may NOT discard losing anchors after outcome",
+    "may NOT use future swings (bar_close_time <= decision_timestamp only)"
+  ],
+  "disabled": true, "shadow_research_only": true, "not_a_scoring_input": true,
+  "has_executable_freeze_component": true, "note_freeze": "router enumerates+freezes candidates only; emits NO entry",
+  "review_only": true, "executable": false, "trade_ready": false, "observation_only": true
+}

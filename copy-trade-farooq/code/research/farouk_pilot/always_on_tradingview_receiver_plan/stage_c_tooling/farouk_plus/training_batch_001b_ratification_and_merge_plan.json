@@ -1,0 +1,44 @@
+{
+  "record_id": "training_batch_001b_ratification_and_merge_plan",
+  "generated_on": "2026-07-11",
+  "mode": "REVIEW_ONLY / SINGLE_SESSION / EXTENDS_NOT_EDITS",
+  "ratification": {
+    "item": "never_widen_doc_vs_practice",
+    "ratifier": "Martyn (Batch-001B instruction)",
+    "decision": "RATIFIED: 'never widen the stop' binds the follower simulation and public/follower lane; adaptive wider stop-width belongs ONLY to Farouk's private lane (lane 1) and Orange PRE-ENTRY invalidation research; width may be computed before candidate freeze, NEVER widened after entry in follower models",
+    "consequences": [
+      "lane-4 simulations never widen post-entry; a follower record with post-entry widening is MODEL-INVALID",
+      "lane-6/stop_width computes width only at pre-mark/candidate freeze (F6 frozen-formula guard)",
+      "his taped adaptive widening = lane-1 calibration observation only"
+    ]
+  },
+  "merge_now_items": {
+    "be_at_average_for_layered": {"behaviour": "follower BE/scratch reference = average of filled legs when layered entries are explicitly evidenced (>=2 leg events, one shared SL); single-entry keeps fill-price BE", "targets": ["R6 lane-4", "8D leg schema", "Cycle-003 capture"], "source": "FP-EDU-003 §8"},
+    "source_exact_tranche_schedules": {"behaviour": "expectancy bracketed under Conservative 50/30/20 and Advanced 30/30+SL->entry(+50)+runner; dimensionless fractions only, never sizing", "targets": ["R6 lane-4 parameters"], "source": "FP-EDU-003 §6"},
+    "layering_cap_max3": {"behaviour": "4th/additional entry into a losing position = doctrine-violation/tail-risk FLAG (never a gate)", "targets": ["Cycle-003 capture", "detector v0.4 backlog"], "source": "FP-EDU-003 §8 rule 05"},
+    "displacement_fvg_artifact_test": {"behaviour": "displacement evidenced by an FVG created after the OB reaction (3-candle gap, OHLC-computable); no fixed pip threshold unless later proven", "targets": ["Lane-6 STRONG rubric point 1", "detector v0.4 backlog", "unblocks R-DISPLACEMENT"], "source": "FP-EDU-004"},
+    "strong_ob_rubric_v0_1": {"behaviour": "STRONG OB = 5 evidence-cited components: sweep-before, fresh, displacement/FVG out, bias-aligned, BPR overlap; 0-5 count recorded; UNTAGGED when uncitable", "targets": ["F3 level_quality_tag", "Lane-6 confidence", "stop_width_by_level_type v0.1"], "source": "FP-EDU-004"}
+  },
+  "strengthens": {
+    "R6": ["be_at_average_for_layered", "source_exact_tranche_schedules", "lane-3 canonical (enter-at-publish)", "never-widen binding"],
+    "lane6": ["strong_ob_rubric_v0_1", "displacement_fvg_artifact_test", "OB-extension formation-time semantics"],
+    "detector_v0_4_backlog": ["layering_cap_max3 flag", "displacement_fvg_artifact_test", "rubric-count confidence input"]
+  },
+  "cycle_003_capture_only": [
+    "average-entry evidence", "tranche schedule used (if statable)", "entry count",
+    "4th-entry violation flag", "FVG-after-OB artifact", "strong-OB rubric components (cited)",
+    "follower-lane stop-widening marker (expected absent; presence = model-invalid)"
+  ],
+  "v03_live_behaviour": "UNCHANGED — all additions are capture-only or offline/parallel until separately ratified",
+  "next_merge_queue": {
+    "MERGE_NOW_CAPTURE_ONLY": ["be_at_average fields", "tranche-schedule field", "entry count", "4th-entry flag", "rubric components", "FVG-artifact field", "stop-widening marker"],
+    "MERGE_IN_DETECTOR_V0_4_OFFLINE": ["layering_cap flag scoring", "displacement_fvg_artifact_test", "rubric-count confidence input"],
+    "NEEDS_FORWARD_EVIDENCE": ["mitigated->wider numeric mapping", "F2 weight upgrade", "rubric-count weights"],
+    "HUMAN_REVIEW_ONLY": ["any deviation from never-widen in follower simulations (forbidden; new ratification required)"],
+    "REJECT_DUPLICATE": []
+  },
+  "enforcement": "ai_review fail-closed validator + extended guard on all resulting records; labels capped; no automatic promotion",
+  "safety": {"listener_pid_87988": "untouched", "gates": "PAPER/PREVIEW/False/False unchanged",
+              "not_integration_ready": "unchanged", "execution_surface": "none",
+              "sizing_note": "tranche fractions are dimensionless modelling values; no lot/risk/account/ticket fields"}
+}

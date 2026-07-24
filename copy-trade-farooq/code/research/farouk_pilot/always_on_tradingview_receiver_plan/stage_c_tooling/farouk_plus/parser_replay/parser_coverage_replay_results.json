@@ -1,0 +1,179 @@
+{
+ "schema": "parser_coverage_replay_v1",
+ "tag": "RETROSPECTIVE_NOT_PROSPECTIVE",
+ "run_at_utc": "2026-07-22T15:28:48Z",
+ "interpreter_sha16": "7602755342a6748a",
+ "databases": [
+  {
+   "label": "signal_archive",
+   "rows_in": 43404,
+   "rows_dispositioned": 43404,
+   "dispositions": {
+    "NOT_FAROUK_GOLD_CRYPTO": 13891,
+    "PARSED_MANAGEMENT": 551,
+    "PARSED_COMMENTARY": 1194,
+    "PARSED_ENTRY": 188,
+    "QUARANTINED_REVIEW": 257,
+    "EXPLICITLY_REJECTED_EMPTY": 2234,
+    "NOT_FAROUK_GOLD_OTHER": 25089
+   },
+   "management_instruction_types": {
+    "TAKE_PCT_OFF": 42,
+    "SL_TO_ENTRY": 130,
+    "FINAL_CLOSE": 8,
+    "HOLD_BEST": 3,
+    "TP1_TAKE": 212,
+    "TP2_TAKE": 97,
+    "CANCEL": 2,
+    "EXPLICIT_FULL_EXIT": 2,
+    "TP_HIT_NOTE": 209,
+    "REVISED_STOP": 30,
+    "CLOSE_WORST": 1,
+    "HOLD_RUNNER": 1,
+    "TP_LEVEL_NOTE": 22,
+    "INVALIDATION": 2
+   },
+   "quarantine_reason_classes": {
+    "per-clause completeness: un-typed percent clause(s) alongsid": 8,
+    "missing stop": 17,
+    "stop-related wording with no recognized instruction pattern": 173,
+    "N zone ranges found (need exactly N)": 4,
+    "per-clause completeness: un-typed stop clause(s) alongside t": 35,
+    "per-clause completeness: un-typed stop/hold clause(s) alongs": 1,
+    "per-clause completeness: un-typed close clause(s) alongside ": 6,
+    "LONG stop not below zone": 1,
+    "ambiguous direction ['BUY', 'SELL']": 2,
+    "per-clause completeness: un-typed hold/percent clause(s) alo": 1,
+    "per-clause completeness: un-typed tp clause(s) alongside typ": 5,
+    "per-clause completeness: un-typed stop/close clause(s) along": 1,
+    "per-clause completeness: un-typed stop/percent clause(s) alo": 1,
+    "per-clause completeness: un-typed hold clause(s) alongside t": 1,
+    "per-clause completeness: un-typed hold/close clause(s) along": 1
+   },
+   "crypto_content_parsed_as_gold_entry": [],
+   "pips_terminal_violations": []
+  },
+  {
+   "label": "prospective_live",
+   "rows_in": 645,
+   "rows_dispositioned": 645,
+   "dispositions": {
+    "PARSED_COMMENTARY": 68,
+    "NOT_FAROUK_GOLD_CRYPTO": 212,
+    "QUARANTINED_REVIEW": 12,
+    "EXPLICITLY_REJECTED_EMPTY": 92,
+    "NOT_FAROUK_GOLD_OTHER": 210,
+    "PARSED_ENTRY": 13,
+    "PARSED_MANAGEMENT": 38
+   },
+   "management_instruction_types": {
+    "TP1_TAKE": 12,
+    "SL_TO_ENTRY": 12,
+    "TAKE_PCT_OFF": 9,
+    "EXPLICIT_PERCENTAGE_PARTIAL_CLOSE": 2,
+    "TP2_TAKE": 1,
+    "CLOSE_WORST": 4,
+    "HOLD_BEST": 4,
+    "FINAL_CLOSE": 1,
+    "EXPLICIT_FULL_EXIT": 2,
+    "HOLD_LEG_SELECTIVE": 1,
+    "TP_LEVEL_NOTE": 1,
+    "TP_HIT_NOTE": 1
+   },
+   "quarantine_reason_classes": {
+    "stop-related wording with no recognized instruction pattern": 4,
+    "per-clause completeness: un-typed stop clause(s) alongside t": 2,
+    "per-clause completeness: un-typed percent clause(s) alongsid": 1,
+    "per-clause completeness: un-typed hold clause(s) alongside t": 1,
+    "missing stop": 3,
+    "per-clause completeness: un-typed close clause(s) alongside ": 1
+   },
+   "crypto_content_parsed_as_gold_entry": [],
+   "pips_terminal_violations": []
+  }
+ ],
+ "regression": [
+  {
+   "fixture": "labelled-field zone form",
+   "verdict": "PASS",
+   "kind": "ENTRY",
+   "detail": "SHORT"
+  },
+  {
+   "fixture": "plain entry form",
+   "verdict": "PASS",
+   "kind": "ENTRY",
+   "detail": "SHORT"
+  },
+  {
+   "fixture": "full exit",
+   "verdict": "PASS",
+   "kind": "MANAGEMENT",
+   "detail": [
+    "EXPLICIT_FULL_EXIT"
+   ]
+  },
+  {
+   "fixture": "close 90% leave 10%",
+   "verdict": "PASS",
+   "kind": "MANAGEMENT",
+   "detail": [
+    "EXPLICIT_PERCENTAGE_PARTIAL_CLOSE"
+   ]
+  },
+  {
+   "fixture": "close 100%",
+   "verdict": "PASS",
+   "kind": "MANAGEMENT",
+   "detail": [
+    "EXPLICIT_FULL_EXIT"
+   ]
+  },
+  {
+   "fixture": "tp 1 now",
+   "verdict": "PASS",
+   "kind": "MANAGEMENT",
+   "detail": [
+    "TP1_TAKE"
+   ]
+  },
+  {
+   "fixture": "put sl to entry",
+   "verdict": "PASS",
+   "kind": "MANAGEMENT",
+   "detail": [
+    "SL_TO_ENTRY"
+   ]
+  },
+  {
+   "fixture": "claimed-pips commentary NOT terminal",
+   "verdict": "PASS",
+   "kind": "OTHER",
+   "detail": ""
+  },
+  {
+   "fixture": "140-150 pips result NOT terminal",
+   "verdict": "PASS",
+   "kind": "OTHER",
+   "detail": ""
+  },
+  {
+   "fixture": "lot-fraction result card NOT entry/terminal",
+   "verdict": "PASS",
+   "kind": "OTHER",
+   "detail": ""
+  },
+  {
+   "fixture": "crypto in gold channel refused as XAU entry",
+   "verdict": "PASS",
+   "kind": "NEEDS_HUMAN_REVIEW",
+   "detail": "LONG stop not below zone"
+  },
+  {
+   "fixture": "crypto channel not gold",
+   "verdict": "PASS",
+   "kind": "NOT_FAROUK_GOLD",
+   "detail": ""
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "refreshed_at": "2026-07-22T18:08:41Z",
+ "state_core": {
+  "gates": {
+   "MODE": "PAPER",
+   "LISTENER_MODE": "PREVIEW",
+   "EXECUTION_ENABLED": "False",
+   "CTRADER_EXECUTION_ENABLED": "False"
+  },
+  "gates_ok": true,
+  "ledgers": {
+   "forward_ledger": {
+    "lines": 80,
+    "sha16": "fdba2dfac769a5de"
+   },
+   "genuine_freeze": {
+    "records": 4,
+    "sha16": "df2d3fc9312646d1",
+    "campaign_ids": [
+     "XAU-F004-20260716",
+     "XAU-F005-20260717",
+     "XAU-F006-20260720",
+     "XAU-F007-20260721"
+    ]
+   },
+   "freeze_backfill_sha16": "a0c0c7567f2e20a5",
+   "constitution_sha16": "7bce618f29d1d44a",
+   "guards_sha16": "213b4463bda22707",
+   "classifications": 642,
+   "quarantine": 82,
+   "alerts": 107
+  },
+  "campaigns": {
+   "all": [
+    "XAU-F001-20260714",
+    "XAU-F002-20260714",
+    "XAU-F003-20260716",
+    "XAU-F004-20260716",
+    "XAU-F005-20260717",
+    "XAU-F006-20260720",
+    "XAU-F007-20260721"
+   ],
+   "count": 7,
+   "genuine_prospective": {
+    "ids": [
+     "XAU-F004-20260716",
+     "XAU-F005-20260717",
+     "XAU-F006-20260720",
+     "XAU-F007-20260721"
+    ],
+    "count": 4
+   }
+  },
+  "campaign_status": {
+   "capture_ids": [
+    "XAU-F004-20260716",
+    "XAU-F005-20260717",
+    "XAU-F006-20260720",
+    "XAU-F007-20260721"
+   ],
+   "capture_count": 4,
+   "expectancy_ids": [
+    "XAU-F004-20260716",
+    "XAU-F005-20260717",
+    "XAU-F007-20260721"
+   ],
+   "expectancy_count": 3,
+   "excluded": {
+    "XAU-F006-20260720": "PARTIAL_INSTRUCTION_SILENT_LOSS named defect corrupted the outcome (D-028); adjudicated-closed"
+   },
+   "latest_campaign": "XAU-F007-20260721",
+   "latest_date": "2026-07-21",
+   "reconciled_with_freeze": true,
+   "reconcile_mismatch": [],
+   "non_prospective_note": "F001/F002 = schema backfill (not prospective); F003 = authentic-not-prospective (no freeze)."
+  },
+  "recent_claims": [
+   {
+    "id": "K-068",
+    "text": "THE BRAIN'S OWN OUTPUT HAD FROZEN LITERALS PRESENTING AS DERIVED STATE (D-080). The oper"
+   },
+   {
+    "id": "K-067",
+    "text": "CROSS-INSTRUMENT CITATION PRINCIPLE (D-079). TWO HALVES, BOTH MUST HOLD: (1) a rule ILLU"
+   },
+   {
+    "id": "K-066",
+    "text": "SOURCE_REPORTED STATISTICAL CLAIM, split from FR-051 (D-078). FR-051's G1 clip carries T"
+   }
+  ],
+  "recent_decisions": [
+   {
+    "id": "D-109",
+    "text": "CONNECTED_TRANSPORT v0_1 BUILT OFFLINE (Chuck-authorised TRANSPORT_BUILD_AUTHORI"
+   },
+   {
+    "id": "D-108",
+    "text": "LIVE_EDIT_COMPLETION FIX (D-106) PHASE A BUILT + PROVEN OFFLINE; DEPLOY HELD (Ph"
+   },
+   {
+    "id": "D-107",
+    "text": "F008 INTEGRITY CONFIRMED + SOFT-LINKS RE-ATTRIBUTED (read-only check + authorita"
+   }
+  ],
+  "recent_corrections": [
+   {
+    "id": "R-008",
+    "text": "D-035 rationale: 'v2.1-era campaigns terminate via instruction tokens or F006-st"
+   },
+   {
+    "id": "R-007",
+    "text": "Forward-ledger anchors verified via line-sha16 values ef2cf7023a2a0182 / feac89c"
+   },
+   {
+    "id": "R-006",
+    "text": "F005 Lane B tracker anomaly (near+mid filled below window high) indicated a trac"
+   }
+  ],
+  "cursors": {
+   "wire_last_processed": 46026,
+   "watcher_after_msg_id": 46026,
+   "watcher_pending_entries": 0,
+   "evidence_db_head": 46026,
+   "evidence_db_rows": 647
+  },
+  "quarantine_pending_review": {
+   "count": 5,
+   "message_ids": [
+    45989,
+    45992,
+    45994,
+    45995,
+    46021
+   ],
+   "operator_resolved_count": 26
+  },
+  "known_defects": {
+   "open_code_defects": [
+    {
+     "name": "LIVE_EDIT_COMPLETION_CREATES_NO_CAMPAIGN",
+     "class": "SILENT_HOLE",
+     "since": "2026-07-22",
+     "note": "an edit that COMPLETES a previously-quarantined message into a valid parseable signal is recorded as an append-only revision and alarmed (orphan edit) but NEVER runs the CREATED campaign-creation path -> no campaign, no T=0 freeze. Missed F008 (46011 CREATED 'XAUUSD SELL 4161-4171SL 4185' quarantined 'wire review: missing stop'; EDITED +12s to clean '4161-4171 SL 4187' but candidate_events=0). Same silent-hole class as the parser miss and listener death. Fix APPROVED D-106 (full stage-prove-deploy, look-ahead guard first, deploy in a clean window after F008 closes). F008 stays a NON-PROSPECTIVE capture gap; NO backdated freeze; prospective count stays 4."
+    }
+   ],
+   "risks": [
+    "indicator version drift",
+    "documentary video links uncaptured",
+    "capture blind spot: unposted personal trades",
+    "repaint NOT fully verified / A-grade formula invisible",
+    "pending operator review queue (6 msgs)",
+    "unplanned host reboots kill capture",
+    "PROXIMITY_WINDOW_NOT_EVENT_RATE_JUSTIFIED",
+    "LANE_A_ENTRY_MODEL_ADVERSE_DIVERGENCE",
+    "ALERT_LANE_WINDOW_NOT_ENUMERABLE",
+    "WIRE_NOMINAL_OPEN_OUTCOME_TERMINALS",
+    "LIVE_EDIT_EVENTS_NOT_CAPTURED",
+    "ALERT_LANE_SILENCE_UNMONITORED"
+   ]
+  },
+  "open_questions": 13,
+  "contradiction_register": [
+   "R-008",
+   "R-001",
+   "R-002",
+   "R-003",
+   "R-004",
+   "R-005",
+   "R-006",
+   "R-007"
+  ],
+  "register_staleness_drift": [
+   {
+    "source": "fwd_ledger",
+    "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\forward_validation_ledger_v0_2.jsonl",
+    "register_sha16": "934c58f03fb5a06e",
+    "current_sha16": "fdba2dfac769a5de"
+   },
+   {
+    "source": "intake_class",
+    "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\intake_reliability\\intake_classification_v0_1.jsonl",
+    "register_sha16": "bb514175320ceb7d",
+    "current_sha16": "7ccad9cc9c280c85"
+   },
+   {
+    "source": "intake_quar",
+    "path": "research\\farouk_pilot\\always_on_tradingview_receiver_plan\\stage_c_tooling\\farouk_plus\\follower_assistant\\intake_reliability\\intake_quarantine_v0_1.jsonl",
+    "register_sha16": "c5f9a88131054377",
+    "current_sha16": "85a1f8da4449e861"
+   },
+   {
+    "source": "operator_testimony",
+    "path": "OPERATOR_RECOLLECTION (no artifact; informal verbal testimony, 2026-07-21)",
+    "register_sha16": "NO_ARTIFACT",
+    "current_sha16": "MISSING"
+   },
+   {
+    "source": "g1_ear",
+    "path": "research/farouk_pilot/stage2_rule_mining/g1_verifications_v0_1.jsonl",
+    "register_sha16": "append-only",
+    "current_sha16": "e7cd94e29fe718f3"
+   }
+  ],
+  "priority": "H-FPL-05 scoring: harness BUILT + first interim run DONE 2026-07-20T13:36Z (SC-XAU-A MISS by 1.37pt breach; SC-XAU-B HIT_REJECTION w/ same-bar caveat; SC-XAU-C not triggered; BTC not scorable locally). Re-run score_h_fpl_05.py through the week; FINAL run after Fri 21:00Z.",
+  "next_actions": [
+   "H-FPL-05 scoring: harness BUILT + first interim run DONE 2026-07-20T13:36Z (SC-XAU-A MISS by 1.37pt breach; SC-XAU-B HIT_REJECTION w/ same-bar caveat; SC-XAU-C not triggered; BTC not scorable locally). Re-run score_h_fpl_05.py through the week; FINAL run after Fri 21:00Z.",
+   "Martyn reviews the actionable quarantine queue (18 as of 07-20; alert-flagged first: 45784, 45896, 45901, 45916, 45922, 45924, 45934) and a durable resolution record format is defined (OQ-8)",
+   "TASK 1B \u00e2\u20ac\u201d corpus layer (REINSTATED by operator, D-010; next build task after Friday's final H-FPL-05 score): transcribe+ingest every training/breakdown video, resolve or precisely list uncaptured Discord links, ingest training docs + full historical Telegram archive text + all indicator captures; idempotent ingestion (ALREADY_INGESTED on duplicates), per-item source_id/class/tier/ingested_at/content_hash/provenance/supersedes, retrieval index, counts by class+tier"
+  ]
+ }
+}

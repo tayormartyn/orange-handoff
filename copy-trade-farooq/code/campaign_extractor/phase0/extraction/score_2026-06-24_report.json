@@ -1,0 +1,165 @@
+{
+  "date": "2026-06-24",
+  "candidates_file": "candidates_june24.json",
+  "model": "claude-opus-4-8 (recorded)",
+  "candidates": 15,
+  "verdicts": {
+    "ACCEPTED": 7,
+    "NEEDS_REVIEW": 8
+  },
+  "event_diff": {
+    "matched": 10,
+    "missed_truth_only": 0,
+    "extra_ext_only": 0
+  },
+  "btc_or_other_asset_events_excluded_from_gold": 0,
+  "gold_legs": {
+    "leg-1": {
+      "leg_id": "leg-1",
+      "track": "PROVIDER",
+      "direction": "SELL",
+      "entry": "4030",
+      "stop": "4130",
+      "parent_leg_id": null,
+      "status": "PARTIAL",
+      "remaining_fraction": 1.0,
+      "partial_tp_count": 2,
+      "flags": [],
+      "opened_seq": 0,
+      "closed_seq": null,
+      "opened_by_hash": "f717593ec5aead00d8b5b5b9e820d1d9ea4c8fb26c44ed739d1e0ab768fbd08a",
+      "closed_by_hash": null,
+      "realized_r": null
+    }
+  },
+  "leg_resolution": {
+    "resolved": [
+      {
+        "msg": "telegram:baseline:328",
+        "event": "PARTIAL_TP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:328",
+        "event": "MOVE_STOP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:334",
+        "event": "PARTIAL_TP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:336",
+        "event": "PARTIAL_CLOSE",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:336",
+        "event": "MOVE_STOP",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:339",
+        "event": "PARTIAL_CLOSE",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:342",
+        "event": "PARTIAL_CLOSE",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      },
+      {
+        "msg": "telegram:baseline:343",
+        "event": "PARTIAL_CLOSE",
+        "outcome": "RESOLVED",
+        "leg": "leg-1",
+        "method": "single_open_leg"
+      }
+    ],
+    "stayed_needs_review": [],
+    "association_check": [
+      {
+        "mid": 328,
+        "event": "PARTIAL_TP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 328,
+        "event": "MOVE_STOP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 334,
+        "event": "PARTIAL_TP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 336,
+        "event": "PARTIAL_CLOSE",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 336,
+        "event": "MOVE_STOP",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 339,
+        "event": "PARTIAL_CLOSE",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 342,
+        "event": "PARTIAL_CLOSE",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      },
+      {
+        "mid": 343,
+        "event": "PARTIAL_CLOSE",
+        "resolved_leg": "leg-1",
+        "truth_leg": "leg-1",
+        "truth_assoc": "CONFIRMED",
+        "verdict": "CORRECT"
+      }
+    ],
+    "wrong_associations": []
+  },
+  "rejected": [],
+  "divergences": []
+}

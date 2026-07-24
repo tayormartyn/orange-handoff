@@ -1,0 +1,10 @@
+# FP-EDU-004 page-level text extraction
+# source: C:\Users\Marty\signal-terminal\research\farouk_pilot\raw\documents\FP-EDU-004_Whaleroom_OrderBlocks_Strong_vs_Weak.pdf
+# sha256: c005bffefcc3a90e4dfd9a06739ad7cb645350e4b2a998b436cb72c59e90c745
+# pages: 2
+
+===== PAGE 1/2 =====
+
+
+===== PAGE 2/2 =====
+
